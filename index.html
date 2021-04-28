@@ -70,10 +70,10 @@
 		/* Three equal columns that floats next to each other */
 		.column {
  			float: left;
- 			width: 33.33% ; /* px finer control of size width: 33.33%; */
- 			/* min-width: 350px; max-width: 500px;  width for mobile devices */
-			height: 750px;
- 			max-height: 100%;  /* max-height: 800px; height of the column */
+ 			width: 33.33% ; 
+			min-height: 800px;
+			height: 800px;
+ 			max-height: 800px;  
   			margin-left: 30px; 
 			margin-right: 15px;
   			margin-bottom: 15px;
@@ -81,7 +81,6 @@
 			background-color: #777;
                 	-webkit-font-smoothing: antialiased;
 			line-height: 1em;
-  			/* color:#ddd; border: 1px solid #555; border-radius: 5px; background-color: rgba(25,25,25,0.50); */
   			overflow-x: hidden; overflow-y: hidden;
 		}
 		/* center contents */
@@ -109,15 +108,20 @@
 
 		.earthstars {
 			color: #ccc;
-			max-width: 100%;
+			max-width: 800px; 
 			display: -webkit-box;
-			max-height: 100%;
+			min-height:800px;
+			height:800px;
+			max-height: 800px;
 		}
 	    	.conky { 
                 	font-family: monospace;
 			color: #000;
                 	background-color: #CB7;
 			max-width: 100%;
+			min-height:800px;
+			height:800px;
+			max-height: 800px;
 			margin: 5px;
    			padding: 5px;
    			word-break: break-word;
@@ -125,15 +129,17 @@
    			text-overflow: ellipsis;
    			display: -webkit-box;
 			line-height: 25px; /* fallback */     
-   			max-height: 700px;
    			-webkit-line-clamp: 50; /* number of lines to show */
    			-webkit-box-orient: vertical;
             	}
 		
 		.spc {
-    			position: static;
+    			position: realtive;
 			margin-top: 100px;
     			padding-top: 100px;
+			min-height:100px;
+			height:100px;
+			max-height:100px;
     			clear: both;
 		}
 
