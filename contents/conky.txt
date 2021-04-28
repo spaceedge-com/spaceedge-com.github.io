@@ -47,7 +47,6 @@ color1 aaaaaa
 color2 ffaa00  
 color3 ffffff
 TEXT
-## Adjust accordingingly: (wlan/eth.) and (City) ##
 ${alignc}${scroll 25 $nodename - $sysname $kernel on $machine | }
 ${font Anatolian:style:bold:size=17}${color3}${alignc}${time %a. %b. %d, %Y ~ %r} $color$font
 ${stippled_hr}
@@ -59,15 +58,15 @@ ${color0} Swp: ${color}$swap/$swapmax - $swapperc% ${color0}${swapbar 4, 125}
 ${voffset -1}${color0} HD /: ${color}${fs_used /}/${fs_size /} - ${fs_used_perc /}% ${color0}${fs_bar 6, 150 /}   
 ${voffset -40}${color0}${diskiograph 50, 450, 888888, f0f0f0} $color$font
 ${voffset -57}${tab 10}${alignr 4}${color2}${loadavg}
-${voffset 20}
+${voffset 30}
 $hr
 ${color0}Networking:
-${color0}Wifi:  ${color1}${wireless_link_qual_perc wlan0}%  ${color2}${wireless_link_bar 
-wlan0}$color
-${color0}${upspeedgraph wlan0 35, 0000aa, 77aaff} 
-${voffset -53}${color0}${downspeedgraph wlan0 35, aa0000, ffaa77} $color
-${voffset -45}${offset 20}${color3} ▲ $color${upspeed  wlan0}/s ${alignr 20}${color3}▼ $color${downspeed wlan0}/s 
-${voffset 15}${color0}Totals: ${color3} ▲ ${color2}${totalup wlan0} ${alignr}${color3} ▼ $color2${totaldown (lan0} $color$font
+## Adjust: (wlan/eth.) ##
+${color0}Wifi:  ${color1}${wireless_link_qual_perc wlan}%  ${color2}${wireless_link_bar wlan}$color
+${color0}${upspeedgraph wlan 35, 0000aa, 77aaff} 
+${voffset -53}${color0}${downspeedgraph wlan 35, aa0000, ffaa77} $color
+${voffset -45}${offset 20}${color3} ▲ $color${upspeed  wlan}/s ${alignr 20}${color3}▼ $color${downspeed wlan}/s 
+${voffset 15}${color0}Totals: ${color3} ▲ ${color2}${totalup wlan} ${alignr}${color3} ▼ $color2${totaldown (wlan} $color$font
 $hr
 ${color0}Proceses:
 ${color0}${goto 12}Name   ${goto 112}PID  ${goto 155}CPU%  MEM%   ${alignr 2}${color0}Processes.: $color$processes  ${color0}Run.: $color$running_processes $color$font
@@ -76,4 +75,5 @@ ${color1}${goto 12}${top name 2} ${goto 110}${top pid 2} ${goto 155}${top cpu 2}
 ${color1}${goto 12}${top name 3} ${goto 110}${top pid 3} ${goto 155}${top cpu 3}   ${top mem 3} $color$font
 $hr
 ${color0}Weather:
+## Add your: (City) ##
 #${color3}${font Symbola:size=12.5:style=Bold}${execi 600 curl -s nl.wttr.in/(City)?format='%c%t+%o+%h,+%w+%p¸☼↑+%S+%m↓+%s\n'}
