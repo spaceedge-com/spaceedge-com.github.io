@@ -58,36 +58,68 @@
   		    height: auto;
 		}
 		
-            .contents { 
-		background-color: #33A;
-		font-size: 2vmax;
-                font-family: Barlow; 
-                font-weight: 400;
-                -webkit-font-smoothing: antialiased;
-		width: 33%; 
-	        margin: 30px;
-		padding: 5px;
-		overflow-x: hidden; overflow-y: hidden;
-		line-height: 1em;
-            }
+	
+		/* Three equal columns that floats next to each other */
+		.column {
+ 			float: left;
+ 			width: 33.00% ; /* px finer control of size width: 33.33%; */
+ 			/* min-width: 350px; max-width: 500px;  width for mobile devices */
+ 			height: 750px;  /* max-height: 800px; height of the column */
+  			margin-left: auto; margin-right: 10px;
+  			margin-bottom: 25px;
+  			padding-top: 10px; padding-bottom: 5px;
+  			padding-left: 10px; padding-right: 10px;
+  			/* color:#ddd; border: 1px solid #555; border-radius: 5px; background-color: rgba(25,25,25,0.50); */
+  			overflow-x: hidden; overflow-y: hidden;
+		}
+		/* center contents */
+		.row {
+   			margin: 0 auto;
+    			width: 100%;
+		}
+		/* Clear floats after the columns */
+		.row:after {
+  			content: "";
+  			float: left;
+  			display: block ;
+ 		 	clear: both ;
+		}
+		/* Responsive layout - below < 800px - columns stack verticaly, instead of next to each other*/
+		@media (max-width: 800px) {
+   			.column {
+    				width: 100%;
+      				border: none;
+  				}
+		}
+
+            	.contents { 
+			background-color: #33A;
+                	font-family: Barlow; 
+                	font-weight: 400;
+                	-webkit-font-smoothing: antialiased;
+			width: 33%; 
+	        	margin: 30px;
+			padding: 5px;
+			overflow-x: hidden; overflow-y: hidden;
+			line-height: 1em;
+            	}
 		
-	    .conky { 
-		font-size: 2vmax;
-                font-family: monospace;
-		color: #000;
-                background-color: #CB7;
-		width: 99%;
-		margin: 5px;
-   		padding: 5px;
-   		word-break: break-word;
-   		overflow-x: hidden; overflow-y: hidden;
-   		text-overflow: ellipsis;
-   		display: -webkit-box;
-		line-height: 25px; /* fallback */     
-   		max-height: 700px; /* fallback */
-   		-webkit-line-clamp: 50; /* number of lines to show */
-   		-webkit-box-orient: vertical;
-            }
+	    	.conky { 
+                	font-family: monospace;
+			color: #000;
+                	background-color: #CB7;
+			width: 99%;
+			margin: 5px;
+   			padding: 5px;
+   			word-break: break-word;
+   			overflow-x: hidden; overflow-y: hidden;
+   			text-overflow: ellipsis;
+   			display: -webkit-box;
+			line-height: 25px; /* fallback */     
+   			max-height: 700px; /* fallback */
+   			-webkit-line-clamp: 50; /* number of lines to show */
+   			-webkit-box-orient: vertical;
+            	}
 	
 	</style>    
 	    
@@ -106,26 +138,24 @@
                     </div>
                 </div>
             </div>
-            <div>
+        </div>
 
-        <div class="contents">    
-		    <h2>Compact Design Conky with Weather & Transparency</h2>
-		<img src="/contents/conky.jpg" alt="conky" width="" height="">
-           <div class="conky">
-	    	<object data="/contents/conky.txt" type="text/plain" style="float:left;width:100%;height:500px;" border="0"> 
-		    <a href="/contents/conky.txt">No Support?</a>
-		</object>
-		   
-	   </div> 
-	 </div> 
 		    
+	<div class="row">    
 		    
+	<div class="column"> 	    
+          <div class="contents">    
+	     <h2>Compact Design Conky with Weather & Transparency</h2>
+	     <img src="/contents/conky.jpg" alt="conky" width="" height="">
+               <div class="conky">
+	    	    <object data="/contents/conky.txt" type="text/plain" style="float:left;width:100%;height:500px;" border="0"> 
+		    <a href="/contents/conky.txt">No Support?</a></object></div> 
+	  </div> 	    
+	</div>	    
 		    
-		               <div>
-				<br><br><br><br>
-	   			</div> 
+		       <div> <br><br><br><br> </div> 
                 
-            </div>
+        </div>
             <div class="container py-4">
                 <h3>Thanks</h3>
                 <p class="lead">Thank you for reading this.<br>
