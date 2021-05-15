@@ -133,7 +133,7 @@
 		}
 
 		
-	    	.articles { 
+	    	#articles { 
                 	font-family: monospace;
 			color: #000;
 			background-color: rgba(220,220,233,0.80);
@@ -152,6 +152,17 @@
    			-webkit-line-clamp: 50; /* number of lines to show */
    			-webkit-box-orient: vertical;
             	}
+				/* custom scrollbars width */
+		#articles::-webkit-scrollbar,
+		#articles::-webkit-scrollbar-thumb {
+  			width: 26px;
+  			border-radius: 13px;
+  			background-clip: padding-box;
+  			border: 10px solid transparent;
+		}
+		#articles::-webkit-scrollbar-thumb {        
+  			box-shadow: inset 0 0 0 10px;
+		}
 		
 		.spc {
     			position: realtive;
@@ -206,7 +217,7 @@
 				
 	<div class="column"> 	       
 	   <h2>Has Earth been visited by an alien spaceship? Harvard professor Avi Loeb vs everybody else</h2>
-		<div class="articles">
+		<div id="articles">
 	    	    <object data="/articles/Has-Earth-Been-Visited-Alien-Spaceship-051021.html" type="text/html" style="width:100%;height:700px;" border="0"> 
 		    <a href="/articles/Has-Earth-Been-Visited-Alien-Spaceship-051021.html">No Support?</a></object>	
 		</div>
@@ -215,7 +226,7 @@
 		
 	<div class="column"> 	       
 	   <h2>Christ Return End-Times Anti-Christ False Profets</h2>
-		<div class="articles">
+		<div id="articles">
 	    	    <object data="/contents/World.html" type="text/html" style="width:100%;height:750px;" border="0"> 
 		    <a href="/contents/World.html">No Support?</a></object>	
 		</div>
@@ -224,7 +235,7 @@
 		
 		<div class="column"> 	       
 	   <h2>The Brightest and Closest Stars to Earth</h2>
-		<div class="articles">
+		<div id="articles">
 	    		<object data="/contents/EarthStars.html" type="text/html" style="width:100%;height:750px;" border="0"> 
 		    	<a href="/contents/EarthStars.html">No Support?</a></object>	
 		</div>
@@ -235,7 +246,7 @@
 	   <h2>A Compact Conky with Weather & Transparency</h2>
 	     <img src="/contents/conky.jpg" alt="conky" width="" height="" style="padding: 5px 5px 5px 5px;">
 		<br>
-               <div class="articles">
+               <div id="articles">
 	    	    <object data="/contents/Conky.html" type="text/html" style="width:100%; height:750px;" border="0"> 
 		    <a href="/contents/Conky.txt">No Support?</a></object>
 		</div> 	    
