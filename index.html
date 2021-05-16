@@ -108,6 +108,17 @@
 			line-height: 1em;
   			overflow-x: hidden; overflow-y: hidden;
 			display: inline-block;
+			&::-webkit-scrollbar {
+   				width: 0.5em;
+   				height: 0.5em;
+  			}
+  			&::-webkit-scrollbar-thumb {
+   				background-color: rgba(255,255,255,.1);
+   				border-radius: 3px;
+   			&:hover {
+   				 background: rgba(255,255,255,.2);
+   				}
+  			   }
 		}
 		/* center contents */
 		.row {
@@ -151,19 +162,6 @@
 			line-height: 25px; /* fallback */     
    			-webkit-line-clamp: 50; /* number of lines to show */
    			-webkit-box-orient: vertical;
-			&::-webkit-scrollbar {
-   				width: 0.5em;
-   				height: 0.5em;
-  			}
-
-  			&::-webkit-scrollbar-thumb {
-   				background-color: rgba(255,255,255,.1);
-   				border-radius: 3px;
-
-   			&:hover {
-   				 background: rgba(255,255,255,.2);
-   				}
-  			   }
             		}
 		
 		/* custom scrollbars width */
