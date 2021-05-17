@@ -26,19 +26,24 @@
 		padding-top:0; 
 		padding-bottom:5px;
 		overflow-x: hidden; overflow-y: hidden;
-		scrollbar-color: #87aeeb #ffa621; /* firefox scrollbars */
-		scrollbar-width: thin;
 	}
+	
 	/* custom scrollbars */
 	*::-webkit-scrollbar {
    			width: 0.5em;	height: 0.5em;
   	}
   	*::-webkit-scrollbar-thumb {
    			background-color: rgba(255,255,255,.21); 	border-radius: 3px;
-   		:hover {
-   				background: rgba(255,255,255,.42);
-   			}
+   		:hover {  background: rgba(255,255,255,.42);  }
   	}
+	/* firefox scrollbars */
+	body::-moz-scrollbar {  width: 1em; }
+ 	body::-moz-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); }
+	body::-moz-scrollbar-thumb {
+  		background-color: darkgrey;
+  		outline: 1px solid slategrey;
+	}
+
 	.table { 		
 		font-family: monospace;
 		color: #000;
