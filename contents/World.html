@@ -7,7 +7,6 @@
 	body {
 		padding: 0;
 		margin-bottom: 25px;
-		scrollbar-width: thin;
 	}
 	.world {
 		color: #fcf;
@@ -22,22 +21,32 @@
 		overflow-x: hidden; overflow-y: hidden;
 	}
 			
-		/* custom scrollbars */
-		*::-webkit-scrollbar {
-   				width: 0.5em;	height: 0.5em;
-  		}
-  		*::-webkit-scrollbar-thumb {
-   				background-color: rgba(255,255,255,.21); 	border-radius: 3px;
-   			:hover {
-   				 background: rgba(255,255,255,.42);
-   				}
-  		}
-	
+	/* custom scrollbars */
+	*::-webkit-scrollbar {
+   			width: 0.5em;	height: 0.5em;
+  	}
+  	*::-webkit-scrollbar-thumb {
+   			background-color: rgba(255,255,255,.21); 	border-radius: 3px;
+   		:hover {
+   				background: rgba(255,255,255,.42);
+   			}
+  	}
+	/* firefox custom scrollbars */
+	.scroll {
+  		width: 30%;
+  		height: 100px;
+  		border: 1px solid grey;
+  		overflow: scroll;
+  		display: inline-block;
+	}
+	.scroll-width-auto {
+  		scrollbar-width: auto;
+	}
 </style>
 </head>
 <body>
 
-<div class="world">
+<div class="world scroll scroll-width-thin">
 <h3>FAKE NEWS FEAR Of The UNKNOWN</h3>
 <p><em>
 Revelation 11 18  And the nations were angry, and thy wrath is come, and the time of the
