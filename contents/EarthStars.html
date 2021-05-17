@@ -11,7 +11,6 @@
 		padding-left: 0; padding-right: 0;
 		padding-top: 5px; padding-bottom: 25px;
 		margin-bottom: 25px;
-		scrollbar-width: thin;
 	}
 	.earthstars {
 		color: #fcf;
@@ -27,7 +26,19 @@
 		padding-top:0; 
 		padding-bottom:5px;
 		overflow-x: hidden; overflow-y: hidden;
+		scrollbar-color: #87aeeb #ffa621; /* firefox scrollbars */
+		scrollbar-width: thin;
 	}
+	/* custom scrollbars */
+	*::-webkit-scrollbar {
+   			width: 0.5em;	height: 0.5em;
+  	}
+  	*::-webkit-scrollbar-thumb {
+   			background-color: rgba(255,255,255,.21); 	border-radius: 3px;
+   		:hover {
+   				background: rgba(255,255,255,.42);
+   			}
+  	}
 	.table { 		
 		font-family: monospace;
 		color: #000;
@@ -35,9 +46,8 @@
 		font-size: 90%;
 		width: 99%;
 	}	
-	.small { 		
-		font-size: 90%;
-	}
+	.small { 	font-size: 90%; }
+	
 </style>
 </head>
 <body>
