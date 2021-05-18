@@ -17,16 +17,26 @@
 		padding: 5px 0 25 0;
 		margin-bottom: 25px;
 	}		
-		/* custom scrollbars */
-		*::-webkit-scrollbar {
-   				width: 0.5em;	height: 0.5em;
-  		}
-  		*::-webkit-scrollbar-thumb {
-   				background-color: rgba(255,255,255,.21);   border-radius: 3px;
-   			:hover {
-   				 background: rgba(255,255,255,.42);
-   				}
-  		}
+	/* custom scrollbars */
+	/* custom scrollbars for Firefox */
+	* {
+  		scrollbar-width: thin;
+  		scrollbar-color: blue black;
+	}
+	/* for Chrome, Edge, and Safari */
+	*::-webkit-scrollbar {
+    		width: 0.5em;	
+		height: 0.5em;
+	}
+	*::-webkit-scrollbar-track {
+  		background: rgba(255,255,255,.41);
+	}
+	*::-webkit-scrollbar-thumb {
+  		background-color: rgba(255,255,255,.21);  
+		border-radius: 10px;
+  		border: 2px solid blue;
+	}
+
 </style>
 </head>
 <body>
