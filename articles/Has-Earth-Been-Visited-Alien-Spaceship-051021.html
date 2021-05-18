@@ -18,15 +18,24 @@
 	}
 	  		
 		/* custom scrollbars */
-		*::-webkit-scrollbar {
-   				width: 0.5em;	height: 0.5em;
-  		}
-  		*::-webkit-scrollbar-thumb {
-   				background-color: rgba(255,255,255,.21); 	border-radius: 3px;
-   			:hover {
-   				 background: rgba(255,255,255,.42);
-   				}
-  		}
+/* custom scrollbars for Firefox */
+	* {
+  		scrollbar-width: thin;
+  		scrollbar-color: rgba(0,0,255,.41) rgba(255,255,255,.21);
+	}
+	/* for Chrome, Edge, and Safari */
+	*::-webkit-scrollbar {
+    		width: 0.5em;	
+		height: 0.5em;
+	}
+	*::-webkit-scrollbar-track {
+  		background: rgba(0,0,255,.41);
+	}
+	*::-webkit-scrollbar-thumb {
+  		background-color: rgba(255,255,255,.21);  
+		border-radius: 10px;
+  		border: 1px solid rgba(0,0,0,.41);
+	}
     
   </style>
   
