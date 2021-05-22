@@ -13,10 +13,10 @@
 	}
 	  		
 	/* custom scrollbars */
- 	/* custom scrollbars for Firefox */
+ 	/* for Firefox */
 	* {
   		scrollbar-width: thin;
-  		scrollbar-color: rgba(0,0,255,.41) rgba(0,0,0,.31);
+  		scrollbar-color: rgba(100,100,255,.41) rgba(0,0,0,.21);
 	}
 	/* for Chrome, Edge, and Safari */
 	*::-webkit-scrollbar {
@@ -24,10 +24,10 @@
 		 height: 0.5em;
 	}
 	*::-webkit-scrollbar-track {
-  		background: rgba(0,0,0,.31);
+  		background: rgba(0,0,0,.21);
 	}
 	*::-webkit-scrollbar-thumb {
-  		background-color: rgba(0,0,255,.41);  
+  		background-color: rgba(100,100,255,.41);  
 		  border-radius: 10px;
-  		border: 1px solid rgba(0,0,0,.31);
+  		border: 1px solid rgba(0,0,0,.21);
 	}
