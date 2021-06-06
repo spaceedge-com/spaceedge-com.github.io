@@ -7,9 +7,11 @@
 		margin-bottom: 100px;
    	}
 
-  	figure img {
-		min-width: 321px;
+  	figure img, figcaption {
+    		min-width: 321px;
     		max-width: 99.99%;
+    		font-size: 90%;
+    		font-style: italic;
 	}
 	  		
 	/* Custom Scrollbars */
