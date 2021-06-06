@@ -8,8 +8,8 @@
    	}
 
   	figure img {
-		  min-width: 320px;
-    	max-width: 99.99%;
+		min-width: 320px;
+    		max-width: 99.99%;
 	}
 	  		
 	/* Custom Scrollbars */
@@ -20,7 +20,7 @@
 	}
 	/* Chrome, Edge, and Safari */
 	*::-webkit-scrollbar {
-    		 width: 0.5em;	 height: 0.5em;
+    		width: 0.5em;	 height: 0.5em;
 	}
 	*::-webkit-scrollbar-track {
   		background: rgba(0,0,0,.21);
@@ -31,11 +31,11 @@
 	}
 
 	h1, h2, h3 { 
-			font-size: 2.50vmax;
+		font-size: 2.50vmax;
 	}
 
-	a { color: hotpink; }
-	hr {   border-top:1px solid #faf;  height:3px;  width:50%;  }
+	a {   color: hotpink; }
+	hr {    border-top:1px solid #faf;  height:3px;  width:50%; }
 	.small {     font-size: 90%;	font-style: italic; }
 
 
