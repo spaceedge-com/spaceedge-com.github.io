@@ -1,5 +1,5 @@
 
-    	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    	<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow' rel='stylesheet'>
 
 	body { 
@@ -9,7 +9,7 @@
 		padding-bottom: 100px;
 		margin-bottom: 100px;
 		text-shadow: 0 0 white;
-		font-family: 'Lora', serif;
+		font-family: 'Playfair Display', serif;
    	}
   	figure img, figcaption {
     		min-width: 321px;
