@@ -1,5 +1,8 @@
 
-    	body { 
+    	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow' rel='stylesheet'>
+
+	body { 
 		color: #fcf;
                 background-color: rgba(20,20,20,0.20);
 		text-shadow: 0 0 black;
