@@ -88,8 +88,8 @@
 			}
 		
 	/* custom toggle expands */
-	.toggle-box, .toggle-box  + column {  width: inherit; }
-	.toggle-box, .toggle-box:checked  + column {  width:100%; display: block; }
+	.toggle-box, .toggle-box + .row + .column {  width: inherit; }
+	.toggle-box, .toggle-box:checked + .row + .column {  width:100%; display: block; }
 		
    </style>    
 	    
@@ -105,8 +105,8 @@
                             <span class="lead">A Space of Freedom!</span>
                         </div> </div> </div> </div>
 
-<input class="toggle-box" id="id-1" type="checkbox">
-  <main>	
+<input class="toggle-box column" id="id-1" type="checkbox">
+
 	
     <div class="row">    
 		  
@@ -181,11 +181,9 @@
 		</div>
 	</div>	    	    
 		
-		
                
    </div>
 	   
-  </main>
 	   
 	<div class="spc"> <br> </div> 
 
