@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Slider</title>
+    <style>
+        #image-slider {
+            margin: 100px auto;
+            width: 500px;
+            height: 375px;
+            overflow: hidden;
+            position: relative;
+            background-color: rgb(128, 128, 128);
+        }
+
+        #image-slider .image {
+            position: absolute;
+            top: 0;
+            left: -500px;
+            z-index: 1;
+            opacity: 0;
+            -webkit-transition: all linear 400ms;
+            -moz-transition: all linear 400ms;
+            -o-transition: all linear 400ms;
+            transition: all linear 400ms;
+        }
+
+        #image-slider .caption {
+            position: absolute;
+            top: -50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+            display: none;
+            z-index: 10;
+            -webkit-transition: all linear 400ms;
+            -moz-transition: all linear 400ms;
+            -o-transition: all linear 400ms;
+            transition: all linear 400ms;
+        }
+
+        #image-slider .navigation {
+            text-align: center;
+            z-index: 8;
+            bottom: -32px;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 100%;
+            padding: 5px 0;
+            -webkit-transition: all linear 400ms;
+            -moz-transition: all linear 400ms;
+            -o-transition: all linear 400ms;
+            transition: all linear 400ms;
+        }
+
+        #image-slider .navigation a,
+        #image-slider .next,
+        #image-slider .prev {
+            text-decoration: none;
+            background-color: white;
+            color: black;
+            display: inline-block;
+            line-height: 20px;
+            width: 20px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            border: 1px solid rgb(48, 48, 48);
+            z-index: 10;
+        }
+
+        #image-slider .next,
+        #image-slider .prev {
+            display: none;
+            position: absolute;
+            top: 50%;
+            text-align: center;
+            -webkit-transition: left linear 400ms, right linear 400ms;
+            -moz-transition: left linear 400ms, right linear 400ms;
+            -o-transition: left linear 400ms, right linear 400ms;
+            transition: left linear 400ms, right linear 400ms;
+        }
+
+        #image-slider .next:hover,
+        #image-slider .prev:hover {
+            background-color: rgb(192, 192, 192);
+        }
+
+        #image-slider .prev {
+            left: -27px;
+        }
+
+        #image-slider .next {
+            right: -27px;
+        }
+
+        #image-slider .navigation a:hover {
+            background-color: rgb(192, 192, 192);
+        }
+
+        #image-slider:hover .navigation {
+            bottom: 0;
+        }
+
+        #image-slider:hover .prev {
+            left: 5px;
+        }
+
+        #image-slider:hover .next {
+            right: 5px;
+        }
+
+        #image-slider:hover .caption {
+            top: 0;
+        }
+
+        #image-slider span {
+            display: none;
+            position: fixed;
+        }
+
+        #image-slider span:target+.image {
+            left: 0;
+            z-index: 5;
+            opacity: 1;
+        }
+
+        #image-slider span:target+.image+.caption,
+        #image-slider span:target+.image+.caption+a,
+        #image-slider span:target+.image+.caption+a+a,
+        #image-slider .image.default+.caption,
+        #image-slider .image.default+.caption+a,
+        #image-slider .image.default+.caption+a+a {
+            display: block;
+        }
+
+        #image-slider span:target~.image.default+.caption,
+        #image-slider span:target~.image.default+.caption+a,
+        #image-slider span:target~.image.default+.caption+a+a {
+            display: none;
+        }
+
+        #image-slider .image.default {
+            left: 0;
+            z-index: 5;
+            opacity: 1;
+        }
+
+        #image-slider span:target~.image.default {
+            z-index: 1;
+            opacity: 0;
+            left: -500px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <div id="image-slider">
+        <span id="slide1"></span>
+        <img class="image" src="images/slider/astronomy1.jpg" alt="">
+        <div class="caption">Caption text for the first image!</div>
+        <a class="next" href="#slide2">&rarr;</a>
+
+        <span id="slide2"></span>
+        <img class="image" src="images/slider/astronomy2.jpg" alt="">
+        <div class="caption">Caption text for the second image!</div>
+        <a class="prev" href="#slide1">&larr;</a>
+        <a class="next" href="#slide3">&rarr;</a>
+
+        <span id="slide3"></span>
+        <img class="image" src="images/slider/astronomy3.jpg" alt="">
+        <div class="caption">Caption text for the third image!</div>
+        <a class="prev" href="#slide2">&larr;</a>
+        <a class="next" href="#slide4">&rarr;</a>
+
+        <span id="slide4"></span>
+        <img class="image" src="images/slider/astronomy4.jpg" alt="">
+        <div class="caption">Caption text for the fourth image!</div>
+        <a class="prev" href="#slide3">&larr;</a>
+        <a class="next" href="#slide5">&rarr;</a>
+
+        <span id="slide5"></span>
+        <img class="image" src="images/slider/astronomy5.jpg" alt="">
+        <div class="caption">Caption text for the fifth image!</div>
+        <a class="prev" href="#slide4">&larr;</a>
+
+        <img class="image default" src="images/slider/astronomy1.jpg" alt="">
+        <div class="caption default">Caption text for the first image!</div>
+        <a class="next" href="#slide2">&rarr;</a>
+
+        <div class="navigation">
+            <a href="#slide1">1</a>
+            <a href="#slide2">2</a>
+            <a href="#slide3">3</a>
+            <a href="#slide4">4</a>
+            <a href="#slide5">5</a>
+        </div>
+    </div>
+</body>
+
+</html>
