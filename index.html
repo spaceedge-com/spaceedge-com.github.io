@@ -87,17 +87,16 @@
 	/* checkbox toggle-box expands width */
 	.toggle-box, .toggle-box + .row .column {    }
 	.toggle-box, .toggle-box:checked + .row .column {  
-		width: 100%; max-width: 1000px; display: block; padding 25px;  }
+		width: 100%; max-width: 1000px; display: block; padding 25px; transition:width 1s; }
+   	/* Styling toggle-box checkbox */	
 	.toggle-box { 
 		    position: static; float: inline-end; overflow: hidden; 
 		    clip: rect(10px, 10px, 10px, 10px);  }
-		label {  float: right; position: static; overflow: hidden; 
-			 font-size: 90%; font-style: italic;  }
-   	/* Styling toggle checkbox */	
+	label { float: right; position: static; overflow: hidden; font-size: 90%; font-style: italic; }
 	input[type="checkbox"] {
   		   -webkit-appearance: none; -moz-appearance: none; appearance: none; 
 		   height: 14px; width: 16px; background-color: orange;  }
-	input[type="checkbox"]:checked { background-color: blue; }
+	input[type="checkbox"]:checked {  background-color: blue; }
 	<input type="checkbox" />    
 		
 </style>    
