@@ -23,39 +23,39 @@
          h1 { 
 	    color: #cceecc; font-size: 3.0vmax; font-family: 'URW Chancery L', cursive; font-style: italic; font-weight: 600; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.20em; margin-bottom: 10px; padding: 3px; border-top: 5px outset rgba(255,255,255,.50); /*padding: top right bot left*/
             }
-	     h2 { 
+	 h2 { 
 		color: #fac; font-size: 1.7vmax; font-family: 'Cursive'; font-weight: 400; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.15em; margin-bottom: 10px;
             }		    	
-	     h3 { 
+	 h3 { 
 		color: #f9c; font-size: 1.40vmax; font-family: 'Cursive'; font-weight: 400; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.1em; margin-bottom: 5px;
             }
 						
-	      a { 	color: hotpink; }
-	     hr {   border-top:1px solid #faf;  height:3px;  width:50%;  }
+	  a { 	color: hotpink; }
+	 hr {   border-top:1px solid #faf;  height:3px;  width:50%;  }
 		
-	    img {
+	img {
 		max-width: 100%; height: auto;  /* padding: top right bottom left */ 
 		padding: 5px; display: block; margin: 0 auto; border: 1px solid rgba(255,255,255,.5); 
-			}	
-	 figure { 	margin-left: 25px; display: block; }
-	 figure img, figcaption {
+	    }	
+     figure { 	margin-left: 25px; display: block; }
+     figure img, figcaption {
     			min-width: 300px; max-width: 99.99%; font-size: 95%; font-style: italic;
-			}
-	 .small {  font-size: 90%;  font-style: italic; }
+	    }
+     .small {  font-size: 90%;  font-style: italic; }
 		
 		
 		/* Three equal columns that floats next to each other */
-	.column {
+    .column {
  		float: left; width: 29.38%; min-width: 299px; max-width: 90%; min-height: 90%; height: 800px; max-height: 99%; margin: 20px 20px 40px 5px; /* padding: top right bottom left */ padding: 0 0 25px 0; color: #eee; text-shadow: 0 0 white; background-color: rgba(0,0,0,0.20); -webkit-font-smoothing: antialiased; line-height: 1em; border-top: 1px ridge rgba(55,30,55,.5); border-bottom: 1px ridge rgba(55,30,55,.5); border-left: 1px solid rgba(55,30,55,.5); border-radius: 4px; overflow-x: hidden; overflow-y: hidden; display: inline-block;
-		}
+	    }
 	/* center contents */
-	   .row {
-   		margin: 0 auto; width: 100%;
-		}
+       .row {
+   	    margin: 0 auto; width: 100%;
+	    }
 	/* Clear floats after the columns */
      .row:after {
   		content: ""; float: left; display: block ; clear: both ;
-		}
+	    }
      /* Responsive layout - screen below < 800px - 
 			columns stack verticaly, instead of next to each other */
 	@media (max-width: 800px) {
@@ -86,31 +86,17 @@
 		}
 		
     /* checkboxbutton expands width */
-    #button + .row .column {           transition:width 10000s; }
-    #button:focus + .row .column  {  
-		width: 90%; max-width: 90%; display: block; margin 5px; transition:width 1s; }
-    /* Styling btn */	
-    #button {
-    	    font-size: 12px; color: #aaa; line-height:20px;
-    	    border: 1px solid rgba(25,25,25,.5); border-radius: 5px; 
-	    box-shadow: 1px 1px 1px #000;
-    	    display: block; padding: 1px 3px; text-align: center;
-    	    /*background-image: linear-gradient(to bottom, #333333, #df0000); color:#fff;*/
-	    animation: glowing 10000ms infinite; 
-	    }
-       @keyframes glowing {
-  		0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
-  		50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
-  		100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
-	}
-    #button:hover {
-    	    background-image: linear-gradient(to bottom, #ffa5f5, #dfdddd);
-	    }
-    #button:focus{
-    	    margin-left: 1px 1px 0; box-shadow: -1px -1px 1px #000;
-            outline: 1px solid black; -moz-outline-radius: 5px;
-            background-image: linear-gradient(to bottom, #777777, #df0000);  color:#fff;
-            }
+
+	
+    input + div { 	
+			width:50%;	 background: rgba(235, 215, 8, .5);
+    			color:#eee;  display: block; transition:width 0.5s;
+    		}
+    input:checked + div {     
+			width: 100%; max-width: 1000px; 
+      			display: block; padding 25px; background: 
+    			rgba(5, 5, 238, .5);  transition:width 1.5s;
+    		}
 	
 </style>    
 	    
@@ -135,7 +121,8 @@
 	</div>
 	
 	
-    <button id="button" tabindex="0" > Expand->> </button> 
+<label for=cb>Expand->></label>
+<input type='checkbox' style='display: none' id=cb>
   
      <div class="row">    
 	     
