@@ -1,84 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Slider</title>
     <style>
+    /* Slider CSS code */    
+        #slider {
+            background-color: rgba(0,0,0,0.5);
+            display: block;
+            width: 800px;
+            overflow: hidden;
+            margin: auto;
+        }
+
         #image-slider {
-            margin: 25px auto;
-            width: 640px;
-            min-height: 400px;
+            background-color: rgba(0,0,0,0.5);
+            display: inline-block;
+            height: auto;
             max-width: 100%;
-            max-height: 100%;
             overflow: hidden;
             position: relative;
-            background-color: rgb(128, 128, 128);
+        }
+
+        #image-slider .ratio {
+            visibility: hidden;
+            z-index: 1;
         }
 
         #image-slider .image {
-            position: absolute;
             top: 0;
-            left: -500px;
-            z-index: 1;
+            left: -100%;
             opacity: 0;
-            -webkit-transition: all linear 400ms;
-            -moz-transition: all linear 400ms;
-            -o-transition: all linear 400ms;
-            transition: all linear 400ms;
+            position: absolute;
+            z-index: 5;
         }
 
         #image-slider .caption {
             position: absolute;
-            top: -50px;
             background-color: rgba(255, 255, 255, 0.8);
-            width: 100%;
+            display: none;
             padding: 5px;
             text-align: center;
-            display: none;
-            z-index: 10;
-            -webkit-transition: all linear 400ms;
-            -moz-transition: all linear 400ms;
-            -o-transition: all linear 400ms;
-            transition: all linear 400ms;
+            top: -50px;
+            width: 100%;
+            z-index: 15;
         }
 
         #image-slider .navigation {
             text-align: center;
-            z-index: 8;
-            bottom: -32px;
-            position: absolute;
             background-color: rgba(255, 255, 255, 0.5);
-            width: 100%;
+            bottom: -32px;
             padding: 5px 0;
+            position: absolute;
+            width: 100%;
+            z-index: 15;
+        }
+
+        #image-slider .image,
+        #image-slider .caption,
+        #image-slider .navigation {
             -webkit-transition: all linear 400ms;
             -moz-transition: all linear 400ms;
             -o-transition: all linear 400ms;
             transition: all linear 400ms;
         }
 
-        #image-slider .navigation a,
+        #image-slider .ratio,
+        #image-slider .image {
+            display: block;
+            height: auto;
+            max-width: 100%;
+        }
+
+        #image-slider input:checked+.image {
+            z-index: 10;
+            left: 0;
+            opacity: 1;
+        }
+
+        #image-slider input {
+            display: none;
+        }
+
+        #image-slider .navigation label,
         #image-slider .next,
         #image-slider .prev {
-            text-decoration: none;
+            text-align: center;
             background-color: white;
-            color: black;
-            display: inline-block;
-            line-height: 20px;
-            width: 20px;
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px;
             border-radius: 10px;
             border: 1px solid rgb(48, 48, 48);
-            z-index: 10;
+            color: black;
+            cursor: pointer;
+            display: inline-block;
+            line-height: 20px;
+            text-decoration: none;
+            width: 20px;
+            z-index: 20;
         }
 
         #image-slider .next,
         #image-slider .prev {
             display: none;
             position: absolute;
-            top: 50%;
             text-align: center;
+            top: 50%;
             -webkit-transition: left linear 400ms, right linear 400ms;
             -moz-transition: left linear 400ms, right linear 400ms;
             -o-transition: left linear 400ms, right linear 400ms;
@@ -87,73 +114,35 @@
 
         #image-slider .next:hover,
         #image-slider .prev:hover {
-            background-color: rgb(92, 92, 92);
+            background-color: rgb(192, 192, 192);
         }
 
-        #image-slider .prev {
-            left: -27px;
+        #image-slider .prev {  left: -27px;
         }
 
-        #image-slider .next {
-            right: -27px;
+        #image-slider .next {   right: -27px;
         }
 
-        #image-slider .navigation a:hover {
-            background-color: rgb(92, 92, 92);
+        #image-slider .navigation label:hover {
+            background-color: rgb(192, 192, 192);
         }
 
-        #image-slider:hover .navigation {
-            bottom: 0;
+        #image-slider:hover .navigation {  bottom: 0;
         }
 
-        #image-slider:hover .prev {
-            left: 5px;
+        #image-slider:hover .prev { left: 5px;
         }
 
-        #image-slider:hover .next {
-            right: 5px;
+        #image-slider:hover .next { right: 5px;
         }
 
-        #image-slider:hover .caption {
-            top: 0;
+        #image-slider:hover .caption { top: 0;
         }
 
-        #image-slider span {
-            display: none;
-            position: fixed;
-        }
-
-        #image-slider span:target+.image {
-            left: 0;
-            z-index: 5;
-            opacity: 1;
-        }
-
-        #image-slider span:target+.image+.caption,
-        #image-slider span:target+.image+.caption+a,
-        #image-slider span:target+.image+.caption+a+a,
-        #image-slider .image.default+.caption,
-        #image-slider .image.default+.caption+a,
-        #image-slider .image.default+.caption+a+a {
+        #image-slider input:checked+.image+.caption,
+        #image-slider input:checked+.image+.caption+label,
+        #image-slider input:checked+.image+.caption+label+label {
             display: block;
-        }
-
-        #image-slider span:target~.image.default+.caption,
-        #image-slider span:target~.image.default+.caption+a,
-        #image-slider span:target~.image.default+.caption+a+a {
-            display: none;
-        }
-
-        #image-slider .image.default {
-            left: 0;
-            z-index: 5;
-            opacity: 1;
-        }
-
-        #image-slider span:target~.image.default {
-            z-index: 1;
-            opacity: 0;
-            left: -500px;
         }
 
     </style>
@@ -161,48 +150,53 @@
 
 <body>
 
-
+    <div id="slider">
     <div id="image-slider">
-        <span id="slide1"></span>
+        <img class="ratio" src="slider/astronomy1.jpg" alt="">
+
+        <input name="slides" id="slide1" type="radio" checked>
         <img class="image" src="slider/astronomy1.jpg" alt="">
-        <div class="caption">Astronomy image! 1</div>
-        <a class="next" href="#slide2">&rarr;</a>
+        <div class="caption">Astronomy image!</div>
+        <label class="next" for="slide2">&rarr;</label>
 
-        <span id="slide2"></span>
+        <input name="slides" id="slide2" type="radio">
         <img class="image" src="slider/astronomy2.jpg" alt="">
-        <div class="caption">Astronomy image! 2</div>
-        <a class="prev" href="#slide1">&larr;</a>
-        <a class="next" href="#slide3">&rarr;</a>
+        <div class="caption">Astronomy image!</div>
+        <label class="prev" for="slide1">&larr;</label>
+        <label class="next" for="slide3">&rarr;</label>
 
-        <span id="slide3"></span>
+        <input name="slides" id="slide3" type="radio">
         <img class="image" src="slider/astronomy3.jpg" alt="">
-        <div class="caption">Astronomy image! 3</div>
-        <a class="prev" href="#slide2">&larr;</a>
-        <a class="next" href="#slide4">&rarr;</a>
+        <div class="caption">Astronomy image!</div>
+        <label class="prev" for="slide2">&larr;</label>
+        <label class="next" for="slide4">&rarr;</label>
 
-        <span id="slide4"></span>
+        <input name="slides" id="slide4" type="radio">
         <img class="image" src="slider/astronomy4.jpg" alt="">
-        <div class="caption">Astronomy image! 4</div>
-        <a class="prev" href="#slide3">&larr;</a>
-        <a class="next" href="#slide5">&rarr;</a>
+        <div class="caption">Astronomy image!</div>
+        <label class="prev" for="slide3">&larr;</label>
+        <label class="next" for="slide5">&rarr;</label>
 
-        <span id="slide5"></span>
+        <input name="slides" id="slide5" type="radio">
         <img class="image" src="slider/astronomy5.jpg" alt="">
-        <div class="caption">Astronomy image! 5</div>
-        <a class="prev" href="#slide4">&larr;</a>
-
-        <img class="image default" src="slider/astronomy1.jpg" alt="">
-        <div class="caption default">Astronomy image!</div>
-        <a class="next" href="#slide2">&rarr;</a>
+        <div class="caption">Astronomy5 image!/div>
+        <label class="prev" for="slide4">&larr;</label>
 
         <div class="navigation">
-            <a href="#slide1">1</a>
-            <a href="#slide2">2</a>
-            <a href="#slide3">3</a>
-            <a href="#slide4">4</a>
-            <a href="#slide5">5</a>
+            <label for="slide1">1</label>
+            <label for="slide2">2</label>
+            <label for="slide3">3</label>
+            <label for="slide4">4</label>
+            <label for="slide5">5</label>
         </div>
     </div>
+
+
+    </div>
+    </div>
+    
+  </div>
+    
 </body>
 
 </html>
