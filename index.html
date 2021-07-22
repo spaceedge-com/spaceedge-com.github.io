@@ -94,7 +94,8 @@
     	    font-size: 12px; line-height:20px;
     	    border-radius: 5px; padding: 1px 3px; box-shadow: 1px 1px 1px #000;
     	    display: block; text-align: center;
-    	    background-image: linear-gradient(to bottom, #333333, #df0000);    color:#fff;
+    	    background-image: linear-gradient(to bottom, #333333, #df0000); color:#fff;
+	    animation: glowing 5000ms infinite; 
 	    }
     #button:hover {
     	    background-image: linear-gradient(to bottom, #ffa5f5, #dfdddd);
@@ -105,11 +106,10 @@
             background-image: linear-gradient(to bottom, #777777, #df0000);  color:#fff;
             }
      @keyframes glowing {
-  	0% { background-color: #004A77; box-shadow: 0 0 1px #004A7F; }
-  	50% { background-color: #00947A; box-shadow: 0 0 2px #0094FF; }
-  	100% { background-color: #00437F; box-shadow: 0 0 3px #004A7F; }
-     } 
-     .button {  animation: glowing 1500ms infinite;  }	
+  	0% { background-color: #003333; box-shadow: 0 0 0px #004A7A; }
+  	50% { background-color: #008888; box-shadow: 0 0 1px #009A7F; }
+  	100% { background-color: #00AAAA; box-shadow: 0 0 2px #00AAFF; }
+     } 	
 	
 </style>    
 	    
@@ -134,7 +134,7 @@
 	</div>
 	
 	
-    <button id="button" class="button" tabindex="0" > <<-Expand->> </button> 
+    <button id="button" tabindex="0" > <<-Expand->> </button> 
   
      <div class="row">    
 	     
