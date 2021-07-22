@@ -94,9 +94,14 @@
     	    font-size: 12px; line-height:20px;
     	    border-radius: 5px; padding: 1px 3px; box-shadow: 1px 1px 1px #000;
     	    display: block; text-align: center;
-    	    background-image: linear-gradient(to bottom, #333333, #df0000); color:#fff;
+    	    /*background-image: linear-gradient(to bottom, #333333, #df0000); color:#fff;*/
 	    animation: glowing 5000ms infinite; 
 	    }
+       @keyframes glowing {
+  		0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  		50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+  		100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+	}
     #button:hover {
     	    background-image: linear-gradient(to bottom, #ffa5f5, #dfdddd);
 	    }
@@ -105,11 +110,6 @@
             outline: 1px solid black; -moz-outline-radius: 5px;
             background-image: linear-gradient(to bottom, #777777, #df0000);  color:#fff;
             }
-     @keyframes glowing {
-  	0% { background-color: #003333; box-shadow: 0 0 0px #004A7A; }
-  	50% { background-color: #008888; box-shadow: 0 0 1px #009A7F; }
-  	100% { background-color: #00AAAA; box-shadow: 0 0 2px #00AAFF; }
-     } 	
 	
 </style>    
 	    
