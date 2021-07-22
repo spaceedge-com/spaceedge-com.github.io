@@ -20,12 +20,10 @@
             overflow: hidden;
             position: relative;
         }
-
         #image-slider .ratio {
             visibility: hidden;
             z-index: 1;
         }
-
         #image-slider .image {
             top: 0;
             left: -100%;
@@ -33,7 +31,6 @@
             position: absolute;
             z-index: 5;
         }
-
         #image-slider .caption {
             position: absolute;
             background-color: rgba(255, 255, 255, 0.4);
@@ -44,7 +41,6 @@
             width: 100%;
             z-index: 15;
         }
-
         #image-slider .navigation {
             text-align: center;
             background-color: rgba(255, 255, 255, 0.4);
@@ -54,7 +50,6 @@
             width: 100%;
             z-index: 15;
         }
-
         #image-slider .image,
         #image-slider .caption,
         #image-slider .navigation {
@@ -63,24 +58,20 @@
             -o-transition: all linear 400ms;
             transition: all linear 400ms;
         }
-
         #image-slider .ratio,
         #image-slider .image {
             display: block;
             height: auto;
             max-width: 100%;
         }
-
         #image-slider input:checked+.image {
             z-index: 10;
             left: 0;
             opacity: 1;
         }
-
         #image-slider input {
             display: none;
         }
-
         #image-slider .navigation label,
         #image-slider .next,
         #image-slider .prev {
@@ -98,7 +89,6 @@
             width: 20px;
             z-index: 20;
         }
-
         #image-slider .next,
         #image-slider .prev {
             display: none;
@@ -110,34 +100,17 @@
             -o-transition: left linear 400ms, right linear 400ms;
             transition: left linear 400ms, right linear 400ms;
         }
-
         #image-slider .next:hover,
         #image-slider .prev:hover {
             background-color: rgb(192, 192, 192);
         }
-
-        #image-slider .prev {  left: -27px;
-        }
-
-        #image-slider .next {   right: -27px;
-        }
-
-        #image-slider .navigation label:hover {
-            background-color: rgb(192, 192, 192);
-        }
-
-        #image-slider:hover .navigation {  bottom: 0;
-        }
-
-        #image-slider:hover .prev { left: 5px;
-        }
-
-        #image-slider:hover .next { right: 5px;
-        }
-
-        #image-slider:hover .caption { top: 0;
-        }
-
+        #image-slider .prev {  left: -27px;  }
+        #image-slider .next {  right: -27px; }
+        #image-slider .navigation label:hover {  background-color: rgb(192, 192, 192);  }
+        #image-slider:hover .navigation {  bottom: 0;  }
+        #image-slider:hover .prev { left: 5px;  }
+        #image-slider:hover .next { right: 5px;  }
+        #image-slider:hover .caption { top: 0;  }
         #image-slider input:checked+.image+.caption,
         #image-slider input:checked+.image+.caption+label,
         #image-slider input:checked+.image+.caption+label+label {
