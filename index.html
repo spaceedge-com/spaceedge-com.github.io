@@ -93,7 +93,13 @@
 	  label {
     		background-color: rgba(225,250,225,.25); 
 		border: 1px solid rgba(155,130,155,.85); border-radius:25px;
+		cursor: pointer;
 		}
+	label:after {
+		-webkit-transform: rotate(45deg);
+  		-ms-transform: rotate(45deg);
+  		transform: rotate(45deg);
+	}
 	label:active {
     		background:rgba(150,150,150,0.25);
 		border: 1px solid rgba(155,150,155,.5); border-radius:25px;
