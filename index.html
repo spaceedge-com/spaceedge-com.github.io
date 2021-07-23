@@ -101,12 +101,12 @@
 		     }
 	
 	/* Create a custom checkbox */
-	.checkmark {
-  		   position: absolute;left: 0;
-    		   -webkit-transform: rotate(45deg);
-  		  -ms-transform: rotate(45deg);
-  		   transform: rotate(45deg);
-}
+	  #cb {
+  		      position: absolute;left: 0;
+    		      -webkit-transform: rotate(45deg);
+  		      -ms-transform: rotate(45deg);
+  		      transform: rotate(45deg);
+		     }
     input + .row .column {  
 	    		 float: left; width: 29.38%; min-width: 275px; max-width: 90%; 
 	                 margin: 5px 1px 20px 5px; transition:width 0.5s;
@@ -139,7 +139,7 @@
 	</div>
 	
 	  
-  <label for=cb><+><span class="checkmark"></span></label>
+  <label for=cb><span id="cb"><+></span></label>
   <input type='checkbox' style='display: none' id='cb'>
   
      <div class="row">    
