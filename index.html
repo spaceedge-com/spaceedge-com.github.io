@@ -94,15 +94,19 @@
     		background-color: rgba(225,250,225,.25); 
 		border: 1px solid rgba(155,130,155,.85); border-radius:25px; cursor: pointer;
 		}
-	label:after {
-		  	-webkit-transform: rotate(45deg);
-  			-ms-transform: rotate(45deg);
-  			transform: rotate(45deg); cursor: pointer;
-	}
-	label:active {
+	label:after { cursor: pointer; }
+	label:hover {
     			background:rgba(150,150,150,0.25);
 			border: 1px solid rgba(155,150,155,.5); border-radius:25px;
 		     }
+	
+	/* Create a custom checkbox */
+	.checkmark {
+  		   position: absolute;left: 0;
+    		   -webkit-transform: rotate(45deg);
+  		  -ms-transform: rotate(45deg);
+  		   transform: rotate(45deg);
+}
     input + .row .column {  
 	    		 float: left; width: 29.38%; min-width: 275px; max-width: 90%; 
 	                 margin: 5px 1px 20px 5px; transition:width 0.5s;
@@ -134,9 +138,9 @@
 		 </object>
 	</div>
 	
-	
-<label for=cb><+></label>
-<input type='checkbox' style='display: none' id='cb'>
+	  
+  <label for=cb><+><span class="checkmark"></span></label>
+  <input type='checkbox' style='display: none' id='cb'>
   
      <div class="row">    
 	     
