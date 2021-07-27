@@ -7,6 +7,23 @@ body {
 		text-shadow: 0 0 white;
 		font-family: 'Serif';
    	}
+         h1 { 
+	    color: #cceecc; font-size: 3.60vmax; font-family: 'URW Chancery L', Cursive; font-style: italic; font-weight: 600; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.20em; margin-bottom: 10px; padding: 3px; border-top: 5px outset rgba(255,255,255,.50); /*padding: top right bot left*/
+            }
+	 h2 { 
+		color: #fac; font-size: 2.50vmax; font-family: 'Cursive'; font-weight: 400; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.15em; margin-bottom: 5px;
+            }		    	
+	 h3 { 
+		color: #f9c; font-size: 2.30vmax; font-family: 'Cursive'; font-weight: 400; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.1em; margin-bottom: 5px;
+            }
+	  p { 
+		font-family: “Playfair Display”, “Didot”, "Times New Roman", Times, serif; 
+		font-size: 1.20em; font-style: normal; -webkit-font-smoothing: antialiased; 
+                text-shadow: 0 0 white; line-height: 1.10em;  color: #fcf;
+            }				
+	  a { 	color: hotpink;  }
+	 hr {   border-top:1px solid #faf;  height:2em;  width:50% auto; margin-top:2em;  }
+
   	figure img, figcaption {
     		min-width: 321px;
     		max-width: 99.99%;
