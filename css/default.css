@@ -16,7 +16,7 @@
 		color: #f9c; font-size: 1.50em; font-family: 'Cursive'; font-weight: 400; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.15em; margin-bottom: 5px;
             }
 	  p { 
-		font-family: “Playfair Display”, “Didot”, "Times New Roman", Times, serif; 
+		font-family: 'Playfair Display', 'Didot', 'Times New Roman', Times, serif; 
 		font-size: 1.20em; font-style: normal; -webkit-font-smoothing: antialiased; 
                 text-shadow: 0 0 white; line-height: 1.15em;  color: #fcf;
             }				
@@ -36,8 +36,7 @@
 	  		
 	/* Custom Scrollbars */
  	/* Firefox */
-	* {  scrollbar-width: thin; scrollbar-color: rgba(255,30,255,.51) rgba(0,0,0,.21);
-	}
+	* {  scrollbar-width: thin; scrollbar-color: rgba(255,30,255,.51) rgba(0,0,0,.21); }
 	/* Chrome, Edge, and Safari */
 	*::-webkit-scrollbar {  width: 0.5em;	 height: 0.5em;  }
 	*::-webkit-scrollbar-track {  background: rgba(0,0,0,.21);  }
