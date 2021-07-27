@@ -16,7 +16,111 @@
             padding: 0;
             box-sizing: border-box;
             }
+       body {
+	    color: #ccc; background-color: #000; font-family: “Playfair Display”, “Didot”, "Times New Roman", Times, serif; font-size: 100%; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; background-image: url('../images/unsplash.jpg'); background-attachment: fixed; -moz-background-size: cover; -webkit-background-size: cover; -o-background-size: cover; background-size: cover; background-position: top left; background-repeat: no-repeat; box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.35); overflow-x: hidden; 
+            }
+ .jumbotron {
+            color: #dcf; background-color: rgba(0,0,0,0.25); margin: 0 auto; width: 90%; height: 150px; max-height: 200px; padding: 10px; text-shadow: 0 0 white;
+            }
+ .m-4 .jumbotron .container h1 { 
+			font-size: 5.5vmax; color: #69f; border: none;
+	    }
+         h1 { 
+	    color: #cceecc; font-size: 3.50vmax; font-family: 'URW Chancery L', Cursive; font-style: italic; font-weight: 600; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.20em; margin-bottom: 10px; padding: 3px; border-top: 5px outset rgba(255,255,255,.50); /*padding: top right bot left*/
+            }
+	 h2 { 
+		color: #fac; font-size: 2.50vmax; font-family: 'Cursive'; font-weight: 400; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.15em; margin-bottom: 5px;
+            }		    	
+	 h3 { 
+		color: #f9c; font-size: 2.25; font-family: 'Cursive'; font-weight: 400; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.1em; margin-bottom: 3px;
+            }
+	  p { 
+		font-family: “Playfair Display”, “Didot”, "Times New Roman", Times, serif; 
+		font-size: 1.10em; font-style: normal; -webkit-font-smoothing: antialiased; 
+                text-shadow: 0 0 white; line-height: 1.10em;  color: #fcf;
+            }				
+	  a { 	color: hotpink;  }
+	 hr {   border-top:1px solid #faf;  height:2em;  width:50% auto; margin-top:2em;  }
+		
+	img {
+		max-width: 100%; height: auto;  /* padding: top right bottom left */ 
+		padding: 5px; display: block; margin: 0 auto; border: 1px solid rgba(255,255,255,.5); 
+	    }	
+     figure { 	margin-left: 25px; display: block; }
+     figure img, figcaption {
+    			min-width: 300px; max-width: 99.99%; font-size: 95%; font-style: italic;
+	    }
+     .small {   font-size: 90%;  font-style: italic; }
+		
+		
+		/* Three equal columns that floats next to each other */
+    .column {
+ 	    float: left; width: 29.38%; min-width: 275px; max-width: 90%; min-height: 90%; height: 900px; max-height: 100%; margin: 20px 20px 40px 5px; /* padding: top right bottom left */ padding: 0 0 25px 0; color: #eee; text-shadow: 0 0 white; background-color: rgba(0,0,0,0.20); -webkit-font-smoothing: antialiased; line-height: 1em; border-top: 1px ridge rgba(55,30,55,.5); border-bottom: 1px ridge rgba(55,30,55,.5); border-left: 1px solid rgba(55,30,55,.5); border-radius: 4px; overflow-x: hidden; overflow-y: hidden; display: inline-block;
+	    }
+	/* center contents */
+       .row {
+   	    margin: 0 auto; width: 100%;
+	    }
+	/* Clear floats after the columns */
+     .row:after {
+  		content: ""; float: left; display: block ; clear: both ;
+	    }
+      /* Responsive layout - screen below < 800px - 
+			columns stack verticaly, instead of next to each other */
+      @media (max-width: 800px) {
+   		   .column { width: 100%; border: none; margin-left: 5px;   }	
+		        .m-4 .jumbotron .container h1 { font-size: 5.5vmax; }
+			h1 { font-size: 4.5vmax; } 
+                        h2 { font-size: 3.5vmax; } 
+                        h3 { font-size: 2.5vmax; }
+	     		input, #cb { display:none; }
+		               }
 
+		
+      .articles { 
+                font-family: 'Serif'; color: #fff; text-shadow: 0 0 white; background-color: rgba(0,0,0,0.05); max-width: 100%; height: 1500px; max-height: 100%; margin: 5px 1px 20px 5px; padding: 5px 5px 20px 5px; word-break: break-word; overflow-x: hidden; overflow-y: hidden; text-overflow: ellipsis; display: -webkit-box; line-height: 25px; /* fallback */ -webkit-line-clamp: 50; /* number of lines to show */ -webkit-box-orient: vertical; 
+            	}
+				
+	/* Custom Scrollbars */
+ 	/* Firefox */
+	* {  scrollbar-width: thin; scrollbar-color: rgba(255,30,255,.51) rgba(0,0,0,.21);
+	}
+	/* Chrome, Edge, and Safari */
+	*::-webkit-scrollbar {  width: 0.5em;	 height: 0.5em;  }
+	*::-webkit-scrollbar-track {  background: rgba(0,0,0,.21);  }
+	*::-webkit-scrollbar-thumb { background-color: rgba(255,30,255,.51); border: 1px solid rgba(0,0,0,.21); border-radius: 10px; }
+	
+		
+   .spc {
+    	 position: realtive; margin-top: 100px;  padding-top: 100px; min-height:100px;  height:100px; max-height:100px; clear: both;
+	}
+
+
+		object { 
+			width:100%;
+			height:2000px;
+			min-height:800px;
+			max-height:100%;
+		       }
+	
+        /* Create a custom checkbox button expands width */
+	label {
+    		background-color: rgba(225,230,225,.25); cursor: pointer;
+		border: 1px solid rgba(155,150,155,.50); border-radius:25px; 
+		}
+	label:after { cursor: pointer; }
+	label:hover { background:rgba(230,230,230,0.50);  }
+		#cb { -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }	
+	/* checkbox select expand */
+    	input + .row .column {  
+	    		 float: left; width: 29.38%; min-width: 275px; max-width: 90%; 
+	                 margin: 5px 1px 20px 5px; transition:width 0.5s;
+			 }
+        input:checked + .row .column { 
+	    		 width: 90%; max-width: 90%; display: block; max-height: 100%; 
+	                 margin: 5px 1px 20px 5px; transition:width 1s; 
+			 }
+	
 </style>    
 	    
 </head>
