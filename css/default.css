@@ -38,10 +38,8 @@
 	}
 
 	h1, h2, h3 { 
-		font-family: 'Cursive'; font-weight: 400; 
+		font-family: 'Cursive'; 
 		text-shadow: 0 0 white; -webkit-font-smoothing: antialiased;
-		font-size: 2.0vmax;
-		text-shadow: 0 0 white;
 	}
 
 	a {   color: hotpink; }
