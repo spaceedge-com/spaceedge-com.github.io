@@ -37,7 +37,7 @@
   		border: 1px solid rgba(0,0,0,.21); border-radius: 10px;
 	}
 
-	h1, h2, h3 { 
+	h2, h3 { 
 		font-family: 'Cursive'; 
 		text-shadow: 0 0 white; -webkit-font-smoothing: antialiased;
 	}
