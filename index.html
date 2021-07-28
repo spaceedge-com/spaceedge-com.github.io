@@ -81,7 +81,7 @@
 				
 		
           .spc {
-    	        position: relative; margin-top: 50px;  padding-top: 50px; min-height:50px;  height:50px; max-height:50px; clear: both;
+    	        float: left; position: relative; margin-top: 50px;  padding-top: 50px; min-height:50px;  height:50px; max-height:50px; clear: both;
 	       }
 
 		/*  Don't change data object height otherwise it mucks scrolling */
@@ -90,14 +90,8 @@
 			height:780px;
 			min-height:750px;
 			max-height:800%;
+			clear:both;
 		       }
-		object:before, object:after {
-    				content: "";
-    				display: table;
-			}
-		object:after {
-    			clear: both;
-			}
 	
         /* Create a custom checkbox button expands width */
 	label {
