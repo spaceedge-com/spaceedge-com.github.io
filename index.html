@@ -81,7 +81,7 @@
 				
 		
           .spc {
-    	        position: relative; clear: both; height:50px; max-height:100px; margin: 50px; padding: 25px;
+    	        position: relative; clear: both; float: left; height:50px; max-height:100px; margin: 50px; padding: 25px;
 	       }
 
 		/*  Don't change data object height otherwise it mucks scrolling */
@@ -135,13 +135,14 @@
                         </div> </div> </div> </div>
 	
 	
-	<div style="height:275px; max-height:100%; width:0 auto; float: inline-end;">
+	<div style="height:275px; max-height:100%; width:0 auto;">
 	      <h3 style="text-align:center;">Astronomy Images</h3>
 	    	 <object data="/contents/Gallery.html" type="text/html" style=" max-height:100%; width:98%; "> 
 		  <a href="/contents/Gallery.html">No Support?</a>
 		 </object>
 	</div>
-
+	   
+	<div class="spc"> <br> </div> 
 
     <label for=cb><-+-></label>
     <input type='checkbox' style='display: none' id='cb'>
