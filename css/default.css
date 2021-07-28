@@ -23,8 +23,8 @@
             }				
 	  a { 	color: hotpink;  }
 	 hr {   border-top:1px solid #faf;  height:2em;  width:50% auto; margin-top:2em;  }
-	     .small {   font-size: 90%;  font-style: italic; }
-
+     .small {   font-size: 90%;  font-style: italic; }
+	 em {   color: orange;   }em {   color: orange;  font-weight:600 font-style:oblique; } 
   	figure img, figcaption {
     		min-width: 321px;
     		max-width: 99.99%;
