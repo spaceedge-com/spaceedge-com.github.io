@@ -91,7 +91,14 @@
 			min-height:750px;
 			max-height:800%;
 			clear:both;
-		       }
+		       }		
+	object:before, object:after {
+    				content: "";
+    				display: table;
+			}
+	   object:after {
+    			 clear: both;
+			}
 	
         /* Create a custom checkbox button expands width */
 	label {
