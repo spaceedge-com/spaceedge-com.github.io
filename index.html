@@ -14,13 +14,13 @@
 	    color: #ccc; background-color: #000; font-family: 'Playfair Display', 'Didot', 'Times New Roman', Times, serif; font-size: 100%; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; background-image: url('../images/unsplash.jpg'); background-attachment: fixed; -moz-background-size: cover; -webkit-background-size: cover; -o-background-size: cover; background-size: cover; background-position: top left; background-repeat: no-repeat; box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.35); overflow-x: hidden;
             }
      .jumbo {
-             color: #dcf; background-color: rgba(0,0,0,0.25); margin: 0 auto; width: 90%; height: 150px; max-height: 200px; padding: 10px; text-shadow: 0 0 white; border: 0.69em outset violet;
+             color: #dcf; background-color: rgba(0,0,0,0.25); margin: 0 auto; width: 90%; height: 150px; max-height: 200px; padding: 10px; text-shadow: 0 0 white; border: 0.69em outset rgba(238,138,238,.80);
             }
  #id, .jumbo h1 { 
 	     font-size: 3.8em; color: #69f; border: none;
 	    }
          h1 { 
-	     color: #cceecc; font-size: 2.60em; font-family: 'URW Chancery L', Cursive; font-style: italic; font-weight: 600; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.20em; margin-bottom: 10px; padding: 3px; border-top: 0.50em outset violet; /*padding: top right bot left*/
+	     color: #cceecc; font-size: 2.60em; font-family: 'URW Chancery L', Cursive; font-style: italic; font-weight: 600; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.20em; margin-bottom: 10px; padding: 3px; border-top: 0.50em outset rgba(238,150,238,.80); /*padding: top right bot left*/
             }
 	 h2 { 
 		color: #fac; font-size: 1.60em; font-family: 'Cursive'; font-weight: 400; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.15em; margin-bottom: 5px;
@@ -93,11 +93,16 @@
 
         /* Create a custom checkbox button expands width */
 	label {
-    		background-color: rgba(175,175,245,.25); cursor: pointer;
-		border: 1px solid rgba(155,155,155,.35); border-radius:50px; 
+    		background-color: rgba(238,150,238,.50); cursor: pointer;
+		border: 1px solid rgba(55,55,55,.50); border-radius:50px; 
+		width: 90%; text-align: center;
+		margin: 0 auto;
+		display: flex;
+		position: -webkit-sticky;
+		position: sticky;
 		}
 	label:after { cursor: pointer; }
-	label:hover { background:rgba(230,230,230,0.50);  }
+	label:hover { background:rgba(38,50,38,.50);  }
 		#cb { -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }	
 	/* checkbox select expand */
     	input + .row .column {  
