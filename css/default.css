@@ -10,13 +10,13 @@
    	        font-size: 14px; font-size: 1.4rem;/* =14px */
 	    } 
          h1 { 
-	    	color: #cceecc; font-size: 25px; font-size: 2.5rem;/* =24px */ font-family: 'URW Chancery L', Cursive; font-style: italic; font-weight: 600; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.20em; margin-bottom: 10px; padding: 3px; border-top: 5px outset rgba(255,255,255,.50); /*padding: top right bot left*/
+	    	color: #cceecc; font-size: 25px; font-size: 2.5rem; font-family: 'URW Chancery L', Cursive; font-style: italic; font-weight: 600; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.20em; margin-bottom: 10px; padding: 3px; border-top: 5px outset rgba(255,255,255,.50); /*padding: top right bot left*/
             }
 	 h2 { 
-		color: #fac; font-size: 19px; font-size: 1.9rem;/* =20px */ font-family: 'Cursive'; font-weight: 400; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.15em; margin-bottom: 5px;
+		color: #fac; font-size: 19px; font-size: 1.9rem; font-family: 'Cursive'; font-weight: 400; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.15em; margin-bottom: 5px;
             }		    	
 	 h3 { 
-		color: #f9c; font-size: 17px; font-size: 1.7rem;/* =20px */ font-family: 'Cursive'; font-weight: 400; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.15em; margin-bottom: 5px;
+		color: #f9c; font-size: 17px; font-size: 1.7rem; font-family: 'Cursive'; font-weight: 400; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.15em; margin-bottom: 5px;
             }
 	  p { 
 		font-family: 'Playfair Display', 'Didot', 'Times New Roman', Times, serif; 
