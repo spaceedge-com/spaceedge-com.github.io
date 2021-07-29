@@ -8,10 +8,10 @@
 		font-family: 'Serif';
    	    }
          h1 { 
-	    color: #cceecc; font-size: 2.20em; font-family: 'URW Chancery L', Cursive; font-style: italic; font-weight: 600; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.20em; margin-bottom: 10px; padding: 3px; border-top: 5px outset rgba(255,255,255,.50); /*padding: top right bot left*/
+	    	color: #cceecc; font-size: 2.00em; font-family: 'URW Chancery L', Cursive; font-style: italic; font-weight: 600; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.20em; margin-bottom: 10px; padding: 3px; border-top: 5px outset rgba(255,255,255,.50); /*padding: top right bot left*/
             }
 	 h2 { 
-		color: #fac; font-size: 1.20em; font-family: 'Cursive'; font-weight: 400; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.15em; margin-bottom: 5px;
+		color: #fac; font-size: 1.10em; font-family: 'Cursive'; font-weight: 400; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.15em; margin-bottom: 5px;
             }		    	
 	 h3 { 
 		color: #f9c; font-size: 1.03em; font-family: 'Cursive'; font-weight: 400; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.15em; margin-bottom: 5px;
@@ -25,16 +25,16 @@
 	 hr {   border-top:1px solid #faf;  height:2em;  width:50%; margin:1em;  }
      .small {   font-size: 90%;  font-style: italic; }
 	 em {   color: orange;  font-weight:600; font-style:oblique; } 
-  	figure img, figcaption {
-    		min-width: 321px;
-    		max-width: 99.99%;
-    		font-size: 90%;
-    		font-style: italic;
-	}		
+	img {  
+		max-width: 90%; height: auto;  /* padding: top right bottom left */ 
+		padding: 5px; display: block; margin: 0 auto; border: 1px solid rgba(255,255,255,.5); 
+	    }	
+  	figure img, figcaption { 
+		min-width: 321px; max-width: 90.0%; font-size: 90%; font-style: italic;
+	    }		
 	figure {
-    		margin-left: 25px;
-		display: block;
-	}
+    		margin-left: 25px; display: block;
+	    }
 	  		
 	/* Custom Scrollbars, leave here for objects */
  	/* Firefox */
