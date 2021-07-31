@@ -1,164 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
-        <meta charset="UTF-8">
-        <title>Gallery</title>
+
 <style>
-	
-	 #gall {
-      	  background-color: rgba(0,0,0,0.5);
-	  display: block; margin:0 auto;  padding: 2px;
-	  max-width:98%; max-height:275px; 
-	}
-	.imgage {
-          width: 100%; height: 100%; 
-	  margin: 2px;
-	  width:0 auto;
-	}
-	.modalDialog {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(0,0,0,0.8); 
-        z-index: 99999;
-        opacity:0;
-        -webkit-transition: opacity 400ms ease-in;
-        -moz-transition: opacity 400ms ease-in;
-        transition: opacity 400ms ease-in;
-        pointer-events: none;
-        color: #ccc;    
-	max-width: 500px; max-height: 500px;
-	margin: 0 auto;
-    }
 
-    .modalDialog:target {
-        opacity:1;
-        pointer-events: auto;
-    }
+body {
+  margin: 0;
+}
 
-    .modalDialog > div {
-        width: 90%;
-        position: relative;
-        margin: 2% auto;
-        padding: 5px;
-        border-radius: 10px;
-        background: #fff;
-        background: -moz-linear-gradient(rgba(100,100,100,0.5), rgba(100,100,100,0.5));
-        background: -webkit-linear-gradient(rgba(100,100,100,0.5), rgba(100,100,100,0.5));
-        background: -o-linear-gradient(rgba(100,100,100,0.5), rgba(100,100,100,0.5)); 
-    }
+.header {
+  text-align: center; padding: 12px;
+}
 
-    .close {
-        background: #607061;
-        color: #eee;
-        line-height: 25px;
-        position: absolute;
-        right: -12px;
-        text-align: center;
-        top: -10px;
-        width: 24px;
-        text-decoration: none;
-        font-weight: bold;
-        -webkit-border-radius: 12px;
-        -moz-border-radius: 12px;
-        border-radius: 12px;
-        -moz-box-shadow: 1px 1px 3px #000;
-        -webkit-box-shadow: 1px 1px 3px #000;
-        box-shadow: 1px 1px 3px #000;
-    }
-    .close:hover { background: #00d9ff; }
-	
+.row {
+  display: -ms-flexbox;  -ms-flex-wrap: wrap; /* IE10 */
+  display: flex; flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 85%; /* IE10 */
+  flex: 85%; max-width: 95%; padding: 0 4px; display: inline-flex;
+}
+
+.column img {
+  margin-top: 8px; vertical-align: middle; width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 80%;
+    flex: 80%;
+    max-width: 80%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other - 
+	instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 60%;
+    flex: 60%;
+    max-width: 60%;
+  }
+}
 </style>
-</head>
-<body>
-	
-    <div id="gall">
-	    
-		<a href="#openModal1"><img src="./slider/astronomy1.jpg" width="96px" height="90px";></a>
-		<div id="openModal1" class="modalDialog">
-		<div>
-		<a href="#close" title="Close" class="close">X</a>
-		<p>Astronomy Image 1</p>
-		<img class="image" src="./slider/astronomy1.jpg" width="100%" height="100%" target="_top" alt="">
-		</div>
-		</div>
-		
-		<a href="#openModal2"><img src="./slider/astronomy2.jpg" width="96px" height="90px";></a>
-		<div id="openModal2" class="modalDialog">
-		<div>
-		<a href="#close" title="Close" class="close">X</a>
-		<p>Astronomy Image 2</p>
-		<img class="image" src="./slider/astronomy2.jpg" width="100%" height="100%" target="_top" alt="">
-		</div>
-		</div>
-		
-		<a href="#openModal3"><img src="./slider/astronomy3.jpg" width="96px" height="90px";></a>
-		<div id="openModal3" class="modalDialog">
-		<div>
-		<a href="#close" title="Close" class="close">X</a>
-		<p>Astronomy Image 3</p>
-		<img class="image" src="./slider/astronomy3.jpg" width="100%" height="100%" target="_top" alt="">
-		</div>
-		</div>
-		
-		<a href="#openModal4"><img src="./slider/astronomy4.jpg" width="96px" height="90px";></a>
-		<div id="openModal4" class="modalDialog">
-		<div>
-		<a href="#close" title="Close" class="close">X</a>
-		<p>Astronomy Image 4</p>
-		<img class="image" src="./slider/astronomy4.jpg" width="100%" height="100%" target="_top" alt="">
-		</div>
-		</div>
-		
-		<a href="#openModal5"><img src="./slider/astronomy5.jpg" width="96px" height="90px";></a>
-		<div id="openModal5" class="modalDialog">
-		<div>
-		<a href="#close" title="Close" class="close">X</a>
-		<p>Astronomy Image 5</p>
-		<img class="image" src="./slider/astronomy5.jpg" width="100%" height="100%" target="_top" alt="">
-		</div>
-		</div>
-		
-		<a href="#openModal6"><img src="./slider/astronomy6.jpg" width="96px" height="90px";></a>
-		<div id="openModal6" class="modalDialog">
-		<div>
-		<a href="#close" title="Close" class="close">X</a>
-		<p>Astronomy Image 6</p>
-		<img class="image" src="./slider/astronomy6.jpg" width="100%" height="100%" target="_top" alt="">
-		</div>
-		</div>
-	    	
-	        <a href="#openModal7"><img src="./slider/astronomy7.jpg" width="96px" height="90px";></a>
-		<div id="openModal7" class="modalDialog">
-		<div>
-		<a href="#close" title="Close" class="close">X</a>
-		<p>Astronomy Image 7</p>
-		<img class="image" src="./slider/astronomy7.jpg" width="100%" height="100%" target="_top" alt="">
-		</div>
-		</div>
-			    	
-	        <a href="#openModal8"><img src="./slider/astronomy8.jpg" width="96px" height="90px";></a>
-		<div id="openModal8" class="modalDialog">
-		<div>
-		<a href="#close" title="Close" class="close">X</a>
-		<p>Astronomy Image 8</p>
-		<img class="image" src="./slider/astronomy8.jpg" width="100%" height="100%" target="_top" alt="">
-		</div>
-		</div>
-		
-	    	<a href="#openModal9"><img src="./slider/astronomy9.jpg" width="96px" height="90px";></a>
-		<div id="openModal9" class="modalDialog">
-		<div>
-		<a href="#close" title="Close" class="close">X</a>
-		<p>Andromeda Galaxy</p>
-		<img class="image" src="./slider/astronomy9.jpg" width="100%" height="100%" target="_top" alt="">
-		</div>
-		</div>
-	    
-	    
-	</div>
 
-    </body>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h3>Astronomy Images</h3>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="./slider/astronomy1.jpg" style="width:100%">
+    <img src="./slider/astronomy2.jpg" style="width:100%">
+    <img src="./slider/astronomy3.jpg" style="width:100%">
+    <img src="./slider/astronomy4.jpg" style="width:100%">
+    <img src="./slider/astronomy5.jpg" style="width:100%">
+    <img src="./slider/astronomy6.jpg" style="width:100%">
+    <img src="./slider/astronomy7.jpg" style="width:100%">
+    <img src="./slider/astronomy8.jpg" style="width:100%">
+    <img src="./slider/astronomy9.jpg" style="width:100%">
+  </div>
+
+  
+</div>
+</div>
+</body>
 </html>
