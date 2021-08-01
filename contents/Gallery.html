@@ -8,20 +8,17 @@ body {
 }
 
 .header {
-  text-align: center; padding: 1px; color: #aaa;
-	top:0; left:0;
+  text-align: center; padding: 1px; color: #aaa; top:0; left:0;
 }
 
 .row {
   display: -ms-flexbox;  -ms-flex-wrap: wrap; /* IE10 */
-  display: flex; flex-wrap: wrap;
-  padding: 0 4px;
+  display: flex; flex-wrap: wrap; padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Create equal columns that sits next to each other */
 .column {
-  -ms-flex: 85%; /* IE10 */
-  flex: 85%; max-width: 95%; padding: 0 4px; display: inline-flex;
+  -ms-flex: 85%;/*IE10*/ flex: 85%; max-width: 95%; padding: 0 4px; display: inline-flex;
 }
 
 .column img {
@@ -31,9 +28,7 @@ body {
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
-    -ms-flex: 80%;
-    flex: 80%;
-    /* max-width: 80%; */
+    -ms-flex: 80%; flex: 80%; /* max-width: 80%; */
   }
 }
 
@@ -41,9 +36,7 @@ body {
 	instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
-    -ms-flex: 60%;
-    flex: 60%;
-    /* max-width: 60%; */
+    -ms-flex: 60%; flex: 60%; /* max-width: 60%; */
   }
 }
 </style>
