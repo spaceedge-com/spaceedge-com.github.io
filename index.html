@@ -24,12 +24,15 @@
 	     -webkit-background-size: cover; -o-background-size: cover; background-size: cover;  overflow-x: hidden;
 	     background-position: top left; background-repeat: no-repeat; box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.35);
              }
-      .jumbo {
+       #head {
+    	       margin-bottom: 10px;
+	     }
+     .header {
              color: #dcf; background-color: rgba(0,0,0,0.25); width: 90%; height: 175px; max-height: 200px;
 	     margin: 0 auto;  padding: 10px; text-shadow: 0 0 white; border: 0.69em outset rgba(238,138,238,.80);
-	     display: inline-table;
+	     display: table;
             }
-     #logo .jumbo h1 { 
+     #head .header h1 { 
 	     font-size: 35px; font-size: 3.0em; color: #69f; border: none;
 	    }
          h1 { 
@@ -83,7 +86,7 @@
     				     width: 98%; min-width: 350px; max-width: 99%; 
 				     border: none; margin-right: 2px; 
   				     }	
-				#id, .jumbo > h1 { font-size: 3.5rem; }
+				#head, .header > h1 { font-size: 3.5rem; }
 				h1 { font-size: 2.5rem; } 
                         	h2 { font-size: 1.9rem; } 
                         	h3 { font-size: 1.7rem; } 
@@ -112,8 +115,7 @@
 	label {
     		background-color: rgba(238,150,238,.50); cursor: pointer;
 		border: 1px solid rgba(155,155,155,.70); border-radius:50px; 
-		width: 15%; margin-top: 5px; padding-left: 75px;
-		display: flex;
+		display: initial; width: 15%; padding-left: 15%; margin-top: 5px; 
 		position: -webkit-sticky;
 		position: sticky;
 		top: 0;
@@ -145,8 +147,8 @@
 </head>
 <body>
         
-         <div id="logo">
-            <div class="jumbo">  
+         <div id="head">
+            <div class="header">  
 		   <div style=" margin:0 auto;">
 	    	   <object data="/contents/Gallery.html" type="text/html" style=" height:25%;max-height:96px;margin:1%;">
 		   </object> </div>  
