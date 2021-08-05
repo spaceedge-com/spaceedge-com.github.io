@@ -29,10 +29,10 @@
 	 em {   color: orange;  font-weight:600; font-style:oblique; } 
 	img {  
 		max-width: 90%; height: auto;  /* padding: top right bottom left */ 
-		padding: 5px; display: block; margin: 0 auto; border: 1px solid rgba(255,255,255,.5); 
+		padding: 3px; display: block; margin: 0 auto; border: 1px solid rgba(255,255,255,.5); 
 	    }	
   	figure img, figcaption { 
-		min-width: 300px; max-width: 90.0%; font-size: 90%; font-style: italic; margin-left: 3%;
+		min-width: 290px; max-width: 90.0%; font-size: 90%; font-style: italic; margin-left: 2px;
 	    }		
 	figure {
     		margin: 0 auto; display: block;
