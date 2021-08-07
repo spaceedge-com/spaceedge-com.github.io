@@ -13,27 +13,26 @@ body {
 
 .gal-row {
   display: -ms-flexbox;  -ms-flex-wrap: wrap; /* IE10 */
-  display: flex; flex-wrap: wrap; padding: 0 4px;
+  display: inline-block; flex-wrap: wrap; padding: 0 4px;
 }
 
 /* Create equal columns that sits next to each other */
 .gal-column {
-  -ms-flex: 85%;/*IE10*/ flex: 85%; max-width: 98%; padding: 0 4px; display: inline-flex;
+  -ms-flex: 85%;/*IE10*/ flex: 85%; max-width: 98%; padding: 0 4px; display: inline-block;
 }
 
 .gal-column img {
   margin-top: 1px; vertical-align: middle; max-width: 25%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive - max-width: 800px makes the column-layout stack on top of each other */
 @media screen and (max-width: 800px) {
   .gal-column {
     -ms-flex: 80%; flex: 80%; /* max-width: 80%; */
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other - 
-	instead of next to each other */
+/* Responsive - max-width: 600px makes the columns stack on top of each other */
 @media screen and (max-width: 600px) {
   .gal-column {
     -ms-flex: 60%; flex: 60%; /* max-width: 60%; */
