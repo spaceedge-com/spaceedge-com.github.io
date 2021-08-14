@@ -131,27 +131,51 @@
 	/* Chrome, Edge, and Safari */
 	*::-webkit-scrollbar {  width: 0.5em;	 height: 0.5em;  }
 	*::-webkit-scrollbar-track {  background: rgba(0,0,0,.21);  }
-	*::-webkit-scrollbar-thumb { background-color: rgba(255,30,255,.51); border: 1px solid rgba(0,0,0,.21); border-radius: 10px; }
+	*::-webkit-scrollbar-thumb { background-color: rgba(255,30,255,.51); 
+				     border: 1px solid rgba(0,0,0,.21); border-radius: 10px; }
+	
+	.footer { color:#fcf; text-shadow: 0 0 black; position:static; width:100%; height:100px; max-height:125px; text-align:center; bottom:0px; flex-shrink:0; margin-bottom:0; clear:both; background-color:var(--t25); padding-top:0px; margin-top:0px; }
 
 	
 </style>        
 </head>
 <body>
         
-         <div id="he" style=" margin:0 auto; width:98%;">
+<div id="he" style=" margin:0 auto; width:98%;">
             <div class="her">  
 	    	  <object data="/contents/Gallery.html" type="text/html" style=" max-height:40%; margin:3px;"></object> 
                <h1>SpaceEdge</h1> 
                  <span class="lead">A Space of Freedom!</span> 
-	  </div>  </div>
+</div>  </div>
 	
 	
 	
-    <label for=cb> <<<++>>> </label>
+<!-- adex.network  -->
+<iframe
+	src="https://viewm.moonicorn.network/#%7B%22options%22%3A%7B%22publisherAddr%22%3A%220xDDa673cDFb9CAfD06b4610c60Dfb57303E6209Eb%22%2C%22whitelistedTokens%22%3A%5B%220x6B175474E89094C44Da98b954EedeAC495271d0F%22%5D%2C%22whitelistedType%22%3A%22legacy_468x60%22%2C%22randomize%22%3Atrue%2C%22targeting%22%3A%5B%5D%2C%22width%22%3A%22468%22%2C%22height%22%3A%2260%22%2C%22minPerImpression%22%3A%220%22%2C%22fallbackUnit%22%3Anull%2C%22marketSlot%22%3A%22QmZtJReS2dKAxBPTNV7iqXGH1PxyL26pYBTE3TpUGGfViV%22%7D%7D"
+	width="468"
+	height="60"
+	scrolling="no"
+	frameborder="0"
+	style="border: 0;"
+	onload="window.addEventListener('message', function(ev) { 
+		if (ev.data.hasOwnProperty('adexHeight') && ('https://viewm.moonicorn.network' === ev.origin)) {
+			for (let f of document.getElementsByTagName('iframe')) {	
+				if (f.contentWindow === ev.source) {
+					f.height = ev.data.adexHeight;
+				}
+			}	
+		}
+	}, false)"
+></iframe>
+	
+	
+	
+<label for=cb> <<<++>>> </label>
     <input type='checkbox' style='display: none' id='cb'>
 	  
   
-    <div class="row">    
+<div class="row">    
 	     
 	
 	<div class="column">			
@@ -221,15 +245,16 @@
 	</div>	    	    
 		
                
-   </div>
+</div>
 	   
 	   
-	<div class="spc"> <br> </div> 
+<div class="spc"> <br><br></div> 
 	    <!--  <object data="footer.html" type="text/html" style="width:100%;height:200px;"> -->
-        <div class="small" style="color:#fcf; text-shadow: 0 0 black; position:static; width:100%; height:100px; max-height:125px; text-align:center; bottom:0px; flex-shrink:0; margin-bottom:0; clear:both; background-color:var(--t25); padding-top:0px; margin-top:0px;">
-    	<br><br>..080121..<a href="//spaceedge.com">SpaceEdge.com</a> &copy; <a href="https://aemail.com/1wRj"> Contact.. </a></p>
-        </div>
+<div class="footer" style="">
+    	<br>
+	..080121..<a href="//spaceedge.com">SpaceEdge.com</a> &copy; <a href="https://aemail.com/1wRj"> Contact.. </a></p>
+</div>
 	   
 
-    </body>
+</body>
 </html>
