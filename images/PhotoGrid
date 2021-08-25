@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+body {
+  margin: 0; overflow: hidden;
+}
+
+.gal-header {
+  text-align: center; padding: 1px; color: #aaa; top:0; left:0;
+}
+
+.gal-row {
+  display: -ms-flexbox;  -ms-flex-wrap: wrap; /* IE10 */
+  display: block; flex-wrap: wrap; padding: 0 4px;
+}
+
+/* Create equal columns that sits next to each other */
+.gal-column {
+  -ms-flex: 85%;/*IE10*/ flex: 85%; max-width: 98%; padding: 0 4px; display: inline-block;
+}
+
+.gal-column img {
+  margin-top: 1px; vertical-align: middle; max-width: 25%;
+}
+
+/* Responsive - max-width: 800px makes the column-layout stack on top of each other */
+@media screen and (max-width: 800px) {
+  .gal-column {
+    -ms-flex: 80%; flex: 80%; /* max-width: 80%; */
+  }
+}
+
+/* Responsive - max-width: 600px makes the columns stack on top of each other */
+@media screen and (max-width: 600px) {
+  .gal-column {
+    -ms-flex: 60%; flex: 60%; /* max-width: 60%; */
+  }
+}
+</style>
+
+<body>
+
+<!-- Header -->
+ <div class="gal-header">
+  <!-- <h3>Astronomy Images</h3>  -->
+  <!-- Photo Grid -->
+ <div class="gal-row">
+  <div class="gal-column">
+  
+	  	<a target="_blank" href="/slider/astronomy1.jpg">
+    <img src="/slider/astronomy1.jpg" style="width:10%;">
+      <a target="_blank" href="/slider/astronomy2.jpg">	  
+    <img src="/slider/astronomy2.jpg" style="width:10%;">
+	  	<a target="_blank" href="/slider/astronomy3.jpg">	  
+    <img src="/slider/astronomy3.jpg" style="width:10%;">
+	  	<a target="_blank" href="/slider/astronomy4.jpg" >		  
+    <img src="/slider/astronomy4.jpg" style="width:10%;">
+	  	<a target="_blank" href="/slider/astronomy5.jpg">		  
+    <img src="/slider/astronomy5.jpg" style="width:10%;">
+	  	<a target="_blank" href="/slider/astronomy6.jpg">		  
+    <img src="/slider/astronomy6.jpg" style="width:10%;">
+	  	<a target="_blank" href="/slider/astronomy7.jpg">		  
+    <img src="/slider/astronomy7.jpg" style="width:10%;">
+	  	<a target="_blank" href="/slider/astronomy8.jpg">		  
+    <img src="/slider/astronomy8.jpg" style="width:10%;">
+	  	<a target="_blank" href="/slider/astronomy9.jpg">		  
+    <img src="/slider/astronomy9.jpg" style="width:10%;">
+  </div>
+
+ </div> 
+ </div>
+</body>
+</html>
