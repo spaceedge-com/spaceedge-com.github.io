@@ -1,39 +1,39 @@
 /* CSS */       
-	html { font-size: 62.5%; /* =14px=1.4rem */ } 
-	body {  color: #fcf;
-                background-color: rgba(20,20,20,0.20);
+	html {  font-size: 62.5%; /* =14px=1.4rem */ } 
+	body {  font-family: 'Times New Roman', Times, serif; font-size: 17px; font-size: 1.7rem; 
+                color: #fff; background-color: rgba(20,20,20,0.20);
 		padding-bottom: 100px;
 		margin-bottom: 100px;
 		text-shadow: 0 0 white;
 		font-family: 'Serif';
-   	        font-size: 14px; font-size: 1.4rem;/* =14px */
+   	        font-size: 18px; font-size: 1.8rem; 
 		overflow-x: hidden;
 	    } 
          h1 { 
-	     color: #cceecc; font-size: 25px; font-size: 2.5rem; font-family: 'URW Chancery L', Cursive; font-style: italic; font-weight: 600; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.20em; margin-bottom: 10px; padding: 3px; border-top: 0.50em outset rgba(238,150,238,.80); /*padding: top right bot left*/
+	     font-family: 'Cursive'; font-style: italic; font-size: 24px; font-size: 2.4rem;  
+	     color: #fef; font-weight: 800;  text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.20em; 
+             margin-bottom: 10px; padding: 3px; border-top: 0.50em outset rgba(238,150,238,.80); /*padding: top right bot left*/
             }
 	 h2 { 
-	     color: #cec; font-size: 19px; font-size: 1.9rem; font-family: 'Cursive'; font-weight: 400; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.15em; margin-bottom: 5px;
+	     font-family: 'Cursive'; color: #cec; font-size: 21px; font-size: 2.1rem; font-weight: 600; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.15em; margin-bottom: 5px;
             }		    	
 	 h3 { 
-	     color: #f9c; font-size: 17px; font-size: 1.7rem; font-family: 'Cursive'; font-weight: 400; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.15em; margin-bottom: 5px;
+	     font-family: 'Cursive'; color: #cec; font-size: 19px; font-size: 1.9rem; font-weight: 600; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.15em; margin-bottom: 5px;
             }
 	  p { 
-	     font-family: 'Playfair Display', 'Didot', 'Times New Roman', Times, serif; 
-	     font-size: 15px; font-size: 1.55rem; font-style: normal;
-	     -webkit-font-smoothing: antialiased; text-shadow: 0 0 white; line-height: 1.15em;  color: #fcf;
-            }				
+	     font-family: 'Times New Roman', Times, serif; color: #fff; font-size: 18px; font-size: 1.80rem; 
+	     font-style: normal; line-height: 1.15em; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased;  
+            }		
+	 em {   color: #FFFC00;  font-weight:600; font-style: oblique; font-size: 105%}				
 	  a { 	color: hotpink;  }
 	 hr {   border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
-	 em {   color: #FFFC00;  font-weight:600; font-style: oblique; font-size: 110%} 
-	
 	img {   max-width: 100%; height: auto;  /* padding: top right bottom left */ 
 		padding: 3px; display: block; margin: 0 auto; border: 1px solid rgba(255,255,255,.5); 
 	    }	
      figure { 	margin: 0 auto; display: block; }
-     figure img, figcaption { min-width: 290px; max-width: 90%; font-size: 90%; font-style: italic; margin: 2px; }
+     figure img, figcaption { min-width: 290px; max-width: 90%; font-size: 85%; font-style: italic; margin: 2px; }
     
-	.small {   font-size: 90%;  font-style: italic; }
+	.small {   font-size: 85%;  font-style: italic; }
 	
 	/* Custom Scrollbars, leave here for objects */
  	/* Firefox */
@@ -43,4 +43,5 @@
 	*::-webkit-scrollbar-track {  background: rgba(0,0,0,.21);  }
 	*::-webkit-scrollbar-thumb { background-color: rgba(255,30,255,.51); 
 				     border: 1px solid rgba(0,0,0,.21); border-radius: 10px; }
+
 	
