@@ -32,10 +32,11 @@ p {          font-family: 'Times New Roman', Times, serif; color: #fff; font-siz
 a { 	color: hotpink;  }
 em {    color: #FCFC60; font-size: 1.05em; font-style: oblique; font-weight: 800; 
 	display: block; padding: 1em 1em 0 1em; text-align: center; } 
+cite {  text-align: right;  margin: 0 auto;  width: 75%;  display: inline-block;  }
 hr {    border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
 img {   max-width: 100%; height: auto;  /* padding: top right bottom left */ 
 	padding: 3px; display: block; margin: 0 auto; border: 1px solid rgba(255,255,255,.5); 
-	    }
+	}
 figure {      margin: 0 auto; display: block; }
 figure img, figcaption {    min-width: 290px; max-width: 90%; font-size: 85%; font-style: italic; margin: 2px; }
 .small {    font-size: 85%;  font-style: italic;  }
