@@ -29,7 +29,7 @@ p {          font-family: 'Times New Roman', Times, serif; color: #fff; font-siz
 	     line-height: 1.15em; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; margin: 1.2em; 
             }				
 a { 	color: hotpink;  }
-em {    color: #FFFC00; font-weight:600; font-size: 105%; font-style: oblique; font-weight: 900; 
+em {    color: #FCFC60; font-size: 105%; font-style: oblique; font-weight: 800; 
 	display: block; padding: 1em 1em 0 1em; text-align: center; } 
 hr {    border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
 img {   max-width: 100%; height: auto;  /* padding: top right bottom left */ 
