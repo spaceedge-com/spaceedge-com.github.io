@@ -14,8 +14,7 @@ body {      font-family: 'Times New Roman', Times, serif; font-size: 17px; font-
 	     display: inline-block; margin: 0 auto; padding-left: 10px; text-shadow: 0 0 white; 
 		/* border: 0.69em outset rgba(238,138,238,.80); background-color: rgba(0,0,0,0.25); */
             }
-#he .her h1 { 
-	     font-size: 31px; font-size: 3.1em; color: #69f; border: none; margin: 1%; padding 3%;
+#he .her h1 {  font-size: 31px; font-size: 3.1em; color: #69f; border: none; margin: 1%; padding 3%;
 	    }
 h1 {         font-family: 'Cursive'; font-style: italic; font-size: 24px; font-size: 2.4rem; color: #fef; font-weight: 900;  
 	     text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.20em; 
@@ -29,7 +28,7 @@ p {          font-family: 'Times New Roman', Times, serif; color: #fff; font-siz
 	     line-height: 1.15em; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; margin: 1.2em; 
             }				
 a { 	color: hotpink;  }
-em {    color: #FCFC60; font-size: 105%; font-style: oblique; font-weight: 800; 
+em {    color: #FCFC60; font-size: 1.05em; font-style: oblique; font-weight: 800; 
 	display: block; padding: 1em 1em 0 1em; text-align: center; } 
 hr {    border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
 img {   max-width: 100%; height: auto;  /* padding: top right bottom left */ 
