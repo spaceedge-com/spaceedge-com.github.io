@@ -30,7 +30,7 @@ p {          font-family: 'Times New Roman', Times, serif; color: #fff; font-siz
             }				
 a { 	color: hotpink;  }
 em {    color: #FFFC00; font-weight:600; font-size: 105%; font-style: oblique; font-weight: 900; 
-	display: block; padding: 1em; text-align:center; } 
+	display: block; padding: 1em 1em 0 1em; text-align: center; } 
 hr {    border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
 img {   max-width: 100%; height: auto;  /* padding: top right bottom left */ 
 	padding: 3px; display: block; margin: 0 auto; border: 1px solid rgba(255,255,255,.5); 
