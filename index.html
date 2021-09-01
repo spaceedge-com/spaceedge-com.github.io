@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <!-- meta tags -->
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>SpaceEdge.com</title>		
@@ -12,33 +11,23 @@
  <link rel="stylesheet" href="/css/default.css">
 	
 <style>
-	:root {
+       :root {
 		--t25: rgba(0,0,0,0.25);
   		--tblue: rgba(0,0,255,0.25);
   		--white: #faf0e6; 
-	      }
+	     }
 
-        html { font-size: 62.5%;  /* =14px=1.4rem */ } 
-        body {
-	     font-family: 'Times New Roman', Times, serif; font-size: 17px; font-size: 1.7rem; 
-	     color: #fff; background-color: #000; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; 	
-	     background-image: url('/images/slider/astronomy2.jpg'); background-attachment: fixed; -moz-background-size: cover; 
-	     -webkit-background-size: cover; -o-background-size: cover; background-size: cover;  overflow-x: hidden;
-	     background-position: top left; background-repeat: no-repeat; background-origin: content-box;
-	     box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.35);
-             }
-        .her {
-             color: #dcf; float: left; width:49.90%; min-width:300px; max-width:99%; height:88px; max-height:98px; 
-	     display: inline-block; margin: 0 auto; padding-left: 10px; text-shadow: 0 0 white; 
-		/* border: 0.69em outset rgba(238,138,238,.80); background-color: rgba(0,0,0,0.25); */
-             }
-     #he .her h1 { 
-	     font-size: 31px; font-size: 3.1em; color: #69f; border: none; margin: 1%; padding 3%;
-	     }			
-          em {   
-	     color: #FFFC00; font-weight:600; font-size: 105%; font-style: oblique; font-weight: 900; 
-		display: inline list-item; padding: 1em; text-align:center; } 	
+        html {   font-size: 62.5%;  /* =14px=1.4rem */ } 
+        body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-size: 1.7rem; 
+	         color: #fff; background-color: #000; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; 	
+	         background-image: url('/images/slider/astronomy2.jpg'); background-attachment: fixed; -moz-background-size: cover; 
+	         -webkit-background-size: cover; -o-background-size: cover; background-size: cover;  overflow-x: hidden;
+	         background-position: top left; background-repeat: no-repeat; background-origin: content-box;
+	         box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.35);
+             }	
+          em {   display: inline list-item; padding: 1em; } 	
 		
+	
     /* Three equal columns that floats next to each other */
     .column {
  	    float: left; width:30.30%; min-width:300px; max-width:99%; height:900px; min-height:90%; max-height:100%; 
@@ -53,10 +42,10 @@
 	/* Clear floats after the columns */
        .row:after { content: ""; float: left; display: block; clear: both;  }
         /* Responsive layout - screen < 800px - stack columns verticaly, instead of next to each other */
-        @media (max-width: 800px) {  
-		 	    .column { width: 95%; min-width:93%; max-width: 99%; border: none; margin-right: 5px; }	
-			    #expand { display: none; }
-				  }
+          @media (max-width: 800px) {  
+		 	      .column { width: 95%; min-width:93%; max-width: 99%; border: none; margin-right: 5px; }	
+			      #expand { display: none; }
+				    }
 		
       .articles { 
                 font-family: 'Serif'; color: #fff; text-shadow: 0 0 white; background-color: rgba(0,0,0,0.05); 
@@ -66,14 +55,10 @@
             	}
 				
 
-		/*  Don't change data object height otherwise, mucks scrolling */
+		/*  Don't change data object height otherwise, !for scrolling! */
 		object { 
-			width:100%;
-			height: 100%;
-    			max-height: 899px;
-			clear:both;
-    		        display: block;
-			}
+			width:100%; height: 100%; max-height: 899px; clear:both; display: block;
+		       }
 
         /* Create a custom checkbox button expands width */
 	label {
