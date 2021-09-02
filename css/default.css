@@ -34,7 +34,7 @@ img {   max-width: 100%; height: auto;  /* padding: top right bottom left */
 	padding: 3px; display: block; margin: 0 auto; border: 1px solid rgba(255,255,255,.5); 
 	}
 figure {      margin: 0 auto; display: block; }
-figure img, figcaption {   color:888; min-width: 290px; max-width: 85%; font-size: 85%; font-style: italic; margin:1px; }
+figure img, figcaption {   color:#888; min-width: 290px; max-width: 85%; font-size: 85%; font-style: italic; margin:1px; }
 .small {    font-size: 85%;  font-style: italic;  }
 	
 	/* Custom Scrollbars, leave here for objects */
