@@ -9,13 +9,13 @@ h1 {         font-family: 'Cursive'; font-style: italic; font-size: 24px; font-s
 	     line-height: 1.20em; margin: .69em .69em .69em .33em; padding: 2.1%;
                
             }
-h2 {         font-family: 'Cursive'; font-size: 21px; font-size: 2.1rem; color: #cec; font-weight: 800; text-shadow: 0 0 white;
+h2 {         font-family: 'Cursive'; font-size: 20px; font-size: 2.0rem; color: #cec; font-weight: 800; text-shadow: 0 0 white;
 	     -webkit-font-smoothing: antialiased; line-height: 1.15em; margin: 1.1em; padding: 2.0px; 
             }		    	
-h3 {         font-family: 'Cursive'; font-size: 19px; font-size: 1.9rem; color: #cec; font-weight: 800; text-shadow: 0 0 white; 
+h3 {         font-family: 'Cursive'; font-size: 17px; font-size: 1.7rem; color: #cec; font-weight: 800; text-shadow: 0 0 white; 
 	     -webkit-font-smoothing: antialiased; line-height: 1.15em; margin: 1.1em; padding: 2.0px; 
             }
-p {          font-family: 'Times New Roman', Times, serif; color: #fff; font-size: 18px; font-style: normal; font-size: 1.80rem; 
+p {          font-family: 'Times New Roman', Times, serif; color:#fff; font-size: 18px; font-size: 1.8rem; font-style: normal;  
 	     line-height: 1.15em; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; margin: 1.15em; 
             }				
 a { 	color: hotpink;  }
