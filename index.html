@@ -61,36 +61,31 @@
             	}
       .contents { 
                 font-family: 'Serif'; color: #fff; text-shadow: 0 0 white; background-color: rgba(0,0,0,0.05); 
-	        max-width: 100%; height: 1500px; max-height: 100%; margin: 5px 1px 20px 5px; padding: 5px 5px 20px 5px; 
+	        max-width: 100%; min-height:2500px; max-height: 100%; margin: 5px 1px 20px 5px; padding: 5px 5px 20px 5px; 
 	        word-break: break-word; overflow-x: hidden; overflow-y: hidden; text-overflow: ellipsis; display: -webkit-box; 
 	        -webkit-box-orient: vertical; /*padding: top right bottom left*/
             	}
 						
-
-		/*  Don't change data object height otherwise, !for scrolling! */
-		object { 
-			width:100%; height: 100%; max-height: 899px; clear:both; display: block;
-		       }
+	/*  Don't change data object height otherwise, !for scrolling! */
+	 object { 
+		width:100%; height: 100%; max-height: 899px; clear:both; display: block;
+	        }
 
         /* Create a custom checkbox button expands width */
 	label {
-    		background-color: rgba(238,150,238,.50); cursor: pointer;
-		border: 1px solid rgba(155,155,155,.70); border-radius:50px; 
-		position: sticky; position: -webkit-sticky; top: 0; 
-		display: block; width: 20%; margin: 1% 50% auto;
+    		background-color: rgba(238,150,238,.50); cursor:pointer; border:1px solid rgba(155,155,155,.70); border-radius:50px; 
+		position: sticky; position: -webkit-sticky; top: 0; display:block; width:20%; margin: 1% 50% auto;
 		}
 	label:after { cursor: pointer; }
 	label:hover { background:rgba(128,128,128,.50);  }
-		#cb { -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }	
+		#cb { -webkit-transform: rotate(45deg); transform: rotate(45deg); }	
 	/* checkbox select expand */
-    	input + .row .column {  
-	    		 float: left; width: 30.30%; max-width: 99%; /* min-width: 300px; */  
-	                 margin: 10px 15px 50px 1px; transition:width 0.5s;
-			 }
-        input:checked + .row .column { 
-	    		 width: 95%; max-width: 98%; display: block; max-height: 100%; 
-	                 margin: 5px 5px 50px 5px; transition:width 1s; 
-			 }
+    	input + .row .column { float: left; width: 30.30%; max-width: 99%; /* min-width: 300px; */  
+	                        margin: 10px 15px 50px 1px; transition:width 0.5s;
+			     }
+        input:checked + .row .column { width: 95%; max-width: 98%; display: block; max-height: 100%; 
+	                               margin: 5px 5px 50px 5px; transition:width 1s; 
+			             }
 	
 	
 	/* Browsers Custom Scrollbars */
