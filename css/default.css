@@ -19,12 +19,12 @@ p {          font-family: 'Times New Roman', Times, serif; color:#fff; font-size
 	     line-height: 1.15em; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; margin: 1.15em; 
             }				
 a { 	color:skyblue;  }
-em {    color:seashell; font-size: 1.0em; font-style: oblique; font-weight: 800; 
-	display: block; padding: .8em .8em 0 .2em; text-align: center; } 
+em {    color:seashell; font-size: 1.0em; font-style: oblique; text-align: center; } 
+quote { font-weight: 800; display: block; font-size: 1.0em; font-style: oblique; text-align: center; padding: .8em .8em 0 .2em; }
 cite {  color:#FCA; font-size: 0.9em; text-align: right;  margin: 0 auto;  width: 75%;  display: inline-block;  }
 hr {    border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
 img {   max-width:100%; min-width:290px; height:auto; display:block; padding:3px; margin: 0 auto; border: 1px solid rgba(255,255,255,.33); }
-figure {      margin: 0 auto; display:block; }
+figure {    margin: 0 auto; display:block; }
 figure img, figcaption {   color:#888; max-width:93%; font-size: 85%; font-style: italic; margin:0; }
 .small {    font-size: 85%;  font-style: italic;  }
 	
