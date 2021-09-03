@@ -19,7 +19,7 @@ p {          font-family: 'Times New Roman', Times, serif; color:#fff; font-size
 	     line-height: 1.15em; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; margin: 1.15em; 
             }				
 a { 	color:skyblue;  }
-em {    color: #FCFC60; font-size: 1.0em; font-style: oblique; font-weight: 800; 
+em {    color:seashell; font-size: 1.0em; font-style: oblique; font-weight: 800; 
 	display: block; padding: .8em .8em 0 .2em; text-align: center; } 
 cite {  color:#FCA; font-size: 0.9em; text-align: right;  margin: 0 auto;  width: 75%;  display: inline-block;  }
 hr {    border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
