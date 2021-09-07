@@ -24,8 +24,8 @@ quote { font-weight: 800; display: block; font-size: 1.0em; font-style: oblique;
 cite {  color:#FCA; font-size: 0.9em; text-align: right;  margin: 0 auto;  width: 75%;  display: inline-block;  }
 hr {    border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
 img {   min-width:290px; max-width:90%; height:auto; display:block; margin: 0 auto; border: 1px solid rgba(255,255,255,.33); }
-figure {    margin: 0 auto; display:block; }
-figure img, figcaption {   color:#888; max-width:99%; font-size: 85%; font-style: italic; margin: auto; }
+figure {    margin: 0 auto; display: block; text-align: center; }
+figure img, figcaption {   color:#888; text-align: center; max-width:90%; font-size: 85%; font-style: italic; margin: auto; }
 .small {    font-size: 85%;  font-style: italic;  }
 	
 	/* Custom Scrollbars, leave here for objects */
