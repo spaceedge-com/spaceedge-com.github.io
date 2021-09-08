@@ -20,7 +20,7 @@
        html {   font-size: 62.5%;  /* =14px=1.4rem */ } 
        body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-size: 1.7rem; 
 	        color: #fff; background-color: #000; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; 	
-	        background-image: url('/images/slider/astronomy2.jpg'); 
+	        /* background-image: url('/images/slider/astronomy2.jpg'); */
 	        background-attachment: fixed; -moz-background-size: cover; 
 	        -webkit-background-size: cover; -o-background-size: cover; background-size: cover;  overflow-x: hidden;
 	        background-position: top left; background-repeat: no-repeat; background-origin: content-box;
@@ -110,15 +110,25 @@
 		text-align:center; bottom:0px; flex-shrink:0; clear:both; background-color:var(--t25); 
 		padding-top:5px; margin-top:0; margin-bottom:0;  }
 
-	
+#body {
+background-image:url(/images/slider/astronomy1.jpg);
+background-attachment: fixed; -moz-background-size: cover; 
+-webkit-background-size: cover; -o-background-size: cover; 
+background-size: cover;  overflow-x: hidden;
+background-position: top left; background-repeat: no-repeat; 
+background-origin: content-box;
+box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.35);
+}
 </style> 
-	<script src="jquery.js"> 
-	      var images = ['astronomy1.jpg', 'astronomy2.jpg', 'astronomy3.jpg', 'astronomy4.jpg', 'astronomy5.jpg' 'astronomy6.jpg', 'astronomy7.jpg', 'astronomy8.jpg', 'astronomy9.jpg'];
-	      $('body').css({'background-image': 'url(/images/slider/' + images[Math.floor(Math.random() * images.length)] + ')'});
-	</script>
+	
+<script src="jquery.js"> 
+var images = ['astronomy1.jpg', 'astronomy2.jpg', 'astronomy3.jpg', 'astronomy4.jpg', 'astronomy5.jpg' 'astronomy6.jpg', 'astronomy7.jpg', 'astronomy8.jpg', 'astronomy9.jpg'];
+$('body').css({'background-image': 'url(/images/slider/' + images[Math.floor(Math.random() * images.length)] + ')'});
+	     document.getElementById("body").style.backgroundImage = "url("+ randomimage +")";
+</script>
 	
 </head>
-<body>
+<body id="body">
         
 <div id="he" class="row"> 
 	  <object data="/images/PhotoGrid.htm" type="text/html" style=" max-height:65px; max-width:98%; margin:1px;"></object> 	
