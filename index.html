@@ -121,10 +121,15 @@ box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.35);
 }
 </style> 
 	
-<script src="jquery.js"> 
-var images = ['astronomy1.jpg', 'astronomy2.jpg', 'astronomy3.jpg', 'astronomy4.jpg', 'astronomy5.jpg' 'astronomy6.jpg', 'astronomy7.jpg', 'astronomy8.jpg', 'astronomy9.jpg'];
-$('body').css({'background-image': 'url(/images/slider/' + images[Math.floor(Math.random() * images.length)] + ')'});
-	     document.getElementById("body").style.backgroundImage = "url("+ randomimage +")";
+<script> 
+if (document.getElementById) { window.onload = swap };
+function swap() {
+var numimages=9;
+rndimg = new Array("/images/slider/astronomy1.jpg", "/images/slider/astronomy2.jpg","/images/slider/astronomy3.jpg", "/images/slider/astronomy4.jpg", "/images/slider/astronomy5.jpg", "/images/slider/astronomy6.jpg", "/images/slider/astronomy7.jpg" ,"/images/slider/astronomy8.jpg", "/images/slider/astronomy9.jpg");
+x=(Math.floor(Math.random()*numimages));
+randomimage=(rndimg[x]);
+document.getElementById("body").style.backgroundImage = "url("+ randomimage +")";
+}
 </script>
 	
 </head>
