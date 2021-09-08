@@ -21,10 +21,6 @@
        body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-size: 1.7rem; 
 	        color: #fff; background-color: #000; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; 	
 	        /* background-image: url('/images/slider/astronomy2.jpg'); */
-	     <script type="text/javascript"> 
-	      var images = ['astronomy1.jpg', 'astronomy2.jpg', 'astronomy3.jpg', 'astronomy4.jpg', 'astronomy5.jpg' 'astronomy6.jpg', 'astronomy7.jpg', 'astronomy8.jpg', 'astronomy9.jpg'];
-	      $('html').css({'background-image': 'url(/images/slider/' + images[Math.floor(Math.random() * images.length)] + ')'});
-	     </script>
 	        background-attachment: fixed; -moz-background-size: cover; 
 	        -webkit-background-size: cover; -o-background-size: cover; background-size: cover;  overflow-x: hidden;
 	        background-position: top left; background-repeat: no-repeat; background-origin: content-box;
@@ -115,7 +111,12 @@
 		padding-top:5px; margin-top:0; margin-bottom:0;  }
 
 	
-</style>        
+</style> 
+	<script type="text/javascript"> 
+	      var images = ['astronomy1.jpg', 'astronomy2.jpg', 'astronomy3.jpg', 'astronomy4.jpg', 'astronomy5.jpg' 'astronomy6.jpg', 'astronomy7.jpg', 'astronomy8.jpg', 'astronomy9.jpg'];
+	      $('html').css({'background-image': 'url(/images/slider/' + images[Math.floor(Math.random() * images.length)] + ')'});
+	</script>
+	
 </head>
 <body>
         
