@@ -21,7 +21,7 @@ p {        font-family: 'Times New Roman', Times, serif; color:#fff; font-size: 
 a { 	color:skyblue;  }
 em {    color:seashell; font-size: 1.0em; font-style: oblique; text-align: center; } 
 quote { font-weight: 800; display: block; font-size: 1.0em; font-style: oblique; text-align: center; padding: .8em .8em 0 .2em; }
-cite {  color:#FCA; font-size: 0.9em; text-align: right;  margin: 0 auto;  width: 75%;  display: inline-block;  }
+cite {  color:#FCA; font-size: 0.9em; text-align: right;  margin:0 auto; width: 75%; padding-bottom: .5em; display: inline-block;  }
 hr {    border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
 img {   min-width:290px; max-width:90%; height:auto; display:block; margin: 0 auto; border: 1px solid rgba(255,255,255,.33); }
 figure {    margin: 0 auto; display: block; text-align: center; }
