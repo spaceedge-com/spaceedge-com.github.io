@@ -1,21 +1,20 @@
 /* CSS  - padding: top right bottom left */       
-html {       font-size: 62.5%; /* =14px=1.4rem */ } 
-body {       font-family: 'Times New Roman', Times, serif; font-size: 18px; font-size: 1.8rem; color: #fff; 
-             background-color: rgba(20,20,20,0.20); text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; 
-	     overflow-x: hidden;
+html {    font-size: 62.5%; /* =14px=1.4rem */ } 
+body {    font-family: 'Times New Roman', Times, serif; font-size: 18px; font-size: 1.8rem; color: #fff; 
+          background-color: rgba(20,20,20,0.20); text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; overflow-x: hidden;
 	    } 
-h1 {       font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 24px; font-size: 2.4rem; color: #fef; font-weight: 900;  
+h1 {     font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 24px; font-size: 2.4rem; color: #fef; font-weight: 900;  
 	   text-shadow: 0 0 white; -webkit-font-smoothing: antialiased;  border-top: 0.50em outset rgba(238,150,238,.80);
 	   line-height: 1.20em; margin: .69em .69em .69em .33em; 
                
             }
-h2 {       font-family: 'Times New Roman', Times, serif; font-size: 20px; font-size: 2.0rem; color: #cec; font-weight: 800; text-shadow: 0 0 white;
+h2 {     font-family: 'Times New Roman', Times, serif; font-size: 20px; font-size: 2.0rem; color: #cec; font-weight: 800; text-shadow: 0 0 white;
 	     -webkit-font-smoothing: antialiased; line-height: 1.15em; margin: .5em; 
             }		    	
-h3 {       font-family: 'Times New Roman', Times, serif; font-size: 17px; font-size: 1.7rem; color: #cec; font-weight: 800; text-shadow: 0 0 white; 
+h3 {     font-family: 'Times New Roman', Times, serif; font-size: 17px; font-size: 1.7rem; color: #cec; font-weight: 800; text-shadow: 0 0 white; 
 	     -webkit-font-smoothing: antialiased; line-height: 1.15em; margin: .5em; 
             }
-p {        font-family: 'Times New Roman', Times, serif; color:#fff; font-size: 18px; font-size: 1.8rem; font-style: normal;  
+p {      font-family: 'Times New Roman', Times, serif; color:#fff; font-size: 18px; font-size: 1.8rem; font-style: normal;  
 	     line-height: 1.15em; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; margin: .4em; 
             }				
 a { 	color:skyblue;  }
@@ -28,7 +27,18 @@ figure {    margin: 0 auto; display: block; text-align: center; }
 figure img, figcaption {   color:#888; text-align: center; max-width:98%; font-size: 85%; font-style: italic; margin: auto; }
 figcaption {  padding-bottom: 1em;  }
 .small {    font-size: 85%;  font-style: italic;  }
-	
+
+     .dataobject {
+		  max-width:100%;
+		  height:2500px; min-height:2000px; max-height:100%;
+		  color: #fff; text-shadow: 0 0 white; display: inline-block; 
+		  margin-top: 3%; margin-bottom: 50px; padding-bottom: 50px; 
+		  overflow-x: hidden; overflow-y: hidden;
+		  }
+	      pre {
+    		   padding-left: 5%;
+		  }
+
 	/* Custom Scrollbars, leave here for objects */
  	/* Firefox */
 	* {  scrollbar-width: thin;  scrollbar-color: rgba(255,30,255,.51) rgba(0,0,0,.21); }
@@ -37,4 +47,5 @@ figcaption {  padding-bottom: 1em;  }
 	*::-webkit-scrollbar-track {  background: rgba(0,0,0,.21);  }
 	*::-webkit-scrollbar-thumb { background-color: rgba(255,30,255,.51); 
 				     border: 1px solid rgba(0,0,0,.21); border-radius: 10px; }
+
 
