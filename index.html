@@ -134,8 +134,11 @@
 	}
 </style> 
 
-<!-- JS in-head, #body random background -->
+<!-- JS, #body random background -->
+	<script src="/random-background.js<script>
+<!--
 <script> 
+//JS in-head 
 if (document.getElementById) { window.onload = swap };
 function swap() {
 var numimages=8;
@@ -145,7 +148,8 @@ randomimage=(rndimg[x]);
 document.getElementById("body").style.backgroundImage = "url("+ randomimage +")";
 }
 </script>
-	
+-->
+
 </head>
 <body id="body">
         
