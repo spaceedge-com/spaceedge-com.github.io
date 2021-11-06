@@ -128,6 +128,8 @@
 	button { border-radius: 15px; background-color: rgba(0,0,0,.25); color: white; font-size: 14px; 
 		border: 1px solid white; }
 	
+	.search-form { position:static; text-align:center; margin: 0 auto; width: 90%; }
+	
 	#footer { color:#fcf; text-shadow: 0 0 black; position:static; width:100%; height:30px; max-height:50px; 
 		text-align:center; bottom:0px; flex-shrink:0; clear:both; background-color:var(--t25); 
 		padding-top:5px; margin-top:0; margin-bottom:0;  }
@@ -163,7 +165,37 @@
 </div>
 
     <div class="spc5"> <br> </div> 
-
+		     
+    <div class="search-form" >  
+	<hr>
+	<form name="web_search_engines">
+	::<input type="text" name="searchterms" placeholder="Search the Web..">:
+	<select name="search_engines" id="search_engines" onchange="return dosearch();">
+	<option value="select-item">∇</option>	
+	<option value="https://ask.com/web?q=">Ask</option>
+	<option value="https://www.bing.com/search?q=">Bing</option>
+	<option value="https://www.dogpile.com/info.dogpl/search/web?q=">Dogpile</option>
+	<option value="https://duckduckgo.com/?q=">Duckduckgo</option>
+	<option value="https://www.ecosia.org/search?q=">Ecosia</option>
+	<option value="https://swisscows.ch/?query=">Swisscows</option>
+	<option value="https://en.wikipedia.org/wiki/wiki.html?search=">Wikipedia</option>
+	<option value="https://www.wolframalpha.com/input/?i=">Wolframalpha</option>
+	<option value="https://search.yahoo.com/search?p=">Yahoo!</option>
+	</select>
+	</form>
+	<script type="text/javascript">
+	function dosearch() {
+	var s_term=document.web_search_engines;
+	var submitto = s_term.search_engines.options[s_term.search_engines.selectedIndex].value + escape(s_term.searchterms.value);
+	window.location.href = submitto;
+	return false;
+	}
+	</script>
+	<hr>
+    </div>
+	
+    <div class="spc5"> <br> </div> 
+		     
     <!-- ddg search-box -->
     <div class="search-box">
 	<form method="get" id="ddgSearch" action="https://duckduckgo.com/">
