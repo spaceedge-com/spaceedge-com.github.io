@@ -170,27 +170,27 @@
 		      
     <div class="search-form" >  
 	<form name="web_search_engines">
-	WebSearch<input type="text" name="searchterms" placeholder="Search the Web..">
-	<select name="search_engines" id="search_engines" onchange="return dosearch();">
-	<option value="#">∇</option>	
-	<option value="https://ask.com/web?q=">Ask</option>
-	<option value="https://www.bing.com/search?q=">Bing</option>
-	<option value="https://www.dogpile.com/info.dogpl/search/web?q=">Dogpile</option>
-	<option value="https://duckduckgo.com/?q=">Duckduckgo</option>
-	<option value="https://www.ecosia.org/search?q=">Ecosia</option>
-	<option value="https://swisscows.ch/?query=">Swisscows</option>
-	<option value="https://en.wikipedia.org/wiki/wiki.html?search=">Wikipedia</option>
-	<option value="https://www.wolframalpha.com/input/?i=">Wolframalpha</option>
-	<option value="https://search.yahoo.com/search?p=">Yahoo!</option>
-	</select>
+	  <input type="text" name="searchterms" placeholder="Search the Web..">
+	 <select name="search_engines" id="search_engines" onchange="return dosearch();">
+	  <option value="#">∇</option>	
+	  <option value="https://ask.com/web?q=">Ask</option>
+	  <option value="https://www.bing.com/search?q=">Bing</option>
+	  <option value="https://www.dogpile.com/info.dogpl/search/web?q=">Dogpile</option>
+	  <option value="https://duckduckgo.com/?q=">Duckduckgo</option>
+	  <option value="https://www.ecosia.org/search?q=">Ecosia</option>
+	  <option value="https://swisscows.ch/?query=">Swisscows</option>
+	  <option value="https://en.wikipedia.org/wiki/wiki.html?search=">Wikipedia</option>
+	  <option value="https://www.wolframalpha.com/input/?i=">Wolframalpha</option>
+	  <option value="https://search.yahoo.com/search?p=">Yahoo!</option>
+	 </select>
 	</form>
 	<script type="text/javascript">
-	function dosearch() {
-	var s_term=document.web_search_engines;
-	var submitto = s_term.search_engines.options[s_term.search_engines.selectedIndex].value + escape(s_term.searchterms.value);
-	window.location.href = submitto;
-	return false;
-	}
+	  function dosearch() {
+	  var s_term=document.web_search_engines;
+	  var submitto = s_term.search_engines.options[s_term.search_engines.selectedIndex].value + escape(s_term.searchterms.value);
+	  window.location.href = submitto;
+	  return false;
+	  }
 	</script>
     </div>
 	
