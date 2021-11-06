@@ -120,15 +120,16 @@
 	/* Site search box */
         .search-box { width: 325px; padding:0; margin:0 auto; display: inline;  }
 	#ddgSearch { display: block; text-align:right; padding: 0; }
-	input[type=text] { /* Collapsed search input field */
-  			width: 70px; -webkit-transition: width 0.4s ease-in-out; transition: width 0.4s ease-in-out;
+	input[type=text] { /* Collapse search input field */
+  			 width: 70px; -webkit-transition: width 0.4s ease-in-out; transition: width 0.4s ease-in-out;
 			 }
 	input[type=text]:focus { width: 275px;  /* When the input field gets focus, expands width */ } 
-	input { background-color: rgba(0,0,0,.5); width: auto; border-radius: 5px; color:white; border: 0; }
+	input {  background-color: rgba(255,255,255, 0.5); width: auto; border-radius: 5px; color:white; border: 0; }
 	button { border-radius: 15px; background-color: rgba(0,0,0,.25); color: white; font-size: 14px; 
 		border: 1px solid white; }
 	
-	.search-form { position:static; text-align:center; margin: 0 auto; width: 90%; }
+	.search-form {  background-color:rgba(255,255,255, 0.5); 
+			position:static; text-align:center; margin:0 auto; width: 90%; }
 	
 	#footer { color:#fcf; text-shadow: 0 0 black; position:static; width:100%; height:30px; max-height:50px; 
 		text-align:center; bottom:0px; flex-shrink:0; clear:both; background-color:var(--t25); 
@@ -164,10 +165,9 @@
 	      </div>  
 </div>
 
-    <div class="spc5"> <br> </div> 
-		     
+    <div class="spc15"> <br> </div> 
+		      
     <div class="search-form" >  
-	<hr>
 	<form name="web_search_engines">
 	::<input type="text" name="searchterms" placeholder="Search the Web..">:
 	<select name="search_engines" id="search_engines" onchange="return dosearch();">
