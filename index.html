@@ -185,7 +185,7 @@
 	 </select>
 	</form>
 	<script type="text/javascript">
-		$( 'option[value="#"]' ).prop( 'selected', 'selected' );		      
+	     $( 'option[value="#"]' ).prop( 'selected', 'selected' ); //jQuery to reselect#		      
 	  function dosearch() {
 	  var s_term=document.web_search_engines;
 	  var submitto = s_term.search_engines.options[s_term.search_engines.selectedIndex].value + escape(s_term.searchterms.value);
