@@ -121,12 +121,13 @@
 	.spc15 { position: relative; clear:both; float:inherit; height:15px; margin:15px; padding:15px; }
 	
 	/* Site search box */
-        .search-box { width: 325px; padding:0; margin:0 auto; display: inline;  }
+        .ddg { width: 325px; padding:0; margin:0 auto; display: inline;  }
 	 #ddgSearch { display: block; text-align:right; padding: 0; }
 	
-	input[type=text] { /* Collapse search input field */
+	.ddg input[type=text] { /* Collapse search input field */
 			   width: 70px; -webkit-transition: width 0.4s ease-in-out; transition: width 0.4s ease-in-out; }
-	input[type=text]:focus { width: 275px; border: 1px solid white;  /* When input field gets focus, expands width */ } 
+	input[type=text]:focus { /* When input gets focus, expands width */ 
+			   width: 225px; border: 1px solid white;  } 
 	input {  border:1px inset; border-radius: 5px; background-color:rgba(0,0,0, 0.25); width: auto; color:white; }
 	button { border: 1px solid white; border-radius: 15px; background-color:rgba(0,0,0,.25); color: white; font-size: 14px;}
 	
@@ -199,8 +200,8 @@
 	
     <div class="spc5"> <br> </div> 
 		     
-    <!-- ddg search-box -->
-    <div class="search-box">
+    <!-- ddg site search -->
+    <div class="ddg">
 	<form method="get" id="ddgSearch" action="https://duckduckgo.com/">
     	<input type="hidden" name="sites" value="spaceedge.com"/>
     	<input type="hidden" name="k7" value="#000000"/>
