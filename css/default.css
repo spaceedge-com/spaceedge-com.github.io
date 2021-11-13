@@ -18,7 +18,7 @@ p {      font-family: 'Times New Roman', Times, serif; color:#fff; font-size: 18
 	     line-height: 1.15em; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; margin: .4em; 
             }				
 a { 	color:skyblue;  }
-em {    color:seashell; font-size: 1.0em; font-style: oblique; text-align: center; } 
+em {    color:seashell; font-size: 1.0em; font-style: oblique; text-align: center; border-bottom: double 3px; } 
 quote { font-weight: 800; display: block; font-size: 1.0em; font-style: oblique; text-align: center; padding: .8em .8em 0 .2em; }
 cite {  color:#FCA; font-size: 0.9em; text-align: right;  margin:0 auto; width: 75%; padding-bottom: .5em; display: inline-block;  }
 hr {    border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
