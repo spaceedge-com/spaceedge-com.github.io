@@ -68,14 +68,14 @@
       .articles { 
                 font-family: 'Serif'; color: #fff; text-shadow: 0 0 white; background-color: rgba(0,0,0,0.05); 
 	        max-width: 100%; height: 1500px; max-height: 100%; margin: 5px 1px 20px 5px; padding: 5px 5px 5px 5px; 
-	        word-break: break-word; overflow-x: hidden; overflow-y: auto; text-overflow: ellipsis; display: 
+	        word-break: break-word; overflow-x: hidden; overflow-y:hidden; text-overflow: ellipsis; display: 
 	        /* line-height:25px; fallback*/ -webkit-box; -webkit-line-clamp:50; /* # lines*/ -webkit-box-orient: vertical; 
             	}
 						
-	 /*  For ( object data=" ) Don't change height otherwise, !for scrolling! */
-	 object { 
-		width:100%; height: 100%; max-height: 899px; clear:both; display: block;
-	        }
+	  /*  For ( object data=" ) Don't change height otherwise, !for scrolling! */
+	  object { 
+		  width:100%; height: 100%; max-height: 899px; clear:both; display: block; overflow-y: auto;
+	         }
 
               /* Create a custom checkbox button expands width */
 	      label {
