@@ -39,6 +39,10 @@ figcaption {  padding-bottom: 1em;  }
    	          /* Optional, provides a smooth transition */
     	          transition: scrollbar-color .25s ease-in-out;
 		  }
+	.dataobject:hover {
+    		   /* Sets the color back to the default value. You can choose a different color */
+    		   scrollbar-color: blue;
+		  }
 	  pre {   padding: 5%;  }
 
 
