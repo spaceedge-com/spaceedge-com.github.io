@@ -122,16 +122,15 @@
 	.spc5 { position: relative; clear:both; float:inherit; height:5px; margin:5px; padding:5px; }
 	.spc15 { position: relative; clear:both; float:inherit; height:15px; margin:15px; padding:15px; }
 	
-	/* Site search box */
-        .ddg { width: 325px; padding-top:10px; margin:0 auto; display: inline; height:45px;}
-	 #ddgSearch { display: block; text-align:right; padding: 0; }
+	/* ddg site search box */
+      .ddg { width: 325px; padding-top:10px; margin:0 auto; display: inline; height:45px;}
+       #ddgSearch { display: block; text-align:right; padding: 0; }
+      .ddg input[type=text] { /* Collapse search input field */
+			   width: 40px; -webkit-transition: width 0.4s ease-in-out; transition: width 0.4s ease-in-out; }
+      .ddg input[type=text]:focus { /* Expand input when focused */ width: 200px; border: 1px solid white;  } 
+      .ddg button { border: 1px solid white; border-radius:15px; background-color:rgba(0,0,0,.25); color:white; font-size: 14px;}
 	
-	.ddg input[type=text] { /* Collapse search input field */
-			   width: 70px; -webkit-transition: width 0.4s ease-in-out; transition: width 0.4s ease-in-out; }
-	input[type=text]:focus { /* When input gets focus, expands width */ 
-			   width: 200px; border: 1px solid white;  } 
-	input {  border:1px inset; border-radius: 10px; background-color:rgba(0,0,0, 0.25); width:200px; color:white; }
-	button { border: 1px solid white; border-radius: 15px; background-color:rgba(0,0,0,.25); color: white; font-size: 14px;}
+	 input {  border:1px inset; border-radius: 10px; background-color:rgba(0,0,0, 0.25); width:200px; color:white; }
 	
 	.multi-search { position:static; text-align:center; margin:0 auto; width: 90%; }
 	 #search_engines { font-size:12px; color:white; width:44px; border: outset 1px rgba(255,255,255,0.75); border-radius:10px; 
@@ -155,7 +154,7 @@
 		}
 </style> 
 	
-<!-- JS script from external file for #body random background, -->
+<!-- JS #body random background from external file, -->
 <script type="text/javascript" src="/random-background.js"></script>	
 
 </head>
@@ -186,8 +185,8 @@
     			<input type="hidden" name="k7" value="#000000"/> <input type="hidden" name="k8" value="#ffffff"/>
     			<input type="hidden" name="k9" value="#80b9fd"/> <input type="hidden" name="kx" value="#4ad8b8"/>
    			<input type="hidden" name="kj" value="#395c13"/> <input type="hidden" name="kt" value="p"/>
-    			<input type="text" name="q" placeholder="site…" aria-label="Search spaceedge.com on DuckDuckGo"/>
-    		       <button type="submit">ᐒ</button>
+    			<input type="text" name="q" placeholder="search…" aria-label="Search spaceedge.com on DuckDuckGo"/>
+    		       <button type="submit">🔍</button>
 		    </form>
     		   </div>	
 					    
