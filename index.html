@@ -85,12 +85,11 @@
 
         /* Custom checkbox button expands columns width */	
 	/* checkbox select expand */
-    	input + .row .column { float: left; width: 40.40%; max-width: 99%; /* min-width: 300px; */  
-	                        margin: 10px 15px 50px 1px; transition:width 0.5s;     }
+    	input + .row .column { float: left; margin: 0 auto; width: 40.40%; max-width: 99%; /* min-width: 300px; */  
+	                        /* margin: 10px 15px 50px 1px; */ transition:width 0.5s;     }
         input:checked + .row .column { width: 95%; max-width: 98%; display: block; max-height: 100%; 
-	                               margin: 5px 5px 50px 5px; transition:width 1s;  }
-        label {      cursor:pointer; border:1px solid rgba(155,155,155,.70); 
-		     border-radius:50px; display:inline; width:20%; margin: 1% 50% auto;  }
+	                               /* margin: 5px 5px 50px 5px; */ transition:width 1s;  }
+        label { cursor:pointer; border:1px solid rgba(155,155,155,.70); border-radius:50px; display:inline; width:20%; margin: 0 auto; }
 	label:after { cursor: pointer; }
 	label:hover { background:rgba(128,128,128,.50);  }
 		#cb { transform: rotate(180deg); }
