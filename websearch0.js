@@ -1,4 +1,3 @@
-//websearch.js	
 	$( 'option[value="#"]' ).prop( 'selected', 'selected' ); //jQuery reselects default#		      
 function dosearch() {
 var s_term=document.web_search_form;
