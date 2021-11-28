@@ -120,10 +120,10 @@
        .ddg input[type=text]:focus { /* Expand input when focused */ width: 200px; border: 1px solid white;  } 
        .ddg button { border: 1px solid white; border-radius:15px; background-color:rgba(0,0,0,.25); font-size: 14px;}
 	
-	.multi-search { position:static; text-align:center; margin:0 auto; width: 242px; border: 1px dotted; padding:0; }	
-	.search-form input { width:200px; border:1px inset; margin: -5px; background-color:rgba(225,225,255,0.5); color:#007; }
-	#search_engines {  width:44px; font-size:12px; background-color:rgba(225,225,255,0.25); color: #fff; 
-			    margin-top:-3px; cursor:progress; border: 0; }
+      .multi-search { position:static; text-align:center; margin:0 auto; width: 236px; border: 1px dotted; padding:0; }	
+      .search-form input { width:200px; border:1px inset; margin: -5px; background-color:rgba(225,225,255,0.5); color:#007; }
+      #search_engines {  width:38px; font-size:12px; background-color:rgba(225,225,255,0.25); color: #fff; 
+			      margin-top:-3px; cursor:progress; border: 0; }
 	select { font-size:14px; transition:background .4s ease-in-out; box-sizing:border-box; overflow:hidden; white-space:nowrap;  }
 	
 	
@@ -184,8 +184,8 @@
 	 <div class="search-form">  
 	  <form name="web_search_form">
 	  <input type="text" name="searchterms" id="searchterms" autocomplete="off" placeholder="Search.. Web">
-	  <select name="search_engines" id="search_engines"  class="custom-select" onfocus="return" onchange="return dosearch();">
-	      <option selected="selected" value="#" hidden>∇</option>	
+	  <select name="search_engines" id="search_engines" class="custom-select" onfocus="return" onchange="return dosearch();">
+	      <option selected="selected" value="#" hidden>&#11183</option>	
 	      <option value="ask">Ask</option> <option value="bing">Bing</option> 
 	      <option value="dogpile">Dogpile</option> <option value="duckduckg">Duckduckgo</option>
 	      <option value="ecosia">Ecosia</option> <option value="lilo">Lilo</option>
