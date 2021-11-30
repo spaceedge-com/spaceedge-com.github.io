@@ -121,7 +121,8 @@
        .ddg button { border: 1px solid white; border-radius:15px; background-color:rgba(0,0,0,.25); font-size: 14px;}
 	
       .multi-search { position:static; text-align:center; margin:0 auto; width: 236px; border: 1px dotted; padding:0; }	
-      .search-form input { width:200px; border:1px inset; margin: -5px; background-color:rgba(225,225,255,0.5); color:#007; }
+      .search-form input { width:200px; font-size: 0.85em; border:1px inset; margin: -5px; 
+	      			background-color:rgba(225,225,255,0.5); color:#007; }
       #search_engines {  width:38px; font-size:12px; background-color:rgba(225,225,255,0.25); color: #fff; 
 			      margin-top:-3px; cursor:progress; border: 0; }
 	select { font-size:14px; transition:background .4s ease-in-out; box-sizing:border-box; overflow:hidden; white-space:nowrap;  }
@@ -156,17 +157,8 @@
 	     		<a href="/books/bible.htm"><em>Read the Bible!</em></a>    	      
         </div>  
 	   <div class="open-site"> 
-		<div id="opencollective-banner"> 
-		    <a href="https://opencollective.com/spaceedge/donate" target="_blank">
-		       <img src="/open_collective.svg" width=50" height="50">Donate: <strong>spaceedge.com</strong>
-		    </a>
-	        </div> 									    
-	   </div>									    
-</div>
-	     
-	     <!-- ddg site search -->
-	      <div class="ddg">
-		  <form method="get" id="ddgSearch" action="https://duckduckgo.com/">
+		 <div class="ddg"><!-- ddg site search -->
+		   <form method="get" id="ddgSearch" action="https://duckduckgo.com/">
     		     <input type="hidden" name="sites" value="spaceedge.com"/>
     		     <input type="hidden" name="k7" value="#000000"/> <input type="hidden" name="k8" value="#ffffff"/>
     		     <input type="hidden" name="k9" value="#80b9fd"/> <input type="hidden" name="kx" value="#4ad8b8"/>
@@ -174,7 +166,14 @@
     		     <input type="text" name="q" placeholder="🔍 search…" aria-label="Search spaceedge.com on DuckDuckGo"/>
     		        <!--  <button type="submit">🔍</button>  -->
 		   </form>
-    	      </div>	
+    	        </div>	
+		<div id="opencollective-banner"> 
+		    <a href="https://opencollective.com/spaceedge/donate" target="_blank">
+		       <img src="/open_collective.svg" width=50" height="50">Donate: <strong>spaceedge.com</strong>
+		    </a>
+	        </div> 									    
+	   </div>									    
+</div>
 					    
 	<div class="spc5"> <br> </div>     
 			  
