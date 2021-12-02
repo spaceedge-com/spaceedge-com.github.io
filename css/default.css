@@ -34,15 +34,12 @@ figcaption {  padding-bottom: 1em;  }
 		  display: inline-block; max-width:100%; height:3000px; min-height:2500px; max-height:100%;
 		  color: #fff; text-shadow: 0 0 white; margin-top: 3%; margin-bottom: 50px; padding-bottom: 50px; 
 		  overflow-x: hidden; overflow-y: scroll;
-	     	  /* Sets Color to Transparent for both the track and the thumb */
-                  scrollbar-color: transparent transparent;
-   	          /* Optional, provides a smooth transition */
-    	          transition: scrollbar-color .25s ease-in-out;
-		  }
-	.dataobject:hover {
-    		   /* Sets the color back to the default value. You can choose a different color */
-    		   scrollbar-color: blue;
-		  }
+	     	  /* Show scrollbar on hover w/color track and thumb and smooth transition */
+                  scrollbar-color: transparent transparent; transition: scrollbar-color .25s ease-in-out;
+	         }	
+    .dataobject:hover {
+    		   /* Show them back w/color */ scrollbar-color: yellow blue;
+		 }
 	  pre {   padding: 5%;  }
 
 
