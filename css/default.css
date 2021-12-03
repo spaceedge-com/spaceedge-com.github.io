@@ -2,20 +2,26 @@
 html {    font-size: 62.5%; /* =14px=1.4rem */ } 
 body {    font-family: 'Times New Roman', Times, serif; font-size: 18px; font-size: 1.8rem; color: #fff; 
           background-color: rgba(20,20,20,0.20); text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; overflow-x: hidden;
-	    } 
-h1 {     font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 24px; font-size: 2.4rem; color: #fef; font-weight: 900;  
-	   text-shadow: 0 0 white; -webkit-font-smoothing: antialiased;  border-top: 0.50em outset rgba(238,150,238,.80);
-	   line-height: 1.20em; margin: .69em .69em .69em .33em; 
-               
+        /*scrollbars transparent show on hover*/  overflow-x:hidden; overflow-y:hidden; scrollbar-color: transparent transparent; 
+      }   
+	 /* Shown on hover w/color  */
+	 body:hover { overflow-y:scroll; scrollbar-color: yellow blue; scrollbar-width: thin;/* Firefox */    }
+	 body:hover::-webkit-scrollbar { width: 0.75em; height: 0.75em; /* Chrome, Edge, and Safari */  
+					  overflow-x:hidden; overflow-y:scroll; transition: scrollbar-color .25s ease-in-out; }
+         body:hover::-webkit-scrollbar-track { background: blue; }  object:hover::-webkit-scrollbar-thumb { color: yellow;}
+
+h1 {     font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 24px; font-size: 2.4rem; color: #fef; 
+	 font-weight: 900; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased;  
+	 border-top: 0.50em outset rgba(238,150,238,.80); line-height: 1.20em; margin: .69em .69em .69em .33em; 
             }
-h2 {     font-family: 'Times New Roman', Times, serif; font-size: 20px; font-size: 2.0rem; color: #cec; font-weight: 800; text-shadow: 0 0 white;
-	     -webkit-font-smoothing: antialiased; line-height: 1.15em; margin: .5em; 
+h2 {     font-family: 'Times New Roman', Times, serif; font-size: 20px; font-size: 2.0rem; color: #cec; font-weight: 800; 
+	 text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.15em; margin: .5em; 
             }		    	
-h3 {     font-family: 'Times New Roman', Times, serif; font-size: 17px; font-size: 1.7rem; color: #cec; font-weight: 800; text-shadow: 0 0 white; 
-	     -webkit-font-smoothing: antialiased; line-height: 1.15em; margin: .5em; 
+h3 {     font-family: 'Times New Roman', Times, serif; font-size: 17px; font-size: 1.7rem; color: #cec; font-weight: 800; 
+	 text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; line-height: 1.15em; margin: .5em; 
             }
 p {      font-family: 'Times New Roman', Times, serif; color:#fff; font-size: 18px; font-size: 1.8rem; font-style: normal;  
-	     line-height: 1.15em; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; margin: .4em; 
+	 line-height: 1.15em; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; margin: .4em; 
             }				
 a { 	color:skyblue;  }
 a:link { text-decoration: none;   }
@@ -30,17 +36,9 @@ figcaption {  padding-bottom: 1em;  }
 .small {    font-size: 85%;  font-style: italic;  }
 .cr { font-style: oblique; display: inline list-item; margin: 0 auto; padding-top: .5em; padding-bottom: 1em; }
 
-  .dataobject {  display: inline-block; max-width:100%; height:3000px; min-height:2500px; max-height:100%;
+.dataobject {  display: inline-block; max-width:100%; height:3000px; min-height:2500px; max-height:100%;
 		    color: #fff; text-shadow: 0 0 white; margin-top: 3%; margin-bottom: 50px; padding-bottom: 50px; 
 		    overflow-x: hidden; overflow-y: hidden;
 	      } 	
 	
-      pre {   padding: 5%;  }
-
-        object {  /* scrollbar show on hover*/  overflow-x:hidden; overflow-y:hidden; scrollbar-color: transparent transparent; }   
-	/* Show them back on hover w/color track and thumb  */
-	object:hover { overflow-y:scroll; scrollbar-color: yellow blue; scrollbar-width: thin;/* Firefox */    }
-	object:hover::-webkit-scrollbar { width: 0.75em; height: 0.75em; /* Chrome, Edge, and Safari */  
-					  overflow-x:hidden; overflow-y:scroll; transition: scrollbar-color .25s ease-in-out; }
-        object:hover::-webkit-scrollbar-track { background: blue; }  object:hover::-webkit-scrollbar-thumb { color: yellow;}
-
+pre {   padding: 5%;  }
