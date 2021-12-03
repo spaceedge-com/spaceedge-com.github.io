@@ -45,7 +45,7 @@
    /* Three equal columns that floats next to each other */
    .column {
  	     width:40.40%; min-width:400px; max-width:99%; height:900px; min-height:90%; max-height:100%; 
-	     float:left; margin: 0 auto;  display: inline-block; padding: 0 0 25px 1px; 
+	     float:left; margin: 10px auto;  display: inline-block; padding: 0 0 25px 1px; 
 	     color: #eee; line-height: 1em; text-shadow: 0 0 white; background-color: rgba(0,0,0,0.20); 
 	     border-top: 1px ridge rgba(50,25,50,.25); border-radius: 4px; 
 	     overflow-x: hidden; overflow-y: hidden; border: solid; 
@@ -91,8 +91,7 @@
 
         /* Custom checkbox button expands columns width */	
 	/* checkbox select expand */
-    	input + .row .column { float: left; margin: 0 auto; width: 40.40%; max-width: 99%; /* min-width: 300px; */  
-	                        /* margin: 10px 15px 50px 1px; */ transition:width 0.5s;     }
+    	input + .row .column { float: left; margin: 10px auto; width: 40.40%; max-width: 99%; transition:width 0.5s; }
         input:checked + .row .column { width: 95%; max-width: 98%; display: block; max-height: 100%; 
 	                               /* margin: 5px 5px 50px 5px; */ transition:width 1s;  }
         #expand label { cursor:pointer; display: block; width: 4%; margin: 0 auto; padding: 2%; }
