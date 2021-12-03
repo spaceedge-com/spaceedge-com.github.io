@@ -78,13 +78,18 @@
 	   /*  For ( object data=" ) Don't change height otherwise, !for scrolling also hover scrolling! */
 	   object { 
 		   width:100%; height:100%; max-height:899px; clear:both; display:block; overflow-x:hidden; overflow-y:hidden;
-	             /* hide scrollbar show on hover w/color track and thumb and smooth transition */
-                     scrollbar-color: transparent transparent; transition: scrollbar-color .25s ease-in-out;
+	             /* hide scrollbar show  */  scrollbar-color: transparent transparent; 
 		   }  
-           object:hover { /* Show them back w/color */ 
-		   	overflow-x:hidden; overflow-y:scroll; 
-		   	scrollbar-color: yellow blue; }
-		   
+	  
+	/* Show them back on hover w/color track and thumb and smooth transition */
+	object:hover { overflow-x:hidden; overflow-y:scroll; transition: scrollbar-color .25s ease-in-out;
+		   	  scrollbar-color: yellow blue; scrollbar-width: thin;/* Firefox */ 
+	             }
+	object:hover::-webkit-scrollbar { width: 0.75em; height: 0.75em; /* Chrome, Edge, and Safari */  
+					  overflow-x:hidden; overflow-y:scroll; transition: scrollbar-color .25s ease-in-out; }
+        object:hover::-webkit-scrollbar-track { background: blue; }  object:hover::-webkit-scrollbar-thumb { color: yellow;}
+	 	        
+	
           .dataobject { display: inline-block; max-width:100%; height:3000px; min-height:2500px; max-height:100%;
 		        color: #fff; text-shadow: 0 0 white; margin-top: 3%; margin-bottom: 50px; padding-bottom: 50px; 
 		        overflow-x: hidden; overflow-y: hidden; 
@@ -109,17 +114,10 @@
   	.spc  { position: relative; clear:both; float:inherit; height:25px; max-height:50px; margin:25px; padding:25px;}
 	.spc5 { position: relative; clear:both; float:inherit; height:5px; margin:5px; padding:5px; }
 	.spc15 { position: relative; clear:both; float:inherit; height:15px; margin:15px; padding:15px; }
+
 	
-	/* ddg site search box */
-       .ddg { width: 300px; padding:0; margin:0 auto; display: contents; height:25px;  }
-        #ddgSearch { display: block; text-align:right; padding:0; margin-right:5px;  }
-       .ddg input[type=text] { /* Collapsed input field */ width:30px; background-color:rgba(225,225,255,0.5); border-radius:15px;
-			 color: black; -webkit-transition: width 0.3s ease-in-out; transition: width 0.3s ease-in-out; }
-       .ddg input[type=text]:focus { /* Expand input when focused */ width: 200px; border: 1px solid white;  } 
-       .ddg button { border: 1px solid white; border-radius:15px; background-color:rgba(0,0,0,.25); font-size: 14px;}
-	
-      .multi-search { position:static; text-align:center; margin:0 auto; width: 236px; border: 1px dotted; padding:0; }
- #search_engines { width:38px; font-size:12px; background-color:rgba(225,225,255,0.25); margin-top:-3px; cursor:progress; border:0; }
+  .multi-search { position:static; text-align:center; margin:0 auto; width: 236px; border: 1px dotted; padding:0; }
+  #search_engines { width:38px; font-size:12px; background-color:rgba(225,225,255,0.25); margin-top:-3px; cursor:progress; border:0; }
       .search-form input { width:200px; font-size:0.9em; color:#007; border:0; margin:-5px; background-color:rgba(225,225,255,0.5); }
 	.search-form input[type=text]:focus {color:#000; background-color:rgba(225,225,255,0.75); } 
     select {/*dropdown search_engines*/ font-size:14px; transition:background .4s ease-in-out; overflow:hidden; white-space:nowrap;}
