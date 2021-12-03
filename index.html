@@ -63,7 +63,10 @@
 			       .search-form input { font-size: 0.8em; }
 				   }
 		
-                   .hid { display: none; }  
+                   .hid {  display: none; 
+			   /* hide scrollbar show on hover w/color smooth transition */
+                           scrollbar-color: transparent transparent; transition: scrollbar-color .25s ease-in-out;
+			}  
    .column:hover > .hid { /* display hidden arrow on hover */
 		  	 position: sticky; display:block; z-index:10; color:orange; font-size:22px; text-align: center; 
 			 /* Custom Scrollbars */
