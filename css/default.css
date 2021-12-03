@@ -35,5 +35,12 @@ figcaption {  padding-bottom: 1em;  }
 		    overflow-x: hidden; overflow-y: hidden;
 	      } 	
 	
-   pre {   padding: 5%;  }
+      pre {   padding: 5%;  }
+
+        object {  /* scrollbar show on hover*/  overflow-x:hidden; overflow-y:hidden; scrollbar-color: transparent transparent; }   
+	/* Show them back on hover w/color track and thumb  */
+	object:hover { overflow-y:scroll; scrollbar-color: yellow blue; scrollbar-width: thin;/* Firefox */    }
+	object:hover::-webkit-scrollbar { width: 0.75em; height: 0.75em; /* Chrome, Edge, and Safari */  
+					  overflow-x:hidden; overflow-y:scroll; transition: scrollbar-color .25s ease-in-out; }
+        object:hover::-webkit-scrollbar-track { background: blue; }  object:hover::-webkit-scrollbar-thumb { color: yellow;}
 
