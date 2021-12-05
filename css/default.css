@@ -1,15 +1,9 @@
 /* CSS  - padding: top right bottom left */       
-html {    font-size: 62.5%; /* =14px=1.4rem */ } 
-body {    font-family: 'Times New Roman', Times, serif; font-size: 18px; font-size: 1.8rem; color: #fff; 
-          background-color: rgba(20,20,20,0.20); text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; overflow-x: hidden;
-  /* Scrollbars transparent shown on hover*/  scrollbar-color: transparent transparent;  overflow-y:auto;  
-}   
-  /* Scrollbars hover for Firefox */
-  body:hover { overflow-y:scroll; scrollbar-color:yellow blue; scrollbar-width:thin; transition: scrollbar-color .25s ease-in-out;  }
-  /* Scrollbars hover for Chrome, Edge, Safari */ 
-  body:hover::-webkit-scrollbar { width: 0.75em; height: 0.75em; overflow-y:scroll; transition: scrollbar-color .25s ease-in-out; }
-  body:hover::-webkit-scrollbar-track { background: blue; }  
-  body:hover::-webkit-scrollbar-thumb { color: yellow; }
+html {   font-size: 62.5%; /* =14px=1.4rem */ } 
+body {   font-family: 'Times New Roman', Times, serif; font-size: 18px; font-size: 1.8rem; -webkit-font-smoothing: antialiased; 
+         color:#fff;  background-color: rgba(20,20,20,0.20); text-shadow: 0 0 white; overflow-x:hidden; overflow-y:hidden;
+}
+
 
 h1 {     font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 24px; font-size: 2.4rem; color: #fef; 
 	 font-weight: 900; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased;  
