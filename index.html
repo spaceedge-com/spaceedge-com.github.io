@@ -71,7 +71,7 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
 	      	max-width: 100%; height: 1500px; max-height: 100%; margin: 5px 1px 20px 5px; padding: 5px 5px 5px 5px;
                 font-family: 'Serif'; color: #fff; text-shadow: 0 0 white; background-color: rgba(0,0,0,0.05); 
 	        word-break: break-word;  text-overflow: ellipsis; display: -webkit-line-clamp:50; /* #-lines*/ 
-	       -webkit-box-orient: vertical;  -webkit-box;  overflow-x: hidden; overflow-y:auto;
+	       -webkit-box-orient: vertical;  -webkit-box;  overflow-x: hidden; overflow-y:hidden;
             	}
 						
 	   /*  For ( object data=" ) Don't change height otherwise, !for scrolling also hover scrolling! */
@@ -125,14 +125,6 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
 		 background-origin: content-box;
 		 box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.35);
 	   }
-	
-     .articles { /* scrollbars transparent shown on hover*/   scrollbar-color: transparent transparent; 
-                  }   
-      /* Show on hover */
-     .articles:hover { overflow-y:scroll; scrollbar-color: yellow blue; scrollbar-width: thin; /* Firefox */  }
-     .articles:hover::-webkit-scrollbar { width: 0.75em; height: 0.75em; /* Chrome, Edge, and Safari */  
-					  overflow-x:hidden; overflow-y:scroll; transition: scrollbar-color .25s ease-in-out; }
-     .articles:hover::-webkit-scrollbar-track { background: blue; }  object:hover::-webkit-scrollbar-thumb { color: yellow; }
 	
 </style> 
 	
