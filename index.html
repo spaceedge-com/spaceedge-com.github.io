@@ -96,8 +96,7 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
     	input + .row .column { float: left; margin: 10px auto; width: 40.40%; max-width: 99%; transition:width 0.5s; }
         input:checked + .row .column { width: 95%; max-width: 98%; display: block; max-height: 100%; 
 	                               /* margin: 5px 5px 50px 5px; */ transition:width 1s;  }
-        #expand label { cursor:pointer; display: block; width:50px; height:30px; margin: 0 auto; padding:0; border: solid 1px; }
-	#expand label:after { cursor: pointer; }
+        #expand label { cursor:pointer; display: block; width:50px; height:8px; margin: 0 auto; padding:0; border: solid 1px; }
 	#expand label:hover { color: rgba(128,128,128,.75);  }  #cb { cursor:progress; transform: rotate(180deg); }
 	
 	#opencollective { background-color:rgba(255,255,255,0.88); color:#800; max-height: 888px; display: block;
@@ -109,7 +108,8 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
 
 	
   .multi-search { position:static; text-align:center; margin:0 auto; width: 236px; border: 1px dotted; padding:0; }
-  #search_engines { width:38px; font-size:12px; background-color:rgba(225,225,255,0.25); margin-top:-3px; cursor:progress; border:0; }
+  #search_engines { width:38px; font-size:12px; background-color:rgba(225,225,255,0.25); margin-top:-3px; cursor:pointer; border:0;}
+	#search_engines:after { cursor:progress; }
   .search-form input { width:200px; font-size:0.9em; color:#007; border:0; margin:-5px; background-color:rgba(225,225,255,0.5); }
   .search-form input[type=text]:focus {color:#000; background-color:rgba(225,225,255,0.75); } 
    select { /*dropdown search_eng*/ font-size:14px; transition:background .4s ease-in-out; overflow:hidden; white-space:nowrap;}
