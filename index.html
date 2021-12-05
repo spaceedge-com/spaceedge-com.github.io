@@ -18,11 +18,9 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>		
 	
 <style>
-       :root {
-		--t25: rgba(0,0,0,0.25); --tblue: rgba(0,0,255,0.25); --white: #faf0e6; 
-	     }
-       /*padding: top right bottom left*/
-html {   font-size: 62.5%;  /* =14px=1.4rem */ } 
+       :root {  --t25: rgba(0,0,0,0.25); --tblue: rgba(0,0,255,0.25); --white: #fff;  }
+       /* padding: top right bottom left */
+html {   font-size: 62.5%;  /* =14px=1.4rem */  } 
 body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-size: 1.7rem; 
 	        color: #fff; background-color: #000; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; 	
 	        background-attachment: fixed; /* background-image: url('/images/slider/astronomy2.jpg'); */
@@ -37,7 +35,7 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
 					  overflow-x:hidden; overflow-y:scroll; transition: scrollbar-color .25s ease-in-out; }
       body:hover::-webkit-scrollbar-track { background: blue; }  object:hover::-webkit-scrollbar-thumb { color: yellow;}
 	
-	 h1 {   font-size: 24px;  font-weight: 800;   }
+         h1 {   font-size: 24px;  font-weight: 800;   }
 	
 #he {  width: 100%; background-color: rgba(25,25,25,0.48);   }	
        .her {   color: #dcf; float: left; width:49.90%; min-width:300px; max-width:99%; height:88px; max-height:98px; 
@@ -49,8 +47,8 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
       .lead {  font-size: 1.0em; font-weight: 600; }
 	.her em {  border-bottom: double 3px; } 
 	
-   /* Three equal columns that floats next to each other */
-   .column {
+    /* Three equal columns that floats next to each other */
+    .column {
  	     width:40.40%; min-width:400px; max-width:99%; height:900px; min-height:90%; max-height:100%; 
 	     float:left; margin: 10px auto;  display: inline-block; padding: 0 0 25px 1px; 
 	     color: #eee; line-height: 1em; text-shadow: 0 0 white; background-color: rgba(0,0,0,0.20); 
@@ -113,22 +111,22 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
   .multi-search { position:static; text-align:center; margin:0 auto; width: 236px; border: 1px dotted; padding:0; }
   #search_engines { width:38px; font-size:12px; background-color:rgba(225,225,255,0.25); margin-top:-3px; cursor:progress; border:0; }
       .search-form input { width:200px; font-size:0.9em; color:#007; border:0; margin:-5px; background-color:rgba(225,225,255,0.5); }
-	.search-form input[type=text]:focus {color:#000; background-color:rgba(225,225,255,0.75); } 
-    select {/*dropdown search_engines*/ font-size:14px; transition:background .4s ease-in-out; overflow:hidden; white-space:nowrap;}
-	
+      .search-form input[type=text]:focus {color:#000; background-color:rgba(225,225,255,0.75); } 
+   select { /*dropdown search_engines*/ font-size:14px; transition:background .4s ease-in-out; overflow:hidden; white-space:nowrap;}
+	#searchterms {  text-align: center; }
 	
 	#footer { color:#fcf; text-shadow: 0 0 black; position:static; width:100%; height:30px; max-height:50px; 
-		text-align:center; bottom:0px; flex-shrink:0; clear:both; background-color:var(--t25); 
-		padding-top:5px; margin-top:0; margin-bottom:0;  }
+		  text-align:center; bottom:0px; flex-shrink:0; clear:both; background-color:var(--t25); 
+		  padding-top:5px; margin-top:0; margin-bottom:0;  }
 
   	  #body { /* css id#body for JS rnd body background */
-		background-image:url(/images/slider/astronomy1.jpg);
-		background-attachment: fixed; -moz-background-size: cover; 
-		-webkit-background-size: cover; -o-background-size: cover; 
-		background-size: cover;  overflow-x: hidden;
-		background-position: top left; background-repeat: no-repeat; 
-		background-origin: content-box;
-		box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.35);
+		 background-image:url(/images/slider/astronomy1.jpg);
+		 background-attachment: fixed; -moz-background-size: cover; 
+		 -webkit-background-size: cover; -o-background-size: cover; 
+		 background-size: cover;  overflow-x: hidden;
+		 background-position: top left; background-repeat: no-repeat; 
+		 background-origin: content-box;
+		 box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.35);
 		}
 </style> 
 	
@@ -156,7 +154,7 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
       <script src="websearch.js"type="text/javascript"></script>
 	 <div class="search-form">  
 	  <form name="web_search_form">
-	  <input type="text" name="searchterms" id="searchterms" autocomplete="off" placeholder="Search.. Web">
+	  <input type="text" name="searchterms" id="searchterms" autocomplete="off" placeholder="Type to search">
 	  <select name="search_engines" id="search_engines" class="custom-select" onfocus="return" onchange="return dosearch();">
 	      <option selected="selected" value="#" hidden>✅</option>	
 	      <option value="ask">Ask</option> <option value="bing">Bing</option> 
