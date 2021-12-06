@@ -11,7 +11,7 @@
 :root:hover::-webkit-scrollbar-track { background: rgb(210,210,210) !important;  }   
 :root:hover::-webkit-scrollbar-thumb { color: rgb(46,54,169) !important; }
 
-html {   font-size: 62.5%; /* =14px=1.4rem */ } 
+html {   font-size: 62.5%; /* =14px=1.4rem */ scrollbar-width: thin; } 
 body {   font-family: 'Times New Roman', Times, serif; font-size: 18px; font-size: 1.8rem; -webkit-font-smoothing:auto; 
          color:#fff;  background-color: rgba(20,20,20,0.20); text-shadow: 0 0 white; overflow-x: hidden; overflow-y: hidden;
 }   
