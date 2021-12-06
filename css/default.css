@@ -1,12 +1,15 @@
 /* CSS  - padding: top right bottom left */ 
-/* Thin Scrollbar */
+/* Thin Color Scrollbar */
 :root{
-  scrollbar-color: rgb(210,210,210) rgb(46,54,69) !important; scrollbar-width: thin !important;
-  /* Scrollbar shown on hover */   overflow-x: hidden; overflow-y: hidden;
+  scrollbar-color: rgb(210,210,210) rgb(46,54,169) !important; scrollbar-width: thin !important;
+  /* Scrollbar shown on hover */   overflow-x: hidden; overflow-y: hidden; 
 }
-  /* Scrollbar hover for Firefox */  :root:hover { overflow-y: scroll; }
-  /* Scrollbar hover for Chrome, Edge, Safari */ :root:hover::-webkit-scrollbar { overflow-y:scroll; width:0.75em; height:0.75em; }
-:root:hover::-webkit-scrollbar-track { background: blue; }    :root:hover::-webkit-scrollbar-thumb { color: yellow; }
+/* Scrollbar hover for Firefox */
+:root:hover { overflow-y: scroll; }    
+/* Scrollbar hover for Chrome, Edge, Safari */
+:root:hover::-webkit-scrollbar { overflow-y:scroll; width:0.75em; height:0.75em; }  
+:root:hover::-webkit-scrollbar-track { background: rgb(210,210,210) !important;  }   
+:root:hover::-webkit-scrollbar-thumb { color: rgb(46,54,169) !important; }
 
 html {   font-size: 62.5%; /* =14px=1.4rem */ } 
 body {   font-family: 'Times New Roman', Times, serif; font-size: 18px; font-size: 1.8rem; -webkit-font-smoothing:auto; 
