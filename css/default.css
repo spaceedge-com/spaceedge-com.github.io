@@ -1,16 +1,17 @@
-/* CSS  - padding: top right bottom left */       
+/* CSS  - padding: top right bottom left */ 
+/* Thin Scrollbar */
+:root{
+  scrollbar-color: rgb(210,210,210) rgb(46,54,69) !important; scrollbar-width: thin !important;
+  /* Scrollbar shown on hover */   overflow-x: hidden; overflow-y: hidden;
+}
+  /* Scrollbar hover for Firefox */  :root:hover { overflow-y: scroll; }
+  /* Scrollbar hover for Chrome, Edge, Safari */ :root:hover::-webkit-scrollbar { overflow-y:scroll; width:0.75em; height:0.75em; }
+:root:hover::-webkit-scrollbar-track { background: blue; }    :root:hover::-webkit-scrollbar-thumb { color: yellow; }
+
 html {   font-size: 62.5%; /* =14px=1.4rem */ } 
 body {   font-family: 'Times New Roman', Times, serif; font-size: 18px; font-size: 1.8rem; -webkit-font-smoothing:auto; 
          color:#fff;  background-color: rgba(20,20,20,0.20); text-shadow: 0 0 white; overflow-x: hidden; overflow-y: hidden;
-  /* Scrollbar shown on hover */  scrollbar-color: yellow blue; overflow:hidden; display:inline-block;
 }   
-  /* Scrollbar hover for Firefox */
-  body:hover { overflow: visible; overflow-y: visible; scrollbar-width: thin; }
-  /* Scrollbar hover for Chrome, Edge, Safari */ 
-  body:hover::-webkit-scrollbar { overflow-y:visible; width: 0.75em; height: 0.75em;  }
-  body:hover::-webkit-scrollbar-track { background: blue; }  
-  body:hover::-webkit-scrollbar-thumb { color: yellow; }
-
 
 h1 {     font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 24px; font-size: 2.4rem; color: #fef; 
 	 font-weight: 900; text-shadow: 0 0 white; -webkit-font-smoothing:auto;  
