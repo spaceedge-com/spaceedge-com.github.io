@@ -1,8 +1,15 @@
 /* CSS  - padding: top right bottom left */       
 html {   font-size: 62.5%; /* =14px=1.4rem */ } 
 body {   font-family: 'Times New Roman', Times, serif; font-size: 18px; font-size: 1.8rem; -webkit-font-smoothing:auto; 
-         color:#fff;  background-color: rgba(20,20,20,0.20); text-shadow: 0 0 white; overflow-x:hidden; overflow-y:hidden;
-}
+         color:#fff;  background-color: rgba(20,20,20,0.20); text-shadow: 0 0 white; overflow-x: hidden; overflow-y: hidden;
+  /* Scrollbars transparent shown on hover */ scrollbar-color: transparent transparent;  
+}   
+  /* Scrollbars hover for Firefox */
+  body:hover { overflow-y: visible; scrollbar-width: thin; scrollbar-color: yellow blue; }
+  /* Scrollbars hover for Chrome, Edge, Safari */ 
+  body:hover::-webkit-scrollbar { overflow-y:visible; width: 0.75em; height: 0.75em;  }
+  body:hover::-webkit-scrollbar-track { background: blue; }  
+  body:hover::-webkit-scrollbar-thumb { color: yellow; }
 
 
 h1 {     font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 24px; font-size: 2.4rem; color: #fef; 
