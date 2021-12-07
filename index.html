@@ -77,8 +77,10 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
 	/* checkbox select expand */
     	input + .row .column { float: left; margin: 10px auto; width: 40.40%; max-width: 99%; transition:width 0.5s; }
         input:checked + .row .column { width: 95%; max-width: 98%; display: block; max-height: 100%; transition:width 1s;  }
-        #expand label { cursor:pointer; display: block; width:50px; height:8px; margin: 0 auto; padding:0; border: solid 1px; }
-	#cb { cursor:progress; }      #expand { display: block; }        #expand label:hover { color: rgba(128,128,128,.75);  }  
+	#expand { display: inline-flex; margin: 0 auto; width: 100%; }    
+        #expand label { cursor:pointer; width:50px; height:8px; margin: 0 auto; padding:0; border: solid 1px; }
+	#expand label:hover { color: rgba(128,128,128,.75); cursor:progress; }  
+	
 	
 	
     #opencollective { color:#800; background-color:rgba(255,255,255,0.88); height:1500px; width:100%; margin:0; display:block; text-align:center;}
@@ -154,8 +156,8 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
     	<div class="spc"> <br> </div> 
 		     
 <div id="expand">
-	   <label for=cb> ᐘ▭ᐒ </label></div>	
-    		 <input type='checkbox' style='display: none' id='cb'>
+	   <label for=exnd> ᐘ▭ᐒ </label></div>	
+    		 <input type='checkbox' style='display: none' id='exnd'>
   
 	
 		
