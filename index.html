@@ -22,33 +22,31 @@
   /* padding: top right bottom left */
 html {   font-size: 62.5%;  /* =14px=1.4rem */  scrollbar-width: thin; } 
 body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-size: 1.7rem; 
-	        color: #fff; background-color: #000; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; 	
-	        background-attachment: fixed; /* background-image: url('/images/slider/astronomy2.jpg'); */
-	        -moz-background-size:cover; -webkit-background-size:cover; -o-background-size:cover; background-size:cover; 
-	        background-position: top left; background-repeat: no-repeat; background-origin: content-box;
-	        box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.35); overflow-x: hidden; overflow-y: clip;
+	 color: #fff; background-color: #000; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; 	
+	 background-attachment: fixed; /* background-image: url('/images/slider/astronomy2.jpg'); */
+	 -moz-background-size:cover; -webkit-background-size:cover; -o-background-size:cover; background-size:cover; 
+	 background-position: top left; background-repeat: no-repeat; background-origin: content-box;
+	 box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.35); overflow-x: hidden; overflow-y: clip;
      }
 	
-         h1 {   font-size: 24px;  font-weight: 800;   }
+  h1 {   font-size: 24px;  font-weight: 800;   }
 	
-#he {  width: 100%; background-color: rgba(25,25,25,0.48);   }	
-       .her {   color: #dcf; float: left; width:49.90%; min-width:300px; max-width:99%; height:88px; max-height:98px; 
-	        display: inline-table; margin: 0 auto; padding-left: 10px;
-            }
-#he .her h1 {  font-size: 31px; font-size: 3.1em; font-weight: 400; color: #69f; border: none; margin: 1%; padding 3%; 
-	       text-shadow: 0 0 yellow; -webkit-font-smoothing: antialiased; 
-	    } 
-      .lead {  font-size: 1.0em; font-weight: 600; }
+ #he {  width: 100%; background-color: rgba(25,25,25,0.48);   }	
+    .her {   color: #dcf; float: left; width:49.90%; min-width:300px; max-width:99%; height:88px; max-height:98px; 
+	        display: inline-table; margin: 0 auto; padding-left: 10px;  }
+ #he .her h1 {  font-size: 31px; font-size: 3.1em; font-weight: 400; color: #69f; border: none; margin: 1%; padding 3%; 
+	       text-shadow: 0 0 yellow; -webkit-font-smoothing: antialiased;  } 
+     .lead {  font-size: 1.0em; font-weight: 600; }
 	.her em {  border-bottom: double 3px; } 
 	
-    /* Three equal columns that floats next to each other */
+ /* Three equal columns that floats next to each other */
 .column {  float:left; width:40.40%; min-width:400px; max-width:99%; height:1000px; min-height:90%; max-height:100%; padding: 0;
 	   margin: 10px auto; display:inline-block;  color:#eee; background-color:rgba(0,0,0,0.20); text-shadow: 0 0 white; 
 	   border-top: 1px ridge rgba(50,25,50,.25); border-radius: 4px; overflow-x: hidden; overflow-y: hidden; border: solid; 
 	}
-	/* center contents */
+ /* expand to one column */
 .row { margin: 10px 15px 25px 1px;  width: 98%; }
-	/* Clear floats after the columns */
+  /* Clear floats after the columns */
 .row:after { content: ""; float: left; display: block; clear: both;  }
         /* Responsive layout - screen < 800px - stack columns verticaly, instead of next to each other */
         @media (max-width: 800px) {  
@@ -59,7 +57,7 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
 			       .search-form input { font-size: 0.8em; }
 				   }
 		
-                   .hid {  display: none; }  
+                   .hid {  display: none;  }  
    .column:hover > .hid { /* display the hidden arrow on hover */
 		  	 position: sticky; display:block; z-index:10; color:orange; font-size:22px; text-align: center; 
 		        }
