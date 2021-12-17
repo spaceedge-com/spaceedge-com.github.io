@@ -91,9 +91,9 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
 	.spc15 { position: relative; clear:both; float:inherit; height:15px; margin:15px; padding:15px; }
 
 	
- .multi-search { position:static; text-align:center; margin: 20px auto; width: 238px; border: 1px dotted; padding-left:3px; }
+ .multi-search { position:static; text-align:center; margin: 20px auto; width: 338px; border: 1px dotted; padding-left:3px; }
  #search_engines { width:38px; font-size:1.15rem; background-color:rgba(225,225,255,0.8); margin-top:-3px; cursor:pointer; border:0;}
-  .search-form input { width:200px; font-size:0.9em; color:#007; border:0; margin:-5px; background-color:rgba(225,225,255,0.5); }
+  .search-form input { width:300px; font-size:0.9em; color:#007; border:0; margin:-5px; background-color:rgba(225,225,255,0.5); }
   .search-form input[type=text]:focus {color:#000; background-color:rgba(225,225,255,0.75); } 
     select { /*dropdown search_eng*/ font-size:14px; transition:background .4s ease-in-out; overflow:hidden; white-space:nowrap;}
     select:after { cursor:progress; }       
@@ -136,9 +136,9 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
       <script src="websearch.js"type="text/javascript"></script>
 	 <div class="search-form">  
 	  <form name="web_search_form">
-	  <input type="text" name="searchterms" id="searchterms" autocomplete="off" placeholder="Type to search">
+	  <input type="text" name="searchterms" id="searchterms" autocomplete="off" placeholder="Type to search click dropdown to select engine">
 	  <select name="search_engines" id="search_engines" class="custom-select" onfocus="return" onchange="return dosearch();">
-	      <option selected="selected" value="#" hidden>✅</option>	
+	      <option selected="selected" value="#" hidden>⮯</option>	
 	      <option value="ask">Ask</option> <option value="bing">Bing</option> 
 	      <option value="dogpile">Dogpile</option> <option value="duckduckg">Duckduckgo</option>
 	      <option value="ecosia">Ecosia</option> <option value="lilo">Lilo</option>
