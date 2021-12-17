@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>SpaceEdge.com</title>		
+ <link rel="icon" href="/images/favicon.jpg" type="image/jpeg">	
+ <meta name="description" content="Enviornment, Warming, Coding, Earth, Stars, Planets" />
+ <meta name="keywords" content="Space, Earth, Consciousness, Environment, Tech, Pollution, Climate, Planets, Stars" />
+ <link rel="stylesheet" href="/css/reset.css">
+ <link rel="stylesheet" href="/css/default.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<!-- fontawesome -->
+<script src="https://kit.fontawesome.com/577845f6a5.js" crossorigin="anonymous"></script>
+ <!-- jQuery --> 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>		
+	
+<style>
+:root {  --t25: rgba(0,0,0,0.25); --tblue: rgba(0,0,255,0.25); --white: #fff; scrollbar-width: thin !important; }
+  /* padding: top right bottom left */
+html {   font-size: 62.5%;  /* =14px=1.4rem */  scrollbar-width: thin; } 
+body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-size: 1.7rem; 
+	 color: #fff; background-color: #000; text-shadow: 0 0 white; -webkit-font-smoothing: antialiased; 	
+	 background-attachment: fixed; /* background-image: url('/images/slider/astronomy2.jpg'); */
+	 -moz-background-size:cover; -webkit-background-size:cover; -o-background-size:cover; background-size:cover; 
+	 background-position: top left; background-repeat: no-repeat; background-origin: content-box;
+	 box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.35); overflow-x: hidden; overflow-y: clip;
+     }
+	
+  h1 {   font-size: 24px;  font-weight: 800;   }
+	
+ #he {  width: 100%; background-color: rgba(25,25,25,0.48);   }	
+   .her { color: #bcf; position: absolute; width:49.90%; min-width:300px; max-width:99%; height:88px; max-height:98px; 
+	        display: inline-table; margin: 0 auto; padding-left: 38px; z-index: 3; }
+ #he .her h1 { color: #fff; font-size: 31px; font-size: 3.1em; font-weight: 400;  border: none; margin: 0; padding-bottom: 1%; 
+	       text-shadow: 0 0 yellow; -webkit-font-smoothing: antialiased;  } 
+     .lead {  font-size: 1.0em; font-weight: 600; }
+	.her em {  border-bottom: double 3px; } 
+	
+ /* Three equal columns that floats next to each other */
+.column {  float:left; width:40.40%; min-width:400px; max-width:99%; height:1000px; min-height:90%; max-height:100%; padding: 0;
+	   margin: 10px auto; display:inline-block;  color:#eee; background-color:rgba(0,0,0,0.20); text-shadow: 0 0 white; 
+	   border-top: 1px ridge rgba(50,25,50,.25); border-radius: 4px; overflow-x: hidden; overflow-y: hidden; border: solid; 
+	}
+ /* expand to one column */
+.row { margin: 10px 15px 25px 1px;  width: 98%; }
+  /* Clear floats after the columns */
+.row:after { content: ""; float: left; display: block; clear: both;  }
+        /* Responsive layout - screen < 800px - stack columns verticaly, instead of next to each other */
+        @media (max-width: 800px) {  
+		 	       .column { width: 95%; min-width:93%; max-width: 99%; border: none; margin-right: 5px; }	
+		  	       #he .her h1 {  font-size: 31px; font-size: 2.3em;  }
+			       #expand { display: none;  }
+		  	       #opencollective-banner { margin-top: 3em; }
+			       .search-form input { font-size: 0.8em; }
+				   }
+		
+                   .hid {  display: none;  }  
+   .column:hover > .hid { /* display the hidden arrow on hover */
+		  	 position: sticky; display:block; z-index:10; color:orange; font-size:22px; text-align: center; 
+			}
+	       .hid img {  height: 38px;  width: 100%; }
+		
+    .articles { max-width: 100%; height: 1500px; max-height: 100%; margin: 5px 1px 20px 5px; padding: 5px 5px 5px 5px;
+                font-family: 'Serif'; color: #fff; background-color: rgba(0,0,0,0.05); line-height: 1em; text-shadow: 0 0 white;
+	        display:block; overflow-x:hidden; overflow-y:hidden; word-break: break-word; text-overflow: ellipsis; 
+	       -webkit-box-orient: vertical; -webkit-box; -webkit-line-clamp:50; /* #-lines*/ 
+              }
+						
+     /*  For ( object data=" ) Don't change height otherwise, !for scrolling also hover scrolling! */
+     object { width:100%; height:100%; max-height:998px; clear:both; display:block; overflow-x:hidden; overflow-y:hidden; }        
+	
+        /* Custom checkbox button expands columns width */	
+	/* checkbox select expand */
+    	input + .row .column { float: left; margin: 10px auto; width: 40.40%; max-width: 99%; transition:width 0.5s; }
+        input:checked + .row .column { width: 95%; max-width: 98%; display: block; max-height: 100%; transition:width 1s;  }
+	#expand { text-align: center; margin: 0 auto; width: 100%; height: 30px; }    
+        #expand label { text-align: center; cursor:pointer; width:55px; height:8px; margin: 0 auto; padding:0; border: solid 1px; }
+	#expand label:hover { color: rgba(128,128,128,.75); cursor:progress; }  
+	
+	
+	
+       #opencollective { color:#800; background-color:rgba(255,255,255,0.88); border: solid 3px #000;
+	   		height:1500px; width:100%; margin:0; display:block; text-align:center;}
+	
+  	.spc  { position: relative; clear:both; float:inherit; height:25px; max-height:50px; margin:25px; padding:25px;}
+	.spc5 { position: relative; clear:both; float:inherit; height:5px; margin:5px; padding:5px; }
+	.spc15 { position: relative; clear:both; float:inherit; height:15px; margin:15px; padding:15px; }
+
+	
+ .multi-search { position:static; text-align:center; margin: 20px auto; width: 238px; border: 1px dotted; padding-left:3px; }
+ #search_engines { width:38px; font-size:1.15rem; background-color:rgba(225,225,255,0.8); margin-top:-3px; cursor:pointer; border:0;}
+  .search-form input { width:200px; font-size:0.9em; color:#007; border:0; margin:-5px; background-color:rgba(225,225,255,0.5); }
+  .search-form input[type=text]:focus {color:#000; background-color:rgba(225,225,255,0.75); } 
+    select { /*dropdown search_eng*/ font-size:14px; transition:background .4s ease-in-out; overflow:hidden; white-space:nowrap;}
+    select:after { cursor:progress; }       
+        #searchterms {  text-align: center; }
+	
+	
+ #footer { color:#fcf; text-shadow: 0 0 black; position:static; width:100%; height:30px; max-height:50px; text-align:center; 
+	   bottom:0px; flex-shrink:0; clear:both; background-color:var(--t25); padding-top:5px; margin-top:0; margin-bottom:0; }
+
+	
+ #body { /* css id#body for JS rnd body background */
+	    background-image:url(/images/slider/astronomy1.jpg); background-attachment: fixed; 
+            -moz-background-size: cover; -webkit-background-size: cover; -o-background-size: cover; 
+	    background-size: cover; background-position: top left; background-repeat: no-repeat; 
+	    background-origin: content-box; box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.35); overflow-x: hidden;
+       }
+	
+</style> 
+	
+<!-- JS #body random background from external file, -->
+<script type="text/javascript" src="/random-background.js"></script>	
+
+</head>
+<body id="body">
+        
+<div id="he" class="row"> 
+	  <object data="/images/PhotoGrid.htm" type="text/html" style=" max-height:65px; max-width:98%; margin:1px;"></object> 	
+        <div class="her" style=" " >
+                <h1>SpaceEdge</h1> 
+                   <span class="lead">Freedom Space: Spiritual Conscience Rational Individual Reason!</span>
+	     		<a href="/books/bible.htm"><em>Read & Study Bible!</em></a>    	      
+        </div>  
+	     <div class="open-site">   </div>									    
+</div>
+					    
+	<div class="spc"> <br> <br> </div>     
+			  
+    <div class="multi-search" >  
+      <!--  calls dosearch(); from external websearch.js file "&#10593;"=⥡ -->
+      <script src="websearch.js"type="text/javascript"></script>
+	 <div class="search-form">  
+	  <form name="web_search_form">
+	  <input type="text" name="searchterms" id="searchterms" autocomplete="off" placeholder="Type to search">
+	  <select name="search_engines" id="search_engines" class="custom-select" onfocus="return" onchange="return dosearch();">
+	      <option selected="selected" value="#" hidden>✅</option>	
+	      <option value="ask">Ask</option> <option value="bing">Bing</option> 
+	      <option value="dogpile">Dogpile</option> <option value="duckduckg">Duckduckgo</option>
+	      <option value="ecosia">Ecosia</option> <option value="lilo">Lilo</option>
+	      <option value="qwant">Qwant</option> <option value="startpage">Startpage</option>
+	      <option value="swisscows">Swisscows</option> <option value="wikipedia">Wikipedia</option>
+	      <option value="wolframalpha">Wolframalpha</option> <option value="yahoo">Yahoo!</option>
+	  </select>
+	  </form>
+	 </div>
+    </div>
+	
+    	<div class="spc"> <br> </div> 
+
+  
+	
+		
+<div class="row">   
+		
+
+   
+               
+</div>
+	   
+	   
+<div class="spc"> <br> </div> 
+<div id="footer" style="">
+    ..121621..<a href="//spaceedge.com"> &copy; SpaceEdge.com </a>  
+</div>
+	   
+													  
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "22410722304e49c9a5eb6842cc9ce4e4"}'></script><!-- End Cloudflare Web Analytics -->
+
+</body>
+</html>
