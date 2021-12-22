@@ -9,7 +9,7 @@
 
 html {   font-size: 62.5%; /* =14px=1.4rem */ scrollbar-width: thin; } 
 body {   font-family: 'Times New Roman', Times, serif; font-size: 18px; font-size: 1.8rem; -webkit-font-smoothing:auto; 
-         color:#fff;  background-color: rgba(20,20,20,0.20); text-shadow: 0 0 white; overflow-x: hidden; overflow-y: hidden;
+         color:#fff;  background-color: rgba(20,20,20,0.20); text-shadow: 0 0 white; overflow-x:hidden;
 }   
 
 h1 {     font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 24px; font-size: 2.4rem; color: #fef; 
