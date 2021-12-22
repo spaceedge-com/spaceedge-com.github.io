@@ -105,6 +105,30 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
 	    background-size: cover; background-position: top left; background-repeat: no-repeat; 
 	    background-origin: content-box; box-shadow: inset 0 0 0 3000px rgba(0,0,0,0.35); overflow-x: hidden;
        }
+
+	
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
 	
 </style> 
 	
@@ -146,7 +170,14 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
     </div>
 	
     	<div class="spc"> <br> </div> 
-		     
+
+	
+	
+<h2>Collapsibles</h2>
+<button type="button" class="collapsible">Open Blog</button>
+<div class="content">
+	
+	
 <div id="expand">
 	   <label for=exnd> ᐘ▭ᐒ </label></div>	
     		 <input type='checkbox' style='display: none' id='exnd'>
@@ -229,7 +260,26 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
                
 </div>
 	   
-	   
+
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+	
+	
 <div class="spc"> <br> </div> 
 <div id="footer" style="">
     ..120621..<a href="//spaceedge.com">© SpaceEdge.com</a> &copy; <a href="https://tinyurl.com/p7x8cwas"> Discuss!.. </a> 
