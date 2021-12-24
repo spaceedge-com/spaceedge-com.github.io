@@ -86,7 +86,7 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
 
 	
  .multi-search { position:static; text-align:center; margin: 20px auto; width:338px; padding-left: 3px;
-	 		border: 1px ridge rgb(188, 173, 177);  border-radius: 3px;  }
+	 		border: 1px ridge rgba(188, 173, 177, .5);  border-radius: 5px;  }
  #search_engines { width:38px; font-size:1.15rem; background-color:rgba(225,225,255,0.8); margin-top:-3px; cursor:pointer; border:0;}
  .search-form input { width:300px; font-size:0.9em; color:#fff; border:0; margin:-5px; background-color:rgba(5,5,5,0.50); }
  .search-form input[type=text]:focus {color:#fff; background-color:rgba(5,5,5,0.80); } 
@@ -144,7 +144,7 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
       <script src="websearch.js"type="text/javascript"></script>
 	 <div class="search-form">  
 	  <form name="web_search_form">
-	  <input type="text" name="searchterms" id="searchterms" autocomplete="off" placeholder="Type to search click dropdown to select engine">
+	  <input type="text" name="searchterms" id="searchterms" autocomplete="off" placeholder="🔍Type click dropdown select engine">
 	  <select name="search_engines" id="search_engines" class="custom-select" onfocus="return" onchange="return dosearch();">
 	      <option selected="selected" value="#" hidden>⮯</option>	
 	      <option value="ask">Ask</option> <option value="bing">Bing</option> 
