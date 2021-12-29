@@ -40,7 +40,7 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
 	.her em {  border-bottom: double 3px; } 
 	
  /* Three equal columns that floats next to each other */
-.column {  float:left; width:40.40%; min-width:400px; max-width:99%; height:1000px; min-height:90%; max-height:100%; padding: 0;
+.column {  float:left; width:40.40%; min-width:380px; max-width:99%; height:1000px; min-height:90%; max-height:100%; padding: 0;
 	   margin: 10px auto; display:inline-block;  color:#eee; background-color:rgba(0,0,0,0.20); text-shadow: 0 0 white; 
 	   border-top: 1px ridge rgba(50,25,50,.25); border-radius: 4px; overflow-x: hidden; overflow-y: hidden; border: solid; 
 	}
@@ -50,7 +50,7 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
 .row:after { content: ""; float: left; display: block; clear: both;  }
         /* Responsive layout - screen < 800px - stack columns verticaly, instead of next to each other */
         @media (max-width: 800px) {  
-		 	       .column { width: 95%; min-width:93%; max-width: 99%; border: none; margin-right: 5px; }	
+		 	       .column { width:93%; min-width:90%; max-width:98%; border: solid 1px; margin-right:5px; }	
 		  	       #he .her h1 {  font-size: 31px; font-size: 2.3em;  }
 			       #expand { display: none;  }
 		  	       #opencollective-banner { margin-top: 3em; }
