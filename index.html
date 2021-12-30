@@ -90,8 +90,9 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
  .search-form input { width:300px; font-size:0.9em; color:#822; border:0; margin:-5px; background-color:rgba(255,255,255,0.8); }
  .search-form input[type=text]:focus { color:#fff; background-color:rgba(5,5,5,0.50); } 
  .search-form input:focus::placeholder {  color: transparent;  }
-	select { font-size:14px; transition:background .4s ease-in-out; overflow:hidden; white-space:nowrap;}
-    		select:after { cursor:progress; }       #searchterms {  text-align: center; }
+   select {  font-size:14px; background-color: #000; color: orange;  transition:background .4s ease-in-out; 
+	   		overflow:hidden; white-space:nowrap;   }
+    	  select:after { cursor:progress; }       #searchterms {  text-align: center; }
 	
 	
  #footer { color:#fcf; text-shadow: 0 0 black; position:fixed; width:100%; height:30px; text-align:center; 
@@ -130,7 +131,6 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
         </div>  								    
 </div>
 	
-	
 	 <div class="spc"> <br> </div>     
 		
 		
@@ -141,7 +141,7 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
 	  <form name="web_search_form">
 	   <input type="text" name="searchterms" id="searchterms" autocomplete="off" onfocus="this.select()" placeholder="🔍Type select engine">
 	    <select name="search_engines" id="search_engines" class="custom-select" onfocus="return" onchange="return dosearch();">
-	      <option selected="selected" value="#" hidden>.</option>	
+	      <option selected="selected" value="#" hidden>.ᐒ</option>	
 	      <option value="ask">Ask</option> <option value="bing">Bing</option> 
 	      <option value="dogpile">Dogpile</option> <option value="duckduckg">Duckduckgo</option>
 	      <option value="ecosia">Ecosia</option> <option value="lilo">Lilo</option>
