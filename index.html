@@ -90,8 +90,8 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
  .search-form input { width:300px; font-size:0.9em; color:#822; border:0; margin:-5px; background-color:rgba(255,255,255,0.8); }
  .search-form input[type=text]:focus { color:#fff; background-color:rgba(5,5,5,0.50); } 
  .search-form input:focus::placeholder {  color: transparent;  }
-   select { font-size:14px; background-color: #000;  color: orange;  transition:background .4s ease-in-out; 
-	   		width: 50px;  }
+   .custom-select { font-size:15px; background-color: #000;  color: orange;  transition:background .4s ease-in-out; 
+	   		min-width: 40px;  }
     	  select:after { cursor:progress; }       #searchterms {  text-align: center; }
 	
 	
@@ -140,7 +140,7 @@ body {   font-family: 'Times New Roman', Times, serif; font-size: 17px; font-siz
 	 <div class="search-form">  
 	  <form name="web_search_form">
 	   <input type="text" name="searchterms" id="searchterms" autocomplete="off" onfocus="this.select()" placeholder="🔍Type select engine">
-	    <select name="search_engines" id="search_engines" class=" " onfocus="return" onchange="return dosearch();">
+	    <select name="search_engines" id="search_engines" class="custom-select" onfocus="return" onchange="return dosearch();">
 	      <option selected="selected" value="#" hidden>ᐒ</option>	
 	      <option value="ask">Ask</option> <option value="bing">Bing</option> 
 	      <option value="dogpile">Dogpile</option> <option value="duckduckg">Duckduckgo</option>
