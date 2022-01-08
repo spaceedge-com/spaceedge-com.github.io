@@ -1,32 +1,20 @@
 /* CSS  - padding: top right bottom left */ 
-/* Scrollbars  :root{  scrollbar-color: rgb(210,210,210) rgb(46,54,169) !important; scrollbar-width: thin !important;
-    shown on hover    overflow-x: hidden; overflow-y: hidden; } */ 
+/* Scrollbars  :root{  scrollbar-color: rgb(120,120,120) rgb(246,254,255) !important; scrollbar-width: thin !important; */
+/*   shown on hover    overflow-x: hidden; overflow-y: hidden; } */ 
 /* Scrollbar hover for Firefox    :root:hover { overflow-y: scroll; }  */
 /* Scrollbar hover for Chrome, Edge, Safari
 :root:hover::-webkit-scrollbar { overflow-y:scroll; width:0.75em; height:0.75em; }  
-:root:hover::-webkit-scrollbar-track { background: rgb(210,210,210) !important;  }   
-:root:hover::-webkit-scrollbar-thumb { color: rgb(46,54,169) !important; } */
+:root:hover::-webkit-scrollbar-track { background: rgb(120,120,120) !important;  }   
+:root:hover::-webkit-scrollbar-thumb { color: rgb(246,254,255) !important; } */
 
-html {   font-size: 62.5%; /* =14px=1.4rem */ scrollbar-width: thin; } 
-body {   font-family: 'Times New Roman', Times, serif; font-size: 18px; font-size: 1.8rem; -webkit-font-smoothing:auto; 
-         color:#fff;  background-color: rgba(20,20,20,0.20); text-shadow: 0 0 white; overflow-x:hidden;
-}   
-
-h1 {     font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 24px; font-size: 2.4rem; color: #fef; 
-	 font-weight: 900; text-shadow: 0 0 white; -webkit-font-smoothing:auto;  
-	 border-top: 0.50em outset rgba(255,255,255,.98); line-height: 1.20em; margin: .69em .69em .69em .33em; 
-            }
-h2 {     font-family: 'Times New Roman', Times, serif; font-size: 20px; font-size: 2.0rem; color: #cec; font-weight: 800; 
-	 text-shadow: 0 0 white; -webkit-font-smoothing:auto;  line-height: 1.15em; margin: .5em; 
-            }		    	
-h3 {     font-family: 'Times New Roman', Times, serif; font-size: 17px; font-size: 1.7rem; color: #cec; font-weight: 800; 
-	 text-shadow: 0 0 white; -webkit-font-smoothing:auto;  line-height: 1.15em; margin: .5em; 
-            }
-p {      font-family: 'Times New Roman', Times, serif; color:#fff; font-size: 18px; font-size: 1.8rem; font-style: normal;  
-	 line-height: 1.15em; text-shadow: 0 0 white; -webkit-font-smoothing:auto;  margin: .4em; 
-            }				
+html {   font-size: 62.5%; /* =14px=1.4rem */ scrollbar-width: thin;  } 
+body {   font-family: 'Times New Roman', Times, serif; font-size: 18px; font-size: 1.8rem; -webkit-font-smoothing:auto; color:#fff;  background-color: rgba(20,20,20,0.20); text-shadow: 0 0 white; overflow-x:hidden;  }   
+h1 {     font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 24px; font-size: 2.4rem; color: #fef; font-weight: 900; text-shadow: 0 0 white; -webkit-font-smoothing:auto;   border-top: 0.50em outset rgba(255,255,255,.98); line-height: 1.20em; margin: .69em .69em .69em .33em;  }
+h2 {     font-family: 'Times New Roman', Times, serif; font-size: 21px; font-size: 2.1rem; color: #cec; font-weight: 800; text-shadow: 0 0 white; -webkit-font-smoothing:auto;  line-height: 1.15em; margin: .5em;  }		    	
+h3 {     font-family: 'Times New Roman', Times, serif; font-size: 18px; font-size: 1.8rem; color: #cec; font-weight: 800; text-shadow: 0 0 white; -webkit-font-smoothing:auto;  line-height: 1.15em; margin: .5em;  }
+p {      font-family: 'Times New Roman', Times, serif; color:#fff; font-size: 18px; font-size: 1.8rem; font-style: normal; line-height: 1.15em; text-shadow: 0 0 white; -webkit-font-smoothing:auto;  margin: .4em;  }				
 a { 	color:skyblue;  }
-a:link { text-decoration: none;   }
+a:link { text-decoration: none;  }
 em {    color:seashell; font-size: 1.0em; font-style: oblique; text-align: center; } 
 quote { font-weight: 800; display: block; font-size: 1.0em; font-style: oblique; text-align: center; padding: .8em .8em 0 .2em; }
 cite {  color:#FCA; font-size: 0.9em; text-align: right;  margin:0 auto; width: 75%; padding-bottom: .5em; display: inline-block;  }
