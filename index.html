@@ -34,7 +34,7 @@ h1 {   font-size: 24px;  font-weight: 800;   }
     .leadright {  padding-top: 2%; display: block; text-align: center;  }
 	
  /* 2 equal columns float next to each other */
-.column {  float:left; width:48.80%; min-width:380px; max-width:99%; height:1000px; min-height:90%; max-height:100%; padding: 0; margin: 10px auto; display:block;  color:#eee; background-color:rgba(0,0,0,0.20); text-shadow: 0 0 white; border-radius: 4px; overflow-x: hidden; overflow-y: hidden; border: solid; }
+.column {  float:left; width:48.80%; min-width:380px; max-width:99%; height:1000px; min-height:90%; max-height:100%; padding: 0; margin: 10px auto; display:block; color:#eee; background-color:rgba(0,0,0,0.20); text-shadow: 0 0 white; border-radius: 4px; overflow-x: hidden; overflow-y: hidden; border: solid; position: relative;  }
  /* expands to one column */
 .row {  margin: 10px 15px 25px 1px;  width: 98%; }
   /* Clear floats after the columns */
@@ -48,10 +48,8 @@ h1 {   font-size: 24px;  font-weight: 800;   }
 				   }
 		
                    .hid {  display: none;  }  
-    .column:hover > .hid { /* display the hidden arrow on hover */
-		  	 position: sticky; display:block; z-index:10; color:orange; font-size:22px; text-align: center; 
-			}
-	       .hid img {  height: 38px;  width: 100%; }
+   .column:hover > .hid { /* displays hidden arrow on hover */ display:block; z-index:10; }
+	       .hid img {  height: 25px;  width: 100%;  position: absolute; }
 		
     .articles { max-width: 100%; height: 1500px; max-height: 100%; margin: 5px 1px 20px 5px; padding: 5px 5px 5px 5px;
                 font-family: 'Serif'; color: #fff; background-color: rgba(0,0,0,0.05); line-height: 1em; text-shadow: 0 0 white;
