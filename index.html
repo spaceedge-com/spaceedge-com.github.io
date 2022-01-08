@@ -33,12 +33,12 @@ h1 {   font-size: 24px;  font-weight: 800;   }
     .lead {  font-size: 1.0em; font-weight: 600; }  .her em {  border-bottom: double 3px; } 
     .leadright { float:right; margin-top:5%; margin-bottom:5%; padding-top:1%; }
 	
- /* Three equal columns that floats next to each other */
-.column {  float:left; width:40.40%; min-width:380px; max-width:99%; height:1000px; min-height:90%; max-height:100%; padding: 0; margin: 10px auto; display:block;  color:#eee; background-color:rgba(0,0,0,0.20); text-shadow: 0 0 white; border-top: 1px ridge rgba(50,25,50,.25); border-radius: 4px; overflow-x: hidden; overflow-y: hidden; border: solid; }
+ /* 2 equal columns that floats next to each other */
+.column {  float:left; width:48.80%; min-width:380px; max-width:99%; height:1000px; min-height:90%; max-height:100%; padding: 0; margin: 10px auto; display:block;  color:#eee; background-color:rgba(0,0,0,0.20); text-shadow: 0 0 white; border-radius: 4px; overflow-x: hidden; overflow-y: hidden; border: solid; }
  /* expands to one column */
-.row { margin: 10px 15px 25px 1px;  width: 98%; }
+.row {  margin: 10px 15px 25px 1px;  width: 98%; }
   /* Clear floats after the columns */
-.row:after { content: ""; float: left; display: block; clear: both;  }
+.row:after {  content: ""; float: left; display: block; clear: both;  }
         /* Responsive layout - screen < 800px - stack columns verticaly, instead of next to each other */
         @media (max-width: 800px) {  
 		 	       .column { width:93%; min-width:90%; max-width:98%; border: solid 1px; margin-right:5px; }	
@@ -64,7 +64,7 @@ h1 {   font-size: 24px;  font-weight: 800;   }
 	
         /* Custom checkbox button expands columns width */	
 	/* checkbox select expand */
-    	input + .row .column { float: left; margin: 30px auto; width: 40.40%; max-width: 99%; transition:width 0.5s; }
+    	input + .row .column { float: left; margin: 30px auto; width: 48.80%; max-width: 99%; transition:width 0.5s; }
         input:checked + .row .column { width: 95%; max-width: 98%; display: block; max-height: 100%; transition:width 1s;  }
 	#expand { text-align: center; margin: 0 auto; width: 100%; height: 30px; }    
         #expand label { text-align: center; cursor:pointer; width:55px; margin: 3px auto; padding:0; border: solid 1px; }
