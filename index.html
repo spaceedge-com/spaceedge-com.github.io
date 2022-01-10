@@ -35,13 +35,17 @@ body { font-family: 'Times New Roman', Times, serif; font-size: 17px; font-size:
 h1 {   font-size: 24px;  font-weight: 800;   }
 	
 #he {  width: 100%; background-color: rgba(25,25,25,0.48);  }	
- .her { color: #bcf; position: absolute; width:80%; min-width:300px; max-width:99%; height:88px; max-height:98px; display: inline-table; margin: 0 auto; padding-left: 30px; z-index: 3; }
-#he .her h1 { color: #fff; font-size: 31px; font-size: 3.1em; font-weight: 400;  border: none; margin: 0; padding-bottom: 1%;  text-shadow: 0 0 yellow; -webkit-font-smoothing: antialiased; } 
+ .her { color: #bcf; position: absolute; width:80%; min-width:300px; max-width:99%; height:88px; max-height:98px; 
+	 display: inline-table; margin: 0 auto; padding-left: 30px; z-index: 3; }
+#he .her h1 { color: #fff; font-size: 31px; font-size: 3.1em; font-weight: 400;  border: none; margin: 0; 
+	padding-bottom: 1%;  text-shadow: 0 0 yellow; -webkit-font-smoothing: antialiased; } 
     .lead {  font-size: 1.0em; font-weight: 600; }  .her em {  border-bottom: double 3px; } 
     .leadright {  padding-top: 2%; display: block; text-align: center;  }
 	
  /* 2 equal columns float next to each other */
-.column {  float:left; width:48.80%; min-width:380px; max-width:99%; height:1000px; min-height:90%; max-height:100%; padding: 0; margin: 10px auto; display:block; color:#eee; background-color:rgba(0,0,0,0.20); text-shadow: 0 0 white; border-radius: 4px; overflow-x: hidden; overflow-y: hidden; border: solid; position: relative;  }
+.column {  float:left; width:48.80%; min-width:380px; max-width:99%; height:1000px; min-height:90%; max-height:100%; 
+	padding: 0; margin: 10px auto; display:block; color:#eee; background-color:rgba(0,0,0,0.20); text-shadow: 0 0 white; 
+	border-radius: 4px; overflow-x: hidden; overflow-y: hidden; border: solid; position: relative;  }
  /* expands to one column */
 .row {  margin: 10px 15px 25px 1px;  width: 98%; }
   /* Clear floats after the columns */
@@ -101,8 +105,9 @@ h1 {   font-size: 24px;  font-weight: 800;   }
 .collapsible {  background-color: rgba(25,25,25,0.25); color: white; cursor: pointer; padding: 18px; width: 100%; 
 	        border: 1px inset rgba(225,125,125,0.65); text-align: left; outline: none; font-size: 15px;  }
 .active, .collapsible:hover {  background-color: rgba(50,50,50,0.5);  border: 1px solid;   }
-.content {  padding: 0 18px; display: none; overflow: hidden; background-color: rgba(25,25,25,0.18); 
-		transition: max-height 0.8s ease-out; }
+.content {  padding: 0 18px; display: none; overflow: hidden; background-color: rgba(25,25,25,0.18); transition: max-height 0.8s ease-in-out; }    
+  .collapsible:after {  content: '\02795'; /* Unicode "plus" sign (+) */ font-size: 14px; color: white; float: right; margin-left: 5px; }
+	.active:after {  content: "\2796"; /* Unicode "minus" sign (-) */  }
 	
 </style> 
 	
