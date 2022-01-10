@@ -88,7 +88,7 @@ h1 {   font-size: 24px;  font-weight: 800;   }
 	             background-color: rgba(255,255,255,0.8); }
  .search-form input[type=text]:focus { color: #000; background-color: rgba(255,255,255,0.98); } 
  .search-form input:focus::placeholder {  color: transparent;  }
-       select {  font-size:18px; /*color: orange;*/  transition:background .4s ease-in-out; border: 0; 
+       select {  font-size:18px; /*color: orange;*/  transition:background .8s ease-in-out; border: 0; 
 	   	 appearance: none; -moz-appearance: none; -webkit-appearance: none;  }
        select::after { cursor:progress; }       #searchterms {  text-align: center; }
 	
@@ -98,9 +98,10 @@ h1 {   font-size: 24px;  font-weight: 800;   }
 
 	
 	
-.collapsible {  background-color: rgba(25,25,25,0.25); color: white; cursor: pointer; padding: 18px; width: 100%; border: 1px solid rgba(125,125,125,0.5); text-align: left; outline: none; font-size: 15px;  }
-.active, .collapsible:hover {  background-color: rgba(50,50,50,0.5);  border: 1px solid;  
-	  transition:background 2.4s ease-in-out; }
+.collapsible {  background-color: rgba(25,25,25,0.25); color: white; cursor: pointer; padding: 18px; width: 100%; 
+	        border: 1px solid rgba(125,125,125,0.5); text-align: left; outline: none; font-size: 15px;  }
+.active, .collapsible:hover {  background-color: rgba(50,50,50,0.5);  border: 1px inset;  
+	  transition: max-height 0.8s ease-out; }
 .content {  padding: 0 18px; display: none; overflow: hidden; background-color: rgba(25,25,25,0.18);  }
 	
 </style> 
