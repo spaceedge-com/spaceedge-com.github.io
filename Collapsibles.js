@@ -13,6 +13,10 @@ for (i = 0; i < coll.length; i++) {
     } else {
       content.style.display = "block";
     }
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
   });
 }
 //</script>
