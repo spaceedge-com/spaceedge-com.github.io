@@ -212,14 +212,30 @@ h1 {   font-size: 24px;  font-weight: 800;   }
 
 </div>
 	
-<!-- JS collapsibles script file, -->
-<script type="text/javascript" src="/Collapsibles.js"></script>	
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+<!-- JS collapsibles script file,
+<script type="text/javascript" src="/Collapsibles.js"></script>	 -->
+	
 	
     	<div class="spc"> <br> </div> 	   
 	   
 
 <div id="footer" style="">
-    ..1122..<a href="//spaceedge.com"> &copy; SpaceEdge.com </a>  
+    ..011022..<a href="//spaceedge.com"> &copy; SpaceEdge.com </a>  
 </div>
 	   
 													  
