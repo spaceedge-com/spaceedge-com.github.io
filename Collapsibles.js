@@ -1,6 +1,6 @@
 // collapsibles.js scrip file
 //Collapsible (Slide Down) https://www.w3schools.com/howto/howto_js_collapsible.asp
-//Non-Animated
+//Non-Animated & including Animated (content.style.maxHeight)
 //<script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
