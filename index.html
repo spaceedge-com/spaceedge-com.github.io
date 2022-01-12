@@ -88,7 +88,7 @@ h1 {   font-size: 24px;  font-weight: 800;   }
 	
  /*Search_eng dropdown*/ 	
  .multi-search {  position:static; text-align:center; margin: 0 auto; padding: 10px; width: 80%; 
-	 		border: groove 1px white; background-color: rgba(255,255,255,0.8);  }
+	 		border: 1px #aaa; background-color: rgba(255,255,255,0.5);  }
  #search_engines {  font-size:1.0em; width:31px; background-color: rgba(255,255,255,0.8); 
 	 		cursor:pointer;  border:0; padding:3px; height: 30px; top: 0; position: relative; }
  .search-form input {  width:300px; font-size:1.10em; color:#000; border:0; outline:none; margin:-5px; padding 5px;
@@ -100,12 +100,11 @@ h1 {   font-size: 24px;  font-weight: 800;   }
        select::after { cursor:progress; }       #searchterms {  text-align: center; }
 				option {  font-size: 1.35rem;   }	
 	
-.collapsible {  font-size: 15px; background-color: rgba(25,25,25,0.25); color: white; cursor: pointer;  
-		width: 50%; text-align: center; margin-left: 25%; border: 0; outline: none;  }
+.collapsible {  font-size: 15px; background-color: rgba(255,255,255,0.5);  cursor: pointer;  
+		width: 50%; text-align: center; margin-left: 25%; border: 1px #aaa; outline: none;  }
 .active, .collapsible:hover {  background-color: rgba(50,50,50,0.5);  border: 1px solid;   }
-.content { padding: 0 18px; display:none; max-height: 0; overflow: hidden; 
-		background-color: rgba(25,25,25,0.18); transition: max-height 1.2s ease-in-out;
-	 } 
+.content {  padding: 0 18px; display:none; max-height: 0; overflow: hidden; 
+		background-color: rgba(25,25,25,0.18); transition: max-height 1.2s ease-in-out; } 
   .collapsible:after {  content: '\02795'; /* Unicode "plus" sign (+) */ font-size: 14px; 
 	  		margin-top: -16px; float: right; margin-left: 5px; background-color: white; }
 	.active:after {  content: "\2796"; /* Unicode "minus" sign (-) */  }
@@ -160,7 +159,7 @@ h1 {   font-size: 24px;  font-weight: 800;   }
 	  <div class="spc15"> <br> </div> 	
 	
 
-<button type="button" class="collapsible"><h2 style=" border-bottom: double 3px;">Show Blog</h2></button>
+<button type="button" class="collapsible"><h2 style="border-bottom: double 3px; color:#000;">Show Blog</h2></button>
 <div class="content">
 
 	
