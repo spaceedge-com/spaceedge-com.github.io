@@ -87,7 +87,7 @@ h1 {   font-size: 24px;  font-weight: 800;   }
  .multi-search {  position:static; text-align:center; margin: 0 auto; padding: 10px; width: 80%; 
 	 		border: solid 1px #fff; background-color: rgba(255,255,255,0.98); }
  #search_select {  font-size:1.0em; width:30px; cursor: progress; padding-left:3px; 
-	          background-color: rgba(255,255,255,0.8); border: 1px solid; position: relative; }
+	          background-color: rgba(5,5,5,0.5); border: 1px solid; position: relative; }
  .search-form input {  width:300px; font-size:1.0em; color:#000; border-top:0; outline:none; margin:-5px; padding 5px; background-color: rgba(255,255,255,0.8); transition: height 0.5s; 
 	            }
  .search-form input[type=text]:focus { color: #000; background-color: rgba(255,255,255,0.98); } 
@@ -139,9 +139,9 @@ h1 {   font-size: 24px;  font-weight: 800;   }
       <script src="WebSearch.js" type="text/javascript"></script>
 	 <div class="search-form">  
 	  <form name="web_search_form">
-	   <input type="search" autocompletepopup="PopupSearchAutoComplete" autocompletesearch="search-autocomplete" name="searchterms" id="searchterms" autocomplete="off" onfocus="this.select()" placeholder="Type & Select Search">
+	   <input type="search" autocompletepopup="PopupSearchAutoComplete" autocompletesearch="search-autocomplete" name="searchterms" id="searchterms" autocomplete="off" onfocus="this.select()" placeholder="🔍 Search the Web..">
 	    <select name="search_engines" id="search_select" class="select" onfocus="return" onchange="return dosearch();">
-	      <option selected="selected" value="#" hidden>🔍</option>	
+	      <option selected="selected" value="#" hidden>∇</option>	
 	      <option value="ask">Ask</option>  <option value="bing">Bing</option> 
 	      <option value="dogpile">Dogpile</option>  <option value="duckduckgo">Duckduckgo</option>
 	      <option value="ecosia">Ecosia</option>  <option value="gitHub">GitHub</option> 
