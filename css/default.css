@@ -1,16 +1,18 @@
 /* CSS  - padding: top right bottom left */ 
 /* Scrollbars for Firefox */ 
-:root { scrollbar-color: rgb(100,120,255) rgb(246,254,255) !important; 
+:root { scrollbar-color: rgba(100,120,255,0.5) rgba(246,254,255,0.5) !important; 
 	scrollbar-width: thin !important;  }  
 /* Scrollbar for Chrome, Edge, Safari */
 :root::-webkit-scrollbar { overflow-y:scroll; width:0.75em; height:0.75em; }  
 :root::-webkit-scrollbar-track { background: rgb(100,120,255) !important;  }   
-:root::-webkit-scrollbar-thumb { color: rgb(246,254,255) !important; }
+:root::-webkit-scrollbar-thumb { color: rgb(246,254,255) !important; 
+				 color: rgba(246,254,255,0.5) !important; }
 /* Scrollbar hover for Firefox :root:hover { overflow-y: scroll; }  */
 /* Scrollbar hover for Chrome, Edge, Safari
 :root:hover::-webkit-scrollbar { overflow-y:scroll; width:0.75em; height:0.75em; }  
 :root:hover::-webkit-scrollbar-track { background: rgb(100,120,255) !important;  }   
-:root:hover::-webkit-scrollbar-thumb { color: rgb(246,254,255) !important; }  */
+:root:hover::-webkit-scrollbar-thumb { color: rgb(246,254,255) !important; 
+				       color: rgba(246,254,255,0.5) !important; }  */
 
 html {  font-size: 62.5%; /* =14px=1.4rem */ scrollbar-width: thin;  } 
 body {  font-family: 'Times New Roman', Times, serif; font-size: 18px; 
