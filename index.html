@@ -39,8 +39,8 @@ body {  font-family: 'Times New Roman', Times, serif; font-size: 17px; font-size
 	--moz-background-size: cover; --webkit-background-size: cover; 
 	--o-background-size: cover; background-repeat: no-repeat; 
 	overflow-x: hidden; overflow-y: auto;
-	background-origin: content-box; box-shadow: inset 0 8000px rgba(0,0,0,0.35); 
-	min-height: 700px; height: 750px; position: relative; top: 0;
+	background-origin: content-box; box-shadow: inset 0 10000px rgba(0,0,0,0.35); 
+	min-height: 700px; position: relative; top: 0;
       }
 	
 h1 {   font-size: 24px;  font-weight: 800;   }
@@ -75,12 +75,12 @@ h1 {   font-size: 24px;  font-weight: 800;   }
 			       .search-form input { font-size: 0.8em; }
 				   }
 		
-   .articles {  max-width: 100%; height: 1500px; max-height: 100%; 
-	   margin: 5px 1px 20px 5px; padding: 5px 5px 5px 5px; 
-	   font-family: 'Serif'; color: #fff; background-color: rgba(0,0,0,0.05); 
-	   text-shadow: 0 0 white; display:block; overflow-x:hidden; overflow-y:hidden; 
-	   word-break: break-word; text-overflow: ellipsis; line-height:1em; 
-	   -webkit-box-orient: vertical; -webkit-box; -webkit-line-clamp:50; /* #-lines*/ 
+  .articles {  max-width: 100%; height: 1500px; max-height: 100%; 
+	      margin: 5px 1px 20px 5px; padding: 5px 5px 5px 5px; 
+	      font-family: 'Serif'; color: #fff; background-color: rgba(0,0,0,0.05); 
+	      text-shadow: 0 0 white; display:block; overflow-x:hidden; overflow-y:hidden; 
+	      word-break: break-word; text-overflow: ellipsis; line-height:1em; 
+	     -webkit-box-orient: vertical; -webkit-box; -webkit-line-clamp:50; /* #-lines*/ 
              }
 						
    /* For ( object data=" ) Don't change height otherwise! for scrolling, hover scrolling! */
@@ -88,12 +88,16 @@ h1 {   font-size: 24px;  font-weight: 800;   }
 	       display:block; overflow-x:hidden; overflow-y:hidden; }         
 	
 	
-	.spc5 { position: relative; clear:both; float:inherit; height:5px; max-height:5px; margin:5px; padding:5px;}
-	.spc15 { position: relative; clear:both; float:inherit; height:15px; max-height:15px; margin:15px; padding:15px;}
-	.spc25 { position: relative; clear:both; float:inherit; height:25px; max-height:25px; margin:25px; padding:25px;}
-	.spc  { position: relative; clear:both; float:inherit; height:50px; max-height:50px; margin:50px; padding:50px;}
+	.spc5 { position: relative; clear:both; float:inherit; height:5px; 
+		max-height:5px; margin:5px; padding:5px;}
+	.spc15 { position: relative; clear:both; float:inherit; height:15px; 
+		max-height:15px; margin:15px; padding:15px;}
+	.spc25 { position: relative; clear:both; float:inherit; height:25px; 
+		max-height:25px; margin:25px; padding:25px;}
+	.spc  { position: relative; clear:both; float:inherit; height:50px; m
+		ax-height:50px; margin:50px; padding:50px;}
 	 
- /*       Search_eng dropdown         */ 	
+  /*       Search_eng dropdown         */ 	
  .multi-search {  position:static; text-align:center; margin: 0 auto; padding: 10px; 
 	 	  width: 80%; background-color: rgba(72, 72, 72, 0.8); 
 	       }
@@ -106,7 +110,7 @@ h1 {   font-size: 24px;  font-weight: 800;   }
  #search_select {  font-size: 1.0em; width: 78px; cursor: progress; padding-left: 3px; 
 	           color: orange; background-color: rgba(135,135,135,0.18); 
 		   border: 1px solid;  height: 28px; margin-top: 3px; }
-       select {  font-size:18px;  border: 0; 
+         select {  font-size:18px;  border: 0; 
 	       	 /* appearance: none; -moz-appearance: none; -webkit-appearance: none; */ }
        select::after { cursor:progress; }       #searchterms {  text-align: center; }
 				option {  font-size: 1.35rem;   }	
@@ -124,15 +128,25 @@ h1 {   font-size: 24px;  font-weight: 800;   }
 	  		background-color: white; }
        .active:after {  content: "\2796"; /* Unicode "minus" sign (-) */  }
 	
-	#expand label { text-align: center; cursor: pointer; width: 55px;
-			margin: 0 auto; padding: 0; border: solid 1px; border-radius: 20px;
+	/* Custom checkbox button expands columns width */	
+	/* checkbox select expand */
+    	input + .row .column { float: left; margin: 30px auto; width: 48.80%; 
+			       max-width: 99%; transition:width 0.5s; }
+        input:checked + .row .column { width: 95%; max-width: 98%; 
+				display: block; max-height: 100%; transition:width 1s; }
+	#expand { text-align: center; margin: 0 auto; width: 100%; height: 30px; } 
+	#expand label { text-align: center; cursor: pointer; width: 55px; margin: 0 auto;
+			 padding: 0; border: solid 1px; border-radius: 20px;
 		      }	
+	#expand label:hover { color: rgba(128,128,128,.75); cursor:progress; }  
 	
                    .hid {  display: none; }  
         .column:hover > .hid { /* arrow on hover */  display:block;  z-index:10; }
 	           .hid img {  height: 25px; min-width: 25px; position: absolute; }
 	
-  #footer {  color:#fcf; position:absolute; width:100%; height:30px; text-align:center; flex-shrink:0; bottom: 0px; clear:both; background-color:var(--t25); padding-top:5px; margin-bottom:0; }
+  #footer {  color:#fcf; position:fixed; width:100%; height:30px; 
+	     text-align:center; flex-shrink:0; bottom: 0px; clear:both; 
+	     background-color:var(--t25); padding-top: 5px; margin-bottom:0; }
 	
 </style> 
 	
