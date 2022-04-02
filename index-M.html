@@ -141,16 +141,15 @@ h1 {   font-size: 24px;  font-weight: 800;   }
 
 .modal-body {     padding: 2px 15px; }
   
-.modal-footer {   padding: 2px 12px; background-color: #333; color: white;
-		  position: absolute; width:97%; text-align:center; flex-shrink:0;
+.modal-footer {   padding: 0; background-color: #333; color: white;
+		  position: relative; width:100%; text-align:center; flex-shrink:0;
 	          bottom: 0; clear:both;   }
 
 .modal {
   	display: none; /* Hidden by default */
   	position: fixed; /* Stay in place */
   	padding-top: 10px; /* Location of the box */
-  	left: 0;  top: 0;  
-  	height: 85%;  width: 100%; /* Full width */
+  	left: 0;  top: 0;  height: 85%;  width: 100%; /* Full width */
   	overflow: auto; /* Enable scroll if needed */
   	background-color: rgb(0,0,0); /* Fallback color */
   	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -220,7 +219,7 @@ h1 {   font-size: 24px;  font-weight: 800;   }
        	 <div class="modal-body">
             <em>Search Engine Results:</em>
 		
-		<object data="/modalsearch.htm" type="text/html" style=" max-height:500px; min-width:500px; width:99%; margin:2px;"></object>
+		<object data="/modalsearch.htm" type="text/html" style=" height:99%; min-height:500px; width:99%; min-width:500px; margin:2px;"></object>
 	
 	 </div>
       <div class="modal-footer">  <p></p> </div>
