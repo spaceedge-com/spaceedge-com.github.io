@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
+<head>
+<meta charset="utf-8">
+<title>Modal Search</title
+<!-- jQuery --> 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- Bootstrap CSS -->
+
+<style>
+	
+/* Search */
+/*       Search_eng dropdown         */ 	
+.multi-search {  position:static; text-align:center; margin: 0 auto; padding: 10px; 
+				 width: 80%; background-color: rgba(72, 72, 72, 0.8); 
+			  }
+.search-form input {  max-width:100%; font-size:1.0em; color:#444; border:0; 
+	 	              border-bottom:1px solid; margin-right:-3px; 
+	 	              background-color: rgba(235,235,235,0.8); transition: height 0.5s; 
+	               }
+.search-form input[type=text]:focus {
+				  color: #000;  background-color: rgba(255,255,255,0.98);  } 
+.search-form input:focus::placeholder {  color: transparent;  }
+#search_select {  font-size: 1.0em; width: 78px; cursor: progress; padding-left: 3px; 
+	              color: orange; background-color: rgba(135,135,135,0.18); 
+				  border: 1px solid;  height: 28px; margin-top: 3px; }
+         select {  font-size:18px;  border: 0; 
+	       	 /* appearance: none; -moz-appearance: none; -webkit-appearance: none; */
+	       	    }
+       select::after { cursor:progress; }       #searchterms {  text-align: center; }
+				option {  font-size: 1.35rem;   }	
+</style>
+</head>
+
+<body>	
+	
+ <div class="multi-search" >  
+     <!--  calls dosearch();       <script src="WebSearch.js" type="text/javascript"></script> from external websearch.js file -->
+
+	 <div class="search-form">  
+	  <form name="web_search_form">
+	   <input type="search" autocompletepopup="PopupSearchAutoComplete" autocompletesearch="search-autocomplete" name="searchterms" id="searchterms" autocomplete="off" onfocus="this.select()" placeholder="🔍 Search..">
+	    <select name="search_engines" id="search_select" class="select" onfocus="return" onchange="return dosearch();">
+	      <option selected="selected" value="#" hidden>select ∇</option>	
+	      <option value="ask">Ask</option>  <option value="bing">Bing</option> 
+	      <option value="dogpile">Dogpile</option>  <option value="duckduckgo">Duckduckgo</option>
+	      <option value="ecosia">Ecosia</option>  <option value="gitHub">GitHub</option> 
+	      <option value="lilo">Lilo</option>  <option value="onelook">OneLook</option>
+	      <option value="qwant">Qwant</option>  <option value="stackexchange">Stack Exchange</option> 
+	    <option value="stackoverflow">Stack Overflow</option>  <option value="startpage">Startpage</option>	    
+	      <option value="swisscows">Swisscows</option>  <option value="wikipedia">Wikipedia</option>
+	      <option value="wolframalpha">Wolframalpha</option>  <option value="yahoo">Yahoo!</option>
+	    </select>	  
+	  </form>
+	 </div>
+ </div>	
+
+<script type="text/javascript">
+	$( 'option[value="#"]' ).prop( 'selected', 'selected' );  //jQuery reselect #
+
+function dosearch() {
+
+var si = (web_search_form.search_select.value);
+var term = (web_search_form.searchterms.value);
+
+if (si=="ask") {  var seng = "https://ask.com/web?q=";  } 
+if (si === "bing") {  var seng = "https://www.bing.com/search?q=";  } 
+if (si === "dogpile") {  var seng = "https://www.dogpile.com/info.dogpl/search/web?q=";  } 
+if (si === "duckduckgo") {  var seng = "https://duckduckgo.com/?q=";  }
+if (si === "ecosia") {  var seng = "https://www.ecosia.org/search?q=";  }
+if (si === "gitHub") {  var seng = "https://github.com/search?q={searchTerms}&ref=opensearch";  }
+if (si === "lilo") {  var seng = "https://search.lilo.org/searchweb.php?q=";  }
+if (si === "onelook") {  var seng = "https://onelook.com/?w=";  }
+if (si === "qwant") {  var seng = "https://www.qwant.com/?q=";  }
+if (si === "stackexchange") {  var seng = "https://stackexchange.com/search?q=";  }
+if (si === "stackoverflow") {  var seng = "https://stackoverflow.com/search?q={searchTerms}";  }
+if (si === "startpage") {  var seng = "https://www.startpage.com/do/search?query=";  }
+if (si === "swisscows") {  var seng = "https://swisscows.ch/?query=";  }
+if (si === "wikipedia") {  var seng = "https://en.wikipedia.org/wiki/wiki.html?search=";  }
+if (si === "wolframalpha") {  var seng = "https://www.wolframalpha.com/input/?i=";  }
+if (si === "yahoo") {  var seng = "https://search.yahoo.com/search?p=";  } 
+
+var submit = seng + term;
+//alert ("After selection (submit): >>>> : " + submit);
+window.location.href = submit;
+
+}
+
+</script>	
+
+
+</body>
+</html>
