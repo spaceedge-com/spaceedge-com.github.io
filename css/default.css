@@ -1,6 +1,6 @@
 /* CSS  - padding: top right bottom left */ 
 /* Scrollbars for Firefox */ 
-:root { scrollbar-color: rgba(100,120,255,0.5) rgba(246,254,255,0.5) !important; 
+:root { scrollbar-color: rgba(100,120,255,0.9) rgba(246,254,255,0.5) !important; 
 	scrollbar-width: thin !important;  }  
 /* Scrollbar for Chrome, Edge, Safari */
 :root::-webkit-scrollbar { overflow-y:scroll; width:0.75em; height:0.75em; }  
