@@ -15,21 +15,24 @@
 	
 /* Search */
 html {  font-size: 62.5%; /* =14px=1.4rem */  min-height:100%;  } 
-body {  font-family: Arial, Helvetica, sans-serif;  font-size: 17px; font-size: 1.7rem; 
-	color: #fff; background-color: #000; text-shadow: 0 0 white; 
-	-webkit-font-smoothing: antialiased; 	
-	/* background-image: url('/images/astronomy2.jpg'); 
-	box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.35); */ 
+body {  font-family: Arial, Helvetica, sans-serif;  
+	font-size: 17px; font-size: 1.7rem; 
+	color: #fff; text-shadow: 0 0 white; 	
 	background-size: cover; --moz-background-size: cover; -
 	-webkit-background-size: cover; --o-background-size: cover; 
 	background-attachment: fixed; background-position: top left; 
 	background-repeat: no-repeat; background-origin: content-box; 
 	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
     	text-rendering: optimizeLegibility; overflow-x: hidden; 
+	margin: 5em; padding-top: 10px; /* Location of the box */
+  	background-color: rgba(0,0,0,0.4); /* w/ opacity */  
+	background-color: rgb(0,0,0); /* Fallback color */
+	border: 3px solid #cff;
+  	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
      }
 /*       Search_eng dropdown         */ 	
 .multi-search {  position:static; text-align:center; margin: 0 auto; padding: 10px; 
-		 margin: 5em; width: 80%; background-color: rgba(172, 172, 172, 0.18); 
+		 width: 80%; background-color: rgba(172, 172, 172, 0.18); 
 	      }
 .search-form input {  max-width:100%; font-size:1.0em; color:#444; border:0; 
 	 	      border-bottom:1px solid; margin-right:-3px; 
