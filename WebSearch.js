@@ -6,12 +6,13 @@ function dosearch() {
 var si = (web_search_form.search_engines.value);
 var term = (web_search_form.searchterms.value);
 
-if (si=="ask") {  var seng = "https://ask.com/web?q=";  } 
+if (si === "ask") {  var seng = "https://ask.com/web?q=";  } 
 if (si === "bing") {  var seng = "https://www.bing.com/search?q=";  } 
 if (si === "dogpile") {  var seng = "https://www.dogpile.com/info.dogpl/search/web?q=";  } 
 if (si === "duckduckgo") {  var seng = "https://duckduckgo.com/?q=";  }
 if (si === "ecosia") {  var seng = "https://www.ecosia.org/search?q=";  }
 if (si === "gitHub") {  var seng = "https://github.com/search?q={searchTerms}&ref=opensearch";  }
+if (si === "google") {  var seng = "https://www.google.com/search?q=";  } 
 if (si === "lilo") {  var seng = "https://search.lilo.org/searchweb.php?q=";  }
 if (si === "onelook") {  var seng = "https://onelook.com/?w=";  }
 if (si === "qwant") {  var seng = "https://www.qwant.com/?q=";  }
