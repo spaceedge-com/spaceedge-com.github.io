@@ -21,7 +21,7 @@
     width: 300%;
     top: 0;
     left: 0;
-    overflow: hidden;
+    overflow: hidden; overflow-x: hidden; overflow-y: hidden;
     animation: slider 26s infinite;
 }
 .img-slider .slider-container .slide {
@@ -29,12 +29,12 @@
     width: 33.33333333%; max-width: 50%;
     height: 35%; max-height: 50%;
     float: left;
-    overflow: hidden;
+    overflow: hidden; overflow-x: hidden; overflow-y: hidden;
 }
 .img-slider .slider-container .slide img {
   display: block;
   width: 35%; max-width: 50%;
-  height: 30%; max-height: 50%;
+  height: 30%; max-height: 50%;  overflow: hidden; overflow-x: hidden; overflow-y: hidden;
 }
 @keyframes slider {
     0%, 25%, 100%{left: 0}
