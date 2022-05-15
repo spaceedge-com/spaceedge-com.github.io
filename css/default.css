@@ -1,24 +1,24 @@
 /* CSS  - padding: top right bottom left */ 
 /* Scrollbars for Firefox */ 
-:root { scrollbar-color: rgba(100,120,255,0.9) rgba(246,254,255,0.5) !important; 
-	scrollbar-width: thin !important;  }  
-/* Scrollbar for Chrome, Edge, Safari */
-:root::-webkit-scrollbar { overflow-y:scroll; width:0.75em; height:12px; }  
-:root::-webkit-scrollbar-track { background: rgb(100,120,255) !important;  }   
-:root::-webkit-scrollbar-thumb { color: rgb(246,254,255) !important; 
-				 color: rgba(246,254,255,0.5) !important; }
-/* Scrollbar Chrome Fix 051422 */
+:root { scrollbar-color: rgba(100,120,255,0.9) rgba(0,0,0,0.5) !important; scrollbar-width: thin !important; 
+}  
+/* Scrollbar for Chrome, Edge, Safari. Chrome Fix 051422 */
 ::-webkit-scrollbar {  height: 12px;  width: 5px;  background: #000;
 }
 ::-webkit-scrollbar-thumb {  background: #3938ff;  -webkit-border-radius: 1ex; -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
 }
 ::-webkit-scrollbar-corner {  background: #000;  }
-/* Scrollbar hover for Firefox :root:hover { overflow-y: scroll; }  */
-/* Scrollbar hover for Chrome, Edge, Safari
+
+/* Scrollbar for Chrome, Edge, Safari. 
+*::-webkit-scrollbar { overflow-y:scroll; width:0.75em; height:12px;  }  
+*::-webkit-scrollbar-track { background: rgb(100,120,255) !important;  }   
+*::-webkit-scrollbar-thumb { color: rgb(246,254,255) !important; color: rgba(246,254,255,0.5) !important; }  
+*/
+/* Scrollbar hover Chrome, Edge, Safari and for Firefox :root:hover { overflow-y: scroll; } 
 :root:hover::-webkit-scrollbar { overflow-y:scroll; width:0.75em; height:0.75em; }  
 :root:hover::-webkit-scrollbar-track { background: rgb(100,120,255) !important;  }   
-:root:hover::-webkit-scrollbar-thumb { color: rgb(246,254,255) !important; 
-				       color: rgba(246,254,255,0.5) !important; }  */
+:root:hover::-webkit-scrollbar-thumb { color: rgb(246,254,255) !important; color: rgba(246,254,255,0.5) !important; } 
+*/
 
 html {  font-size: 62.5%; /* =14px=1.4rem */ min-height:100%;  scrollbar-width: thin;  } 
 body {  font-family: 'Times New Roman', Times, serif;  
