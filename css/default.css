@@ -23,7 +23,7 @@
 html {  font-size: 62.5%; /* =14px=1.4rem */ min-height:100%;  scrollbar-width: thin;  } 
 body {  font-family: 'Times New Roman', Times, serif;  
 	font-size: 17px; font-size: 1.7rem; color: #fff; text-shadow: 0 0 white; 	
-	background-size: cover; --moz-background-size: cover; -
+	background-size: cover; --moz-background-size: cover; 
 	-webkit-background-size: cover; --o-background-size: cover; 
 	background-attachment: fixed; background-position: top left; 
 	background-repeat: no-repeat; background-origin: content-box; 
