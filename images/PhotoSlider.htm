@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+.img-slider {
+    position: relative;
+    width: 100vw;
+    height: 250px;
+    margin-left: 33%; padding: 0;
+}
+.img-slider .slider-container {
+    position: absolute;
+    width: 300%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    animation: slider 26s infinite;
+}
+.img-slider .slider-container .slide {
+    position: relative;
+    width: 33.33333333%; max-width: 50%;
+    height: 35%; max-height: 50%;
+    float: left;
+    overflow: hidden;
+}
+.img-slider .slider-container .slide img {
+  display: block;
+  width: 35%; max-width: 50%;
+  height: 30%; max-height: 50%;
+}
+@keyframes slider {
+    0%, 25%, 100%{left: 0}
+    30%, 55%{left: -100%}
+    60%, 85%{left: -200%}
+}
+
+</style>
+</head>
+<body>
+
+<Section class="img-slider">
+  <div class="slider-container">
+    
+    <div class="slide">
+      <img src="http://spaceedge.com/images/slider/astronomy1.jpg">
+    </div>
+    
+    <div class="slide">
+      <img src="http://spaceedge.com/images/slider/astronomy2.jpg">
+    </div>
+
+    <div class="slide">
+      <img src="http://spaceedge.com/images/slider/astronomy3.jpg">
+    </div>
+    
+  </div>
+</Section>
+
+
+</body>
+</html> 
 
