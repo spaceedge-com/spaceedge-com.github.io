@@ -78,7 +78,7 @@ figcaption {  padding-bottom: 1em;  }
 		min-height:2500px; max-height:100%; text-shadow: 0 0 white; 
 		margin-top: 3%; margin-bottom: 50px; 
 		padding-bottom: 50px; overflow-x: hidden; overflow-y: hidden;
-	    } 	
+} 	
 pre {   padding: 5%;  }	
 	
 	.spc5 { position: relative; clear:both; float:inherit; height:5px; 
@@ -92,4 +92,5 @@ pre {   padding: 5%;  }
 
 #footer {  color:#f8f; position:fixed; width:100%; height:30px; font-size: small;
 	     text-align:center; flex-shrink:0; bottom: 0px; clear:both; 
-	     background-color:var(--t25); padding-top: 5px; margin-bottom:0; }	
+	     background-color:var(--t25); padding-top: 5px; margin-bottom:0; 
+}	
