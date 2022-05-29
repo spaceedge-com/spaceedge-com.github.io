@@ -86,39 +86,33 @@ h1 {   font-size: 24px;  font-weight: 800;   }
    object {   width:100%; height:100%; max-height:998px; clear:both; display:block; overflow-x:hidden; overflow-y:hidden; 
 	  }         
 	
-.collapsible {  font-size: 15px; background-color: rgba(25,25,25,0.25); /*to show blog*/ 
-		cursor: pointer;  color:#fff; width: 50%; text-align: center; 
-		margin-left: 25%; border: 1px #aaa; outline: none;  }
-.active, .collapsible:hover {  background-color: rgba(50,50,50,0.5);  
-			       border: 1px solid; color:#fff;  }
-.content {  padding: 0 18px; display:none; max-height: 0; overflow: hidden; 
-	    background-color: rgba(25,25,25,0.18); transition: 
-		    max-height 1.2s ease-in-out; } 
-  .collapsible:after {  content: '\02795'; /* Unicode "plus" (+) */ font-size: 14px; 
-	  		margin-top: -16px; float: right; margin-left: 5px; 
-	  		background-color: white; }
-       .active:after {  content: "\2796"; /* Unicode "minus" sign (-) */  }
+
+	.content {  padding: 0 18px; display:none; max-height: 0; overflow: hidden; 
+	   	 background-color: rgba(25,25,25,0.18); transition: max-height 1.2s ease-in-out; } 
+        .active:after {  content: "\2796"; /* Unicode "minus" sign (-) */  }
 	
-	/* Custom checkbox button expands columns width */	
-	/* checkbox select expand */
-    	input + .row .column { float: left; margin: 30px auto; width: 48.80%; 
-			       max-width: 99%; transition:width 0.5s; }
-        input:checked + .row .column { width: 95%; max-width: 98%; 
-				display: block; max-height: 100%; transition:width 1s; }
-	#expand { text-align: center; margin: 0 auto; width: 100%; height: 30px; } 
-	#expand label { text-align: center; cursor: pointer; width: 55px; margin: 0 auto;
-			 padding: 0; border: solid 1px; border-radius: 20px;
+	
+	/* Custom checkbox button expands columns width _ checkbox select expand */
+    	input + .row .column { float: left; margin: 30px auto; width: 48.80%; max-width: 99%; transition:width 0.5s; 
+			     }
+        input:checked + .row .column { width: 95%; max-width: 98%; display: block; max-height: 100%; transition:width 1s; 
+				     }
+	#expand {	 text-align: center; margin: 0 auto; width: 100%; height: 30px; } 
+	#expand label {  text-align: center; cursor: pointer; width: 55px; margin: 0 auto; padding: 0; border: solid 1px; border-radius: 20px;
 		      }	
 	#expand label:hover { color: rgba(128,128,128,.75); cursor:progress; }  
 	
+	
                    .hid {  display: none; }  
-        .column:hover > .hid { /* arrow on hover */  display:block;  z-index:10; }
+       		   .column:hover > .hid { /* arrow on hover */  display:block;  z-index:10; }
 	           .hid img {  height: 25px; min-width: 25px; position: absolute;  padding-left: 42%; }
+	
 	
      #modaldiv {    margin:0 auto;  width: 100%;  text-align: center;  }
      #searchmodalBtn {  margin: auto; width: 50%; border: 1px solid turquoise; 
 			border-radius: 8px; color: white; background-color: rgba(10,10,10,.5); }
 
+	
      .articleslinksbox {  background-color: rgba(50,50,50,0.5); border-radius: 5px; border: 1px solid #888; padding: 5px; 
 	     			width: max-content; max-width: 100%;  }
      .linkbutton {  background-color: rgba(50,50,50,0.5); color: cadetblue; border-radius: 5px; border: 0; max-width: 100%; }
@@ -159,8 +153,8 @@ h1 {   font-size: 24px;  font-weight: 800;   }
 			
 		
  <div id="modaldiv" align="center">
-  <!-- Trigger/Open The Modal #128269;=🔍  <button id="searchmodalBtn">&#128269; Open MultiSearch</button> 
-	<a href="//searchM.html" target="_top"></a>  -->
+    	<!-- Trigger/Opens Modal <button id="searchmodalBtn"> Open MultiSearch 🔍=&#128269;; </button> 
+		 	 <a href="//searchM.html" target="_top"></a>  -->
     <button id="searchmodalBtn" type="button" onclick="location.href='https://spaceedge.com/searchM.html'"> Open MultiSearch &#128269; </button>
   </div>
 	
@@ -168,10 +162,6 @@ h1 {   font-size: 24px;  font-weight: 800;   }
     	<div class="spc25"> <br>  </div> 
 	
 
-<!-- <button type="button" class="collapsible"><h2 style="border-bottom: double 3px;">Show Blog</h2></button>
-<div class="content"> -->
-
-	
 <div id="expand"> <label for="exnd" style="font-size:20px;"> ◄ ► </label> </div>	
     		 <input type='checkbox' style='display: none' id='exnd'>
   
@@ -220,18 +210,11 @@ h1 {   font-size: 24px;  font-weight: 800;   }
 		
                
 </div>
-	   
-
-<!-- </div>
-JS collapsibles script file
-<script type="text/javascript" src="/Collapsibles.js"></script>	 -->
-	
-	
+	   	
     	<div class="spc25"> <br> </div> 		
 	   
-
 <div id="footer" style="">
-    Last Updated:05082022.. <a href="mailto:webmaster@espaceedge.com">Email me:</a>. <a href="//spaceedge.com"> &copy; SpaceEdge.com </a>  
+    Last Updated:05282022.. <a href="mailto:webmaster@espaceedge.com">Email me:</a>. <a href="//spaceedge.com"> &copy; SpaceEdge.com </a>  
 </div>
 	   
 											  
