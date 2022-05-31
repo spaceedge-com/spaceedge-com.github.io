@@ -276,7 +276,7 @@ background-color: #FF6600
 }
 
 
-#footer {  color:#f8f; position:fixed; width:100%; height:30px; font-size: small;
+#footer {  color:#f8f; position:fixed; width:100%; height:70px; font-size: small;
 	     text-align:center; flex-shrink:0; bottom: 0px; clear:both; 
-	     background-color:var(--t25); padding-top: 5px; margin-bottom:0; 
+	     background-color:var(--t25); padding-top: 3px; margin-bottom:0; 
 }	
