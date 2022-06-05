@@ -53,7 +53,7 @@ h1 {   font-size: 24px;  font-weight: 800;   }
     .leadright {  padding-top: 2%; display: block; text-align: center;  }
 	
  /* 2 equal columns float next to each other */
-.column {  float:left; width:48.80%; min-width:380px; max-width:99%; height:1000px; min-height:90%; max-height:100%; 
+.column {  float:left; width:48.80%; min-width:380px; max-width:99%; height:1000px; min-height:900px; max-height:100%; 
 	   padding: 0; margin: 10px auto; display:block; color:#eee; background-color:rgba(0,0,0,0.20); text-shadow: 0 0 white; 
 	   border-radius: 4px; overflow-x: hidden; overflow-y: hidden; border: solid; position: relative; 
 	}
@@ -64,7 +64,6 @@ h1 {   font-size: 24px;  font-weight: 800;   }
    /* Responsive layout - screen < 800px - stack columns verticaly, instead of next to each other */
    @media (max-width: 800px) {  
 	 	             .column {  width:93%; min-width:90%; max-width:98%; border: solid 1px; margin-right: 5px; }	
-	   		     .column0 {  width:93%; min-width:90%; max-width:98%; margin-right: 5px; }
 		             #he .her h1 {  font-size: 31px; font-size: 2.3em;  }
 		             #expand { display: none;  }
 			     .search-form input { font-size: 0.8em; }
@@ -106,9 +105,9 @@ h1 {   font-size: 24px;  font-weight: 800;   }
      #searchmodalBtn {  margin: auto; color: #000; background-color: rgba(255,255,255,.8); padding: 16px 20px; 
 	     		border: none; cursor: pointer; opacity: 0.8; width: 280px;	}
 
-     .row0 {  margin: 25px; width: 90%; text-align: center; }     .row0:after {  content: ""; float: left; display: flex; clear: both;  }
-     .column0 { float:left; width:15%; min-width:120px; min-height:25px; padding: 5px; background-color:rgba(20,20,20,0.20); display: flex; position: relative; } 
-			.amazon {  margin: 25px;  max-width: 99%;  }
+
+     .amazon { margin: 25px; max-width: 99%; min-height:25px; text-align: center; background-color:rgba(20,20,20,0.20); 
+	     	display: flex; position: relative; display: flex; clear: both;  }
 	
 	
      .articlesbox {   margin: 20px; padding: 1px; width: max-content; max-width: 95%; height: 33px; display: flex;
@@ -152,7 +151,7 @@ $(function(){
 	<div class="spc25"> <br> </div>
 	
 	
-	<div class="row0 amazon" align="center">     
+	<div class="amazon" align="center">     
 		<object data="Amazon.htm" type="text/html" loading="lazy" style=" "> 
 		     <a href="Amazon.htm">Browser not supported?</a>
 		</object> 
