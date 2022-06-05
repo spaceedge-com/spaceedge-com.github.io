@@ -21,18 +21,6 @@
 */
 
 html {  font-size: 62.5%; /* =14px=1.4rem */ min-height:100%;  scrollbar-width: thin;  } 
-body {  font-family: 'Times New Roman', Times, serif;  
-	font-size: 17px; font-size: 1.7rem; color: #fff; text-shadow: 0 0 white; 	
-	background-size: cover; --moz-background-size: cover; 
-	-webkit-background-size: cover; --o-background-size: cover; 
-	background-attachment: fixed; background-position: top left; 
-	background-repeat: no-repeat; background-origin: content-box; 
-	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
-    	text-rendering: optimizeLegibility; overflow-x: hidden; 
-  	background-color: rgba(0,0,0,0.4); /* w/ opacity */  
-	background-color: rgb(0,0,0); /* Fallback color */
-  	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-     }
 
   h1 {   font-size: 24px; font-weight: 800; text-shadow: 0 0 white; 
 	 -webkit-font-smoothing:auto; border-top: 0.30em; outset rgba(255,255,255,.98);
