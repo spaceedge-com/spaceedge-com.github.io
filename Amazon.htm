@@ -37,9 +37,12 @@
   height: 30%; max-height: 50%;  overflow: hidden; overflow-x: hidden; overflow-y: hidden;
 }
 @keyframes slider {
-    0%, 25%, 100%{left: 0}
-    30%, 55%{left: -100%}
-    60%, 85%{left: -200%}
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
 
 
