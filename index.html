@@ -15,11 +15,21 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>		
 
 <style>	
-:root {  --t25: rgba(0,0,0,0.25); --tblue: rgba(0,0,255,0.25); --white: #fff; 
-	 scrollbar-width: thin !important; }
-  /* padding: top right bottom left */
-html {  font-size: 62.5%; /* =14px=1.4rem */  min-height:100%; } 
-	
+:root {  --t25: rgba(0,0,0,0.25); --tblue: rgba(0,0,255,0.25); --white: #fff; scrollbar-width: thin !important; }
+    /* padding: top right bottom left */
+ html {  font-size: 62.5%; /* =14px=1.4rem */  min-height:100%; } 
+ body {  font-family: 'Times New Roman', Times, serif; font-size: 17px; font-size: 1.7rem; 
+	color: #fff; background-color: #000; text-shadow: 0 0 white; 	
+	/* background-image: url('/images/astronomy2.jpg'); 
+	 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  	background-color: rgba(0,0,0,0.4);  (w/ opacity) background-color: rgb(0,0,0); (Fallback color) */ 
+	background-size: cover; --moz-background-size: cover; -
+	-webkit-background-size: cover; --o-background-size: cover; 
+	background-attachment: fixed; background-position: top left; 
+	background-repeat: no-repeat; background-origin: content-box; 
+	text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+	top: 0; vertical-align: top; overflow-x: hidden; 
+      }
 #body { /* css id#body for JS rnd body background */
 	background-image:url(/images/slider/astronomy1.jpg); background-position: top left;
 	background-attachment: fixed; background-size: cover; 
