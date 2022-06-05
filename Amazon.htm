@@ -3,14 +3,14 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {box-sizing: border-box;}
+* {box-sizing: border-box; overflow: hidden; }
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 300px; height:245px; max-height:250px;
   position: relative;
   margin: auto;
 }
@@ -74,7 +74,8 @@ img {vertical-align: middle;}
 	
 
 .row0 {  margin: 25px; width: 90%; text-align: center; }     .row0:after {  content: ""; float: left; display: flex; clear: both;  }
-.column0 { float:left; width:15%; min-width:120px; min-height:25px; padding: 5px; background-color:rgba(20,20,20,0.20); display: flex; position: relative; } 
+.column0 { 	float:left; width:15%; min-width:120px; min-height:25px; height:245px; max-height:250px; 
+		padding: 5px; background-color:rgba(20,20,20,0.20); display: flex; position: relative; } 
 .amazon {  margin: 25px;  max-width: 99%;  }  
   
 </style>
