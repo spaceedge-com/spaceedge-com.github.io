@@ -1,6 +1,49 @@
 <!DOCTYPE html>
 <html>
+<head>
 <style>
+    
+/* Auto Slideshow*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    overflow-x: hidden; overflow-y: hidden;
+}    
+.img-slider {
+    position: relative;
+    width: 100vw;
+    height: 250px;
+    margin-left: 10%; padding: 0;
+}
+.img-slider .slider-container {
+    position: absolute;
+    width: 300%;
+    top: 0;
+    left: 0;
+    overflow: hidden; overflow-x: hidden; overflow-y: hidden;
+    animation: slider 26s infinite;
+}
+.img-slider .slider-container .slide {
+    position: relative;
+    width: 33.33333333%; max-width: 50%;
+    height: 35%; max-height: 50%;
+    float: left;
+    overflow: hidden; overflow-x: hidden; overflow-y: hidden;
+}
+.img-slider .slider-container .slide img {
+  display: block;
+  width: 35%; max-width: 50%;
+  height: 30%; max-height: 50%;  overflow: hidden; overflow-x: hidden; overflow-y: hidden;
+}
+@keyframes slider {
+    0%, 25%, 100%{left: 0}
+    30%, 55%{left: -100%}
+    60%, 85%{left: -200%}
+}
+
+</style>
+</head>
 
 body {
   margin: 0; overflow: hidden;
@@ -13,50 +56,69 @@ body {
 </style>
 
 <body>
-  
+
+	
+<Section class="img-slider">
+  <div class="slider-container">
+    
+
   
 <div class="row0 amazon" align="center">     
-		  <object data="Amazon.htm" type="text/html" loading="lazy" style=" "> 
-		     <a href="Amazon.htm">Browser not supported?</a>
-		  </object>
-		
+
+    <div class="slide">		
 		<div class="column0">	
 		<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=amazon2022029-20&language=en_US&marketplace=amazon&region=US&placement=1730976492&asins=1730976492&linkId=d2c805c09c52728e9a30fe97654e4ef8&show_border=true&link_opens_in_new_window=true"></iframe>
 		</div>
-		
+    </div>
+	
+    <div class="slide">	
 		<div class="column0">	
 		<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=amazon2022029-20&language=en_US&marketplace=amazon&region=US&placement=B09NSW26KN&asins=B09NSW26KN&linkId=9dd28cd8f923d2b56a373b49bfb6bfe4&show_border=true&link_opens_in_new_window=true"></iframe>
 		</div>
-		
+    </div>	
+	
+    <div class="slide">	
 		<div class="column0">
 		<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=amazon2022029-20&language=en_US&marketplace=amazon&region=US&placement=B01N4G3159&asins=B01N4G3159&linkId=2b3fefb2a795aeb1e402185463fc4e43&show_border=true&link_opens_in_new_window=true"></iframe>
 		</div>
+    </div>   
 		
+    <div class="slide">	
 		<div class="column0">
 		<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=amazon2022029-20&language=en_US&marketplace=amazon&region=US&placement=B0756RQRPG&asins=B0756RQRPG&linkId=ae5bdcdd665e5be2c619b3c35d16a754&show_border=true&link_opens_in_new_window=true"></iframe>
 		</div>
-		
+    </div>
+	
+    <div class="slide">	
 		<div class="column0">
-<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=amazon2022029-20&language=en_US&marketplace=amazon&region=US&placement=B0154B2FL6&asins=B0154B2FL6&linkId=34c0c40e0e390c16aeb15c7ae7b03969&show_border=true&link_opens_in_new_window=true"></iframe>
-		</div>
-		
+		<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=amazon2022029-20&language=en_US&marketplace=amazon&region=US&placement=B0154B2FL6&asins=B0154B2FL6&linkId=34c0c40e0e390c16aeb15c7ae7b03969&show_border=true&link_opens_in_new_window=true"></iframe>
+	        </div>
+    </div>
+
+    <div class="slide">	
 		<div class="column0">
 		<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=amazon2022029-20&language=en_US&marketplace=amazon&region=US&placement=B01JPYRVTY&asins=B01JPYRVTY&linkId=785c152fb2a8100c0b977b9bc29f771f&show_border=true&link_opens_in_new_window=true"></iframe>
 		</div>
-		
+    </div>
+
+    <div class="slide">	
 		<div class="column0">
 		<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=amazon2022029-20&language=en_US&marketplace=amazon&region=US&placement=B07N5WYKD2&asins=B07N5WYKD2&linkId=3c799386adfaa216a9e6bc3b335f9c3d&show_border=true&link_opens_in_new_window=true"></iframe>
 		</div>
-		
+    </div>
+	    
+    <div class="slide">	
 		<div class="column0">
 		<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=amazon2022029-20&language=en_US&marketplace=amazon&region=US&placement=B083LCJXVM&asins=B083LCJXVM&linkId=552981276dd81fb9a5ebd59e5544a26b&show_border=true&link_opens_in_new_window=true"></iframe>
 		</div>
+   </div>
 		
-			
-	</div>
+		
 	
-	<div class="spc5"> <br> </div>
+	</div>
  
-  
+  </div>
+</Section>
+ 
 </body>
 </html>
