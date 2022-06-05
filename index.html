@@ -127,7 +127,15 @@ h1 {   font-size: 24px;  font-weight: 800;   }
 	
 <!-- JS #body random background from external file, -->
 <script type="text/javascript" src="/Rnd-Backgrnd.js"></script>	
-
+	
+<!-- load header footer from external file -->	
+<script> 
+$(function(){
+  $("#header").load("header.htm"); 
+  $("#footer").load("footer.htm"); 
+});
+</script>
+	
 </head>
 	
 <body id="body">
