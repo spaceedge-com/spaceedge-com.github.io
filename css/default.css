@@ -50,8 +50,8 @@ h2 {    font-family: 'Times New Roman', Times, serif; font-size: 21px; display: 
 	font-size: 2.1rem; color: #cec; font-weight: 800; text-shadow: 0 0 white; line-height: 1.15em; margin: .5em;  }		    
 h3 {    font-family: 'Times New Roman', Times, serif; font-size: 19px; display: inline-block;
 	font-size: 1.9rem; color: #cec; font-weight: 800; text-shadow: 0 0 white; line-height: 1.15em; margin: .5em;  }
-p {     font-family: 'Times New Roman', Times, serif; color:#fff; font-size: 17px; display: inline-block;
-	font-size: 1.65rem; font-style: normal; line-height: 1.15em; text-shadow: 0 0 white; margin: .4em .3em 1.2em .4em; }			
+p {     font-family: 'Times New Roman', Times, serif; color:#fff; font-size: 16px; display: inline-block;
+	font-size: 1.5rem; font-style: normal; line-height: 1.15em; text-shadow: 0 0 white; margin: .4em .3em 1.2em .4em; }			
 a { 	color:skyblue;  }
 a:link { text-decoration: none;  }
 em {    color:seashell; font-size: 1.0em; font-style: oblique; text-align: center; } 
