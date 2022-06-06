@@ -62,7 +62,8 @@ cite {  color:#FCA; font-size: 0.9em; text-align: right;  margin:0 auto; width: 
 hr {    border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
 img {   min-width:290px; max-width:90%; height:auto; display:block; margin: 0 auto; 
 	border: 1px solid rgba(255,255,255,.33); }
-figure {    margin: 0 auto; display: block; text-align: center; }
+figure {  display: block; text-align: center; float: left; font-style: italic; font-size: smaller; text-indent: 0;
+		border: thin silver solid; margin: 0.5em;  padding: 0.5em; }
 figure img, figcaption {   color:#888; text-align: center; max-width:98%; 
 			   font-size: 85%; font-style: italic; margin: auto; }
 figcaption {  padding-bottom: 1em;  }
