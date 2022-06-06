@@ -35,7 +35,7 @@ body {  font-family: 'Times New Roman', Times, serif; font-size: 17px; font-size
      }
   h1 {   font-size: 24px; font-weight: 800; text-shadow: 0 0 white; 
 	 -webkit-font-smoothing:auto; border-top: 0.30em; outset rgba(255,255,255,.98);
-	 line-height: 1.20em; margin: .30em .69em .69em .33em;  } }
+	 line-height: 1.20em; margin: .30em .69em .69em .33em; display: block; }
  #he {   width: 100%; background-color: rgba(25,25,25,0.48);  }	
 .her {   color: #bcf; position: absolute; width:80%; min-width:300px; max-width:99%; 
 	 height:88px; max-height:98px; display: inline-table; margin: 0 auto; 
