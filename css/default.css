@@ -64,9 +64,8 @@ img {   min-width:290px; max-width:90%; height:auto; display:block; margin: 0 au
 	border: 1px solid rgba(255,255,255,.33); }
 figure {  display: block; text-align: center; float: left; font-style: italic; font-size: smaller; text-indent: 0;
 		border: thin silver solid; margin: 0.5em;  padding: 0.5em; }
-figure img, figcaption {   color:#888; text-align: center; max-width:98%; 
-			   font-size: 85%; font-style: italic; margin: auto; }
-figcaption {  padding-bottom: 1em;  }
+figure img, figcaption {  color:#888; text-align: center; max-width:98%; font-size: 85%; font-style: italic; margin: auto; }
+figcaption { padding-bottom: 1em; left: 0; display: flex;  }
 .small {    font-size: 85%;  font-style: italic;  }
 .cr {   font-style: oblique; display: inline list-item; margin-left: 25px; padding-top: .5em; padding-bottom: 1em; }
 
