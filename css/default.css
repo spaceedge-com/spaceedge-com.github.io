@@ -60,20 +60,20 @@ quote { font-weight: 800; display: block; font-size: 1.0em; font-style: oblique;
 cite {  color:#FCA; font-size: 0.9em; text-align: right;  margin:0 auto; width: 75%; 
 	padding-bottom: .5em; display: inline-block;  }
 hr {    border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
-img {   min-width:290px; max-width:90%; height:auto; display:block; margin: 0 auto; 
-	border: 1px solid rgba(255,255,255,.33); }
+img {   min-width:290px; max-width:90%; height:auto; display:block; margin: 0 auto; border: 1px solid rgba(255,255,255,.33); }
 figure {  display: block; text-align: center; float: left; font-style: italic; font-size: smaller; text-indent: 0;
-		border: thin silver solid; margin: 0.5em; padding: 0.5em; width: min-content; }
+		border: thin silver solid; margin: 0.5em; padding: 0.5em; width: min-content;padding-bottom: 1em; }
 figure img, figcaption {  color:#888; text-align: center; max-width:98%; font-size: 85%; font-style: italic; margin: auto; }
-figcaption { float: left; padding-bottom: 1em; left: 0; display: flex;  }
+figcaption {  float: left;  display: flex;  }
 .small {    font-size: 85%;  font-style: italic;  }
 .cr {   font-style: oblique; display: inline list-item; margin-left: 25px; padding-top: .5em; padding-bottom: 1em; }
 
 .dataobject {   color: #fff; display: inline-block; max-width:100%; height:3000px; text-shadow: 0 0 white;
 		min-height:2500px; max-height:100%; margin-top: 3%; margin-bottom: 50px; padding-bottom: 50px; 
 		overflow-x: hidden; overflow-y: hidden; 
-} 	
-pre {   padding: 5%;  }	
+} 
+
+ pre {   padding: 5%;  }	
 	
 .spc5 { position: relative; clear:both; float:inherit; height:5px; max-height:5px; margin:5px; padding:5px; }
 .spc15 { position: relative; clear:both; float:inherit; height:15px; max-height:15px; margin:15px; padding:15px; }
