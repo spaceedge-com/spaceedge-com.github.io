@@ -49,12 +49,12 @@ h2 {    font-family: 'Times New Roman', Times, serif; font-size: 21px;
 	font-size: 2.1rem; color: #cec; font-weight: 800; text-shadow: 0 0 white; line-height: 1.15em; margin: .5em;  }		    
 h3 {    font-family: 'Times New Roman', Times, serif; font-size: 18px; 
 	font-size: 1.8rem; color: #cec; font-weight: 800; text-shadow: 0 0 white; line-height: 1.15em; margin: .5em;  }
-p {     font-family: 'Times New Roman', Times, serif; color:#fff; font-size: 18px; 
-	font-size: 1.8rem; font-style: normal; line-height: 1.15em; text-shadow: 0 0 white; margin: .4em .3em 1.2em .4em; }			
+p {     font-family: 'Times New Roman', Times, serif; color:#fff; font-size: 17px; 
+	font-size: 1.55rem; font-style: normal; line-height: 1.15em; text-shadow: 0 0 white; margin: .4em .3em 1.2em .4em; }			
 a { 	color:skyblue;  }
 a:link { text-decoration: none;  }
 em {    color:seashell; font-size: 1.0em; font-style: oblique; text-align: center; } 
-quote { font-weight: 800; display: block; font-size: 1.0em; font-style: oblique; 
+quote { font-weight: 800; display: block; font-size: 1.5em; font-style: oblique; 
 	text-align: center; padding: .8em .8em 0 .2em; }
 cite {  color:#FCA; font-size: 0.9em; margin:0 auto; padding-left: 20%; padding-bottom: .5em; display: inline-block;  }
 hr {    border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
