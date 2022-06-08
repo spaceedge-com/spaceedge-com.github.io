@@ -37,7 +37,7 @@ body {  font-family: 'Times New Roman', Times, serif; display: block; font-size:
      .her em {  border-bottom: double 3px; color: lightskyblue; } 
   .leadright {  padding-top: 2%; display: block; text-align: center;  }
 	
-h1 {   display: block; font-family: 'Times New Roman', Times, serif; color:#eee; margin: .67em 0 .67em 0; font-weight: bold; }
+h1 {   display: block; font-family: 'Times New Roman', Times, serif; font-size: 2.0em; color:#eee; margin: .67em 0 .67em 0; font-weight: bold; }
 h2 {   display: block; font-family: 'Times New Roman', Times, serif; font-size: 1.5em; color: #cec; margin: 0.83em 0 0.83em 0; font-weight: bold; }
 h3 {   display: block; font-family: 'Times New Roman', Times, serif; font-size: 1.17em; color:#cec; margin: 1em 0 1em 0; font-weight: bold; }
 h4 {   display: block; font-family: 'Times New Roman', Times, serif; font-size: 1.0em; color:#cec; margin: 1.33em 0 1.33em 0; font-weight: bold; }
@@ -47,7 +47,7 @@ p {    display: block; font-family: 'Times New Roman', Times, serif; font-size: 
 a {    color:skyblue;  }
 a:link { text-decoration: none;  }
 em {    color:seashell; font-size: 1.0em; font-style: oblique; text-align: center; } 
-quote { font-weight: 800; display: block; font-size: 2.0rem; font-style: oblique; text-align: center; padding: .8em .8em 0 .2em; }
+quote { display: block; font-size: 1.7rem; font-style: oblique; text-align: center; padding: .8em .8em 0 .2em; }
 cite {  color:#FCA; font-size: 1.0em; margin:0 auto; padding-left: 25%; padding-bottom: .5em; display: inline-block;  }
 hr {    border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
 img {   min-width:290px; max-width:90%; height:auto; display:block; margin: 0 auto; border: 1px solid rgba(255,255,255,.33); }
