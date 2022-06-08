@@ -20,39 +20,31 @@
 :root:hover::-webkit-scrollbar-thumb { color: rgb(246,254,255) !important; color: rgba(246,254,255,0.5) !important; } 
 */
 
-html {  font-size: 62.5%; /* =14px=1.4rem */ min-height:100%;  scrollbar-width: thin;  } 
-body {  font-family: 'Times New Roman', Times, serif; font-size: 17px; font-size: 1.7rem; 
-	color: #fff; background-color: #000; text-shadow: 0 0 white; 	
-	/* background-image: url('/images/astronomy2.jpg'); 
-	 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+html {  display: block; /* font-size: 62.5%; 14px=1.4rem */ min-height: 100%; scrollbar-width: thin;  } 
+body {  font-family: 'Times New Roman', Times, serif; display: block; font-size: 1.0rem; color: #fff; background-color: #000; text-shadow: 0 0 white; 	
+	/* background-image: url('/images/astronomy2.jpg'); box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   	background-color: rgba(0,0,0,0.4);  (w/ opacity) background-color: rgb(0,0,0); (Fallback color) */ 
-	background-size: cover; --moz-background-size: cover; -
-	-webkit-background-size: cover; --o-background-size: cover; 
-	background-attachment: fixed; background-position: top left; 
-	background-repeat: no-repeat; background-origin: content-box; 
+	background-size: cover;  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; 
+	background-attachment: fixed; background-position: top left; background-repeat: no-repeat; background-origin: content-box; 
 	text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
-	top: 0; vertical-align: top; overflow-x: hidden; 
-     }
+	top: 0; vertical-align: top; overflow-x: hidden;      }
 
  #he {   width: 100%; background-color: rgba(25,25,25,0.48);  }	
 .her {   color: #bcf; position: absolute; width:80%; min-width:300px; max-width:99%; 
-	 height:88px; max-height:98px; display: inline-table; margin: 0 auto; 
-	 padding-left: 30px; z-index: 3; }
- #he .her h1 {  font-size: 31px; font-size: 3.1em; font-weight: 400; border: none; color: aqua;
-		font-style: oblique; margin: 0; padding-bottom: 1%; text-shadow: 0 0 white; } 
-       .lead {  font-size: 1.0em; font-weight: 600; color: coral; }  
+	 height:88px; max-height:98px; display: inline-table; margin: 0 auto; padding-left: 30px; z-index: 3; }
+ #he .her h1 {  font-weight: 400; border: none; color: aqua; font-style: oblique; margin: 0; padding-bottom: 1%;  } 
+       .lead {  font-size: 1.0em; color: coral; }  
      .her em {  border-bottom: double 3px; color: lightskyblue; } 
   .leadright {  padding-top: 2%; display: block; text-align: center;  }
 	
-h1 {    font-size: 24px; font-weight: 800; text-shadow: 0 0 white; -webkit-font-smoothing:auto;
-	line-height: 1.20em; margin: .30em .69em .69em .33em; display: block; clear:both;  }
-h2 {    font-family: 'Times New Roman', Times, serif; font-size: 21px; display: block;
-	font-size: 2.1rem; color: #cec; font-weight: 800; text-shadow: 0 0 white; line-height: 1.15em; margin: .5em; clear:both; }		    
-h3 {    font-family: 'Times New Roman', Times, serif; font-size: 19px; display: block;
-	font-size: 1.9rem; color: #cec; font-weight: 800; text-shadow: 0 0 white; line-height: 1.15em; margin: .5em; clear:both; }
-p {     font-family: 'Times New Roman', Times, serif; color:#fff; font-size: 16px; display: block;
-	font-size: 1.5rem; font-style: normal; line-height: 1.15em; text-shadow: 0 0 white; margin: .4em .3em 1.2em .4em; }			
-a { 	color:skyblue;  }
+h1 {   display: block; font-family: 'Times New Roman', Times, serif; color:#eee; margin: .67em 0 .67em 0; font-weight: bold; }
+h2 {   display: block; font-family: 'Times New Roman', Times, serif; font-size: 1.5em; color: #cec; margin: 0.83em 0 0.83em 0; font-weight: bold; }
+h3 {   display: block; font-family: 'Times New Roman', Times, serif; font-size: 1.17em; color:#cec; margin: 1em 0 1em 0; font-weight: bold; }
+h4 {   display: block; font-family: 'Times New Roman', Times, serif; font-size: 1.0em; color:#cec; margin: 1.33em 0 1.33em 0; font-weight: bold; }
+h5 {   display: block; font-family: 'Times New Roman', Times, serif; font-size: .83em; color:#cec; margin: 1.67em 0 1.67em 0; font-weight: bold; }
+h6 {   display: block; font-family: 'Times New Roman', Times, serif; font-size: .67em; color:#cec; margin: 2.33em 0 2.33em 0; font-weight: bold; }
+p {    display: block; font-family: 'Times New Roman', Times, serif; font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; margin: 1em 0 1em 0; }
+a {    color:skyblue;  }
 a:link { text-decoration: none;  }
 em {    color:seashell; font-size: 1.0em; font-style: oblique; text-align: center; } 
 quote { font-weight: 800; display: block; font-size: 2.0rem; font-style: oblique; text-align: center; padding: .8em .8em 0 .2em; }
