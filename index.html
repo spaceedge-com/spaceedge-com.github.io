@@ -14,37 +14,40 @@
 <!--     jQuery       --> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>		
 
-<style>	
+<style>	 
+	/* padding: top right bottom left */
 :root {  --t25: rgba(0,0,0,0.25); --tblue: rgba(0,0,255,0.25); --white: #fff; scrollbar-width: thin !important; }
-    /* padding: top right bottom left */
- html {  font-size: 62.5%; /* =14px=1.4rem */  min-height:100%; } 
+
+ html {  min-height:100%; text-shadow: 0 0 white; /* font-size: 62.5%;=14px=1.4rem */
+	 text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;  } 
 
 #body { /* css id#body for JS rnd body background */
 	background-image:url(/images/slider/astronomy1.jpg); background-position: top left;
-	background-attachment: fixed; background-size: cover; 
-	--moz-background-size: cover; --webkit-background-size: cover; 
-	--o-background-size: cover; background-repeat: no-repeat; 
-	overflow-x: hidden; overflow-y: auto;
-	background-origin: content-box; box-shadow: inset 0 10000px rgba(0,0,0,0.35); 
+	background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; -o-background-size: cover;
+	background-repeat: no-repeat; overflow-x: hidden; overflow-y: auto; background-origin: content-box; box-shadow: inset 0 10000px rgba(0,0,0,0.35); 
 	min-height: 700px; position: relative; top: 0; vertical-align: top; margin:2px; padding:2px;
       }
 	
-h1 {    font-size: 24px; font-weight: 800; text-shadow: 0 0 white; -webkit-font-smoothing:auto;
-	line-height: 1.20em; margin: .30em .69em .69em .33em; display: block; clear:both;  }
+h1 {   display: block; font-family: 'Times New Roman', Times, serif; color:#eee; margin: .67em 0 .67em 0; font-weight: bold; }
+h2 {   display: block; font-family: 'Times New Roman', Times, serif; font-size: 1.5em; color: #cec; margin: 0.83em 0 0.83em 0; font-weight: bold; }
+h3 {   display: block; font-family: 'Times New Roman', Times, serif; font-size: 1.17em; color:#cec; margin: 1em 0 1em 0; font-weight: bold; }
+h4 {   display: block; font-family: 'Times New Roman', Times, serif; font-size: 1.0em; color:#cec; margin: 1.33em 0 1.33em 0; font-weight: bold; }
+h5 {   display: block; font-family: 'Times New Roman', Times, serif; font-size: .83em; color:#cec; margin: 1.67em 0 1.67em 0; font-weight: bold; }
+h6 {   display: block; font-family: 'Times New Roman', Times, serif; font-size: .67em; color:#cec; margin: 2.33em 0 2.33em 0; font-weight: bold; }
+p {    display: block; font-family: 'Times New Roman', Times, serif; font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; margin: 1em 0 1em 0; }
+	
 #he {   width: 100%; background-color: rgba(25,25,25,0.48);  }	
-.her {  color: #bcf; position: absolute; width:80%; min-width:300px; max-width:99%; 
-	height:88px; max-height:98px; display: inline-table; margin: 0 auto; 
-	padding-left: 30px; z-index: 3; }
-#he .her h1 { font-size: 31px; font-size: 3.1em; font-weight: 400; font-style: oblique; color: aqua; 
-	      border: none; margin: 0; padding-bottom: 1%; text-shadow: 0 0 white; } 
-    .lead {  font-size: 1.0em; font-weight: 600; color: coral; display: inline-block; }  
+.her {  color: #bcf; position: absolute; width:80%; min-width:300px; max-width:99%; height:88px; max-height:98px; 
+	display: inline-table; margin: 0 auto; padding-left: 30px; z-index: 3; }
+#he .her h1 { font-size: 31px; font-size: 3.1em; font-style: oblique; color: aqua; border: none; margin: 0; padding-bottom: 1%; } 
+    .lead {  font-size: 1.0em; color: coral; display: inline-block; }  
       .her em {  border-bottom: double 3px; color: lightskyblue; } 
     .leadright {  padding-top: 2%; display: block; text-align: center;  }
 	
  /* 2 equal columns float next to each other */
 .column {  float:left; width:48.80%; min-width:380px; max-width:99%; height:1000px; min-height:900px; max-height:100%; 
-	   padding: 0; margin: 10px auto; display:block; color:#eee; background-color:rgba(0,0,0,0.20); text-shadow: 0 0 white; 
-	   overflow-x: hidden; overflow-y: hidden; border: rgba(150,150,150,0.50); border-radius: 4px; position: relative; 
+	   padding: 0; margin: 10px auto; display:block; color:#eee; background-color:rgba(0,0,0,0.20); position: relative;  
+	   border: rgba(150,150,150,0.50); border-radius: 5px; overflow-x: hidden; overflow-y: hidden;  
 	}
  /* expands to one column */
 .row {  margin: 10px 15px 25px 1px;  width: 98%; }
@@ -53,14 +56,13 @@ h1 {    font-size: 24px; font-weight: 800; text-shadow: 0 0 white; -webkit-font-
    /* Responsive layout - screen < 800px - stack columns verticaly, instead of next to each other */
    @media (max-width: 800px) {  
 	 	             .column {  width:93%; min-width:90%; max-width:98%; border: solid 1px; margin-right: 5px; }	
-		             #he .her h1 {  font-size: 31px; font-size: 2.3em;  }
 		             #expand { display: none;  }
 			     .search-form input { font-size: 0.8em; }
 			     }
 		
   .articles {  max-width: 100%; height: 1500px; max-height: 100%; margin: 5px 1px 20px 5px; padding: 5px 5px 5px 5px; 
 	       font-family: 'Serif'; color: #fff; background-color: rgba(0,0,0,0.05); 
-	       text-shadow: 0 0 white; display:block; word-break: break-word; text-overflow: ellipsis; line-height:1em; 
+	       display:block; word-break: break-word; text-overflow: ellipsis; line-height:1em; 
 	      -webkit-box-orient: vertical; -webkit-box; -webkit-line-clamp:50; /* #-lines*/ overflow-x:hidden; overflow-y:hidden; 
             }
 						
@@ -69,11 +71,6 @@ h1 {    font-size: 24px; font-weight: 800; text-shadow: 0 0 white; -webkit-font-
 	  }         
 	
 
-	.content {  padding: 0 18px; display:none; max-height: 0; overflow: hidden; 
-	   	 background-color: rgba(25,25,25,0.18); transition: max-height 1.2s ease-in-out; } 
-        .active:after {  content: "\2796"; /* Unicode "minus" sign (-) */  }
-	
-	
 	/* Custom checkbox button expands columns width _ checkbox select expand */
     	input + .row .column { float: left; margin: 30px auto; width: 48.80%; max-width: 99%; transition:width 0.5s; 
 			     }
@@ -100,7 +97,7 @@ h1 {    font-size: 24px; font-weight: 800; text-shadow: 0 0 white; -webkit-font-
 	
 	
      .articlesbox {   margin: 20px; padding: 1px; width: max-content; max-width: 95%; height: 33px; display: flex;
-	     		border-radius: 5px; border: 1px solid #888; background-color: rgba(50,50,50,0.5);  }
+	     	      border-radius: 5px; border: 1px solid #888; background-color: rgba(50,50,50,0.5);  }
      .linkbutton {  background-color: rgba(50,50,50,0.5); color: cadetblue; border-radius: 5px; border: 0; max-width: 100%; }
 	
 	
