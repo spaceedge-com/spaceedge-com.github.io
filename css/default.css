@@ -71,7 +71,9 @@ figcaption { display: block;  }
 .spc35 { position: relative; clear:both; float:inherit; height:35px; max-height:35px; margin:35px; padding:35px; }
 .spc { position: relative; clear:both; float:inherit; height:50px; max-height:50px; margin:50px; padding:50px; }
 
-
+                   .hid {  display: none; }     .column:hover > .hid { /* arrow on hover */  display:block;  z-index:10; }
+	           .hid img {  height: 25px; min-width: 25px; position: absolute; padding-left: 42%; border:0; }
+	
 #footer {    color:#f8f; position:fixed; width:100%; height: 60px; font-size: small;
 	     text-align:center; flex-shrink:0; bottom: 0px; clear:both; 
 	     background-color:var(--t25); padding-top: 3px; margin-bottom:0; 
