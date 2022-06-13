@@ -37,7 +37,11 @@
   height: 30%; max-height: 50%;  overflow: hidden; overflow-x: hidden; overflow-y: hidden;
 }
 @keyframes slider {
-  animation: moveSlideshow 22s linear infinite;
+  0% {top: 100%}
+  4% {top: 0%}
+  33.33% {top: 0%}
+  37.33% {top: -100%}
+  100% {top: -100%}
 }
 
 </style>
