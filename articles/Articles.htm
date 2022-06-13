@@ -21,9 +21,12 @@
     width: 300%;
     top: 0;
     left: 0;
-    overflow: hidden; overflow-x: hidden; overflow-y: hidden;
-    animation: slider 12s infinite ease-in-out
+  display: block;
+  animation: linear infinite alternate;
+  animation-name: slider;
+  animation-duration: 5s;
 }
+    
 .img-slider .slider-container .slide {
     position: relative;
     width: 33.33333333%; max-width: 50%;
@@ -36,17 +39,19 @@
   width: 35%; max-width: 50%;
   height: 30%; max-height: 50%;  overflow: hidden; overflow-x: hidden; overflow-y: hidden;
 }
-@keyframes slider {
-  0% {margin-top: 10em}
-  4% {margin-top: 0em}
-  31% {margin-top: 0em}
-  35% {margin-top: -10em}
-  64% {margin-top: -10em}
-  68% {margin-top: -20em}
-  96% {margin-top: -20em}
-  100% {margin-top: -30em}
-}
 
+    
+
+@-webkit-keyframes slider {
+  0% {
+    left: 0;
+    transform: translateX(0);
+  }
+  100% {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+}
 </style>
 </head>
 <body>
