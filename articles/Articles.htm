@@ -22,7 +22,7 @@
     top: 0;
     left: 0;
     overflow: hidden; overflow-x: hidden; overflow-y: hidden;
-    animation: slider 26s infinite;
+    animation: slider 12s infinite ease-in-out
 }
 .img-slider .slider-container .slide {
     position: relative;
@@ -37,11 +37,14 @@
   height: 30%; max-height: 50%;  overflow: hidden; overflow-x: hidden; overflow-y: hidden;
 }
 @keyframes slider {
-  0% {top: 100%}
-  4% {top: 0%}
-  33.33% {top: 0%}
-  37.33% {top: -100%}
-  100% {top: -100%}
+  0% {margin-top: 10em}
+  4% {margin-top: 0em}
+  31% {margin-top: 0em}
+  35% {margin-top: -10em}
+  64% {margin-top: -10em}
+  68% {margin-top: -20em}
+  96% {margin-top: -20em}
+  100% {margin-top: -30em}
 }
 
 </style>
