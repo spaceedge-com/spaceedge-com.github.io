@@ -55,7 +55,7 @@ hr {    border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
 img {   width:99%; min-width: auto; max-width:100%; height:auto; display:block; margin: 0 auto; border: 1px solid rgba(255,255,255,.33); }
 figure {  display: block; text-align: center; float: left; font-style: italic; text-indent: 0; 
 	  border: thin silver solid; margin: 1.0em; padding: 0.5em; width: min-content; }
-figure img, figcaption {  color:#888; text-align: center; max-width:98%; min-width: 250px; 
+figure img, figcaption {  color:#888; text-align: center; max-width:98%; min-width: 200px; 
 			  font-size: smaller; font-style: italic; margin: auto; }
 figcaption { display: block;  }
 .small {    font-size: 85%;  font-style: italic;  }
