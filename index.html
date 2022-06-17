@@ -77,7 +77,8 @@ p {    font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; ma
         input:checked + .row .column { width: 95%; max-width: 98%; display: block; max-height: 100%; transition:width 1s; 
 				     }
 	#expand {	 text-align: center; margin: 0 auto; width: 100%; height: 30px; } 
-	#expand label {  color:#888; cursor: pointer; width: 55px; margin: 0 auto; padding: 1px; border: solid 1px #888; border-radius: 20px; font-size:17px;  }	
+	#expand label {  color:#888; cursor: pointer; width: 55px; margin: 0 auto; padding: 1px; 
+		         border: solid 1px #888; border-radius: 20px; font-size: 17px;  }	
 	#expand label:hover { color: rgba(128,128,128,.75); cursor:progress; }  
 	
                    .hid {  display: none; }     .column:hover > .hid { /* arrow on hover */  display:block;  z-index:10; }
@@ -85,8 +86,8 @@ p {    font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; ma
 	
       /* CSS here, for externals, their css doesn't seem to apply here! */
       #modaldiv {    margin:0 auto;  width: 100%;  text-align: center;  }
-     .srchbutton {  -webkit-appearance: button; -moz-appearance: button; appearance: button; padding: 16px 16px; cursor: pointer; opacity: 0.90; width: 260px;
-				color: #fff;  border: 3px solid #ccc;  background-color: rgba(15,15,155,0.5);   }
+     .srchbutton {  -webkit-appearance: button; -moz-appearance: button; appearance: button; padding: 16px 16px; cursor: pointer; opacity: 0.90;
+	             width: 260px; color: #fff;  border: 3px solid #ccc;  background-color: rgba(15,15,155,0.5);   }
 
 
      .amaz {  margin:0 auto; padding:1px; max-width:99%; min-height:200px; position: relative; display: block; clear: both; 
@@ -148,7 +149,7 @@ $(function(){
   <div class="spc15"> <br> </div>
 	
 	<div class="amaz" align="center"> 
-		<script type="text/javascript">
+			<script type="text/javascript">
 			amzn_assoc_placement = "adunit0";
 			amzn_assoc_tracking_id = "amazon2022029-20";
 			amzn_assoc_ad_mode = "search";
@@ -162,12 +163,13 @@ $(function(){
 			amzn_assoc_search_bar = "true";
 			amzn_assoc_search_bar_position = "bottom";
 			amzn_assoc_title = "Related:";
-		</script>
-		<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>	
-	</div>
-	<div align="center" style="width:100%; height:300px; margin:0; padding:0;">
-   		<!--  -->
-		<object data="Amazon.htm" type="text/html" loading="lazy" style=" "> </object> 
+			</script>
+			<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>	
+
+	        <div align="center" style="width:100%; height:300px; margin:0; padding:0;">
+   			<!--  -->
+			<object data="Amazon.htm" type="text/html" loading="lazy" style=" "> </object>
+	        </div>
 	</div>	
 	
 			
