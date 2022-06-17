@@ -21,7 +21,7 @@
 */
 
 html {  display: block; /* font-size: 62.5%; 14px=1.4rem */ min-height: 100%; scrollbar-width: thin;  } 
-body {  display: block;  background-color: rgba(0,0,0,0.8); background-color: #000; text-shadow: 0 0 white; 	
+body {  display: block;  background-color: #000; background-color: rgba(0,0,0,0.48);text-shadow: 0 0 white; 	
 	/* background-image: url('/images/astronomy2.jpg'); box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   	background-color: rgba(0,0,0,0.4);  (w/ opacity) background-color: rgb(0,0,0); (Fallback color) */ 
 	background-size: cover;  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; 
