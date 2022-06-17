@@ -86,8 +86,8 @@ p {    font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; ma
 	
       /* CSS here, for externals, their css doesn't seem to apply here! */
       #modaldiv {    margin:0 auto;  width: 100%;  text-align: center;  }
-     .srchbutton {  -webkit-appearance: button; -moz-appearance: button; appearance: button; padding: 16px 16px; cursor: pointer; opacity: 0.90;
-	             width: 260px; color: #fff;  border: 3px solid #ccc;  background-color: rgba(15,15,155,0.5);   }
+     .srchbutton {  -webkit-appearance: button; -moz-appearance: button; appearance: button; padding: 16px 16px; cursor: pointer; 
+	     	    opacity: 0.90; width: 260px; color: #fff;  border: 3px solid #ccc;  background-color: rgba(15,15,155,0.5);   }
 
 
      .amaz {  margin:0 auto; padding:1px; max-width:99%; min-height:200px; position: relative; display: block; clear: both; 
@@ -176,9 +176,11 @@ $(function(){
 			
      <div class="spc25"> <br> </div>
 	
-	<div id="RssFeeds" class="articlesbox">
+	<div class="articlesbox">
 	    <!-- <input type=button class="linkbutton" onclick="location.href='/articles/A-lunar-return-Jupiter-moon-most-powerful-rocket-ever-built-James-Webb-Space-Telescope.html'" value='A lunar return, a Jupiter moon, the most powerful rocket ever built and the James Webb Space Telescope'> -->
 	    <!--    <object data="/RssFeeds.htm" type="text/html" loading="lazy" style=" "> </object>  -->
+	   	<div id="RssFeeds">
+		</div>
 	</div>   
 	
 	
