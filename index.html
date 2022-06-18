@@ -93,9 +93,11 @@ p {    font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; ma
 	      border: 1px solid #888; border-radius: 5px; background-color: rgba(50,50,50,0.5); }
 	
 	
-     .articlesbox {  margin: 0 auto; padding: 4px; width: 77%; max-width: 80%; height: 225px; display: flex;
+        .feedsrss {  margin: 0 auto; padding: 4px; width: 77%; max-width: 80%; height: 225px; display: flex;
 	     	     border: 1px solid #888; border-radius: 5px;  background-color: rgba(50,50,50,0.5);  }
-     .linkbutton {  background-color: rgba(50,50,50,0.5); color: cadetblue; border-radius: 5px; border: 0; max-width: 100%; }
+	.feed-container { font-size: 15px;  margin: 5px; overflow: hidden; padding: 0; height: 200px; }
+	
+        .linkbutton {  background-color: rgba(50,50,50,0.5); color: cadetblue; border-radius: 5px; border: 0; max-width: 100%; }
 	
 	
 #logo {
@@ -174,7 +176,7 @@ $(function(){
 			
      <div class="spc15"> <br> </div>
 	
-	<div class="articlesbox">
+	<div class="feedsrss">
 	    	<!-- <input type=button class="linkbutton" onclick="location.href='/articles/A-lunar-return-Jupiter-moon-...Telescope.html'" value='A lunar return, a Jupiter moon .. Telescope'> -->	   
 		<!--   div("#feeds").load("RssFeeds.htm")div  <object data="/RssFeeds.htm" type="text/html" style=" "> </object>  -->
 	      <script type="text/javascript" src="/feeds.js"></script>
