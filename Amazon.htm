@@ -15,7 +15,11 @@ img { vertical-align: top; }
 
 
 .row0 { margin: 0 auto; width: 97%; text-align: center; }     .row0:after {  content: ""; float: left; display: flex; clear: both;  }
-.column0 { float: left; width:12%; min-width:10%; height:240px; max-height:250px; padding: 0; display: flex; } 
+.column0 { float: left; width:12%; min-width:10%; height:240px; max-height:250px; padding: 0; margin-right: 5px; display: flex; }    
+    /* Responsive layout - screen < 800px - stacks columns verticaly, instead of next to each other */
+    @media (max-width: 800px) {  
+               	 	             .column0 {  width:93%; min-width:90%; max-width:98%; margin-right: 2px; }	
+		              }
 .amazon {  margin: 5px;  max-width: 99%;  }  
   
 </style>
