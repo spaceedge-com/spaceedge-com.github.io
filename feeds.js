@@ -2,7 +2,7 @@
 rssfeed_url = new Array(); 
 rssfeed_url[0]="https://theconversation.com/us/technology/articles.atom"; rssfeed_url[1]="https://theconversation.com/us/business/articles.atom"; rssfeed_url[2]="https://theconversation.com/us/ethics/articles.atom"; rssfeed_url[3]="https://theconversation.com/us/politics/articles.atom";  
 rssfeed_frame_width="100%"; 
-rssfeed_frame_height="200"; 
+rssfeed_frame_height="215"; 
 rssfeed_scroll="on"; 
 rssfeed_scroll_step="6"; 
 rssfeed_scroll_bar="off"; 
