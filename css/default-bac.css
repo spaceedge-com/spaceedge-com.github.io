@@ -1,0 +1,94 @@
+/* CSS  - padding: top right bottom left */ 
+/* Scrollbars for Firefox */ 
+:root { scrollbar-color: rgba(100,120,255,0.9) rgba(0,0,0,0.5) !important; scrollbar-width: thin !important; 
+}  
+/* Scrollbar for Chrome, Edge, Safari. Chrome Fix 051422 */
+::-webkit-scrollbar {  height: 12px;  width: 5px;  background: #000;
+}
+::-webkit-scrollbar-thumb {  background: #3938ff;  -webkit-border-radius: 1ex; -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+::-webkit-scrollbar-corner {  background: #000;  }
+
+/* Scrollbar for Chrome, Edge, Safari. 
+*::-webkit-scrollbar { overflow-y:scroll; width:0.75em; height:12px;  }  
+*::-webkit-scrollbar-track { background: rgb(100,120,255) !important;  }   
+*::-webkit-scrollbar-thumb { color: rgb(246,254,255) !important; color: rgba(246,254,255,0.5) !important; }  
+*/
+/* Scrollbar hover Chrome, Edge, Safari and for Firefox :root:hover { overflow-y: scroll; } 
+:root:hover::-webkit-scrollbar { overflow-y:scroll; width:0.75em; height:0.75em; }  
+:root:hover::-webkit-scrollbar-track { background: rgb(100,120,255) !important;  }   
+:root:hover::-webkit-scrollbar-thumb { color: rgb(246,254,255) !important; color: rgba(246,254,255,0.5) !important; } 
+*/
+
+html {  display: block; /* font-size: 62.5%; 14px=1.4rem */ min-height: 100%; scrollbar-width: thin;  } 
+body {  display: block;  background-color: #000; background-color: rgba(0,0,0,0.48);text-shadow: 0 0 white; 	
+	/* background-image: url('/images/astronomy2.jpg'); box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  	background-color: rgba(0,0,0,0.4);  (w/ opacity) background-color: rgb(0,0,0); (Fallback color) */ 
+	background-size: cover;  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; 
+	background-attachment: fixed; background-position: top left; background-repeat: no-repeat; background-origin: content-box; 
+	text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+	top: 0; vertical-align: top; overflow-x: hidden;      }
+
+ #he {   width: 100%; background-color: rgba(25,25,25,0.48);  }	
+.her {   color: #bcf; position: absolute; width:80%; min-width:300px; max-width:99%; 
+	 height:88px; max-height:98px; display: inline-table; margin: 0 auto; padding-left: 30px; z-index: 3; }
+ #he .her h1 {  font-weight: 400; border: none; color: aqua; font-style: oblique; margin: 0; padding-bottom: 1%;  } 
+       .lead {  font-size: 1.0em; color: coral; }  
+     .her em {  border-bottom: double 3px; color: lightskyblue; } 
+  .leadright {  padding-top: 2%; display: block; text-align: center;  }
+	
+h1, h2, h3, h4, h5, h6, p {   display: block; font-family: 'Times New Roman', Times, serif; }
+h1 {   font-size: 1.8em; color:#eee; margin: .67em 0 .67em 0; font-weight: bold; clear:both; padding-left: 0.25em; }
+h2 {   font-size: 1.5em; color: #cec; margin: 0.83em 0 0.83em 0; font-weight: bold; clear:both; padding-left: 0.3em; }
+h3 {   font-size: 1.17em; color:#cec; margin: 1em 0 1em 0; font-weight: bold; clear:both; padding-left: 0.3em; }
+h4 {   font-size: 1.0em; color:#cec; margin: 1.33em 0 1.33em 0; font-weight: bold; clear:both; padding-left: 0.3em; }
+h5 {   font-size: .83em; color:#cec; margin: 1.67em 0 1.67em 0; font-weight: bold; clear:both; padding-left: 0.3em; }
+h6 {   font-size: .67em; color:#cec; margin: 2.33em 0 2.33em 0; font-weight: bold; clear:both; padding-left: 0.3em; }
+p {    font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; margin: 1em 0 1em 0; padding-left: 0.25em; }
+
+a {    color:skyblue;  }
+a:link { text-decoration: none;  }
+em {    color:seashell; font-size: 1.0em; font-style: oblique; text-align: center; } 
+quote { display: block; font-size: 1.18rem; font-style: oblique; text-align: center; padding: .8em .8em 0 .2em; }
+cite {  color:#FCA; font-size: 0.9em; color:#ccc; padding-top: .25em; padding-left: 25%; padding-bottom: .7em; display: inline-block;  }
+hr {    border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
+img {   width:99%; min-width: auto; max-width:100%; height:auto; display:block; margin: 0 auto; border: 1px solid rgba(255,255,255,.33); }
+figure {  display: block; text-align: center; float: left; font-style: italic; text-indent: 0; 
+	  border: thin silver solid; margin: 1.0em; padding: 0.5em; width: min-content; }
+figure img, figcaption {  color:#888; text-align: center; max-width:98%; min-width: 200px; 
+			  font-size: smaller; font-style: italic; margin: auto; }
+figcaption { display: block;  }
+.small {    font-size: 85%;  font-style: italic;  }
+.cr {   font-style: oblique; display: inline list-item; margin-left: 25px; padding-top: .5em; padding-bottom: 1em; }
+
+.dataobject {   color: #fff; display: inline-block; max-width:100%; height:3000px; min-height:2500px; max-height:100%; 
+		margin-top: 3%; margin-bottom: 50px; padding-bottom: 50px; overflow-x: hidden; overflow-y: hidden;  } 
+
+ pre {   padding: 5%;  }	
+	
+.spc5 { position: relative; clear:both; float:inherit; height:5px; max-height:5px; margin:5px; padding:5px; }
+.spc15 { position: relative; clear:both; float:inherit; height:15px; max-height:15px; margin:15px; padding:15px; }
+.spc25 { position: relative; clear:both; float:inherit; height:25px; max-height:25px; margin:25px; padding:25px; }
+.spc35 { position: relative; clear:both; float:inherit; height:35px; max-height:35px; margin:35px; padding:35px; }
+.spc { position: relative; clear:both; float:inherit; height:50px; max-height:50px; margin:50px; padding:50px; }
+
+	
+#footer {    color:#f8f; position:fixed; width:100%; height: 60px; font-size: small;
+	     text-align:center; flex-shrink:0; bottom: 0px; clear:both; 
+	     background-color:var(--t25); padding-top: 3px; margin-bottom:0; 
+}	
+
+    © 2022 GitHub, Inc.
+
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
