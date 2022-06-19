@@ -40,8 +40,6 @@
   height: 30%; max-height: 50%;  overflow: hidden; overflow-x: hidden; overflow-y: hidden;
 }
 
-    
-
 @-webkit-keyframes slider {
   0% {
     left: 0;
@@ -52,9 +50,17 @@
     transform: translateX(-100%);
   }
 }
+    
+#body { /* css id#body for JS rnd body background */
+	background-color:#000; background: rgba(0, 0, 0, .65) url(/images/slider/astronomy1.jpg); background-position: top left;
+	background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; -o-background-size: cover;
+	background-repeat: no-repeat; overflow-x: hidden; overflow-y: auto; background-origin: content-box; box-shadow: inset 0 10000px rgba(0,0,0,0.35); 
+	min-height: 700px; position: relative; top: 0; vertical-align: top; margin:2px; padding:2px;
+      }    
+    
 </style>
 </head>
-<body>
+<body id="body">
 
 <Section class="img-slider">
   <div class="slider-container">
