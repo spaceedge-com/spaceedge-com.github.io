@@ -59,10 +59,12 @@ p {    font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; ma
 	 	               .column {  width:93%; min-width:90%; max-width:98%; border: solid 1px; margin-right: 5px; }	
 		               #expand { display: none;  }
 			     }
-	
-		#column:focus { 
-			       width: 95%; max-width: 98%; display: block; max-height: 100%; transition:width 1s; 
-	   		      }
+	 
+	.column:hover { border:2px solid #66c; display:block; z-index:10; }
+	/* Clicked focus expands columns width */
+	#column:focus { 
+			width: 95%; max-width: 98%; display: block; max-height: 100%; transition:width 1s; 
+	   	      }
 	
   .articles {  max-width: 100%; height: 1500px; max-height: 100%; margin: 5px; padding: 5px; 
 	       background-color: transparent; display:block; word-break: break-word; text-overflow: ellipsis; line-height: 1em; 
@@ -74,7 +76,7 @@ p {    font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; ma
 	  }         
 	
 
-	/* Custom checkbox button expands columns width _ checkbox select expand */
+	/* Custom checkbox button expands all columns width _ checkbox select expand */
     	input + .row .column { float: left; margin: 30px auto; width: 48.80%; max-width: 99%; transition:width 0.5s;   }
         input:checked + .row .column { width: 95%; max-width: 98%; display: block; max-height: 100%; transition:width 1s; 
 				     }
@@ -82,10 +84,8 @@ p {    font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; ma
 	#expand label {  color:#888; cursor: pointer; width: 55px; margin: 0 auto; padding: 1px; 
 		         border: solid 1px #888; border-radius: 20px; font-size: 17px;  }	
 	#expand label:hover { color: rgba(128,128,128,.75); cursor:progress; }  
-	
-	/* hover */
-        .column .hid { border:2px solid transparent; }   .column .hid:hover { border:2px solid #66c; display:block; z-index:10; }
-	    /* .hid img {  height: 25px; min-width: 25px; position: absolute; padding-left: 42%; border:0; } */
+
+	    /* .column .hid {border:2px solid transparent;}   .hid img {height: 25px; min-width: 25px; position: absolute; padding-left: 42%; border:0;} */
 	
       /* CSS here, for externals, their css doesn't seem to apply here! */
       #modaldiv {    margin:0 auto;  width: 100%;  text-align: center;  }
