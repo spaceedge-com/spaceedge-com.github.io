@@ -60,11 +60,13 @@ p {    font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; ma
 		               #expand { display: none;  }
 			     }
 	 
-	.column:hover { cursor: pointer; border:2px solid #66c; display:block; z-index:10; }
+
 	/* Clicked focus tabindex="0" expands columns width */
 	#column:focus { 
 			width: 95%; max-width: 98%; display: block; max-height: 100%; transition:width 1s; 
 	   	      }
+	.column:hover { cursor: pointer; border:2px solid #66c; display:block; z-index:10; }	
+	
 	
   .articles {  max-width: 100%; height: 1500px; max-height: 100%; margin: 5px; padding: 5px; 
 	       background-color: transparent; display:block; word-break: break-word; text-overflow: ellipsis; line-height: 1em; 
@@ -206,15 +208,15 @@ $(function(){
 	</div>	  
 					       
 						           				
-	<div id="column" tabindex="0">     
-	  <div class="column articles"> 				
+	<div id="column" class="column" tabindex="0">     
+	  <div class="articles"> 				
 	    	 <object data="/contents/World.html" type="text/html" loading="lazy" style=" "> 
 		     		<a href="/contents/World.html">Browser not supported?</a>  </object> 		
 	  </div>	 
 	</div> 	
 		
 		
-	<div class="column"> 		   	 
+	<div id="column" class="column" tabindex="0">   		   	 
 	   <div class="articles">      
 	    	 <object data="/contents/EarthStars.html" type="text/html" loading="lazy" style=" "> 
 		     		<a href="/contents/EarthStars.html">Browser not supported?</a>  </object> 		
@@ -222,7 +224,7 @@ $(function(){
 	</div>    	
 		
 		
-	<div class="column">	     
+	<div id="column" class="column" tabindex="0">   	     
 	   <div class="articles">
 		  <object data="/contents/Conky.html" type="text/html" loading="lazy" style=" "> 
 		     <a href="/contents/Conky.html">Browser not supported?</a>  </object> 
