@@ -59,7 +59,11 @@ p {    font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; ma
 	 	               .column {  width:93%; min-width:90%; max-width:98%; border: solid 1px; margin-right: 5px; }	
 		               #expand { display: none;  }
 			     }
-		
+	
+		#column:focus { 
+			       width: 95%; max-width: 98%; display: block; max-height: 100%; transition:width 1s; 
+	   		      }
+	
   .articles {  max-width: 100%; height: 1500px; max-height: 100%; margin: 5px; padding: 5px; 
 	       background-color: transparent; display:block; word-break: break-word; text-overflow: ellipsis; line-height: 1em; 
 	      -webkit-box-orient: vertical; -webkit-box; -webkit-line-clamp: 50; /* #-lines*/ overflow-x:hidden; overflow-y:hidden; 
@@ -71,8 +75,7 @@ p {    font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; ma
 	
 
 	/* Custom checkbox button expands columns width _ checkbox select expand */
-    	input + .row .column { float: left; margin: 30px auto; width: 48.80%; max-width: 99%; transition:width 0.5s; 
-			     }
+    	input + .row .column { float: left; margin: 30px auto; width: 48.80%; max-width: 99%; transition:width 0.5s;   }
         input:checked + .row .column { width: 95%; max-width: 98%; display: block; max-height: 100%; transition:width 1s; 
 				     }
 	#expand {	 text-align: center; margin: 0 auto; width: 100%; height: 30px; } 
@@ -195,12 +198,10 @@ $(function(){
 <div class="row">        
 		
 	
-	<div class="column">     
-	   <div class="hid" style="">
+	<div id="column" class="column">     
 	   <div class="articles"> 			  
 		<object data="/contents/GoodNews.html" type="text/html" loading="lazy" style=" ">
 		     		<a href="/contents/GoodNews.html">Browser not supported?</a>  </object> 		
-	   </div> 
 	   </div>
 	</div>	  
 					       
