@@ -60,7 +60,7 @@ p {    font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; ma
 		               #expand { display: none;  }
 			     }
 	 
-	.column:hover { border:2px solid #66c; display:block; z-index:10; }
+	.column:hover { cursor: pointer; border:2px solid #66c; display:block; z-index:10; }
 	/* Clicked focus tabindex="0" expands columns width */
 	#column:focus { 
 			width: 95%; max-width: 98%; display: block; max-height: 100%; transition:width 1s; 
@@ -206,13 +206,9 @@ $(function(){
 	</div>	  
 					       
 						           				
-	<div class="column"> 		
-	   <div class="hid" style="">			
-	   <div class="articles">       
+	<div id="column" class="column articles" tabindex="0"> 					
 	    	 <object data="/contents/World.html" type="text/html" loading="lazy" style=" "> 
 		     		<a href="/contents/World.html">Browser not supported?</a>  </object> 		
-	   </div> 
-	   </div> 
 	</div>	  	
 		
 		
