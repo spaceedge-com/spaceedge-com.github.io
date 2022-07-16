@@ -89,7 +89,8 @@ p {    font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; ma
 		         border: solid 1px #888; border-radius: 20px; font-size: 17px;  }	
 	#expand label:hover { color: rgba(128,128,128,.75); cursor:progress; }  
 
-	    /* .column .hid {border:2px solid transparent;}   .hid img {height: 25px; min-width: 25px; position: absolute; padding-left: 42%; border:0;} */
+	    .hid {display:none;}   
+	    /*  .hid img {height: 25px; min-width: 25px; position: absolute; padding-left: 42%; border:0;} */
 	
       /* CSS here, for externals, their css doesn't seem to apply here! */
       #modaldiv {    margin:0 auto;  width: 100%;  text-align: center;  }
@@ -183,7 +184,7 @@ $(function(){
 						           				
 	<div id="column" tabindex="1" class="column">     
 		<h1>World Dominating Fear Masters</h1>
-		<a href=" ">
+		<a href=" " class="hid">
 			<object data="/contents/World.html" type="text/html"> 
 		</a> 		
 	 
