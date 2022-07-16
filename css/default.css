@@ -1,49 +1,18 @@
 /* CSS default.css */ 
-/* Scrollbars for Firefox */ 
+/* Custom Scrollbars */ 
+/* for Firefox */ 
 :root { scrollbar-color: rgba(100,120,255,0.9) rgba(0,0,0,0.5) !important; scrollbar-width: thin !important; 
 }  
-/* Scrollbar for Chrome, Edge, Safari. Chrome Fix 051422 */
+/* for Chrome, Edge, Safari. Chrome Fix 051422 */
 ::-webkit-scrollbar {  height: 12px;  width: 5px;  background: #000;
 }
 ::-webkit-scrollbar-thumb {  background: #3938ff;  -webkit-border-radius: 1ex; -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
 }
 ::-webkit-scrollbar-corner {  background: #000;  }
 
-/* padding: top right bottom left */ 
-
-a {    color:skyblue;  }
-a:link { text-decoration: none;  }
-em {    color:seashell; font-size: 1.0em; font-style: oblique; text-align: center; } 
-quote { display: block; font-size: 1.18rem; font-style: oblique; text-align: center; padding: .8em .8em 0 .2em; }
-cite {  color:#FCA; font-size: 0.9em; color:#ccc; padding-top: .25em; padding-left: 25%; padding-bottom: .7em; display: inline-block;  }
-hr {    border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
-img {   width:99%; min-width: auto; max-width:100%; height:auto; display:block; margin: 0 auto; border: 1px solid rgba(255,255,255,.33); }
-figure {  display: block; text-align: center; float: left; font-style: italic; text-indent: 0; 
-	  border: thin silver solid; margin: 1.0em; padding: 0.5em; width: min-content; }
-figure img, figcaption {  color:#888; text-align: center; max-width:98%; min-width: 200px; 
-			  font-size: smaller; font-style: italic; margin: auto; }
-figcaption { display: block;  }
-.small {    font-size: 85%;  font-style: italic;  }
-.cr {   font-style: oblique; display: inline list-item; margin-left: 25px; padding-top: .5em; padding-bottom: 1em; }
-
-.dataobject {   color: #fff; display: inline-block; max-width:100%; height:3000px; min-height:2500px; max-height:100%; 
-		margin-top: 3%; margin-bottom: 50px; padding-bottom: 50px; overflow-x: hidden; overflow-y: hidden;  } 
-
- pre {   padding: 5%;  }	
-	
-.spc5 { position: relative; clear:both; float:inherit; height:5px; max-height:5px; margin:5px; padding:5px; }
-.spc15 { position: relative; clear:both; float:inherit; height:15px; max-height:15px; margin:15px; padding:15px; }
-.spc25 { position: relative; clear:both; float:inherit; height:25px; max-height:25px; margin:25px; padding:25px; }
-.spc35 { position: relative; clear:both; float:inherit; height:35px; max-height:35px; margin:35px; padding:35px; }
-.spc { position: relative; clear:both; float:inherit; height:50px; max-height:50px; margin:50px; padding:50px; }
-
-#footer {    color:#f8f; position:fixed; width:100%; height: 60px; font-size: small;
-	     text-align:center; flex-shrink:0; bottom: 0px; clear:both; 
-	     background-color:var(--t25); padding-top: 3px; margin-bottom:0; 
-}	
-
-
 /* padding: top right bottom left */
+
+/* root */
 :root {  --t25: rgba(0,0,0,0.25); --tblue: rgba(0,0,255,0.25); --white: #fff; scrollbar-width: thin !important; }
 
  html {  min-height:100%; text-shadow: 0 0 white; /* font-size: 62.5%;=14px=1.4rem */
@@ -73,7 +42,34 @@ p {    font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; ma
     .lead {  font-size: 1.0em; color: coral; display: inline-block; font-style: italic; margin: 0; }  
       .her em {  border-bottom: dashed 1px; color: lightskyblue; } 
     .leadright {  padding-top: 2%; display: block; text-align: center;  }
+
+a {    color:skyblue;  }
+a:link { text-decoration: none;  }
+em {    color:seashell; font-size: 1.0em; font-style: oblique; text-align: center; } 
+quote { display: block; font-size: 1.18rem; font-style: oblique; text-align: center; padding: .8em .8em 0 .2em; }
+cite {  color:#FCA; font-size: 0.9em; color:#ccc; padding-top: .25em; padding-left: 25%; padding-bottom: .7em; display: inline-block;  }
+hr {    border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
+img {   width:99%; min-width: auto; max-width:100%; height:auto; display:block; margin: 0 auto; border: 1px solid rgba(255,255,255,.33); }
+figure {  display: block; text-align: center; float: left; font-style: italic; text-indent: 0; 
+	  border: thin silver solid; margin: 1.0em; padding: 0.5em; width: min-content; }
+figure img, figcaption {  color:#888; text-align: center; max-width:98%; min-width: 200px; 
+			  font-size: smaller; font-style: italic; margin: auto; }
+figcaption { display: block;  }
+.small {    font-size: 85%;  font-style: italic;  }
+.cr {   font-style: oblique; display: inline list-item; margin-left: 25px; padding-top: .5em; padding-bottom: 1em; }
+
+.dataobject {   color: #fff; display: inline-block; max-width:100%; height:3000px; min-height:2500px; max-height:100%; 
+		margin-top: 3%; margin-bottom: 50px; padding-bottom: 50px; overflow-x: hidden; overflow-y: hidden;  } 
+
+ pre {   padding: 5%;  }	
 	
+.spc5 { position: relative; clear:both; float:inherit; height:5px; max-height:5px; margin:5px; padding:5px; }
+.spc15 { position: relative; clear:both; float:inherit; height:15px; max-height:15px; margin:15px; padding:15px; }
+.spc25 { position: relative; clear:both; float:inherit; height:25px; max-height:25px; margin:25px; padding:25px; }
+.spc35 { position: relative; clear:both; float:inherit; height:35px; max-height:35px; margin:35px; padding:35px; }
+.spc { position: relative; clear:both; float:inherit; height:50px; max-height:50px; margin:50px; padding:50px; }
+
+
  /* 2 equal columns float next to each other */
 .column {  float:left; width:48.80%; min-width:380px; max-width:99%; height:1000px; min-height:900px; max-height:100%; 
 	   padding: 0; margin: 10px auto; display:block; color:#eee; background-color:rgba(0,0,0,0.20); position: relative;  
@@ -104,8 +100,7 @@ p {    font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; ma
             }
 						
    /* For ( object data=" ) Don't change height otherwise! for scrolling, hover scrolling! */
-   object {   width:100%; height:100%; max-height:998px; clear:both; display:block; overflow-x:hidden; overflow-y:hidden; 
-	  }         
+   object {   width:100%; height:100%; max-height:998px; clear:both; display:block; overflow-x:hidden; overflow-y:hidden;  }         
 	
 
 	/* Custom checkbox button expands all columns width _ checkbox select expand */
@@ -133,7 +128,12 @@ p {    font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; ma
 	
         .linkbutton {  background-color: rgba(50,50,50,0.5); color: cadetblue; border-radius: 5px; border: 0; max-width: 100%; }
 	
-	
+#footer {    color:#f8f; background-color:var(--t25); position:fixed; width:100%; height: 55px; font-size: small;
+	     text-align:center; flex-shrink:0; bottom: 0px; clear:both; padding-top: 0; margin-bottom:0; 
+		scale: 0.90;
+	}	
+
+
 #logo {
     	background-image: url(/icons/FullLogo_Transparent1.png);
         background-size: contain;  background-repeat: no-repeat;   width: 250px; height: 150px;
