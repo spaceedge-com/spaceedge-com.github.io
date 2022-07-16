@@ -1,4 +1,4 @@
-/* CSS default.css */ 
+/* default.css */ 
 /* Custom Scrollbars */ 
 /* for Firefox */ 
 :root { scrollbar-color: rgba(100,120,255,0.9) rgba(0,0,0,0.5) !important; scrollbar-width: thin !important; 
@@ -10,9 +10,8 @@
 }
 ::-webkit-scrollbar-corner {  background: #000;  }
 
+/*  CSS rules  */ 
 /* padding: top right bottom left */
-
-/* root */
 :root {  --t25: rgba(0,0,0,0.25); --tblue: rgba(0,0,255,0.25); --white: #fff; scrollbar-width: thin !important; }
 
  html {  min-height:100%; text-shadow: 0 0 white; /* font-size: 62.5%;=14px=1.4rem */
