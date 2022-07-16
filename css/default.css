@@ -11,32 +11,6 @@
 
 /* padding: top right bottom left */ 
 
-html {  display: block; /* font-size: 62.5%; 14px=1.4rem */ min-height: 100%; scrollbar-width: thin;  } 
-body {  display: block; color: #bab; 
-	background-color: #000; background-color: rgba(0,0,0,0.48); text-shadow: 0 0 white; 
-	/* background-image: url('/images/astronomy2.jpg'); box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */ 
-	background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; 
-	background-attachment: fixed; background-position: top left; background-repeat: no-repeat; background-origin: content-box; 
-	text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
-	top: 0; vertical-align: top; overflow-x: hidden;      }
-
- #he {   width: 100%; background-color: rgba(25,25,25,0.48);  }	
-.her {   color: #bcf; position: absolute; width:80%; min-width:300px; max-width:99%; 
-	 height:88px; max-height:98px; display: inline-table; margin: 0 auto; padding-left: 30px; z-index: 3; }
- #he .her h1 {  font-weight: 400; border: none; color: aqua; font-style: oblique; margin: 0; padding-bottom: 1%;  } 
-       .lead {  font-size: 1.0em; color: coral; }  
-     .her em {  border-bottom: double 3px; color: lightskyblue; } 
-  .leadright {  padding-top: 2%; display: block; text-align: center;  }
-	
-h1, h2, h3, h4, h5, h6, p {   display: block; font-family: 'Times New Roman', Times, serif; }
-h1 {   font-size: 1.8em; color:#eee; margin: .67em 0 .67em 0; font-weight: bold; clear:both; padding-left: 0.25em; }
-h2 {   font-size: 1.5em; color: #cec; margin: 0.83em 0 0.83em 0; font-weight: bold; clear:both; padding-left: 0.3em; }
-h3 {   font-size: 1.17em; color:#cec; margin: 1em 0 1em 0; font-weight: bold; clear:both; padding-left: 0.3em; }
-h4 {   font-size: 1.0em; color:#cec; margin: 1.33em 0 1.33em 0; font-weight: bold; clear:both; padding-left: 0.3em; }
-h5 {   font-size: .83em; color:#cec; margin: 1.67em 0 1.67em 0; font-weight: bold; clear:both; padding-left: 0.3em; }
-h6 {   font-size: .67em; color:#cec; margin: 2.33em 0 2.33em 0; font-weight: bold; clear:both; padding-left: 0.3em; }
-p {    font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; margin: 1em 0 1em 0; padding-left: 0.30em; padding-right: .20em; }
-
 a {    color:skyblue;  }
 a:link { text-decoration: none;  }
 em {    color:seashell; font-size: 1.0em; font-style: oblique; text-align: center; } 
@@ -67,3 +41,101 @@ figcaption { display: block;  }
 	     text-align:center; flex-shrink:0; bottom: 0px; clear:both; 
 	     background-color:var(--t25); padding-top: 3px; margin-bottom:0; 
 }	
+
+
+/* padding: top right bottom left */
+:root {  --t25: rgba(0,0,0,0.25); --tblue: rgba(0,0,255,0.25); --white: #fff; scrollbar-width: thin !important; }
+
+ html {  min-height:100%; text-shadow: 0 0 white; /* font-size: 62.5%;=14px=1.4rem */
+	 text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;  } 
+
+#body { /* css id#body for JS rnd body background */
+	background-color: #000a; background-blend-mode: darken; background-image: url(/images/slider/astronomy1.jpg);
+	background-position: top left; background-attachment: fixed; background-size: cover; 
+	-moz-background-size: cover; -webkit-background-size: cover; -o-background-size: cover;
+	background-repeat: no-repeat; background-origin: content-box; top: 0; min-height: 700px; position: absolute; 
+	margin:0; padding:0; overflow-x: hidden; overflow-y: auto; 
+      }
+	
+h1, h2, h3, h4, h5, h6, p {   display: block; font-family: 'Times New Roman', Times, serif; }
+h1 {   font-size: 1.8em; color:#eee; margin: .67em 0 .67em 0; font-weight: bold; clear:both; padding-left: 0.25em; }
+h2 {   font-size: 1.5em; color: #cec; margin: 0.83em 0 0.83em 0; font-weight: bold; clear:both; padding-left: 0.3em; }
+h3 {   font-size: 1.17em; color:#cec; margin: 1em 0 1em 0; font-weight: bold; clear:both; padding-left: 0.3em; }
+h4 {   font-size: 1.0em; color:#cec; margin: 1.33em 0 1.33em 0; font-weight: bold; clear:both; padding-left: 0.3em; }
+h5 {   font-size: .83em; color:#cec; margin: 1.67em 0 1.67em 0; font-weight: bold; clear:both; padding-left: 0.3em; }
+h6 {   font-size: .67em; color:#cec; margin: 2.33em 0 2.33em 0; font-weight: bold; clear:both; padding-left: 0.3em; }
+p {    font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; margin: 1em 0 1em 0; padding-left: 0.30em; padding-right: .20em;  }
+	
+#he {   width: 100%; background-color: rgba(25,25,25,0.48);  }	
+.her {  color: #bcf; position: absolute; width:80%; min-width:300px; max-width:99%; height:88px; max-height:98px; 
+	display: inline-table; margin: 0 auto; padding-left: 30px; z-index: 3; }
+#he .her h1 { font-size: 31px; font-size: 3.1em; font-style: oblique; color: aqua; border: none; margin: 0; padding-bottom: 1%; } 
+    .lead {  font-size: 1.0em; color: coral; display: inline-block; font-style: italic; margin: 0; }  
+      .her em {  border-bottom: dashed 1px; color: lightskyblue; } 
+    .leadright {  padding-top: 2%; display: block; text-align: center;  }
+	
+ /* 2 equal columns float next to each other */
+.column {  float:left; width:48.80%; min-width:380px; max-width:99%; height:1000px; min-height:900px; max-height:100%; 
+	   padding: 0; margin: 10px auto; display:block; color:#eee; background-color:rgba(0,0,0,0.20); position: relative;  
+	   border: rgba(150,150,150,0.50); border-radius: 5px; overflow-x: hidden; overflow-y: hidden;  
+	}
+ /* expands to one column */
+.row {  margin: 10px 15px 25px 1px;  width: 98%; }
+  /* Clear floats after the columns */
+.row:after {  content: ""; float: left; display: block; clear: both;  }
+   /* Responsive layout - screen < 800px - stack columns verticaly, instead of next to each other */
+   @media (max-width: 800px) {  
+	 	               .column {  width:93%; min-width:90%; max-width:98%; border: solid 1px; margin-right: 5px; }	
+		               #expand { display: none;  }
+			     }
+	 
+
+	/* Clicked focus expands columns width  tabindex="0"  */
+	#column:focus { 
+			width: 97%; max-width: 100%; display: block; max-height: 100%; transition: width 1s; 
+			position: fixed; top: 5%; background-color:rgba(0,0,0,0.90); z-index: 9999; margin: 2%;
+	   	      }
+	.column:hover { cursor: pointer; border:2px solid #66c; display:block; z-index:10; }	
+	
+	
+  .articles {  max-width: 100%; height: 1500px; max-height: 100%; margin: 5px; padding: 5px; 
+	       background-color: transparent; display:block; word-break: break-word; text-overflow: ellipsis; line-height: 1em; 
+	      -webkit-box-orient: vertical; -webkit-box; -webkit-line-clamp: 50; /* #-lines*/ overflow-x:hidden; overflow-y:hidden; 
+            }
+						
+   /* For ( object data=" ) Don't change height otherwise! for scrolling, hover scrolling! */
+   object {   width:100%; height:100%; max-height:998px; clear:both; display:block; overflow-x:hidden; overflow-y:hidden; 
+	  }         
+	
+
+	/* Custom checkbox button expands all columns width _ checkbox select expand */
+    	input + .row .column { float: left; margin: 30px auto; width: 48.80%; max-width: 99%; transition:width 0.5s;   }
+        input:checked + .row .column { width: 95%; max-width: 98%; display: block; max-height: 100%; transition:width 1s; 
+				     }
+	#expand {	 text-align: center; margin: 0 auto; width: 100%; height: 30px; } 
+	#expand label {  color:#888; cursor: pointer; width: 55px; margin: 0 auto; padding: 1px; 
+		         border: solid 1px #888; border-radius: 20px; font-size: 17px;  }	
+	#expand label:hover { color: rgba(128,128,128,.75); cursor:progress; }  
+
+	  .hid {  display: none; }     .column:active > .hid { display:block;  z-index:10; }   
+	    /*  .hid img {height: 25px; min-width: 25px; position: absolute; padding-left: 42%; border:0;} */
+	
+      /* CSS here, for externals, their css doesn't seem to apply here! */
+      #modaldiv {    margin:0 auto;  width: 100%;  text-align: center;  }
+     .srchbutton {  -webkit-appearance: button; -moz-appearance: button; appearance: button; padding: 16px 16px; cursor: pointer; 
+	     	    opacity: 0.90; width: 260px; color: #fff;  border: 3px solid #ccc;  background-color: rgba(15,15,155,0.5);   }
+
+	
+	
+        .feedsrss {  margin: 0 auto; padding: 4px; width: 77%; max-width: 80%; height: 225px; display: flex;
+	     	     border: 1px solid #888; border-radius: 5px;  background-color: rgba(50,50,50,0.5);  }
+	.feed-container { font-size: 15px;  margin: 5px; overflow: hidden; padding: 0; height: 200px; }
+	
+        .linkbutton {  background-color: rgba(50,50,50,0.5); color: cadetblue; border-radius: 5px; border: 0; max-width: 100%; }
+	
+	
+#logo {
+    	background-image: url(/icons/FullLogo_Transparent1.png);
+        background-size: contain;  background-repeat: no-repeat;   width: 250px; height: 150px;
+      }
+	
