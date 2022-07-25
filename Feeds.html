@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>FeedWind</title>
+	<style type="text/css">
+#loading {
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+}
+
+#loading .fw-loader-msg {
+	font-family: arial;
+	font-size: 15px;
+	color: #848484;
+	padding-top: 5px;
+}
+
+#loading .fw-loader-msg:after {
+	content: ' .';
+	font-weight: bold;
+	-webkit-animation: dots 1s steps(5, end) infinite;
+	animation: dots 1s steps(5, end) infinite;
+}
+
+@-webkit-keyframes dots {
+
+	0%,
+	20% {
+		color: rgba(0, 0, 0, 0);
+		text-shadow:
+			.25em 0 0 rgba(0, 0, 0, 0),
+			.5em 0 0 rgba(0, 0, 0, 0);
+	}
+
+	40% {
+		color: gray;
+		text-shadow:
+			.25em 0 0 rgba(0, 0, 0, 0),
+			.5em 0 0 rgba(0, 0, 0, 0);
+	}
+
+	60% {
+		text-shadow:
+			.25em 0 0 gray,
+			.5em 0 0 rgba(0, 0, 0, 0);
+	}
+
+	80%,
+	100% {
+		text-shadow:
+			.25em 0 0 gray,
+			.5em 0 0 gray;
+	}
+}
+
+@keyframes dots {
+
+	0%,
+	20% {
+		color: rgba(0, 0, 0, 0);
+		text-shadow:
+			.25em 0 0 rgba(0, 0, 0, 0),
+			.5em 0 0 rgba(0, 0, 0, 0);
+	}
+
+	40% {
+		color: gray;
+		text-shadow:
+			.25em 0 0 rgba(0, 0, 0, 0),
+			.5em 0 0 rgba(0, 0, 0, 0);
+	}
+
+	60% {
+		text-shadow:
+			.25em 0 0 gray,
+			.5em 0 0 rgba(0, 0, 0, 0);
+	}
+
+	80%,
+	100% {
+		text-shadow:
+			.25em 0 0 gray,
+			.5em 0 0 gray;
+	}
+}
+
+#error {
+	width: 90%;
+	font-family: arial;
+	font-size: 15px;
+	line-height: 22px;
+	border: 1px solid #ccc;
+	padding: 10px 7px;
+	text-align: center;
+}
+
+	</style>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=2.0" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+	<div id="loading" class="text-center">
+		<img src="https://feed.mikle.com/images/squares.svg?v=1580871352" alt="loading image" />
+		<div class="fw-loader-msg" style="display: none;"></div>
+	</div>
+	<div id="error-container" style="display:none;">
+		<div style="text-align: center;padding-top: 20px;border: 1px solid lightgray;padding bottom: auto;">
+			<div id="error-message-title" style="font-size: 18px;color: gray;line-height: 24px;text-transform: uppercase;"></div>
+			<div id="error-message" style="width: 100%;font-family: arial;font-size: 14px;line-height: 24px;color: gray;padding-top: 10px;padding-bottom: 20px;"></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+function hasPermission() {
+	try {
+		if (sessionStorage) return true;
+		return false;
+	} catch (e) {
+		return false;
+	}
+}
+
+function showErrorMessage(message) {
+	$('#error-message').html(message);
+	$('#error-message-title').html("Oops! Something went wrong.");
+	$('#error-container').show();
+}
+
+$(function() {
+	var preloader_text = "";
+	var widget_parameter = {"type":"RSS","sources":[{"source":"https://theconversation.com/us/business/articles.atom","type":"RSS","replaceable":"false"},{"source":"https://theconversation.com/uk/technology/articles.atom","type":"RSS","replaceable":"false"}],"name":"","width":0,"width_by_article":"1","posts_to_scroll":"1","space_between_feed":"0","height":0,"card_height":"300","height_by_article":"5","target":"_blank","font":"Arial, Helvetica, sans-serif","title_font_size":"16","item_title_font_size":"16","item_description_font_size":"12","border":"on","css_url":"","css_manual_input":"#fw-container /* Main container */\n{\n\n}\n\nheader /* Header */\n{\n\n}\n\n.fw-feed-title /* Feed title & link */\n{\n\n}\n\n.fw-feed-title a:link /* Color */\n{\n\n}\n\n#fw-feed-items-scroll-area\n{\n\n}\n\n#fw-feed-items\n{\n\n}\n\n.fw-feed-item /* Item container */\n{\n\n}\n\n.fw-feed-item-url /* Item URL link */\n{\n\n}\n\n.fw-feed-item-image-module /* Thumbnail module */\n{\n\n}\n\n.fw-feed-item-image /* Thumbnail */\n{\n\n}\n\n.fw-feed-item-content-module /* Contents module */\n{\n\n}\n\n.fw-feed-item-title /* Item title */\n{\n\n}\n\n.fw-feed-item-description /* Item description */\n{\n\n}\n\n.fw-feed-item-more-link /* Read more link */\n{\n\n}\n\n.fw-feed-item-date /* Item date/time */\n{\n\n}\n\n.fw-feed-item-link /* Original content link */\n{\n\n}\n\n.fw-feed-item-social-icons /* Social icon container */\n{\n\n}\n\n.fw-feed-item-social-icons .fa-facebook-square /* Facebook icon */\n{\n\n}\n\n.fw-feed-item-social-icons .fa-twitter-square /* Twitter icon */\n{\n\n}\n\n.fw-feed-item-social-icons .fa-linkedin-square /* Linkedin icon */\n{\n\n}\n\n.fw-branding /* FeedWind branding */\n{\n\n}","keyword_inc":"","keyword_exc":"","preloader_text":"Loading","responsive":"on","text_direction":"left","remove_duplicate_article":"off","thumbnail_position":"left","text_alignment":"left","corner":"rounded","custom_css_mode":"direct","scroll_switch":"on","scroll_style":"vs","scroll":"on","navigation_arrow":"on","auto_scroll":"on","fade_transition":"off","display_order":"ttb","auto_scroll_direction":"up","auto_scroll_step_speed":"5","auto_scroll_mc_speed":"20","sort":"new","title":"on","title_sentence":"","title_link":"","title_bgcolor":"#ffffff","title_color":"#505659","widget_title_bold":"off","feed_title_bold":"off","title_bgimage":"","title_bgimage_scale":"auto","item_bgcolor":"#ffffff","item_overlaybgcolor":"rgba(255,255,255,0.8)","item_linear_gradient":"off","item_linear_gradient_top":"rgba(255,255,255,0.8)","item_linear_gradient_bottom":"rgba(97,33,33,0.8)","item_bgimage":"","item_bgimage_scale":"auto","item_title_length":"55","item_title_color":"#2e7ec8","item_border_bottom":"off","item_podcast_player":"off","item_description":"both","item_link":"off","item_link_custom":"","item_link_font_size":"12","item_link_color":"#505659","item_author_name":"off","item_author_name_bold":"off","item_author_name_font_size":"12","item_author_name_color":"#333333","item_read_more":"off","item_social_share":"off","item_social_share_fb":"on","item_social_share_tw":"on","item_social_share_linkedin":"on","item_social_share_icon_size":"25","item_read_more_text":"","item_more_posts":"off","item_more_posts_link":"","item_more_posts_custom_link":"","item_more_posts_link_font_size":"14","item_more_posts_link_color":"#333333","item_more_posts_link_bg_color":"#ffffff","item_description_length":"100","item_description_color":"#505659","item_date":"on","item_date_format":"%b %e, %Y %l:%M %p","item_date_timezone":"","locale":"en_US","item_date_custom_format_switch":"off","item_display_title":"off","item_display_description":"off","item_display_location":"off","item_description_style":"thumbnail","single_column_on_mobile":"off","single_column_range_mobile":"1","item_thumbnail":"crop","item_thumbnail_selection":"auto","item_thumbnail_force_https":"off","branding":"off","article_num":"10","item_player":"off","item_image_scale":"best-fill","item_image_align":"top","item_alt_image_link":"","item_date_time_size":"12","item_date_time_color":"#505659","item_custom_tag_text":"","item_custom_tag":"off","item_custom_tag_font_size":"12","item_custom_tag_font_color":"#1a97fc","item_custom_tag_bgcolor":"#e8e8e8","item_custom_url_parameter":""};
+	if (Object.keys(widget_parameter).length > 0) {
+		var params = JSON.parse(JSON.stringify(widget_parameter));
+		if (params && params.preloader_text) {
+			preloader_text = params.preloader_text;
+		}
+	} else {
+		preloader_text = "";
+	}
+
+	if (preloader_text) {
+		$(".fw-loader-msg").text(preloader_text);
+		$(".fw-loader-msg").show();
+	}
+
+	var locale = undefined;
+	var widget_id = undefined;
+	var ig_access_token = undefined;
+	var fb_access_token = undefined;
+	if (hasPermission()) {
+		fb_access_token = sessionStorage.getItem("fb_access_token") ? sessionStorage.getItem("fb_access_token") : undefined;
+	}
+
+	$.ajaxPrefilter(function(options, originalOptions, jqXHR) {
+		options.async = true;
+		options.xhrFields = {
+			withCredentials: true
+		};
+	});
+
+	$.post('/api/widget/read/body/preview/', {
+		widget_id: widget_id,
+		widget_parameter: JSON.stringify(widget_parameter),
+		fb_access_token: fb_access_token,
+		ig_access_token: ig_access_token,
+		locale: locale
+	}, function(data) {
+		if (data.status == 'ok') {
+			$('#loading').fadeOut('fast', function() {
+				if (data.response.expired) {
+					showErrorMessage(data.message);
+				} else {
+					$('body').html(data.response.widget);
+
+					if ($('#fw-custom-css[data-fw-css-href]')[0]) {
+						var href = $('#fw-custom-css').attr('data-fw-css-href');
+												$('#fw-custom-css').attr('href', (href.match(/^http:\/\//) ? 'https://feed.mikle.com/api/proxy/' : '') + href);
+											}
+
+					var attr_src = 'data-src';
+					if (data.response.params.item_description_style == 'card' || data.response.params.item_description_style == 'overlay') {
+						attr_src = 'src';
+					} else if (data.response.params.type == 'IG' && data.response.params.item_description_style == 'large') {
+						attr_src = 'src';
+					}
+
+					$('img[data-fw-img-src]').each(function() {
+						var src = $(this).attr('data-fw-img-src');
+						$(this).attr(attr_src, (src.match(/^http:\/\//) ? 'https://feed.mikle.com/api/proxy/' : '') + src);
+					});
+
+					function _process_image() {
+						$('img[data-fw-img-src]').each(function() {
+							if ($(this).attr('data-scale')) {
+								$(this).imageScale({
+									rescaleOnResize: true
+								});
+							}
+						});
+					}
+
+					setTimeout(function() { _process_image(); }, 100);
+				}
+			});
+		} else {
+			var target = parent.postMessage ? parent : ( parent.document.postMessage ? parent.document : undefined);
+			if (typeof target != "undefined") {
+				target.postMessage({"success": 0, "message": data.message}, "*");
+			}
+
+			$('#loading').fadeOut('fast', function() {
+				showErrorMessage(data.message);
+			});
+		}
+	}, 'json').fail(function(data) {
+		$('#loading').fadeOut('fast', function() {
+			showErrorMessage("An unexpected error occurred. Please try again later or <a href='https://feed.mikle.com/contact/' target='_blank'>contact</a> our support. (" + data.status + ": " + data.statusText + ")");
+		});
+	});
+});
+
+	</script>
+</body>
+</html>
