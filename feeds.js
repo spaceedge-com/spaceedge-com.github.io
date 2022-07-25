@@ -1,6 +1,6 @@
 <!-- start sw-rss-feed code --> 
 rssfeed_url = new Array(); 
-rssfeed_url[0]="https://theconversation.com/us/technology/articles.atom"; rssfeed_url[1]="https://theconversation.com/us/business/articles.atom"; rssfeed_url[2]="https://theconversation.com/us/ethics/articles.atom"; rssfeed_url[3]="";  
+rssfeed_url[0]="https://theconversation.com/us/technology/articles.atom"; rssfeed_url[1]="https://theconversation.com/us/business/articles.atom"; rssfeed_url[2]=""; rssfeed_url[3]="";  
 rssfeed_frame_width="100%"; 
 rssfeed_frame_height="215"; 
 rssfeed_scroll="on"; 
@@ -13,17 +13,17 @@ rssfeed_border="off";
 rssfeed_css_url=""; 
 rssfeed_title="off"; 
 rssfeed_title_name=""; 
-rssfeed_title_bgcolor="#000"; 
+rssfeed_title_bgcolor="#444"; 
 rssfeed_title_color="#abf"; 
 rssfeed_title_bgimage=""; 
 rssfeed_footer="off"; 
 rssfeed_footer_name="rss feed"; 
 rssfeed_footer_bgcolor="#000"; 
-rssfeed_footer_color="#333"; 
+rssfeed_footer_color="#444"; 
 rssfeed_footer_bgimage=""; 
 rssfeed_item_title_length="110"; 
 rssfeed_item_title_color="#fab"; 
-rssfeed_item_bgcolor="rgba(0,0,0,0.25)"; 
+rssfeed_item_bgcolor="rgba(40,40,40,0.15)"; 
 rssfeed_item_bgimage=""; 
 rssfeed_item_border_bottom="on"; 
 rssfeed_item_source_icon="on"; 
