@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Feedspot</title>
+        <!-- Needed -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Custom css link-->
+                    <link rel="stylesheet" href="//cdn.feedspot.com/widgets/Assets/scrollbar/simplebar.min.css" />
+           <!--[if lte IE 8]><link rel="stylesheet" href="//cdn.feedspot.com/widgets/Assets/scrollbar/ie8.css" /><![endif]-->
+           <!--[if lte IE 9]><link rel="stylesheet" href="//cdn.feedspot.com/widgets/Assets/scrollbar/ie9.css" /><![endif]-->
+
+            <script src="//cdn.feedspot.com/widgets/Assets/scrollbar/jquery.scrolly.min.js"></script>
+            <script src="https://cdn.feedspot.com/widgets/Assets/scrollbar/simplebar.js"></script>
+
+
+
+                                                                                        <!--[if lte IE 8]><script src="//cdn.feedspot.com/widgets/Assets/scrollbar/respond.min.js"></script><![endif]-->
+        
+
+
+        <style type="text/css">
+.blg_grid_lst h2{
+    margin:auto;
+
+float:left;
+}
+
+.blog_box .blog_img img {
+    width: 100%;
+    float: left;
+    border: 3px solid #dbdbdb;
+}
+.tabcontent {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.blg_grid_lst .blg_card_img {
+    min-height: 60px;
+    background-size: cover!important;
+    background-position: 50% 20%!important;
+    margin-right: 15px;
+    float: left;
+    width: 160px;
+    height: 100px;
+    flex-shrink: 0;
+border: solid 1px #e1e1e1;
+    border-radius: 2px;
+}
+
+.blg_grid_lst .blg_mask {
+    padding: 10px !important;
+    float: left;
+}
+
+.blg_grid_lst .blg_card {
+    width: 98%;
+    float: left;
+}
+.blg_grid_lst .blg_card a {
+    text-decoration: none;
+    display: block;
+float:left;
+margin-right:5px;
+width:100%;
+
+}
+.blg_grid_lst .blg_card_text {
+    width: 100%;
+    float: left;
+}
+
+.blg_list.tabcontent p {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+.widget_timestamp{
+    font-size:12px;
+    color:#505659;
+    white-space: unset !important;
+}
+
+.blg_grid_lst::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+.blg_grid_lst::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+.blg_grid_lst::-webkit-scrollbar-thumb
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #ccc;
+}
+.blg_grid_lst p{
+
+float:left;
+}@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+/*body {margin:0 8px 8px}*/
+body {margin:0;margin-right:2px;}
+a {
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: none
+}
+
+.blog_box {
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+    display: flow-root;
+    text-align:left;
+    border:1px solid #dbdbdb;
+    border-radius:5px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.url_box {
+    float: left;
+    width: 100%;    
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.url_box .blog_title {
+    color: #008299;
+    font-size: 21px;
+    font-weight: bold;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #b1b1b1;
+    margin-bottom: 0;
+    padding: 10px 10px 10px 10px;
+}
+
+.blg_mask_box {
+    float: left;
+    width: 100%;
+}
+
+.url_box .blog_title {
+    font-size: 16px;
+	background-color:#ffffff;
+	font-weight:bold;
+	padding-bottom: 8px;
+    border-bottom: 1px solid #e9e9e9;
+    margin-bottom: 0px;
+    padding: 10px 10px 10px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.url_box .blog_title {
+     color: #acadae;
+    
+}
+
+.url_box .blog_title a {
+     color: #acadae;
+     display: inline-block;
+     word-break: break-word;
+}
+
+/* Header Division Will not include in custom css */
+.blg_grid_lst {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height:3px;
+    float: left;
+    width: 100%;
+    /*padding: 0px 5px !important;*/
+    /*padding: 10px 0 ;*/
+    background-color: #ffffff;
+}
+
+.blg_grid_lst h2 {
+    font-size:14px;
+    font-weight:normal;
+    color:#0077b5;
+        margin: 5px 0;
+}
+
+
+
+.blg_grid_lst p {
+    margin: 5px 0;
+    font-weight:normal;
+    font-size:12px;
+    color:#acadae;
+    min-width: unset !important;
+}
+.blg_grid_lst p a{
+    font-weight:normal;
+    font-size:12px;
+    color:#acadae;
+    min-width: unset !important;
+}
+
+.aaudio-play-button{
+
+ border:1px solid #acadae;
+  color:#acadae;
+}
+
+.red_more{
+    font-size:12px;
+    font-weight:normal;
+    color:#0077b5;
+}
+
+.feed-item-original-link {
+    font-weight:normal;
+    font-size:12px;
+    color:#acadae;
+    word-break: break-word;
+float:left;
+}
+
+        </style>
+        <!-- Include below script Only if needed -->
+        <script>
+function afterlload(){var dom_container;
+if ($('.blog_box').length) {
+    dom_container = $('.blog_box');
+}
+
+var dom_title = 0;
+if ($('.blog_title').length) {
+    dom_title = $('.blog_title').outerHeight();
+}
+
+var dom_scroll_area;
+if ($('.blg_grid_lst').length) {
+    dom_scroll_area = $('.blg_grid_lst');
+}
+
+function getHeight() {
+    var ifHeight = 0;
+    ifHeight = dom_container.outerHeight();
+    ifHeight = ifHeight + 20;
+    return ifHeight;
+}
+
+function updateHeight() {
+    var items_height = 0;
+    var numItemsInFeed = $('.blg_mask').length;
+
+    if(parseInt(1) == 1){
+        var numItemsToDisplay = numItemsInFeed > parseInt(3) ? parseInt(3) : numItemsInFeed;
+        for (var i = 0; i < numItemsToDisplay; i++) {
+                items_height += $('.blg_mask').eq(i).innerHeight();
+        }
+        dom_scroll_area.height(items_height);
+        var cHeight = dom_title + dom_scroll_area.outerHeight();
+        dom_container.height(cHeight);
+    }else{
+        items_height = parseInt(3) - dom_title;
+        dom_scroll_area.height(items_height);
+        dom_container.height(parseInt(3));
+    }
+}
+
+function getWidth() {
+    return "100%";
+}
+
+function postToParent(width, height, widId) {
+    parent.postMessage(
+    {
+        WidgetWidth: width,
+        WidgetHeight: height,
+        WidgetId: widId
+    },
+    "*");
+}
+
+updateHeight();
+postToParent(getWidth(), 150, 'a8cc7847GYFW');
+
+setTimeout(function () {
+    updateHeight();
+    postToParent(getWidth(), getHeight(), 'a8cc7847GYFW');
+    var wTime = 300;
+    for (var i = 1; i <= 7; i++) {
+        setTimeout(function () {
+            updateHeight();
+            postToParent(getWidth(), getHeight(), 'a8cc7847GYFW');
+        }, wTime);
+        wTime = wTime + 100;
+    }
+}, 100);
+(function( $ ){
+
+   $.fn.scroller = function(options) {
+
+        options = options || '{"delay" : 2000 ,"amount" : 100 }';
+        options = JSON.parse(options);
+        this.each(function () {
+
+var scrollSpeed=5 * 1000;
+var scrollamount=$('.blg_mask').css('height');
+scrollamount=parseInt(scrollamount)-15;
+
+            this.delay = scrollSpeed;
+            this.amount = scrollamount;
+            this.autoScroll = $(this);
+            this.iScrollHeight = this.autoScroll.prop("scrollHeight");
+            this.iScrollTop = this.autoScroll.prop("scrollTop");
+            this.iHeight = this.autoScroll.height();
+console.log(this.iScrollHeight);
+            var self = this;
+            this.timerId = setInterval(function () {
+console.log(self.iScrollTop+self.iHeight);
+console.log(self.iScrollHeight);
+
+
+                if(self.iScrollTop+self.iHeight < self.iScrollHeight)
+                {
+                    self.iScrollTop = self.autoScroll.prop("scrollTop");
+                    self.iScrollTop+=self.amount;
+                    self.autoScroll.animate(
+                        {scrollTop: self.iScrollTop},
+                        "slow",
+                        "linear");
+                }
+                else
+                {
+                    self.iScrollTop-=self.iScrollTop;
+                    self.autoScroll.animate(
+                        {scrollTop: "0px"},
+                        "fast",
+                        "swing");
+                }
+            }, self.delay);
+        });
+    };
+})( jQuery );
+}        </script>
+    </head>
+    <body> 
+        <div id="widget_inner_loader" style="width: 100%; height: 100%; position: fixed; background: rgba(255, 255, 255, 0.9); float: left; z-index:9;display:none">
+            <img src="https://www.feedspot.com/widgets/Assets/images/loader.gif" style="position:relative; left:50%; top:50%; margin-left: -37px; margin-top:-50px">
+        </div>
+        
+<style>
+    .play-icon{width:30px;height:30px;position:relative;top:50%;left:50%;margin-left:-15px;margin-top:-15px;float:left;text-align:left;}
+    .play-icon-2{ width:25px;height:25px; position: absolute; bottom: 2px; right: 2px; }
+    .orignal-link{padding-left: 10px;font-size: 10px;}
+    audio{ border-radius: 2px!important}
+    .aaudio-play-button{
+        font-size: 9px;
+        height: 15px;
+        background: #ffffff;
+        border-radius: 10px;
+        padding: 2px 15px 8px 25px;
+        background-image: url(https://d11qoqw0p5lsj5.cloudfront.net/img/slide/playbtn.png);
+        background-size: 10px 10px;
+        background-repeat: no-repeat;
+        background-position: 7px 2px;
+        float: left;
+        cursor:pointer;}
+
+    .aud-player{
+
+    }
+    a{
+        color: #008cc9;
+    }
+    .error_messges{
+        color:#acadae ;font-family:Arial, Helvetica, sans-serif;
+    }
+</style>
+<style>.blg_grid_lst .blg_mask{width:100%}</style><div class="blog_box url_box custom_width_" data-width-custom = "0" style="padding-bottom:1px; max-height:100%"><span class="aud-player"></span><div class="blog_title" id="blg_title">Economy – The Conversation</div><div class="blg_grid_lst tabcontent" style="max-height:100%;box-sizing: border-box;" data-simplebar><div style='padding:0px 5px'><div class="blg_mask_box" style="box-sizing: border-box;padding:5px 5px;">
+    <div class="blg_mask">
+    <div class="blg_card" style="margin:0px 0px 10px 0px">
+        <a href="https://theconversation.com/3-reasons-us-coal-power-is-disappearing-and-a-supreme-court-ruling-wont-save-it-187254" target="_blank">
+            <div class="blg_card_text" style="padding-right:10px;display:flex;">
+        		<div><div class=" blg_card_img check" data-image="" style="background-image:url('https://images.theconversation.com/files/475714/original/file-20220722-26-44ugwr.jpg?ixlib=rb-1.1.0&rect=366%2C485%2C4283%2C2792&q=45&auto=format&w=496&fit=clip');background-color:#ffb3ba;margin-bottom:5px;background-repeat: no-repeat;"></div></div>
+        		<div>
+        			<h2 style="margin-top:0px;padding-top:0px;">3 reasons US coal power is disappearing – and a Supr...</h2>
+	                <p style="">
+	                    Coal was the dominant fuel for U.S. power plants until 2016. This PacifiCorp power plant in Utah...
+	                    
+	                </p>
+	                
+	                <p style="min-width:300px;float:left"><span class="widget_timestamp" style="white-space: nowrap;">By Rebecca J. Davis, Assistant Professor of Economics and Finance, Stephen F. Austin State University - Jul 26, 2022</span></p>
+	                
+        		</div>
+            </div>
+        </a>
+    </div>
+
+</div>
+<div class="blg_mask">
+    <div class="blg_card" style="margin:0px 0px 10px 0px">
+        <a href="https://theconversation.com/dispirited-homebuyers-show-why-feds-unprecedented-fight-against-inflation-is-beginning-to-succeed-187420" target="_blank">
+            <div class="blg_card_text" style="padding-right:10px;display:flex;">
+        		<div><div class=" blg_card_img check" data-image="" style="background-image:url('https://images.theconversation.com/files/475743/original/file-20220724-31994-pg1krm.jpeg?ixlib=rb-1.1.0&rect=422%2C244%2C5210%2C3504&q=45&auto=format&w=496&fit=clip');background-color:#ffdfba;margin-bottom:5px;background-repeat: no-repeat;"></div></div>
+        		<div>
+        			<h2 style="margin-top:0px;padding-top:0px;">Dispirited homebuyers show why Fed's unprecedented f...</h2>
+	                <p style="">
+	                    Home sales are slowing as the Fed hikes rates. AP Photo/John Raoux
+I’ve studied finance and fin...
+	                    
+	                </p>
+	                
+	                <p style="min-width:300px;float:left"><span class="widget_timestamp" style="white-space: nowrap;">By Mark Flannery, Professor of Finance, University of Florida - Jul 25, 2022</span></p>
+	                
+        		</div>
+            </div>
+        </a>
+    </div>
+
+</div>
+<div class="blg_mask">
+    <div class="blg_card" style="margin:0px 0px 10px 0px">
+        <a href="https://theconversation.com/sri-lankas-crisis-can-the-south-asian-economy-break-from-the-past-and-find-a-route-to-stability-187228" target="_blank">
+            <div class="blg_card_text" style="padding-right:10px;display:flex;">
+        		<div><div class=" blg_card_img check" data-image="" style="background-image:url('https://images.theconversation.com/files/475513/original/file-20220721-13056-ehhhix.jpg?ixlib=rb-1.1.0&rect=0%2C0%2C4309%2C2864&q=45&auto=format&w=496&fit=clip');background-color:#ffffba;margin-bottom:5px;background-repeat: no-repeat;"></div></div>
+        		<div>
+        			<h2 style="margin-top:0px;padding-top:0px;">Sri Lanka's crisis: Can the South Asian economy brea...</h2>
+	                <p style="">
+	                    The writing was on the wall in Sri Lanka. Arun Sankar/AFP via Getty Images
+Sri Lanka has a new pr...
+	                    
+	                </p>
+	                
+	                <p style="min-width:300px;float:left"><span class="widget_timestamp" style="white-space: nowrap;">By Vidhura S Tennekoon, Assistant Professor of Economics, Indiana University - Jul 22, 2022</span></p>
+	                
+        		</div>
+            </div>
+        </a>
+    </div>
+
+</div>
+<div class="blg_mask">
+    <div class="blg_card" style="margin:0px 0px 10px 0px">
+        <a href="https://theconversation.com/how-record-setting-heat-waves-in-cities-across-uk-us-and-mainland-europe-could-punish-economies-already-reeling-from-inflation-187333" target="_blank">
+            <div class="blg_card_text" style="padding-right:10px;display:flex;">
+        		<div><div class=" blg_card_img check" data-image="" style="background-image:url('https://images.theconversation.com/files/474973/original/file-20220719-12-ooexrc.jpg?ixlib=rb-1.1.0&rect=161%2C161%2C5829%2C3952&q=45&auto=format&w=496&fit=clip');background-color:#baffc9;margin-bottom:5px;background-repeat: no-repeat;"></div></div>
+        		<div>
+        			<h2 style="margin-top:0px;padding-top:0px;">How record-setting heat waves in cities across UK, U...</h2>
+	                <p style="">
+	                    A runner tries to beat the heat by working out in the morning. AP Photo/Michael Probst
+Hundreds o...
+	                    
+	                </p>
+	                
+	                <p style="min-width:300px;float:left"><span class="widget_timestamp" style="white-space: nowrap;">By Derek Lemoine, Associate Professor of Economics, University of Arizona - Jul 20, 2022</span></p>
+	                
+        		</div>
+            </div>
+        </a>
+    </div>
+
+</div>
+<div class="blg_mask">
+    <div class="blg_card" style="margin:0px 0px 10px 0px">
+        <a href="https://theconversation.com/lost-touch-with-someone-reach-out-your-friend-will-likely-appreciate-it-more-than-you-think-185001" target="_blank">
+            <div class="blg_card_text" style="padding-right:10px;display:flex;">
+        		<div><div class=" blg_card_img check" data-image="" style="background-image:url('https://images.theconversation.com/files/472384/original/file-20220704-18-67hibz.jpg?ixlib=rb-1.1.0&rect=23%2C15%2C5094%2C3383&q=45&auto=format&w=496&fit=clip');background-color:#bae1ff;margin-bottom:5px;background-repeat: no-repeat;"></div></div>
+        		<div>
+        			<h2 style="margin-top:0px;padding-top:0px;">Lost touch with someone? Reach out – your friend wil...</h2>
+	                <p style="">
+	                    People tend to underestimate how much a friend they've lost contact with would enjoy a simple not...
+	                    
+	                </p>
+	                
+	                <p style="min-width:300px;float:left"><span class="widget_timestamp" style="white-space: nowrap;">By Peggy Liu, Ben L. Fryrear Chair in Marketing and Associate Professor of Business Administration, University of Pittsburgh - Jul 18, 2022</span></p>
+	                
+        		</div>
+            </div>
+        </a>
+    </div>
+
+</div>
+<div class="blg_mask">
+    <div class="blg_card" style="margin:0px 0px 10px 0px">
+        <a href="https://theconversation.com/how-sustainable-manufacturing-could-help-reduce-the-environmental-impact-of-industry-185672" target="_blank">
+            <div class="blg_card_text" style="padding-right:10px;display:flex;">
+        		<div><div class=" blg_card_img check" data-image="" style="background-image:url('https://images.theconversation.com/files/471480/original/file-20220628-14471-auzmdw.jpg?ixlib=rb-1.1.0&rect=0%2C0%2C4041%2C2683&q=45&auto=format&w=496&fit=clip');background-color:#ffb3ba;margin-bottom:5px;background-repeat: no-repeat;"></div></div>
+        		<div>
+        			<h2 style="margin-top:0px;padding-top:0px;">How sustainable manufacturing could help reduce the ...</h2>
+	                <p style="">
+	                    Sustainable manufacturing offers ways to reduce environmental impact. Fertnig/E+ via Getty Images...
+	                    
+	                </p>
+	                
+	                <p style="min-width:300px;float:left"><span class="widget_timestamp" style="white-space: nowrap;">By Nabil Nasr, Associate Provost Academic Affairs and Director of GIS, Rochester Institute of Technology - Jul 15, 2022</span></p>
+	                
+        		</div>
+            </div>
+        </a>
+    </div>
+
+</div>
+<div class="blg_mask">
+    <div class="blg_card" style="margin:0px 0px 10px 0px">
+        <a href="https://theconversation.com/swelling-grocery-bills-are-pummeling-the-poorest-who-spend-over-a-quarter-of-their-incomes-on-food-186980" target="_blank">
+            <div class="blg_card_text" style="padding-right:10px;display:flex;">
+        		<div><div class=" blg_card_img check" data-image="" style="background-image:url('https://images.theconversation.com/files/473951/original/file-20220713-9624-u19m7w.jpg?ixlib=rb-1.1.0&rect=0%2C9%2C6048%2C4001&q=45&auto=format&w=496&fit=clip');background-color:#ffdfba;margin-bottom:5px;background-repeat: no-repeat;"></div></div>
+        		<div>
+        			<h2 style="margin-top:0px;padding-top:0px;">Swelling grocery bills are pummeling the poorest – w...</h2>
+	                <p style="">
+	                    Food prices are soaring. Jim Watson/AFP via Getty ImagesCC BY-ND
+The cost of eggs and bread is so...
+	                    
+	                </p>
+	                
+	                <p style="min-width:300px;float:left"><span class="widget_timestamp" style="white-space: nowrap;">By David Soll, Associate Professor of History and Environmental Studies, University of Wisconsin, Eau Claire - Jul 14, 2022</span></p>
+	                
+        		</div>
+            </div>
+        </a>
+    </div>
+
+</div>
+<div class="blg_mask">
+    <div class="blg_card" style="margin:0px 0px 10px 0px">
+        <a href="https://theconversation.com/a-case-for-retreat-in-the-age-of-fire-184031" target="_blank">
+            <div class="blg_card_text" style="padding-right:10px;display:flex;">
+        		<div><div class=" blg_card_img check" data-image="" style="background-image:url('https://images.theconversation.com/files/468550/original/file-20220613-13-iu12qi.jpg?ixlib=rb-1.1.0&rect=0%2C8%2C2957%2C1934&q=45&auto=format&w=496&fit=clip');background-color:#ffffba;margin-bottom:5px;background-repeat: no-repeat;"></div></div>
+        		<div>
+        			<h2 style="margin-top:0px;padding-top:0px;">A case for retreat in the age of fire</h2>
+	                <p style="">
+	                    After the 2018 wildfire in Paradise, Calif., many fire-damaged homes were razed. Justin Sullivan...
+	                    
+	                </p>
+	                
+	                <p style="min-width:300px;float:left"><span class="widget_timestamp" style="white-space: nowrap;">By Emily E. Schlickman, Assistant Professor of Landscape Architecture and Environmental Design, University of California, Davis - Jul 13, 2022</span></p>
+	                
+        		</div>
+            </div>
+        </a>
+    </div>
+
+</div>
+<div class="blg_mask">
+    <div class="blg_card" style="margin:0px 0px 10px 0px">
+        <a href="https://theconversation.com/what-the-controversial-1972-limits-to-growth-report-got-right-our-choices-today-shape-future-conditions-for-life-on-earth-184920" target="_blank">
+            <div class="blg_card_text" style="padding-right:10px;display:flex;">
+        		<div><div class=" blg_card_img check" data-image="" style="background-image:url('https://images.theconversation.com/files/473446/original/file-20220711-19-jg3tta.jpg?ixlib=rb-1.1.0&rect=0%2C0%2C3000%2C1500&q=45&auto=format&w=496&fit=clip');background-color:#baffc9;margin-bottom:5px;background-repeat: no-repeat;"></div></div>
+        		<div>
+        			<h2 style="margin-top:0px;padding-top:0px;">What the controversial 1972 'Limits to Growth' repor...</h2>
+	                <p style="">
+	                    Image of Earth's city lights, created with data from the Defense Meteorological Satellite Program...
+	                    
+	                </p>
+	                
+	                <p style="min-width:300px;float:left"><span class="widget_timestamp" style="white-space: nowrap;">By Matthew E. Kahn, Provost Professor of Economics and Spatial Sciences, USC Dornsife College of Letters, Arts and Sciences - Jul 12, 2022</span></p>
+	                
+        		</div>
+            </div>
+        </a>
+    </div>
+
+</div>
+<div class="blg_mask">
+    <div class="blg_card" style="margin:0px 0px 10px 0px">
+        <a href="https://theconversation.com/june-jobs-report-suggests-fed-could-avoid-a-recession-but-room-for-error-is-minuscule-186681" target="_blank">
+            <div class="blg_card_text" style="padding-right:10px;display:flex;">
+        		<div><div class=" blg_card_img check" data-image="" style="background-image:url('https://images.theconversation.com/files/473225/original/file-20220708-17-txirzp.jpg?ixlib=rb-1.1.0&rect=116%2C124%2C4841%2C3574&q=45&auto=format&w=496&fit=clip');background-color:#bae1ff;margin-bottom:5px;background-repeat: no-repeat;"></div></div>
+        		<div>
+        			<h2 style="margin-top:0px;padding-top:0px;">June jobs report suggests Fed could avoid a recessio...</h2>
+	                <p style="">
+	                    Fed Chair Jerome Powell is hoping to orchestrate a very delicate dance. AP Photo/Manuel Balce Cen...
+	                    
+	                </p>
+	                
+	                <p style="min-width:300px;float:left"><span class="widget_timestamp" style="white-space: nowrap;">By Christopher Decker, Professor of Economics, University of Nebraska Omaha - Jul 08, 2022</span></p>
+	                
+        		</div>
+            </div>
+        </a>
+    </div>
+
+</div>
+
+</div></div></div></div>    </body>
+    <script>
+
+        function imageExists(url, callback) {
+            var img = new Image();
+            img.onload = function () {
+                y = callback(true);
+
+            };
+            img.onerror = function () {
+                y = callback(false);
+
+            };
+            img.src = url;
+
+        }
+
+
+
+    </script>
+    <script>
+        var x = "";
+        $(document).ready(function () {
+
+            $('.check_http ').each(function (index, value) {
+                var data_image = $(this).attr('data-image');
+                var thise = $(this);
+                var new_img_path = "https://" + data_image;
+                imageExists(new_img_path, function (exists) {
+                    if (exists == true) {
+                        //console.log(new_img_path);
+                        thise.css("background-image", 'url(' + new_img_path + ')');
+                    }
+                });
+
+
+            });
+
+
+
+//            $('.aaudio-play-button').click(function () {
+//                var src = $(this).attr('data-src');
+//                var type = $(this).attr('data-type');
+//                $('.aud-player').html('<audio style="display:none" controls autoplay width="400" height="27" id="audioP"><source src="' + src + '" type="' + type + '"></audio>');
+//                $(this).text("Pause");
+//                $(this).css("background","none");
+//
+//
+//            });
+            $("img").bind("error", function () {
+                // Replacing image source
+                //console.log($(this).attr("src"));
+                $(this).attr("src", "//www.feedspot.com/widgets/Assets/images/noimage.png");
+            });
+            function imgError(image) {
+                image.onerror = "";
+                image.src = "https://www.india.gov.in/sites/upload_files/npi/files/spotlights/voter_01.jpg";
+                return true;
+            }
+
+
+            $('#widget_inner_loader').show();
+            setTimeout(function () {
+                $('#widget_inner_loader').hide();
+				        
+       
+                    var x = $('html').css('width');
+                    var bodywidth = $('body').css('width');
+                    var iframe_width = $(".custom_width_").attr('data-width-custom'); 
+                    if(iframe_width < 1) { iframe_width = bodywidth;}    
+                              
+                    $('.blg_card_text').each(function () {
+                        if(parseInt(iframe_width) < 350) {                            
+                            $('.blg_grid_lst h2').css('width', '100%');                            
+                            $(".blg_card_img").css({"width": "60px", "height": "60px"});
+                            $(".blg_grid_lst p").css({"-webkit-box-orient" : "vertical", "margin" : "0px", "width": "100%", "overflow": "hidden", "display" : "-webkit-box", "-webkit-line-clamp" : "3"});
+                            $(".blg_grid_lst p .widget_timestamp").css({"-webkit-box-orient" : "vertical", "margin" : "0px", "width": "100%", "overflow": "hidden", "display" : "-webkit-box", "-webkit-line-clamp" : "1"});
+                        } 
+                        else {                        	
+                        	var image_w = parseInt(iframe_width) * '0.2';                           
+                            
+                            $(".blg_card_img").css("width", image_w + "px"); 
+                            $(".blg_card_img").css("height", image_w + "px");                           
+                            var imgwidth = $(this).children(".blg_card_img").css('width');  
+                            
+                                                    
+                            
+                            if (imgwidth == undefined) {
+                                $(this).children('h2').css('width', '100%');
+                                $(this).children('p').css('width', '100%');
+                            }
+                            else if(parseInt(bodywidth) >700){
+                               var cwidth = parseInt(bodywidth) - 95 - parseInt(imgwidth);
+                                $(this).children('h2').css('width', cwidth);
+                                //$(this).children('p').css('width', cwidth);
+                            }
+                            else {
+                                var cwidth = parseInt(bodywidth) - 70 - parseInt(imgwidth);
+                                $(this).children('h2').css('width', cwidth);
+                                
+                                //$(this).children('p').css('width', cwidth);
+                                //$(this).children('p').css('min-width', "unset");
+                            }
+                            $(this).children('p').css('width', '100%');  
+                        }
+                        $(".blg_card_text p").css({"width" : "100%"});
+
+                    });
+
+
+                    //                   
+
+
+                var tbox = $('.blog_box').css('height');
+                var bbox = $('.tabcontent').css('height');
+                if (tbox == bbox) {
+
+                    var btitle = $('.blog_title').css('height');
+                    //console.log(parseInt(btitle));
+                    fheight = parseInt(bbox) - parseInt(btitle) - 30;
+                    $('.tabcontent').css('height', fheight + "px");
+                    //console.log(fheight);
+                }
+
+                afterlload();
+
+                    $(".simplebar-content").scroller();
+
+
+            }, 2000);
+
+
+
+        });
+
+            localStorage.setItem("a8cc7847GYFW", "Economy – The Conversation");
+
+
+    </script>
+
+
+    		
+        <script>
+            var x = localStorage.getItem("c-a8cc7847GYFW");
+            $.ajax({
+                type: 'POST',
+                url: '/widgets/ctw.php',
+                async: "true",
+                data: {mgr: 5, url: 'https://theconversation.com/us/business/articles.atom', timediff: '0.49872899055481', convalues: x},
+                success: function (data) {
+                }
+            });
+        </script>		
+        </html>
