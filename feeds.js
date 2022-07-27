@@ -33,5 +33,5 @@ rssfeed_item_description_length="120";
 rssfeed_item_description_color="#fff"; 
 rssfeed_item_description_link_color="#adf"; 
 rssfeed_item_description_tag="on"; 
-rssfeed_no_items="50"; 
+rssfeed_no_items="10"; 
 rssfeed_cache = "7fe6b9de76e9246ae9419ff5c77b8b30"; 
