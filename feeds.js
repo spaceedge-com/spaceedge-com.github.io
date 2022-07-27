@@ -25,6 +25,7 @@ rssfeed_item_title_length="110";
 rssfeed_item_title_color="#fab"; 
 rssfeed_item_bgcolor="rgba(40,40,40,0.15)"; 
 rssfeed_item_bgimage=""; 
+rssfeed_item_image=""; 
 rssfeed_item_border_bottom="on"; 
 rssfeed_item_source_icon="on"; 
 rssfeed_item_date="on"; 
