@@ -122,10 +122,14 @@ input:checked + .row .column { width: 95%; max-width: 98%; display: block; max-h
 
 	
 	
-.feedsrss {  margin: 0 auto; padding: 4px; width: 77%; max-width: 80%; height: 225px; display: flex;
-	     	     border: 1px solid #888; border-radius: 5px;  background-color: rgba(50,50,50,0.5);  }
-.feed-container { font-size: 15px;  margin: 5px; overflow: hidden; padding: 0; height: 200px; }
-	
+.feedsrss {       margin: 0 auto; padding: 4px; width: 77%; max-width: 80%; height: 225px; display: flex;
+	     	  border: 1px solid #888; border-radius: 5px;  background-color: rgba(50,50,50,0.5);  }
+.feed-container { font-size: 14px;  margin: 5px; overflow: hidden; padding: 0; height: 200px; }
+    		:host { display: block; }
+    		img[src=""] {  display: none; }
+    		.feed-description-viewer img, .feed-description-viewer video { max-width: 100%; height: auto; }
+    		summary { padding-top: 0.25rem; }
+
 .linkbutton {  background-color: rgba(50,50,50,0.5); color: cadetblue; border-radius: 5px; border: 0; max-width: 100%; }
 	
 #footer {    color:#f8f; background-color:var(--t25); position:fixed; width:100%; height: 55px; font-size: small;
