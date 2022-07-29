@@ -29,6 +29,6 @@ var submit = seng + term;
 //alert ("After selection (submit): " + submit);
 	
 window.open(submit);
-// search results page open in a new window, replace 
-// window.location.href = submit; with: window.open(submit);
+// To show search results page to open in new window, replace: 
+// window.location.href = submit;  w/  window.open(submit);
 }
