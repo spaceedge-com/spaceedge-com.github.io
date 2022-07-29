@@ -25,7 +25,10 @@ if (si === "wolframalpha") {  var seng = "https://www.wolframalpha.com/input/?i=
 if (si === "yahoo") {  var seng = "https://search.yahoo.com/search?p=";  } 
 
 var submit = seng + term;
-//alert ("After selection (submit): >>>> : " + submit);
-window.location.href = submit;
-
+	
+//alert ("After selection (submit): " + submit);
+	
+window.open(submit);
+// search results page open in a new window, replace 
+// window.location.href = submit; with: window.open(submit);
 }
