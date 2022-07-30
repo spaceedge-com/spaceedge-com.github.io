@@ -197,10 +197,11 @@ input[type="checkbox"]:checked ~ .modal-background {
 /* modal-label */
 .modal-label {
 	box-sizing: border-box;  display: inline-block;  padding: 10px;
-    background-color: #375d91; color: #f9f9f9; font-size: 12px; font-weight: bold; cursor: pointer;
+    background-color: #44fa; color: #f9f; font-size: 14px; 
+	font-weight: bold; cursor: pointer;
 }
 .modal-label:hover {
-	background-color: #69f;
+	background-color: #69fa;
 }
 
 
