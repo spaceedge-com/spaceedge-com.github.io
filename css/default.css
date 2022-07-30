@@ -180,12 +180,12 @@ input[type="checkbox"]:checked ~ .modal-background {
 	padding: 15px; margin: 0;
 }
 .modal-header {
-	background-color: #f9f; border-bottom: 1px solid #ddd;
+	background-color: #fff; border-bottom: 1px solid #ddd;
     box-sizing: border-box; height: 50px; padding: 0;
 }
 .modal-header h3 {
 	margin: 0; box-sizing: border-box; padding-left: 15px;
-    line-height: 50px; color: #4d4d4d; font-size: 16px; display: inline-block;
+    line-height: 50px; color: #888; font-size: 16px; display: inline-block;
 }
 .modal-header label {
     box-sizing: border-box;  border-left: 1px solid #ddd;
