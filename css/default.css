@@ -180,15 +180,15 @@ input[type="checkbox"]:checked ~ .modal-background {
 	padding: 15px; margin: 0;
 }
 .modal-header {
-	background-color: #f9f9f9; border-bottom: 1px solid #dddddd;
-    box-sizing: border-box; height: 50px;
+	background-color: #f9f; border-bottom: 1px solid #ddd;
+    box-sizing: border-box; height: 50px; padding: 0;
 }
 .modal-header h3 {
 	margin: 0; box-sizing: border-box; padding-left: 15px;
     line-height: 50px; color: #4d4d4d; font-size: 16px; display: inline-block;
 }
 .modal-header label {
-    box-sizing: border-box;  border-left: 1px solid #dddddd;
+    box-sizing: border-box;  border-left: 1px solid #ddd;
     float: right; line-height: 50px; padding: 0 15px 0 15px; cursor: pointer;
 }
 .modal-header label:hover img {
@@ -213,5 +213,5 @@ input[type="checkbox"]:checked ~ .modal-background {
 
 #logo {
     	background-image: url(/icons/FullLogo_Transparent1.png);
-        background-size: contain;  background-repeat: no-repeat;   width: 250px; height: 150px;
+        background-size: contain;  background-repeat: no-repeat;  width: 250px; height: 150px;
 }
