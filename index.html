@@ -69,7 +69,28 @@ $(function(){
 </div>
 	
 					   	
-<div class="spc15"> <br> </div> 	
+<div class="spc15"> <br> </div> 
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*  */
+    var disqus_config = function () {
+    this.page.url = 'h{{content.adsolute_url}}';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = {{content_id}}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+  
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://sedge-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	
 <div class="spc15"> <br> </div>
 	
 		
@@ -85,7 +106,10 @@ $(function(){
 <div id="footer">
 		
 </div>
-											  
+	
+<script id="dsq-count-scr" src="//sedge-1.disqus.com/count.js" async></script>
+	<a href="https://spaceedge.com/#disqus_thread">Comment</a>
+	
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "22410722304e49c9a5eb6842cc9ce4e4"}'></script><!-- End Cloudflare Web Analytics -->
 
 		
