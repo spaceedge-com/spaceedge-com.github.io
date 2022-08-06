@@ -177,11 +177,12 @@ input[type="checkbox"]:checked ~ .modal-background { 	display: block;
 */
 
 #modaldiv {    	
-	margin:0 auto; width: 80%; height: 450px; text-align: center; display: block; 
-	box-sizing: border-box; background-color: #000a; 
+	margin:0 auto; position: relative; display: block; 
+	width: 80%; height: 450px; text-align: center;  
+	box-sizing: border-box; background-color: azure; 
 }
-.modal {
-    margin: auto; background-color: #fff; 
+.modalS {
+    position: relative; margin: auto; background-color: #fff; 
 }
 .modal > p {
 	padding: 15px; margin: 0;
