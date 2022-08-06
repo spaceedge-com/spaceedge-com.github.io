@@ -126,16 +126,16 @@ input + .row .column {
 input:checked + .row .column { 
 	width: 95%; max-width: 98%; display: block; max-height: 100%; transition:width 1s; 
 }
-#expand {	 text-align: center; margin: 0 auto; width: 100%; height: 30px; } 
-#expand label {  
+/* #expand {	 text-align: center; margin: 0 auto; width: 100%; height: 30px; } */
+/* #expand label {  
 	color:#888; cursor: pointer; width: 55px; margin: 0 auto; padding: 1px; 
-	border: solid 1px #888; border-radius: 20px; font-size: 17px;  }	
-#expand label:hover { color: rgba(128,128,128,.75); cursor:progress; }  
+	border: solid 1px #888; border-radius: 20px; font-size: 17px;  }  */
+/* #expand label:hover { color: rgba(128,128,128,.75); cursor:progress; }  */
 
-.hid {  display: none; }     .column:active > .hid { display:block;  z-index:10; }   
+/* .hid {  display: none; }     .column:active > .hid { display:block;  z-index:10; }  */
 /*  .hid img { height:25px; min-width:25px; position: absolute; padding-left:42%; border:0;} */
 	
-/* CSS here, for externals, their css doesn't seem to apply here! */
+/* CSS for external loaded data objects, doesn't apply there! */
 
 /* .srchbutton {  	
 		-webkit-appearance: button; -moz-appearance: button; appearance: button; 
@@ -146,8 +146,9 @@ input:checked + .row .column {
 	
 /* .feedsrss {       
 	margin: 0 auto; padding: 4px; width: 77%; max-width: 80%; height: 225px; display: flex;
-	border: 1px solid #888; border-radius: 5px;  background-color: rgba(50,50,50,0.5);  }
-.feed-container { 
+	border: 1px solid #888; border-radius: 5px;  background-color: rgba(50,50,50,0.5);  } 
+*/
+/* .feed-container { 
 	font-size: 14px;  margin: 5px; overflow: hidden; padding: 0; height: 200px; }
     	img[src=""] {  display: none; }
     	.rssfeed_item_image  img, .rssfeed_item_image video { 
@@ -175,15 +176,13 @@ input[type="checkbox"]:checked ~ .modal-background { 	display: block;
 */
 
 #modaldiv {    	
-	margin:0 auto;  width: 100%;  text-align: center; display: block;  
+	margin:0 auto;  width: 75%;  text-align: center; display: block;  
 }
 
 .modal {
     position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    margin: auto; display: none; width: 80%; height: 80%;
-    background-color: #fff; box-sizing: border-box;
-    z-index: 9999;
+    top: 0; left: 0; right: 0; bottom: 0; margin: auto; width: 80%; height: 80%;
+    background-color: #fff; box-sizing: border-box; z-index: 9999;
 }
 .modal > p {
 	padding: 15px; margin: 0;
@@ -204,15 +203,13 @@ input[type="checkbox"]:checked ~ .modal-background { 	display: block;
 	opacity: 0.6;
 }
 /* modal-label */
-.modal-label {
+/*.modal-label {
 	box-sizing: border-box;  display: inline-block;  padding: 10px;
     background-color: #44fa; color: #f9f; font-size: 15px; 
 	font-weight: bold; cursor: pointer;  
 	border: 1px solid #fffc;  border-block: outset;
 }
-.modal-label:hover {
-	background-color: #69fa;
-}
+*/
 
 
 #footer {    
