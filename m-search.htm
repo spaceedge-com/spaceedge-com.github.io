@@ -32,19 +32,17 @@ select::after { cursor:progress; }       #searchterms {  text-align: center; }
 				option {  font-size:  1.0em;   }
 
 /* The Modal */
-#modaldiv {   	 margin:0 auto;  width: 100%;  text-align: center;  }
+#modaldiv {   margin:0 auto; width: 75%; text-align: center; background-color: #000a; }
+
+.modal {
+  height: 400px; display: block; position: relative; padding: 5%; 
+  background-color: #fff; background-color: #fffa;
+}	
 	
 .modal-header {  display: block; padding: 5px; background-color: #aaa; color: #333; }
 
 .modal-body {    padding: 5px; }
 
-.modal {
-  display: block; position: fixed; padding-top: 10%; 
-  left: 0; top: 0; height: 80%; 
-  background-color: #fff; background-color: #fffa;
-}
-
-/* Modal Content */
 .modal-content {
   position: relative;  margin: auto;  background-color: #fffa;
   padding: 0; width: 90%; height:90%; border: 3px solid #cff;
@@ -75,7 +73,7 @@ button.close-modal {
 <!-- Trigger Modal #128269;=🔍<button id="searchmodalBtn">&#128269; Open Search</button>-->
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="modaldiv" class="modal">
 
 <!-- Modal content -->
    
