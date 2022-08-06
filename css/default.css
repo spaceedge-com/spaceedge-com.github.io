@@ -60,27 +60,30 @@ figure img, figcaption {  color:#888; text-align: center; max-width:98%; min-wid
 			  font-size: smaller; font-style: italic; margin: auto; }
 figcaption { display: block;  }
 .small {    font-size: 85%;  font-style: italic;  }
-.cr {   font-style: oblique; display: inline list-item; margin-left: 25px; padding-top: .5em; padding-bottom: 1em; }
+.cr {   font-style: oblique; display: inline list-item; margin-left: 25px; 
+		padding-top: .5em; padding-bottom: 1em; }
+pre {   padding: 5%;  }	
 
-.dataobject {   color: #fff; display: inline-block; max-width:100%; height:3000px; min-height:2500px; max-height:100%; 
-		margin-top: 3%; margin-bottom: 50px; padding-bottom: 50px; overflow-x: hidden; overflow-y: hidden;  } 
+.dataobject {   
+		color: #fff; max-width:100%; height:3000px; min-height:2500px; max-height:100%; 
+		display: inline-block; margin-top: 3%; margin-bottom: 50px; padding-bottom: 50px; 
+		overflow-x: hidden; overflow-y: hidden;  } 
 
- pre {   padding: 5%;  }	
-	
-.spc5 { position: relative; clear:both; float:inherit; height:5px; max-height:5px; margin:5px; padding:5px; }
-.spc15 { position: relative; clear:both; float:inherit; height:15px; max-height:15px; margin:15px; padding:15px; }
-.spc25 { position: relative; clear:both; float:inherit; height:25px; max-height:25px; margin:25px; padding:25px; }
-.spc35 { position: relative; clear:both; float:inherit; height:35px; max-height:35px; margin:35px; padding:35px; }
-.spc { position: relative; clear:both; float:inherit; height:50px; max-height:50px; margin:50px; padding:50px; }
+.spc, .spc5, .spc15,  .spc25, .spc25, { position: relative; clear:both; float:inherit; }
+.spc5 {      height:5px; max-height:5px; margin:5px; padding:5px; }
+.spc15 { height:15px; max-height:15px; margin:15px; padding:15px; }
+.spc25 { height:25px; max-height:25px; margin:25px; padding:25px; }
+.spc35 { height:35px; max-height:35px; margin:35px; padding:35px; }
+.spc {   height:50px; max-height:50px; margin:50px; padding:50px; }
 
 
- /* 2 equal columns float next to each other */
+ /*  Columns Equal float next to each other  */
 .column {  
 	float:left; width:48.80%; min-width:380px; max-width:99%; height:1000px; min-height:900px; max-height:100%; 
 	padding: 0; margin: 10px auto; display:block; color:#eee; background-color:rgba(0,0,0,0.20); position: relative;  
 	border: 2px solid rgba(0,0,0,0.20); border-radius: 5px; overflow-x: hidden; overflow-y: hidden;  
 }
-/* expands to one column */
+/* Expand to fit one Column */
 .row {  
 	margin: 10px 15px 25px 1px;  width: 98%; 
 }
