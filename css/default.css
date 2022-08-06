@@ -138,12 +138,12 @@ input:checked + .row .column {
 	
 /* CSS for external loaded data objects, doesn't apply there! */
 
-/* .srchbutton {  	
-		-webkit-appearance: button; -moz-appearance: button; appearance: button; 
+.srchbutton {  	
+	     -webkit-appearance: button; -moz-appearance: button; appearance: button; 
 	     padding: 16px 16px; cursor: pointer; opacity: 0.90; width: 260px; color: #fff;  
 	     border: 1px solid #aaa; border-radius: 5px; background-color: rgba(15,15,155,0.5);   
 }
-*/
+
 	
 /* .feedsrss {       
 	margin: 0 auto; padding: 4px; width: 77%; max-width: 80%; height: 225px; display: flex;
@@ -183,19 +183,6 @@ input:checked + .row .column {
     line-height: 50px; color: #888; font-size: 16px; display: inline-block;
 }
 
-/* .modal-header label {
-    box-sizing: border-box;  border-left: 1px solid #ddd;
-    float: right; line-height: 50px; padding: 0 15px 0 15px; cursor: pointer;
-}
-*/
-/* .modal-header label:hover img {	opacity: 0.6; } */
-/* .modal-label {
-	box-sizing: border-box;  display: inline-block;  padding: 10px;
-    background-color: #44fa; color: #f9f; font-size: 15px; 
-	font-weight: bold; cursor: pointer;  
-	border: 1px solid #fffc;  border-block: outset;
-}
-*/
 
 
 #footer {    
