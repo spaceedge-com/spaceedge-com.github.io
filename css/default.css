@@ -133,15 +133,15 @@ input:checked + .row .column {
 /*  .hid img { height:25px; min-width:25px; position: absolute; padding-left:42%; border:0;} */
 	
 /* CSS here, for externals, their css doesn't seem to apply here! */
-#modaldiv {    	margin:0 auto;  width: 100%;  text-align: center;  }
-.srchbutton {  	
-		-webkit-appearance: button; -moz-appearance: button; appearance: button; 
-	     	padding: 16px 16px; cursor: pointer; opacity: 0.90; width: 260px; color: #fff;  
-	     	border: 1px solid #aaa; border-radius: 5px; background-color: rgba(15,15,155,0.5);   
-}
 
+/* .srchbutton {  	
+		-webkit-appearance: button; -moz-appearance: button; appearance: button; 
+	     padding: 16px 16px; cursor: pointer; opacity: 0.90; width: 260px; color: #fff;  
+	     border: 1px solid #aaa; border-radius: 5px; background-color: rgba(15,15,155,0.5);   
+}
+*/
 	
-.feedsrss {       
+/* .feedsrss {       
 	margin: 0 auto; padding: 4px; width: 77%; max-width: 80%; height: 225px; display: flex;
 	border: 1px solid #888; border-radius: 5px;  background-color: rgba(50,50,50,0.5);  }
 .feed-container { 
@@ -149,11 +149,12 @@ input:checked + .row .column {
     	img[src=""] {  display: none; }
     	.rssfeed_item_image  img, .rssfeed_item_image video { 
 					max-width: 100%; height: auto; }
+*/
 
-.linkbutton {  
-	background-color: rgba(50,50,50,0.5); color: cadetblue; 
-	border-radius: 5px; border: 0; max-width: 100%; 
+/* .linkbutton {  
+	background-color: rgba(50,50,50,0.5); color: cadetblue; max-width: 100%; 
 }
+*/
 
 
 /*  Multi-Search Modal  */
@@ -162,13 +163,18 @@ input:checked + .row .column {
 /* input[type="checkbox"] { 	display:none; } */
 /* input[type="checkbox"]:checked ~ .modal,
 input[type="checkbox"]:checked ~ .modal-background { 	display: block;
-} */
-
-.modal-background {
+} 
+*/
+/* .modal-background {
 	width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);
-    position: fixed; top: 0; left: 0;
- 	display: none; z-index: 9998;
+    position: fixed; top: 0; left: 0; display: none; z-index: 9998;
 }
+*/
+
+#modaldiv {    	
+	margin:0 auto;  width: 100%;  text-align: center; display: block;  
+}
+
 .modal {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -197,7 +203,7 @@ input[type="checkbox"]:checked ~ .modal-background { 	display: block;
 /* modal-label */
 .modal-label {
 	box-sizing: border-box;  display: inline-block;  padding: 10px;
-    	background-color: #44fa; color: #f9f; font-size: 15px; 
+    background-color: #44fa; color: #f9f; font-size: 15px; 
 	font-weight: bold; cursor: pointer;  
 	border: 1px solid #fffc;  border-block: outset;
 }
