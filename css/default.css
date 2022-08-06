@@ -177,13 +177,11 @@ input[type="checkbox"]:checked ~ .modal-background { 	display: block;
 */
 
 #modaldiv {    	
-	margin:0 auto;  width: 75%;  text-align: center; display: block;  
+	margin:0 auto; width: 80%; height: 80%; text-align: center; display: block;  
 }
 
 .modal {
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0; margin: auto; width: 80%; height: 80%;
-    background-color: #fff; box-sizing: border-box; z-index: 9999;
+    margin: auto; background-color: #fff; box-sizing: border-box;
 }
 .modal > p {
 	padding: 15px; margin: 0;
@@ -196,15 +194,14 @@ input[type="checkbox"]:checked ~ .modal-background { 	display: block;
 	margin: 0; box-sizing: border-box; padding-left: 15px;
     line-height: 50px; color: #888; font-size: 16px; display: inline-block;
 }
-.modal-header label {
+
+/* .modal-header label {
     box-sizing: border-box;  border-left: 1px solid #ddd;
     float: right; line-height: 50px; padding: 0 15px 0 15px; cursor: pointer;
 }
-.modal-header label:hover img {
-	opacity: 0.6;
-}
-/* modal-label */
-/*.modal-label {
+*/
+/* .modal-header label:hover img {	opacity: 0.6; } */
+/* .modal-label {
 	box-sizing: border-box;  display: inline-block;  padding: 10px;
     background-color: #44fa; color: #f9f; font-size: 15px; 
 	font-weight: bold; cursor: pointer;  
