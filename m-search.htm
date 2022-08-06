@@ -26,8 +26,9 @@
 select {  font-size: 1.0em;  border: 0; 
 	       	 /* appearance: none; -moz-appearance: none; -webkit-appearance: none; */
 }
-select::after { cursor:progress; }       #searchterms {  text-align: center; }
-				option {  font-size:  1.0em;   }
+select::after { cursor:progress; }       
+#searchterms {  text-align: left; border: 5px solid transparent; margin-top: 5px; }      
+option {  font-size:  1.0em;   }
 
 /* The Modal */
 #modaldiv {  
@@ -85,7 +86,7 @@ button.close-modal {
 <script src="websearch.js" type="text/javascript"></script> 
     <div class="search-form">  
 	 <form name="web_search_form">
-	   <input type="search" name="searchterms" id="searchterms" autocomplete="off" onfocus="this.select()" placeholder="🔍 Search..">
+	   <input type="search" name="searchterms" id="searchterms" autocomplete="off" onfocus="this.select()" placeholder="🔍">
 	    <select name="search_engines" id="search_select" class="select" onfocus="return" onchange="return dosearch();">
 	      <option selected="selected" value="#" hidden>select ∇</option>	
 	      <option value="ask">Ask</option>  
