@@ -164,9 +164,9 @@ input:checked + .row .column {
 
 /*  Multi-Search Modal  */
 
-#modaldiv {    	
+#modalSearch {    	
 	margin:0 auto; display: block; position: relative; width: 80%; height: 300px;
-	text-align: center; box-sizing: border-box; background-color: azure; 
+	text-align: center; box-sizing: border-box; background-color: 0008; 
 }
 .modalS {
     margin: auto; background-color: #fff; 
