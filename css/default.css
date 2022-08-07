@@ -2,19 +2,23 @@
 
 /* Scrollbars */ 
 /* Firefox */ 
-:root { scrollbar-color: rgba(100,120,255,0.9) rgba(0,0,0,0.5) !important; scrollbar-width: thin !important; 
+:root { 
+	scrollbar-color: rgba(100,120,255,0.9) rgba(0,0,0,0.5) !important; 
+	scrollbar-width: thin !important; 
 }  
 /* Chrome, Edge, Safari. Chrome Fix 051422 */
 ::-webkit-scrollbar {  height: 12px;  width: 5px;  background: #000;
 }
-::-webkit-scrollbar-thumb {  background: #3938ff;  -webkit-border-radius: 1ex; -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+::-webkit-scrollbar-thumb {  
+	background: #3938ff;  -webkit-border-radius: 1ex; 
+	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
 }
 ::-webkit-scrollbar-corner {  background: #000;  }
 
 /*  CSS */ 
 /* padding: top right bottom left */
 :root {  
-	--t25: rgba(0,0,0,0.25); --tblue: rgba(0,0,255,0.25); --white: #fff; scrollbar-width: thin !important; 
+	--t25: rgba(0,0,0,0.25); --tblue: rgba(0,0,255,0.25); --white: #fff; 
 }
 
 html {  
@@ -167,6 +171,7 @@ input:checked + .row .column {
 #modalSearch {    	
 	margin:0 auto; display: block; position: relative; width: 80%; height: 300px;
 	text-align: center; box-sizing: border-box; background-color: 0008; 
+	overflow-x: hidden; overflow-y: hidden;
 }
 .modalS {
     margin: auto; background-color: #fff; 
