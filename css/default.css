@@ -75,7 +75,7 @@ pre {   padding: 5%;  }
 		display: inline-block; margin-top: 3%; margin-bottom: 50px; padding-bottom: 50px; 
 		overflow-x: hidden; overflow-y: hidden;  } 
 
-.spc, .spc5, .spc15,  .spc25, .spc25, { position: relative; clear:both; float:inherit; }
+.spc, .spc5, .spc15,  .spc25, .spc35 { position: relative; clear:both; float:inherit; }
 .spc5 {      height:5px; max-height:5px; margin:5px; padding:5px; }
 .spc15 { height:15px; max-height:15px; margin:15px; padding:15px; }
 .spc25 { height:25px; max-height:25px; margin:25px; padding:25px; }
@@ -121,7 +121,7 @@ pre {   padding: 5%;  }
 	max-width: 100%; height: 1500px; max-height: 100%; margin: 5px; padding: 5px; 
 	background-color: transparent; display:block; word-break: break-word; 
 	text-overflow: ellipsis; line-height: 1em; overflow-x:hidden; overflow-y:hidden; 
-	-webkit-box-orient: vertical; -webkit-box; -webkit-line-clamp: 50; /* #-lines*/  
+	-webkit-box-orient: vertical; -webkit-line-clamp: 50; /* #-lines*/  
 }
 						
 /* For ( object data=" ) Don't change height otherwise! for scrolling, hover scrolling! */
@@ -166,7 +166,7 @@ input:checked + .row .column {
 					max-width: 100%; height: auto; }
 */
 
-/* .linkbutton {  
+/* .linkbutton { 
 	background-color: rgba(50,50,50,0.5); color: cadetblue; max-width: 100%; 
 }
 */
@@ -175,8 +175,7 @@ input:checked + .row .column {
 /*  Multi-Search Modal  */
 #modalSearch {    	
 	margin:0 auto; display: block; position: relative; width: 80%; height: 300px;
-	text-align: center; box-sizing: border-box; background-color: 0008; 
-	overflow-x: hidden; overflow-y: hidden;
+	text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidden;
 }
 .modalS {
     margin: auto; background-color: #fff; 
@@ -198,10 +197,10 @@ input:checked + .row .column {
 #footer {    
 	color:#f8f; background-color:var(--t25); position:fixed; width:100%; height: 55px; 
 	font-size: small; text-align:center; flex-shrink:0; bottom: 0px; clear:both; 
-	padding-top: 0; margin-bottom:0; scale: 0.90;
+	padding-top: 0; margin-bottom:0; 
 }	
 
 #logo {
     	background-image: url(/icons/FullLogo_Transparent1.png);
-        background-size: contain;  background-repeat: no-repeat;  width: 250px; height: 150px;
+        background-size: contain; background-repeat: no-repeat;  width: 250px; height: 150px;
 }
