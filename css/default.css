@@ -28,7 +28,7 @@ html {
 
 #body { /* css id#body for JS rnd body background */ 
     	font-family: Arial, Helvetica, sans-serif;  width: 100%;
-	background-color: #fffa; background-blend-mode: lighten; background-image: url(/images/slider/astronomy1.jpg);
+	background-color: #fff08; background-blend-mode: difference; background-image: url(/images/slider/astronomy1.jpg);
 	background-position: top left; background-attachment: fixed; background-size: cover; 
 	-moz-background-size: cover; -webkit-background-size: cover; -o-background-size: cover;
 	background-repeat: no-repeat; background-origin: content-box; top: 0; min-height: 700px; position: absolute; 
