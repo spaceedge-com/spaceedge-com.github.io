@@ -28,7 +28,7 @@ html {
 
 #body { /* css id#body for JS rnd body background */ 
     	font-family: Arial, Helvetica, sans-serif;  width: 100%;
-	background-color: #000a; background-blend-mode: darken; background-image: url(/images/slider/astronomy1.jpg);
+	background-color: #fffa; background-blend-mode: lighten; background-image: url(/images/slider/astronomy1.jpg);
 	background-position: top left; background-attachment: fixed; background-size: cover; 
 	-moz-background-size: cover; -webkit-background-size: cover; -o-background-size: cover;
 	background-repeat: no-repeat; background-origin: content-box; top: 0; min-height: 700px; position: absolute; 
@@ -42,11 +42,12 @@ h3 {   font-size: 1.05em; color:#cec; margin: 1em 0 1em 0; font-weight: bold; pa
 h4 {   font-size: 0.95em; color:#cec; margin: 1.33em 0 1.33em 0; font-weight: bold; padding-left: 0.3em; }
 h5 {   font-size: .80em; color:#cec; margin: 1.67em 0 1.67em 0; font-weight: bold; padding-left: 0.3em; }
 h6 {   font-size: .60em; color:#cec; margin: 2.33em 0 2.33em 0; font-weight: bold; padding-left: 0.3em; }
-p {    font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; margin: 1em 0 1em 0; padding-left: 0.30em; padding-right: .20em;  }
+ p {   font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; 
+       margin: 1em 0 1em 0; padding-left: 0.30em; padding-right: .20em;  }
 	
-#he {   width: 100%; background-color: rgba(25,25,25,0.48);  }	
-.her {  color: #bcf; position: absolute; width:80%; max-width:99%; height:88px; max-height:98px; 
-	display: inline-table; margin: 0 auto; padding-left: 25px; z-index: 3; }
+ #he {   width: 100%; background-color: rgba(25,25,25,0.48);  }	
+.her {   color: #bcf; position: absolute; width:80%; max-width:99%; height:88px; max-height:98px; 
+	 display: inline-table; margin: 0 auto; padding-left: 25px; z-index: 3; }
 #he .her h1 { font-size: 31px; font-size: 3.1em; font-style: oblique; color: aqua; 
 	      border: none; margin: 0; padding-bottom: 1%; } 
 .lead {  font-size: 1.1em; color: #aaa; display: block; margin: 0.35em; text-align: center; }  
