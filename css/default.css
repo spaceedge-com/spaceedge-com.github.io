@@ -172,27 +172,31 @@ input:checked + .row .column {
 }
 */
 
+/* .modal-header {  
+	display: block; padding: 5px; color: #333; background-color: #fff; 
+	border-bottom: 1px solid #ddd; box-sizing: border-box; height: 50px; padding: 0;
+}
+.modal-header h3 {
+    	margin: 0; box-sizing: border-box; padding-left: 15px;
+    	line-height: 50px; color: #888; font-size: 16px; display: inline-block;
+}
+.modal > p {	padding: 15px; margin: 0;  } 
+*/	
+/* Close Button for Modal */
+/* .close-modal {
+    	display: block; font-size: 2em; top: 10px; float: right; margin-left: auto; }
+.close-modal:hover, .close-modal:focus {
+    	color: #08c;  text-decoration: none;  cursor: pointer; }	
+button.close-modal {  
+	border-radius: 1px;  background-color: #fffa;  top: 1px; left: 1px; }
+*/
+
 
 /*  Multi-Search Modal  */
-#modalSearch {    	
+#MultiSearch {    	
 	margin:0 auto; display: block; position: relative; width: 80%; height: 300px;
 	text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidden;
 }
-.modalS {
-    margin: auto; background-color: #fff; 
-}
-.modal > p {
-	padding: 15px; margin: 0;
-}
-.modal-header {
-	background-color: #fff; border-bottom: 1px solid #ddd;
-    box-sizing: border-box; height: 50px; padding: 0;
-}
-.modal-header h3 {
-	margin: 0; box-sizing: border-box; padding-left: 15px;
-    line-height: 50px; color: #888; font-size: 16px; display: inline-block;
-}
-
 
 
 #footer {    
