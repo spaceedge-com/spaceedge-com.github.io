@@ -207,5 +207,6 @@ button.close-modal { border-radius: 1px;  background-color: #fffa;  top: 1px; le
 
 #logo {
     	background-image: url(/icons/FullLogo_Transparent1.png);
-        background-size: contain; background-repeat: no-repeat;  width: 250px; height: 150px;
+        background-size: contain; background-repeat: no-repeat; 
+	width: 250px; height: 150px; margin: 0 auto;
 }
