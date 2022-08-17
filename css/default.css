@@ -6,7 +6,7 @@
 	scrollbar-color: rgba(100,120,255,0.9) rgba(0,0,0,0.5) !important; 
 	scrollbar-width: thin !important; 
 }  
-/* Chrome, Edge, Safari. Chrome Fix 051422 */
+/* Chrome, Edge, Safari. Chrome */
 ::-webkit-scrollbar {  height: 12px;  width: 5px;  background: #000;
 }
 ::-webkit-scrollbar-thumb {  
@@ -64,7 +64,7 @@ quote { display: block; font-size: 1.11rem; font-style: oblique;
 	text-align: center; padding: .8em .8em 0 .2em; }
 cite {  color:#CDA; font-size: 0.9em; color:#ccc; padding-top: .25em; 
 	padding-left: 15%; padding-bottom: .7em; display: inline-block;  }
-hr {    border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
+hr {    border-top: 1px solid #faf; height: 2px; width:50%; margin:1em;  }
 img {   width:99%; min-width: auto; max-width:100%; height:auto; display:block; 
 	margin: 0 auto; border: 1px solid rgba(255,255,255,.33); }
 figure {  display: block; text-align: center; float: left; font-style: italic; 
