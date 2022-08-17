@@ -28,11 +28,13 @@ html {
 
 #body { /* css id#body for JS rnd body background */ 
     	font-family: Arial, Helvetica, sans-serif;  width: 100%;
-	background-color: #fff08; background-blend-mode: difference; background-image: url(/images/slider/astronomy1.jpg);
-	background-position: top left; background-attachment: fixed; background-size: cover; 
+	background-color: #fff08; background-blend-mode: difference; 
+	background-image: url(/images/slider/astronomy1.jpg);
+	background-position: top left; background-attachment: fixed; 
+	background-repeat: no-repeat;  background-size: cover; background-origin: content-box;
 	-moz-background-size: cover; -webkit-background-size: cover; -o-background-size: cover;
-	background-repeat: no-repeat; background-origin: content-box; top: 0; min-height: 700px; position: absolute; 
-	margin:0; padding:0; overflow-x: hidden; overflow-y: auto; 
+	top: 0; left: 0; min-height: 700px; position: absolute; margin:0; padding:0; 
+	overflow-x: hidden; overflow-y: auto; 
 }
 	
 h1, h2, h3, h4, h5, h6, p {  display: block; font-family: 'Times New Roman', Times, serif; clear:both; }
@@ -42,39 +44,43 @@ h3 {   font-size: 1.05em; color:#cec; margin: 1em 0 1em 0; font-weight: bold; pa
 h4 {   font-size: 0.95em; color:#cec; margin: 1.33em 0 1.33em 0; font-weight: bold; padding-left: 0.3em; }
 h5 {   font-size: .80em; color:#cec; margin: 1.67em 0 1.67em 0; font-weight: bold; padding-left: 0.3em; }
 h6 {   font-size: .60em; color:#cec; margin: 2.33em 0 2.33em 0; font-weight: bold; padding-left: 0.3em; }
- p {   font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; 
+p {   font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; 
        margin: 1em 0 1em 0; padding-left: 0.30em; padding-right: .20em;  }
 	
- #he {   width: 100%; background-color: #0001; background-color: rgba(0,0,0,0.08); 
-	 position: absolute; margin: 0 auto; top: 0; left: 0; height: 150px; display: block; }	
+#he {   width: 100%; background-color: #0001; background-color: rgba(0,0,0,0.08); 
+	 position: relative; margin: 0 auto; top: 0; left: 0; height: 150px; display: block; 
+}	
 .her {   color: #bcf; width:80%; max-width:99%; height:88px; max-height:98px; 
-	 display: inline-table; padding-left: 25px; z-index: 3; }
+	 display: inline-table; padding-left: 25px; z-index: 3;
+}
 #he .her h1 { font-size: 31px; font-size: 3.1em; font-style: oblique; color: aqua; 
 	      border: none; margin: 0; padding-bottom: 1%; } 
 .lead {  font-size: 1.1em; color: #aaa; display: block; margin: 0.35em; text-align: center; }  
-.leadright {  padding-top: 2%; display: block; text-align: center; }
 
 a {    color:skyblue;  }
 a:link { text-decoration: none;  }
 em {    color:seashell; font-size: 1.0em; font-style: oblique; text-align: center; } 
-quote { display: block; font-size: 1.11rem; font-style: oblique; text-align: center; padding: .8em .8em 0 .2em; }
-cite {  color:#CDA; font-size: 0.9em; color:#ccc; padding-top: .25em; padding-left: 15%; padding-bottom: .7em; display: inline-block;  }
+quote { display: block; font-size: 1.11rem; font-style: oblique; 
+	text-align: center; padding: .8em .8em 0 .2em; }
+cite {  color:#CDA; font-size: 0.9em; color:#ccc; padding-top: .25em; 
+	padding-left: 15%; padding-bottom: .7em; display: inline-block;  }
 hr {    border-top: 1px solid #faf;  height:2em;  width:50%; margin:1em;  }
-img {   width:99%; min-width: auto; max-width:100%; height:auto; display:block; margin: 0 auto; border: 1px solid rgba(255,255,255,.33); }
-figure {  display: block; text-align: center; float: left; font-style: italic; text-indent: 0; 
-	  border: thin silver solid; margin: 1.0em; padding: 0.5em; width: min-content; }
+img {   width:99%; min-width: auto; max-width:100%; height:auto; display:block; 
+	margin: 0 auto; border: 1px solid rgba(255,255,255,.33); }
+figure {  display: block; text-align: center; float: left; font-style: italic; 
+	  text-indent: 0; border: thin silver solid; 
+	  margin: 1.0em; padding: 0.5em; width: min-content; }
 figure img, figcaption {  color:#888; text-align: center; max-width:98%; min-width: 150px; 
 			  font-size: smaller; font-style: italic; margin: auto; }
 figcaption { display: block;  }
-.small {    font-size: 85%;  font-style: italic;  }
+.small {   font-size: 85%;  font-style: italic;  }
 .cr {   font-style: oblique; display: inline list-item; margin-left: 25px; 
 		padding-top: .5em; padding-bottom: 1em; }
 pre {   padding: 5%;  }	
 
-.dataobject {   
-		color: #fff; max-width:100%; height:3000px; min-height:2500px; max-height:100%; 
-		display: inline-block; margin-top: 3%; margin-bottom: 50px; padding-bottom: 50px; 
-		overflow-x: hidden; overflow-y: hidden;  } 
+.dataobject {  color: #fff; max-width:100%; height:3000px; min-height:2500px; max-height:100%; 
+	       display: inline-block; margin-top: 3%; margin-bottom: 50px; padding-bottom: 50px; 
+	       overflow-x: hidden; overflow-y: hidden;  } 
 
 .spc, .spc5, .spc15,  .spc25, .spc35 { position: relative; clear:both; float:inherit; }
 .spc5 {      height:5px; max-height:5px; margin:5px; padding:5px; }
@@ -85,12 +91,11 @@ pre {   padding: 5%;  }
 
 
  /*  Columns Equal float next to each other  */
-.column {  
-	float:left; width:48.80%; min-width:380px; max-width:99%; height:1000px; 
-	display:block; min-height:900px; max-height:100%; padding: 0; margin: 10px auto; 
-	color:#eee; background-color:rgba(0,0,0,0.20); position: relative;  
-	border: 2px solid rgba(0,0,0,0.20); border-radius: 5px; 
-	overflow-x: hidden; overflow-y: hidden;  
+.column { float:left; width:48.80%; min-width:380px; max-width:99%; height:1000px; 
+	  display:block; min-height:900px; max-height:100%; padding: 0; margin: 10px auto; 
+	  color:#eee; background-color:rgba(0,0,0,0.20); position: relative;  
+	  border: 2px solid rgba(0,0,0,0.20); border-radius: 5px; 
+	  overflow-x: hidden; overflow-y: hidden; 
 }
 /* Expand to fit one Column */
 .row {  
@@ -100,13 +105,13 @@ pre {   padding: 5%;  }
 .row:after {  
 	content: ""; float: left; display: block; clear: both;  
 }
-   /* Responsive - screen < 800px - stack columns verticaly, instead of next to each other */
-   @media (max-width: 800px) {  
-	 	     	.column {  
-				width:93%; min-width:90%; max-width:98%; 
-				border: solid 1px; margin-right: 5px; }	
-		               	#expand { display: none;  }
-			     	}
+/* Responsive - screen < 800px - stack columns verticaly, instead of next to each other */
+@media (max-width: 800px) {  
+	 	    .column {  width:93%; min-width:90%; max-width:98%; 
+			       border: solid 1px; margin-right: 5px; 
+	  		    }	
+		    #expand {  display: none;  }
+}
 	 
 
 /* Clicked focus expands columns width  tabindex="0"  */
@@ -174,21 +179,16 @@ input:checked + .row .column {
 
 /* .modal-header {  
 	display: block; padding: 5px; color: #333; background-color: #fff; 
-	border-bottom: 1px solid #ddd; box-sizing: border-box; height: 50px; padding: 0;
-}
+	border-bottom: 1px solid #ddd; box-sizing: border-box; height: 50px; padding: 0; }
 .modal-header h3 {
     	margin: 0; box-sizing: border-box; padding-left: 15px;
-    	line-height: 50px; color: #888; font-size: 16px; display: inline-block;
-}
+    	line-height: 50px; color: #888; font-size: 16px; display: inline-block; }
 .modal > p {	padding: 15px; margin: 0;  } 
 */	
-/* Close Button for Modal */
-/* .close-modal {
-    	display: block; font-size: 2em; top: 10px; float: right; margin-left: auto; }
-.close-modal:hover, .close-modal:focus {
-    	color: #08c;  text-decoration: none;  cursor: pointer; }	
-button.close-modal {  
-	border-radius: 1px;  background-color: #fffa;  top: 1px; left: 1px; }
+/* Close Button for Modal  */
+/* .close-modal { display: block; font-size: 2em; top: 10px; float: right; margin-left: auto;}
+.close-modal:hover, .close-modal:focus { color: #08c; text-decoration: none; cursor: pointer;}	
+button.close-modal { border-radius: 1px;  background-color: #fffa;  top: 1px; left: 1px;}
 */
 
 
