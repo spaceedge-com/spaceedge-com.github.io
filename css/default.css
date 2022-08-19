@@ -38,10 +38,10 @@ html {
 }
 	
 h1, h2, h3, h4, h5, h6, p {  display: block; font-family: 'Times New Roman', Times, serif; clear:both; }
-h1 {   font-size: 1.5em; color:#eee; margin: .67em 0 .67em 0; font-weight: bold; padding-left: 0.25em; }
-h2 {   font-size: 1.25em; color: #cec; margin: 0.83em 0 0.83em 0; font-weight: bold; padding-left: 0.3em; }
-h3 {   font-size: 1.05em; color:#cec; margin: 1em 0 1em 0; font-weight: bold; padding-left: 0.3em; }
-h4 {   font-size: 0.95em; color:#cec; margin: 1.33em 0 1.33em 0; font-weight: bold; padding-left: 0.3em; }
+h1 {   font-size: 1.35em; color:#eee; margin: .67em 0 .67em 0; font-weight: bold; padding-left: 0.25em; }
+h2 {   font-size: 1.15em; color: #cec; margin: 0.83em 0 0.83em 0; font-weight: bold; padding-left: 0.3em; }
+h3 {   font-size: 1.0em; color:#cec; margin: 1em 0 1em 0; font-weight: bold; padding-left: 0.3em; }
+h4 {   font-size: 0.90em; color:#cec; margin: 1.33em 0 1.33em 0; font-weight: bold; padding-left: 0.3em; }
 h5 {   font-size: .80em; color:#cec; margin: 1.67em 0 1.67em 0; font-weight: bold; padding-left: 0.3em; }
 h6 {   font-size: .60em; color:#cec; margin: 2.33em 0 2.33em 0; font-weight: bold; padding-left: 0.3em; }
 p {   font-size: 1.0em; font-style: normal; line-height: 1.10em; color:#cee; 
