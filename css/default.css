@@ -49,8 +49,8 @@ p {    display: block; font-family: 'Times New Roman', Times, serif; font-size: 
        margin: 1em 0 1em 0; padding-left: 0.30em; padding-right: .20em;  
 }
 	
-#he {   width: 100%; background-color: #0001; background-color: rgba(0,0,0,0.08); 
-	 position: relative; margin: 0 auto; top: 0; left: 0; height: 150px; display: block; 
+#he {    display: block; width: 100%; background-color: #0001; background-color: rgba(0,0,0,0.08); 
+	 position: relative; margin: 0 auto; top: 0; left: 0; height: 135px; margin-top: -10px;
 }	
 .her {   color: #bcf; width:80%; max-width:99%; height:88px; max-height:98px; 
 	 display: inline-table; padding-left: 25px; z-index: 3;
@@ -210,5 +210,5 @@ button.close-modal { border-radius: 1px;  background-color: #fffa;  top: 1px; le
 #logo {
     	background-image: url(/icons/FullLogo_Transparent1.png);
         background-size: contain; background-repeat: no-repeat; 
-	width: 275px; height: 160px; margin: 0 auto;
+	width: 275px; height: 145px; margin: 0 auto;
 }
