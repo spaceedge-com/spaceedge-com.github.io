@@ -139,12 +139,12 @@ object {
 }         
 	
 /* Custom checkbox button expands all columns width _ checkbox select expand */
-input + .row .column { 
+/* input + .row .column { 
 	float: left; margin: 30px auto; width: 48.80%; max-width: 99%; transition:width 0.5s;   
-}
-input:checked + .row .column { 
+} */
+/* input:checked + .row .column { 
 	width: 95%; max-width: 98%; display: block; max-height: 100%; transition:width 1s; 
-}
+} */
 /* #expand {	 text-align: center; margin: 0 auto; width: 100%; height: 30px; } */
 /* #expand label {  
 	color:#888; cursor: pointer; width: 55px; margin: 0 auto; padding: 1px; 
