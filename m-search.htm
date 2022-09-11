@@ -15,16 +15,17 @@
 .search-form input {  
 		font-size:1.0em; max-width: 200px; width: auto;
 	 	border-radius: 5px 25px; margin-right: -6px; padding: 3px;
-		color:#444; background-color: #fffe; transition: height 0.5s; 
+		color:#444; background-color: #fffa; transition: height 0.5s; 
+}
+.search-form input[type=text]:focus {
+		color: #000;  background-color: #fff;  
 }
 input[type="submit"] {
         margin-left: -5px; padding: 0 2px 0 2px; cursor: pointer;  
 	border: 1px solid #00f; border-radius: 5px 25px;
 }
-.search-form input[type=text]:focus {
-		color: #000;  background-color: #fff;  
-} 
-.search-form input:focus::placeholder {  color: transparent;  }
+.search-form input:focus::placeholder {  color: transparent;  
+}
 #search_select {   	
 		font-size: 1.0em; color: #338; background-color: #eefc; 
 	        cursor: progress; padding-left: 3px; width: 71px; height: 25px; 
@@ -36,7 +37,7 @@ select {  	font-size: 1.0em;  border: 0;
 select::after { cursor:progress; }       
 #searchterms {	
 		text-align: left; border: 1px solid #00fa; margin-top: 5px; height: 28px;
-		border-right: hidden;
+		padding-left: 5px;
 }      
 option {  	font-size:  1.0em;   }
 
