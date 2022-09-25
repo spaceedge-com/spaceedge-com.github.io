@@ -163,21 +163,23 @@ object {
 } 
 */
 
-/* .feedsrss {       
+.feedsrss {       
 	margin: 0 auto; padding: 4px; width: 77%; max-width: 80%; height: 225px; display: flex;
-	border: 1px solid #888; border-radius: 5px;  background-color: rgba(50,50,50,0.5);  } 
-*/
-/* .feed-container { 
-	font-size: 14px;  margin: 5px; overflow: hidden; padding: 0; height: 200px; }
-    	img[src=""] {  display: none; }
-    	.rssfeed_item_image  img, .rssfeed_item_image video { 
-					max-width: 100%; height: auto; }
-*/
-
-/* .linkbutton { 
-	background-color: rgba(50,50,50,0.5); color: cadetblue; max-width: 100%; 
+	border: 1px solid #888; border-radius: 5px;  background-color: rgba(50,50,50,0.5);  
+} 
+.feed-container { 
+	font-size: 14px;  margin: 5px; overflow: hidden; padding: 0; height: 200px; 
 }
-*/
+img[src=""] {  
+	display: none; 
+}
+.rssfeed_item_image  img, .rssfeed_item_image video { 
+	max-width: 100%; height: auto; 
+}
+
+.linkbutton { 
+	background-color: rgba(50,50,50,0.5); color: cadetblue; max-width: 100%;  }
+
 
 /* .modal-header {  
 	display: block; padding: 5px; color: #333; background-color: #fff; 
