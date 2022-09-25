@@ -181,15 +181,13 @@ img[src=""] {
 	background-color: rgba(50,50,50,0.5); color: cadetblue; max-width: 100%;  }
 
 
-/* .modal-header {  
-	display: block; padding: 5px; color: #333; background-color: #fff; 
+/* .modal-header { display: block; padding: 5px; color: #333; background-color: #fff; 
 	border-bottom: 1px solid #ddd; box-sizing: border-box; height: 50px; padding: 0; }
-.modal-header h3 {
-    	margin: 0; box-sizing: border-box; padding-left: 15px;
+.modal-header h3 { margin: 0; box-sizing: border-box; padding-left: 15px;
     	line-height: 50px; color: #888; font-size: 16px; display: inline-block; }
 .modal > p {	padding: 15px; margin: 0;  } 
 */	
-/* Close Button for Modal  */
+/* Modal Close Button */
 /* .close-modal { display: block; font-size: 2em; top: 10px; float: right; margin-left: auto;}
 .close-modal:hover, .close-modal:focus { color: #08c; text-decoration: none; cursor: pointer;}	
 button.close-modal { border-radius: 1px;  background-color: #fffa;  top: 1px; left: 1px;}
@@ -198,7 +196,7 @@ button.close-modal { border-radius: 1px;  background-color: #fffa;  top: 1px; le
 
 /*  Multi-Search Modal  */
 #MultiSearch {    	
-	margin:0 auto; display: block; position: relative; width: 80%; height: 300px;
+	margin: 0 auto; display: block; position: relative; width: 80%; height: 300px;
 	text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidden;
 }
 
@@ -208,6 +206,7 @@ button.close-modal { border-radius: 1px;  background-color: #fffa;  top: 1px; le
 	font-size: small; text-align:center; flex-shrink:0; bottom: 0px; clear:both; 
 	padding-top: 0; margin-bottom: 0; scale: .98;
 }	
+
 
 #logo {
     	background-image: url(/icons/FullLogo_Transparent1.png);
