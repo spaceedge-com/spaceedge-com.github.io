@@ -50,8 +50,7 @@ p {    display: block; font-family: 'Times New Roman', Times, serif; font-size: 
        font-style: normal; font-weight: normal; line-height: 1.10em; color:#555; 
        margin: 1em 0 1em 0; padding-left: 0.30em; padding-right: .20em;  }
 	
-#he {   display: block; width: 100%; 
-	background-color: #0001; background-color: rgba(255, 255, 255, 0.8); 
+#he {   display: block; width: 100%; background-color: #0001; 
 	margin: 0 auto; top: 0; left: 0; position: relative; 
 	height: 135px; margin-top: -10px;  z-index: 1;
 }	
