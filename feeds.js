@@ -1,15 +1,15 @@
 <!-- start sw-rss-feed code --> 
 rssfeed_url = new Array(); 
-rssfeed_url[0]="https://lifehacker.com/rss";
-<!-- rssfeed_url[1]="https://theconversation.com/uk/technology/articles.atom"; -->
-rssfeed_url[2]=""; rssfeed_url[3]="";  
+<!-- rssfeed_url[0]="https://lifehacker.com/rss"; -->
+rssfeed_url[0]="https://theconversation.com/uk/technology/articles.atom";
+rssfeed_url[1]=""; rssfeed_url[2]="";  
 rssfeed_frame_width="100%"; 
 rssfeed_frame_height="215"; 
 rssfeed_scroll="on"; 
 rssfeed_scroll_step="5"; 
 rssfeed_scroll_bar="off"; 
 rssfeed_target="_blank"; 
-rssfeed_font_size="12.5"; 
+rssfeed_font_size="12"; 
 rssfeed_font_face="Verdana"; 
 rssfeed_border="off"; 
 rssfeed_css_url=""; 
@@ -37,5 +37,5 @@ rssfeed_item_description_color="#333";
 rssfeed_item_description_link_color="#33a"; 
 rssfeed_item_description_tag="on"; 
 rssfeed_no_items="10"; 
-<!-- rssfeed_cache = "7fe6b9de76e9246ae9419ff5c77b8b30"; -->
-rssfeed_cache = "aabb8499a344355449aa66344b70b935"; 
+rssfeed_cache = "7fe6b9de76e9246ae9419ff5c77b8b30";
+<!--rssfeed_cache = "aabb8499a344355449aa66344b70b935";  -->
