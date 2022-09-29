@@ -167,8 +167,8 @@ object {
 */
 
 .feedsrss {       
-	margin: 0 auto; padding: 4px; width: 77%; max-width: 80%; height: 225px; display: flex;
-	border: 1px solid #888; border-radius: 5px;   
+	margin: 0 auto; padding: 4px; width: 75%; max-width: 80%; height: 223px; display: flex;
+	border: 0; border-radius: 5px;   
 } 
 .feed-container { 
 	font-size: 14px;  margin: 5px; overflow: hidden; padding: 0; height: 200px; 
@@ -180,8 +180,7 @@ img[src=""] {
 	max-width: 100%; height: auto; 
 }
 
-.linkbutton { 
-	background-color: rgba(50,50,50,0.5); color: cadetblue; max-width: 100%;  }
+.linkbutton {  background-color: rgba(50,50,50,0.5); color: cadetblue; max-width: 100%;  }
 
 
 /* .modal-header { display: block; border-bottom: 1px; box-sizing:border-box; height:50px; }
