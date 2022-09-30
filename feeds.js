@@ -1,8 +1,7 @@
 <!-- start sw-rss-feed code --> 
 rssfeed_url = new Array(); 
 rssfeed_url[0]="https://theconversation.com/uk/technology/articles.atom";
-rssfeed_url[1]="https://lifehacker.com/rss";
-rssfeed_url[2]=""; rssfeed_url[3]="";  
+rssfeed_url[1]="";rssfeed_url[2]=""; rssfeed_url[3]="";  
 rssfeed_frame_width="100%"; 
 rssfeed_frame_height="215"; 
 rssfeed_scroll="on"; 
