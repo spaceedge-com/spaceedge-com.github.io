@@ -36,5 +36,5 @@ rssfeed_item_description_color="#555";
 rssfeed_item_description_link_color="#55a"; 
 rssfeed_item_description_tag="on"; 
 rssfeed_no_items="20"; 
-<!--rssfeed_cache = "7fe6b9de76e9246ae9419ff5c77b8b30";; -->
-rssfeed_cache = "aabb8499a344355449aa66344b70b935" 
+<!-- rssfeed_cache = "aabb8499a344355449aa66344b70b935"; --> 
+rssfeed_cache = "7fe6b9de76e9246ae9419ff5c77b8b30";
