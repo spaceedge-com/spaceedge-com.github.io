@@ -54,7 +54,7 @@ p {    display: block; font-family: 'Times New Roman', Times, serif; font-size: 
 	margin: 0 auto; top: 0; left: 0; position: relative; 
 	height: 135px; margin-top: -10px;  z-index: 1;
 }	
-.her {  color: #769; font-size: 0.81em; text-align: center; 
+.her {  color: #cff; font-size: 0.9em; text-align: center; 
 	width:90%; max-width:99%; height:88px; max-height:98px; 
 	display: inline-table; margin: 0.35em; padding-left: 15px;
 }
