@@ -52,11 +52,10 @@ p {    display: block; font-family: 'Times New Roman', Times, serif; font-size: 
 	
 #he {   display: block; width: 100%; background-color: #0001; 
 	margin: 0 auto; top: 0; left: 0; position: relative; 
-	height: 135px; margin-top: -10px;  z-index: 1;
+	height: 175px; margin-top: -8px;  z-index: 1;
 }	
-.her {  color: #cff; font-size: 0.9em; text-align: center; 
-	width:90%; max-width:99%; height:88px; max-height:98px; 
-	display: inline-table; margin: 0.35em; padding-left: 15px;
+.her {  color: #cff; font-size: 0.9em; text-align: center; display: block;
+	max-width:90%; height: 88px; margin: 0 auto; padding-left: 15px;
 }
 #he .her h1 { font-size: 30px; font-size: 3.0em; color: #aac; 
 	      border: none; margin: 0; padding-bottom: 1%; } 
