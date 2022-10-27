@@ -64,7 +64,12 @@ p {    display: block; font-family: 'Times New Roman', Times, serif; font-size: 
         background-size: contain; background-repeat: no-repeat; 
 	width: 275px; height: 145px; margin: 0 auto;
 }
-
+.intro p {
+  font-size: 14px;
+  color: #eee;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
 /* .her { color: #cff; font-size: 0.9em; text-align: center; display: block; max-width:90%; height:88px; margin: 0 auto; padding-left:15px;} */
 /* #he .her h1 { font-size: 30px; font-size: 3.0em; color: #aac; border: none; margin: 0; padding-bottom: 1%; } */
 
