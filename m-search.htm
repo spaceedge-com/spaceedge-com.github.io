@@ -21,27 +21,26 @@
 .search-form input[type=text]:focus {
 	color: #000; max-width: 100%; border: none;
 }
-input[type="submit"] {
-        margin-left: -5px;  cursor: pointer;  
-	border: none; border-radius: 5px 25px; 
-	font-size: .89em; font-weight: normal;
-	appearance: none; -webkit-appearance: none; -moz-appearance: none; 
-}
 .search-form input:focus::placeholder {  	color: transparent;  
 }
 #searchterms {	
-	text-align: left;  margin-top: 5px; 
-	padding-left: 8px; padding-bottom: 5px; width: 75%; border: none;
+	text-align: left;  margin-top: 5px; padding-left: 8px; padding-bottom: 5px; width: 75%; border: none;
 }
 	
 #search_select {   	
-	font-size: 1.0em; color: #338; background-color: #eefc; font-size: .89em;
+	font-size: 1.0em; color: #338; background-color: #effc; font-size: .89em;
 	cursor: progress; padding-left: 3px; width: 91px; height: 25px; 
 	border: 1px solid #88f; border-radius: 5px 25px; border-left: hidden;
 }
 select { font-size: 1.0em;  border: none; }     select::after { cursor: progress; }  	
 option { font-size:  1.0em;   }
 
+.Go input[type="submit"] {
+        margin-left: -5px;  cursor: pointer; border: none; border-radius: 5px 25px; 
+	font-size: .89em; font-weight: normal; background-color: #effc;
+	appearance: none; -webkit-appearance: none; -moz-appearance: none; 
+}
+	
 /* The Modal */
 #modaldiv {  
 	display: block; text-align: center;
@@ -101,7 +100,7 @@ option { font-size:  1.0em;   }
 	      <option value="wolframalpha">Wolframalpha</option>  
 	      <option value="yahoo">Yahoo!</option>
 	    </select>
-	   <input type="submit" name="SearchSubmit" value="Go">	  
+	   <input type="submit" class="Go" name="SearchSubmit" value="Go">	  
 	  </form>
      </div>
 </div>	
