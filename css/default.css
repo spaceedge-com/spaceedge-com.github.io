@@ -209,8 +209,5 @@ button.close-modal { border-radius: 1px;  background-color: #fffa;  top: 1px; le
 	flex-shrink:0; bottom: 0px; padding-top: 0; margin-bottom: 0;
 }	
 .footer {
-  	display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;
-}
-.footer .copy {
- 	color: #fff;
+  	display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; color: #ccc;
 }
