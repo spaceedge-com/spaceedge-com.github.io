@@ -55,7 +55,7 @@ p {    display: block; font-family: 'Times New Roman', Times, serif; font-size: 
 	display: flex; justify-content: space-between; align-items: center; 
 	top: 0; left: 0; position: relative; z-index: 1;
 	/* background-color: #0002; background-color: rgba(0,0,0,0.14); */
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://");
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.65) 100%), url("https://");
 	background-size: cover; background-position: center; background-repeat: no-repeat;
 }
 #logo {
@@ -202,18 +202,15 @@ button.close-modal { border-radius: 1px;  background-color: #fffa;  top: 1px; le
 }
 
 /* CSS for footer */
-footer {    
-	background-color: #0002; background-color: rgba(0,0,0,0.14);  
+.footer {    
+	background-color: #0003; background-color: rgba(0,0,0,0.24);  
 	position: absolute; width: 100%; clear:both;
 	font-size: small; text-align:center; 
 	flex-shrink:0; bottom: 0px; padding-top: 0; margin-bottom: 0;
 }	
 .footer {
-  display: flex;
-  justify-content: space-between; align-items: center;
-  background-color: #335;
-  padding: 10px 20px;
+  	display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;
 }
 .footer .copy {
-  color: #fff;
+ 	color: #fff;
 }
