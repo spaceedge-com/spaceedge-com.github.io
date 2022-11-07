@@ -61,7 +61,7 @@ p {    display: block; font-family: 'Times New Roman', Times, serif; font-size: 
 #logo {
     	background-image: url(/icons/FullLogo_Transparent1.png);
         background-size: contain; background-repeat: no-repeat; 
-	width: 275px; height: 145px; margin: 0 auto;
+	width: 275px; height: 126px; margin: 0 auto;
 }
 .header .logo { font-size: 25px; font-family: 'Sriracha', cursive; color: #fcf; text-decoration: none; margin-left: 30px; }	
 
