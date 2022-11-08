@@ -102,9 +102,9 @@ h1 {   font-size: 24px;  font-weight: 800;   }
 .active, .collapsible:hover {  background-color: rgba(50,50,50,0.5);  border: 1px solid; color:#fff;  }
 .content {  display:none; padding: 0 18px; max-height: 0; overflow: hidden; 
 		background-color: rgba(25,25,25,0.18); transition: max-height 1.2s ease-in-out; } 
-  .collapsible:after {  display:block; content: '\02795'; /* Unicode (+) */ font-size: 14px; 
-	  		margin-top: -16px; float: right; margin-left: 5px; background-color: white; }
-       .active:after {  content: "\2796"; /* Unicode (-) */  }
+  .collapsible:after {  content: '\02795'; /* Unicode (+) */ font-size: 14px; 
+	  		display:block; margin-top: -16px; float: right; margin-left: 5px; background-color: white; }
+       .active:after {  content: "\2796"; /* Unicode (-) */ display:block; }
 	
 			
                    .hid {  display: none; }  
