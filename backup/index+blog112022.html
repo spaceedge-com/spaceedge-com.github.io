@@ -96,15 +96,6 @@ h1 {   font-size: 24px;  font-weight: 800;   }
        select::after { cursor:progress; }       #searchterms {  text-align: center; }
 				option {  font-size: 1.35rem;   }	
 	
-.collapsible {  font-size: 15px; background-color: rgba(25,25,25,0.25);  cursor: pointer;  color:#fff; 
-		width: 50%; text-align: center; margin-left: 25%; border: 1px #aaa; outline: none;  }
-.active, .collapsible:hover {  background-color: rgba(50,50,50,0.5);  border: 1px solid; color:#fff;  }
-.content {  display:none; padding: 0 18px; max-height: 0; overflow: hidden; 
-		background-color: rgba(25,25,25,0.18); transition: max-height 1.2s ease-in-out; } 
-  .collapsible:after {  content: '\02795'; /* Unicode (+) */ font-size: 14px; 
-	  		display:block; margin-top: -16px; float: right; margin-left: 5px; background-color: white; }
-       .active:after {  content: "\2796"; /* Unicode (-) */ display:block; }
-	
 			
                    .hid {  display: none; }  
         .column:hover > .hid { /* arrow on hover */  display:block;  z-index:10; }
@@ -157,11 +148,9 @@ h1 {   font-size: 24px;  font-weight: 800;   }
                
 
 	  <div class="spc15"> <br> </div> 	
-	
 
-<button type="button" class="collapsible"><h2 style="border-bottom: double 3px; color:#fff;">Show Blog</h2></button>
-<div class="content">
 
+<div class="wrap-collabsible"> <input id="collapsible" class="toggle" type="checkbox"> <label for="collapsible" class="lbl-toggle">More Info</label><div class="collapsible-content"><div class="content-inner">
 	
 <div id="expand"> <label for="exnd" style="font-size:20px;"> ◄ ► </label> </div>	
     		 <input type='checkbox' style='display: none' id='exnd'>
