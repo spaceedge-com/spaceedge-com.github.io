@@ -100,11 +100,11 @@ h1 {   font-size: 24px;  font-weight: 800;   }
 .collapsible {  font-size: 15px; background-color: rgba(25,25,25,0.25);  cursor: pointer;  color:#fff; 
 		width: 50%; text-align: center; margin-left: 25%; border: 1px #aaa; outline: none;  }
 .active, .collapsible:hover {  background-color: rgba(50,50,50,0.5);  border: 1px solid; color:#fff;  }
-.content {  padding: 0 18px; display:none; max-height: 0; overflow: hidden; 
+.content {  display:none; padding: 0 18px; max-height: 0; overflow: hidden; 
 		background-color: rgba(25,25,25,0.18); transition: max-height 1.2s ease-in-out; } 
-  .collapsible:after {  content: '\02795'; /* Unicode "plus" (+) */ font-size: 14px; 
+  .collapsible:after {  display:block; content: '\02795'; /* Unicode (+) */ font-size: 14px; 
 	  		margin-top: -16px; float: right; margin-left: 5px; background-color: white; }
-       .active:after {  content: "\2796"; /* Unicode "minus" sign (-) */  }
+       .active:after {  content: "\2796"; /* Unicode (-) */  }
 	
 			
                    .hid {  display: none; }  
