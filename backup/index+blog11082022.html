@@ -20,7 +20,8 @@
   /* padding: top right bottom left */
 
 
-	
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+
 :root {
   --color: #3c3163;
   --transition-time: 0.5s;
@@ -154,6 +155,12 @@ a {
   transform: scale(1);
 }
 
+.card-grid-space .num {
+  font-size: 3em;
+  margin-bottom: 1.2rem;
+  margin-left: 1rem;
+}
+
 .info {
   font-size: 1.2em;
   display: flex;
@@ -185,6 +192,10 @@ a {
   .info {
     justify-content: center;
   }
+  .card-grid-space .num {
+    /margin-left: 0;
+    /text-align: center;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -204,8 +215,7 @@ a {
   .info h1 {
     margin: 0;
   }
-}
-		
+}	
 
 	
 </style> 
