@@ -16,23 +16,17 @@
 <style>
 	
 	
- /* 2 equal columns float next to each other */
-.column {  float:left; width:48.80%; min-width:380px; max-width:99%; 
-	   height:1000px; min-height:90%; max-height:100%; 
-	   padding: 0; margin: 10px auto; display:block; color:#eee; 
-	   background-color:rgba(0,0,0,0.20); text-shadow: 0 0 white; 
-	   border-radius: 4px; overflow-x: hidden; overflow-y: hidden; border: solid; position: relative;  }
- /* expands to one column */
-.row {  margin: 10px 15px 25px 1px;  width: 98%; }
-  /* Clear floats after the columns */
-.row:after {  content: " "; float: left; display: block; clear: both;  }
-        /* Responsive layout - screen < 800px - stack columns verticaly, instead of next to each other */
-        @media (max-width: 800px) {  
-		 	       .column { width:93%; min-width:90%; max-width:98%; border: solid 1px; margin-right:5px; }	
-		  	       #he .her h1 {  font-size: 31px; font-size: 2.3em;  }
-			       #expand { display: none;  }
-			       .search-form input { font-size: 0.8em; }
-				   }
+
+#body { /* css id#body for JS rnd body background */ 
+    	font-family: Arial, Helvetica, sans-serif;  width: 100%;
+	background-color: #fff08; background-blend-mode: difference; 
+	background-image: url(/images/slider/astronomy1.jpg);
+	background-position: top left; background-attachment: fixed; 
+	background-repeat: no-repeat;  background-size: cover; background-origin: content-box;
+	-moz-background-size: cover; -webkit-background-size: cover; -o-background-size: cover;
+	min-height: 700px; position: absolute; top: 0; left: 0; margin: 0; padding: 0; 
+	overflow-x: hidden; overflow-y: auto;  
+}
 		
 
 	
