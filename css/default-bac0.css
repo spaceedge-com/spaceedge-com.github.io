@@ -1,0 +1,206 @@
+/* default.css */ 
+
+/* Scrollbars */ 
+/* Firefox */ 
+:root { 
+	scrollbar-color: rgba(100,120,255,0.9) rgba(0,0,0,0.5) !important; 
+	scrollbar-width: thin !important; 
+}  
+/* Chrome, Edge, Safari. Chrome */
+::-webkit-scrollbar {  height: 12px;  width: 5px;  background: #000;
+}
+::-webkit-scrollbar-thumb {  
+	background: #3938ff;  -webkit-border-radius: 1ex; 
+	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+::-webkit-scrollbar-corner {  background: #000;  }
+
+/*  CSS */ 
+/* padding: top right bottom left */
+:root {  
+	--t25: rgba(0,0,0,0.25);  --white: #fff; 
+}
+
+html {  
+	min-height:100%; text-shadow: 0 0 white; text-rendering: optimizeLegibility;
+	 -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
+} 
+
+#body { /* css id#body for JS rnd body background */ 
+    	font-family: Arial, Helvetica, sans-serif;  width: 100%;
+	background-color: #fff08; background-blend-mode: difference; 
+	background-image: url(/images/slider/astronomy1.jpg);
+	background-position: top left; background-attachment: fixed; 
+	background-repeat: no-repeat;  background-size: cover; background-origin: content-box;
+	-moz-background-size: cover; -webkit-background-size: cover; -o-background-size: cover;
+	min-height: 700px; position: absolute; top: 0; left: 0; margin: 0; padding: 0; 
+	overflow-x: hidden; overflow-y: auto;  }
+	
+h1, h2, h3, h4, h5, h6 {  
+	display: block; font-family: 'Times New Roman', Times, serif; font-weight: bold; 
+	color: #669; clear:both;  }
+h1 {   font-size: 1.35em;  margin: .67em 0 .67em 0; padding-left: 0.25em; }
+h2 {   font-size: 1.15em;  margin: 0.83em 0 0.83em 0;  padding-left: 0.3em; }
+h3 {   font-size: 1.0em;  margin: 1em 0 1em 0;  padding-left: 0.3em; }
+h4 {   font-size: 0.90em;  margin: 1.33em 0 1.33em 0;  padding-left: 0.3em; }
+h5 {   font-size: .80em;   margin: 1.67em 0 1.67em 0;  padding-left: 0.3em; }
+h6 {   font-size: .60em;  margin: 2.33em 0 2.33em 0;  padding-left: 0.3em; }
+p {    display: block; font-family: 'Times New Roman', Times, serif; font-size: 1.0em; 
+       font-style: normal; font-weight: normal; line-height: 1.10em; color:#555; 
+       margin: 1em 0 1em 0; padding-left: 0.30em; padding-right: .20em;  }
+	
+/* CSS for header */
+.header {
+	width: 100%; padding: 0px 10px;
+	display: flex; justify-content: space-between; align-items: center; 
+	top: 0; left: 0; position: relative; z-index: 1;
+	/* background-color: #0002; background-color: rgba(0,0,0,0.14); */
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.65) 100%), url("https://");
+	background-size: cover; background-position: center; background-repeat: no-repeat;
+}
+#logo {
+    	background-image: url(/icons/FullLogo_Transparent1.png);
+        background-size: contain; background-repeat: no-repeat; 
+	width: 275px; height: 126px; margin: 0 auto;
+}
+.header .logo { font-size: 25px; font-family: 'Sriracha', cursive; color: #fcf; text-decoration: none; margin-left: 30px; }	
+
+.intro {
+   display: flex; justify-content: center; width: 100%; height: 36px;
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://");
+   background-size: cover; background-position: center; background-repeat: no-repeat;
+}
+.intro p {
+   font-size: 0.5em; font-style: oblique; font-weight: bold; color: #eee;
+   text-transform: uppercase; margin: 20px 0; padding: .5em;
+}
+/* .her { color: #cff; font-size: 0.9em; text-align: center; display: block; max-width:90%; height:88px; margin: 0 auto; padding-left:15px;} */
+/* #he .her h1 { font-size: 30px; font-size: 3.0em; color: #aac; border: none; margin: 0; padding-bottom: 1%; } */
+
+
+a {    color:skyblue;  }
+a:link { text-decoration: none;  }
+em {    color:seashell; font-size: 1.0em; font-style: oblique; text-align: center; } 
+.quote { display: block; font-size: 1.08rem; font-style: oblique; 
+	 text-align: center; padding: .8em .8em 0 .2em; }
+cite {  color:#CDA; font-size: 0.9em; color:#ccc; padding-top: .25em; 
+	padding-left: 15%; padding-bottom: .7em; display: inline-block;  }
+hr {    border-top: 1px solid #faf; height: 2px; width:50%; margin:1em;  }
+img {   width:99%; min-width: auto; max-width:100%; height:auto; display:block; 
+	margin: 0 auto; border: 1px solid rgba(255,255,255,.33); }
+figure {  display: block; text-align: center; float: left; font-style: italic; 
+	  text-indent: 0; border: thin silver solid; 
+	  margin: 1.0em; padding: 0.5em; width: min-content; }
+figure img, figcaption {  color:#888; text-align: center; max-width:98%; min-width: 150px; 
+			  font-size: smaller; font-style: italic; margin: auto; }
+figcaption { display: block;  }
+.small {   font-size: 85%;  font-style: italic;  }
+.cr {   font-style: oblique; display: inline list-item; margin-left: 25px; 
+		padding-top: .5em; padding-bottom: 1em; }
+pre {   padding: 5%;  }	
+
+.dataobject {  color: #fff; max-width:100%; height:3000px; min-height:2500px; max-height:100%; 
+	       display: inline-block; margin-top: 3%; margin-bottom: 50px; padding-bottom: 50px; 
+	       overflow-x: hidden; overflow-y: hidden;  } 
+
+.spc, .spc5, .spc15,  .spc25, .spc35 { position: relative; clear:both; float:inherit; }
+.spc5 {      height:5px; max-height:5px; margin:5px; padding:5px; }
+.spc15 { height:15px; max-height:15px; margin:15px; padding:15px; }
+.spc25 { height:25px; max-height:25px; margin:25px; padding:25px; }
+.spc35 { height:35px; max-height:35px; margin:35px; padding:35px; }
+.spc {   height:50px; max-height:50px; margin:50px; padding:50px; }
+
+
+ /*  Columns Equal float next to each other  */
+.column { float:left; width:48.80%; min-width:380px; max-width:99%; height:1000px; 
+	  display:block; min-height:900px; max-height:100%; padding: 0; margin: 10px auto; 
+	  color:#eee; background-color:rgba(0,0,0,0.20); position: relative;  
+	  border: 2px solid rgba(0,0,0,0.20); border-radius: 5px; 
+	  overflow-x: hidden; overflow-y: hidden; 
+}
+/* Expand to fit one Column */
+.row {  
+	margin: 10px 15px 25px 1px;  width: 98%; 
+}
+/* Clear floats after the columns */
+.row:after {  
+	content: ""; float: left; display: block; clear: both;  
+}
+/* Responsive - screen < 800px - stack columns verticaly, instead of next to each other */
+@media (max-width: 800px) {  
+	 	    .column {  width:93%; min-width:90%; max-width:98%; 
+			       border: solid 1px; margin-right: 5px; 
+	  		    }	
+		    #expand {  display: none;  }
+}
+	 
+
+/* Clicked focus expands columns width  tabindex="0"  */
+#column:focus { 
+		width: 97%; max-width: 100%; display: block; max-height: 100%; 
+		transition: width 1s; position: fixed; top: 5%; 
+		background-color:rgba(0,0,0,0.90); z-index: 9999; margin: 2%;
+}
+.column:hover { cursor: pointer; border:2px solid #66c; display:block; z-index:10; }	
+	
+	
+/* .articles {    
+	max-width: 100%; height: 1500px; max-height: 100%; margin: 5px; padding: 5px; 
+	background-color: transparent; display:block; word-break: break-word; 
+	text-overflow: ellipsis; line-height: 1em; overflow-x:hidden; overflow-y:hidden; 
+	-webkit-box-orient: vertical; -webkit-line-clamp: 50; /* #-lines*/  }
+*/						
+/* For ( object data=" ) Don't change height otherwise! for scrolling, hover scrolling! */
+object { width:100%; height:100%; max-height:998px; clear:both; display:block; overflow-x:hidden; overflow-y:hidden;  }         
+	
+/* Custom checkbox button expands all columns width _ checkbox select expand */
+/* input + .row .column { margin: 30px auto; width: 48.80%; max-width: 99%; transition:width 0.5s;   
+} */
+/* input:checked + .row .column { max-width: 98%; display: block; max-height: 100%; transition:width 1s; } */
+/* #expand {	 text-align: center; margin: 0 auto; width: 100%; height: 30px; } */
+/* #expand label {  
+	color:#888; cursor: pointer; width: 55px; margin: 0 auto; padding: 1px; 
+	border: solid 1px #888; border-radius: 20px; font-size: 17px;  }  */
+/* #expand label:hover { color: rgba(128,128,128,.75); cursor:progress; }  */
+
+/* .hid {  display: none; }     .column:active > .hid { display:block;  z-index:10; }  */
+/* .hid img { height:25px; min-width:25px; position: absolute; padding-left:42%; border:0;} */
+	
+/* CSS for external loaded data objects, doesn't apply there! */
+
+/* .srchbutton { -webkit-appearance: button; -moz-appearance: button; appearance: button; 
+	     padding: 16px 16px; cursor: pointer; opacity: 0.90; width: 260px; color: #fff;  
+	     border: 1px solid #aaa; border-radius: 5px; background-color: rgba(15,15,155,0.5);  } 
+*/
+
+/*
+.feedsrss {       margin: 0 auto; padding: 4px; width: 75%; max-width: 80%; height: 223px; display: flex; border: 0; border-radius: 5px;  } 
+.feed-container { font-size: 14px;  margin: 5px; overflow: hidden; padding: 0; height: 200px; }
+img[src=""] {   display: none;  }
+.rssfeed_item_image  img, .rssfeed_item_image video { max-width: 100%; height: auto;  }
+.linkbutton {  background-color: rgba(50,50,50,0.5); color: cadetblue; max-width: 100%;  }
+*/
+/* Modal with Close Button */
+/* .modal-header { display: block; border-bottom: 1px; box-sizing:border-box; height:50px; }
+.modal-header h3 { box-sizing: border-box; line-height: 50px;  display: inline-block; }
+.modal > p {	padding: 15px; margin: 0;  }
+.close-modal { display: block; font-size: 2em; top: 10px; float: right; margin-left: auto;}
+.close-modal:hover, .close-modal:focus { color: #08c; text-decoration: none; cursor: pointer;}	
+button.close-modal { border-radius: 1px;  background-color: #fffa;  top: 1px; left: 1px;}
+*/ 
+
+
+/*  Multi-Search Div  */
+#MultiSearch { margin: 0 auto; display: block; position: relative; width: 98%; height: 200px;
+	       text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidden;
+}
+
+/* CSS for footer */
+.footer {    
+	background-color: #0005; background-color: rgba(0,0,0,0.54);  
+	position: absolute; width: 100%; clear:both; font-size: small; text-align:center; 
+	flex-shrink:0; bottom: 0px; margin-bottom: 0;
+}	
+.footer {
+  	display: flex; justify-content: space-between; align-items: center; padding: 5px 20px; color: #ccc;
+}
