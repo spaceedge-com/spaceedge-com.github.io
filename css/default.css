@@ -197,11 +197,9 @@ button.close-modal { border-radius: 1px;  background-color: #fffa;  top: 1px; le
 }
 
 /* CSS for footer */
-.footer {    
+footer {    
 	background-color: #0005; background-color: rgba(0,0,0,0.54);  
-	position: absolute; width: 100%; clear:both; font-size: small; text-align:center; 
-	flex-shrink:0; bottom: 0px; margin-bottom: 0;
-}	
-.footer {
-  	display: flex; justify-content: space-between; align-items: center; padding: 5px 20px; color: #ccc;
+	position: absolute; width: 100%; clear:both; font-size: small; 
+	flex-shrink:0; bottom: 0px; margin-bottom: 0; color: #fcf;
+  	display: flex; justify-content: space-between; align-items: center; padding: 5px; 
 }
