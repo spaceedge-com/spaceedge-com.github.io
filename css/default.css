@@ -22,7 +22,7 @@
 }
 
 html {  
-	min-height:100%; text-shadow: 0 0 white; text-rendering: optimizeLegibility;
+	min-height:100%; min-height: 100vh; text-shadow: 0 0 white; text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
 } 
 body {
