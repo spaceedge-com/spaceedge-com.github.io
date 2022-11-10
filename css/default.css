@@ -25,8 +25,10 @@ html {
 	min-height:100%; text-shadow: 0 0 white; text-rendering: optimizeLegibility;
 	 -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
 } 
-
-#body { /* css id#body for JS rnd body background */ 
+body {
+	min-height:100vh; 
+}
+#body { /* css id#body for JS rnd background */ 
     	font-family: Arial, Helvetica, sans-serif;  width: 100%;
 	background-color: #fff; 
 	background-position: top left; background-attachment: fixed; 
