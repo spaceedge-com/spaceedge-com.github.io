@@ -71,7 +71,7 @@ p {    display: block; font-family: 'Times New Roman', Times, serif; font-size: 
    background-size: cover; background-position: center; background-repeat: no-repeat;
 }
 .intro p {
-    font-size: 0.35em; text-transform: uppercase; font-style: oblique; font-weight: bold;
+    font-size: 0.5rem; text-transform: uppercase; font-style: oblique; font-weight: bold;
     color: #eee; padding: 0.5em;
 }
 /* .her { color: #cff; font-size: 0.9em; text-align: center; display: block; max-width:90%; height:88px; margin: 0 auto; padding-left:15px;} */
