@@ -59,7 +59,7 @@ p {    display: block; font-family: 'Times New Roman', Times, serif; font-size: 
 #logo {
     background-image: url(/icons/SE_Logo.png);
     background-size: contain; background-repeat: no-repeat; 
-	width: 200px; height: 100px; margin: 0 auto;
+	width: 250px; height: 75px; margin: 0 auto;
 }
 .header .logo { 
 	font-size: 25px; font-family: 'Sriracha', cursive; color: #fcf; text-decoration: none; margin-left: 30px; 
