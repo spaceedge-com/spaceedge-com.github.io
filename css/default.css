@@ -190,7 +190,7 @@ button.close-modal { border-radius: 1px;  background-color: #fffa;  top: 1px; le
 
 
 /*  Multi-Search Div  */
-#MultiSearch { margin: 0 auto; display: block; position: relative; width: 98%; height: 200px;
+#MultiSearch { margin: 0 auto; display: block; position: relative; width: 100%; height: 200px;
 	       text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidden;
 }
 
