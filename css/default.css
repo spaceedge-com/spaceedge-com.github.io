@@ -27,7 +27,6 @@ html {
 } 
 #body { /* css id#body for JS rnd background */ 
     	font-family: Arial, Helvetica, sans-serif; height:100%; width: 100%;
-	background-color: #fff; 
 	background-position: top left; background-attachment: fixed; 
 	background-repeat: no-repeat;  background-size: cover; background-origin: content-box;
 	-moz-background-size: cover; -webkit-background-size: cover; -o-background-size: cover;
