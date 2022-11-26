@@ -6,7 +6,8 @@
 <title>Freedom Search Space</title>	
 <!--     jQuery       --> 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<link rel="stylesheet" href="/css/default.css">		
+<link rel="stylesheet" rel="prefetch" href="/css/reset.css">
+<link rel="stylesheet" rel="prefetch" href="/css/default.css">		
 <style>
 	
 /*   MultiSearch w/dropdown    */ 
@@ -16,10 +17,10 @@
 input[type=search].searchterms {  
 	font-size:1.0em; color:#000; background-color: #fffa; border-radius: 25px;
 	margin-right: -1px; padding: 0px; outline: none; width: 49%;
-    -webkit-transition: width 0.4s ease-in-out; transition: width 0.4s ease-in-out;
+    	-webkit-transition: width 0.4s ease-in-out; transition: width 0.4s ease-in-out;
 }
 input[type=search]:focus {
-	color: #000; width: background-color: #fff; 100%; border: none;
+	color: #000; width: 100%; background-color: #fff; border: none;
 }
 input:focus::placeholder {  color: transparent;  
 }
@@ -43,7 +44,7 @@ input[type="submit"].Go { /* ➤ &#10148; */
 	display: block; text-align: center; 
 	margin:0 auto; width: auto; height: auto; border-radius: 5%;
 	box-shadow: 1px 2px 2px 1px rgba(150,120,150,0.2), 1px 2px 2px 1px rgba(150,150,150,0.8);
-	/* box-shadow: 0px 0px 35px red inset;  #00008 */
+	 /* box-shadow: 0px 0px 35px red inset;  #00008 */
   	 animation-duration: 1s;  -webkit-animation-duration: 1s;
  	 animation-name: animate; -webkit-animation-name: animate; 
 }
