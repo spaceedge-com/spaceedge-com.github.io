@@ -76,9 +76,9 @@ p {    display: block; font-family: 'Times New Roman', Times, serif; font-size: 
 a {    color:skyblue;  }
 a:link { text-decoration: none;  }
 
-.blockquote {   font-size: 17px; font-family: 'Sriracha', cursive; color: #bca; margin: 0;
+.blockquote {   font-size: 17px; font-family: Andale Mono, monospace; color: #bca; margin: 0;
 		display: block; font-size: 1.18rem; background-color: rgba(210,210,100,0.70);
-		border-left: 4px solid #65bec2; padding-left: 16px; width:50%; }
+		border-left: 4px solid #65bec2; padding-left: 16px; width:55%; }
 
 hr {    border-top: 1px solid #faf; height: 2px; width:50%; margin:1em;  }
 
