@@ -73,20 +73,14 @@ p {    display: block; font-family: 'Times New Roman', Times, serif; font-size: 
     	font-size: 0.5rem; text-transform: uppercase; font-style: oblique; font-weight: bold;
     	color: #eee; padding: 0.5em;
 }
-/* .her { color: #cff; font-size: 0.9em; text-align: center; display: block; max-width:90%; height:88px; margin: 0 auto; padding-left:15px;} */
-/* #he .her h1 { font-size: 30px; font-size: 3.0em; color: #aac; border: none; margin: 0; padding-bottom: 1%; } */
-
 
 a {    color:skyblue;  }
 a:link { text-decoration: none;  }
-em {    color:seashell; font-size: 1.0em; font-style: oblique; text-align: center; } 
+
 .blockquote { 
 		display: block; font-size: 1.08rem; font-style: oblique; 
-		border-left: 4px solid #65bec2; padding-left: 16px;
-}
+		border-left: 4px solid #65bec2; padding-left: 16px;  }
 
-cite {  color:#CDA; font-size: 0.9em; color:#ccc; padding-top: .25em; 
-	padding-left: 15%; padding-bottom: .7em; display: inline-block;  }
 hr {    border-top: 1px solid #faf; height: 2px; width:50%; margin:1em;  }
 
 img {   width: auto; min-width: auto; max-width:100%; height:auto; display:block;  }
@@ -98,6 +92,7 @@ figure img, figcaption {
 		color:#888; text-align: center; max-width:98%; min-width: 150px; 
 		font-size: smaller; font-style: italic; margin: auto; }
 figcaption { display: block;  }
+
 .small {   font-size: 85%;  font-style: italic;  }
 .cr {   font-style: oblique; display: inline list-item; margin-left: 25px; 
 		padding-top: .5em; padding-bottom: 1em; }
@@ -133,8 +128,8 @@ pre {   padding: 5%;  }
 /* Responsive - screen < 800px - stack columns verticaly, instead of next to each other */
 @media (max-width: 800px) {  
 	 	    .column {  width:93%; min-width:90%; max-width:98%; 
-			       border: solid 1px; margin-right: 5px; 
-	  		    }	
+			           border: solid 1px; margin-right: 5px; 
+	  		        }	
 		    #expand {  display: none;  }
 }
 	 
