@@ -76,9 +76,10 @@ p {    display: block; font-family: 'Times New Roman', Times, serif; font-size: 
 a {    color:skyblue;  }
 a:link { text-decoration: none;  }
 
-.blockquote {   font-size: 17px; font-family: Andale Mono, monospace; color: #bca; margin: 0;
-		display: block; font-size: 1.18rem; background-color: rgba(210,210,100,0.70);
-		border-left: 4px solid #65bec2; padding-left: 16px; width:55%; }
+.blockquote {   margin: 0; display: block; border-left: 4px solid #65bec2; padding-left: 16px;  }
+.blockquote p {
+    		font-family: Andale Mono, monospace; font-size: 1.18rem; font-weight: bold; 
+    		padding: 0.5em; color: #bca; background-color: rgba(210,210,100,0.70); } 
 
 hr {    border-top: 1px solid #faf; height: 2px; width:50%; margin:1em;  }
 
