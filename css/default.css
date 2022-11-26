@@ -34,8 +34,7 @@ html {
 	overflow-x: hidden; overflow-y: auto;  }
 	
 h1, h2, h3, h4, h5, h6 {  
-	display: block; font-family: 'Times New Roman', Times, serif; font-weight: bold; 
-	color: #669; clear:both;  }
+	display: block; font-family: 'Times New Roman', Times, serif; font-weight: bold; clear:both;  }
 h1 {   font-size: 1.35em;  margin: .67em 0 .67em 0; padding-left: 0.25em; }
 h2 {   font-size: 1.15em;  margin: 0.83em 0 0.83em 0;  padding-left: 0.3em; }
 h3 {   font-size: 1.0em;  margin: 1em 0 1em 0;  padding-left: 0.3em; }
@@ -77,9 +76,9 @@ p {    display: block; font-family: 'Times New Roman', Times, serif; font-size: 
 a {    color:skyblue;  }
 a:link { text-decoration: none;  }
 
-.blockquote { 
-		display: block; font-size: 1.08rem; font-style: oblique; 
-		border-left: 4px solid #65bec2; padding-left: 16px;  }
+.blockquote {   font-size: 17px; font-family: 'Sriracha', cursive; color: #bca;
+		display: block; font-size: 1.18rem; font-style: oblique; 
+		border-left: 4px solid #65bec2; padding-left: 16px; margin: 0; }
 
 hr {    border-top: 1px solid #faf; height: 2px; width:50%; margin:1em;  }
 
