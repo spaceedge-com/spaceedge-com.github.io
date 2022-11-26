@@ -78,7 +78,7 @@ a:link { text-decoration: none;  }
 
 .blockquote {   font-size: 17px; font-family: 'Sriracha', cursive; color: #bca; margin: 0;
 		display: block; font-size: 1.18rem; background-color: rgba(210,210,100,0.70);
-		border-left: 4px solid #65bec2; padding-left: 16px;  }
+		border-left: 4px solid #65bec2; padding-left: 16px; width:50%; }
 
 hr {    border-top: 1px solid #faf; height: 2px; width:50%; margin:1em;  }
 
