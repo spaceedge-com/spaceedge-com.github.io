@@ -75,26 +75,20 @@ a:link { text-decoration: none;  }
 
 .blockquote {   margin: 0; display: block; border-left: 5px solid #65bec2; padding-left: 16px; max-width: 72%; }
 .blockquote p {
-    		font-family: Andale Mono, monospace; font-size: 1.10rem; font-weight: bold; 
-    		padding: 0.5em; background-color: rgba(210,210,100,0.70); } 
+    		font-family: Andale Mono, monospace; font-size: 1.10rem; font-weight: bold; padding: 0.5em;
+    		 background-color: rgba(210,210,100,0.70); } 
+.blockquote c {   display: block; margin: 0 auto; padding: 1em; font-size: 0.90rem; }
 
-hr {    border-top: 1px solid #faf; height: 2px; width:50%; margin:1em; 
+hr {    border-top: 1px solid #faf; height: 1.5px; width: 50%; margin: 1em; 
 	    box-shadow: 1px 2px 2px 1px rgba(150,120,150,0.2), 1px 2px 2px 1px rgba(150,150,150,0.8);
 }
 
 img {   width: auto; min-width: auto; max-width:100%; height:auto; display:block;  }
-figure {  
-		display: block; text-align: center; float: left; font-style: italic; 
-		text-indent: 0; border: thin silver solid; 
-	  	margin: 1.0em; padding: 0.5em; width: min-content; }
-figure img, figcaption {  
-		color:#888; text-align: center; max-width:98%; min-width: 150px; 
-		font-size: smaller; font-style: italic; margin: auto; }
-figcaption { display: block;  }
+figure {  display: block; text-align: center; float: left; text-indent: 0; margin: 1.0em; padding: 0.5em; }
+figure img, figcaption {  color:#888; text-align: center; min-width: 150px; font-size: smaller; display: block; }
 
 .small {   font-size: 85%;  font-style: italic;  }
-.cr {   font-style: oblique; display: inline list-item; margin-left: 25px; 
-		padding-top: .5em; padding-bottom: 1em; }
+
 pre {   padding: 5%;  }	
 
 .dataobject {  color: #fff; max-width:100%; height:3000px; min-height:2500px; max-height:100%; 
