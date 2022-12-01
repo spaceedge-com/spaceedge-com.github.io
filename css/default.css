@@ -73,11 +73,10 @@ p {    display: block; font-family: 'Times New Roman', Times, serif; font-size: 
 a {    color:skyblue;  }
 a:link { text-decoration: none;  }
 
-.blockquote {   margin: 0; display: block; border-left: 5px solid #65bec2; padding-left: 16px; max-width: 72%; }
-.blockquote p {
-    		font-family: Andale Mono, monospace; font-size: 1.10rem; font-weight: bold; padding: 0.5em;
-    		 background-color: rgba(210,210,100,0.70); } 
-.blockquote c {   display: block; margin: 0 auto; padding: 1em; font-size: 0.90rem; }
+.blockquote {   margin: 0; display: block; border-left: 5px solid #65bec2; padding-left: 16px; 
+		max-width: 72%; background-color: rgba(210,210,100,0.70); }
+.blockquote p { font-family: Andale Mono, monospace; font-size: 1.10rem; font-weight: bold; padding: 0.5em; } 
+.blockquote c { display: block; margin: 0 auto; padding: 1em; font-size: 0.90rem; }
 
 hr {    border-top: 1px solid #faf; height: 1.5px; width: 50%; margin: 1em; 
 	    box-shadow: 1px 2px 2px 1px rgba(150,120,150,0.2), 1px 2px 2px 1px rgba(150,150,150,0.8);
