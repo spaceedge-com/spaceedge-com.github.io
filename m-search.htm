@@ -45,7 +45,6 @@ input[type="submit"].Go { /* ➤ &#10148; */
   	animation-duration: 1s; -webkit-animation-duration: 1s;  animation-name: animate; -webkit-animation-name: animate; 
 }@keyframes animate {   from {opacity: .0;}  to {bopacity: 1.0;}   }
 	
-.search-body {  border-radius: 5px; } 
 .search-body h3, h4 { color: #369;  margin: 1em; }
 
 </style>
@@ -64,7 +63,7 @@ input[type="submit"].Go { /* ➤ &#10148; */
     <div class="search-form">  
 	 <form name="web_search_form" action="javascript:dosearch();">
 	   <input type="search" name="searchterms" id="searchterms" class="searchterms" autocomplete="on" onfocus="this.select()" placeholder="search..">
-	    <select name="search_engines" id="search_select" class="select" onfocus="return" onchange="return dosearch();">  <!-- option selected value="#" -->
+	    <select name="search_engines" id="search_select" class="select" onfocus="return" onchange="return dosearch();">  <!-- value="#"/"ask" -->
 	      <option selected="selected" value="ask" hidden>select..</option>	
 	      <option value="ask">Ask</option>  
 	      <option value="bing">Bing</option> 
