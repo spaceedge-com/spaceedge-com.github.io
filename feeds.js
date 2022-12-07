@@ -1,4 +1,6 @@
 <!-- start sw-rss-feed code --> 
+<!-- rssfeed_url[1]="https://theconversation.com/us/business/articles.atom"; 
+rssfeed_url[2]="https://theconversation.com/us/ethics/articles.atom"; rssfeed_url[3]="https://theconversation.com/us/politics/articles.atom";  --> 
 rssfeed_url = new Array(); 
 rssfeed_url[0]="https://theconversation.com/uk/technology/articles.atom";
 rssfeed_url[1]="";rssfeed_url[2]=""; rssfeed_url[3]="";  
