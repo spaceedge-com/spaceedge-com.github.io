@@ -32,12 +32,12 @@ html {
 	
 h1, h2, h3, h4, h5, h6 {  
 	display: block; font-family: 'Times New Roman', Times, serif; font-weight: bold; clear:both; line-height: 1.20em; }
-h1 {   font-size: 1.40em;  margin: .67em 0 .67em 0; padding-left: 0.25em; }
-h2 {   font-size: 1.25em;  margin: 0.83em 0 0.83em 0;  padding-left: 0.3em; }
-h3 {   font-size: 1.10em;  margin: 1em 0 1em 0;  padding-left: 0.3em; }
-h4 {   font-size: 0.90em;  margin: 1.33em 0 1.33em 0;  padding-left: 0.3em; }
-h5 {   font-size: .80em;   margin: 1.67em 0 1.67em 0;  padding-left: 0.3em; }
-h6 {   font-size: .65em;  margin: 2.33em 0 2.33em 0;  padding-left: 0.3em; }
+h1 {   font-size: 1.50em;  margin: .67em 0 .67em 0; padding-left: 0.25em; }
+h2 {   font-size: 1.30em;  margin: 0.83em 0 0.83em 0;  padding-left: 0.3em; }
+h3 {   font-size: 1.15em;  margin: 1em 0 1em 0;  padding-left: 0.3em; }
+h4 {   font-size: 1.0em;  margin: 1.33em 0 1.33em 0;  padding-left: 0.3em; }
+h5 {   font-size: .85em;   margin: 1.67em 0 1.67em 0;  padding-left: 0.3em; }
+h6 {   font-size: .60em;  margin: 2.33em 0 2.33em 0;  padding-left: 0.3em; }
 p {    display: block; font-size: 1.0em; font-style: normal; font-weight: normal; line-height: 1.10em;  
        margin: 1em 0 1em 0; padding-left: 0.30em; padding-right: .20em;  }
 	
