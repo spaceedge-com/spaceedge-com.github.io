@@ -64,7 +64,7 @@ a {    color:skyblue;  }   a:link {   text-decoration: none;  }
 
 .blockquote {  margin: 0; display: block; border-left: 5px solid #65bec2; padding-left: 16px; 
 	       background-color: rgba(210,210,100,0.70); max-width: 90%;  }
-.blockquote p { font-family: Andale Mono, monospace; font-size: 1.03em; font-weight: bold; padding: 0.5em; line-height: 1.20em; } 
+.blockquote p { font-family: Andale Mono, monospace; font-size: 1.03em; padding: 0.5em; line-height: 1.20em; } 
 .blockquote c { display: block; margin: 0 auto; padding: .1em 0 1em 2em; font-size: 0.90em; }
 
 hr {    border-top: 1px solid #faf; height: 1.5px; width: 50%; margin: 1em; 
