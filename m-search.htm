@@ -22,11 +22,15 @@ input[type=search].searchterms {
 	-webkit-transition: width 0.4s ease-in-out; transition: width 0.4s ease-in-out;
 }
 input[type=search]:focus {
-	width: 80%;  text-align: center;  background-color: #fff;  border: none; outline: none;
+	  text-align: center;  background-color: #fff;  border: none; outline: none;
 }
 input:focus::placeholder {  color: transparent;  
 }
-
+		/* Responsive - screen < 400px */
+		@media (max-width: 370px) { 
+					input[type=search]:focus {	width: 98%;  }
+		}
+			
 #search_select {   	
 	color: #338; background-color: #effc; font-size: .89em;  cursor: progress;
 	padding-left: 3px; width: 72px; outline: none; border: 0; border: none;
