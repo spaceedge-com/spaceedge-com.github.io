@@ -1,23 +1,15 @@
-/* default.css */ 
+/*      CSS  default.css     */ 
 
-/* CSS Scrollbars */ 
-/* Firefox */ 
-:root { 
-	scrollbar-color: rgba(100,120,255,0.9) rgba(0,0,0,0.5) !important; 
-	scrollbar-width: thin !important; 
-}  
-/* Chrome, Edge, Safari. Chrome */
-::-webkit-scrollbar {  height: 12px;  width: 5px;  background: #000;
-}
-::-webkit-scrollbar-thumb {  
-	background: #3938ff;  -webkit-border-radius: 1ex; 
-	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
-}
+/* Custom Scrollbars    */ 
+/*   Firefox            */ 
+:root { scrollbar-color: rgba(100,120,255,0.9) rgba(0,0,0,0.5) !important;  scrollbar-width: thin !important;  }  
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {  height: 12px;  width: 5px;  background: #000;  }
+::-webkit-scrollbar-thumb {  background: #3938ff;  -webkit-border-radius: 1ex; -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);  }
 ::-webkit-scrollbar-corner {  background: #000;  }
 
-/* CSS Rules*/
-/* padding: top right bottom left */
-:root {  	--t25: rgba(0,0,0,0.25);  --white: #fff;  }
+/* CSS Rules           */
+:root {  /*  padding: top right bottom left;	--t25: rgba(0,0,0,0.25);  */  }
 html {  
 	min-height:100%; min-height: 100vh; text-shadow: 0 0 white; text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
@@ -72,8 +64,8 @@ a {    color:skyblue;  }   a:link {   text-decoration: none;  }
 
 .blockquote {  margin: 0; display: block; border-left: 5px solid #65bec2; padding-left: 16px; 
 	       background-color: rgba(210,210,100,0.70); max-width: 90%;  }
-.blockquote p { font-family: Andale Mono, monospace; font-size: 1.10rem; font-weight: bold; padding: 0.5em; line-height: 1.20em; } 
-.blockquote c { display: block; margin: 0 auto; padding: .1em 0 1em 2em; font-size: 0.90rem; }
+.blockquote p { font-family: Andale Mono, monospace; font-size: 1.03em; font-weight: bold; padding: 0.5em; line-height: 1.20em; } 
+.blockquote c { display: block; margin: 0 auto; padding: .1em 0 1em 2em; font-size: 0.90em; }
 
 hr {    border-top: 1px solid #faf; height: 1.5px; width: 50%; margin: 1em; 
 	    box-shadow: 1px 2px 2px 1px rgba(150,120,150,0.2), 1px 2px 2px 1px rgba(150,150,150,0.8);  }
