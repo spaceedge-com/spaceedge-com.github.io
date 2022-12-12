@@ -12,14 +12,16 @@
 	
 /*   Multi-Search w/dropdown    */ 
 #searchterms {	
-	text-align: left; padding-left: 4px; border: 1px solid lightblue; border-radius: 3px;
+	text-align: left; padding-left: 4px;  margin: 0 auto;
+}
 }	
 input[type=search].searchterms {  
-	width: 50%; min-width: 280px; font-size:1.0em; color:#000; background-color: #fffa; margin-right: -101px;
-	padding: 0px; outline: none; -webkit-transition: width 0.4s ease-in-out; transition: width 0.4s ease-in-out;
+	width: 50%; min-width: 280px; display: flex; flex-direction: column;
+	font-size:1.0em; color: #000; background-color: #fffa; padding: 0px; outline: none;
+	-webkit-transition: width 0.4s ease-in-out; transition: width 0.4s ease-in-out;
 }
 input[type=search]:focus {
-	color: #000; width: 100%; background-color: #fff; border: none;
+	width: 100%;  background-color: #fff;  border: none;
 }
 input:focus::placeholder {  color: transparent;  
 }
