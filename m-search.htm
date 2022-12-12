@@ -12,7 +12,8 @@
 	
 /*   Multi-Search w/dropdown    */ 
 #searchterms {	
-	text-align: left; padding-left: 4px; padding-top: 0px; padding-bottom: 0px; margin: 0 auto;
+	text-align: left; padding-left: 4px; margin: 0 auto;
+	padding: .05rem .05rem; min-height: 1rem; font-size: 1em; border: none;
 }
 }	
 input[type=search].searchterms {  
@@ -27,16 +28,16 @@ input:focus::placeholder {  color: transparent;
 }
 
 #search_select {   	
-	color: #338; background-color: #effc; font-size: .89em; 
-	padding-left: 3px; padding-top: 0px; padding-bottom: 0px;
-	width: 72px; outline: none; border: 0; border-radius: 0; cursor: progress; 
+	color: #338; background-color: #effc; font-size: .89em;  cursor: progress;
+	padding-left: 3px; width: 72px; outline: none; border: 0; border: none;
+	padding: .05rem .05rem; min-height: 1rem; 
 }
 select { outline: none; border: hidden; border-style: none; border: none;  }   
 select::after { cursor: progress; }  	
 option { font-size:  1.0em;  }
 
 input[type="submit"].Go { /* ➤ &#10148; */
-    	width: 21px; font-weight: bold; font-size: large; cursor: pointer; 
+    	width: 20px; font-weight: bold; font-size: large; cursor: pointer; 
 	color: #369; padding-top: 0px; padding-bottom: 0; margin-left: -3px; 
 	appearance:none; -webkit-appearance: none; -moz-appearance: none; 
 	border: none; border-radius: 15px; background-color: #effc; 
