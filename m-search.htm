@@ -12,24 +12,24 @@
 	
 /*   Multi-Search w/dropdown    */ 
 #searchterms {	
-        min-width: 33%; background-color: #fefc; border: none; outline: none;
+        width: 50%; background-color: #fefc; border: none; outline: none;
 	margin: 0 auto; padding-left: 4px; padding: .05rem .05rem; min-height: 1rem; font-size: 1em; 
 }
 }	
 input[type=search].searchterms {  
-	min-width: 33%; text-align: center; display: flex; flex-direction: column;
+	width: 50%; text-align: center; display: flex; flex-direction: column;
 	font-size:1.0em; color: #000; background-color: #fefc; border: none; outline: none;
 	-webkit-transition: width 0.4s ease-in-out; transition: width 0.4s ease-in-out;
 }
 input[type=search]:focus {
-	  text-align: center;  background-color: #fff;  border: none; outline: none;
+	   text-align: center;  background-color: #fff;  border: none; outline: none;
 }
 input:focus::placeholder {  color: transparent;  
 }
-		/* Responsive - screen < 400px */
-		@media (max-width: 370px) { 
-					input[type=search]:focus {	width: 98%;  }
-		}
+/* Responsive - screen < 400px         */
+@media (max-width: 400px) { 
+				input[type=search]:focus {	width: 98%;  }
+}
 			
 #search_select {   	
 	color: #338; background-color: #effc; font-size: .89em;  cursor: progress;
