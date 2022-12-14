@@ -37,9 +37,21 @@ input[type=search]:focus {
 				input[type=search]:focus {	width: 98%;  }
 }
 	
-input::-webkit-input-placeholder { 	font-size: 42px; line-height: 7px; }
-input::-moz-placeholder { /* Mozilla Firefox 19+ */  font-size: 42px; line-height: 4px;  }
-input:focus::placeholder {  color: transparent;  }
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    line-height: 8px;color: red; font-size: 32pt; 
+}
+input::-moz-placeholder { /* Firefox 19+ */
+    line-height: 8px;color: red; font-size: 32pt; 
+}
+input:-moz-placeholder { /* Firefox 18- */
+    line-height: 8px;color: red; font-size: 32pt; 
+}	
+input::-ms-input-placeholder { /* IE 10+ */
+    line-height: 8px;color: red; font-size: 32pt; 
+}
+	
+input:focus::placeholder {  color: transparent;  
+	}
 	
 #search_select {   	
 	width: 72px; color: #338; background-color: #effc; font-size: .89em;  cursor: progress;
