@@ -31,17 +31,16 @@ input[type=search].searchterms {
 input[type=search]:focus {
 	 width: 50%; text-align: center;  background-color: #fff;  border: none; outline: none;
 }
-input::-webkit-input-placeholder { 
-	font-size: 44px; line-height: 7px;
-}
-input:focus::placeholder {  color: transparent;  
-}
 /* Responsive - screen < 600px         */
 @media screen and (max-width: 600px) { 
 				.search-form {  max-width: 100%;  }
 				input[type=search]:focus {	width: 98%;  }
 }
-			
+	
+input::-webkit-input-placeholder { 	font-size: 44px; line-height: 7px; }
+input::-moz-placeholder { /* Mozilla Firefox 19+ */  font-size: 44px; line-height: 7px;  }
+input:focus::placeholder {  color: transparent;  }
+	
 #search_select {   	
 	width: 72px; color: #338; background-color: #effc; font-size: .89em;  cursor: progress;
 	outline: none; border: 0; padding-left: 3px; padding: .05rem .05rem; min-height: 1rem; 
