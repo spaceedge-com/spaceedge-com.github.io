@@ -87,7 +87,7 @@ a {    color:skyblue;  }   a:link {   text-decoration: none;  }
 .blockquote p { font-family: Andale Mono, monospace; font-size: 1.03em; padding: 0.5em; line-height: 1.20em; } 
 .blockquote c { display: block; margin: 0 auto; padding: .1em 0 1em 2em; font-size: 0.90em; }
 
-hr {    border-top: 1px solid #faf; height: 1.5px; width: 50%; margin: 1em; 
+hr {    border-top: 1px solid #faf; margin: 1em; 
 	    box-shadow: 1px 2px 2px 1px rgba(150,120,150,0.2), 1px 2px 2px 1px rgba(150,150,150,0.8);  }
 
 img {   width: auto; min-width: auto; max-width:100%; height:auto; display:block;  }
