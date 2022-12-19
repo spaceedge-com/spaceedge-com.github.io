@@ -113,7 +113,7 @@ cite {  color:#FCA; font-size: 0.9em; color:#ccc; padding-top: .25em; padding-le
 .spc25 { height:25px; max-height:25px; margin:25px; padding:25px; }
 .spc35 { height:35px; max-height:35px; margin:35px; padding:35px; }
 .spc {   height:50px; max-height:50px; margin:50px; padding:50px; }
-
+.spc50 {   height:50px; max-height:50px; margin:50px; padding:50px; }
 
  /*  Columns Equal float next to each other  */
 .column { float:left; width:48.80%; min-width:380px; max-width:99%; height:1000px; 
