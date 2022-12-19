@@ -99,9 +99,13 @@ figure img, figcaption {  color:#aaa; text-align: center; min-width: 150px; font
 
 pre {   padding: 5%;  }	
 
-.dataobject {  max-width:100%; height:3000px; min-height:2500px; max-height:100%; 
-	       display: inline-block; margin-top: 3%; margin-bottom: 50px; padding-bottom: 50px; 
-	       overflow-x: hidden; overflow-y: hidden;  } 
+quote { display: block; font-size: 1.18rem; font-style: oblique; text-align: center; padding: .8em .8em 0 .2em; }
+cite {  color:#FCA; font-size: 0.9em; color:#ccc; padding-top: .25em; padding-left: 25%; padding-bottom: .7em; display: inline-block;  }
+.cr {   font-style: oblique; display: inline list-item; margin-left: 25px; padding-top: .5em; padding-bottom: 1em; }
+
+
+.dataobject {  max-width:100%; height:3000px; min-height:2500px; max-height:100%; display: inline-block; 
+	       margin-top: 3%; margin-bottom: 50px; padding-bottom: 50px; overflow-x: hidden; overflow-y: hidden;  } 
 
 .spc, .spc5, .spc15,  .spc25, .spc35 { position: relative; clear:both; float:inherit; }
 .spc5 {  height:5px; max-height:5px; margin:5px; padding:5px; }
@@ -127,7 +131,7 @@ pre {   padding: 5%;  }
 /* Responsive - screen < 800px - stack columns verticaly, instead of next to each other */
 @media (max-width: 800px) {  
 	 	    .column {  width:93%; min-width:90%; max-width:98%; margin-right: 5px; 
-	  		        }	
+	  		    }	
 		    #expand {  display: none;  }
 }
 	 
@@ -135,8 +139,7 @@ pre {   padding: 5%;  }
 /* Clicked focus expands columns width  tabindex="0"  */
 #column:focus { 
 		width: 97%; max-width: 100%; display: block; max-height: 100%; 
-		transition: width 1s; position: fixed; top: 5%; 
-		background-color:rgba(0,0,0,0.90); z-index: 9999; margin: 2%;
+		transition: width 1s; position: fixed; top: 5%; z-index: 9999; margin: 2%;
 }
 .column:hover { cursor: pointer; border:2px solid #66c; display:block; z-index:10; }	
 	
@@ -158,16 +161,12 @@ object { width:100%; height:100%; max-height:998px; clear:both; display:block; o
 /* .hid {  display: none; }     
 .column:active > .hid { display:block;  z-index:10; }  */
 /* .hid img { height:25px; min-width:25px; position: absolute; padding-left:42%; border:0;} */
-	
-/* CSS external loaded data objects doesn't apply there! */
-
 
 /*
-.feedsrss { margin: 0 auto; padding: 4px; width: 75%; max-width: 80%; height: 223px; display: flex; border: 0; border-radius: 5px;  } 
+.feedsrss { margin: 0 auto; padding: 4px; width: 75%; max-width: 80%; height: 223px; display: flex; border: 0; } 
 .feed-container { font-size: 14px;  margin: 5px; overflow: hidden; padding: 0; height: 200px; }
-img[src=""] {  display: none;  }
 .rssfeed_item_image  img, .rssfeed_item_image video { max-width: 100%; height: auto;  }
-.linkbutton {  background-color: rgba(50,50,50,0.5); color: cadetblue; max-width: 100%;  }
+img[src=""] {  display: none;  }
 */
 
 /*  Multi-Search Div  */
