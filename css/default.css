@@ -22,9 +22,9 @@
 /*   Firefox            */ 
 :root { scrollbar-color: rgba(100,120,255,0.9) rgba(0,0,0,0.5) !important;  scrollbar-width: thin !important;  }  
 /* Chrome, Edge, Safari */
-::-webkit-scrollbar {  height: 12px;  width: 5px;  background: #000;  }
-::-webkit-scrollbar-thumb {  background: #3938ff;  -webkit-border-radius: 1ex; -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);  }
-::-webkit-scrollbar-corner {  background: #000;  }
+::-webkit-scrollbar {  height: 12px;  width: 5px;  background: #faf;  }
+::-webkit-scrollbar-thumb {  background: #33a;  -webkit-border-radius: 1em; -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);  }
+::-webkit-scrollbar-corner {  background: #faf;  }
 
 /* CSS Rules           */
 :root {  /*  padding: top right bottom left;	--t25: rgba(0,0,0,0.25);  */  }
@@ -99,8 +99,9 @@ figure img, figcaption {  color:#aaa; text-align: center; min-width: 150px; font
 
 pre {   padding: 5%;  }	
 
-quote { display: block; font-size: 1.18rem; font-style: oblique; text-align: center; padding: .8em .8em 0 .2em; }
-cite {  color:#FCA; font-size: 0.9em; color:#ccc; padding-top: .25em; padding-left: 25%; padding-bottom: .7em; display: inline-block;  }
+verse { color: #FAA; display: block; font-size: 1.18rem; font-style: oblique; text-align: center; padding: .8em .8em 0 .2em; }
+quotings { display: block; font-size: 1.18rem; font-style: oblique; text-align: center; padding: .8em .8em 0 .2em; }
+cite {  font-size: 0.9em; color:#ccc; padding: .5em; text-align: center; display: inline-block; width: 99%; }
 .cr {   font-style: oblique; display: inline list-item; margin-left: 25px; padding-top: .5em; padding-bottom: 1em; }
 
 
