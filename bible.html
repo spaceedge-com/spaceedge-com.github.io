@@ -36,6 +36,14 @@
   } // ]]>
 </script>
 	
+<!-- loads external file -->	
+<script> 
+$(function(){
+  $("#navigation").load("navigation.htm"); 
+  $("#footer").load("footer.htm"); 
+});
+</script>
+	
 </head>
 <body id="body" class="body">
         
@@ -53,11 +61,12 @@
 <main>	
 			
 <div class="nav" align="center" style=""> 
-	<a style="padding: 3px;" href="//spaceedge.com">Home</a>
-	<a style="padding: 3px;" href="/blog.html">Blog</a>
+
+<div id="navigation"> </div>
+	
 </div>	
 	
-<br> <br> 			
+<br> 			
 	
 <div id="MultiSearch" align="center" style="margin:.05em; ">
     <object data="/m-search.htm" type="text/html" style=" min-width:60%"> </object>
