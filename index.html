@@ -20,6 +20,14 @@ object {
 }    
 		
 </style>
+
+	<!-- load header footer from external file -->	
+<script> 
+$(function(){
+  $("#navigation").load("navigation.htm"); 
+  $("#footer").load("footer.htm"); 
+});
+</script>
 	
 </head>
 <body id="body" class="body">
@@ -42,8 +50,9 @@ object {
 <main>	
 			
 <div class="nav" align="center" style=""> 
-	<a style="padding: 3px;" href="/blog.html">Blog</a>
-	<a style="padding: 3px;" href="/bible.html">Bible</a>
+
+<div id="navigation"> </div>
+	
 </div>	
 	<hr>
 	
