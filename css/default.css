@@ -77,8 +77,7 @@ p {    display: block; font-size: 1.0em; font-style: normal; font-weight: normal
     	font-size: 0.5rem; text-transform: uppercase; font-style: oblique; font-weight: bold; color: #eee; padding: 0.5em;  
 }
 
-.nav { 	margin: 0 auto; width: 50%; border: 1px solid #77a; 
-}
+.nav { 	margin: 0 auto; width: 50%; }
 
 a {    color:skyblue;  }   a:link {   text-decoration: none;  }
 
