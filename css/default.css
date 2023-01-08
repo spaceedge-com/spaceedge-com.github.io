@@ -60,8 +60,7 @@ p {    display: block; font-size: 1.0rem; font-style: normal; font-weight: norma
 }
 #logo {
     	background-image: url(/icons/SE_Logo.png);
-    	background-size: contain; background-repeat: no-repeat; 
-	width: 220px; height: 60px; margin: 0 auto; float: left;
+    	background-size: contain; background-repeat: no-repeat; width: 200px; height: 60px; margin: 0 auto; float: left;
 }
 .header .logo { 
 	font-size: 1.60rem; font-family: 'Sriracha', cursive; color: #fcf; text-decoration: none; 
