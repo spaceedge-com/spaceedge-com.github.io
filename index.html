@@ -21,13 +21,7 @@ object {
 		
 </style>
 
-<!-- loads external file -->	
-<script> 
-$(function(){
-  $("#navigation").load("navigation.htm"); 
-  //$("#footer").load("footer.htm"); 
-});
-</script>
+<!-- loads external file -->
 	
 </head>
 <body id="body" class="body">
@@ -47,7 +41,7 @@ $(function(){
 </header>
  			
 	<div class="nav" align="center" style="">  
-		<div id="navigation"> </div>
+		<embed type="text/html" src="/navigation.htm">
 	</div>	
 	
 <main>	
@@ -88,9 +82,9 @@ $(".body").toggleClass("dark");
 });
 </script>
 
-<footer class="footer" style="width: 100%;"> 
+<div class="footer" style=" "> 
 	<embed type="text/html" src="/foo.htm">
-</footer>
+</div>
 	
 </body>
 </html>
