@@ -66,8 +66,6 @@ p {    display: block; font-size: 1.0rem; font-style: normal; font-weight: norma
     	font-size: 0.5rem; text-transform: uppercase; font-style: oblique; font-weight: bold; color: #eee; padding: 0.5em;  
 }
 
-.nav { 	margin: 0 auto; width: 50%; }
-
 a {    color:skyblue;  }   a:link {   text-decoration: none;  }
 
 hr {    border-top: 1px solid #faf; margin: 1em; 
