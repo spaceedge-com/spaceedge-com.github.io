@@ -22,14 +22,6 @@ object {
 	.blog {		overflow-x:hidden; }	  .post { height:1000px; }
 	
 </style>
-
-<!-- load from external file -->	
-<script> 
-$(function(){
-  $("#navigation").load("navigation.htm"); 
-  $("#footer").load("footer.htm"); 
-});
-</script>
 	
 </head>
 <body id="body" class="body" style="min-height:100%; height:3500px; ">
@@ -46,12 +38,13 @@ $(function(){
 	<button class="btn btn-primary" id="toggleTheme" title="Flip Colors">
 		<img src="/icons/invert-selection1.png"/>
 	</button>	
-				
-	<div class="nav" align="center" style="">  
-		<div id="navigation"> </div>
-	</div>		
+	
 </header>
-  
+ 			
+	<div class="nav" align="center" style="height:3px;">  
+		<embed type="text/html" src="/navigation.htm">
+	</div>	
+	  
 <main>	
 	
 <div class="spc5"> <br> </div> 			
