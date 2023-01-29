@@ -19,7 +19,7 @@
 	border: 1px solid; border-radius: 12px; max-width: 75%; margin: 0 auto;         
 }
 #searchterms {	
-        width: 85%; background-color: #fef8; outline: none; min-height: 1rem; margin: 0; padding: .05rem .05rem;
+        width: 85%; background-color: #fef8; outline: none; min-height: 1rem; margin: 0; padding: .05rem;
 }
 input[type=search].searchterms {  
 	width: 100%; color: #000; background-color: #fefc; border: none; outline: none;
@@ -27,6 +27,26 @@ input[type=search].searchterms {
 input[type=search]:focus {
         background-color: #fff;  border: none; outline: none;
 }
+
+input[type=search]::-webkit-search-cancel-button { -webkit-appearance: searchfield-cancel-button; }
+ /* ::-webkit-input-placeholder { font-size: 18px; line-height: 7px; padding-top: 4px; }
+::-moz-placeholder { font-size: 18px; line-height: 7px; padding-top: 4px; } 
+input:-moz-placeholder { font-size: 18px; line-height: 7px; padding-top: 4px; }    */ 
+	
+input:focus::placeholder {  color: transparent;   }  
+	
+	
+#search_select {  width: 72px; color: #338; background-color: #effc; font-size: .89em; padding: .05rem; cursor: progress; } 
+	
+select { outline: none; border: hidden; border-style: none; border: none;  }   
+select::after { cursor: progress; }  	
+option { font-size:  1em;  }
+
+input[type="submit"].Go { /* ➤ &#10148; */
+    	width: 25px; color: #369; padding: .05rem; font-size: 1.1em; cursor: pointer;
+	border: none; border-radius: 15px; appearance:none; -webkit-appearance: none; -moz-appearance: none; 
+}
+
 /* Responsive - screen < 600px         */
 @media screen and (max-width: 600px) { 
 					.search-form {  max-width: 100%;  }
@@ -34,29 +54,6 @@ input[type=search]:focus {
 					input[type=search]:focus {  width: 96%;  }
 }
 
-input[type=search]::-webkit-search-cancel-button { -webkit-appearance: searchfield-cancel-button; }
-	
-/* ::-webkit-input-placeholder { font-size: 18px; line-height: 7px; padding-top: 4px; }
-::-moz-placeholder { font-size: 18px; line-height: 7px; padding-top: 4px; } 
-input:-moz-placeholder { font-size: 18px; line-height: 7px; padding-top: 4px; }  */
-	
-input:focus::placeholder {  color: transparent;   } /*     */ 
-	
-#search_select {   	
-	width: 72px; color: #338; background-color: #effc; font-size: .89em;  cursor: progress;
-	outline: none; border: 0; padding-left: 3px; padding: .05rem .05rem; min-height: 1rem; 
-}
-select { outline: none; border: hidden; border-style: none; border: none;  }   
-select::after { cursor: progress; }  	
-option { font-size:  1em;  }
-
-input[type="submit"].Go { /* ➤ &#10148; */
-    	width: 20px; margin-left: -3px; border: none; border-radius: 15px; cursor: pointer;
-	color: #369; background-color: #ccfb; padding: .05rem .05rem; min-height: 1rem; font-size: 1.2em;
-	appearance:none; -webkit-appearance: none; -moz-appearance: none; 
-}
-
-	
 .search-body h3, h4, h5 { color: #365;  margin: 1em; }
 
 </style>
