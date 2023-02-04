@@ -27,11 +27,12 @@ if (si === "yahoo") {  var seng = "https://search.yahoo.com/search?p=";  }
 var submit = seng + term;
 //alert ("Submit=" + submit);
 	
-window.open(submit);
+//window.open(submit);
 	
 // Opens _self doesn't work: window.location.href = submit; 
 // only in new_tab: window.open(submit);	
-//var vt = document.querySelector('input[name="test"]:checked').value;
-//if (vt === 'A') { window.location.href = submit; };
-//if (vt === 'C') { window.open(submit); };
+var vt = document.querySelector('input[name="test"]:checked').value;
+window.close();
+if (vt === 'A') { window.location.href = submit; };
+if (vt === 'C') { window.open(submit); };
 }
