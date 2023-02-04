@@ -25,11 +25,14 @@ if (si === "wolframalpha") {  var seng = "https://www.wolframalpha.com/input/?i=
 if (si === "yahoo") {  var seng = "https://search.yahoo.com/search?p=";  } 
 
 var submit = seng + term;
-//alert ("After selection (submit): " + submit);
-
-var vt = document.querySelector('input[name="test"]:checked').value;
-if (vt === 'A') { window.location.href = submit; };
-if (vt === 'C') { window.open(submit); };
+//alert ("Submit=" + submit);
 	
-// Opens _self: window.location.href = submit;  new_tab:  window.open(submit);
+window.open(submit);
+	
+// Opens _self doesn't work: window.location.href = submit; 
+// only in new_tab: window.open(submit);	
+//var vt = document.querySelector('input[name="test"]:checked').value;
+//if (vt === 'A') { window.location.href = submit; };
+//if (vt === 'C') { window.open(submit); };
+	
 }
