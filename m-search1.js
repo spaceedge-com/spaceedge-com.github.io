@@ -32,7 +32,7 @@ var submit = seng + term;
 // Opens _self doesn't work: window.location.href = submit; 
 // only in new_tab: window.open(submit);	
 var vt = document.querySelector('input[name="test"]:checked').value;
-window.close();
-if (vt === 'A') { window.location.href = submit; };
-if (vt === 'C') { window.open(submit); };
+
+if (vt === 'A') { window.close(); window.location.href = submit; };
+if (vt === 'C') { window.close(); window.open(submit); };
 }
