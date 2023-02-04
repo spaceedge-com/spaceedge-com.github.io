@@ -34,5 +34,4 @@ window.open(submit);
 //var vt = document.querySelector('input[name="test"]:checked').value;
 //if (vt === 'A') { window.location.href = submit; };
 //if (vt === 'C') { window.open(submit); };
-	
 }
