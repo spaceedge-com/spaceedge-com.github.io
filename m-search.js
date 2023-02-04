@@ -1,4 +1,4 @@
-//websearch.js
+//m-search.js
    $( 'option[value="#"]' ).prop( 'selected', 'selected' ); //jQuery reselect #
 	
 function dosearch() {
