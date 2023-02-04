@@ -71,16 +71,39 @@ embed {  	width: 100%;  }
 
 hr { border-top: 1px solid #faf; margin: 1em; box-shadow: 1px rgba(150,120,150,0.2), 1px rgba(150,150,150,0.8);  }
 
+/*  css Multi-Search w/dropdown  */ 
+#searchdiv {  display: block; text-align: center; margin:0 auto; width: auto; height: auto; border-radius: 5%; }
+.search-form {  border: 1px solid teal; border-radius: 12px; max-width: 75%; margin: 0 auto; padding: 3px;  }
+#searchterms {  width: 85%; outline: none; min-height: 1rem; margin: 0; padding: 5px;  }
+input[type=search].searchterms {  width: 100%; border: none; outline: none;  }
+input[type=search]:focus {  background-color: #fff;  border: none; outline: none;  }
+input[type=search]::-webkit-search-cancel-button { -webkit-appearance: searchfield-cancel-button;  }
+input:focus::placeholder {  color: transparent;   }  
+#search_select {  width:72px; color:#338; background-color:#effc; font-size:.89em; padding:5px; cursor:progress; } 
+select { outline: none; border-style: none; border: none;  }   select::after { cursor: progress;  }  	
+option { font-size:  1em;  }
+input[type="submit"].Go { /* ➤ &#10148; */
+    	width: 25px; color: #369; padding: .05rem; font-size: 1.2em; cursor: pointer; margin-top: 4px;
+		border: none; border-radius: 15px; appearance:none; -webkit-appearance: none; -moz-appearance: none; 
+}
+/* Responsive - screen < 600px         */
+@media screen and (max-width: 600px) { 
+					.search-form {  max-width: 100%;  }
+					#searchterms {  width: 90%;  }
+					input[type=search]:focus {  width: 93%;  }
+}
+.search-body h3, h4, h5, h6 { color: #365;  margin: 1em; }
+/*  end css Multi-Search w/dropdown    */
+
+.blockquote {   display: block; border-left: 5px solid #6c2; padding-left: 1px; margin: .15em;
+	       		background-color: rgba(210,210,100,0.70); max-width: 98%;  }
+.blockquote p { font-family: Andale Mono, monospace; font-size: 1.02rem;  font-style: oblique;
+				padding: 0.5em; line-height: 1.20em; margin: .25em; text-align: center;  } 
+.blockquote c { display: block;  text-align: center;  padding: .1em 0 1em 2em; font-size: 0.90rem; }
+
 img {  max-width: 100%; height: auto; display: block; margin: auto; }
 figure {  display: block; text-align: center; float: left; text-indent: 0; margin: 1.0em; padding: 0.5em; }
 figure img, figcaption {  color:#aaa; text-align: center; min-width: 150px; font-size: smaller; display: block; }
-
-
-.blockquote {  display: block; border-left: 5px solid #6c2; padding-left: 1px; margin: .15em;
-	       background-color: rgba(210,210,100,0.70); max-width: 98%;  }
-.blockquote p { font-family: Andale Mono, monospace; font-size: 1.02rem;  font-style: oblique;
-		padding: 0.5em; line-height: 1.20em; margin: .25em; text-align: center;  } 
-.blockquote c { display: block;  text-align: center;  padding: .1em 0 1em 2em; font-size: 0.90rem; }
 
 verse { color: #FAA; display: block; font-size: 1.18rem; font-style: oblique; text-align: center; padding: .8em .8em 0 .2em; }
 
