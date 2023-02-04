@@ -74,7 +74,50 @@ input[type="submit"].Go { /* ➤ &#10148; */
 	<hr>		
 	
 <div id="MultiSearch" align="center" style="margin:.05em;">
-	<embed type="text/html" src="/m-search.htm" style="">
+	<!-- <embed type="text/html" src="/m-search.htm" style=""> -->
+		<div id="searchdiv">
+   
+			<div class="search-body">
+					  <h4> <b>MultiSearch!</b> click to select down-pointing arrow. </h4>
+			
+			<!--  calls dosearch(); in external search .js file -->
+			<script src="m-search1.js" type="text/javascript"></script> 
+			    <div class="search-form">  
+					<form name="web_search_form" autocomplete="on" action="javascript:dosearch();">
+				   		<input type="search" name="searchterms" id="searchterms" class="searchterms" autocomplete="on" onfocus="this.setSelectionRange(0, 0)" placeholder="" />
+							<select name="search_engines" id="search_select" class="select" onfocus="return" onchange="return dosearch();">
+					  			<option selected="selected" value="github" hidden>Select..</option>	
+					  			<option value="ask">Ask</option>  
+					  			<option value="bing">Bing</option> 
+					  			<option value="dogpile">Dogpile</option>  
+					  			<option value="duckduckgo">Duckduckgo</option>
+					  			<option value="ecosia">Ecosia</option>  
+					  			<option value="github">GitHub</option> 
+					  			<option value="google">Google</option>    
+					  			<option value="lilo">Lilo</option>  
+					  			<option value="onelook">OneLook</option>
+					  			<option value="qwant">Qwant</option>  
+					  			<option value="stackexchange">Stack Exchange</option> 
+					 			<option value="stackoverflow">Stack Overflow</option>  
+					  			<option value="startpage">Startpage</option>	    
+					  			<option value="swisscows">Swisscows</option>  
+					  			<option value="wikipedia">Wikipedia</option>
+					  			<option value="wolframalpha">Wolframalpha</option>  
+					  			<option value="yahoo">Yahoo!</option>
+							</select>
+				   		<input type="submit" class="Go" name="SearchSubmit" value="&#10148;">	  
+					</form>
+				</div>
+					<h4>Selected search opens new tab!</h4>
+					<form id="test">
+						 <h4>Open Results:
+						 <label><input type="radio" name="test" value="A" checked> Here</label>
+						 <label><input type="radio" name="test" value="C"> New Tab</label></h4>
+					</form> 
+				 	<h5><i>"Caution! Search results, scams, spam, tracking, ads, etc.."</i></h5>
+			</div>	
+					
+		</div>
 </div>
 
 <div class="spc5"> <br> </div> 		
