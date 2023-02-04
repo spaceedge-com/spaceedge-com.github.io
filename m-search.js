@@ -29,10 +29,8 @@ var submit = seng + term;
 	
 //window.open(submit);
 	
-// Opens _self doesn't work: window.location.href = submit; 
-// only in new_tab: window.open(submit);	
+// Opens _self works w/window.close(); window.location.href = submit; 	
 var vt = document.querySelector('input[name="test"]:checked').value;
-
 if (vt === 'A') { window.close(); window.location.href = submit; };
 if (vt === 'C') { window.close(); window.open(submit); };
 }
