@@ -1,6 +1,4 @@
 /*      CSS  default.css     */ 
-<!-- Google Fonts -->
-<!-- <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel="stylesheet">-->
 <!-- FontAwesome CSS -->
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
 <!-- Bootstrap 4.3.1 CSS -->
@@ -16,7 +14,7 @@
 ::-webkit-scrollbar-thumb {  background: #33a;  -webkit-border-radius: 1em; -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);  }
 ::-webkit-scrollbar-corner {  background: #faf;  }
 
-/* CSS Rules           */
+/* CSS           */
 :root {  /*  padding: top right bottom left;	--t25: rgba(0,0,0,0.25);  */  }
 html {  
 	min-height: 100%; min-height: 100vh; text-shadow: 0 0 white; text-rendering: optimizeLegibility;
@@ -42,7 +40,7 @@ h6 {  font-size: 0.70rem;  margin: 2.33em 0 2.33em 0;  padding-left: 0.3em; }
 p {  display: block; font-size: 1.0rem; font-style: normal; font-weight: normal;  text-indent: 30px;
        line-height: 1.10em; margin: 1em 0 1em 0; padding-left: 0.30em; padding-right: .20em;  }
 	
-/* CSS for header */
+/* header CSS */
 .header {
 	width: 100%; padding: 0; top: 0; left: 0; position: relative; z-index: 1;
 	display: flex; justify-content: space-between; align-items: center; clear: both; 
@@ -67,7 +65,7 @@ p {  display: block; font-size: 1.0rem; font-style: normal; font-weight: normal;
 }
 a {    color:skyblue;  }   a:link {   text-decoration: none;  }
 
-embed {  	width: 100%;  }	
+embed {   width: 100%;  }	
 
 hr { border-top: 1px solid #faf; margin: 1em; box-shadow: 1px rgba(150,120,150,0.2), 1px rgba(150,150,150,0.8);  }
 
@@ -82,9 +80,8 @@ input:focus::placeholder {  color: transparent;   }
 #search_select {  width:72px; color:#338; background-color:#effc; font-size:.89em; padding:5px; cursor:progress; } 
 select { outline: none; border-style: none; border: none;  }   select::after { cursor: progress;  }  	
 option { font-size:  1em;  }
-input[type="submit"].Go { /* ➤ &#10148; */
-    	width: 25px; color: #369; padding: .05rem; font-size: 1.2em; cursor: pointer; margin-top: 4px;
-		border: none; border-radius: 15px; appearance:none; -webkit-appearance: none; -moz-appearance: none; 
+input[type="submit"].Go { /* ➤ &#10148;*/ width: 25px; color: #369; padding: .05rem; font-size: 1.2em; cursor: pointer; 
+		margin-top: 4px; border: none; border-radius: 15px; appearance:none; -webkit-appearance: none; -moz-appearance: none; 
 }
 /* Responsive screen<600px  */
 @media screen and (max-width: 600px) { 
@@ -111,7 +108,8 @@ cite {  font-size: 0.9rem; color:#ccc; padding: .5em; text-align: center; displa
 .small {  font-size: 85%;  font-style: italic;  }
 pre {  padding: 5%;  }	
 
-.spc5, .spc15,  .spc25, .spc35, .spc50, .spc75 { position: relative; clear:both; float:inherit; }
+.spc5, .spc15, .spc25, .spc35, .spc50, .spc75 { 
+		position: relative; clear:both; float:inherit; }
 .spc5 {  height:5px; max-height:5px; margin:5px; padding:5px; }
 .spc15 { height:15px; max-height:15px; margin:15px; padding:15px; }
 .spc25 { height:25px; max-height:25px; margin:25px; padding:25px; }
@@ -122,15 +120,11 @@ pre {  padding: 5%;  }
 
 /*  Multi-Search Div  */
 #MultiSearch { margin: 0 auto; padding: 10px; display: block; position: relative; width: 100%; height: 250px;
-	       text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidden;
+	       text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidden;	
 }
 
-/*  CSS */ 
 /* Flips Colors */
 .body {  background: #fff;	color: #000;  }
 .dark {  background: #000; color: #fff;  }
 #toggleTheme { padding: 0; min-width: 25px; border-radius: 0; border: 0; }
-#toggleTheme img {
-  	width: 25px; height: 26px; margin: 0; background-color: white;
-	border: none; transition: all ease-in-out 0.1s; cursor: pointer; 
-}
+#toggleTheme img { width: 25px; height: 26px; margin: 0; background-color: white; border:none; cursor: pointer; }
