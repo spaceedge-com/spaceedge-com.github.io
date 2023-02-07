@@ -81,9 +81,9 @@ input:focus::placeholder {  color: transparent;   }
 select { outline: none; border-radius: 15px;  }    
 select::after { cursor: progress; } 	
 option { font-size:  1em;  }
-input[type="submit"].Go { /* ➤ &#10148;*/ width: 25px; color: #369; padding: .05rem; font-size: 1.2em; cursor: pointer; 
-		margin-top: 4px; border: none; border-radius: 15px; appearance:none; -webkit-appearance: none; -moz-appearance: none; 
-}
+input[type="submit"].Go { /* ➤ &#10148; */
+    	width: 25px; font-size: 1.2em; color: #369; background-color: #effc; border-radius: 15px; cursor: pointer; 
+	padding: .05rem; margin-top: 4px; appearance:none; -webkit-appearance: none; -moz-appearance: none;  }
 /* Responsive screen<600px  */
 @media screen and (max-width: 600px) { 
 	.search-form {  max-width: 100%; }   #searchterms {  width: 90%; }    input[type=search]:focus {  width: 93%; }
