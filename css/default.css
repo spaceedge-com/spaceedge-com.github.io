@@ -80,7 +80,7 @@ input:focus::placeholder {  color: transparent;  }
 #search_select { width: 72px; color: #338; background-color: #effc; font-size: .89em; padding: 5px; border-radius: 15px;  } 
 select { outline: none; border-radius: 15px; }    select::after { cursor: progress; } 	option { font-size:  1em;  }
 input[type="submit"].Go { /* ➤ &#10148; */
-    	width: 25px; font-size: 1.2em; color: #369; background-color: #effc; border-radius: 15px; cursor: pointer; 
+    	width: 25px; font-size: 1.14em; color: #369; background-color: #effc; border-radius: 15px; cursor: pointer; 
 	padding: .05rem; margin-top: 4px; appearance:none; -webkit-appearance: none; -moz-appearance: none;  }
 /* Responsive screen<600px  */
 @media screen and (max-width: 600px) { 
