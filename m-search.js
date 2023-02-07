@@ -29,8 +29,8 @@ var submit = seng + term;
 	
 //window.open(submit);
 	
-// Opens _self works w/window.close(); window.location.href = submit; 	
+// Open sametab testing window.location = submit; 	
 var vt = document.querySelector('input[name="test"]:checked').value;
-if (vt === 'A') { window.close(); window.location.href = submit; };
-if (vt === 'C') { window.close(); window.open(submit); };
+if (vt === 'A') { window.location = submit; };
+if (vt === 'C') { window.open(submit); };
 }
