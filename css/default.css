@@ -63,7 +63,7 @@ p {  display: block; font-size: 1.0rem; font-style: normal; font-weight: normal;
 .intro p {
     	font-size: 0.5rem; text-transform: uppercase; font-style: oblique; font-weight: bold; color: #eee; padding: 0.5em;  
 }
-a {    color:skyblue;  }   a:link {   text-decoration: none;  }
+a {    color:blue;  }   a:link {   text-decoration: none;  }
 
 embed {   width: 100%;  }	
 
