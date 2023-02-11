@@ -90,7 +90,7 @@ input[type="submit"].Go { /* ➤ &#10148; */
 /*  End css Multi-Search w/dropdown    */
 
 .blockquote {   display: block; border-left: 5px solid #6c2; padding-left: 1px; margin: .15em; max-width: 98%;
-	       	background: linear-gradient(to bottom, rgba(216, 216, 116, 0.75) 0%, rgba(180, 180, 180, 0.5) 100%)
+	       	background: linear-gradient(to bottom, rgba(216, 216, 116, 0.75) 0%, rgba(80, 40, 80, 0.5) 100%)
 		/*  background-color: rgba(210,210,100,0.70); */  }
 .blockquote p { font-family: Andale Mono, monospace; font-size: 1.02rem;  font-style: oblique;
 				padding: 0.65em; line-height: 1.20em; margin: .25em; text-align: center;  } 
