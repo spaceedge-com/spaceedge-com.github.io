@@ -90,7 +90,8 @@ input[type="submit"].Go { /* ➤ &#10148; */
 	 /*  multisearch w/dropdown  */
 	.search-form {  max-width: 100%; }   #searchterms {  width: 90%; }    input[type=search]:focus {  width: 93%; }
 	
-	.blockquote {  max-width: 50% }	 .blockquote p, c { font-size: 0.90rem; }   .giphs { max-width: 95%; }
+	.blockquote {  max-width: 50% }	 .blockquote p { font-size: 50%; } .blockquote c { font-size: 50%; } 
+	.giphs { max-width: 95%; }
 }
 
 .ideas { max-width:100%; margin-top:10px; padding-left: 0.75em;  }
