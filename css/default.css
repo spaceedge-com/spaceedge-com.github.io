@@ -90,7 +90,7 @@ input[type="submit"].Go { /* ➤ &#10148; */
 	 /*  multisearch w/dropdown  */
 	.search-form {  max-width: 100%; }   #searchterms {  width: 90%; }    input[type=search]:focus {  width: 93%; }
 	
-	.blockquote {  max-width: 50% }		.giphs { max-width: 95%; }
+	.blockquote {  max-width: 50% }	 .blockquote p, c { font-size: 0.90rem; }   .giphs { max-width: 95%; }
 }
 
 .ideas { max-width:100%; margin-top:10px; padding-left: 0.75em;  }
@@ -114,8 +114,7 @@ cite {  font-size: 0.9rem; color:#ccc; padding: .5em; text-align: center; displa
 .small {  font-size: 85%;  font-style: italic;  }
 pre {  padding: 5%;  }	
 
-.spc5, .spc15, .spc25, .spc35, .spc50, .spc75 { 
-		position: relative; clear:both; float:inherit; }
+.spc5, .spc15, .spc25, .spc35, .spc50, .spc75 { position: relative; clear:both; float:inherit; }
 .spc5 {  height:5px; max-height:5px; margin:5px; padding:5px; }
 .spc15 { height:15px; max-height:15px; margin:15px; padding:15px; }
 .spc25 { height:25px; max-height:25px; margin:25px; padding:25px; }
