@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<title>Space Cams</title>
+<link rel="icon" href="/icons/favicon.jpg" type="image/jpeg">	
+<meta name="description" content="Freedom Search Space, Positive Conscience, Individual Rational Reason!" />
+<meta name="keywords" content="SpaceEdge, MultiSearch, MetaSearch, Freedom, Space, Positive, Spiritual, Individual, Rational, Reason" />
+<link rel="stylesheet" rel="prefetch" href="/css/default.css">	
+<!--    jQuery      --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>	
+
+<style>	 
+/*  padding: top right bottom left; */	
+	
+embed {  	width: 100%;  }	
+
+</style>
+	
+</head>
+<body id="body" class="body">
+        
+<header class="header"> 
+	<div><a href="https://spaceedge.com"><div id="logo" class="logo" style="  "></div></a></div>
+	
+	<div class="intro"><p>Freedom Space Positive Spiritual Conscience Individual Rational Reason!</p></div>
+
+	<button class="btn btn-primary" id="toggleTheme" title="Flip Colors"><img src="/icons/invert-selection1.png"/>
+	</button>
+</header>
+ 			
+<div class="" align="center" style="height:3px;">   
+	<embed type="text/html" src="/navigation.htm" style="margin:0;">
+</div>	
+	
+<main>	
+
+	<hr>		
+	
+<div id="MultiSearch" align="center" style="margin:.05em;">
+	<!-- <embed type="text/html" src="/m-search.htm" style=""> -->
+		<div id="searchdiv">
+			<div class="search-body">
+					  <h4> <b>MultiSearch!</b> click to select down-pointing arrow. </h4>
+			<!--  calls dosearch(); external .js file -->
+			<script src="m-search.js" type="text/javascript"></script> 
+			    <div class="search-form">  
+					<form name="web_search_form" autocomplete="on" action="javascript:dosearch();">
+				   		<input type="search" name="searchterms" id="searchterms" class="searchterms" autocomplete="on" onfocus="this.setSelectionRange(0, 0)" placeholder="" />
+							<select name="search_engines" id="search_select" class="select" onfocus="return" onchange="return dosearch();">
+					  			<option selected="selected" value="qwant" hidden>Select..</option>	
+					  			<option value="ask">Ask</option>  
+					  			<option value="bing">Bing</option> 
+					  			<option value="dogpile">Dogpile</option>  
+					  			<option value="duckduckgo">Duckduckgo</option>
+					  			<option value="ecosia">Ecosia</option>  
+					  			<option value="github">GitHub</option> 
+					  			<option value="google">Google</option>    
+					  			<option value="lilo">Lilo</option>  
+					  			<option value="onelook">OneLook</option>
+					  			<option value="qwant">Qwant</option>  
+					  			<option value="stackexchange">Stack Exchange</option> 
+					 			<option value="stackoverflow">Stack Overflow</option>  
+					  			<option value="startpage">Startpage</option>	    
+					  			<option value="swisscows">Swisscows</option>  
+					  			<option value="wikipedia">Wikipedia</option>
+					  			<option value="wolframalpha">Wolframalpha</option>  
+					  			<option value="yahoo">Yahoo!</option>
+							</select>
+				   		<input type="submit" class="Go" name="SearchSubmit" value="&#10148;">	  
+					</form>
+				</div>
+					<form id="test">
+						 <h5>Open Search:
+						 <label><input type="radio" name="test" value="A" checked> Here</label>
+						 <label><input type="radio" name="test" value="C"> New Tab</label></h5>
+					</form> 
+				 	<h6><i>"Caution! Search results, scam, spam, ads, spyware, tracking."</i></h6>
+			</div>			
+		</div>
+</div>
+
+  <div class="spc5">  </div> 	
+  
+  
+<div class="cams" style="width:88%; height:800px;">	
+  
+  <iframe width="720" height="405" src="https://www.youtube.com/embed/itdpuGHAcpg" title="Live High-Definition Views from the International Space Station (Official NASA Stream)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
+</div>
+
+</main>
+	
+
+<script>
+$("#toggleTheme").click(function(){
+$(".body").toggleClass("dark");
+});
+</script>
+
+<div class="foo" style=" "> 
+	<embed type="text/html" src="/foo.htm">
+</div>
+	
+</body>
+</html>
