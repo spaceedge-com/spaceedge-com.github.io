@@ -100,14 +100,14 @@ figure {  display: block; text-align: center; float: left; text-indent: 0; margi
 figure img, figcaption {  color:#aaa; text-align: center; min-width: 150px; font-size: smaller; display: block; }
 
 quotings { width: 90%; display: block; border-left: 5px solid #6c2; font-style: oblique;  
-	   margin-bottom: 10px; padding-left: 2px; padding-bottom: 2px; }
+	   margin-bottom: 2em;  padding-left: 2px; padding-bottom: 2px; }
 
 cite { display: block; width: 99%; font-size: 0.9rem; color:#ccc; margin-left: 50%; padding-top: .5em;  } 
 
 .cr { font-style: oblique; display: inline list-item; margin-left: 25%; padding-top: .75em; padding-bottom: 1em; }
 
-verse { color: #F77; display: block; font-size: 1.18rem; font-style: oblique; padding: .8em .8em 0 .2em; 
-	text-align: justify; line-height: 1.3; }
+verse { color: #F33; display: block; font-size: 1.0rem; font-style: oblique; text-align: justify; line-height: 1.3; 
+	margin-bottom:2em; padding: .8em .8em 0 .2em;  }
 
 .small {  font-size: 85%;  font-style: italic;  }
 pre {  padding: 5%;  }	
