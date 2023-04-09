@@ -99,9 +99,10 @@ img {  max-width: 100%; height: auto; display: block; margin: auto; }
 figure {  display: block; text-align: center; float: left; text-indent: 0; margin: 1.0em; padding: 0.5em; }
 figure img, figcaption {  color:#aaa; text-align: center; min-width: 150px; font-size: smaller; display: block; }
 
-quotings { width: 90%; display: block; border-left: 5px solid #6c2; margin-bottom: 5px; padding-left: 2px; padding-bottom: 2px; }
+quotings { width: 90%; display: block; border-left: 5px solid #6c2; font-style: oblique;  
+	   margin-bottom: 10px; padding-left: 2px; padding-bottom: 2px; }
 
-cite { font-size: 0.9rem; font-style: oblique; color:#ccc; width: 99%; margin-left: 50%; padding-top: .5em;  } 
+cite { display: block; width: 99%; font-size: 0.9rem; color:#ccc; margin-left: 50%; padding-top: .5em;  } 
 
 .cr { font-style: oblique; display: inline list-item; margin-left: 25%; padding-top: .75em; padding-bottom: 1em; }
 
