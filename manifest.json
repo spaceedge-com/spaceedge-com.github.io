@@ -2,10 +2,7 @@
   "name": "SpaceEdge",
   "short_name": "SE",  
   "description": "Freedom Search, Positive Conscience, Individual Rational Reason!",
-  "dir": "ltr",
   "display": "standalone",
-  "orientation": "any",
-  "scope": "https://spaceedge.com",
   "start_url": "/index.html",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
@@ -144,10 +141,4 @@
       "src": "ios/1024.png",
       "sizes": "1024x1024"
     }],
-  "shortcuts": [],
-  "lang": "en",
-  "display_override": [
-    "browser",
-    "fullscreen"
-  ]
 }
