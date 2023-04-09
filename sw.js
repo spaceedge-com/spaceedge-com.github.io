@@ -1,5 +1,4 @@
-
-var cacheName = 'spaceedge-pwa';
+var cacheName = 'spaceedge';
 var filesToCache = [
   '/',
   '/index.html',
