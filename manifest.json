@@ -6,7 +6,7 @@
   "display": "standalone",
   "orientation": "any",
   "scope": "https://spaceedge.com",
-  "start_url": "https://spaceedge.com/index.html",
+  "start_url": "/index.html",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "categories": [],
