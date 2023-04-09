@@ -93,7 +93,7 @@ input[type="submit"].Go { /* ➤ &#10148; */
 	       	background: radial-gradient(#fff, #eee 25%, #fef 75%); color: #004;  }
 .blockquote p { font-family: Andale Mono, monospace; font-size: 99%;  font-style: oblique;
 				padding: 0.65em; line-height: 1.20em; margin: .25em; text-align: center;  } 
-.blockquote c { display: block;  text-align: center;  padding: .1em 0 1em 2em; font-size: 90%; }
+.blockquote c { display: block;  text-align: center;  padding: .1em 0 1em 2em; font-size: 0.75rem; }
 
 img {  max-width: 100%; height: auto; display: block; margin: auto; }
 figure {  display: block; text-align: center; float: left; text-indent: 0; margin: 1.0em; padding: 0.5em; }
