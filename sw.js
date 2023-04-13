@@ -1,26 +1,41 @@
-var cacheName = 'spaceedge';
-var filesToCache = [
-  '/',
-  '/index.html',
-  '/css/default.css',
-  '/main.js'
-];
-
 /* Start the service worker and cache all of the app's content */
-self.addEventListener('install', function(e) {
-  e.waitUntil(
-    caches.open(cacheName).then(function(cache) {
-      return cache.addAll(filesToCache);
-    })
-  );
-  self.skipWaiting();
+const CACHE_NAME = 'cool-cache';
+
+// Add whichever assets you want to precache here:
+const PRECACHE_ASSETS = [
+    '/',
+    '/index.html',
+    '/css/default.css',
+    '/assets/',
+    '/src/'
+]
+
+// Listener for the install event - precaches our assets list on service worker install.
+self.addEventListener('install', event => {
+    event.waitUntil((async () => {
+        const cache = await caches.open(CACHE_NAME);
+        cache.addAll(PRECACHE_ASSETS);
+    })());
 });
 
-/* Serve cached content when offline */
-self.addEventListener('fetch', function(e) {
-  e.respondWith(
-    caches.match(e.request).then(function(response) {
-      return response || fetch(e.request);
-    })
-  );
+self.addEventListener('activate', event => {
+  event.waitUntil(clients.claim());
+});
+
+self.addEventListener('fetch', event => {
+  event.respondWith(async () => {
+      const cache = await caches.open(CACHE_NAME);
+
+      // match the request to our cache
+      const cachedResponse = await cache.match(event.request);
+
+      // check if we got a valid response
+      if (cachedResponse !== undefined) {
+          // Cache hit, return the resource
+          return cachedResponse;
+      } else {
+        // Otherwise, go to the network
+          return fetch(event.request)
+      };
+  });
 });
