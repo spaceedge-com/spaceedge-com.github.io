@@ -138,7 +138,12 @@ $(".body").toggleClass("dark");
 	<embed type="text/html" src="/foo.htm">
 </div>
 	
-	  <script src="/main.js"></script>
+		<!--  <script src="/main.js"></script> -->
+<script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+</script>
 	
 </body>
 </html>
