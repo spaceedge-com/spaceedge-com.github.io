@@ -16,3 +16,4 @@ const installApp = document.getElementById('installApp');
             }
         }
 });
+
