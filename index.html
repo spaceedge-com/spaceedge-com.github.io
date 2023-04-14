@@ -30,9 +30,7 @@ embed {  	width: 100%;
 .bloglx a {
     margin: 5px; padding: 5px; line-height: 2; color: #33f; display: inline list-item;
 }
-@media all and (display-mode: browser) {
-  #installBtn {display:none}
-}
+
 </style>
 	
 <!-- load from external files -->	
@@ -46,7 +44,6 @@ embed {  	width: 100%;
 	
 	<div class="intro"><p>Freedom Space Positive Spiritual Conscience Individual Rational Reason!</p></div>
 
-	<button id="installBtn" onclick="install();"> Install</button>
 	<button class="btn btn-primary" id="toggleTheme" title="Flip Colors"><img src="/icons/invert-selection1.png"/>
 	</button>
 </header>
@@ -143,11 +140,7 @@ $(".body").toggleClass("dark");
 	<embed type="text/html" src="/foo.htm">
 </div>
 	
-	
-<!-- install app .js -->
-<script src="/installapp.js"></script>
-	
-<!-- register service worker here  <script src="/main.js"></script> -->
+<!-- register service worker -->
 <script>navigator.serviceWorker.register('/sw.js')</script>
 	
 </body>
