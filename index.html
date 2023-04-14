@@ -30,9 +30,16 @@ embed {  	width: 100%;
 .bloglx a {
     margin: 5px; padding: 5px; line-height: 2; color: #33f; display: inline list-item;
 }
+@media all and (display-mode: standalone) {
+  #installbutton {display:none}
+}
 </style>
 
-<!-- loads external file -->
+<!-- install app .js -->
+<script type="text/javascript" src="/installapp.js"></script>	
+	
+<!-- load from external files -->	
+<!-- <script> $(function(){ //$("#header").load("header.htm"); //$("#footer").load("footer.htm"); }); </script> -->
 	
 </head>
 <body id="body" class="body">
@@ -42,6 +49,7 @@ embed {  	width: 100%;
 	
 	<div class="intro"><p>Freedom Space Positive Spiritual Conscience Individual Rational Reason!</p></div>
 
+	<button type=button id=installapp style='display:none'>Install</button> 
 	<button class="btn btn-primary" id="toggleTheme" title="Flip Colors"><img src="/icons/invert-selection1.png"/>
 	</button>
 </header>
