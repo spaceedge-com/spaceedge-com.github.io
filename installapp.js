@@ -13,6 +13,6 @@ function errorHandler(event) {
   console.log("error: " + event);
 }
 
-function instalar() {
+function install() {
   if (beforeInstallPrompt) beforeInstallPrompt.prompt();
 }
