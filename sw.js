@@ -1,5 +1,5 @@
 /* sw.js service worker  */
-var cacheName = 'spaceedge-cool-cache';
+var cacheName = 'spaceedge-cool-cache1';
 var filesToCache = [
   '/icons/',
   '/images/',
