@@ -34,9 +34,6 @@ embed {  	width: 100%;
   #installApp {display:none}
 }
 </style>
-
-<!-- install app .js -->
-<script type="text/javascript" src="/installapp.js"></script>	
 	
 <!-- load from external files -->	
 <!-- <script> $(function(){ //$("#header").load("header.htm"); //$("#footer").load("footer.htm"); }); </script> -->
@@ -146,10 +143,12 @@ $(".body").toggleClass("dark");
 	<embed type="text/html" src="/foo.htm">
 </div>
 	
-		<!--  <script src="/main.js"></script> -->
-	<script>
-   		 navigator.serviceWorker.register('/sw.js')
-	</script>
+	
+<!-- install app .js -->
+<script src="/installapp.js"></script>
+	
+<!-- register service worker here  <script src="/main.js"></script> -->
+<script>navigator.serviceWorker.register('/sw.js')</script>
 	
 </body>
 </html>
