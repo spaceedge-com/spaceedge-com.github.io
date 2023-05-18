@@ -87,7 +87,7 @@ input[type="submit"].Go { /* ➤ &#10148; */
 /*   **********   */
 
 
-.ideas { max-width:100%; margin-top:10px; padding-left: 0.75em;  }
+.ideas { display: block; max-width:100%; margin-top: 0.75em; padding-left: 0.75em; padding-top: .75em; padding-bottom: 1.2em;  }
 .giphs { padding: 1px; margin: 1px; max-width: 70%;  }
 
 .blockquote {   display: block; border-left: 5px solid #6c2; padding-left: 2px; margin: 1.15em; max-width: 60%;
