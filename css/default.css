@@ -87,7 +87,7 @@ input[type="submit"].Go { /* ➤ &#10148; */
 .giphs { padding: 1px; margin: 1px; max-width: 70%;  }
 
 .blockquote {   display: block; border-left: 5px solid #6c2; padding-left: 2px; margin: 1.15em; max-width: 60%;
-	       	background: radial-gradient(#fff, #eee 25%, #fef 75%); color: #004;  }
+	       	background: radial-gradient(#fff, #ff7 25%, #7ff 75%); color: #004;  }
 .blockquote p { font-family: Andale Mono, monospace; font-size: 99%;  font-style: oblique;
 				padding: 0.65em; line-height: 1.20em; margin: .25em; text-align: center;  } 
 .blockquote c { display: block;  text-align: center;  padding: .1em 0 1em 2em; font-size: 0.75rem; }
