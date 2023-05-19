@@ -28,7 +28,7 @@ embed {  	width: 100%;
 label {
     font: 1rem 'Sans';
 }
-input {
+input.tab {
   appearance: none;
 	
   border-radius: 50%;
@@ -40,7 +40,7 @@ input {
   position: relative;
   top: 4px;
 }
-input:checked {
+.tab input:checked {
   border: 3px solid black;
 }
 	
@@ -110,8 +110,8 @@ input:checked {
 					</form>
 	
 	<form id="test">			<h5>Search:
-			 <label><input type="radio" name="test" value="A" checked> This Tab</label>
-						 <label><input type="radio" name="test" value="C"> New Tab</label></h5>			</form> 
+			 <label><input type="radio" name="test" class="tab" value="A" checked> This Tab</label>
+						 <label><input type="radio" name="test" class="tab" value="C"> New Tab</label></h5>			</form> 
 				</div>
 				
 				 	<!-- <h6><i>"Warning! Search Engines results virus like, ads scams, spyware."</i></h6> -->
