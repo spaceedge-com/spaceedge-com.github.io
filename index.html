@@ -25,24 +25,18 @@
 embed {  	width: 100%;  
 }	
 
-input[type="radio"], label {
-    font: 1rem 'Sans';
-}
+input[type="radio"], label {   font: 1rem 'Sans';}
 input[type="radio"] {
   appearance: none;
 	
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #999;
+  border-radius: 50%; width: 10px; height: 10px; border: 2px solid #999;
   transition: 0.2s all linear;
-  margin-right: 5px;
-  position: relative;
-  top: 4px;
+  margin-right: 5px; position: relative; top: 4px;
 }
-input[type="radio"]:checked {
-  border: 3px solid black;
-}
+input[type="radio"]:checked { border: 3px solid black; }
+
+.blink_me { animation: blinker 1s linear infinite; }
+@keyframes blinker { 50% { opacity: 0; } }
 	
 </style>
 	
@@ -125,7 +119,9 @@ input[type="radio"]:checked {
 	<embed type="text/html" src="/feed-rss.htm">
 </div>
 	
-<div class="spc5"> <br> </div> 	
+<div class="spc5"> <div class="blink_me" style=" text-align:center" >
+		<h3> Standby Changes in Progress </h3>
+	</div> </div> 	
 	
 <!--   ideas  -->
 <div class=" ideas" align="left" style="  "> 
