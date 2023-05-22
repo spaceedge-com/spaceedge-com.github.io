@@ -24,7 +24,7 @@
 	
 embed {  	width: 100%;  }	
 
-input[type="radio"], label {   font: .69rem 'Sans';}
+input[type="radio"], label {   font: .69rem 'Sans';}  /*  custom radio buttons  */	
 input[type="radio"] {
   appearance: none;
 	
@@ -33,7 +33,9 @@ input[type="radio"] {
 }
 input[type="radio"]:checked { border: 3px solid black; }
 
-.blink_me { animation: blinker 3s linear infinite; }
+.feedsrss { position:relative; display:block; margin:86px auto; width:70%; height:65px; background:#fef4; border: .5px solid #bbb; }
+	
+.blink_me { animation: blinker 3s linear infinite; position:relative; text-align:center }
 @keyframes blinker { 50% { opacity: 0; } }
 	
 .newArt {
@@ -122,13 +124,13 @@ input[type="radio"]:checked { border: 3px solid black; }
 <div style="margin:5px; padding:5px;">	
 <img src="/images/IMG_2023-5-20-232059.jpeg" alt="" width="98%" min-width="200px"; max-width="100%"/>
 <span class="caps" style="">NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington</span> 
-<p>An image of Earth and Moon what it would look like approximately looking at it from the Sun orbit.</p>
+<p>An image of Earth and Moon what it would look like approximately looking from the Sun orbit.</p>
 </div>	
 </div> 		
 	
 	<hr>
 	
-<div class="blink_me" style="position:relative; text-align:center" >
+<div class="blink_me" style="" >
 <h4>Changes in Progress</h4>
 </div> 
 	<hr>
@@ -136,7 +138,7 @@ input[type="radio"]:checked { border: 3px solid black; }
 <div class="spc5"> <br> </div>
 	
 <!--    Rss   -->  
-<div class="feedsrss" style="position:relative; display:block; margin:86px auto; width:70%; height:65px; background:#fef4; border: .5px solid #bbb;">
+<div class="feedsrss" style="">
 	<embed type="text/html" src="/feed-rss.htm">
 </div>
 
