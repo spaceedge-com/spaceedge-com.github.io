@@ -136,8 +136,12 @@ pre {  padding: 5%;  }
 }
 
 /* Flips Colors */
-.body {  background: #fff; color: #000;  }
-.dark {  background: #000; color: #fff;  }
+.body {  background: #020002; color: #fff;  }
+.toggle {  background: #fcfffc; color: #000;  }
 #toggleTheme { margin: 5px; padding: 0; min-width: 25px; border-radius: 0; border: 0; }
 #toggleTheme img { width: 25px; height: 26px; padding: 0; background-color: white; border:none; cursor: pointer; }
+
+
+
+
 
