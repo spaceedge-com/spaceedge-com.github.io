@@ -104,7 +104,7 @@ quotings { width: 90%; display: block; border-left: 5px solid #6c2; font-style: 
 
 cite { display: block; width: 99%; font-size: 0.9rem; color:#ccc; margin-left: 50%; padding-top: .5em;  } 
 
-.cr { font-style: oblique; display: list-item; margin: 5px 0 5px 10px;
+.cr { font-style: oblique; display: block; margin: 5px 0 5px 10px;
 text-align: center; padding:5px;}
 
 verse { color: #F33; display: block; font-size: 1.0rem; font-style: oblique; text-align: justify; line-height: 1.3; 
