@@ -138,7 +138,8 @@ pre {  padding: 5%;  }
 /* Flips Colors */
 .body {  background: #020002; color: #fff;  }
 .toggle {  background: #fcfffc; color: #000;  
-    mix-blend-mode: difference;
+-webkit-filter: invert(100%); 
+filter: invert(100%);
 }
 #toggleTheme { margin: 5px; padding: 0; min-width: 25px; border-radius: 0; border: 0; }
 #toggleTheme img { width: 25px; height: 26px; padding: 0; background-color: white; border:none; cursor: pointer; }
