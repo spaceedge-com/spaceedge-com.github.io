@@ -26,7 +26,7 @@ font-family: Garamond, serif; min-height: 100%; width: 100%; position: absolute;
 	 overflow-x:hidden; overflow-y:auto;  }
 	
 h1, h2, h3, h4, h5, h6 {  
-	display: block; font-family: Garamond, serif; font-weight: bold; clear:both; line-height: 1.20em; }
+display: block; font-family: Garamond, serif; font-weight: bold; clear:both; line-height: 1.20em; }
 h1 {  font-size: 1.20rem;  margin: .27em 0 .67em 0; padding-left: 0.5em; }
 h2 {  font-size: 1.10rem;  margin: 0.83em 0 0.83em 0;  0dding-left: 0.7em; }
 h3 {  font-size: 1.0rem;  margin: 1em 0 1em 0;  padding-left: 0.7em; }
@@ -34,7 +34,7 @@ h4 {  font-size: 0.90rem;  margin: 1.33em 0 1.33em 0;  padding-left: 0.7em; }
 h5 {  font-size: 0.80rem;  margin: 1.67em 0 1.67em 0;  padding-left: 0.7em; }
 h6 {  font-size: 0.70rem;  margin: 2.33em 0 2.33em 0;  padding-left: 0.7em; }
 p {   display: block; font-size: 1.0rem; font-style: normal; font-weight: normal;  text-indent: 30px;
-       line-height: 1.10em; margin: 1em 0 1em 0; padding-left: 0.50em; padding-right: .20em;  }
+line-height: 1.10em; margin: 1em 0 1em 0; padding-left: 0.50em; padding-right: .20em;  }
 	
 /* header CSS */
 .header {
@@ -81,7 +81,7 @@ width: 25px; font-size: 1em; color: #369; background-color: #fdf; border-radius:
 .search-body h3, h4, h5, h6 {  margin: 1em; line-height: 1; }
 /*  Multi-Search Div  */
 #MultiSearch { margin: 0 auto; padding: 10px; display: block; position: relative; width: 100%; height: 150px; 
-	text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidden;	
+text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidden;	
 }
 /*   **********   */ 
 /* margin:top right bottom left; */
@@ -138,9 +138,6 @@ pre {  padding: 5%;  }
 /* Flips Colors */
 .body {  background: #020002; color: #fff;  }
 .toggle {  background: #fcfffc; color: #000;  }
-:not(img) { -webkit-filter: invert(100%); 
-filter: invert(100%);
-}
 #toggleTheme { margin: 5px; padding: 0; min-width: 25px; border-radius: 0; border: 0; }
 #toggleTheme img { width: 25px; height: 26px; padding: 0; background-color: white; border:none; cursor: pointer; }
 
