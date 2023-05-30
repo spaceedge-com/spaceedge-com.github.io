@@ -77,8 +77,7 @@ input:focus::placeholder {  color: transparent;  }
 #search_select { width: 88px; color: #000; background-color: #fff; font-size: 12px; border-radius: 15px;  } 
 select { outline: none; border-radius: 15px; }   select::after { cursor: progress; } 	option { font-size:  12px;  }
 input[type="submit"].Go { /* ➤ &#10148; */
-    	width: 25px; font-size: 1em; color: #369; background-color: #fdf; border-radius: 15px; cursor: pointer; 
-	padding: .05rem; margin-top: 4px; appearance:none; -webkit-appearance: none; -moz-appearance: none;  }
+width: 25px; font-size: 1em; color: #369; background-color: #fdf; border-radius: 15px; cursor: pointer; padding: .05rem; margin-top: 4px; appearance:none; -webkit-appearance: none; -moz-appearance: none;  }
 .search-body h3, h4, h5, h6 {  margin: 1em; line-height: 1; }
 /*  Multi-Search Div  */
 #MultiSearch { margin: 0 auto; padding: 10px; display: block; position: relative; width: 100%; height: 150px; 
@@ -98,18 +97,18 @@ input[type="submit"].Go { /* ➤ &#10148; */
 
 img {  max-width: 100%; height: auto; display: block; margin: auto; }
 figure {  display: block; text-align: center; float: left; text-indent: 0; margin: 1.0em; padding: 0.5em; }
-figure img, figcaption {  color:#aaa; text-align: center; min-width: 150px; font-size: smaller; display: block; }
+figure img, figcaption {  text-align: center; min-width: 150px; font-size: smaller; display: block; }
 
 quotings { width: 90%; display: block; border-left: 5px solid #6c2; font-style: oblique;  
-	   margin-bottom: 2em;  padding-left: 2px; padding-bottom: 2px; }
+margin-bottom: 2em;  padding-left: 2px; padding-bottom: 2px; }
 
-cite { display: block; width: 99%; font-size: 0.9rem; color:#ccc; margin-left: 50%; padding-top: .5em;  } 
+cite { display: block; width: 99%; font-size: 0.9rem; margin-left: 50%; padding-top: .5em;  } 
 
 .cr { font-style: oblique; display: block; margin: 5px 0 5px 10px;
 text-align: center; padding:5px;}
 
 verse { color: #F33; display: block; font-size: 1.0rem; font-style: oblique; text-align: justify; line-height: 1.3; 
-	margin-bottom:2em; padding: .8em .8em 0 .2em;  }
+margin-bottom:2em; padding: .8em .8em 0 .2em;  }
 
 .small {  font-size: 85%;  font-style: italic;  }
 pre {  padding: 5%;  }	
