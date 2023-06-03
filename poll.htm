@@ -9,7 +9,7 @@ function getVote(int) {
       document.getElementById("poll").innerHTML=this.responseText;
     }
   }
-  xmlhttp.open("GET","http://inf.infinityfreeapp.com/poll_vote.php?vote="+int,true);
+  xmlhttp.open("GET","/poll_vote.php?vote="+int,true);
   xmlhttp.send();
 }
 </script>
@@ -34,6 +34,13 @@ body { margin:2rem;
 Yes: <input type="radio" name="vote" value="0" onclick="getVote(this.value)"><br>
 No: <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
 </form>
+
+<div class="spc15" style=" "> <hr> </div> 
+
+<div class="poll" style="" >
+<iframe src="http://inf.infinityfreeapp.com/index.html" height="200px" width="50%" frameBorder="0"></iframe>
+</div>
+	
 </div>
 
 </body>
