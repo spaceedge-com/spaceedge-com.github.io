@@ -12,6 +12,9 @@
 </script>
 
 <script>
+$.get("http://inf.infinityfreeapp.com/ind.htm", function(data){
+    $("#div").html(data);
+});		
 </script>
 
 
@@ -22,6 +25,8 @@ body { margin:2rem;
 }
 
 </style>
+
+
 </head>
 <body>
 
@@ -30,7 +35,9 @@ body { margin:2rem;
 
 <div class="spc15" style=""> <hr><hr> </div> 
 
-<div class="poll" style="width:330px;height:700px;" >
+<div id="div" class="" style="width:330px;height:700px;">
+	
+</div>
 
 <div id="display" style="width: 100%;float: left; margin:0 auto;"></div>
 
@@ -43,7 +50,6 @@ function load_anotherpage() {
   load_anotherpage();
 </script>
 	
-</div>
 	
 
 <div class="spc15" style=" "> <hr><hr> </div> 
