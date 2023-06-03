@@ -7,7 +7,7 @@
 		
 <script> 
    $(function(){
-       $('#filename').load("http://inf.infinityfreeapp.com/ind.htm");
+       $('#nav').load("nav.htm");
    });
 </script>p
 
@@ -32,8 +32,16 @@ body { margin:2rem;
 
 <div class="poll" style="width:300px; height:500px;" >
 
-<div id="filename">
-</div>
+<div id="display" style="width: 100%;float: left;"></div>
+
+<script>
+function load_anotherpage() {
+    document.getElementById("display").innerHTML =
+      '<embed type="text/html" src="http://inf.infinityfreeapp.com/ind.htm/" width="100%" height="800" >';
+  }
+
+  load_anotherpage();
+</script>
 	
 </div>
 	
