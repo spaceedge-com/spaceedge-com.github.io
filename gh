@@ -1,0 +1,22 @@
+
+
+gh repo clone spaceedge-com/spaceedge-com.github.io
+
+git status
+
+git init
+
+#Option2 Push an existing repository from the command line
+> git remote add origin https://github.com/blu/demo.git
+> git push -u origin master
+
+git config user.name "spaceedge-com"
+git config user.email "mikeyjj@gmail.com"
+
+
+git add WorldEnglishBible/
+
+git commit -am "Upload to books/WorldEnglishBible"
+
+git push
+
