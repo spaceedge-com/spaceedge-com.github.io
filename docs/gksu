@@ -1,0 +1,12 @@
+
+#gksu for system 
+
+
+sudo edit /usr/bin/gksu
+
+add to file:
+
+/usr/bin/pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY HOME=$HOME PWD=$PWD $@
+
+
+sudo chmod +x /usr/bin/gksu

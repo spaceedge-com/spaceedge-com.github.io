@@ -1,0 +1,639 @@
+_HiStOrY_V2_
+print date('F jS, Y');
+print date('F jS, Y /n');
+print date('F jS, Y \n');
+print date('F jS, Y, \n');
+print date('F jS, Y, /n');
+print date('F jS, Y, '/n');
+print date('F jS, Y', '/n');
+print date('F jS, Y', '\n');
+print date('F jS, Y \n');
+print date('F jS, Y');
+print date('F jS, Y'); 
+print date('F jS, Y'); 
+print date('F jS, Y \n');
+print date('F jS, Y /n');
+print date('F jS, Y');
+print date('F jS, Y'); <br>
+print date('F jS, Y'); </br>
+print date('F jS, Y'); < br>
+print date('F jS, Y'); < br>;
+print date('F jS, Y') < br>;
+print date('F jS, Y'), < br>;
+print date('F jS, Y', < br>);
+print date('F jS, Y');
+print date('F jS, Y');
+phpinfo
+phpinfo;
+php-info
+phpinfo?
+?
+i
+help
+--help
+q
+?
+help
+--rf ?
+echo "Hello World\n"
+echo Hello World
+echo 'Hello World'
+echo "Hello World\n";
+echo "Hello";
+echo "Hello\n";
+echo "Hello World\n";
+print date('H:i:s');
+print date('i'\n);
+print date('i \n');
+print date('i' '\n');
+print date('i', '\n');
+print date('i'), ('\n');
+print date('i, \n');
+print date('i', '\n');
+print date('i'+ '\n');
+print date('i' + '\n');
+print date('i' + 1 );
+print date('i');
+print date('i'); echo min.;
+print date('i'); echo 'min.';
+print date('i'); echo 'min. \n';
+print date('i'); echo "min. \n";
+print date('i') + 2 ; echo " min. \n";
+print date('i') -10 ; echo " min. \n";
+$mmd = date('i') - 10 ;echo $mmd + " min. \n";
+$mmd = date('i') - 10 ; echo $mmd + " min. \n\n";
+$mmd = date('i') - 10 ; echo $mmd, " min. \n\n";
+$mmd = date('i') / 10 ; echo $mmd, " min. \n";
+$mmd = date('H') / 6 ; echo $mmd, " min. \n";
+$mmd = date('H') / 6 - 10 ; echo $mmd, " min. \n";
+$mmd = date('H') / 6 - 10 ; echo abs($mmd), " min. \n";
+$mmd = date('H') / 6 - 10 ; echo abs($mmd), " min. \n";
+$mmd = date('H') / 6.0 - 10 ; echo abs($mmd), " min. \n";
+$mmd = date('H') / 6.0 - 10 ; echo abs($mmd), " min. \n";
+$mmd = date('i') - 10 / 6.0 ; echo abs($mmd), " min. \n";
+date('i') 
+date('i');
+date('i');
+date("i");
+date("i");
+date("H");
+date('H:i');
+print date('H:i:s');
+$mmd = date('i') / 6.0 ; echo abs($mmd), " min. \n";
+$mmd = date('i') -10 / 6.0 ; echo abs($mmd), " min. \n";
+$mmd = date('i') - 10  ; echo abs($mmd), " min. \n";
+$mmd = date('i') - 60  ; echo abs($mmd), " min. \n";
+$mmd = date('i') - 60 / 60 ; echo abs($mmd), " min. \n";
+$mmd = date('i') - 60 / 60 ; echo $mmd, " min. \n";
+$mmd = (date('i') - 60) / 60 ; echo $mmd, " min. \n";
+$mmd = (date('i') - 50) / 60 ; echo $mmd, " min. \n";
+$mmd = (date('i') - 30) / 60 ; echo $mmd, " min. \n";
+$mmd = (date('i') - 30) / 60 ; echo $mmd, " min. \n";
+$mmd = (date('i') - 30) ; echo $mmd, " min. \n";
+$mmd = (date('i') - 40) ; echo $mmd, " min. \n";
+$mmd = (date('i') / 6) ; echo $mmd, " min. \n";
+$mmd = (date('i') / 60) ; echo $mmd, " min. \n";
+$mmd = (date('i') / 60) ; echo $mmd, " . \n";
+$mmd = (date('i') / 600) ; echo $mmd, " . \n";
+$mmd = (date('i') / 6) ; echo $mmd, " . \n";
+$mmd = (date('i') / 6) * 100 ; echo $mmd, " sec. \n";
+$mmd = (date('i') / 6) * 100 ; echo $mmd, " sec. \n";
+$mmd = (date('i') / 6 - 10) * 100 ; echo $mmd, " sec. \n";
+$mmd = abs(date('i') / 6 - 10) * 100 ; echo $mmd, " sec. \n";
+print 3 * 60
+print '3 * 60'
+print '3 * 60';
+print 3 * 60;
+print 2 * 60;
+$mmd = abs(date('i') / 6 - 10) * 100 ; echo $mmd, " sec. \n";
+$mmd = (date('i') / 6 - 10) * 100 ; echo $mmd, " sec. \n";
+$mmd = (date('i') / 6 ) * 100 ; echo $mmd, " sec. \n";
+print 10 * 60;
+$mmd = (date('i') / 5 ) * 100 ; echo $mmd, " sec. \n";
+$mmd = (date('i') * 100 / 6) ; echo $mmd, " sec. \n";
+$mmd = (date('i') * 100) / 6 ; echo $mmd, " sec. \n";
+$mmd = (date('i') - 10) / 6 ; echo $mmd, " sec. \n";
+$mmd = (date('i') - 10) ; echo $mmd, " sec. \n";
+$mmd = (date('i') / 600) ; echo $mmd, " sec. \n";
+$mmd = (date('i') / 600) * 60 ; echo $mmd, " sec. \n";
+$mmd = (date('i') * 60) / 600 ; echo $mmd, " sec. \n";
+$mmd = (date('i') * 60 - 10) / 600 ; echo $mmd, " sec. \n";
+$mmd = (date('i') * 60 + 10) / 600 ; echo $mmd, " sec. \n";
+$mmd = (date('i') / 60 + 10) * 600 ; echo $mmd, " sec. \n";
+$mmd = (date('i') / 60 + 10) ; echo $mmd, " sec. \n";
+$mmd = (date('i') / 600 + 10) ; echo $mmd, " sec. \n";
+$mmd = (date('i') / 600 ) ; echo $mmd, " sec. \n";
+$mmd = (date('i') / 600 ) ; echo $mmd, " sec. \n";
+$mmd = (date('i') / 600 ) -10 ; echo $mmd, " sec. \n";
+$mmd = (date('i') / 600 ) ; echo $mmd, " sec. \n";
+$mmd = (date('i') * 10 / 600 ) ; echo $mmd, " sec. \n";
+$mmd = (date('i') * 10 ) ; echo $mmd, " sec. \n";
+$mmd = (date('i') * 10 ) ; echo $mmd, " . \n";
+$mmd = (date('i') - 60 ) ; echo $mmd, " . \n";
+$mmd = (date('i') - 60 )/60 ; echo $mmd, " . \n";
+$mmd = (date('i') - 60 )/60 *100 ; echo $mmd, " . \n";
+$mmd = (date('i') - 60 )/60 *10 ; echo $mmd, " . \n";
+$mmd = (55 - 60 )/60 *10 ; echo $mmd, " . \n";
+$mmd = (date('i') - 60 )/60 *10 ; echo $mmd, " . \n";
+$mmd = (date('i') - 60 )/60  ; echo $mmd, " . \n";
+$mmd = (date('i') - 60 )  ; echo $mmd, " . \n";
+$mmd = (date('i') - 60 )/6  ; echo $mmd, " . \n";
+$mmd = (date('i') - 60 )/6  ; echo $mmd, " . \n";
+$mmd = (date('i') - 60 )  ; echo $mmd, " . \n";
+$mmd = (55 - 60 )  ; echo $mmd, " . \n";
+$mmd = (5 - 60 )  ; echo $mmd, " . \n";
+$mmd = (60 - 15)  ; echo $mmd, " . \n";
+$mmd = (60 * 60 )  ; echo $mmd, " . \n";
+$mmd = (60 * 60 ) / 6  ; echo $mmd, " . \n";
+$mmd = (10 * 60 ) / 6  ; echo $mmd, " . \n";
+$mmd = (date('i') ; echo $mmd, " . \n";
+$mmd = date('i') ; echo $mmd, " . \n";
+$mmd = date('i') * 60 ; echo $mmd, " . \n";
+$mmd = date('i') * 60 / 10 ; echo $mmd, " . \n";
+$mmd = date('i') * 60 / 60 ; echo $mmd, " . \n";
+$mmd = date('i') * 60 / 10 ; echo $mmd, " . \n";
+$mmd = date('i') * 60 ; echo $mmd, " . \n";
+$mmd = date('i') * 60 / 600 ; echo $mmd, " . \n";
+$mmd = date('i') * 60 / 100 ; echo $mmd, " . \n";
+$mmd = date('i') * 60 / 10 ; echo $mmd, " . \n";
+$mmd = date('i') * 60 ; echo $mmd, " . \n";
+$mmd = date('i') * 60 / 6 ; echo $mmd, " . \n";
+$mmd = (date('i') * 60 / 6)  ; echo $mmd, " . \n";
+$mmd = (2 * 60 / 6)  ; echo $mmd, " . \n";
+$mmd = (2 * 60 / 6) - 10  ; echo $mmd, " . \n";
+$mmd = (2 * 60 / 6) / 10  ; echo $mmd, " . \n";
+$mmd = (2 * 60 / 6) / 10 - 10 ; echo $mmd, " . \n";
+$mmd = (52 * 60 / 6) / 10 - 10 ; echo $mmd, " . \n";
+$mmd = (52 * 60 / 600) ; echo $mmd, " . \n";
+$mmd = (2 * 60 / 600) ; echo $mmd, " . \n";
+$mmd = (2 / 600) ; echo $mmd, " . \n";
+$mmd = (32 / 600) ; echo $mmd, " . \n";
+q
+$mmd = (date('i') * 60) ; echo $mmd, " . \n";
+echo $mmd
+echo $mmd;
+echo $mmd;
+digits.add($mmd);
+$mmi = (date('i') * 60) ; echo $mmi, " . \n";
+str = string($mmi)
+echo $mmi, " . \n";
+echo "$mmi . \n";
+r = $mmi(0) 
+echo "r . \n";
+echo r ;
+echo 'r' ;
+echo (r) ;
+echo ('r');
+echo ('$mmi');
+echo ($mmi);
+r = char($mmi)
+$r = char($mmi)
+echo ($r);
+echo ('$r');
+echo '$r';
+$mmistr = string($mmi)
+echo $mmistr;
+echo ($mmistr);
+echo ('$mmistr');
+echo '$mmistr';
+print $mmistr
+print $mmistr;
+print ('$mmistr');
+print ($mmistr);
+str($mmi)
+print ($mmi)
+print ($mmi);
+print ($mmi);
+print $mmi;
+$mmi.str(1)
+print $mmi;
+print ($mmi);
+$mmi.str(2)
+print ($mmi);
+print ($mmi);
+$mmi.str(0,1)
+print ($mmi);
+print ($mmi);
+echo 350 / 60;
+echo 320 / 60;
+echo 300 / 60;
+echo 280 / 60;
+7 * 60
+q
+-h
+-m
+#cli.prompt=hello world :>
+#cli.prompt=`echo date('H:i:s');` php > 
+echo date('H:i:s');
+echo date('H:i:s\n');
+echo date('H:i:s/n');
+echo date('H:i:s /n');
+echo date('H:i:s \n');
+echo date('H:i:s'+' \n');
+echo date('H:i:s'+'/n');
+fileperms /var/www/html/js.txt;
+fileperms /var/www/html/js.txt
+echo substr(sprintf('%o', fileperms('/var/www/html/js.txt')), -4);
+echo substr(sprintf('%o', fileperms('/var/www/html/')), -4);
+$now = getdate(time());
+echo $now
+echo $now;
+$now = getdate(time());
+echo $now;
+$now = getdate;
+$now = getdate;
+$now = getdate();
+echo $now;
+echo $now;
+$now = getdate();
+$now = getdate();
+echo $now;
+$now = getdate();
+$n = 3;
+echo $n;
+echo date
+echo date
+echo date;
+echo date;
+echo date;
+echo date();
+echo date();
+echo date(Y);
+echo date(Y);
+echo date('l, M. d, Y');
+$now = date('l, M. d, Y');
+echo $now;
+echo $now; echo;
+echo $now; echo ;
+echo $now; echo ' ';
+echo $now; echo " ";
+echo $now; echo " \n";
+echo date('l, m, d, Y');
+echo date('m, d, Y');
+echo date('m, d, y');
+echo date('m,d,y');
+echo date('m/d/y');
+echo date('m/d/Y');
+echo date('m,d,Y');
+echo date('mdY');
+echo date('l/m/d/Y');
+echo date('s/m/d/Y');
+echo date('ll/m/d/Y');
+echo date('d/m/d/Y');
+echo date('m/d/Y');
+echo time();
+echo date('m/d/Y, T');
+echo date('m/d/Y, H:M');
+echo date('m/d/Y, H:mm');
+echo date('m/d/Y, H:m');
+echo date('m/d/Y, F');
+echo date('m/d/Y, T');
+echo date('m/d/Y, H:m');
+echo date('m/d/Y, H:i');
+echo date('m/d/Y H:i');
+echo date('m/d/Y H:i:s');
+echo date('m/d/Y H:i');
+echo date('  m/d/Y H:i ');
+echo date('  m/d/Y H:i ');
+echo date('  m/d/Y H:i '+ ' \n');
+echo date('  m/d/Y H:i ' + '  ');
+echo date('  m/d/Y H:i ' + ',  ');
+echo date('  m/d/Y H:i ,  \n');
+echo date('  m/d/Y H:i ,  /n');
+echo date('  m/d/Y H:i , ' /n');
+echo date('  m/d/Y H:i ; ' /n');
+echo date('  m/d/Y H:i '; ' /n');
+echo date('  m/d/Y H:i ', ' /n');
+echo date('  m/d/Y H:i '+ ' /n');
+echo date('  m/d/Y H:i  /n');
+echo date('  m/d/Y H:i' + " /n");
+echo date('  m/d/Y H:i' + " /n");
+echo date('  m/d/Y H:i' + "  ");
+echo date('  m/d/Y H:i' , "  ");
+echo date('  m/d/Y H:i');
+echo date('  m/d/Y H:i ');
+$ns++ ; echo $ns;
+$ns++;
+echo $ns;
+echo $ns;
+echo $ns, '. ';
+$file = fopen("phpwrite.txt", "w");
+$now = date('  m/d/Y H:i:s ');
+fwrite($file_js, $now); 
+fwrite($file, $now);
+fwrite($file, $now, ', ');
+fwrite($file, $now);
+fwrite($file, $now, $_SERVER['HTTP_USER_AGENT');
+fwrite($file, $now + $_SERVER['HTTP_USER_AGENT');
+fwrite($file, "$now + $_SERVER['HTTP_USER_AGENT'");
+fwrite($file, "$now, $_SERVER['HTTP_USER_AGENT'");
+fwrite($file, "$now", "$_SERVER['HTTP_USER_AGENT'");
+fwrite($file, $_SERVER['HTTP_USER_AGENT');
+fwrite($file, $_SERVER['HTTP_USER_AGENT');
+fwrite($file, $now);
+fwrite($file, $_SERVER['HTTP_USER_AGENT'];
+$p = gethostbyaddr();
+$p = gethostbyaecho gethostname;ddr();
+echo gethostname;
+echo gethostname;
+$chkjs = date('  m/d/Y H:i:s ');
+echo $chkjs;
+$chkjs = date('  m/d/Y H:i:s +');
+echo $chkjs;
+$chkjs = date('  m/d/Y H:i:s + nojs');
+echo $chkjs;
+$chkjs = date('  m/d/Y H:i:s + "nojs"');
+echo $chkjs;
+$checkJS = 'nojs';
+echo $chkjs;
+echo $checkJS;
+echo $_SERVER['HTTP_USER_AGENT']; 
+echo $_SERVER['HTTP_USER_AGENT'];
+echo $_SERVER['null'];
+echo $_SERVER['NULL'];
+echo $_SERVER[''];
+echo $_SERVER[];
+echo $_SERVER['HTTP_USER_AGENT']??null
+echo $_SERVER['HTTP_USER_AGENT']
+echo $_SERVER['HTTP_USER_AGENT'];
+$ver = $_SERVER['HTTP_USER_AGENT'];
+$ver = $_SERVER['HTTP_USER_AGENT']
+echo $ver;
+echo get_browser();
+$ver = get_browser();
+$ver = get_browser();
+$ver = $_SERVER['HTTP_USER_AGENT'];
+$ver = $_SERVER['HTTP_USER_AGENT']
+echo $ver;
+echo $_SERVER['HTTP_USER_AGENT'];
+echo $_SERVER['HTTP_USER_AGENT']
+echo $_SERVER['HTTP_USER_AGENT']
+echo $_SERVER['USER_AGENT']
+echo $_SERVER['USER_AGENT'];
+echo $_SERVER['USER_AGENT'];
+echo $_SERVER['HTTP_USER_AGENT']
+echo $_SERVER['HTTP_USER_AGENT'];
+echo $get_browser(user_agent,return_array);
+$brws = get_browser(user_agent,return_array);
+$brws = get_browser(user_agent,return_array)
+echo $brws;
+echo $brws
+echo ' \n'
+echo 'hi \n';
+echo 'hi \n';
+echo 'hi /n';
+echo ' /n';
+echo ' \n';
+echo " \n";
+echo ". \n";
+$ver = $_SERVER['HTTP_USER_AGENT']
+echo $ver;
+$ver = $_POST
+echo $ver;
+echo $ver
+$ver = 100;
+$ver = 100
+echo $ver
+$ver = '100';
+$ver = '100'
+echo $ver
+$ver = "100"
+echo $ver
+$n = "100";
+$n = "100"
+echo $n
+echo $n;
+$n;
+$n="100"
+$n;
+$n
+$chkjs = date('  m/d/Y H:i:s + "nojs"');
+$dt = date('  m/d/Y H:i:s ');
+echo $dt;
+$dt = date('  m/d/Y H:i:s \n');
+echo $dt;
+$dt = date(" m/d/Y H:i:s \n");
+echo $dt;
+$content = file_get_contents( '/var/www/html/books/bibles/kjvtxt/John.txt' );
+echo $content;
+$content = file_get_contents( '/var/www/html/books/bibles/kjvtxt/John.txt' );
+preg_match_all(/light/, $content, $matches);
+preg_match_all('/light/', $content, $matches);
+print_r($matches);
+$content = file_get_contents( '../books/bibles/kjv_html/JHN01.htm' ); 
+$content = file_get_contents( '/var/www/html/books/bibles/kjv_html/JHN01.htm');
+preg_match_all('/light/', $content, $matches);
+print_r($matches);
+$content = file_get_contents( '/var/www/html/books/bibles/kjv_html/JHN01.htm');
+preg_match_all('/light/', $content, $matches);
+print_r($matches);
+$dt = date(" m/d/Y H:i:s \n");
+echo $dt;
+$dir = '/var/www/html/tmp';
+echo $dir;
+$file = 'rss_$site'.date('Y-m-d').'.txt';
+echo $file;
+$site=Apo;
+$site='Apo';
+echo $site;
+$file = 'rss_ . $site' . date('Y-m-d').'.txt';
+echo $file;
+$file = 'rss_ . "$site"' . date('Y-m-d').'.txt';
+echo $file;
+$file = 'rss_' . date('Y-m-d').'.txt';
+echo $file;
+echo $dir;
+$dir = '/var/www/html/tmp';
+echo $dir;
+$filename = $dir.'/'.$file;
+echo $filename;
+os.is_file($filename);
+is_file($filename);
+file_exists($filename);
+!is_file($filename);
+$filename = '$dir' . '/' . '$file';
+echo $filename;
+$filename = '$dir'.'/'.'$file';
+echo $filename;
+$filename = "$dir . '/' . $file";
+echo $filename;
+$filename = "$dir/$file";
+echo $filename;
+$filename = $dir.'/'.$file;
+echo $filename;
+$filename = $dir . '/' . $file;
+echo $filename;
+if(!is_file($filename)){ echo "File does not exist. Create $filename ";}
+if(is_file($filename)){ echo "File does not exist. Create $filename ";}
+touch($filename,0664);
+if(is_file($filename)){ echo "File does not exist. Create $filename ";}
+$rssfile = fopen('$filename', 'w') or die("Unable to open file!");
+echo $filename;
+$rssfile = fopen("$filename", "w") or die("Unable to open file!");
+echo $filename;
+if(!is_file($filename)){ echo "File does not exist. Create $filename ";}
+if(!is_file($filename)){ echo "File exist. $filename ";}
+if(is_file($filename)){ echo "File exist. $filename ";}
+echo "File doesn`t exist. Create $filename ";
+$rssfile = fopen("$filename", "w") or die("Unable to open file!");
+echo $rssfile;
+$read = @file_get_contents($rssfile);
+echo $read;
+fopen("$filename", "w") or die("Unable to open file!");
+file_put_contents("$filename", " $dir . \n", FILE_APPEND);
+file_put_contents("$filename", " $dir . $file \n", FILE_APPEND);
+echo $filename;
+$read = @file_get_contents($filename);
+echo $read;
+file_put_contents("$filename", " $dir \n . $file \n", FILE_APPEND);
+echo $read;
+$read = @file_get_contents($filename);
+echo $read;
+file_put_contents("$filename", " <h2>$dir</h2> \n <h3>$file</h3> \n", FILE_APPEND);
+$read = @file_get_contents($filename);
+echo $read;
+$link='www.ww.ww'
+echo $link;
+$link='www.ww.ww';
+echo $link;
+file_put_contents("$filename", " <h2>$dir</h2> \n <h3>$file</h3> \n <a href="$link"></a>  \n", FILE_APPEND);
+file_put_contents("$filename", " <h2>$dir</h2> \n <h3>$file</h3> \n <a href="$link"></a>  \n", FILE_APPEND);
+file_put_contents("$filename", " <h2>$dir</h2> \n <h3>$file</h3> \n '<a href="$link"></a>'  \n", FILE_APPEND);
+file_put_contents("$filename", " <h2>$dir</h2> \n <h3>$file</h3> \n <a href='"$link"'></a>  \n", FILE_APPEND);
+file_put_contents("$filename", " <h2>$dir</h2> \n <h3>$file</h3> \n <a href='$link'></a>  \n", FILE_APPEND);
+$read = @file_get_contents($filename);
+echo $read;
+echo $read;
+$srd = $_SERVER['DOCUMENT_ROOT'];
+echo $srd;
+help
+\help
+?
+/?
+\?
+/help
+if(is_file($filename)){ echo "File exist. $filename ";}
+echo ' \n';
+echo " \n";
+?
+help
+$cache_file = $_SERVER['DOCUMENT_ROOT'].'/tmp/cache/test.rss';
+help
+$cache_file=$_SERVER['DOCUMENT_ROOT'].'/tmp/cache/test.rss';
+$cache_file = '/var/www/html/tmp/cache/test.rss';
+if (!file_exists($cache_file) { echo "cache_file doesn't exist! \n"; }
+if (file_exists($cache_file) { echo "cache_file doesn't exist! \n"; }
+;
+echo $cache_file;
+if (file_exists($cache_file) { echo "cache_file doesn't exist! \n"; }
+;
+!file_exists($cache_file);
+$cache_file = '/var/www/html/tmp/cache/test.rss';
+!file_exists($cache_file);
+if (file_exists($cache_file)) echo "exists"; 
+if (!file_exists($cache_file)) echo "notexists";
+$cache_file = $_SERVER['DOCUMENT_ROOT'].'/tmp/cache/test.rss';
+if (!file_exists($cache_file)) echo "not-exists";
+$cache_file = '/var/www/html/tmp/cache/test.rss';
+echo $cache_file;
+file_exists($cache_file);
+file_exists($cache_file) echo 1;
+file_exists($cache_file) echo '1';
+if file_exists($cache_file) {echo '1';}
+file_exists($cache_file) {echo '1';}
+file_exists($cache_file) {echo '1'}
+if (file_exists($cache_file)) {echo '1'}
+if (file_exists($cache_file)) {echo '1';}
+if (!file_exists($cache_file)) { echo '1';}
+?
+echo $cache_file;
+ls
+bot='aabott';
+$bot='aabott';
+echo $bot;
+if (!file_exists($cache_file)) { echo '0';}
+$cache_file = '/var/www/html/tmp/cache/test.rss';
+echo $cache_file;
+if (!file_exists($cache_file)) { echo '0';}
+if (file_exists($cache_file)) { echo '1';}
+if (1>0) { echo '1';}
+if (0<1) { echo '0';}
+if ($bot='aabott') { echo 'a';}
+if ($bot='aabott') { echo $bot;}
+if ($bot='bott') { echo $bot;}
+if (0>1) { echo '1';}
+if (0=1) { echo '1';}
+if (0==1) { echo '1';}
+if (1==1) { echo '1';}
+if (1>=1) { echo '1';}
+if (1>=2) { echo '1';}
+if ($bot=='aabott') { echo $bot;}
+if ($bot== preg_match( '/^aabott') { echo $bot;}
+if ($bot==preg_match( '/^aabott') { echo $bot;}
+if ($bot=preg_match( '/^aabott') { echo $bot;}
+if (preg_match('aabott'=$bot) { echo $bot;}
+;
+if (0<1) { echo '0';}
+if ($bot==([^/\.]+)/bot.([^/\.]+).nr/([^/\.]+)) { echo it works; }
+if ($bot==([^bot*])) { echo it works; }
+if ($bot==('^bot*') { echo it works; }
+;
+if ($bot==('*bot*') { echo it works; }
+;
+if ($bot=='*bot*') { echo it works; }
+if ($bot== 'bot*') { echo it works; }
+if ($bot== '$bot*') { echo it works; }
+if ($bot == '$bot') { echo it works; }
+if ($bot == $bot) { echo it works; }
+if ($bot == '$bot') { echo it works; }
+if ($bot == '$bot') { echo 'it works'; }
+echo $bot
+$bot='aaabottt';
+echo $bot;
+$bot='aaabottt';
+echo $bot;
+if ($bot == '$bot') { echo 'it works'; }
+if ($bot == '$bot*') { echo 'it works'; }
+if ($bot == 'bot*') { echo 'it works'; }
+if ($bot == '*bot*') { echo 'it works'; }
+if ($bot==([^/\.]+)/bot.([^/\.]+).nr/([^/\.]+)) { echo it works; }
+if ($bot == 'bot*') { echo 'it works'; }
+if ($bot == '^bot*') { echo 'it works'; }
+if ($bot == '^/bot*') { echo 'it works'; }
+if ($bot == 'aaabottt') { echo 'it works'; }
+if ($bot == 'aaabot*') { echo 'it works'; }
+if ($bot == 'aaabot.([^/\.]+') { echo 'it works'; }
+if ($bot == 'aaabot.([^/\.]*') { echo 'it works'; }
+if ($bot == 'aaabot.[^/\.]*') { echo 'it works'; }
+if ($bot == 'aaabot.*') { echo 'it works'; }
+if ($bot == 'aaabot/*') { echo 'it works'; }
+$input = "Red";
+echo $input;
+if (preg_grep("/^p/i", $input);) { echo $input; }
+if (preg_grep("/^p/i", $input)) { echo $input; }
+$result = preg_grep("/^p/i", $input);
+$result = preg_grep('/^p/i', $input);
+$result=preg_grep($input);
+$result=$input;
+$result=preg_grep($input);
+$result=preg_grep($input, $input);
+$result=preg_grep($input, "/^p/i");
+$result=preg_grep("red",$input);
+$str = "The rain in SPAIN falls mainly on the plains.";
+$pattern = "/ain/i";
+if(preg_match_all($pattern, $str, $matches)) { print_r($matches);}
+if(preg_match_all($pattern, $str, $matches)) { print_r($str);}
+if(preg_match_all($pattern, $str, $matches)) { print_r($pattern);}
+if(preg_match_all("/ain/i", $str, $matches)) { print_r($matches);}
+if(preg_match_all("/all/i", $str, $matches)) { print_r($matches);}
+if(preg_match_all("/all/i", $str, $matches)) { echo 1;}
+if(preg_match_all("/all/i", $str)) { echo 1;}
+if(preg_match_all("/bot/i", $str)) { echo 1;}
+if(preg_match_all("/bot/i", $bot)) { echo 1;}
+if(preg_match("/bot/i", $bot)) { echo 1;}
+echo $bot;
+echo $cache_file;
+$cache_file = '/var/www/html/tmp/cache/test.rss';
+echo $cache_file;
+if (!file_exists($cache_file)) { echo '0';}
+if (file_exists($cache_file)) { echo '1';}
