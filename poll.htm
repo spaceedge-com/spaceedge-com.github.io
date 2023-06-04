@@ -12,9 +12,9 @@
 </script>
 
 <script>
-$.get("http://inf.infinityfreeapp.com/ind.htm", function(data){
-    $("#div").html(data);
-});		
+//$.get("inf.infinityfreeapp.com/ind.htm", function(data){
+   // $("#div").html(data);
+//});		
 </script>
 
 
@@ -33,21 +33,21 @@ body { margin:2rem;
 <div class="spc15" style=""> <hr><hr> </div> 
 
 <div id="div" class="" style="width:330px;height:330px;">
-	
+<div class="" align="center" style="">  
+<embed type="text/html" src="http://inf.infinityfreeapp.com/ind.htm" style="margin:0;">
+</div>	
 </div>
 <br>
 
 <div class="spc15" style=""> <hr><hr> </div> 
 	
 <div id="display" style="width: 100%;float: left; margin:0 auto;"></div>
-
 <script>
-function load_anotherpage() {
-    document.getElementById("display").innerHTML =
-      '<embed type="text/html" src="http://inf.infinityfreeapp.com/ind.htm/" width="100%" height="800" >';
-  }
+//function load_anotherpage() {
+//document.getElementById("display")//.innerHTML = '<embed type="text/html" //src="http://inf.infinityfreeapp.com/ind.htm/" width="100%" height="800" >';
+//  }
 
-  load_anotherpage();
+//  load_anotherpage();
 </script>
 	
 	
