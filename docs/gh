@@ -1,0 +1,20 @@
+
+gh repo clone spacee**************.github.io
+
+git status
+
+git init
+
+#Push to existing repository from the command line
+> git remote add origin https://github.com/blu/demo.git
+> git push -u origin master
+
+git config user.name "sp*******om"
+git config user.email "em@em.com"
+
+
+git add Folder/
+
+git commit -am "Upload"
+
+git push
