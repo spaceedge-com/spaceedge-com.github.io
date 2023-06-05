@@ -20,22 +20,22 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>	
 
 <style>	 
-/*  padding: top right bottom left; */	
-	
+/*padding:top right bottom left;*/		
 embed {  	width: 100%;  }	
 
 input[type="radio"], label { font: .69rem 'Sans'; background-color: #fff6;}  /*  custom radio buttons  */	
 input[type="radio"] {
   appearance: none;
 	
-border-radius: 50%; width: 10px; height: 10px; border: 2px solid #999;
-  transition: 0.2s all linear; margin-right: 2px; position: relative; top: 2px;
+border-radius: 50%; width: 10px; height:10px; border:2px solid #999;
+margin-right: 2px; position: relative; top: 2px;
 }
 input[type="radio"]:checked { border: 3px solid black; }
 
 .feedsrss { position:relative; display:block; margin:86px auto; width:70%; height:65px; background:#fef4; border: .5px solid #bbb; }
 	
-.blink_me { animation: blinker 3s linear infinite; position:relative; text-align:center }
+.blink_me { animation: blinker 3s linear infinite; position:relative; text-align:center; 
+transition: 0.2s all linear;  }
 @keyframes blinker { 50% { opacity: 0; } }
 	
 .newArt {
@@ -53,15 +53,16 @@ margin:15px auto; padding:0; width:80%; min-width:300px; max-width:90%; height:8
 <body id="body" class="body">
         
 <header class="header"> 
-<div><a href="https://spaceedge.com"><div id="logo" class="logo" style="  "></div></a></div>
+<div><a href="https://spaceedge.com"><div id="logo" class="logo" style=" "></div></a></div>
 	
-<div class="intro"><p>Freedom Space Positive Spiritual Conscience Individual Rational Reason!</p></div>
+<div class="intro">
+<p>Freedom Space Positive Spiritual Conscience Individual Rational Reason!</p></div>
 
-<button class="btn btn-primary" id="toggleTheme" title="Flip Colors"><img src="/icons/invert-selection1.png"/>
+<button class="btn btn-primary" id="toggleTheme" title="Switch theme"><img src="/icons/invert-selection1.png"/>
 </button>
 </header>
  			
-<!--  <div class="" align="center" style="height:3px;">  
+<!-- <div class="" align="center" style="height:3px;">  
 <embed type="text/html" src="/navigation.htm" style="margin:0;">
 </div>	-->
 	
@@ -87,31 +88,28 @@ margin:15px auto; padding:0; width:80%; min-width:300px; max-width:90%; height:8
 			<input type="search" name="searchterms" id="searchterms" class="searchterms" autocomplete="on" onfocus="this.setSelectionRange(0, 0)" placeholder="Enter terms click arrow to select." />
 			<select name="search_engines" id="search_select" class="select" onfocus="return" onchange="return dosearch();">
 					  			<option selected="selected" value="duckduckgo" hidden>Select..</option>	
-					  			<option value="ask">Ask</option>  
-					  			<option value="bing">Bing</option> 
-					  			<option value="dogpile">Dogpile</option>  
-					  			<option value="duckduckgo">Duckduckgo</option>
-					  			<option value="ecosia">Ecosia</option>  
-					  			<option value="github">GitHub</option> 
-					  			<option value="google">Google</option>    
-					  			<option value="lilo">Lilo</option>  
-					  			<option value="onelook">OneLook</option>
-					  			<option value="qwant">Qwant</option>  
-					  			<option value="stackexchange">Stack Exchange</option> 
-					 			<option value="stackoverflow">Stack Overflow</option>  
-					  			<option value="startpage">Startpage</option>	    
-					  			<option value="swisscows">Swisscows</option>  
-					  			<option value="wikipedia">Wikipedia</option>
-					  			<option value="wolframalpha">Wolframalpha</option>  
-					  			<option value="yahoo">Yahoo!</option>
-			</select>
-			<input type="submit" class="Go" name="SearchSubmit" value="&#10148;">	  
-			</form>
+<option value="ask">Ask</option> <option value="bing">Bing</option> 
+<option value="dogpile">Dogpile</option>  
+<option value="duckduckgo">Duckduckgo</option>
+<option value="ecosia">Ecosia</option>  
+<option value="github">GitHub</option> 
+<option value="google">Google</option>    
+<option value="lilo">Lilo</option> <option value="onelook">OneLook</option>
+<option value="qwant">Qwant</option>  
+<option value="stackexchange">Stack Exchange</option> 
+<option value="stackoverflow">Stack Overflow</option>  
+<option value="startpage">Startpage</option>	    
+<option value="swisscows">Swisscows</option>  
+<option value="wikipedia">Wikipedia</option>
+<option value="wolframalpha">Wolframalpha</option>  
+<option value="yahoo">Yahoo!</option>
+</select>
+<input type="submit" class="Go" name="SearchSubmit" value="&#10148;">	  
+</form>
 	
-<form id="test">			
-	<h5>Search:
-	<label><input type="radio" name="test" class="tab" value="A" checked> This Tab</label>
-	<label><input type="radio" name="test" class="tab" value="C"> New Tab</label></h5>		
+<form id="test">		<h5>Search:
+<label><input type="radio" name="test" class="tab" value="A" checked> This Tab</label>
+<label><input type="radio" name="test" class="tab" value="C"> New Tab</label></h5>		
 </form> 
 </div>
 				
@@ -119,7 +117,7 @@ margin:15px auto; padding:0; width:80%; min-width:300px; max-width:90%; height:8
 </div>
 </div>
 	
-	<hr>
+<hr>
 <div class="newArt" style="">
 <h1>How Planet Earth Appears from the Sun</h1>
 
@@ -143,7 +141,7 @@ margin:15px auto; padding:0; width:80%; min-width:300px; max-width:90%; height:8
 	<br>
 <div class="newArt" style="">
 
-<h1>Fleece Scams Monopolize Control  Prices</h1>
+<h1>Fleece Scamers Monopolize Control Prices</h1>
 	
 <span class="cr"><a href="mailto:zac@spaceedge.com">Zac©SpaceEdge.com</a> </span>	
 	
