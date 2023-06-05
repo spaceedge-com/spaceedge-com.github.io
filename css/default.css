@@ -92,6 +92,7 @@ text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidd
 }
 .blockquote p { font-family: Andale Mono, monospace; color:#fcf; font-size: 90%; font-style: oblique; padding: 0.65em; line-height: 1.20em; margin: .25em; text-align: center;  } 
 .blockquote c { display: block; color:#fcf; text-align: center; padding: .1em 0 1em 2em; font-size: 0.85rem; }
+.blockquote a { color:#fcf; }
 
 .giphs { padding: 1px; margin: 1px; max-width: 70%;  }
 
