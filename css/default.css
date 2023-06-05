@@ -91,7 +91,7 @@ text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidd
 .blockquote {   display: block; border-left: 5px solid #62c; padding-left: 2px; margin: 1.18em 0 0.5em .5em; max-width: 60%;	background: radial-gradient(#333, #f37 25%, #37f 60%); 
 }
 .blockquote p { font-family: Andale Mono, monospace; font-size: 99%; font-style: oblique; padding: 0.65em; line-height: 1.20em; margin: .25em; text-align: center;  } 
-.blockquote c { display: block;  text-align: center;  padding: .1em 0 1em 2em; font-size: 0.75rem; }
+.blockquote c { display: block;  text-align: center; padding: .1em 0 1em 2em; font-size: 0.85rem; }
 
 .giphs { padding: 1px; margin: 1px; max-width: 70%;  }
 
@@ -125,19 +125,19 @@ pre {  padding: 5%;  }
 /* Responsive screen 601px or wider */
 @media screen and (min-width: 601px) {	 
  	 /* blockquote */
-	 .blockquote { max-width: 70% }   .blockquote p { font-size: 100%; } .blockquote c { font-size: 0.75rem; } 
+	 .blockquote { max-width: 70% }   .blockquote p { font-size: 100%; } .blockquote c { font-size: 0.85rem; } 
 }
 /* Responsive screen 600px or less */
 @media screen and (max-width: 600px) {
 	.intro p { font-size: 0.55rem;  }
-	 /*  multisearch */  .search-form { max-width: 100%; }   #searchterms {  width: 90%; }   input[type=search]:focus { width: 93%; }
-	 /*  blockquote  */  .blockquote { max-width: 60% }  .blockquote p { font-size: 75%; } .blockquote c { font-size: 55%; } 
-.giphs { max-width: 80%; }
+	 /*  multisearch */  .search-form { max-width: 100%; }  #searchterms {  width: 90%; }   input[type=search]:focus { width: 93%; }
+	 /*  blockquote  */  .blockquote { max-width: 66% }  .blockquote p { font-size: 80%; }  .blockquote c { font-size: 75%; } 
+ .giphs { max-width: 80%; }
 }
 
 /* Flips Colors */
-.body {  background: #020002; color: #fff;  }
-.toggle {  background: #fcfffc; color: #000;  }
+.body {  background: #606; color: #fcf;  }
+.toggle {  background: #fcf; color: #606;  }
 #toggleTheme { margin: 5px; padding: 0; min-width: 25px; border-radius: 0; border: 0; }
 #toggleTheme img { width: 25px; height: 26px; padding: 0; background-color: white; border:none; cursor: pointer; }
 
