@@ -89,6 +89,12 @@ text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidd
 .ideas { display: block; max-width:100%; margin-top: 0.75em; padding-left: 0.75em; padding-top: .75em; padding-bottom: 1.2em;  }
 
 .blockquote {  display: block; border-left: 5px solid #62c; padding-left: 2px; margin: 1.18em 0 0.5em .5em; max-width: 60%;	background: radial-gradient(#36f, #f36 25%, #369 60%); 
+animation-name: example;
+animation-duration: 4s;
+}
+@keyframes example {
+  from {background: radial-gradient(#36f, #f36 25%,#369 60%);}
+  to {background: radial-gradient(#f36, #36f 25%,#963 60%);}
 }
 .blockquote p { font-family: Andale Mono, monospace; color:#fcf; font-size: 90%; font-style: oblique; padding: 0.65em; line-height: 1.20em; margin: .25em; text-align: center;  } 
 .blockquote c { display: block; color:#fcf; text-align: center; padding: .1em 0 1em 2em; font-size: 0.85rem; }
