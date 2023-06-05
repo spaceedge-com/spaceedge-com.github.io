@@ -8,7 +8,7 @@ var term = (web_search_form.searchterms.value);
 
 if (si === "ask") {  var seng = "https://ask.com/web?q=";  } 
 if (si === "bing") {  var seng = "https://www.bing.com/search?q=";  } 
-if (si === "brave") {  var seng = "https://www.search.brave.com/search?q=";  }	
+if (si === "brave") {  var seng = "https://search.brave.com/search?q=";  }	
 if (si === "dogpile") {  var seng = "https://www.dogpile.com/info.dogpl/search/web?q=";  } 
 if (si === "duckduckgo") {  var seng = "https://duckduckgo.com/?q=";  }
 if (si === "ecosia") {  var seng = "https://www.ecosia.org/search?q=";  }
