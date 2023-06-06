@@ -135,14 +135,14 @@ pre {  padding: 5%;  }
 
 /* Responsive screen 601px/wider */
 @media screen and (min-width: 601px) {	 
- 	 /* blockquote */
-	.blockquote { max-width: 70% }   .blockquote p { font-size: 100%; } .blockquote c { font-size: 0.85rem; } 
+/* blockquote */
+.blockquote { max-width: 70% }   .blockquote p { font-size: 100%; } .blockquote c { font-size: 0.85rem; } 
 }
 /* Responsive screen 600px/less */
 @media screen and (max-width: 600px) {
-	.intro p { font-size: 0.55rem;  }
-	 /*  multisearch */  .search-form { max-width: 100%; }  #searchterms {  width: 90%; }   input[type=search]:focus { width: 93%; }
-	 /*  blockquote  */  .blockquote { max-width: 66% }  .blockquote p { font-size: 90%; }  .blockquote c { font-size: 85%; } 
+.intro p { font-size: 0.55rem;  }
+/*  multisearch */  .search-form { max-width: 100%; }  #searchterms {  width: 90%; }   input[type=search]:focus { width: 93%; }
+ /*  blockquote  */  .blockquote { max-width: 66% }  .blockquote p { font-size: 90%; }  .blockquote c { font-size: 80%; } 
  .giphs { max-width: 80%; }
 }
 
