@@ -101,8 +101,8 @@ animation-iteration-count: infinite;
 100% { background: radial-gradient(#f69, #169 25%, #f69 60%); }
 }
 .blockquote p { font-family: Andale Mono, monospace; color:#fcf; font-size: 90%; font-style: oblique; padding: 0.65em; line-height: 1.20em; margin: .25em; text-align: center;  } 
-.blockquote c { display: block; color:#fcf; text-align: center; padding: .1em 0 1em 2em; font-size: 0.85rem; }
-.blockquote a { color:#fcf; }
+.blockquote c { display: block; color:#fcf; text-align: center; padding: .1em 0 1em 2em; font-size: 0.80rem; }
+.blockquote a { color:#6cf; }
 
 .giphs { padding: 1px; margin: 1px; max-width: 70%;  }
 
