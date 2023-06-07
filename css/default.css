@@ -94,11 +94,11 @@ animation-duration: 6s;
 animation-iteration-count: infinite;
 }
 @keyframes bgcolor {
-0% { background: radial-gradient(#469, #969 25%, #06a 60%); }
-25% { background: radial-gradient(#769, #769 25%, #a06 60%); }
-50% { background: radial-gradient(#a69, #569 25%, #6a0 60%); }
-75% { background: radial-gradient(#c69, #369 25%, #a69 60%); }
-100% { background: radial-gradient(#f69, #169 25%, #c69 60%); }
+0% { background: radial-gradient(#469, #436 25%, #06a 60%); }
+25% { background: radial-gradient(#769, #326 25%, #a06 60%); }
+50% { background: radial-gradient(#a69, #216 25%, #6a0 60%); }
+75% { background: radial-gradient(#c69, #106 25%, #a69 60%); }
+100% { background: radial-gradient(#f69, #006 25%, #c69 60%); }
 }
 .blockquote p { font-family: Andale Mono, monospace; color:#fcf; font-size: 90%; font-style: oblique; padding: 0.65em; line-height: 1.20em; margin: .25em; text-align: center;  } 
 .blockquote c { display: block; color:#fcf; text-align: center; padding: .1em 0 1em 2em; font-size: 0.80rem; }
