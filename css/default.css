@@ -90,7 +90,7 @@ text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidd
 
 .blockquote {  display: block; border-left: 5px solid #62c; padding-left: 2px; margin: 1.18em 0 0.5em .5em; max-width: 60%;	background: linear-gradient(#36f, #636 25%, #369 60%); 
 animation-name: bgcolor;
-animation-duration: 6s; transition: background-color 300ms linear;
+animation-duration: 6s; /* transition: background-color 300ms linear; no effect */
 animation-iteration-count: infinite;
 }
 @keyframes bgcolor {
