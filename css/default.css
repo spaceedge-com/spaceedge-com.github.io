@@ -92,20 +92,20 @@ text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidd
 
 .blockquote {  display: block; border-left: 5px solid #62c; padding-left: 2px; margin: 1.18em 0 0.5em .5em; max-width: 60%;
 animation-name: bgcolor;
-animation-duration: 9s; 
+animation-duration: 6s; 
 animation-iteration-count: infinite;
 /*  effect */
 }
 @keyframes bgcolor {
 0% { background: radial-gradient(#a993, #1363 25%, #06a3 60%); }
-10% { background: opacity: 0%; }
-20% { background: opacity:100%; radial-gradient(#9a95, #3265 25%, #30a5 60%); }
-30% { background: opacity: 0%; }
-50% { background: opacity:100%; radial-gradient(#e697, #2167 25%, #5a07 60%); }
-60% { background: opacity: 0%; }
-70% { background: opacity:100%; radial-gradient(#cc99, #1069 25%, #8699 60%); }
-80% { background: opacity: 0%; }
-100% { background: opacity:100%; radial-gradient(#b69a, #006a 25%, #969a 60%); }
+10% { background: opacity: 0; }
+20% { background: opacity:1; radial-gradient(#9a95, #3265 25%, #30a5 60%); }
+30% { background: opacity: 0; }
+50% { background: opacity:1; radial-gradient(#e697, #2167 25%, #5a07 60%); }
+60% { background: opacity: 0; }
+70% { background: opacity:1; radial-gradient(#cc99, #1069 25%, #8699 60%); }
+80% { background: opacity: 0; }
+100% { background: opacity:1; radial-gradient(#b69a, #006a 25%, #969a 60%); }
 }
 .blockquote p { font-family: Andale Mono, monospace; color:#fcf; font-size: 90%; font-style: oblique; padding: 0.65em; line-height: 1.20em; margin: .25em; text-align: center;  } 
 .blockquote c { display: block; color:#fcf; text-align: center; padding: .1em 0 1em 2em; font-size: 0.80rem; }
