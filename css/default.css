@@ -109,11 +109,11 @@ animation-iteration-count: infinite;
 }
 @keyframes bgcolor {
 0% { background: radial-gradient( var(--bgClr1), #136 25%, #06a 60%); }
-50% { z-index : 1; background: : #000; }
-100% { background: radial-gradient(#9a9, #326 25%, #30a 60%); }
-/* 30% {  z-index : 1;
-background : radial-gradient( ellipse at var(--bgClr1), var(--bgClr2) 25%, #303 60%); }
-50% { background: radial-gradient(#e69, #216 25%, #5a0 60%); }
+40% { z-index : 1; background: : #000; }
+60% { background: radial-gradient(#9a9, #326 25%, #30a 60%); }
+100% {  z-index : 1;
+background : radial-gradient( ellipse at var(--bgClr2), #333 25%; }
+/* 50% { background: radial-gradient(#e69, #216 25%, #5a0 60%); }
 60% {  z-index : 1;
 background : radial-gradient( ellipse at var(--bgClr1), var(--bgClr2) 25%, #3a3 60%); }
 70% { background: radial-gradient(#cc9, #106 25%, #869 60%); }
