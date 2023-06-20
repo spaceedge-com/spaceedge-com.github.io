@@ -92,7 +92,7 @@ text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidd
 
 @property --bgClr1 {
   syntax: '<color>';
-  initial-value: #12c;
+  initial-value: #12c6;
   inherits: false;
 }
 @property --bgClr2 {
@@ -110,16 +110,16 @@ animation-iteration-count: infinite;
 @keyframes bgcolor {
 0% { background: radial-gradient( var(--bgClr1), #136 25%, #06a 60%); }
 10% {  z-index : 1;
-background : radial-gradient( ellipse at 25% 25%, rgba( 255, 255, 255, 0 ) 0%, rgba( 0, 0, 0, 1 ) 100% ); }
+background : radial-gradient( ellipse at var(--bgClr1), var(--bgClr2) 25%, #30a 60%); }
 20% { background: radial-gradient(#9a9, #326 25%, #30a 60%); }
 30% {  z-index : 1;
-background : radial-gradient( ellipse at 25% 25%, rgba( 255, 255, 255, 0 ) 0%, rgba( 0, 0, 0, 1 ) 100% );}
+background : radial-gradient( ellipse at var(--bgClr1), var(--bgClr2) 25%, #303 60%); }
 50% { background: radial-gradient(#e69, #216 25%, #5a0 60%); }
 60% {  z-index : 1;
-background : radial-gradient( ellipse at 25% 25%, rgba( 255, 255, 255, 0 ) 0%, rgba( 0, 0, 0, 1 ) 100% ); }
+background : radial-gradient( ellipse at var(--bgClr1), var(--bgClr2) 25%, #3a3 60%); }
 70% { background: radial-gradient(#cc9, #106 25%, #869 60%); }
 80% {  z-index : 1;
-background : radial-gradient( ellipse at 25% 25%, rgba( 255, 255, 255, 0 ) 0%, rgba( 0, 0, 0, 1 ) 100% ); }
+background : radial-gradient( ellipse at var(--bgClr1), var(--bgClr2) 25%, #93a 60%); }
 100% { background: radial-gradient(#b69, #006 25%, #969 60%); }
 }
 .blockquote p { font-family: Andale Mono, monospace; color:#fcf; font-size: 90%; font-style: oblique; padding: 0.65em; line-height: 1.20em; margin: .25em; text-align: center;  } 
