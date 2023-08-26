@@ -13,12 +13,31 @@ color: #fcf; background-color: #aafc;
 justify-content: space-between; align-items: center; text-align: center; 
 }
 </style>
+
+<!-- page hits counter kv worker script from: linzichun.com/posts/web_counter_cloudflare_worker/ -->	
+<script>
+    const workerUri = "https://page-tracker.spaceedge-cf.workers.dev/";
+    const { pathname } = new URL(window.location);
+    let workerUrl = workerUri + pathname;
+    fetch(workerUrl, {method: 'GET'})
+    .then(response => response.json())
+    .then(data => {
+            // get the counter value
+            document.getElementById("my_value_page_pv").innerHTML = data.pv;
+    })
+    .catch(err => {});
+</script>
+	
 </head>
 <body>
 
 <div class="foo">
   	<center>
-<!-- hits counter hits.seeyoufarm.com -->
+<!-- display counter hits from: linzichun.com/posts/web_counter_cloudflare_worker/ -->
+<span id="my_container_page_pv">
+    Views: <span id="my_value_page_pv"></span>
+</span> 
+		
 <a style="" href="mailto:webmaster@spaceedge.com"><img src="/icons/at-icon.gif" alt="Contact" style="width:20px;height:20px;background-color: #222a; margin:5px;"></a> 
 	72623...  &copy; SpaceEdge.com
 	</center>
