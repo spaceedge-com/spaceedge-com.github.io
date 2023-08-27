@@ -90,16 +90,6 @@ text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidd
 
 .ideas { display: block; max-width:100%; margin-top: 0.75em; padding-left: 0.75em; padding-top: .75em; padding-bottom: 1.2em;  }
 
-@property --bgClr1 {
-  syntax: '<color>';
-  initial-value: #12c6;
-  inherits: false;
-}
-@property --bgClr2 {
-  syntax: '<color>';
-  initial-value: rgb(40,150,200);
-  inherits: false;
-}
 
 .blockquote {  display: block; border-left: 5px solid #62c; padding-left: 2px; margin: 1.18em 0 0.5em .5em; max-width: 60%;
 animation-name: bgcolor;
@@ -108,22 +98,12 @@ animation-iteration-count: infinite;
 /*  effect */
 }
 @keyframes bgcolor {
-0% { background: radial-gradient( var(--bgClr1), #136 25%, #06a 60%); }
-40% { z-index : 1; background: : #000; }
-60% { background: radial-gradient(#9a9, #326 25%, #30a 60%); }
-100% {  z-index : 1;
-background : radial-gradient( ellipse at var(--bgClr2), #333 30%); }
-/* 50% { background: radial-gradient(#e69, #216 25%, #5a0 60%); }
-60% {  z-index : 1;
-background : radial-gradient( ellipse at var(--bgClr1), var(--bgClr2) 25%, #3a3 60%); }
-70% { background: radial-gradient(#cc9, #106 25%, #869 60%); }
-80% {  z-index : 1;
-background : radial-gradient( ellipse at var(--bgClr1), var(--bgClr2) 25%, #93a 60%); }
-100% { background: radial-gradient(#b69, #006 25%, #969 60%); } */
+0% { background: radial-gradient( skyblue 25%, orange 60%); }
+100% { background: radial-gradient( orange 25%, skyblue 60%); }
 }
-.blockquote p { font-family: Andale Mono, monospace; color:#fcf; font-size: 90%; font-style: oblique; padding: 0.65em; line-height: 1.20em; margin: .25em; text-align: center;  } 
-.blockquote c { display: block; color:#fcf; text-align: center; padding: .1em 0 1em 2em; font-size: 0.80rem; }
-.blockquote a { color:#6cf; }
+.blockquote p { font-family: Andale Mono, monospace; color: ; font-size: 90%; font-style: oblique; padding: 0.65em; line-height: 1.20em; margin: .25em; text-align: center;  } 
+.blockquote c { display: block; color: ; text-align: center; padding: .1em 0 1em 2em; font-size: 0.80rem; }
+.blockquote a { color: ; }
 
 .giphs { padding: 1px; margin: 1px; max-width: 70%;  }
 
