@@ -168,8 +168,8 @@ pre {  padding: 5%;  }
 }
 
 /* Flips Colors */
-.body {  background: #606; color: #fcf;  }
-.toggle {  background: #fcf; color: #606;  }
+.body { background: #fcf; color: #606; }
+.toggle { background: #606; color: #fcf; }
 #toggleTheme { margin: 5px; padding: 0; min-width: 25px; border-radius: 0; border: 0; }
 #toggleTheme img { width: 25px; height: 26px; padding: 0; background-color: white; border:none; cursor: pointer; }
 
