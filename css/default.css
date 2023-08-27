@@ -78,8 +78,8 @@ input:focus::placeholder {  color: transparent;  }
 height: 25px; top: -2px; position: relative;
 } 
 select { outline: none; border-radius: 15px; margin-top:1px; }   select::after { cursor: progress; } 	option { font-size:  12px;  }
-input[type="submit"].Go { /* ➤ &#10148; */
-width: 25px; font-size: 1em; color: ; background-color: #fc6; border-radius: 15px; cursor: pointer; padding: .05rem; margin-top: 1px; appearance:none; -webkit-appearance: none; -moz-appearance: none;  }
+input[type="submit"].Go { /* ➤ &#10148;*/ 
+align=:top; margin:0; padding: .05rem; font-size:1.1em; width:25px; height:25px; color: ; background-color: #fc6; border-radius: 15px; cursor: pointer; appearance:none; -webkit-appearance: none; -moz-appearance: none;  }
 .search-body h3, h4, h5, h6 {  margin: 1em; line-height: 1; }
 /*  Multi-Search Div  */
 #MultiSearch { margin: 0 auto; padding: 10px; display: block; position: relative; width: 100%; height: 175px; 
