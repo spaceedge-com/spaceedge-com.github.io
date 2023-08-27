@@ -16,7 +16,7 @@ justify-content: space-between; align-items: center; text-align: center;
 
 <!-- page hits counter kv worker script from: linzichun.com/posts/web_counter_cloudflare_worker/ -->	
 <script>
-    const workerUri = "https://page-tracker.spaceedge-cf.workers.dev/";
+    const workerUri = "https://page-tracker.spaceedge-cf.workers.dev";
     const { pathname } = new URL(window.location);
     let workerUrl = workerUri + pathname;
     fetch(workerUrl, {method: 'GET'})
