@@ -99,9 +99,9 @@ animation-iteration-count: infinite;
 }
 @keyframes bgcolor {
 0% { background: radial-gradient( skyblue 25%, orange 75%); }
-25% { background: radial-gradient( #ff6 50%, #6ff; 50%); }	
-50% { background: radial-gradient( yellow 50%, #6fc; 50%); }	
-75% { background: radial-gradient( #6f6 50%, #6ff; 50%); }	
+25% { background: radial-gradient( #ff6 50%, #6ff 50%); }	
+50% { background: radial-gradient( yellow 50%, #6fc 50%); }	
+75% { background: radial-gradient( #6f6 50%, #6ff 50%); }	
 100% { background: radial-gradient( orange 25%, skyblue 75%); }
 }
 .blockquote p { font-family: Andale Mono, monospace; color: ; font-size: 90%; font-style: oblique; padding: 0.65em; line-height: 1.20em; margin: .25em; text-align: center;  } 
