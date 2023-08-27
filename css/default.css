@@ -98,8 +98,9 @@ animation-iteration-count: infinite;
 /*  effect */
 }
 @keyframes bgcolor {
-0% { background: radial-gradient( skyblue 25%, orange 60%); }
-100% { background: radial-gradient( orange 25%, skyblue 60%); }
+0% { background: radial-gradient( skyblue 25%, orange 75%); }
+50% { background: radial-gradient( yellow 50%, green 50%); }	
+100% { background: radial-gradient( orange 25%, skyblue 75%); }
 }
 .blockquote p { font-family: Andale Mono, monospace; color: ; font-size: 90%; font-style: oblique; padding: 0.65em; line-height: 1.20em; margin: .25em; text-align: center;  } 
 .blockquote c { display: block; color: ; text-align: center; padding: .1em 0 1em 2em; font-size: 0.80rem; }
