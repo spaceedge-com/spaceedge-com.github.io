@@ -66,7 +66,7 @@ embed {   width: 100%;  }
 
 hr { border-top: 1px solid #teal; margin: 1em; box-shadow: 1px rgba(150,120,150,0.2), 1px rgba(150,150,150,0.8);  }
 
-/*  **** Multi-Search w/dropdown **** */ 
+/* **** Multi-Search w/dropdown **** */ 
 #searchdiv {  display: block; text-align: center; margin:0 auto; width: auto; height: auto; border-radius: 5%; }
 .search-form { border: 1px solid teal; border-radius: 12px; max-width: 75%; margin: 0 auto; padding:0; padding-top:3px; padding-bottom:3px; }
 #searchterms { background-color: ; width: 96%; outline: none; min-height: 1rem; margin: 0; padding: 5px; border-radius: 5px; }
