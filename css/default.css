@@ -74,12 +74,12 @@ input[type=search].searchterms {  width: 100%; border: none; outline: none;  }
 input[type=search]:focus {  background-color: ;  border: none; outline: none;  }
 input[type=search]::-webkit-search-cancel-button { -webkit-appearance: searchfield-cancel-button;  }
 input:focus::placeholder {  color: transparent;  }  
-#search_select { width: 88px; color: ; background-color: ; font-size: 12px; border-radius: 15px; 
+#search_select { width: 88px; color: ; background-color: ; font-size: 1rem; border-radius: 15px; 
 height: 25px; top: -2px; position: relative;
 } 
-select { outline: none; border-radius: 15px; margin-top:1px; }   select::after { cursor: progress; } 	option { font-size:  12px;  }
+select { outline: none; border-radius: 15px; margin-top:1px; }   select::after { cursor: progress; } 	option { font-size: 1rem;  }
 input[type="submit"].Go { /* ➤ &#10148;*/ 
-align=:top; margin:0; padding: .05rem; font-size:1.1em; width:25px; height:25px; color: ; background-color: #f6c; border-radius: 15px; cursor: pointer; appearance:none; -webkit-appearance: none; -moz-appearance: none;  }
+align=:top; margin:0; padding: .05rem; font-size:1.2rem; width:25px; height:25px; color: ; background-color: #f6c; border-radius: 15px; cursor: pointer; appearance:none; -webkit-appearance: none; -moz-appearance: none;  }
 .search-body h3, h4, h5, h6 {  margin: 1em; line-height: 1; }
 /*  Multi-Search Div  */
 #MultiSearch { margin: 0 auto; padding: 10px; display: block; position: relative; width: 100%; height: 175px; 
