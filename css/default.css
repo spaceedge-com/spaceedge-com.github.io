@@ -75,7 +75,7 @@ input[type=search].searchterms {  width: 100%; outline: none;  }
 input[type=search]:focus {  background-color: ;  border: none; outline: none;  }
 input[type=search]::-webkit-search-cancel-button { -webkit-appearance: searchfield-cancel-button;  }
 input:focus::placeholder {  color: transparent;  }  
-#search_select { width: 88px; color:#747; background-color: #f6c; font-size: 11px; border-radius: 15px; 
+#search_select { width: 88px; color:#747; background-color: ; font-size: 11px; border-radius: 15px; 
 height: 25px; top: 0; position: relative;
 } 
 select { outline: none; border-radius: 15px; margin-top:1px; }   select::after { cursor: progress; } 	option { font-size: 1rem;  }
