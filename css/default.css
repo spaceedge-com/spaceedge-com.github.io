@@ -127,7 +127,8 @@ margin-bottom:2em; padding: .8em .8em 0 .2em;  }
 .small {  font-size: 85%;  font-style: italic;  }
 pre {  padding: 5%;  }	
 
-.spc5, .spc15, .spc25, .spc35, .spc50, .spc75 { position: relative; clear:both; float:inherit; }
+.spc5, .spc15, .spc25, .spc35, .spc50, .spc75 { 
+	position: relative; clear:both; float:inherit; }
 .spc5 {  height:5px; max-height:5px; margin:5px; padding:5px; }
 .spc15 { height:15px; max-height:15px; margin:15px; padding:15px; }
 .spc25 { height:25px; max-height:25px; margin:25px; padding:25px; }
@@ -150,8 +151,7 @@ pre {  padding: 5%;  }
 }
 
 /* Flips Colors */
-.body { background: #fcf; color: #606; }
-.toggle { background: #606; color: #fcf; }
+.body { background: #fff; color: #846; }
+.toggle { background: #846; color: #fff; }
 #toggleTheme { margin: 5px; padding: 0; min-width: 25px; border-radius: 0; border: 0; }
 #toggleTheme img { width: 25px; height: 26px; padding: 0; background-color: white; border:none; cursor: pointer; }
-
