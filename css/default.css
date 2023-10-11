@@ -61,6 +61,12 @@ font-size: 0.75rem; text-transform: uppercase; font-style: oblique; font-weight:
 padding: 0.5em; margin: 0; text-align: right;
 }
 
+.bloglx a.links {
+	border: 1px solid;
+	padding: 10px;
+	margin: .5em;
+}
+
 a {   color: #89f;  }   a:link {   text-decoration: none;  }
 
 embed {   width: 100%;  }	
