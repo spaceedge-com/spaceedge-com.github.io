@@ -41,7 +41,7 @@ line-height: 1.10em; margin: 1em 0 1em 0; padding-left: 0.50em; padding-right: .
 width: 100%; height: 46px; padding: 0; top: 0; left: 0; position: relative; z-index: 1;
 display: flex; justify-content: space-between; align-items: flex-start; clear: both; 
 background: , url("https://");
-background-size: cover; background-position: center; background-repeat: no-repeat; border-bottom: .5px dotted #fff;
+background-size: cover; background-position: center; background-repeat: no-repeat; border-bottom: .5px dotted #fff; margin-bottom: 1em; border-bottom: 1px solid;
 }
 #logo {
 background-image: url(/icons/SE_Logo.png);
