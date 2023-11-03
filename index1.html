@@ -86,30 +86,29 @@ margin:15px auto; padding:5px; width:80%; min-width:300px; max-width:90%; height
 <label><input type="radio" name="test" class="tab" value="C"> New Tab</label></h6>		
 </form> 	
 	
-<form name="web_search_form" autocomplete="on" onSubmit="return javascript:dosearch();">
-
+<form name="web_search_form" onSubmit="return javascript:dosearch();">
 <!-- <select name="search_engines" id="search_select" class="select" onfocus="return" onchange="return dosearch();"> -->
-<input type="radio" value="ask"><label for="ask">Ask</label>
-<input type="radio" value="bing"><label for="bing">Bing</label>
-<input type="radio" value="brave"><label for="brave">Brave</label>	
-<input type="radio"  value="dogpile"><label for="dogpile">Dogpile</label>
-<input type="radio" value="duckduckgo"><label for="duckduckgo">Duckduckgo</label>
-<input type="radio" value="ecosia"><label for="ecosia">Ecosia</label> 
-<input type="radio" value="github"><label for="github">Github</label>
-<input type="radio" value="google"><label for="google">Google</label> 
-<input type="radio" value="lilo"><label for="lilo">Lilo</label> 
-<input type="radio" value="onelook"><label for="onelook">Onelook</label>
-<input type="radio" value="qwant"><label for="qwant">Qwant</label> 
-<input type="radio" value="stackexchange"><label for="stackexchange">Stack Exchange</label>
+<input type="radio" name="search_engines" value="ask"><label for="ask">Ask</label>
+<input type="radio" name="search_engines" value="bing"><label for="bing">Bing</label>
+<input type="radio" name="search_engines" value="brave"><label for="brave">Brave</label>	
+<input type="radio" name="search_engines" value="dogpile"><label for="dogpile">Dogpile</label>
+<input type="radio" name="search_engines" value="duckduckgo"><label for="duckduckgo">Duckduckgo</label>
+<input type="radio" name="search_engines" value="ecosia"><label for="ecosia">Ecosia</label> 
+<input type="radio" name="search_engines" value="github"><label for="github">Github</label>
+<input type="radio" name="search_engines" value="google"><label for="google">Google</label> 
+<input type="radio" name="search_engines" value="lilo"><label for="lilo">Lilo</label> 
+<input type="radio" name="search_engines" value="onelook"><label for="onelook">Onelook</label>
+<input type="radio" name="search_engines" value="qwant"><label for="qwant">Qwant</label> 
+<input type="radio" name="search_engines" value="stackexchange"><label for="stackexchange">Stack Exchange</label>
 <input type="radio" value="stackoverflow"><label for="stackoverflow">Stack Overflow</label>
-<input type="radio" value="startpage"><label for="startpage">Startpage</label>    
-<input type="radio" value="swisscows"><label for="swisscows">Swisscows</label> 
-<input type="radio" value="wikipedia"><label for="wikipedia">Wikipedia</label>
-<input type="radio" value="wolframalpha"><label for="wolframalpha">Wolframalpha</label> 
-<input type="radio" value="yahoo"><label for="yahoo">Yahoo</label>
+<input type="radio" name="search_engines" value="startpage"><label for="startpage">Startpage</label>    
+<input type="radio" name="search_engines" value="swisscows"><label for="swisscows">Swisscows</label> 
+<input type="radio" name="search_engines" value="wikipedia"><label for="wikipedia">Wikipedia</label>
+<input type="radio" name="search_engines" value="wolframalpha"><label for="wolframalpha">Wolframalpha</label> 
+<input type="radio" name="search_engines" value="yahoo"><label for="yahoo">Yahoo</label>
 <!-- </select> -->
 <br>
-<input type="search" name="searchterms" id="searchterms" class="searchterms" autocomplete="on" onfocus="this.setSelectionRange(0, 0)" placeholder="type here to easily search/switch engines" />
+<input type="text" name="searchterms" id="searchterms" class="searchterms" autocomplete="on" onfocus="this.setSelectionRange(0, 0)" placeholder="type here to easily search/switch engines" />
 <br>
 <input type="submit" class="Go" name="SearchSubmit" value="&#10148;">	  
 </form>
