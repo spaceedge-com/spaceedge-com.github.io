@@ -88,8 +88,7 @@ margin:15px auto; padding:5px; width:80%; min-width:300px; max-width:90%; height
 	
 <form name="web_search_form" autocomplete="on" action="javascript:dosearch();">
 <input type="search" name="searchterms" id="searchterms" class="searchterms" autocomplete="on" onfocus="this.setSelectionRange(0, 0)" placeholder="type here to easily search and switch engines" />
-<select name="search_engines" id="search_select" class="select" onfocus="return" onchange="return dosearch();">
-
+<!-- <select name="search_engines" id="search_select" class="select" onfocus="return" onchange="return dosearch();"> -->
 <input type="radio" value="ask"><label for="ask">Ask</label>
 <input type="radio" value="bing"><label for="bing">Bing</label>
 <input type="radio" value="brave"><label for="brave">Brave</label>	
@@ -97,26 +96,18 @@ margin:15px auto; padding:5px; width:80%; min-width:300px; max-width:90%; height
 <input type="radio" value="duckduckgo"><label for="duckduckgo">Duckduckgo</label>
 <input type="radio" value="ecosia"><label for="ecosia">Ecosia</label> 
 <input type="radio" value="github"><label for="github">Github</label>
-
-<option value="ask">Ask</option> 
-<option value="bing">Bing</option>	
-<option value="brave">Brave</option>
-<option value="dogpile">Dogpile</option>  
-<option value="duckduckgo">Duckduckgo</option>
-<option value="ecosia">Ecosia</option>  
-<option value="github">GitHub</option> 
-<option value="google">Google</option> 	
-<option value="lilo">Lilo</option> 
-<option value="onelook">OneLook</option>
-<option value="qwant">Qwant</option>  
-<option value="stackexchange">Stack Exchange</option> 
-<option value="stackoverflow">Stack Overflow</option>  
-<option value="startpage">Startpage</option>	    
-<option value="swisscows">Swisscows</option>  
-<option value="wikipedia">Wikipedia</option>
-<option value="wolframalpha">Wolframalpha</option>  
-<option value="yahoo">Yahoo!</option>
-</select>
+<input type="radio" value="google"><label for="google">Google</label> 
+<input type="radio" value="lilo"><label for="lilo">Lilo</label> 
+<input type="radio" value="onelook"><label for="onelook">Onelook</label>
+<input type="radio" value="qwant"><label for="qwant">Qwant</label> 
+<input type="radio" value="stackexchange"><label for="stackexchange">Stack Exchange</label>
+<input type="radio" value="stackoverflow"><label for="stackoverflow">Stack Overflow</label>
+<input type="radio" value="startpage"><label for="startpage">Startpage</label>    
+<input type="radio" value="swisscows"><label for="swisscows">Swisscows</label> 
+<input type="radio" value="wikipedia"><label for="wikipedia">Wikipedia</label>
+<input type="radio" value="wolframalpha"><label for="wolframalpha">Wolframalpha</label> 
+<input type="radio" value="yahoo"><label for="yahoo">Yahoo</label>
+<!-- </select> -->
 <input type="submit" class="Go" name="SearchSubmit" value="&#10148;">	  
 </form>
 	
