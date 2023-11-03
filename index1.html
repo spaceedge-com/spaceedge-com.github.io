@@ -51,9 +51,9 @@ margin:15px auto; padding:5px; width:80%; min-width:300px; max-width:90%; height
 <script type="text/javascript">
 function dosearch() {
 var sf=document.searchform;
-for (i=sf.sengines.length-1; i > -1; i--) {
-if (sf.sengines[i].checked) {
-var submitto = sf.sengines[i].value + escape(sf.searchterms.value);
+for (i=sf.search_engines.length-1; i > -1; i--) {
+if (sf.search_engines[i].checked) {
+var submitto = sf.search_engines[i].value + escape(sf.searchterms.value);
 }
 }
 window.location.href = submitto;
