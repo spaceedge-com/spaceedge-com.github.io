@@ -47,6 +47,19 @@ margin:15px auto; padding:5px; width:80%; min-width:300px; max-width:90%; height
 	
 <!-- load from external files -->	
 <!-- <script> $(function(){ //$("#header").load("header.htm"); //$("#footer").load("footer.htm"); }); </script> -->
+
+<script type="text/javascript">
+function dosearch() {
+var sf=document.searchform;
+for (i=sf.sengines.length-1; i > -1; i--) {
+if (sf.sengines[i].checked) {
+var submitto = sf.sengines[i].value + escape(sf.searchterms.value);
+}
+}
+window.location.href = submitto;
+return false;
+}
+</script>
 	
 </head>
 <body id="body" class="body">
@@ -77,12 +90,11 @@ margin:15px auto; padding:5px; width:80%; min-width:300px; max-width:90%; height
 <div id="searchdiv">
 <div class="search-body">
 				
-<!--  calls dosearch(); m-search.js file -->
-<script src="m-search.js" type="text/javascript"></script> 
+<!-- dosearch(); m-search.js file <script src="m-search.js" type="text/javascript"></script>  -->
 <div class="search-form"> 
-<form name="web_search_form" onSubmit="return dosearch();">
-<input type="radio" name="search_engines" value="ask"><label for="ask">Ask</label>
-<input type="radio" name="search_engines" value="bing"><label for="bing">Bing</label>
+<form name="searchform" onSubmit="return dosearch();">
+<input type="radio" name="search_engines" value="https://ask.com/web?q="><label for="ask">Ask</label>
+<input type="radio" name="search_engines" value="https://www.bing.com/search?q="><label for="bing">Bing</label>
 <input type="radio" name="search_engines" value="brave"><label for="brave">Brave</label>	
 <input type="radio" name="search_engines" value="dogpile"><label for="dogpile">Dogpile</label>
 <input type="radio" name="search_engines" value="duckduckgo"><label for="duckduckgo">Duckduckgo</label>
