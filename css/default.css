@@ -51,7 +51,7 @@ background-size: contain; background-repeat: no-repeat; width: 200px; height: 46
 .header .logo { 
 font-size: 1.60rem; font-family: 'Sriracha', cursive; text-decoration: none; 
 margin-left: 10px; margin-right: 1px;
-background-color: lightblue; background-blend-mode: screen;
+background-color: lightblue; background-blend-mode: difference;
 }	
 .intro {
 display: flex; justify-content: end; width: 80%; height: 45px;
