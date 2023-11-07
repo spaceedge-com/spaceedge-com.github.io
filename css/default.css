@@ -70,9 +70,14 @@ a {   color: #89f;  }   a:link {   text-decoration: none;  }
 
 hr { border-top: 1px solid #teal; margin: 1em; box-shadow: 1px rgba(150,120,150,0.2), 1px rgba(150,150,150,0.8);  }
 
-embed {   width: 100%;  }	
+/* margin: top right bottom left; trbl treble */
 
-/* **** Multi-Search w/dropdown **** */ 
+/* **** Multi-Search   **** */ 
+#MultiSearch { 
+	margin: 0 auto; padding: 10px; display: block; position: relative; width: 100%; height: 300px; 
+	text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidden; }
+.search-body h3, h4, h5, h6 {  margin: 1em; line-height: 1; }
+
 #searchdiv {  
 	display: block; text-align: center; margin:0 auto; width: auto; height: auto; border-radius: 5%; }
 .search-form { 
@@ -90,15 +95,8 @@ height: 25px; top: 0; position: relative; }
 select { outline: none; border-radius: 15px; margin-top:1px; }   select::after { cursor: progress; } 	option { font-size: 1rem;  }
 input[type="submit"].Go { /* ➤ &#10148;*/ 
 align:top; margin:0; padding: .05rem; font-size:11px; width:25px; height:25px; color: ; background-color: ; border-radius: 15px; cursor: pointer; appearance:none; -webkit-appearance: none; -moz-appearance: none;  
-border: 1px solid;
-}
-.search-body h3, h4, h5, h6 {  margin: 1em; line-height: 1; }
-/*  Multi-Search Div  */
-#MultiSearch { 
-	margin: 0 auto; padding: 10px; display: block; position: relative; width: 100%; height: 200px; 
-	text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidden; }
-/*   **********   */ 
-/* margin: top right bottom left; trbl treble */
+border: 1px solid;  }
+/*  ******************   */ 
 
 .ideas { display: block; max-width:100%; margin-top: 0.75em; padding-left: 1.75em; padding-top: .75em; padding-bottom: 1.2em;  }
 
