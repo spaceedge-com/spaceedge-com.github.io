@@ -70,6 +70,8 @@ a {   color: #89f;  }   a:link {   text-decoration: none;  }
 
 hr { border-top: 1px solid #teal; margin: 1em; box-shadow: 1px rgba(150,120,150,0.2), 1px rgba(150,150,150,0.8);  }
 
+embed { width: 100%; /*imp. leave*/ }
+
 /* margin: top right bottom left; trbl treble */
 
 /* **** Multi-Search   **** */ 
