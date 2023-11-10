@@ -41,19 +41,6 @@ input[type="radio"]:checked+label, .Checked+label {
 <!-- load from external files -->	
 <!-- <script> $(function(){ //$("#header").load("header.htm"); //$("#footer").load("footer.htm"); }); </script> -->
 
-<script type="text/javascript">
-function dosearch() {
-var sf=document.searchform;
-for (i=sf.search_engines.length-1; i > -1; i--) {
-if (sf.search_engines[i].checked) {
-var submitto = sf.search_engines[i].value + escape(sf.searchterms.value);
-}
-}
-window.location.href = submitto;
-return false;
-}
-</script>
-	
 </head>
 <body id="body" class="body">
         
@@ -70,10 +57,7 @@ return false;
 <!--  <div class="" align="center" style="height:3px;">  
 <embed type="text/html" src="/navigation.htm" style="margin:0;">
 </div>	-->
-<!--  <div class="lx">
-<a class="links" href="/">Home</a>
-<a class="links" href="/blog.html">Blog</a>
-</div>	-->
+<!--  <div class="lx"><a class="links" href="/">Home</a><a class="links" href="/blog.html">Blog</a></div>	-->
 	
 <main>	
 
@@ -124,7 +108,8 @@ return false;
 <div class="feedsrss" style="">
 <embed type="text/html" src="/feed-rss.htm">
 </div> -->
-
+	
+<div class="spc25"> <br> </div>	
 
 </main>
 
