@@ -96,7 +96,7 @@ return false;
 <span><input type="radio" name="search_engines" id="stackex" value="https://stackexchange.com/search?q="><label for="stackex">StackExchange</label></span>
 <span><input type="radio" name="search_engines" id="stackov" value="https://stackoverflow.com/search?q="><label for="stackov">StackOverflow</label></span>
 <span><input type="radio" name="search_engines" id="sp" value="https://www.startpage.com/do/search?query="><label for="sp">Startpage</label></span>    
-<span><input type="radio" name="search_engines" id="sc" value="https://swisscows.ch/?query="><label for="sc">Swisscows</label></span> 
+<span><input type="radio" name="search_engines" id="sc" value="https://swisscows.com/web?query=%s"><label for="sc">Swisscows</label></span> 
 <span><input type="radio" name="search_engines" id="wp" value="https://en.wikipedia.org/wiki/wiki.html?search="><label for="wp">Wikipedia</label></span>
 <span><input type="radio" name="search_engines" id="wa" value="https://www.wolframalpha.com/input/?i="><label for="wa">Wolframalpha</label></span>
 <span><input type="radio" name="search_engines" id="yho" value="https://search.yahoo.com/search?p="><label for="yho">Yahoo</label></span>
@@ -113,22 +113,19 @@ return false;
 </div>
 </div>
 	
-<br><hr>	<br>
-<div class="spc5"> <br> </div>	
+<div class="spc5"> <hr> </div>	
 
- <div id="box" onload="document.getElementById('inp').focus()">
+<div id="box" onload="document.getElementById('inp').focus()" style="width:90%">
 <center>
 
-<img src="qrc:icons/search.svg" width="5">
+<img src="qrc:icons/search.svg" width="5"><br>
 
 <form action="" method="GET">
     <input type="hidden" name="t" value="space">
     <input class="line" id="inp" name="q"> <br>
-    
+       <br> 
 <span><button type="submit"class="submit"  value="as" formaction="https://ask.com/web?q=">Ask</button></span>
-    
 <span><button type="submit" class="submit" value="bg" formaction="https://bing.com/search?q=%s)">Bing</button></span>
-
 <span><button type="submit" class="submit"value="be" formaction="https://brave.com/search?q=%s)" >Brave</button></span>
 <span><button type="submit" class="submit" value="dd" formaction="https:///duckduckgo.com/search?q=%s)" >Duckduckgo</button></span>
 <span><button type="submit" class="submit" value="dp" formaction="https://www.dogpile.com/info.dogpl/search/web?q=">Dogpile</button></span>
@@ -141,7 +138,7 @@ return false;
 <span><button type="submit" class="submit" value="sx" formaction="https://stackexchange.com/search?q=">StackExchange</button></span>
 <span><button type="submit" class="submit" value="so" formaction="https://stackoverflow.com/search?q=">StackOverflow</button></span>
 <span><button type="submit" class="submit" value="sp" formaction="https://www.startpage.com/do/search?query=">Startpage</button></span>    
-<span><button type="submit" class="submit" value="sc" formaction="https://swisscows.ch/?query=">Swisscows</button></span> 
+<span><button type="submit" class="submit" value="sc" formaction="https://swisscows.com/web?query=%s">Swisscows</button></span> 
 <span><button type="submit" class="submit" value="wp" formaction="https://en.wikipedia.org/wiki/wiki.html?search=">Wikipedia</button></span>
 <span><button type="submit" class="submit" value="wa" formaction="https://www.wolframalpha.com/input/?i=">Wolframalpha</button></span>
 <span><button type="submit" class="submit" value="ya" formaction="https://search.yahoo.com/search?p=">Yahoo</button></span>
