@@ -132,13 +132,12 @@ verse { color: #F33; display: block; font-size: 1.0rem; font-style: oblique; tex
 .small {  font-size: 85%;  font-style: italic;  }
 pre {  padding: 5%;  }	
 
-.spc5, .spc15, .spc25, .spc35, .spc50, .spc75 { 
-	position: relative; clear:both; float:inherit; }
+.spc5, .spc15, .spc25, .spc35, .spc55, .spc75 { position: relative; clear:both; float:inherit; }
 .spc5 {  height:5px; max-height:5px; margin:5px; padding:5px; }
 .spc15 { height:15px; max-height:15px; margin:15px; padding:15px; }
 .spc25 { height:25px; max-height:25px; margin:25px; padding:25px; }
 .spc35 { height:35px; max-height:35px; margin:35px; padding:35px; }
-.spc50 { height:50px; max-height:50px; margin:50px; padding:50px; }
+.spc55 { height:55px; max-height:55px; margin:55px; padding:55px; }
 .spc75 { height:75px; max-height:75px; margin:75px; padding:75px; }
 
 
@@ -149,7 +148,7 @@ pre {  padding: 5%;  }
 }
 /* Responsive screen 600px/less */
 @media screen and (max-width: 600px) {
-.intro p { font-size: 0.55rem;  }
+.intro p { font-size: 0.65rem;  }
 /*  multisearch */  .search-form { max-width: 100%; }  #searchterms {  width: 90%; }   input[type=search]:focus { width: 93%; }
  /*  blockquote  */  .blockquote { max-width: 66% }  .blockquote p { font-size: 90%; }  .blockquote c { font-size: 80%; } 
  .giphs { max-width: 80%; }
