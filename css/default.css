@@ -148,8 +148,8 @@ pre {  padding: 5%;  }
 }
 /* Responsive screen 600px/less */
 @media screen and (max-width: 600px) {
-.intro p { font-size: 0.65rem;  }
-/*  multisearch */  .search-form { max-width: 100%; }  #searchterms {  width: 90%; }   input[type=search]:focus { width: 93%; }
+.intro p { font-size: 0.596rem;  }
+/* multisearch */  .search-form { max-width: 100%; }  #searchterms {  width: 90%; }   input[type=search]:focus { width: 93%; }
  /*  blockquote  */  .blockquote { max-width: 66% }  .blockquote p { font-size: 90%; }  .blockquote c { font-size: 80%; } 
  .giphs { max-width: 80%; }
 }
