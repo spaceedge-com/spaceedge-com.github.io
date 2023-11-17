@@ -18,21 +18,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>	
 
 <style>	 
-/* padding: top right bottom left; trbl treble */		
-/*  custom radio buttons  */	
-input[type="radio"] {
-	appearance: none; border-radius: 50%; width: 10px; height:10px; border: 3px solid #699; 
-	position: relative; top: 1px; margin-right: 2px; margin-bottom: -1px; padding: 3px; }
-input[type="radio"], label { 
-	font: .69rem 'Sans'; border-radius: 5px; border: 1px solid;
-  	padding: 3px; margin: -1px; } 
-input[type="radio"]:checked { border: 3px solid #000; background: #69f; }
-input[type="radio"]:checked+label, .Checked+label { 
-	background: #fccf00; color: blue; border-radius: 5px; border: 1px solid; }
+/* padding: top right bottom left; trbl treble */
 	
 .search-form span { display: inline-block; padding: 0 1rem 0.26rem 0; }
 
-/*  form html-only, buttons class=submit */
+/* form html-only, buttons class=submit */
 .submit { margin: 3px; cursor: pointer; }
 #inp { text-align: center;  }
 #inp:focus { width: 75%; }
@@ -69,7 +59,8 @@ input[type="radio"]:checked+label, .Checked+label {
 
 <div id="box" onload="document.getElementById('inp').focus()" style="margin:1em;">
 
-<img src="/images/find-out-rebecca-romijn.gif" width="25"><br>
+<p><img src="/images/find-out-rebecca-romijn.gif" width="25">
+<br>Hi, find out.</p>
 
 <form action="" method="POST">
 <input type="hidden" name="t" value="space">
