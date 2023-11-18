@@ -27,14 +27,15 @@
 #inp { text-align: center;  }
 #inp:focus { width: 75%; }
 	
-blockquote:before {
-font-size:1.15em;font-weight:bold;font-style:oblique; margin:2px;	
-color:#f69; content:close-quote;
+blockquote ::before {
+content: '\201C';
+font-size:1.5em;font-weight:bold;font-style:oblique; margin:2px;	
+color:#f69; 
 }
-blockquote:after {
-font-size:1.15em;font-weight:bold;font-style:oblique; margin:2px;	
-color:#f69; content:close-quote;
-}
+blockquote ::after {
+content: '\201D';
+font-size:1.5em;font-weight:bold;font-style:oblique; margin:2px;	
+color:#f69; }
 	
 </style>
 	
