@@ -114,6 +114,7 @@ border: 1px solid;  }
 75% { background: radial-gradient( #6f6 50%, #6ff 50%); }	
 100% { background: radial-gradient( orange 25%, skyblue 75%); }
 }
+
 .blockquote p { 
 font-family: Andale Mono, monospace; color: ; font-size: 90%; font-style: oblique; padding: 0.65em; line-height: 1.20em; margin: .25em; text-align: center; } 
 .blockquote a { color: ; }
@@ -143,7 +144,9 @@ pre {  padding: 5%;  }
 /* Responsive screen 601px/wider */
 @media screen and (min-width: 601px) {	 
 /* blockquote */
-.blockquote { max-width: 95% }  
+.blockquote { max-width: 95% } 
+.giphs { max-width: 90%; }
+}	
 /* Responsive screen 600px/less */
 @media screen and (max-width: 600px) {
 .intro p { font-size: 0.596rem;  }
