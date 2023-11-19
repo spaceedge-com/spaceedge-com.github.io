@@ -27,6 +27,15 @@
 #inp { text-align: center;  }
 #inp:focus { width: 75%; }
 
+.blink_me { 
+animation: blinker 6s linear infinite; position:relative; text-align:center; 
+transition: 0.2s all linear;  }
+@keyframes blinker { 50% { opacity: 0; } }
+	
+.artcls {
+display:block; position:relative;
+max-width:90%; max-height:90%; 
+}	
 blockquote {
 margin:0; max-width:650px; display:block; }	
 blockquote h4 { 
