@@ -45,7 +45,7 @@ background-size: cover; background-position: center; background-repeat: no-repea
 margin-bottom: 2em; border-bottom: 1px solid;
 }
 #logo {
-background-image: url(/icons/SE_Logo.png);
+/* background-image: url(/icons/SE_Logo.png); */
 background-size: contain; background-repeat: no-repeat; width: 200px; height: 46px; margin: 0 auto; float: left;
 }
 .header .logo { 
