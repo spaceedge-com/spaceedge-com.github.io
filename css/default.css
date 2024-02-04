@@ -75,6 +75,9 @@ embed { width: 100%; /*imp. leave*/ }
 /* margin: top right bottom left; trbl treble */
 
 /* **** Multi-Search   **** */ 
+#box {
+  max-width: 50%;
+}
 #MultiSearch { 
 	margin: 0 auto; padding: 10px; display: block; position: relative; width: 100%; height: 300px; 
 	text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidden; }
@@ -150,13 +153,13 @@ pre {  padding: 5%;  }
 /* Responsive screen 600px/less */
 @media screen and (max-width: 600px) {
 .intro p { font-size: 0.596rem;  }
-/* multisearch */  .search-form { max-width: 100%; }  #searchterms {  width: 90%; }   input[type=search]:focus { width: 93%; }
- /*  blockquote  */  
-.blockquote { max-width: 85%; }  
-.giphs { max-width: 80%; }
+/* multisearch */  #box { max-width: 75%; }
+.search-form { max-width: 100%; }  #searchterms {  width: 90%; }   input[type=search]:focus { width: 93%; }
+ /*  blockquotes  */  
+.blockquote { max-width: 85%; }  .giphs { max-width: 80%; }
 }
 
-/* Flips Colors */
+/* toggle colors */
 .body { background: #fff; color: #222; }
 .toggle { background: #222; color: #fff; }
 #toggleTheme { margin: 5px; padding: 0; min-width: 25px; border-radius: 0; border: 0; }
