@@ -46,10 +46,10 @@ margin-bottom: 2em; border-bottom: 1px solid;
 }
 #logo {
 /* background-image: url(/icons/SE_Logo.png); */
-background-size: contain; background-repeat: no-repeat; width: 200px; height: 46px; margin: 0 auto; float: left;
+background-size: contain; background-repeat: no-repeat; width: 200px; height: 40px; margin: 0 auto; float: left;
 }
 .header .logo { 
-font-size: 1.60rem; font-family: 'Sriracha', cursive; text-decoration: none; 
+font-size: 2.25rem; font-family: cursive; text-decoration: none; 
 margin-left: 10px; margin-right: 1px;
 background-color: lightblue; background-blend-mode: difference;
 }	
