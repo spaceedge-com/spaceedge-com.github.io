@@ -99,7 +99,7 @@ input:focus::placeholder {  color: transparent;  }
 height: 25px; top: 0; position: relative; } 
 select { outline: none; border-radius: 15px; margin-top:1px; }   select::after { cursor: progress; } 	option { font-size: 1rem;  }
 input[type="submit"].Go { /* ➤ &#10148;*/ 
-align:top; margin:0; padding: .05rem; font-size:11px; width:25px; height:25px; color: ; background-color: ; border-radius: 15px; cursor: pointer; appearance:none; -webkit-appearance: none; -moz-appearance: none;  
+align:top; margin:0; padding: .05rem; font-size:11px; width:25px; height:25px; background-color: ; border-radius: 15px; cursor: pointer; appearance:none; -webkit-appearance: none; -moz-appearance: none;  
 border: 1px solid;  }
 /*  ******************   */ 
 
