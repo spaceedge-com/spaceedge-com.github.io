@@ -19,10 +19,43 @@
 
 <style>	 
 /* padding: top R botm L; TRBL treble */
-	
+
+/* **** Multi-Search   **** */ 
+#box { max-width: 50%; }
+#MultiSearch { 
+margin: 0 auto; padding: 10px; display: block; position: relative; width: 100%; height: 300px; 
+text-align: center; box-sizing: border-box; overflow-x: hidden; overflow-y: hidden; }
+.search-body h3, h4, h5, h6 {  
+margin: 1em; line-height: 1; }
+
+#searchdiv {  
+display: block; text-align: center; margin:0 auto; width: auto; height: auto; border-radius: 5%; }
+.search-form { 
+border: 0; border-radius: 12px; max-width: 75%; margin: 0 auto; 
+padding:0; padding-top:3px; padding-bottom:3px; }
+#searchterms { 
+background-color: white; width: 96%; margin:.5em .5em .5em .1em; border:1px solid teal; outline: none; min-height: 1rem; padding: 5px; border-radius: 5px; }
+input[type=search].searchterms {  
+width: 100%; outline: none;  }
+input[type=search]:focus {  
+background-color: ;  border: none; outline: none;  }
+input[type=search] { 
+-webkit-appearance: searchfield-cancel-button;  }
+input:focus::placeholder {  
+color: transparent;  }  
+#search_select { 
+width: 88px; color: inherit; background-color: ; font-size: 12px; border-radius: 15px; height: 25px; top: 0; position: relative; } 
+select { 
+outline: none; border-radius: 15px; margin-top:1px; }   
+select::after { cursor: progress; }
+option { font-size: 1rem;  }
+input[type="submit"].Go { /* ➤ &#10148;*/ 
+align:top; margin:0; padding: .05rem; font-size:11px; width:25px; height:25px; background-color: ; border-radius: 15px; cursor: pointer; appearance:none; -webkit-appearance: none; -moz-appearance: none;  
+border: 1px solid;  }
+
 .search-form span { display: inline-block; padding: 0 1rem 0.26rem 0; }
 
-/* form html-only, buttons class=submit */
+/* form, buttons class=submit */
 .submit { margin: 7px; cursor: pointer; border-radius:1px; color: inherit;
 background:transparent;  }
 #inp { text-align: center;  }
