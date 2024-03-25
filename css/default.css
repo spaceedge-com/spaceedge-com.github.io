@@ -129,7 +129,8 @@ pre {  padding: 5%;  }
 
 /* toggle colors */
 .body { background: #369; color: #fff;
-background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(51,102,153,1) 35%, rgba(0,212,255,1) 100%);     
+background: rgb(51,102,153);
+background: linear-gradient(0deg, rgba(51,102,153,1) 50%, rgba(255,255,255,1) 100%);     
       }
 .toggle { background: #222; color: #fff; }
 #toggleTheme { margin: 5px; padding: 0; min-width: 25px; border-radius: 0; border: 0; }
