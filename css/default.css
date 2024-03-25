@@ -47,7 +47,7 @@ background-size: contain; background-repeat: no-repeat; width: 200px; height: 40
 .header .logo { 
 font-size: 2.25rem; font-family: cursive; text-decoration: none; 
 margin-left: 10px; margin-right: 1px;
-background-color: lightblue; background-blend-mode: difference;
+background-color: turquious; background-blend-mode: difference;
 }	
 .intro {
 display: flex; justify-content: end; width: 80%; height: 45px;
@@ -128,8 +128,7 @@ pre {  padding: 5%;  }
 }
 
 /* toggle colors */
-.body { background: #369; color: #fff;
-background: rgb(51,102,153);
+.body { background: #369; color: #222;
 background: linear-gradient(0deg, rgba(51,102,153,1) 50%, rgba(255,255,255,1) 100%);     
       }
 .toggle { background: #222; color: #fff; }
