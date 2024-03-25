@@ -26,14 +26,14 @@ background-position: top left; background-attachment: fixed; background-repeat: 
 overflow-x:hidden; overflow-y:auto; 
 }
 h1, h2, h3, h4, h5, h6 {  
-display: block; font-family: Sans serif; font-weight: bold; clear:both; line-height: 1.20em; }
+display: block; font-family: Sans serif; font-weight:bold; text-align:left; text-indent: 10px; clear:both; line-height: 1.20em; }
 h1 {  font-size: 1.20rem;  margin: .27em 0 .67em 0; padding-left: 0.5em; }
 h2 {  font-size: 1.10rem;  margin: 0.83em 0 0.83em 0;  padding-left: 0.5em; }
 h3 {  font-size: 1.0rem;  margin: 1em 0 1em 0;  padding-left: 0.7em; }
 h4 {  font-size: 0.90rem;  margin: 1.33em 0 1.33em 0;  padding-left: 0.7em; }
 h5 {  font-size: 0.80rem;  margin: 1.67em 0 1.67em 0;  padding-left: 0.7em; }
 h6 {  font-size: 0.70rem;  margin: 2.33em 0 2.33em 0;  padding-left: 0.7em; }
-p {   display: block; font-size: 1.0rem; font-style: normal; font-weight: normal;  text-indent: 30px;
+p {   display: block; font-size: 1.0rem; font-style: normal; font-weight: normal;  text-align:left; text-indent: 30px;
 line-height: 1.10em; margin: 1em 0 1em 0; padding-left: 0.50em; padding-right: .20em;  }
 /* header CSS */
 .header {
