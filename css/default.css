@@ -115,7 +115,7 @@ pre {  padding: 5%;  }
 /* Responsive lrg screen 601px/wider */
 @media screen and (min-width: 601px) {	 
 /* blockquote */
-.blockquote { max-width: 95% } 
+.blockquote { max-width:650px; } 
 .giphs { max-width: 90%; }
 }	
 /* Responsive sml screen 600px/less */
