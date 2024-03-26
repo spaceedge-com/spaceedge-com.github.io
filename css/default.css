@@ -112,13 +112,13 @@ pre {  padding: 5%;  }
 .spc75 { height:75px; max-height:75px; margin:75px; padding:75px; }
 
 
-/* Responsive screen 601px/wider */
+/* Responsive lrg screen 601px/wider */
 @media screen and (min-width: 601px) {	 
 /* blockquote */
 .blockquote { max-width: 95% } 
 .giphs { max-width: 90%; }
 }	
-/* Responsive screen 600px/less */
+/* Responsive sml screen 600px/less */
 @media screen and (max-width: 600px) {
 .intro p { font-size: 0.596rem;  }
 /* multisearch */  #box { max-width: 75%; }
