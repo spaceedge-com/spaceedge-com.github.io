@@ -16,7 +16,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black"> <meta name="apple-mobile-web-app-title" content="SpaceEdge">
 <!--    jQuery    --> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>	
-
+<!-- fontawesome  --> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>	
 <style>	 
 /* padding: top R botm L; TRBL treble */
 
@@ -85,7 +86,43 @@ width:89%; max-width:90%;
 background-color:#eee;
 margin: 0 auto; padding: 1.5em;
 }	
-	
+
+/* Share Popup */
+*{ /*css reset*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  border-radius: 4px;
+  padding: 0 5px;
+  border: 1px solid #757171;
+}
+.field.active{
+  border-color: #7d2ae8;
+}
+.field i{
+  width: 50px;
+  font-size: 18px;
+  text-align: center;
+}
+.field.active i{
+  color: #7d2ae8;
+}
+.field input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+.field button{
+  color: #fff;
+  padding: 5px 18px;
+  background: #7d2ae8;
+}
+.field button:hover{
+  background: #8d39fa;
+}	
 </style>
 	
 <!-- load external, <script> $(function(){ //$("#header").load("header.htm"); //$("#footer").load("footer.htm"); }); </script> -->
@@ -243,6 +280,36 @@ As Internet became increasingly filled with Scammers Advertising. Technology is 
 
 <hr><br>
 
+<div class="Share"> 	
+	
+<button class="view-modal">Share</button>
+  <div class="popup">
+    <header>
+      <span>Share Modal</span>
+      <div class="close"><i class="uil ">x</i></div>
+    </header>
+    <div class="content">
+      <p>Share this link via</p>
+      <ul class="icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+      </ul>
+      <p>Or Comm</p>
+      <div class="field">
+        <i class="url-icon uil uil-link"></i>
+        <input type="text" readonly value="">
+        <button>Comm</button>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</div>
+	
 <!-- The widget follows "system" settings for light/dark mode, select "light" or "dark" mode for a consistent display
 -->
 <div style="width:90%; margin:0 auto;" 
