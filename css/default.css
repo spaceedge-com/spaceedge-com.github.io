@@ -71,7 +71,7 @@ embed { width: 100%; /*imp. leave*/ }
 
 /*  ******************   */ 
 
-.ideas { display: block; max-width:100%; margin-top: 0.75em; padding-left: 1.75em; padding-top: .75em; padding-bottom: 1.2em;  }
+.ideas { display: block; max-width:98%; margin-top: 0.75em; padding-left: 1.75em; padding-top: .75em; padding-bottom: 1.2em;  }
 
 .bg-anim {  
 	display: block; border-left: 5px solid #62c; padding-left: 2px; margin: 1.18em 0 0.5em .5em; 
@@ -88,7 +88,6 @@ embed { width: 100%; /*imp. leave*/ }
 
 .blockquote p { 
 font-family: Andale Mono, monospace; color: ; font-size: 90%; font-style: oblique; padding: 0.65em; line-height: 1.20em; margin: .25em; text-align: center; } 
-.blockquote a { color: ; }
 
 .giphs { padding: 1px; margin: 1px; max-width: 70%;  }
 
