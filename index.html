@@ -96,6 +96,11 @@ margin: 0 auto; padding: 1.5em;
 .feeds {
 display: block; position:relative;
 margin:0 auto; padding:5%; 
+overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* truncate to 400 lines */
+  -webkit-line-clamp: 400;
 }
 .rss-item a {
 	color:navy;
@@ -105,7 +110,7 @@ margin:0 auto; padding:5%;
 	padding-top: 10px;
 }
 
- /*css click open modal */
+/*css click open modal, share: */
 .modal-window {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.25);
@@ -253,10 +258,11 @@ margin:0 auto; padding:5%;
 <iframe width="360" height="440"  src="https://rss.app/embed/v1/carousel/tLgLszvf6wshjPDy" frameborder="0"></iframe>
 
 <div class="spc15"> <hr> </div>	
-	
-<div class="" style="text-align:left; width:93%;height:1200px; margin:0 auto; padding:5%; display:block; position:relative; overflow-y:auto;"> 	
-<!-- feedroll js -->
-<script language="JavaScript" src="https://feedroll.com/rssviewer/feed2js.php?src=https%3A%2F%2Ftheconversation.com%2Fus%2Ftechnology%2Farticles.atom&num=5&utf=y&pc=y&html=a"  charset="UTF-8" type="text/javascript"></script>
+
+<!-- rss feedroll overflow-y:auto; -->
+<div class="" style="text-align:left; width:93%;height:1200px; margin:0 auto; padding:5%; display:block; position:relative; "> 	
+<!-- js php -->
+<script language="JavaScript" src="https://feedroll.com/rssviewer/feed2js.php?src=https%3A%2F%2Ftheconversation.com%2Fus%2Ftechnology%2Farticles.atom&num=5&utf=y&pc=y&html=a" charset="UTF-8" type="text/javascript"></script>
 </div>
 
 <hr><br>
