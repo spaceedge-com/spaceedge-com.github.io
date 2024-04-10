@@ -117,7 +117,7 @@ overflow:auto;
 
 /*css click open modal, share: */
 .modal-window {
-  position: relative;
+  position: fixed;
   background-color: rgba(255, 255, 255, 0.25);
   top: 0;
   right: 0;
@@ -139,7 +139,7 @@ overflow:auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 2em; margin: 3%;
+    padding: 2em; 
     background: white;
   }
 .modal-close {
@@ -147,9 +147,8 @@ overflow:auto;
   line-height: 50px;
   font-size: 80%;
   position: absolute;
-  right: 0;
+  right: 0; top:0;
   text-align: center;
-  top: 0;
   width: 70px;
   text-decoration: none;
   &:hover { color: black; }
@@ -162,15 +161,13 @@ overflow:auto;
   height: 100vh;
 }
 .modal-window {
-  & > div {
-    border-radius: 1rem;
-  }
+  & > div { border-radius: 1rem; }
 }
 .modal-window div:not(:last-of-type) {
   margin-bottom: 15px;
 }
 .btn {
-  padding: 1em 1.5em;
+  padding: 1em 1.5em; margin: 2em;
   border-radius: 0.5rem;
   text-decoration: none;
   i { padding-right: 0.3em; }
