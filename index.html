@@ -107,17 +107,27 @@ overflow:auto;
   /* truncate to 400 lines */
   -webkit-line-clamp: 400;
 }
+/* begin styles for RSS Feed */
+.rss_box {
+	 margin: 10px 5%;
+	 padding: 4px 8px;
+	 width: 460px;
+	 background-color: #ededed;
+	 border: 2px dashed #7485CA;
+}
 
-.rss-item a:title{
+.rss_title, rss_title a {
+	font-family: "American Typewriter", "Trebuchet MS", Trebuchet, Lucida, sans-serif;
+	font-size: 18px;
+	font-weight:bold;
+	margin: 5px 0;
+	padding: 0;
+	letter-spacing: 1px;
 	font-size: 15pt; font-weight:bold; 
-	text-decoration: underline;
-	color:navy; display:block;
+ display:block;
 	text-align:center;
 	border-top: 2px solid #blue;
 	margin-top: 20px; 
-}
-.rss-item a:link {
-display: block; font-size: small;
 }
 
 /*css click open modal, share: */
