@@ -94,9 +94,9 @@ margin: 0 auto; padding: 1.5em;
 }
 
 .feeds {
-display: block; position:relative;
+position:relative;
 margin:0 auto; padding:5%; 
-overflow: hidden;
+overflow:hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   /* truncate to 400 lines */
@@ -112,7 +112,7 @@ overflow: hidden;
 
 /*css click open modal, share: */
 .modal-window {
-  position: fixed;
+  position: relative;
   background-color: rgba(255, 255, 255, 0.25);
   top: 0;
   right: 0;
@@ -134,10 +134,9 @@ overflow: hidden;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 2em;
+    padding: 2em; margin: 3%;
     background: white;
   }
-		
 .modal-close {
   color: #aaa;
   line-height: 50px;
@@ -150,28 +149,22 @@ overflow: hidden;
   text-decoration: none;
   &:hover { color: black; }
 }
-
-/* Demo Styles */
-
+/* modal Styles */
 .container {
   display: grid;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-
 .modal-window {
   & > div {
     border-radius: 1rem;
   }
 }
-
 .modal-window div:not(:last-of-type) {
   margin-bottom: 15px;
 }
-
 .btn {
-  background-color: white;
   padding: 1em 1.5em;
   border-radius: 0.5rem;
   text-decoration: none;
@@ -260,7 +253,7 @@ overflow: hidden;
 <div class="spc15"> <hr> </div>	
 
 <!-- rss feedroll overflow-y:auto; -->
-<div class="" style="text-align:left; width:93%;height:1200px; margin:0 auto; padding:5%; display:block; position:relative; "> 	
+<div class="feeds" style="text-align:left; width:93%;height:500px;"> 	
 <!-- js php -->
 <script language="JavaScript" src="https://feedroll.com/rssviewer/feed2js.php?src=https%3A%2F%2Ftheconversation.com%2Fus%2Ftechnology%2Farticles.atom&num=5&utf=y&pc=y&html=a" charset="UTF-8" type="text/javascript"></script>
 </div>
