@@ -19,8 +19,12 @@
 <!-- fontawesome  --> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>	
 <style>	 
-/* padding: top R botm L; TRBL treble */
+/* padding: T⬆️ R➡️ B⬇️ L⬅️; TRBL treble */
 
+*{ /*css*/
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
 /* **** Multi-Search   **** */ 
 #MultiSearch {  }
 .search-body h3, h4, h5, h6 {  
@@ -78,7 +82,7 @@ font-family: 'Brush Script MT', cursive;
 font-size:1rem; text-align:center; 
 margin-left:66px;padding-top:10px;	
 }
-	
+
 artcls { 
 display:block; 
 position:relative;
@@ -86,17 +90,51 @@ width:90%; max-width:96%;
 background-color: inherit;
 margin: 0 auto; padding: 1.5em;
 }	
-
-*{ /*css reset*/
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/*css for read more*/
+section {
+  text-align: justify;
 }
+section p {
+  margin-top: 0;
+}
+.has-read-more {
+  position: relative;
+  width: 300px;
+}
+.has-read-more section {
+  height: 160px;
+  overflow: hidden;
+}
+.show-more {
+  position: absolute;
+  bottom: 10px;
+  width: 140%;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  margin-left: -20%;
+}
+.show-more:after {
+  content: "read more";
+  background-image: linear-gradient(to bottom, transparent, white);
+  padding-bottom: 10px;
+  display: block;
+  font-weight: bold;
+  color: black;
+}
+.show-more span {  background: white;
+}
+input[type="checkbox"]:checked {
+  display: none;
+}
+input[type="checkbox"]:checked + section {
+  height: auto;
+}
+
 
 .widget {
 position:relative;
-margin:0 auto; margin:5%; 
-}
+margin:0 auto; margin:5%; } 
 
 .feeds {
 position:relative;
@@ -119,7 +157,6 @@ overflow:hidden;
 .rss_item a:link, .rss_item a:visited, .rss_item a:active {
  font-size:small;
 }
-
 
 /*css click open modal, share: */
 .modal-window {
