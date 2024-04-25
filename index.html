@@ -167,12 +167,55 @@ background-color: inherit; margin:20 auto;
 padding: 2em; width:96%;
 }	
 
-  
+/* light dark system theme */
+:root, [data-theme="light"] {
+        --page-bg-color: #e8e8ea;
+        --page-fg-color: #333333;
+        --h1-fg-color: #44446a;
+        --h2-fg-color: #64648a;
+        --code-fg-color: #a83030;
+        --code-bg-color: #d8d8d8;
+      }
+      [data-theme="dark"] {
+        --page-bg-color: #18181a;
+        --page-fg-color: #cccccc;
+        --h1-fg-color: #bbbbda;
+        --h2-fg-color: #9999aa;
+        --code-fg-color: #f86060;
+        --code-bg-color: #444444;
+}
+body {
+      font-family: sans-serif;
+      background-color: var(--page-bg-color);
+color: var(--page-fg-color);
+      }
+h1 {
+        color: var(--h1-fg-color);
+      }
+h2 {
+        color: var(--h2-fg-color);
+      }
+code {
+        font-size: 130%;
+        color: var(--code-fg-color);
+        background-color: var(--code-bg-color);
+        padding: 2px;
+      }
 </style>
+
+<script>
+  const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)')
+
+  function updateTheme() {
+    const theme = prefersDarkMode.matches ? 'dark' : 'light' 
+     document.documentElement.setAttribute('data-theme', theme)
+}
+
+updateTheme();
+  prefersDarkMode.addEventListener("change", () => updateTheme());
+</script>
 	
 <!-- load external, <script> $(function(){ //$("#header").load("header.htm"); //$("#footer").load("footer.htm"); }); </script> -->
-	
-<script defer src="https://chirpy.dev/bootstrapper.js" data-chirpy-domain="spaceedge.com"></script>	
 
 </head>
 <body id="body" class="body">
@@ -183,8 +226,6 @@ padding: 2em; width:96%;
 <div class="intro">
 <p>Freedom Space, Easy Search, Positive Spiritual Conscience Individual Rational Reason!</p></div>
 
-<button class="btn btn-primary" id="toggleTheme" title="Switch theme"><img src="/icons/invert-selection1.png"/>
-</button>
 </header>
  			
 <!--  <div class="" align="center" style="height:3px;">  
@@ -388,6 +429,7 @@ As Internet became increasingly filled with Scammers Advertising. Technology is 
   data-chirpy-theme="system"
   data-chirpy-comment="true"
   id="chirpy-comment">
+<script defer src="https://chirpy.dev/bootstrapper.js" data-chirpy-domain="spaceedge.com"></script>	
 </div>
 	     
 </div>
@@ -399,10 +441,8 @@ As Internet became increasingly filled with Scammers Advertising. Technology is 
 </div>
     
 </div>
-
 	
 </div>
-	
 	
 <!-- Rss div class="feedsrss" style="">
 <embed type="text/html" src="/feed.htm"> div> -->
@@ -414,16 +454,10 @@ As Internet became increasingly filled with Scammers Advertising. Technology is 
 </main>
 
 <div class="spc35"> <br> </div>
-	
-<script>
-$("#toggleTheme").click(function(){
-$(".body").toggleClass("toggle");
-});
-</script>
 
 <div class="foo" style=" "> 
 <embed type="text/html" src="/foo.htm">
 </div>
 
-	
-</body></html>
+</body>
+</html>
