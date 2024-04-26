@@ -80,9 +80,6 @@ a:active {
   text-decoration: underline;
 }
 
-.lx { width: 100%; display: block; position: relative; margin:5px auto; padding:5px; text-align: center; margin-bottom: 2em; }
-.lx a.links { border: 1px solid; padding: 10px; margin: .5em; }
-
 hr { border-top: 1px solid #teal; margin: 1em; box-shadow: 1px rgba(150,120,150,0.2), 1px rgba(150,150,150,0.8);  }
 
 embed { width: 100%; /*imp. leave*/ }
@@ -90,19 +87,6 @@ embed { width: 100%; /*imp. leave*/ }
 /* margin: top right bottom left; trbl treble */
 
 .ideas { display: block; max-width:98%; margin-top: 0.75em; padding-left: 1.75em; padding-top: .75em; padding-bottom: 1.2em;  }
-
-.bg-anim {  
-	display: block; border-left: 5px solid #62c; padding-left: 2px; margin: 1.18em 0 0.5em .5em; 
-	max-width: 60%; animation-name: bgcolor; 
-	animation-duration: 6s; animation-iteration-count: infinite;
-} /*  effect */
-@keyframes bgcolor {
-0% { background: radial-gradient( skyblue 25%, orange 75%); }
-25% { background: radial-gradient( #ff6 50%, #6ff 50%); }	
-50% { background: radial-gradient( yellow 50%, #6fc 50%); }	
-75% { background: radial-gradient( #6f6 50%, #6ff 50%); }	
-100% { background: radial-gradient( orange 25%, skyblue 75%); }
-}
 
 .giphs { padding: 1px; margin: 1px; max-width: 70%;  }
 
