@@ -48,7 +48,7 @@ background-size: cover; background-position: center; background-repeat: no-repea
 #logo { /* background-image: url(/icons/.png); */
 background-size: contain; background-repeat: no-repeat; width: 200px; height: 40px; margin: 0 auto; float: left;
 }
-.header .logo { 
+header .logo { 
 font-size: 2.25rem; font-family: cursive; text-decoration: none; 
 margin-left: 10px; margin-right: 1px;
 background-color: turquious; background-blend-mode: difference;
