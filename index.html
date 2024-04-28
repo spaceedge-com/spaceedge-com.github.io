@@ -26,32 +26,27 @@
   box-sizing: border-box;
 }
 /* **** Multi-Search   **** */ 
-#MultiSearch {  }
 .search-body h3, h4, h5, h6 {  
 margin: 1em; line-height: 1; }
-#searchdiv {   }
-#searchterms {  }
 	
 input[type=search].searchterms {  
 width: 100%; outline: none;  }
 input[type=search]:focus {  
 border: none; outline: none;  }
-input[type=search] {  }
 input:focus::placeholder {  
 color: transparent;  }  
-#search_select { } 
-select {  }   
 select::after { cursor: progress; }
 option {  }
 input[type="submit"].Go { /* ➤ &#10148;*/ }
 
 /* form, buttons */
-#box { max-width: 80%; }	
+#multisearch { max-width: 80%; }	
 .search-form { 
 border: 0; border-radius: 12px; max-width: 75%; margin: 0 auto; padding:0; padding-top:3px; padding-bottom:3px; }	
 .search-form span { display: inline-block; padding: 0 1rem 0.26rem 0; }
-.submit { margin: 7px; cursor: pointer; border:1px solid; border-radius:5px; color: inherit;
-background:transparent;  }
+.submit { margin: 7px; cursor: pointer; border:1px solid; border-radius:5px; 
+color: inherit; background:transparent; 
+}
 #inp { text-align: center;  }
 #inp:focus { width: 75%; }
 /* -----------—--- */
@@ -232,11 +227,9 @@ updateTheme();
 	
 <center>
 
-<div class="search" style="margin:0 auto; ">
+<div id="multisearch" style=" " onload="document.getElementById('inp').focus()" style="margin:1em;">
 	
-<div class=" "><h6>Easily Search & Find Multiple Sources. </h6> </div>	
-
-<div id="box" onload="document.getElementById('inp').focus()" style="margin:1em;">
+<h6>Easily Search & Find Multiple Sources. </h6> 
 
 <!-- <div style="padding:0;">
 <img src="/icons/" width="25">
@@ -267,8 +260,6 @@ updateTheme();
 <span><button type="submit" class="submit" value="ya" formaction="https://search.yahoo.com/search?p=">Yahoo</button></span>
 <br>
 </form>
-
-</div>
 
 </div>
 	
