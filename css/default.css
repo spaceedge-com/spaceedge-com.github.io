@@ -118,10 +118,3 @@ blockquote { width:600px; max-width:650px; }
 .search-form { max-width: 100%; }  #searchterms {  width: 90%; }   input[type=search]:focus { width: 93%; }
 blockquote { width:80%; max-width:85%; }  .giphs { max-width: 80%; }
 }
-
-/* toggle colors */
-.body { background: #369; color: #222;
-background: linear-gradient(0deg, rgba(69,150,156,1) 5%, rgba(255,255,255,1) 95%); }
-.toggle { background: #222; color: #fff; }
-#toggleTheme { margin: 5px; padding: 0; min-width: 25px; border-radius: 0; border: 0; }
-#toggleTheme img { width: 20px; height: auto; padding: 0; background-color: white; border:none; cursor: pointer; }
