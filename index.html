@@ -79,6 +79,19 @@ font-family: 'Brush Script MT', cursive;
 font-size:1rem; text-align:center; 
 margin-left:66px;padding-top:10px;	
 }
+
+/* Responsive lrg dis 601px/more */
+@media screen and (min-width: 601px) {	 
+body { width:980px; max-width:1024px; }
+blockquote { width:600px; max-width:650px; } 
+}	
+/* Responsive sml dis 600px/less */
+@media screen and (max-width: 600px) {
+.intro p { font-size: 0.596rem;  } 
+.search-form { max-width: 100%; }  #searchterms {  width: 90%; }   input[type=search]:focus { width: 93%; }
+blockquote { width:80%; max-width:85%; } 
+}
+
 .artdiv {
   display:block; padding: 2em; 
   border-radius:5px; 
