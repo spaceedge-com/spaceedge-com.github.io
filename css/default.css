@@ -29,8 +29,8 @@ h1, h2, h3, h4, h5, h6 {
 font-family: Garamond, serif;
 font-weight: bold; 
 line-height: 1.25em;  
-/* text-align: justify; 
-letter-spacing: 1px; */
+text-align: justify; 
+/* letter-spacing: 1px; */
 display:block; 
 clear:left; 
 float: left;
