@@ -178,7 +178,30 @@ updateTheme();
 <main>	
 	
 <center>
-
+<div class="visitors" align="center" style="margin:3px;">
+        <p id="ip-address"></p>        
+        <p id="ip-city"></p>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Fetch the IP address from the API
+            fetch("https://ipinfo.io/json") 
+                .then(response => response.json())
+                .then(data => {
+                    // Display the IP address on the screen
+                    document.getElementById("ip-address").textContent = 
+                          `Hi, thank you for visiting: ${data.ip}`;                    
+                    document.getElementById("ip-city").textContent = 
+                          `city: ${data.city}`
+                })
+                .catch(error => {
+                    console.error("Error fetching IP address:", error);
+                    document.getElementById("ip-address").textContent = 
+                          "Unable to retrieve IP address.";
+                });
+        });
+    </script>
+</div>
+    
 <div id="multisearch" style=" " onload="document.getElementById('inp').focus()" style="margin:1em;">
 	
 <h6 align="center" style="font-size:small;" >Private incognito browsing avoids ads tracking </h6> 
@@ -248,15 +271,14 @@ Light Pollution Harmfull To All At Night And Prevents Seeing Sky And Contributes
 <br>
 <blockquote>
 My Wild Theory how Humans on Earth began: 'From My Observations: Religion, Science, Culture May Have A Few Hundred Years Left Unless There's A Course Correction.
-'Humans Could've Lived On Mars Eons Ago. After Wipeout Of Mars Remnants Survivors may have gone or could still be underground Mars. Others left may have relocated To Earth; Adam & Eve.'
+'Humans Could've Lived On Mars Eons Ago. Mars remnants (could still be there underground) may have relocated To Earth; Adam & Eve.'
 <br>
 <at>Zac@spaceedge.com</at>
 </blockquote>
 <br>
 <blockquote>
-Unhealthy Advertizers TV/Online pushers of hate harmful foods.
-Bad tech products self destruct forced updates. 
-Features removed disabled ruining software running on the hardware. 
+Advertizers TV/Online often push unhealthy rumors, harmful products.
+Products are forced updates ruining apps running on good hardware.  
 Creating a massive trail of toxic waste and pollution.
 <at>Zac@spaceedge.com</at>
 </blockquote>
