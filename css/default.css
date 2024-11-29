@@ -32,9 +32,10 @@ line-height: 1.25em;
 text-align: justify; 
 /* letter-spacing: 1px; */
 display:block; 
-clear:left; 
+clear:left; clear: right;   
 float: left;
-padding-left:0;
+padding-left:0;   
+width: 100%;
 }
 h1 {  font-size:1.80rem; margin: 1.3em 0 1.30em 0; }
 h2 {  font-size:1.50rem; margin: 1.3em 0 1.3em 0;   }
