@@ -156,7 +156,7 @@ updateTheme();
 <!-- load external, <script> $(function(){ //$("#header").load("header.htm"); //$("#footer").load("footer.htm"); }); </script> -->
 
 </head>
-<body id="" class="">
+<body id="" class="" align="center" style="max-width:90%; margin:0 5px 0 5px;">
         
 <header> 
 <div>
@@ -178,28 +178,9 @@ updateTheme();
 <main>	
 	
 <center>
+	
 <div class="visitors" align="center" style="margin:3px;">
-        <p id="ip-address"></p>        
-        <p id="ip-city"></p>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Fetch the IP address from the API
-            fetch("https://ipinfo.io/json") 
-                .then(response => response.json())
-                .then(data => {
-                    // Display the IP address on the screen
-                    document.getElementById("ip-address").textContent = 
-                          `Hi, thank you for visiting: ${data.ip}`;                    
-                    document.getElementById("ip-city").textContent = 
-                          `city: ${data.city}`
-                })
-                .catch(error => {
-                    console.error("Error fetching IP address:", error);
-                    document.getElementById("ip-address").textContent = 
-                          "Unable to retrieve IP address.";
-                });
-        });
-    </script>
+
 </div>
     
 <div id="multisearch" style=" " onload="document.getElementById('inp').focus()" style="margin:1em;">
