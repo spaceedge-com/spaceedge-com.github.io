@@ -27,7 +27,19 @@
   margin: 5px; padding: 1px; 
   max-width: 1200px;
 }
+/* hides show expands multisearch  */ 
+.expands { }
+.details,
+.show,
+.hide:target {
+  display: none;
+}
+.hide:target + .show,
+.hide:target ~ .details {
+  display: block;
+}
 /* **** Multi-Search   **** */ 
+/* search */ 
 .search-body h3, h4, h5, h6 {  
 margin: 1em; line-height: 1;
 }
