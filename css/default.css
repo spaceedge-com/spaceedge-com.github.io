@@ -28,7 +28,7 @@ overflow-x:hidden; overflow-y:auto;
 h1, h2, h3, h4, h5, h6 {  
 font-family: Sans-serif;
 line-height: 1.0em;  
-text-align: ; 
+text-align: left; 
 /* letter-spacing: 1px; */
 display:block; 
 clear:left; clear: right;   
