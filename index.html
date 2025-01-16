@@ -27,8 +27,11 @@
   margin: 5px; padding: 1px; 
   max-width: 1200px;
 }
-/* hides show expands multisearch  */ 
+/* expands multisearch hide show  */ 
 .expands { }
+.hide, .show { 
+border:1px solid #abc; border-radius:5px; }
+
 .details,
 .show,
 .hide:target {
@@ -38,6 +41,7 @@
 .hide:target ~ .details {
   display: block;
 }
+
 /* **** Multi-Search   **** */ 
 /* search */ 
 .search-body h3, h4, h5, h6 {  
@@ -64,7 +68,7 @@ display: inline-block; padding: 0 1rem 0.26rem 0; }
 margin: 7px; cursor: pointer; border:1px solid; border-radius:5px; 
 color: inherit; background:transparent; 
 }
-#inp { text-align:center; padding:2em; }
+#inp { text-align:center; padding:1rem; }
 #inp:focus { width: 75%; }
 /* -----------—--- */
 /*    Posts    */
