@@ -81,10 +81,10 @@ transition: 0.6s all linear;  }
 @keyframes blinker { 100% { opacity: .20; } 
 }
 blockquote { 
-font: 5vw Ariel;
+font: 4vw Ariel;
 font-weight:normal; font-style:italic;
-line-height:1.7;
-display:block; margin:0 auto; padding:15px; 
+line-height:1.5; display:block; 
+margin:0 auto; padding:15px; 
 border-radius:5px; border: .5px solid #bbb9;
 }	
 blockquote::before {
@@ -129,13 +129,13 @@ blockquote { width:80%; max-width:85%; }
 
 /* :root is generally <html> */
 :root { font-size: 75%; }
-p { font-size: 1.1rem; }
+p { font-size: 1.2rem; }
 /* define all sizes in rems */
 h1 { font-size: 5.5vw; }
 h2 { font-size: 4.4vw; }
-h3 { font-size: 1.15rem; 
+h3 { font-size: 1.10rem; 
   text-transform: uppercase; }
-h4 { font-size: 1.1rem; }
+h4 { font-size: 1.05rem; }
 h5 { font-size: 1.1rem; 
   text-transform: uppercase; }
 h6 { font-size: 1.0rem; }
@@ -180,7 +180,6 @@ ul {
         --code-bg-color: #333;
 }
 body {
-font-family: sans-serif;
 background-color: var(--page-bg-color);
 color: var(--page-fg-color);
 }
@@ -192,7 +191,7 @@ code {
  background-color: var(--code-bg-color);
  padding: 2px;
 }  
-/* end sys theme */
+/* end light dark theme */
 
 </style>
 
@@ -234,7 +233,7 @@ updateTheme();
 
 <br>
 
-<div class="Expands">
+<div class="Expands" align="center" style="margin:2px; text-align:left; ">
 <!-- Expands Content start. -->	
   <a id="hide1" href="#hide1" style="color:#fff;background-color:#a8a;" class="hide">+ MultiSearch</a>
   <a id="show1" href="#show1" class="show">- MultiSearch</a>
@@ -242,7 +241,7 @@ updateTheme();
   <div class="details" style="background-color:#323;">
 
 
-<div class="goog-web-search" align="center" style="margin:1.0em;padding:.20px;">
+<div class="goog-web-search" align="center" style="margin:1.0em; width:150px;">
   <script async src="https://cse.google.com/cse.js?cx=e2f645542a795448c">
 </script>
 <div class="gcse-search"></div>
