@@ -122,16 +122,28 @@ blockquote { width:600px; max-width:650px; }
 }	
 /* Responsive sml dis 600px/less */
 @media screen and (max-width: 600px) {
-h1 { font-size: 5.00vw; }
-h2 { font-size: 4.50vw; }
-h3 { font-size: 4.30vw; }
-h4 { font-size: 4.10vw; }
-h5 { font-size: 3.90vw; }
-h6 { font-size: 3.75vw; }
- p { font-size: 3.75vw; }
 .intro p { font-size: 0.596rem;  } 
 .search-form { max-width: 100%; }  #searchterms {  width: 98%; }   input[type=search]:focus { width: 99%; }
-blockquote { width:80%; max-width:85%; } 
+blockquote { width:80%; max-width:85%; }
+}
+
+/* :root is generally <html> */
+:root { font-size: 80%; }
+p { font-size: 1rem; }
+/* define all sizes in rems */
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; 
+  text-transform: uppercase; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1rem; 
+  text-transform: uppercase; }
+h6 { font-size: 1rem; }
+/* The media queries just need to change :root */
+@media screen and (min-width: 600px) {
+	:root { font-size: 100%;}
+}@media screen and (min-width: 1000px) {
+	:root { font-size: 125%;}
 }
 
 /* ul li style lists */
