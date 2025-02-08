@@ -200,9 +200,8 @@ blockquote { width:600px; max-width:650px; }
 blockquote { width:80%; max-width:85%; }
 figure { display:flex; } 
 /* Clearfix (clear floats) */
-img { flex:49.99%; flex-wrap:wrap; margin:0;padding:0;}
-img::after {
-  height:0; content:""; clear:both; display:flex;}
+img { flex:49.99%; flex-wrap:wrap; padding:0; vertical-align:bottom;}
+img::after { content:""; clear:both; display:flex;}
 figcaption { width:50%; }
 }
 
