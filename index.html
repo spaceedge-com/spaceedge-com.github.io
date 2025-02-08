@@ -199,6 +199,11 @@ blockquote { width:600px; max-width:650px; }
 .search-form { max-width: 100%; }  #searchterms {  width: 98%; }   input[type=search]:focus { width: 99%; }
 blockquote { width:80%; max-width:85%; }
 figure { display: flex; } 
+/* Clearfix (clear floats) */
+figure::after {
+  content: ""; clear: both; 
+  display: table;
+}
 figcaption { width:50%; margin:0;padding:0;}
 img { flex: 49.99%; padding:0; margin:0;}
 .giphs { max-width: 80%; }
