@@ -202,7 +202,7 @@ figure { display:flex; }
 /* Clearfix (clear floats) */
 img { flex:49.99%; flex-wrap:wrap; margin:0;padding:0;}
 img::after {
-  content:""; clear:both; display:flex;}
+  height:0; content:""; clear:both; display:flex;}
 figcaption { width:50%; }
 }
 
@@ -307,11 +307,11 @@ updateTheme();
 <blockquote>
 <!-- solar -->
 <figure style="">
-<img style="max-width:50%;height:50px;" src="images/IMG_2025-02-05-183824.jpeg" alt="solarlight1" />
+<img style="max-width:50%;height:auto;" src="images/IMG_2025-02-05-183824.jpeg" alt="solarlight1" />
   <figcaption>If you guessed solar powered light 👍 using only a tiny 1" panel</figcaption>
 </figure> 
 <figure> 
-<img style="max-width:50%;height:50px;" src="images/IMG_2025-02-07-170203.jpeg" alt="solarlight2" />
+<img style="max-width:50%;height:auto;" src="images/IMG_2025-02-07-170203.jpeg" alt="solarlight2" />
   <figcaption>Solar powered using only 1' panel without battery</figcaption>
 </figure>  
   <br>
