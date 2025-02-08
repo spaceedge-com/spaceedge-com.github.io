@@ -198,11 +198,10 @@ blockquote { width:600px; max-width:650px; }
 .intro p { font-size: 0.596rem;  } 
 .search-form { max-width: 100%; }  #searchterms {  width: 98%; }   input[type=search]:focus { width: 99%; }
 blockquote { width:80%; max-width:85%; }
-figure { display: flex; } 
+figure { display:flex; flex-wrap:wrap;} 
 /* Clearfix (clear floats) */
 img::after {
-  content: ""; clear: both; 
-  display: table; margin:0;padding:0;
+  content:""; clear:both; display: table;
 }
 figcaption { width:50%; }
 img { flex: 49.99%; padding:0;margin:0;}
