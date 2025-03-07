@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>	
 <style>	 
 /* padding: T⬆️ R➡️ B⬇️ L⬅️; TRiBL */
-* { /*css*/
+* { 
   font-family: Ariel;
   text-align: left;
   font-size:1.10rem; 
@@ -30,6 +30,11 @@
   margin: 5px; padding: 1px; 
   max-width: 1200px;
 }
+/*css applies order precedence*/
+body { font-size: 1.15rem; 
+  font-style:italic; }
+:not(body) { font-style:normal; }
+
 /* expands multisearch hide show  */ 
 .expands { }
 .hide, .show { 
