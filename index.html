@@ -120,13 +120,13 @@ h1 { font-family: Ariel;}
 
 /* :root is generally <html> */
 :root { font-size: 75%; }
-p, body { font-size: 1.2rem; }
+p, body { font-size: 1.0em; }
 /* define all sizes in rems */
 h1 { font-size: 5.5vw; }
 h2 { font-size: 4.4vw; }
-h3 { font-size: 1.10rem; 
+h3 { font-size: 1.20rem; 
   text-transform: uppercase; }
-h4 { font-size: 1.05rem; }
+h4 { font-size: 1.15rem; }
 h5 { font-size: 1.1rem; 
   text-transform: uppercase; }
 h6 { font-size: 1.0rem; }
@@ -196,10 +196,8 @@ blockquote { width:600px; max-width:650px; }
 /* Responsive sml dis 600px/less */
 @media screen and (max-width: 600px) {
 .intro p { font-size: 0.6rem;  } 
-.search-form { max-width: 100%; }  #searchterms {  width: 98%; }   input[type=search]:focus { width: 99%; }
-blockquote { width:80%; max-width:85%; }
-
-figure { width:100%; display:flex; margin:0; gap: 1px; font-size:0; } 
+.search-form { max-width: 100%; }  #searchterms {  width: 98%; }   input[type=search]:focus { width:99%; }
+blockquote { width:80%;max-width:85%; } figure { width:100%; display:flex; margin:0; gap: 1px; font-size:0; } 
 /* Clearfix (clear floats) */
 img { display:inherit; float:left;
   flex:99.99%; flex-wrap:wrap; 
@@ -207,7 +205,7 @@ img { display:inherit; float:left;
   object-fit: contain;
   align-self: flex-start; }
 figcaption { width:44%; display: inline;
-  flex: 1 1 auto; font-size:.9rem;}
+  flex: 1 1 auto; font-size:.99rem;}
 }
 
 </style>
