@@ -363,7 +363,60 @@ updateTheme();
     window.location.href = engineUrl + encodeURIComponent(query);
   });
 </script>
-<!-- . -->	
+<!-- inline css style search -->	
+<style>
+/* Base styling */
+.details {
+  padding: 1em;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+input.line,
+select.submit,
+button.submit {
+  padding: 0.5em;
+  border-radius: 4px;
+  border: none;
+  margin: 0.3em 0;
+  font-size: 1em;
+}
+/* Light mode (default) */
+@media (prefers-color-scheme: light) {
+  .details {
+    background-color: #f0f0f0;
+    color: #222;
+  }
+  input.line,
+  select.submit,
+  button.submit {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+  }
+  a.hide, a.show {
+    background-color: #ddd;
+    color: #000;
+  }
+}
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .details {
+    background-color: #222;
+    color: #eee;
+  }
+  input.line,
+  select.submit,
+  button.submit {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+  }
+  a.hide, a.show {
+    background-color: #444;
+    color: #fff;
+  }
+}
+</style>
 <!-- </div> Expands end. -->	
 
 <!-- Main intro  -->
