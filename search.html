@@ -1,16 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="/manifest.json"> <!-- Link to PWA Manifest -->
   <title>MultiSearch PWA</title>
+  <!-- Optional: Add CSS and other meta tags for better user experience -->
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <!-- Your page content here -->
+  <!-- Your search page content -->
+  <h1>Welcome to MultiSearch</h1>
+  <p>Use the search functionality below to find what you need:</p>
+  <form>
+    <input type="text" id="search" placeholder="Enter your search query" />
+    <button type="submit">Search</button>
+  </form>
+  
+  <!-- Optional: Add icons or any other content related to your search page -->
 
-  <!-- Service Worker Registration Code placed in HTML -->
+  <!-- Service Worker Registration Code -->
   <script>
     if ('serviceWorker' in navigator && window.location.pathname === '/search') {
       window.addEventListener('load', () => {
@@ -24,6 +33,8 @@
       });
     }
   </script>
+
+  <!-- Optional: You can add your search-specific JavaScript or other scripts here -->
+  <script src="/search.js"></script> <!-- if you have a separate script for search -->
 </body>
 </html>
-
