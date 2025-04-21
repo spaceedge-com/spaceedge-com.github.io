@@ -300,51 +300,75 @@ updateTheme();
   
 <!--  class="Expands" -->
 <!-- Container Multi-search tool -->
-  <div class="search-container">
-    <h1>Multi-Search Tool</h1>
-    <p>Enter your search term and choose the search engine:</p>
 
-    <!-- Multi-Search Form -->
-    <form id="multi-search-form" action="" method="get">
-      <input type="text" id="search-query" name="q" placeholder="Enter search term..." required>
-      <br><br>
-      
-      <!-- Search Engine Buttons -->
-      <button type="submit" class="search-btn" formaction="https://www.startpage.com/do/search?query=" target="_blank">Startpage</button>
-      <button type="submit" class="search-btn" formaction="https://www.dogpile.com/info.dogpl/search/web?q=" target="_blank">Dogpile</button>
-      <button type="submit" class="search-btn" formaction="https://bing.com/search?q=" target="_blank">Bing</button>
-      <button type="submit" class="search-btn" formaction="https://search.brave.com/search?q=" target="_blank">Brave</button>
-      <button type="submit" class="search-btn" formaction="https://duckduckgo.com/?q=" target="_blank">DuckDuckGo</button>
-      <button type="submit" class="search-btn" formaction="https://www.ecosia.org/search?q=" target="_blank">Ecosia</button>
-      <button type="submit" class="search-btn" formaction="https://github.com/search?q=" target="_blank">GitHub</button>
-      <button type="submit" class="search-btn" formaction="https://encrypted.google.com/search?q=" target="_blank">Google</button>
-      <button type="submit" class="search-btn" formaction="https://search.lilo.org/searchweb.php?q=" target="_blank">Lilo</button>
-      <button type="submit" class="search-btn" formaction="https://onelook.com/?w=" target="_blank">Onelook</button>
-      <button type="submit" class="search-btn" formaction="https://www.qwant.com/?q=" target="_blank">Qwant</button>
-      <button type="submit" class="search-btn" formaction="https://stackexchange.com/search?q=" target="_blank">StackExchange</button>
-      <button type="submit" class="search-btn" formaction="https://stackoverflow.com/search?q=" target="_blank">StackOverflow</button>
-      <button type="submit" class="search-btn" formaction="https://swisscows.com/web?query=" target="_blank">Swisscows</button>
-      <button type="submit" class="search-btn" formaction="https://en.wikipedia.org/wiki/wiki.html?search=" target="_blank">Wikipedia</button>
-      <button type="submit" class="search-btn" formaction="https://www.wolframalpha.com/input/?i=" target="_blank">WolframAlpha</button>
-      <button type="submit" class="search-btn" formaction="https://search.yahoo.com/search?p=" target="_blank">Yahoo</button>
-    </form>
+
+
+<div class="Expands" align="center" style="margin:2px; text-align:center;">
+  <!-- Expands Content start -->
+  <a id="hide1" href="#hide1" style="color:#fff;background-color:#a8a;" class="hide">+ MultiSearch</a>
+  <a id="show1" href="#show1" class="show">- MultiSearch</a>
+
+  <div class="details" style="background-color:#2222;">
+    
+    <!-- Google Custom Search -->
+    <div class="goog-web-search" align="center" style="margin:1.0em; width:225px;">
+      <script async src="https://cse.google.com/cse.js?cx=e2f645542a795448c"></script>
+      <div class="gcse-search"></div>
+    </div>
+    
+    <!-- MultiSearch Form with Dropdown -->
+    <div id="multisearch" style="width:100%; max-width:100%; margin: 0 auto;" onload="document.getElementById('inp').focus()" style="margin:1em;">
+      <form id="searchForm" action="" method="GET">
+        <input class="line" id="inp" name="q" placeholder="Enter search terms..."> <br><br>
+
+        <!-- Dropdown for Search Engines -->
+        <div class="dropdown">
+          <select name="engine" id="searchEngine" class="submit">
+            <option value="startpage" data-action="https://www.startpage.com/do/search?query=">Startpage</option>
+            <option value="dogpile" data-action="https://www.dogpile.com/info.dogpl/search/web?q=">Dogpile</option>
+            <option value="bing" data-action="https://bing.com/search?q=">Bing</option>
+            <option value="brave" data-action="https://search.brave.com/search?q=">Brave</option>
+            <option value="duckduckgo" data-action="https://duckduckgo.com/?q=">Duckduckgo</option>
+            <option value="ecosia" data-action="https://www.ecosia.org/search?q=">Ecosia</option>
+            <option value="github" data-action="https://github.com/search?q=">Github</option>
+            <option value="google" data-action="https://encrypted.google.com/search?q=">Google</option>
+            <option value="lilo" data-action="https://search.lilo.org/searchweb.php?q=">Lilo</option>
+            <option value="onelook" data-action="https://onelook.com/?w=">Onelook</option>
+            <option value="qwant" data-action="https://www.qwant.com/?q=">Qwant</option>
+            <option value="stackexchange" data-action="https://stackexchange.com/search?q=">StackExchange</option>
+            <option value="stackoverflow" data-action="https://stackoverflow.com/search?q=">StackOverflow</option>
+            <option value="swisscows" data-action="https://swisscows.com/web?query=">Swisscows</option>
+            <option value="wikipedia" data-action="https://en.wikipedia.org/wiki/wiki.html?search=">Wikipedia</option>
+            <option value="wolframalpha" data-action="https://www.wolframalpha.com/input/?i=">Wolframalpha</option>
+            <option value="yahoo" data-action="https://search.yahoo.com/search?p=">Yahoo</option>
+          </select>
+        </div>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit">Search</button>
+      </form>
+    </div>
   </div>
+</div>
 
-  <!-- Inline JS -->
-  <script>
-    // JS for form submission prevention and validation
-    document.getElementById('multi-search-form').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent the form from submitting before processing
-      
-      const query = document.getElementById('search-query').value.trim();
+<script>
+  // Get the form and select element
+  const searchForm = document.getElementById("searchForm");
+  const searchEngineSelect = document.getElementById("searchEngine");
 
-      if (query === "") {
-        alert("Please enter a search query!");
-      }
-    });
-  </script>
-</body>
-</html>
+  // Handle form submission
+  searchForm.addEventListener("submit", function(e) {
+    e.preventDefault(); // Prevent default form submission
+    const selectedOption = searchEngineSelect.options[searchEngineSelect.selectedIndex];
+    const engineUrl = selectedOption.getAttribute("data-action");
+    const query = document.getElementById("inp").value;
+    
+    // Redirect the user to the selected search engine with their query
+    window.location.href = engineUrl + encodeURIComponent(query);
+  });
+</script>
+
 
 
 <!-- </div> detail Content. -->	
