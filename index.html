@@ -307,15 +307,6 @@ input.line:focus::placeholder {
 #inp:focus {
   width: 98%;
 }
-/* Toggle links */
-a.hide, a.show {
-  display: inline-block;
-  margin: 0.5em;
-  padding: 0.5em 1em;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
   .details {
@@ -328,10 +319,6 @@ a.hide, a.show {
     background-color: #333;
     color: #fff;
     border: 1px solid #444;
-  }
-  a.hide, a.show {
-    background-color: #444;
-    color: #fff;
   }
 }
 /* Light theme */
@@ -347,10 +334,6 @@ a.hide, a.show {
     color: #000;
     border: 1px solid #ccc;
   }
-  a.hide, a.show {
-    background-color: #ddd;
-    color: #000;
-  }
 }
 /* Mobile responsiveness */
 @media (max-width: 600px) {
@@ -360,6 +343,10 @@ a.hide, a.show {
     width: 100%;
   }
 }
+
+<input class="line" id="inp" name="q" placeholder="Enter search terms..." aria-label="Search terms">
+<select name="engine" id="searchEngine" class="submit" aria-label="Choose search engine">
+
 </style>
 <!-- </div> Expands end. -->	
 
