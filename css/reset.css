@@ -52,3 +52,16 @@ button, input, select {
   box-sizing: border-box;
 }
 
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button:focus,
+input:focus,
+select:focus {
+  outline: 2px solid #09f;
+  outline-offset: 2px;
+}
+
+
