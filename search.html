@@ -5,66 +5,148 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="manifest" href="/manifest.json"> <!-- Link to PWA Manifest -->
   <title>MultiSearch PWA</title>
-  
+
   <!-- Inline CSS -->
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+    /* === MultiSearch Clean Styles === */
+    .search-body p, h4, h5, h6 {  
+      margin: 1em; line-height: 1;
+    }
+    .details {
+      padding: 1em;
+      border-radius: 6px;
+      transition: background-color 0.3s, color 0.3s;
+      text-align: center;
     }
 
-    h1 {
-      color: #333;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 20px;
-    }
-
-    input[type="text"] {
-      padding: 10px;
-      font-size: 16px;
-      margin-bottom: 10px;
-      width: 200px;
-      border-radius: 4px;
+    /* Input and Button styling */
+    input.line,
+    select.submit,
+    button.submit {
+      width: 100%;
+      max-width: 600px;
+      padding: 0.75em 1em;
+      margin: 0.5em auto;
+      font-size: 1em;
+      border-radius: 5px;
       border: 1px solid #ccc;
+      background-color: #fff;
+      color: #000;
+      display: block;
+      box-sizing: border-box;
     }
 
-    button {
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      font-size: 16px;
+    /* On focus, hide placeholder */
+    input.line:focus::placeholder {
+      color: transparent;
+    }
+
+    /* Focus expansion */
+    #inp:focus {
+      width: 98%;
+    }
+
+    /* Button submit */
+    button.submit {
+      display: inline-block;
+      padding: 0.75em 1.5em;
+      margin: 1em auto;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #4a90e2; /* blue */
+      color: #fff;
       cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+    button.submit:hover {
+      background-color: #357ab8;
+      transform: scale(1.02);
+    }
+    button.submit:active {
+      background-color: #2f6aa1;
+      transform: scale(0.98);
     }
 
-    button:hover {
-      background-color: #45a049;
+    /* Dark theme */
+    @media (prefers-color-scheme: dark) {
+      .details {
+        background-color: #222;
+        color: #eee;
+      }
+      input.line,
+      select.submit,
+      button.submit {
+        background-color: #333;
+        color: #fff;
+        border: 1px solid #444;
+      }
+    }
+
+    /* Light theme */
+    @media (prefers-color-scheme: light) {
+      .details {
+        background-color: #f0f0f0;
+        color: #222;
+      }
+      input.line,
+      select.submit,
+      button.submit {
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #ccc;
+      }
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 600px) {
+      input.line,
+      select.submit,
+      button.submit {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
-  
-  <!-- Your search page content -->
-  <h1>Welcome to MultiSearch</h1>
-  <p>Use the search functionality below to find what you need:</p>
-  <form id="search-form">
-    <input type="text" id="search" placeholder="Enter your search query" />
-    <button type="submit">Search</button>
-  </form>
-  
+  <!-- Multi-Search Container -->
+  <div align="center" style="margin:2px; text-align:center;">
+    <div class="details">
+      <div id="multisearch" style="width:100%; max-width:100%; margin: 1em auto;">
+        <form id="searchForm" action="" method="GET">
+          <input class="line" id="inp" name="q" placeholder="Enter search terms..."> <br><br>
+          
+          <!-- Dropdown for Search Engines -->
+          <div class="dropdown">
+            <select name="engine" id="searchEngine" class="submit">
+              <option value="startpage" data-action="https://www.startpage.com/do/search?query=">Startpage</option>
+              <option value="dogpile" data-action="https://www.dogpile.com/info.dogpl/search/web?q=">Dogpile</option>
+              <option value="bing" data-action="https://bing.com/search?q=">Bing</option>
+              <option value="brave" data-action="https://search.brave.com/search?q=">Brave</option>
+              <option value="duckduckgo" data-action="https://duckduckgo.com/?q=">Duckduckgo</option>
+              <option value="ecosia" data-action="https://www.ecosia.org/search?q=">Ecosia</option>
+              <option value="github" data-action="https://github.com/search?q=">Github</option>
+              <option value="google" data-action="https://encrypted.google.com/search?q=">Google</option>
+              <option value="lilo" data-action="https://search.lilo.org/searchweb.php?q=">Lilo</option>
+              <option value="onelook" data-action="https://onelook.com/?w=">Onelook</option>
+              <option value="qwant" data-action="https://www.qwant.com/?q=">Qwant</option>
+              <option value="stackexchange" data-action="https://stackexchange.com/search?q=">StackExchange</option>
+              <option value="stackoverflow" data-action="https://stackoverflow.com/search?q=">StackOverflow</option>
+              <option value="swisscows" data-action="https://swisscows.com/web?query=">Swisscows</option>
+              <option value="wikipedia" data-action="https://en.wikipedia.org/wiki/wiki.html?search=">Wikipedia</option>
+              <option value="wolframalpha" data-action="https://www.wolframalpha.com/input/?i=">Wolframalpha</option>
+              <option value="yahoo" data-action="https://search.yahoo.com/search?p=">Yahoo</option>
+            </select>
+          </div>
+          <br><br>
+
+          <!-- Submit Button -->
+          <button type="submit" class="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <!-- Inline JavaScript -->
   <script>
     // Service Worker Registration Code
@@ -80,19 +162,18 @@
       });
     }
 
-    // Search form functionality (optional)
-    const form = document.getElementById('search-form');
-    form.addEventListener('submit', (e) => {
-      e.preventDefault(); // Prevent the default form submission
-      const query = document.getElementById('search').value;
-      if (query) {
-        alert(`Searching for: ${query}`); // Replace with actual search logic
-        // Implement actual search functionality here
-      } else {
-        alert('Please enter a search query.');
-      }
+    // JS form input select submits
+    const searchForm = document.getElementById("searchForm");
+    const searchEngineSelect = document.getElementById("searchEngine");
+    // Handle form submission
+    searchForm.addEventListener("submit", function(e) {
+      e.preventDefault(); // Prevent default form submission
+      const selectedOption = searchEngineSelect.options[searchEngineSelect.selectedIndex];
+      const engineUrl = selectedOption.getAttribute("data-action");
+      const query = document.getElementById("inp").value;
+      // Redirect the user to the selected search engine with their query
+      window.location.href = engineUrl + encodeURIComponent(query);
     });
   </script>
 </body>
 </html>
-
