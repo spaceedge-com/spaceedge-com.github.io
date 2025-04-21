@@ -1,11 +1,12 @@
 {
-  "name": "MultiSearch",
+  "name": "MultiSearch PWA",
   "short_name": "Search",
-  "start_url": "/index.html",
-  "display": "standalone",
-  "background_color": "#222",
-  "theme_color": "#222",
-  "orientation": "portrait",
+  "description": "A Progressive Web App for multi-search functionality",
+  "start_url": "/search",   // Start the app from the /search page
+  "display": "standalone",  // Ensures app behaves like a native app (without browser UI)
+  "background_color": "#ffffff", // Background color for the splash screen
+  "theme_color": "#000000", // Theme color for the app (used in the toolbar)
+  "orientation": "portrait", // Lock the orientation to portrait (optional)
   "icons": [
     {
       "src": "/icons/icon-192.png",
@@ -17,5 +18,7 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "scope": "/search",  // Limit the PWA's scope to the /search page
+  "prefer_related_applications": false // This indicates that your app isn't trying to redirect users to native apps
 }
