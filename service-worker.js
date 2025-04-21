@@ -1,14 +1,14 @@
 const CACHE_NAME = 'search-cache-v1';
 const urlsToCache = [
   '/search',              // Cache the /search page
-  '/search.html',         // You might have a separate search page, otherwise just use /search
+  '/search.html',         // You might have a separate search page (use this if needed)
   '/styles.css',          // Cache search-specific styles
   '/scripts.js',          // Cache search-specific scripts
-  '/icons/icon-192.png',  // Cache the icon
+  '/icons/icon-192.png',  // Cache the 192px icon
   '/icons/icon-512.png'   // Cache the 512px icon
 ];
 
-// Install the service worker and cache search-specific assets
+// Install service worker and cache search page-related assets
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME)
@@ -18,7 +18,7 @@ self.addEventListener('install', (event) => {
   );
 });
 
-// Activate the service worker and clean up old caches
+// Activate service worker and clean up old caches
 self.addEventListener('activate', (event) => {
   const cacheWhitelist = [CACHE_NAME];
   event.waitUntil(
@@ -34,18 +34,21 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// Fetch event: Serve the cached content for /search page
+// Fetch event: Serve the cached content for the /search page and related assets
 self.addEventListener('fetch', (event) => {
-  // Only handle fetches for /search page and associated resources
+  // Handle requests only for /search page and its assets
   if (event.request.url.includes('/search')) {
     event.respondWith(
       caches.match(event.request)
         .then((cachedResponse) => {
+          // Return cached response if available
           if (cachedResponse) {
             return cachedResponse;
           }
+          // Otherwise, fetch from the network
           return fetch(event.request);
         })
     );
   }
 });
+
