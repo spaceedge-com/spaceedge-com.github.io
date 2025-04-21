@@ -5,22 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="manifest" href="/manifest.json"> <!-- Link to PWA Manifest -->
   <title>MultiSearch PWA</title>
-  <!-- Optional: Add CSS and other meta tags for better user experience -->
-  <link rel="stylesheet" href="/styles.css">
+  
+  <!-- Inline CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 10px;
+      width: 200px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
+  
   <!-- Your search page content -->
   <h1>Welcome to MultiSearch</h1>
   <p>Use the search functionality below to find what you need:</p>
-  <form>
+  <form id="search-form">
     <input type="text" id="search" placeholder="Enter your search query" />
     <button type="submit">Search</button>
   </form>
   
-  <!-- Optional: Add icons or any other content related to your search page -->
-
-  <!-- Service Worker Registration Code -->
+  <!-- Inline JavaScript -->
   <script>
+    // Service Worker Registration Code
     if ('serviceWorker' in navigator && window.location.pathname === '/search') {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/service-worker.js')
@@ -32,9 +79,20 @@
           });
       });
     }
-  </script>
 
-  <!-- Optional: You can add your search-specific JavaScript or other scripts here -->
-  <script src="/search.js"></script> <!-- if you have a separate script for search -->
+    // Search form functionality (optional)
+    const form = document.getElementById('search-form');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault(); // Prevent the default form submission
+      const query = document.getElementById('search').value;
+      if (query) {
+        alert(`Searching for: ${query}`); // Replace with actual search logic
+        // Implement actual search functionality here
+      } else {
+        alert('Please enter a search query.');
+      }
+    });
+  </script>
 </body>
 </html>
+
