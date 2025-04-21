@@ -214,6 +214,53 @@ figcaption { width:44%; display: inline;
   flex: 1 1 auto; font-size:.99rem;}
 }
 
+
+.search-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 800px;
+      text-align: center;
+    }
+    input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      margin: 10px auto;
+      display: block;
+      font-size: 1.2em;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+    }
+    .search-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+    .search-btn:hover {
+      background-color: #0056b3;
+    }
+    .search-btn:active {
+      background-color: #004085;
+    }
+    @media (max-width: 600px) {
+      .search-btn {
+        width: 100%;
+        margin: 10px 0;
+      }
+      input[type="text"] {
+        width: 100%;
+      }
+    }
+
 </style>
 
 <script>
@@ -251,52 +298,55 @@ updateTheme();
 	
 <main>	
   
-<!-- <div class="Expands" -->
-<div class="Expands" align="center" style="margin:2px; text-align:center;">
-  <!-- Expands Content start -->
-  <div class="details" style="background-color:#2222;">
+<!--  class="Expands" -->
+<!-- Container Multi-search tool -->
+  <div class="search-container">
+    <h1>Multi-Search Tool</h1>
+    <p>Enter your search term and choose the search engine:</p>
 
-    <!-- Google Custom Search -->
-    <div class="goog-web-search" align="center" style="margin:1.0em; width:225px;">
-      <script async src="https://cse.google.com/cse.js?cx=e2f645542a795448c"></script>
-      <div class="gcse-search"></div>
-    </div>
-    
-    <!-- MultiSearch Form (Always Visible) -->
-    <div id="multisearch" style="width:100%; max-width:100%; margin: 0 auto;" onload="document.getElementById('inp').focus()" style="margin:1em;">
-      <form id="searchForm" action="" method="GET">
-        <input class="line" id="inp" name="q" placeholder="Enter search terms..."> <br><br>
-
-        <!-- Submit Buttons for Different Search Engines -->
-        <span><button type="submit" class="submit" value="sp" formaction="https://www.startpage.com/do/search?query=">Startpage</button></span>
-        <span><button type="submit" class="submit" value="dp" formaction="https://www.dogpile.com/info.dogpl/search/web?q=">Dogpile</button></span>
-        <span><button type="submit" class="submit" value="bg" formaction="https://bing.com/search?q=">Bing</button></span>
-        <span><button type="submit" class="submit" value="be" formaction="https://search.brave.com/search?q=">Brave</button></span>
-        <span><button type="submit" class="submit" value="?kp=-2&kn=1&kak=-1&kax=-1&kaq=-1&kap=-1&kao=-1&k1=-1&kau=-1/" formaction="https://duckduckgo.com/?q=">Duckduckgo</button></span>  
-        <span><button type="submit" class="submit" value="ec" formaction="https://www.ecosia.org/search?q=">Ecosia</button></span>
-        <span><button type="submit" class="submit" value="gh" formaction="https://github.com/search?q=">Github</button></span>
-        <span><button type="submit" class="submit" value="gg" formaction="https://encrypted.google.com/search?q=">Google</button></span>
-        <span><button type="submit" class="submit" value="li" formaction="https://search.lilo.org/searchweb.php?q=">Lilo</button></span> 
-        <span><button type="submit" class="submit" value="ol" formaction="https://onelook.com/?w=">Onelook</button></span>
-        <span><button type="submit" class="submit" value="qt" formaction="https://www.qwant.com/?q=">Qwant</button></span>
-        <span><button type="submit" class="submit" value="sx" formaction="https://stackexchange.com/search?q=">StackExchange</button></span>
-        <span><button type="submit" class="submit" value="so" formaction="https://stackoverflow.com/search?q=">StackOverflow</button></span>
-        <span><button type="submit" class="submit" value="sc" formaction="https://swisscows.com/web?query=">Swisscows</button></span>
-        <span><button type="submit" class="submit" value="wp" formaction="https://en.wikipedia.org/wiki/wiki.html?search=">Wikipedia</button></span>
-        <span><button type="submit" class="submit" value="wa" formaction="https://www.wolframalpha.com/input/?i=">Wolframalpha</button></span>
-        <span><button type="submit" class="submit" value="ya" formaction="https://search.yahoo.com/search?p=">Yahoo</button></span>
-        <hr>
-      </form>
-    </div>
+    <!-- Multi-Search Form -->
+    <form id="multi-search-form" action="" method="get">
+      <input type="text" id="search-query" name="q" placeholder="Enter search term..." required>
+      <br><br>
+      
+      <!-- Search Engine Buttons -->
+      <button type="submit" class="search-btn" formaction="https://www.startpage.com/do/search?query=" target="_blank">Startpage</button>
+      <button type="submit" class="search-btn" formaction="https://www.dogpile.com/info.dogpl/search/web?q=" target="_blank">Dogpile</button>
+      <button type="submit" class="search-btn" formaction="https://bing.com/search?q=" target="_blank">Bing</button>
+      <button type="submit" class="search-btn" formaction="https://search.brave.com/search?q=" target="_blank">Brave</button>
+      <button type="submit" class="search-btn" formaction="https://duckduckgo.com/?q=" target="_blank">DuckDuckGo</button>
+      <button type="submit" class="search-btn" formaction="https://www.ecosia.org/search?q=" target="_blank">Ecosia</button>
+      <button type="submit" class="search-btn" formaction="https://github.com/search?q=" target="_blank">GitHub</button>
+      <button type="submit" class="search-btn" formaction="https://encrypted.google.com/search?q=" target="_blank">Google</button>
+      <button type="submit" class="search-btn" formaction="https://search.lilo.org/searchweb.php?q=" target="_blank">Lilo</button>
+      <button type="submit" class="search-btn" formaction="https://onelook.com/?w=" target="_blank">Onelook</button>
+      <button type="submit" class="search-btn" formaction="https://www.qwant.com/?q=" target="_blank">Qwant</button>
+      <button type="submit" class="search-btn" formaction="https://stackexchange.com/search?q=" target="_blank">StackExchange</button>
+      <button type="submit" class="search-btn" formaction="https://stackoverflow.com/search?q=" target="_blank">StackOverflow</button>
+      <button type="submit" class="search-btn" formaction="https://swisscows.com/web?query=" target="_blank">Swisscows</button>
+      <button type="submit" class="search-btn" formaction="https://en.wikipedia.org/wiki/wiki.html?search=" target="_blank">Wikipedia</button>
+      <button type="submit" class="search-btn" formaction="https://www.wolframalpha.com/input/?i=" target="_blank">WolframAlpha</button>
+      <button type="submit" class="search-btn" formaction="https://search.yahoo.com/search?p=" target="_blank">Yahoo</button>
+    </form>
   </div>
-</div>
 
-<!-- JavaScript for Dropdown -->
-<script>
-  // The dropdown logic remains the same for future enhancements
-  const searchForm = document.getElementById('multisearch');
-  searchForm.style.display = 'block'; // Ensure the search form is always visible
-</script>
+  <!-- Inline JS -->
+  <script>
+    // JS for form submission prevention and validation
+    document.getElementById('multi-search-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from submitting before processing
+      
+      const query = document.getElementById('search-query').value.trim();
+
+      if (query === "") {
+        alert("Please enter a search query!");
+      }
+    });
+  </script>
+</body>
+</html>
+
+
 <!-- </div> detail Content. -->	
 <!-- </div> Expands end. -->	
 
