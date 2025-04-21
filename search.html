@@ -189,5 +189,43 @@
       window.location.href = engineUrl + encodeURIComponent(query);
     });
   </script>
+  
+<!-- js for pw app install button -->
+  <script>
+  let deferredPrompt;
+  const installBtn = document.getElementById('installBtn');
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    // Prevent the default mini-infobar
+    e.preventDefault();
+    // Save the event for triggering later
+    deferredPrompt = e;
+    // Show your custom install button
+    installBtn.style.display = 'inline-block';
+
+    installBtn.addEventListener('click', () => {
+      // Show the browser install prompt
+      deferredPrompt.prompt();
+      // Wait for the user to respond
+      deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('User accepted the install prompt');
+        } else {
+          console.log('User dismissed the install prompt');
+        }
+        // Clear the saved prompt
+        deferredPrompt = null;
+        installBtn.style.display = 'none';
+      });
+    });
+  });
+
+  // Optional: hide button if already installed
+  window.addEventListener('appinstalled', () => {
+    console.log('PWA installed');
+    installBtn.style.display = 'none';
+  });
+</script>
+
 </body>
 </html>
