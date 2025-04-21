@@ -35,19 +35,9 @@ body { font-size: 1.15rem;
   font-style:italic; }
 :not(body) { font-style:normal; }
 
-/* expands multisearch hid and shown */ 
-.expands { }
-.hide, .show { 
-border:1px solid #abc; border-radius:5px; }
-.details,
-.show,
-.hide:target {
-  display: none;
-}
-.hide:target + .show,
-.hide:target ~ .details {
-  display: block;
-}
+/* expands multisearch hid and shown *
+* pure-css files edits before 04/21/25 *
+*/ 
 
 /* -----------—--- */
 /*    Posts    */
@@ -222,12 +212,9 @@ updateTheme();
   
 <!--  class="Expands" -->
 <!-- Container Multi-search tool -->
-<div class="Expands" align="center" style="margin:2px; text-align:center;">
-  <!-- Expands Content start -->
-  <a id="hide1" href="#hide1" style="color:#fff;background-color:#a8a;" class="hide">+ MultiSearch</a>
-  <a id="show1" href="#show1" class="show">- MultiSearch</a>
-
-  <div class="details" style="background-color:#2222;">
+<div class="" align="center" style="margin:2px; text-align:center;">
+  <!-- Multi-Search  start -->
+<div class="details" style="background-color:#2222;">
   
 <!-- Google Custom Search 
 <script async src="https://cse.google.com/cse.js?cx=e2f645542a795448c"></script>
