@@ -300,9 +300,6 @@ updateTheme();
   
 <!--  class="Expands" -->
 <!-- Container Multi-search tool -->
-
-
-
 <div class="Expands" align="center" style="margin:2px; text-align:center;">
   <!-- Expands Content start -->
   <a id="hide1" href="#hide1" style="color:#fff;background-color:#a8a;" class="hide">+ MultiSearch</a>
@@ -353,29 +350,23 @@ updateTheme();
 </div>
 
 <script>
-  // Get the form and select element
+  // JS form input select submits 
   const searchForm = document.getElementById("searchForm");
   const searchEngineSelect = document.getElementById("searchEngine");
-
   // Handle form submission
   searchForm.addEventListener("submit", function(e) {
     e.preventDefault(); // Prevent default form submission
     const selectedOption = searchEngineSelect.options[searchEngineSelect.selectedIndex];
     const engineUrl = selectedOption.getAttribute("data-action");
     const query = document.getElementById("inp").value;
-    
-    // Redirect the user to the selected search engine with their query
+  // Redirect the user to the selected search engine with their query
     window.location.href = engineUrl + encodeURIComponent(query);
   });
 </script>
-
-
-
-<!-- </div> detail Content. -->	
+<!-- . -->	
 <!-- </div> Expands end. -->	
 
-<!-- RSS News  -->
-<!-- <d class="rssdiv" > -->
+<!-- RSS News class="rssdiv" -->
 <!--<iframe width="360" height="440"  src="rss.app//" frameborder="0"></iframe>
 -->
 <!-- feedroll  -->
