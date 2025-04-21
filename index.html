@@ -252,20 +252,22 @@ updateTheme();
 <main>	
   
 <!-- <div class="Expands" -->
-<div class="details" style="background-color:#2222;">
+<div class="Expands" align="center" style="margin:2px; text-align:center;">
+  <!-- Expands Content start -->
+  <div class="details" style="background-color:#2222;">
 
-<!-- Google Custom Search -->
+    <!-- Google Custom Search -->
     <div class="goog-web-search" align="center" style="margin:1.0em; width:225px;">
       <script async src="https://cse.google.com/cse.js?cx=e2f645542a795448c"></script>
       <div class="gcse-search"></div>
     </div>
     
-<!-- MultiSearch Form (Always Visible) -->
+    <!-- MultiSearch Form (Always Visible) -->
     <div id="multisearch" style="width:100%; max-width:100%; margin: 0 auto;" onload="document.getElementById('inp').focus()" style="margin:1em;">
       <form id="searchForm" action="" method="GET">
         <input class="line" id="inp" name="q" placeholder="Enter search terms..."> <br><br>
 
-<!-- Submit Buttons for Different Search Engines -->
+        <!-- Submit Buttons for Different Search Engines -->
         <span><button type="submit" class="submit" value="sp" formaction="https://www.startpage.com/do/search?query=">Startpage</button></span>
         <span><button type="submit" class="submit" value="dp" formaction="https://www.dogpile.com/info.dogpl/search/web?q=">Dogpile</button></span>
         <span><button type="submit" class="submit" value="bg" formaction="https://bing.com/search?q=">Bing</button></span>
@@ -287,6 +289,7 @@ updateTheme();
       </form>
     </div>
   </div>
+</div>
 
 <!-- JavaScript for Dropdown -->
 <script>
@@ -294,7 +297,6 @@ updateTheme();
   const searchForm = document.getElementById('multisearch');
   searchForm.style.display = 'block'; // Ensure the search form is always visible
 </script>
-
 <!-- </div> detail Content. -->	
 <!-- </div> Expands end. -->	
 
