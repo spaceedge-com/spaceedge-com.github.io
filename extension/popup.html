@@ -13,22 +13,15 @@
       font-family: Arial, sans-serif;
       background-color: #f0f0f0;
     }
-    input {
+    input, select, button {
       width: 100%;
       padding: 10px;
       margin: 10px 0;
-    }
-    select {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
+      font-size: 14px;
     }
     button {
-      width: 100%;
-      padding: 10px;
       background-color: #4CAF50;
       color: white;
-      font-size: 16px;
       cursor: pointer;
     }
     button:hover {
@@ -41,29 +34,28 @@
   <h2>Search Engines</h2>
   
   <input type="text" id="searchQuery" placeholder="Enter search query...">
+  
   <select id="searchEngine">
-    <option value="brave">Brave</option>
-    <option value="startpage">Startpage</option>
-    <option value="google">Google</option>
+    <option value="brave" data-action="https://search.brave.com/search?q=">Brave</option>
+    <option value="startpage" data-action="https://www.startpage.com/do/search?query=">Startpage</option>
     <option value="google" data-action="https://www.google.com/search?q=">Google</option>
     <option value="bing" data-action="https://www.bing.com/search?q=">Bing</option>
     <option value="duckduckgo" data-action="https://duckduckgo.com/?q=">DuckDuckGo</option>
-    
-    <!-- Add more options here -->
   </select>
   
   <button id="searchButton">Search</button>
   
   <script>
-    const searchBtn = document.getElementById('searchBtn');
+    const searchBtn = document.getElementById('searchButton');
     const searchEngine = document.getElementById('searchEngine');
     const searchQuery = document.getElementById('searchQuery');
 
     searchBtn.addEventListener('click', function() {
-      const engine = searchEngine.value;
-      const query = searchQuery.value;
       const url = searchEngine.options[searchEngine.selectedIndex].getAttribute('data-action');
-      window.open(url + encodeURIComponent(query), '_blank');
+      const query = searchQuery.value.trim();
+      if (query && url) {
+        window.open(url + encodeURIComponent(query), '_blank');
+      }
     });
   </script>
 
