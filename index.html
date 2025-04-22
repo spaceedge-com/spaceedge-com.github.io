@@ -259,12 +259,13 @@ code {
 /* Responsive lrg dis 601px/more */
 @media screen and (min-width: 601px) {	 
 body { width:980px; max-width:1024px; }
+.searchbox { margin:2px; max-width:50; } 
 blockquote { width:600px; max-width:650px; } 
 }	
 /* Responsive sml dis 600px/less */
 @media screen and (max-width: 600px) {
 .intro p { font-size: 0.6rem;  } 
-.search-form { max-width: 100%; }  #searchterms {  width: 98%; }   input[type=search]:focus { width:99%; }
+.searchbox { margin:2px; max-width:90; }  #searchterms {  width: 98%; }   input[type=search]:focus { width:99%; }
 blockquote { width:80%;max-width:85%; } figure { width:100%; display:flex; margin:0; gap: 1px; font-size:0; } 
 /* Clearfix (clear floats) */
 img { display:inherit; float:left;
@@ -315,7 +316,7 @@ updateTheme();
   
 <!--  class="Expands" -->
 <!-- Container Multi-search tool -->
-<div class="" align="center" style="margin:2px; text-align:center;">
+<div class="searchbox" align="center" style="">
   <!-- Multi-Search  start -->
 <div class="details" style="background-color:#2222;">
   
@@ -324,7 +325,7 @@ updateTheme();
 <div class="gcse-search"></div> -->
     
 <!-- MultiSearch Form with Dropdown -->
-<div id="multisearch" style="width:100%; max-width:100%; margin: 1em auto;">
+<div id="multisearch" style="width:90%;">
     <form id="searchForm" action="" method="GET">
         <input class="line" id="inp" name="q" placeholder="Enter search terms..."> <br><br>
         <!-- Dropdown for Search Engines -->
@@ -464,7 +465,7 @@ button.submit:active {
   input.line,
   select.submit,
   button.submit {
-    width: 100%;
+    width: 75%;
   }
 }
 
