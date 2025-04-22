@@ -1,24 +1,25 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="manifest" href="/manifest.json"> <!-- Link to PWA Manifest -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="/manifest.json" />
   <title>MultiSearch PWA</title>
 
   <!-- Inline CSS -->
   <style>
-    /* === MultiSearch Clean Styles === */
-    .search-body p, h4, h5, h6 {  
-      margin: 1em; line-height: 1;
+    body {
+      background-color: #fff;
+      color: #000;
+      margin: 0;
+      font-family: sans-serif;
+      transition: background-color 0.3s, color 0.3s;
     }
     .details {
       padding: 1em;
       border-radius: 6px;
-      transition: background-color 0.3s, color 0.3s;
       text-align: center;
     }
-
-    /* Input and Button styling */
     input.line,
     select.submit,
     button.submit {
@@ -34,26 +35,14 @@
       display: block;
       box-sizing: border-box;
     }
-
-    /* On focus, hide placeholder */
     input.line:focus::placeholder {
       color: transparent;
     }
-
-    /* Focus expansion */
     #inp:focus {
       width: 98%;
     }
-
-    /* Button submit */
     button.submit {
-      display: inline-block;
-      padding: 0.75em 1.5em;
-      margin: 1em auto;
-      font-size: 1em;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background-color: #4a90e2; /* blue */
+      background-color: #4a90e2;
       color: #fff;
       cursor: pointer;
       transition: background-color 0.3s ease, transform 0.2s;
@@ -67,8 +56,32 @@
       transform: scale(0.98);
     }
 
-    /* Dark theme */
+    #installBtn {
+      background-color: #ff9800;
+      color: white;
+    }
+    #installBtn:hover {
+      background-color: #e68900;
+    }
+
+    #iosInstallBanner {
+      background-color: #222;
+      color: #fff;
+      padding: 12px;
+      font-size: 1em;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 1000;
+      display: none;
+    }
+
     @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #121212;
+        color: #eee;
+      }
       .details {
         background-color: #222;
         color: #eee;
@@ -82,22 +95,17 @@
       }
     }
 
-    /* Light theme */
     @media (prefers-color-scheme: light) {
+      body {
+        background-color: #fff;
+        color: #000;
+      }
       .details {
         background-color: #f0f0f0;
         color: #222;
       }
-      input.line,
-      select.submit,
-      button.submit {
-        background-color: #fff;
-        color: #000;
-        border: 1px solid #ccc;
-      }
     }
 
-    /* Mobile responsiveness */
     @media (max-width: 600px) {
       input.line,
       select.submit,
@@ -105,49 +113,26 @@
         width: 100%;
       }
     }
-
-    #installBtn {
-      background-color: #ff9800;
-      color: white;
-      display: none; /* hidden by default */
-    }
-
-    #installBtn:hover {
-      background-color: #e68900;
-    }
-
-    /* iOS Install Banner */
-    #iosInstallBanner {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      display: none;
-    }
   </style>
 </head>
 <body>
+
   <!-- iOS Install Banner -->
   <div id="iosInstallBanner">
-    <p>To install this app, tap the Share icon and choose 'Add to Home Screen'.</p>
+    To install this app, tap the Share icon and choose "Add to Home Screen".
   </div>
 
-  <br>
-  <!-- Custom Install Button -->
-  <button id="installBtn" class="submit">Install App</button>
-  <br>
+  <!-- Android Install Button -->
+  <br />
+  <button id="installBtn" class="submit" style="display:none;">Install App</button>
+  <br />
 
-  <!-- Multi-Search Container -->
+  <!-- Multi-Search Form -->
   <div align="center" style="margin:2px; text-align:center;">
     <div class="details">
       <div id="multisearch" style="width:100%; max-width:100%; margin: 1em auto;">
         <form id="searchForm" action="" method="GET">
-          <input class="line" id="inp" name="q" placeholder="Enter search terms..."> <br><br>
-
-          <!-- Dropdown for Search Engines -->
+          <input class="line" id="inp" name="q" placeholder="Enter search terms..."><br><br>
           <div class="dropdown">
             <select name="engine" id="searchEngine" class="submit">
               <option value="brave" data-action="https://search.brave.com/search?q=">Brave</option>
@@ -168,85 +153,72 @@
               <option value="wolframalpha" data-action="https://www.wolframalpha.com/input/?i=">Wolframalpha</option>
               <option value="yahoo" data-action="https://search.yahoo.com/search?p=">Yahoo</option>
             </select>
-          </div>
-          <br><br>
-
-          <!-- Submit Button -->
+          </div><br><br>
           <button type="submit" class="submit">Search</button>
         </form>
       </div>
     </div>
   </div>
 
-  <!-- Inline JavaScript -->
+  <!-- JS for Form Submission -->
   <script>
-    // Service Worker Registration Code
-    if ('serviceWorker' in navigator && window.location.pathname === '/search') {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js')
-          .then((registration) => {
-            console.log('Service Worker registered for /search with scope:', registration.scope);
-          })
-          .catch((error) => {
-            console.log('Service Worker registration failed for /search:', error);
-          });
-      });
-    }
-
-    // JS form input select submits
     const searchForm = document.getElementById("searchForm");
     const searchEngineSelect = document.getElementById("searchEngine");
-    // Handle form submission
     searchForm.addEventListener("submit", function(e) {
-      e.preventDefault(); // Prevent default form submission
+      e.preventDefault();
       const selectedOption = searchEngineSelect.options[searchEngineSelect.selectedIndex];
       const engineUrl = selectedOption.getAttribute("data-action");
       const query = document.getElementById("inp").value;
-      // Redirect the user to the selected search engine with their query
       window.location.href = engineUrl + encodeURIComponent(query);
     });
+  </script>
 
-    // iOS specific message
-    const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
-    if (isIOS) {
-      document.getElementById('iosInstallBanner').style.display = 'block';
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator && window.location.pathname.includes('/search')) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(reg => console.log('SW registered:', reg.scope))
+          .catch(err => console.error('SW registration failed:', err));
+      });
     }
+  </script>
 
-    // Install Button Logic
+  <!-- Install App Button (Android/desktop) -->
+  <script>
     let deferredPrompt;
     const installBtn = document.getElementById('installBtn');
-
     window.addEventListener('beforeinstallprompt', (e) => {
-      // Prevent the default mini-infobar
       e.preventDefault();
-      // Save the event for triggering later
       deferredPrompt = e;
-      // Show your custom install button
       installBtn.style.display = 'inline-block';
-
       installBtn.addEventListener('click', () => {
-        // Show the browser install prompt
         deferredPrompt.prompt();
-        // Wait for the user to respond
-        deferredPrompt.userChoice.then((choiceResult) => {
-          if (choiceResult.outcome === 'accepted') {
-            console.log('User accepted the install prompt');
-          } else {
-            console.log('User dismissed the install prompt');
+        deferredPrompt.userChoice.then((choice) => {
+          if (choice.outcome === 'accepted') {
+            console.log('User accepted install');
           }
-          // Clear the saved prompt
           deferredPrompt = null;
           installBtn.style.display = 'none';
         });
       });
     });
-
-    // Optional: hide button if already installed
     window.addEventListener('appinstalled', () => {
-      console.log('PWA installed');
       installBtn.style.display = 'none';
     });
   </script>
+
+  <!-- iOS Banner Detection -->
+  <script>
+    window.onload = function () {
+      const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
+      const isInStandalone = ('standalone' in window.navigator) && window.navigator.standalone;
+      if (isIOS && !isInStandalone) {
+        document.getElementById('iosInstallBanner').style.display = 'block';
+      }
+    };
+  </script>
+
 </body>
 </html>
 
