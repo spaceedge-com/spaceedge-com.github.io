@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MultiSearch Extension</title>
+  <style>
+    body {
+      width: 300px;
+      height: 200px;
+      margin: 0;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <input type="text" id="searchQuery" placeholder="Enter search query">
+  <select id="searchEngine">
+    <option value="google" data-action="https://www.google.com/search?q=">Google</option>
+    <option value="bing" data-action="https://www.bing.com/search?q=">Bing</option>
+    <option value="duckduckgo" data-action="https://duckduckgo.com/?q=">DuckDuckGo</option>
+  </select>
+  <button id="searchBtn">Search</button>
+
+  <script>
+    const searchBtn = document.getElementById('searchBtn');
+    const searchEngine = document.getElementById('searchEngine');
+    const searchQuery = document.getElementById('searchQuery');
+
+    searchBtn.addEventListener('click', function() {
+      const engine = searchEngine.value;
+      const query = searchQuery.value;
+      const url = searchEngine.options[searchEngine.selectedIndex].getAttribute('data-action');
+      window.open(url + encodeURIComponent(query), '_blank');
+    });
+  </script>
+
+</body>
+</html>
 
