@@ -38,14 +38,22 @@
 </head>
 <body>
 
-  <input type="text" id="searchQuery" placeholder="Enter search query">
+  <h2>Search Engines</h2>
+  
+  <input type="text" id="searchQuery" placeholder="Enter search query...">
   <select id="searchEngine">
+    <option value="brave">Brave</option>
+    <option value="startpage">Startpage</option>
+    <option value="google">Google</option>
     <option value="google" data-action="https://www.google.com/search?q=">Google</option>
     <option value="bing" data-action="https://www.bing.com/search?q=">Bing</option>
     <option value="duckduckgo" data-action="https://duckduckgo.com/?q=">DuckDuckGo</option>
+    
+    <!-- Add more options here -->
   </select>
-  <button id="searchBtn">Search</button>
-
+  
+  <button id="searchButton">Search</button>
+  
   <script>
     const searchBtn = document.getElementById('searchBtn');
     const searchEngine = document.getElementById('searchEngine');
