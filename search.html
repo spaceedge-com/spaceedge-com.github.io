@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -106,30 +105,48 @@
         width: 100%;
       }
     }
-    
+
     #installBtn {
-  background-color: #ff9800;
-  color: white;
-}
-#installBtn:hover {
-  background-color: #e68900;
-}
-</style>
+      background-color: #ff9800;
+      color: white;
+      display: none; /* hidden by default */
+    }
+
+    #installBtn:hover {
+      background-color: #e68900;
+    }
+
+    /* iOS Install Banner */
+    #iosInstallBanner {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  
-<br>
+  <!-- iOS Install Banner -->
+  <div id="iosInstallBanner">
+    <p>To install this app, tap the Share icon and choose 'Add to Home Screen'.</p>
+  </div>
+
+  <br>
   <!-- Custom Install Button -->
-<button id="installBtn" class="submit" style="display:none;">Install App</button>
-<br>
-  
+  <button id="installBtn" class="submit">Install App</button>
+  <br>
+
   <!-- Multi-Search Container -->
   <div align="center" style="margin:2px; text-align:center;">
     <div class="details">
       <div id="multisearch" style="width:100%; max-width:100%; margin: 1em auto;">
         <form id="searchForm" action="" method="GET">
           <input class="line" id="inp" name="q" placeholder="Enter search terms..."> <br><br>
-          
+
           <!-- Dropdown for Search Engines -->
           <div class="dropdown">
             <select name="engine" id="searchEngine" class="submit">
@@ -188,44 +205,48 @@
       // Redirect the user to the selected search engine with their query
       window.location.href = engineUrl + encodeURIComponent(query);
     });
-  </script>
-  
-<!-- js for pw app install button -->
-  <script>
-  let deferredPrompt;
-  const installBtn = document.getElementById('installBtn');
 
-  window.addEventListener('beforeinstallprompt', (e) => {
-    // Prevent the default mini-infobar
-    e.preventDefault();
-    // Save the event for triggering later
-    deferredPrompt = e;
-    // Show your custom install button
-    installBtn.style.display = 'inline-block';
+    // iOS specific message
+    const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
+    if (isIOS) {
+      document.getElementById('iosInstallBanner').style.display = 'block';
+    }
 
-    installBtn.addEventListener('click', () => {
-      // Show the browser install prompt
-      deferredPrompt.prompt();
-      // Wait for the user to respond
-      deferredPrompt.userChoice.then((choiceResult) => {
-        if (choiceResult.outcome === 'accepted') {
-          console.log('User accepted the install prompt');
-        } else {
-          console.log('User dismissed the install prompt');
-        }
-        // Clear the saved prompt
-        deferredPrompt = null;
-        installBtn.style.display = 'none';
+    // Install Button Logic
+    let deferredPrompt;
+    const installBtn = document.getElementById('installBtn');
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      // Prevent the default mini-infobar
+      e.preventDefault();
+      // Save the event for triggering later
+      deferredPrompt = e;
+      // Show your custom install button
+      installBtn.style.display = 'inline-block';
+
+      installBtn.addEventListener('click', () => {
+        // Show the browser install prompt
+        deferredPrompt.prompt();
+        // Wait for the user to respond
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('User accepted the install prompt');
+          } else {
+            console.log('User dismissed the install prompt');
+          }
+          // Clear the saved prompt
+          deferredPrompt = null;
+          installBtn.style.display = 'none';
+        });
       });
     });
-  });
 
-  // Optional: hide button if already installed
-  window.addEventListener('appinstalled', () => {
-    console.log('PWA installed');
-    installBtn.style.display = 'none';
-  });
-</script>
-
+    // Optional: hide button if already installed
+    window.addEventListener('appinstalled', () => {
+      console.log('PWA installed');
+      installBtn.style.display = 'none';
+    });
+  </script>
 </body>
 </html>
+
