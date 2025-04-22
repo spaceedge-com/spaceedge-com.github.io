@@ -1,18 +1,21 @@
 {
-  "name": "MultiSearch",
-  "description": "Multi-engine search in a single tool",
-  "version": "1.0",
-  "manifest_version": 3,
-  "action": {
-    "default_popup": "search.html",
-    "default_icon": {
-      "48": "icons/icon-48.png",
-      "128": "icons/icon-128.png"
+  "name": "MultiSearch",  // Full name of the app
+  "short_name": "Search", // Shorter name displayed on the home screen
+  "start_url": "/search", // The URL that opens when the app is launched (can be set to a specific page)
+  "display": "standalone",  // Defines how the app will be displayed (e.g., fullscreen, standalone, minimal-ui)
+  "background_color": "#222",  // Background color of the splash screen when the app is launched
+  "theme_color": "#222", // The color of the app's theme (used in the status bar for mobile apps)
+  "orientation": "portrait",  // App's preferred orientation (portrait or landscape)
+  "icons": [  // Set of icons to represent the app at different sizes
+    {
+      "src": "/icons/icon-192.png",  // Path to the 192x192 icon
+      "sizes": "192x192",  // Icon size
+      "type": "image/png"  // Icon type (PNG)
+    },
+    {
+      "src": "/icons/icon-512.png",  // Path to the 512x512 icon
+      "sizes": "512x512",  // Icon size
+      "type": "image/png"  // Icon type (PNG)
     }
-  },
-  "permissions": [],
-  "icons": {
-    "48": "icons/icon-48.png",
-    "128": "icons/icon-128.png"
-  }
+  ]
 }
