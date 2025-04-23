@@ -53,14 +53,31 @@ overflow-x:hidden; overflow-y:auto;
   font-weight: normal; font-style: normal;
 }	
 h1, h2, h3, h4, h5, h6 {  
-font-family: Ariel; line-height: 1.3em; text-align: left; 
+font-family: Ariel; line-height:1.3em; text-align:left; 
 /* letter-spacing: 1px; */
 width: 100%; color: none; display:block; clear:left; clear: right;   
-float: left; padding-left: 0; margin: 1.2em 0 1.1em 0;
-}
+float: left; padding-left: 0; margin: 1.2em 0 1.1em 0; }
 p { 
 font-family: Ariel; display: block; 
 font-style: normal; font-weight: normal;  text-align:left; text-indent: 30px; line-height: 1.35em; margin: 1em 0 1em 0; padding-left:0.40em; padding-right:.20em;  }
+* { /* Default Design Styling */
+font-family: Ariel; text-align:left; font-size:1em; line-height: 1.1; box-sizing: border-box; margin: 5px; padding: 1px; max-width: 1200px; 
+}
+/* define font sz */
+h1 { font-family: Ariel; font-size:2em;
+}
+h2 { font-size:1.75em; }
+h3 { font-size:1.43em; text-transform: uppercase; }
+h4 { font-size:1.34em; }
+h5 { font-size:1.15em; text-transform: uppercase; }
+h6 { font-size:1.0em; }
+/* The media queries just need to change :root */
+@media screen and (min-width: 600px) {
+	:root { font-size: 100%;}
+}@media screen and (min-width: 1000px) {
+	:root { font-size: 120%;}
+}
+
 /* header CSS */
 header {
 width: 100%; height: 60px; padding: 1px; top: 0; left: 0; position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: flex-start; clear: both; /* background:,url("https:/"); */
@@ -106,16 +123,6 @@ pre {  padding: 5%;  }
 .spc55 { height:55px; max-height:55px; margin:55px; padding:55px; }
 .spc75 { height:75px; max-height:75px; margin:75px; padding:75px; }
 
-* { 
-  font-family: Ariel; text-align: left; font-size:1em; 
-  line-height: 1.1; box-sizing: border-box;
-  /* Default Design Styling */
-  margin: 5px; padding: 1px; max-width: 1200px;
-}
-/*css applies order precedence*/
-body { font-size: 1em;  font-style:italic; }
-:not(body) { font-style:normal; }
-
 /* pure-css expands multisearch edits before 04/21/25 */ 
 
 /* -----------—--- */
@@ -146,25 +153,14 @@ font-family: 'GreatVibes-rg', cursive; font-size:1em; text-align:center; margin-
   font-family: Ariel; text-align: left; display: inline-block; border-bottom: 6px ridge #869; 
 } 
 
+/*css applies order precedence*/
+body { font-size: 1em; font-style:italic; }
+:not(body) { font-style:normal; }
 /* :root is generally <html> */
 :root { font-size:75%;  }
 body { font-size: 1em; font-style:italic; }
 :not(body) { font-style:normal; }
 p { font-size: 1em; }
-/* define font sz */
-h1 { font-family: Ariel; font-size:2em;
-}
-h2 { font-size:1.75em; }
-h3 { font-size:1.5em; text-transform: uppercase; }
-h4 { font-size:1.4em; }
-h5 { font-size:1.25em; text-transform: uppercase; }
-h6 { font-size:1.0em; }
-/* The media queries just need to change :root */
-@media screen and (min-width: 600px) {
-	:root { font-size: 100%;}
-}@media screen and (min-width: 1000px) {
-	:root { font-size: 120%;}
-}
 
 /* ul li style lists */
 ul {
@@ -221,7 +217,10 @@ blockquote { width:600px; max-width:650px; }
 blockquote { width:80%;max-width:85%; } 
 figure { width:100%; display:flex; margin:0; gap:1px; /* font-size:0; */
 align-items:center; /* vert align images */ } /* clearfix floats */
-img { display:inline-block; float:left; flex:99.99%; flex-wrap:wrap; padding:0; vertical-align:top; object-fit: contain; align-self:center; /*-align-self +center */ margin:0 5px;}
+img { display:inline-block; float:left; flex:99.99%; flex-wrap:wrap; padding:0; vertical-align:top; object-fit: contain; align-self:center; /*-align-self*/ margin:0 5px;
+  margin-block-start:0;
+  margin-block-end:0;
+}
 figcaption { width:70%; display: block;  flex: 1 1 auto; text-align:center; font-size:.55em; }
 }
 
