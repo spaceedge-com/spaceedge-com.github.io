@@ -262,12 +262,61 @@ blockquote { width:600px; max-width:650px; }
 blockquote { width:80%;max-width:85%; } figure { width:100%; display:flex; margin:0; gap: 1px; font-size:0; } 
 /* Clearfix (clear floats) */
 img { display:inherit; float:left;
-  flex:99.99%; flex-wrap:wrap; 
-  padding:0; vertical-align:top;
-  object-fit: contain;
-  align-self: flex-start; }
-figcaption { width:44%; display: inline;
-  flex: 1 1 auto; font-size:.99rem;}
+  flex:99.99%; flex-wrap:wrap; padding:0; vertical-align:top; object-fit: contain; align-self: flex-start; }
+figcaption { width:44%; display: inline; flex: 1 1 auto; font-size:.99rem; }
+}
+
+/* === MultiSearch Cleancss  Styles === */
+.search-body p, h4, h5, h6 {  margin: 1em; line-height: 1; }
+.details {
+  padding: 1em; border-radius: 6px; transition: background-color 0.3s, color 0.3s; text-align: center;
+}
+/* Input and Button styling */
+input.line, select.submit, button.submit {
+  width: 100%; max-width: 600px; padding: 0.75em 1em; margin: 0.5em auto;
+  display: block; box-sizing: border-box; background-color: #fff; color: #000;  
+  font-size: 1em; border-radius: 5px; border: 1px solid #ccc;
+}
+/* On focus, hide placeholder */
+input.line:focus::placeholder { color: transparent; }
+/* Focus expansion */
+#inp:focus { width: 98%; }
+/* Button submit */
+button.submit {
+  display: block; padding: 0.75em 1.5em; margin: 0 auto;
+  width: 70%; font-size: 1em; border: 1px solid #ccc; border-radius: 5px;
+  color: #fff; background-color: darkblue; /* blue */
+  cursor: pointer; transition: background-color 0.3s ease, transform 0.2s;
+}
+button.submit:hover {
+  background-color: #357ab8; transform: scale(1.02);
+}
+button.submit:active {
+  background-color: #2f6aa1; transform: scale(0.98);
+}
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  .details { background-color: #222; color: #eee;
+  }
+  input.line,
+  select.submit, button.submit {
+    background-color: #333; color: #fff; border: 1px solid #444;
+  }
+}
+/* Light theme */
+@media (prefers-color-scheme: light) {
+  .details {
+    background-color: #f0f0f0; color: #222;
+  }
+  input.line,
+  select.submit, button.submit {
+    background-color: #fff; color: #000; border: 1px solid #ccc;
+  }
+}
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  input.line, select.submit, button.submit { width: 50%;
+  }
 }
 
 </style>
@@ -345,14 +394,12 @@ updateTheme();
           </select>
         </div>
         <br><br>
-
         <!-- Submit Button -->
         <button type="submit" class="submit">Search</button>
       </form>
     </div>
   </div>
 </div>
-
 <script>
   // JS form input select submits 
   const searchForm = document.getElementById("searchForm");
@@ -367,106 +414,9 @@ updateTheme();
     window.location.href = engineUrl + encodeURIComponent(query);
   });
 </script>
-<!-- inline css style search -->	
-<style>
-/* === MultiSearch Clean Styles === */
-/* css styling */
-.search-body p, h4, h5, h6 {  
-margin: 1em; line-height: 1;
-}
-.details {
-  padding: 1em;
-  border-radius: 6px;
-  transition: background-color 0.3s, color 0.3s;
-  text-align: center;
-}
-/* Input and Button styling */
-input.line,
-select.submit,
-button.submit {
-  width: 100%;
-  max-width: 600px;
-  padding: 0.75em 1em;
-  margin: 0.5em auto;
-  font-size: 1em;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  color: #000;
-  display: block;
-  box-sizing: border-box;
-}
-/* On focus, hide placeholder */
-input.line:focus::placeholder {
-  color: transparent;
-}
-/* Focus expansion */
-#inp:focus {
-  width: 98%;
-}
-/* Button submit */
-button.submit {
-  display: block;
-  padding: 0.75em 1.5em;
-  margin: 0 auto;
-  width: 70%;
-  font-size: 1em;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: darkblue; /* blue */
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s;
-}
-button.submit:hover {
-  background-color: #357ab8;
-  transform: scale(1.02);
-}
-button.submit:active {
-  background-color: #2f6aa1;
-  transform: scale(0.98);
-}
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-  .details {
-    background-color: #222;
-    color: #eee;
-  }
-  input.line,
-  select.submit,
-  button.submit {
-    background-color: #333;
-    color: #fff;
-    border: 1px solid #444;
-  }
-}
-/* Light theme */
-@media (prefers-color-scheme: light) {
-  .details {
-    background-color: #f0f0f0;
-    color: #222;
-  }
-  input.line,
-  select.submit,
-  button.submit {
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #ccc;
-  }
-}
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  input.line,
-  select.submit,
-  button.submit {
-    width: 50%;
-  }
-}
+<!-- </div> searchbox div end. -->	
 
-</style>
-<!-- </div> Expands end. -->	
-
-<!-- Main intro  -->
+<!-- Main Body intro  -->
 <section style="max-width: 800px; margin: 0 auto; padding: 2em;">
   <h1 style="font-size: 2em; font-weight: bold; text-align: center;">
     Stuck in the Money System? You Were Meant to Be. This Site Reveals What’s Still Possible.
