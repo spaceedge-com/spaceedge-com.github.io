@@ -63,7 +63,7 @@ font-family: Ariel; display: block;
 font-style: normal; font-weight: normal;  text-align:left; text-indent: 30px; line-height: 1.35em; margin: 1em 0 1em 0; padding-left:0.40em; padding-right:.20em;  }
 /* header CSS */
 header {
-width: 100%; height: 50px; padding: 1px; top: 0; left: 0; position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: flex-start; clear: both; /* background:,url("https:/"); */
+width: 100%; height: 60px; padding: 1px; top: 0; left: 0; position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: flex-start; clear: both; /* background:,url("https:/"); */
 background-size: cover; background-position: center; background-repeat: no-repeat; margin-bottom: 1em; 
 border-bottom: 6px ridge #446;
 }
@@ -79,11 +79,11 @@ margin-left: 10px; margin-right: 1px;
 background-color: turquious; background-blend-mode: difference;
 }	
 .intro {
-display: flex; justify-content: end; width: 80%; height: 45px;
+display: flex; justify-content: end; width: 90%; height: 50px;
 background-size: cover; background-position: center; background-repeat: no-repeat;
 }
-.intro p { font-size: 0.70rem; text-transform: uppercase; font-style: oblique; 
-font-weight: bold; padding: 0.5em; margin: 0; text-align: right; 
+.intro p { font-size: 0.75rem; text-transform: uppercase; font-style: oblique; 
+font-weight: normal; padding: 0.5em; margin: 0; text-align: right; 
 }
 a:link { text-decoration: none;  }
 a { background-color: transparent; text-decoration: none;
@@ -226,14 +226,14 @@ img { display:inherit; float:left;
 figcaption { width:44%; display: inline; flex: 1 1 auto; font-size:.99rem; }
 }
 
-/* === MultiSearch Cleancss  Styles === */
+/* === MultiSearch Clean css  Styles === */
 .search-body p, h4, h5, h6 {  margin: 1em; line-height: 1; }
 .details {
-  padding: 1em; border-radius: 6px; transition: background-color 0.3s, color 0.3s; text-align: center;
+  padding: .3em; border-radius: 6px; transition: background-color 0.3s, color 0.3s; text-align: center;
 }
 /* Input and Button styling */
 input.line, select.submit, button.submit {
-  width: 100%; max-width: 600px; padding: 0.75em 1em; margin: 0.5em auto;
+  width: 100%; max-width: 600px; padding: 0.75em; margin: 0 auto;
   display: block; box-sizing: border-box; background-color: #fff; color: #000;  
   font-size: 1em; border-radius: 5px; border: 1px solid #ccc;
 }
@@ -243,16 +243,14 @@ input.line:focus::placeholder { color: transparent; }
 #inp:focus { width: 98%; }
 /* Button submit */
 button.submit {
-  display: block; padding: 0.75em 1.5em; margin: 0 auto;
+  display: block; padding: 0.75em; margin: 0 auto;
   width: 70%; font-size: 1em; border: 1px solid #ccc; border-radius: 5px;
   color: #fff; background-color: darkblue; /* blue */
   cursor: pointer; transition: background-color 0.3s ease, transform 0.2s;
 }
-button.submit:hover {
-  background-color: #357ab8; transform: scale(1.02);
+button.submit:hover { background-color: #357ab8; transform: scale(1.02);
 }
-button.submit:active {
-  background-color: #2f6aa1; transform: scale(0.98);
+button.submit:active { background-color: #2f6aa1; transform: scale(0.98);
 }
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
@@ -275,8 +273,7 @@ button.submit:active {
 }
 /* Mobile responsiveness */
 @media (max-width: 600px) {
-  input.line, select.submit, button.submit { width: 50%;
-  }
+  input.line, select.submit, button.submit { width: 50%; }
 }
 
 </style>
