@@ -72,8 +72,8 @@ background-size: contain; background-repeat: no-repeat; width: 188px; height: 40
 }
 header .logo { 
 /* font-family: 'Brush Script MT', 'Apple Chancery', 'Lucida Calligraphy', cursive, sans-serif; */
-font-family: 'FloridaVibes', cursive, sans-serif;
-font-size:8.0vw; font-weight: normal;	
+font-family: 'GreatVibes-rg', cursive, sans-serif;
+font-size:2.6em; font-weight: normal;	
 text-decoration: none; color:fuchsia; margin:0; padding-top:0.36rem;
 margin-left: 10px; margin-right: 1px;
 background-color: turquious; background-blend-mode: difference;
@@ -127,55 +127,38 @@ transition: 0.6s all linear;  }
 @keyframes blinker { 100% { opacity: .20; } 
 }
 blockquote { 
-font: 4.4vw Ariel;
-font-weight:normal; font-style:italic;
-line-height:1.5; display:block; 
-margin:0 auto; padding:15px; 
-border-radius:5px; 
+font: 4.4vw Ariel; font-weight:normal; font-style:italic; line-height:1.5; display:block; 
+margin:0 auto; padding:15px; border-radius:5px; 
 }	
 blockquote::before {
-content: '\201C'; float:left;
-font-size:15px;font-weight:bold;font-style:italic; 
-margin:-20px; 	
+content: '\201C'; float:left; font-size:15px;font-weight:bold;font-style:italic; margin:-20px; 	
 }
 blockquote::after {
 content: '\201D'; float:right;
-font-size:15px;font-weight:bold;font-style:italic; 
-margin-top:3px;margin-right:-17px;
+font-size:15px;font-weight:bold;font-style:italic; margin-top:3px;margin-right:-17px;
 }
 at { display:block;
-font-family: 'GreatVibes-rg', cursive;
-font-size:1.26rem; text-align:center; 
-margin-left:66px;padding-top:10px;	
+font-family: 'GreatVibes-rg', cursive; font-size:1.26rem; text-align:center; margin-left:66px;padding-top:10px;	
 }
 .artdiv {
-  display:block; padding: 1.5em; 
-  background: #3333;
-  border-bottom: 1px solid #dedede;
+  display:block; padding: 1.5em; background: #3333; border-bottom: 1px solid #dedede;
 }
 .artdiv h1 {
-  font-family: Ariel;
-  text-align: left;
-  display: inline-block;
-  border-bottom: 6px ridge #869; 
+  font-family: Ariel; text-align: left; display: inline-block; border-bottom: 6px ridge #869; 
 } 
 
 /* :root is generally <html> */
 :root { font-size:75%;  }
-body { font-size: 1.15rem; 
-  font-style:italic; }
+body { font-size: 1.15rem; font-style:italic; }
 :not(body) { font-style:normal; }
 p { font-size: 1.2rem; }
 /* define all sizes in rems */
-h1 { font-family: Ariel; 
-  font-size: clamp(2rem, 5.4vw, 5rem);
+h1 { font-family: Ariel; font-size: clamp(2rem, 5.4vw, 5rem);
 }
 h2 { font-size: 4.4vw; }
-h3 { font-size: 1.30rem; 
-  text-transform: uppercase; }
+h3 { font-size: 1.30rem; text-transform: uppercase; }
 h4 { font-size: 1.15rem; }
-h5 { font-size: 1.1rem; 
-  text-transform: uppercase; }
+h5 { font-size: 1.1rem; text-transform: uppercase; }
 h6 { font-size: 1.0rem; }
 /* The media queries just need to change :root */
 @media screen and (min-width: 600px) {
@@ -186,8 +169,7 @@ h6 { font-size: 1.0rem; }
 
 /* ul li style lists */
 ul {
-  display: block; list-style-type: disc;
-  margin-top: 1em; margin-bottom: 1.3em; margin-left: 0; margin-right: 0;
+  display: block; list-style-type: disc; margin-top: 1em; margin-bottom: 1.3em; margin-left: 0; margin-right: 0;
   padding-left:40px; text-align:left: font-style: normal; font-size: 1.4rem; font-color: #fcc;
 }
 
@@ -226,14 +208,15 @@ code {
 }  
 /* end light dark theme */
 
-/* Responsive lrg dis 601px/more */
+/* == Responsive lrg dis 601px/more == */
 @media screen and (min-width: 601px) {	 
 body { width:980px; max-width:1024px; }
 .searchbox { max-width:50%; margin:3px; padding:3px; } 
 blockquote { width:600px; max-width:650px; } 
 }	
-/* Responsive sml dis 600px/less */
+/* == Responsive sml dis 600px/less == */
 @media screen and (max-width: 600px) {
+	header .logo { font-size: 8.0vw;  } 
 .intro p { font-size: 0.6rem;  } 
 .searchbox { margin:2px; max-width:90; }  #searchterms {  width: 98%; }   input[type=search]:focus { width:99%; }
 blockquote { width:80%;max-width:85%; } figure { width:100%; display:flex; margin:0; gap: 1px; font-size:0; } 
