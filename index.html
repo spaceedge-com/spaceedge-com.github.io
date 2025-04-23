@@ -35,7 +35,7 @@
 html {  
 min-height: 100%; min-height: 100vh; } 
 #body { /* css id#body */ 
-font-family: Ariel; font-size:1.0rem; min-height: 100%; width: 100%; 
+font-family: Ariel; font-size:1.0em; min-height: 100%; width: 100%; 
 position: absolute; top: 0; left: 0; 
 margin: 0; padding: 0;
 text-shadow: 0 0 black; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
@@ -74,7 +74,7 @@ header .logo {
 font-family: 'GreatVibes-rg', 'Brush Script MT', 'Apple Chancery', 'Lucida Calligraphy', cursive, sans-serif; 
 /* font-family: 'GreatVibes-rg', cursive, sans-serif; */
 font-size:2.6em; font-weight: normal;	
-text-decoration: none; color:fuchsia; margin:0; padding-top:0.36rem;
+text-decoration: none; color:fuchsia; margin:0; padding-top:0.16em;
 margin-left: 10px; margin-right: 1px;
 background-color: turquious; background-blend-mode: difference;
 }	
@@ -82,7 +82,7 @@ background-color: turquious; background-blend-mode: difference;
 display: flex; justify-content: end; width: 90%; height: 50px;
 background-size: cover; background-position: center; background-repeat: no-repeat;
 }
-.intro p { font-size: 0.70rem; text-transform: uppercase; font-style: oblique; 
+.intro p { font-size: 0.70em; text-transform: uppercase; font-style: oblique; 
 font-weight: normal; padding: 0.5em; margin: 0; text-align: right; 
 }
 a:link { text-decoration: none;  }
@@ -96,7 +96,7 @@ embed { width: 100%; /*imp. leave*/ }
 .giphs { padding: 1px; margin: 1px; max-width: 70%;  }
 img {  max-width: 100%; height: auto; display: block; margin: auto; }
 figure {  display: block; text-align: center; float: left; text-indent: 0; margin: 1.0em; padding: 0.5em; }
-figure img, figcaption {  font-size:1rem; text-align: center; min-width: 150px; display: block; }
+figure img, figcaption {  font-size:0.5em; text-align: center; min-width: 150px; display: block; }
 pre {  padding: 5%;  }	
 .spc5, .spc15, .spc25, .spc35, .spc55, .spc75 { position: relative; clear:both; float:inherit; }
 .spc5 {  height:5px; max-height:5px; margin:5px; padding:5px; }
@@ -107,13 +107,13 @@ pre {  padding: 5%;  }
 .spc75 { height:75px; max-height:75px; margin:75px; padding:75px; }
 
 * { 
-  font-family: Ariel; text-align: left; font-size:1.10rem; 
+  font-family: Ariel; text-align: left; font-size:1em; 
   line-height: 1.1; box-sizing: border-box;
   /* Default Design Styling */
   margin: 5px; padding: 1px; max-width: 1200px;
 }
 /*css applies order precedence*/
-body { font-size: 1.15rem;  font-style:italic; }
+body { font-size: 1em;  font-style:italic; }
 :not(body) { font-style:normal; }
 
 /* pure-css expands multisearch edits before 04/21/25 */ 
@@ -126,7 +126,7 @@ transition: 0.6s all linear;  }
 @keyframes blinker { 100% { opacity: .20; } 
 }
 blockquote { 
-font: 4.4vw Ariel; font-weight:normal; font-style:italic; line-height:1.5; display:block; 
+font: 1em Ariel; font-weight:normal; font-style:italic; line-height:1.5; display:block; 
 margin:0 auto; padding:15px; border-radius:5px; 
 }	
 blockquote::before {
@@ -137,7 +137,7 @@ content: '\201D'; float:right;
 font-size:15px;font-weight:bold;font-style:italic; margin-top:3px;margin-right:-17px;
 }
 at { display:block;
-font-family: 'GreatVibes-rg', cursive; font-size:1.26rem; text-align:center; margin-left:66px;padding-top:10px;	
+font-family: 'GreatVibes-rg', cursive; font-size:1em; text-align:center; margin-left:66px;padding-top:10px;	
 }
 .artdiv {
   display:block; padding: 1.5em; background: #3333; border-bottom: 1px solid #dedede;
@@ -148,17 +148,17 @@ font-family: 'GreatVibes-rg', cursive; font-size:1.26rem; text-align:center; mar
 
 /* :root is generally <html> */
 :root { font-size:75%;  }
-body { font-size: 1.15rem; font-style:italic; }
+body { font-size: 1em; font-style:italic; }
 :not(body) { font-style:normal; }
-p { font-size: 1.2rem; }
-/* define all sizes in rems */
-h1 { font-family: Ariel; font-size: clamp(2rem, 5.4vw, 5rem);
+p { font-size: 1em; }
+/* define font sz */
+h1 { font-family: Ariel; font-size: clamp(2em);
 }
-h2 { font-size: 4.4vw; }
-h3 { font-size: 1.30rem; text-transform: uppercase; }
-h4 { font-size: 1.15rem; }
-h5 { font-size: 1.1rem; text-transform: uppercase; }
-h6 { font-size: 1.0rem; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; text-transform: uppercase; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; text-transform: uppercase; }
+h6 { font-size: 1.0em; }
 /* The media queries just need to change :root */
 @media screen and (min-width: 600px) {
 	:root { font-size: 100%;}
@@ -169,7 +169,7 @@ h6 { font-size: 1.0rem; }
 /* ul li style lists */
 ul {
   display: block; list-style-type: disc; margin-top: 1em; margin-bottom: 1.3em; margin-left: 0; margin-right: 0;
-  padding-left:40px; text-align:left: font-style: normal; font-size: 1.4rem; font-color: #fcc;
+  padding-left:40px; text-align:left: font-style: italic; font-size: 1em; font-color: #fcc;
 }
 
 /* light dark js theme */
@@ -216,13 +216,13 @@ blockquote { width:600px; max-width:650px; }
 /* == Responsive sml dis 600px/less == */
 @media screen and (max-width: 600px) {
 	header .logo { font-size: 8.0vw;  } 
-.intro p { font-size: 0.6rem;  } 
+.intro p { font-size: 0.5em;  } 
 .searchbox { margin:2px; max-width:90; }  #searchterms {  width: 98%; }   input[type=search]:focus { width:99%; }
 blockquote { width:80%;max-width:85%; } figure { width:100%; display:flex; margin:0; gap: 1px; font-size:0; } 
 /* Clearfix (clear floats) */
 img { display:inherit; float:left;
   flex:99.99%; flex-wrap:wrap; padding:0; vertical-align:top; object-fit: contain; align-self: flex-start; }
-figcaption { width:50%; display: inline; flex: 1 1 auto; font-size:.99rem; }
+figcaption { width:50%; display: inline; flex: 1 1 auto; font-size:.7em; }
 }
 
 /* === MultiSearch Clean css  Styles === */
