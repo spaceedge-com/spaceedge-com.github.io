@@ -15,22 +15,42 @@
 <meta name="apple-mobile-web-app-title" content="SpaceEdge">
 <!--    jQuery    --> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>	
-<!-- fontawesome  --> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>	
+<!-- masonry layout cdn, & jscript --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script>
+const gridContainer = document.querySelector('.grid-container');
+masonry = new Masonry(gridContainer, {
+      itemSelector: '.grid-item',
+      columnWidth: 300,
+      gutter: 10,
+      responsive: true,
+      breakpoint: 600,
+      columnWidthMobile: 200,
+      gutterMobile: 5
+});
+</script>
+
 <style>	 
 /* css */ 
-/* padding: T⬆️ R➡️ B⬇️ L⬅️; TRiBL */   
+/* padding: T⬆️ R➡️ B⬇️ L⬅️; TRiBL */  
 /* top right bottom left; tribel */
 
 /* Custom Scrollbars  */ 
-/*  Firefox  */ 
-:root { scrollbar-color: rgba(100,120,255,0.9) rgba(0,0,0,0.5) !important; scrollbar-width: thin !important; }  
-/* Chrome, Edge, Safari */
-::-webkit-scrollbar {  height: 12px;  width: 5px; background: #faf; }
-::-webkit-scrollbar-thumb {  background: #33a;  -webkit-border-radius: 1em; -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);  }
-::-webkit-scrollbar-corner {  background: #faf;  }
 
-/*   css           */
+/* == Masonry Layout == */
+.grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      grid-auto-rows: minmax(150px, auto);
+}
+.grid-item {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border: 1px solid #ddd;
+}
+
+/*   CSS           */
 :root {  /*  padding: top right bottom left;	--t25: rgba(0,0,0,0.25);  */  }
 html {  
 min-height: 100%; min-height: 100vh; } 
