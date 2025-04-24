@@ -43,22 +43,22 @@ masonry = new Masonry(gridContainer, {
 
 /* == Masonry Layout == */
 .grid-container {
-  display: grid;
+  display: inline-block;
+  max-width: 800px; /* Set a maximum width for the grid container */
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   grid-auto-rows: 150px; 
 /* grid-auto-rows 150px */
 }
+
 .grid-item {
-      background-color: #f0f0f0;
-      padding: 20px;
-      border: 1px solid #ddd;
-  width: 100%;
-  height: 150px; 
-/* fixed height for the grid items */
-  margin-bottom: 10px; 
-/* A margin bottom for spacing */
-  max-height: 150px; /* max-height grid items */
+  height: 250px; 
+  max-height: 300px; /* max-height grid items */
+  width: calc(33.33% - 10px); 
+  /* Calculate the width of each grid item based on the column width */
+  border: 1px solid #ddd;
+  background-color: #f0f0f0;
+  padding: 20px; margin-bottom: 10px;
   overflow: hidden; /* overflow: hidden to hide any content that exceeds the max-height */
 }
 .grid-item img {
