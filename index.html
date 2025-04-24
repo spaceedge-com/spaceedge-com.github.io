@@ -18,18 +18,15 @@
 <!-- masonry layout cdn, & jscript --> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
 <script>
+// Generate grid items dynamically
 const gridContainer = document.querySelector('.grid-container');
-masonry = new Masonry(gridContainer, {
-  itemSelector: '.grid-item',
-  columnWidth: function(containerWidth) {
-    return containerWidth / 3;
-  },
-  gutter: 10,
-  responsive: true,
-  // Define the grid layout using the gridTemplateColumns and gridAutoRows options
-  gridTemplateColumns: 'repeat(3, 1fr)',
-  gridAutoRows: '150px'
-});
+for (let i = 0; i < 10; i++) {
+  const gridItem = document.createElement('div');
+  gridItem.classList.add('grid-item');
+  gridItem.style.height = '250px';
+  gridItem.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
+  gridContainer.appendChild(gridItem);
+}
 </script>
 
 <style>	 
