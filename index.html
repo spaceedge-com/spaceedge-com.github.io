@@ -20,13 +20,17 @@
 <script>
 const gridContainer = document.querySelector('.grid-container');
 masonry = new Masonry(gridContainer, {
-      itemSelector: '.grid-item',
-      columnWidth: 300,
-      gutter: 10,
-      responsive: true,
-      breakpoint: 600,
-      columnWidthMobile: 200,
-      gutterMobile: 5
+  itemSelector: '.grid-item',
+  columnWidth: 300,
+  gutter: 10,
+  responsive: true,
+  breakpoint: 600,
+  columnWidthMobile: 200,
+  gutterMobile: 5,
+  // Add this line to specify the columnWidth
+  columnWidth: function(containerWidth) {
+    return containerWidth / 3;
+  }
 });
 </script>
 
