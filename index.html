@@ -21,11 +21,14 @@
 const gridContainer = document.querySelector('.grid-container');
 masonry = new Masonry(gridContainer, {
   itemSelector: '.grid-item',
-  gutter: 10,
-  responsive: true,
   columnWidth: function(containerWidth) {
     return containerWidth / 3;
-  }
+  },
+  gutter: 10,
+  responsive: true,
+  // Define the grid layout using the gridTemplateColumns and gridAutoRows options
+  gridTemplateColumns: 'repeat(3, 1fr)',
+  gridAutoRows: '150px'
 });
 </script>
 
