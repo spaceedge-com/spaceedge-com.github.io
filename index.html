@@ -37,14 +37,6 @@
   flex-grow: 1;
   flex-shrink: 0;
 }
-@media (max-width: 600px) {
-  .grid-item {
-    flex-basis: 100%;
-  }
-}
-.grid-item img {
-  object-fit: cover;
-}
 /* Show only the first 2 lines of text by default */
 .grid-item p {
   max-height: 2em;
@@ -55,19 +47,57 @@
   max-height: none;
   overflow: visible;
 }
-/* Show more with button  */
-.read-more {
-  display: block;
-  position: relative;
-  z-index: 1;
+.grid-item img { object-fit: cover;
 }
-.read-more::after {
-  content: "\25B8";
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: 16px;
+
+/* With Shows more with readmore button  */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+    }
+    .grid-item {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .grid-item h2 {
+      margin-top: 0;
+    }
+    .grid-item .read-more {
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+    }
+    .grid-item p:not(:first-child) {
+      display: none;
+    }
+    .grid-item .read-more::after {
+      content: "Read more";
+    }
+    .grid-item .read-more.active::after {
+      content: "Read less";
+    }
+    .grid-item.active p:not(:first-child) {
+      display: block;
+    }
+    
+    @media (max-width: 600px) {
+  .grid-item {
+    flex-basis: 100%;
+  }
 }
+    @media (min-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1200px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
 
 /*   CSS           */
 :root {  /*  padding: top right bottom left;	--t25: rgba(0,0,0,0.25);  */  }
