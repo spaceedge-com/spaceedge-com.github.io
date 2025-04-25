@@ -17,7 +17,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>	
 <!-- masonry layout cdn, & jscript --> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-
+<!-- 	Articles grid container ; -->
+<script>
+// Generate grid-container items dynamically
+masonry = new Masonry({
+  container: document.querySelector('.grid-container'),
+  itemSelector: '.grid-item'
+});
+</script>
 <style>	 
 /* css */ 
 /* padding: T⬆️ R➡️ B⬇️ L⬅️; TRiBL */  
@@ -27,27 +34,33 @@
 
 /* == Masonry Layout == */
 .grid-container {
-  display: inline-block;
-  max-width: 80vw; /* Resp. width grid container */
+  display: flex;
+  max-width: 80vw; /* Resp. width container */
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  grid-auto-rows: 150px; 
-/* grid-auto-rows 150px */
+  grid-auto-rows: 150px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
-
 .grid-item {
-  height: 250px; 
-  max-height: 300px; /* max-height grid items */
-  width: calc(33.33% - 10px); 
-  /* Calculate the width of each grid item based on the column width */
+  padding: 20px;
   border: 1px solid #ddd;
-  background-color: #f0f0f0;
-  padding: 20px; margin-bottom: 10px;
-  overflow: hidden; /* overflow: hidden to hide any content that exceeds the max-height */
+  width: calc(33.33% - 10px);
+}
+/* Make the grid responsive by adding media queries */
+@media (max-width: 600px) {
+  .grid-item {
+    width: calc(50% - 10px);
+  }
+}
+@media (max-width: 400px) {
+  .grid-item {
+    width: 100%;
+  }
 }
 .grid-item img {
-  width: 100%; height: 100%;
-  object-fit: cover; /* object-fit: cover to make images cover the entire grid item */
+  object-fit: contain; /* cover to make images covers entire grid */
 }
 
 /*   CSS           */
@@ -910,15 +923,6 @@ Everyone Everything Started Out Simply Freely From Just Small Steps Before Reach
 </span>
   
 </div>
-
-<!-- 	Articles grid container ; -->
-<script>
-// Generate grid-container items dynamically
-masonry = new Masonry({
-  container: document.querySelector('.grid-container'),
-  itemSelector: '.grid-item'
-});
-</script>
 
 </body>
 </html>
