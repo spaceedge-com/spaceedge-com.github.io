@@ -25,36 +25,23 @@
 
 /* == Masonry Layout == */
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 .grid-item {
   padding: 20px;
   border: 1px solid #ddd;
-  grid-column: span 1;
-  grid-row: span 1;
-  flex-grow: 1; /* added this property */
+  flex-basis: calc(50% - 10px);
+}
+@media (max-width: 600px) {
+  .grid-item {
+    flex-basis: 100%;
+  }
 }
 .grid-item img {
-  object-fit: contain; /* cover images cover entire grid */
-}
-  
-/* Make the grid responsive by adding media queries */
-@media (max-width: 600px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-  .grid-item {
-    grid-column: span 1;
-    grid-row: span 1;
-    width: calc(50% - 10px);
-  }
-}
-@media (max-width: 400px) {
-  .grid-item {
-    width: 100%;
-  }
+  object-fit: cover;
 }
 
 /*   CSS           */
