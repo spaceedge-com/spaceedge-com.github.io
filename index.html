@@ -70,17 +70,28 @@
       margin-bottom: 0.5rem;
       cursor: pointer;
     }
-    .grid-item p:not(:first-child) {
+    .grid-item .additional-content {
       display: none;
+    }
+    .grid-item.active .additional-content {
+      display: block;
     }
     .grid-item .read-more::after {
       content: "Read more";
     }
-    .grid-item .read-more.active::after {
+    .grid-item.active .read-more::after {
       content: "Read less";
     }
-    .grid-item.active p:not(:first-child) {
-      display: block;
+
+    @media (min-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1200px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
 
 /*   CSS           */
