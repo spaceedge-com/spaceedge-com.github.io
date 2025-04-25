@@ -45,6 +45,29 @@
 .grid-item img {
   object-fit: cover;
 }
+/* Show only the first 2 lines of text by default */
+.grid-item p {
+  max-height: 2em;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.grid-item:hover p {
+  max-height: none;
+  overflow: visible;
+}
+/* Show more with button  */
+.read-more {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.read-more::after {
+  content: "\25B8";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 16px;
+}
 
 /*   CSS           */
 :root {  /*  padding: top right bottom left;	--t25: rgba(0,0,0,0.25);  */  }
@@ -449,6 +472,9 @@ In this Darkness Free Abundant solar light no local dedicated solar electronics 
     <h1>Modern Plague: Scam Cons of Misinformation</h1>
     
     <h2>Deceptive Tech: Software Lock-In Malfunction</h2> 
+        
+<button class="read-more">Read more</button>
+        
     <p>One of the biggest ways of this backhandedness is how these so called smart tech devices are made to operate or should I say fail. And most tech savvy search online for solutions, and after finding some obsecure setting usually hidden behind passcodes, passwords, or some other (root) method. You change the setting believing it's fixed the issues. After reboot restart only to find that the setting was bogus had no effect and is of different or locked version of Android Windows or iOS.
     </p>
     
