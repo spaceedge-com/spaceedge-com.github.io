@@ -913,15 +913,11 @@ Everyone Everything Started Out Simply Freely From Just Small Steps Before Reach
 
 <!-- 	Articles grid container ; -->
 <script>
-// Generate grid items dynamically
-const gridContainer = document.querySelector('.grid-container');
-for (let i = 0; i < 10; i++) {
-  const gridItem = document.createElement('div');
-  gridItem.classList.add('grid-item');
-  gridItem.style.height = '250px';
-  gridItem.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
-  gridContainer.appendChild(gridItem);
-}
+// Generate grid-container items dynamically
+masonry = new Masonry({
+  container: document.querySelector('.grid-container'),
+  itemSelector: '.grid-item'
+});
 </script>
 
 </body>
