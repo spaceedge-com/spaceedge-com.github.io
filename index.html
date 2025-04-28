@@ -47,7 +47,7 @@
   max-height: none;
   overflow: visible;
 }*/
-.grid-item img { object-fit: cover;
+.grid-item img { object-fit: contain;
 }
 
 /* With Shows more with readmore button  */
@@ -174,11 +174,10 @@ embed { width: 100%; /*imp. leave*/ }
 .giphs { padding:1px; margin:1px; max-width:70%;  }
 img {  max-width:100%; height:auto; display:block; margin:auto; }
 figure {  
-display: block; text-align: center; float: left; text-indent: 0; margin: 1.0em; padding: 0.5em; }
+display:flex; text-align: center; float: left; text-indent:0; margin: 1.0em; padding: 0.5em; }
 figure img, figcaption { 
-font-family: Ariel; display: inline-block; 
-font-size:0.8em; min-width:25%; 
-text-align:left; }
+font-family: Ariel; display: inline-block;  padding:3px;
+font-size:0.8em; min-width:25%; text-align:left; }
 pre {  padding: 5%;  }	
 .spc5, .spc15, .spc25, .spc35, .spc55, .spc75 { position: relative; clear:both; float:inherit; }
 .spc5 {  height:5px; max-height:5px; margin:5px; padding:5px; }
