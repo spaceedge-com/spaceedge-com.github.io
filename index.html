@@ -162,7 +162,7 @@ background-color:#1023; background-blend-mode: difference;
 display: flex; justify-content: end; width: 90%; height: 50px;
 background-size: cover; background-position: center; background-repeat: no-repeat;
 }
-.intro p { font-size: 0.70em; text-transform: uppercase; font-style: oblique; font-weight: normal; padding: 0.5em; margin: 0; text-align: right; 
+.intro p { font-size: 0.98em; text-transform: uppercase; font-style: oblique; font-weight: normal; padding: 2px; margin: 1px; text-align: right; 
 }
 a:link { text-decoration: none;  }
 a { background-color: transparent; text-decoration: none; }
@@ -177,7 +177,7 @@ figure {
 display:flex; text-align: center; float: left; text-indent:0; margin: 1.0em; padding: 0.5em; }
 figure img, figcaption { 
 font-family: Ariel; display: inline-block;  padding:3px;
-font-size:0.8em; min-width:25%; text-align:left; }
+font-size:0.8em; text-align:left; }
 pre {  padding: 5%;  }	
 .spc5, .spc15, .spc25, .spc35, .spc55, .spc75 { position: relative; clear:both; float:inherit; }
 .spc5 {  height:5px; max-height:5px; margin:5px; padding:5px; }
@@ -275,18 +275,14 @@ blockquote { width:600px; max-width:650px; }
 }	
 /* == Responsive sml dis 600px/less == */
 @media screen and (max-width: 600px) {
-	header .logo { font-size: 8.0vw;  } 
-.intro p { font-size: 0.5em;  } 
+header .logo { font-size: 8.0vw;  } 
+.intro p { font-size: 0.7em;  } 
 .searchbox { margin:2px; max-width:90%; }  #searchterms {  width: 98%; }   input[type=search]:focus { width:99%; }
 blockquote { width:80%;max-width:85%; } 
-figure { 
-display:flex; width:100%; margin:0; gap:0; align-items:center; font-size:0; /* vert align imgs */ 
-} 
+figure { display:flex; width:100%; margin:0; gap:0; align-items:center; font-size:0; /* vert align imgs */ } 
 img {/*clearfix-float*/ font-size:.6em;
-height:auto; object-fit:cover; line-height:0; display:inline-block; float:left; flex:99.99%; flex-wrap:wrap; flex-basis:0; vertical-align:top; align-self:center; margin:1px; padding:1px; 
-}
-figcaption { 
-font-size:10px; width:50%; display:block;  flex: 1 1 auto; text-align:left; }
+height:auto; object-fit:cover; line-height:0; display:inline-block; float:left; flex:99.99%; flex-wrap:wrap; flex-basis:0; vertical-align:top; align-self:center; margin:1px; padding:1px; }
+figcaption { font-size:10px; width:50%; display:block; flex: 1 1 auto; text-align:left; }
 }
 
 /* === MultiSearch Cln CSS Styles === */
