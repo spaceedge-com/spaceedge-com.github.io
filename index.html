@@ -55,17 +55,32 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: 1rem;
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
     }
     .grid-item {
       border: 1px solid #ccc;
-      padding: 1rem;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       margin-bottom: 2em;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #444;
+    }
+    .grid-item h1 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5em; 
     }
     .grid-item h2 {
       margin-top: 0;
+      color: #ccc;
+    }
+    .grid-item p {
+      line-height: 1.5;
+      font-size: 1.1rem 
     }
     .grid-item .read-more {
       margin-bottom: 0.5rem;
@@ -176,7 +191,7 @@ pre {  padding: 5%;  }
 .spc55 { height:55px; max-height:55px; margin:55px; padding:55px; }
 .spc75 { height:75px; max-height:75px; margin:75px; padding:75px; }
 
-/* pure-css expands multisearch edits before 04/21/25 */ 
+/* pure-css expands msearch before 04/21/25 */ 
 
 /* -----------—--- */
 /*    Posts    */
@@ -187,7 +202,7 @@ transition: 0.6s all linear;  }
 }
 blockquote { 
 font-family: 'SeptemberScript-Regular', cursive;
-font-size:1.26em; font-weight:normal; font-style:italic; line-height:1.5; display:block; margin:0 auto; padding:15px; border-radius:5px; 
+font-size:1.26em; font-weight:normal; font-style:italic; line-height:1.5; display:block; margin:0 auto; padding:15px; border-radius:5px;
 }	
 blockquote::before {
 content: '\201C'; float:left; font-size:15px;font-weight:bold;font-style:italic; margin:-20px; 	
@@ -211,10 +226,10 @@ font-family: 'GreatVibes-rg', cursive; font-size:1em; text-align:center; margin-
 h1 { font-family: Ariel; font-size:1.7em;}
 h2 { font-size:1.5em; }
 h3 { font-size:1.3em; text-transform: uppercase; }
-h4 { font-size:1.2em; }
-h5 { font-size:1.1em; text-transform: uppercase; }
+h4 { font-size:1.25em; }
+h5 { font-size:1.15em; text-transform: uppercase; }
 h6 { font-size:1.0em; }
-p { font-size: 1.0em; }
+p { font-size: 1.1em; }
 /* The media queries just need to change :root */
 @media screen and (min-width: 600px) {
 	:root { font-size: 100%;}
@@ -266,7 +281,7 @@ code {
  background-color: var(--code-bg-color);
  padding: 2px;
 }  
-/* end light dark theme */
+/* end light/dark theme */
 
 /* == Responsive lrg dis 601px/more == */
 @media screen and (min-width: 601px) {	 
@@ -280,14 +295,37 @@ header .logo { font-size: 8.0vw;  }
 .intro p { font-size: 0.7em;  } 
 .searchbox { margin:2px; max-width:90%; }  #searchterms {  width: 98%; }   input[type=search]:focus { width:99%; }
 blockquote { width:80%;max-width:85%; } 
-figure { display:flex; width:100%; margin:0; gap:0; align-items:center; font-size:0; /* vert align imgs */ } 
+figure { display:flex; width:100%; margin:0; gap:0; align-items:center; font-size:0; /*  aligns imgs */ } 
 img {/*clearfix-float*/ font-size:.6em;
 height:auto; object-fit:cover; line-height:0; display:inline-block; float:left; flex:99.99%; flex-wrap:wrap; flex-basis:0; vertical-align:top; align-self:center; margin:1px; padding:1px; }
 figcaption { font-size:10px; width:50%; display:block; flex: 1 1 auto; text-align:left; }
+/* mobile css */
+body {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .grid-container {
+    grid-template-columns: 1fr; /* stack articles vertically */
+    padding: 10px;
+  }
+  .grid-item {
+    padding: 15px;
+  }
+  .grid-item h1 {
+    font-size: 1.3rem;
+  }
+  .grid-item h2 {
+    font-size: 0.9rem;
+  }
+  .grid-item p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
 }
 
-/* === MultiSearch Cln CSS Styles === */
-.search-body p, h4, h5, h6 {  margin: 1em; line-height: 1; }
+/* === MSearch CSS === */
+.search-body p, h4, h5, h6 {  
+  margin: 1em; line-height: 1; }
 .details {
   padding: .3em; border-radius: 6px; transition: background-color 0.3s, color 0.3s; text-align: center;
 }
