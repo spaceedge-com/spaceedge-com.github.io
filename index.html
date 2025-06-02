@@ -126,20 +126,8 @@ p {
 font-family: Sans; display: block; 
 font-style: normal; font-weight: normal;  text-align:left; text-indent: 30px; line-height: 1.35em; margin: 1em 0 1em 0; padding-left:0.40em; padding-right:.20em;  }
 * { /* Default Design Styling */
-font-family: Ariel; text-align:left; font-size:1em; line-height: 1; box-sizing: border-box; max-width: 1500px; 
-}
-/* define font sz */
-h1 { font-family: Ariel; font-size:2em;}
-h2 { font-size:1.75em; }
-h3 { font-size:1.43em; text-transform: uppercase; }
-h4 { font-size:1.34em; }
-h5 { font-size:1.15em; text-transform: uppercase; }
-h6 { font-size:1.0em; }
-/* The media queries just need to change :root */
-@media screen and (min-width: 600px) {
-	:root { font-size: 100%;}
-}@media screen and (min-width: 1000px) {
-	:root { font-size: 120%;}
+font-family: Ariel; text-align:left; 
+box-sizing:border-box; max-width: 1500px; 
 }
 
 /* header CSS */
@@ -219,13 +207,25 @@ font-family: 'GreatVibes-rg', cursive; font-size:1em; text-align:center; margin-
 } 
 
 /*css applies order precedence*/
-body { font-size: 1em; font-style:italic; }
-:not(body) { font-style:normal; }
+/* define font sz */
+h1 { font-family: Ariel; font-size:1.7em;}
+h2 { font-size:1.5em; }
+h3 { font-size:1.3em; text-transform: uppercase; }
+h4 { font-size:1.2em; }
+h5 { font-size:1.1em; text-transform: uppercase; }
+h6 { font-size:1.0em; }
+p { font-size: 1.0em; }
+/* The media queries just need to change :root */
+@media screen and (min-width: 600px) {
+	:root { font-size: 100%;}
+}@media screen and (min-width: 1000px) {
+	:root { font-size: 120%;}
+}
 /* :root is generally <html> */
-:root { font-size:75%;  }
-body { font-size: 1em; font-style:italic; }
+:root { font-size: 100%;  }
+body { font-style:italic; }
 :not(body) { font-style:normal; }
-p { font-size: 1em; }
+
 
 /* ul li style lists */
 ul {
