@@ -225,27 +225,6 @@ font-family: 'GreatVibes-rg', cursive; font-size:1em; text-align:center; margin-
   font-family: Ariel; text-align: left; display: inline-block; border-bottom: 2px ridge #869; 
 } 
 
-/*css applies order precedence*/
-/* define font sz */
-h1 { font-family: Ariel; font-size:1.7em;}
-h2 { font-size:1.5em; }
-h3 { font-size:1.3em; text-transform: uppercase; }
-h4 { font-size:1.25em; }
-h5 { font-size:1.15em; text-transform: uppercase; }
-h6 { font-size:1.0em; }
-p { font-size: 1.1em; }
-/* The media queries just need to change :root */
-@media screen and (min-width: 600px) {
-	:root { font-size: 100%;}
-}@media screen and (min-width: 1000px) {
-	:root { font-size: 120%;}
-}
-/* :root is generally <html> */
-:root { font-size: 100%;  }
-body { font-style:italic; }
-:not(body) { font-style:normal; }
-
-
 /* ul li style lists */
 ul {
 display: block; list-style-type: disc; margin: 1.2em 0 1.2em 0; line-height:1.2;
@@ -287,6 +266,27 @@ code {
 }  
 /* end light/dark theme */
 
+
+/*css applies order precedence*/
+/* define font sz */
+h1 { font-family: Ariel; font-size:1.7em;}
+h2 { font-size:1.5em; }
+h3 { font-size:1.2em; text-transform: uppercase; }
+h4 { font-size:1.05em; }
+h5 { font-size:0.95em; text-transform: uppercase; }
+h6 { font-size:0.85em; }
+p { font-size: 1.1em; }
+/* The media queries just need to change :root */
+@media screen and (min-width: 600px) {
+	:root { font-size: 100%;}
+}@media screen and (min-width: 1000px) {
+	:root { font-size: 120%;}
+}
+/* :root is generally <html> */
+:root { font-size: 100%;  }
+body { font-style:italic; }
+:not(body) { font-style:normal; }
+
 /* == Responsive lrg dis 601px/more == */
 @media screen and (min-width: 601px) {	 
 body { width:980px; max-width:1024px; }
@@ -306,10 +306,10 @@ figcaption { font-size:10px; width:50%; display:block; flex: 1 1 auto; text-alig
 /* mobile css */
 h1 { font-size:1.4rem;}
 h2 { font-size:1.15rem; }
-h3 { font-size:1.1rem; }
-h4 { font-size:1.0rem; }
-h5 { font-size:0.9rem; }
-h6 { font-size:0.8rem; }
+h3 { font-size:0.85rem; }
+h4 { font-size:0.8rem; }
+h5 { font-size:0.7rem; }
+h6 { font-size:0.6rem; }
 p { font-size: 1.0rem; }
 body {
     font-size: 1rem;
