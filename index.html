@@ -433,30 +433,15 @@ updateTheme();
 
 <div class="spc15"> <br> </div>
 
-  
+<a href="https://spaceedge.com/search.htm" style="display:inline-block; border-radius:5px; font-weight:bold;">
+  ➕ Search here
+</a>
 <div class="" style="margin:5px; text-align:center; witdth:25px auto; border:1px solid #22c; border-radius:5px;">
 <p>⚡ Make search even faster! Add Find8 to your browser and search right from the address bar.</p>
 <a href="https://chrome.google.com/webstore/detail/find8/podlebodapccbabemoihfnpfhebfoogf?authuser=0&hl=en" target="_blank" style="display:inline-block; padding:10px 20px; background-color:#4285F4; color:white; border-radius:5px; text-decoration:none; font-weight:bold;">
   ➕ Add Find8 Chrome Extension
 </a>
 </div>
-
-</div>
-<script>
-  // JS form input select submits 
-  const searchForm = document.getElementById("searchForm");
-  const searchEngineSelect = document.getElementById("searchEngine");
-  // Handle form submission
-  searchForm.addEventListener("submit", function(e) {
-    e.preventDefault(); // Prevent default form submission
-    const selectedOption = searchEngineSelect.options[searchEngineSelect.selectedIndex];
-    const engineUrl = selectedOption.getAttribute("data-action");
-    const query = document.getElementById("inp").value;
-  // Redirect the user to the selected search engine with their query
-    window.location.href = engineUrl + encodeURIComponent(query);
-  });
-</script>
-<!-- </div> searchbox div end. -->	
 
 <div class="spc5"> <hr> </div>
 
