@@ -123,6 +123,7 @@ background-position: top left; background-attachment: fixed; background-repeat: 
 -moz-background-size: cover; -webkit-background-size: cover; -o-background-size: cover;
 overflow-x:hidden; overflow-y:auto; 
 }
+
 @font-face {
   font-family: 'GreatVibes-rg';
   src: url('../fonts/GreatVibes-rg.ttf') format('truetype');
@@ -132,17 +133,18 @@ overflow-x:hidden; overflow-y:auto;
   src: url('../fonts/SeptemberScript-Regular.ttf') format('truetype');
   font-weight: normal; font-style: normal;
 }	
-h1 {  
-font-family: Ariel; line-height:1.5em; text-align:left; width:100%; display:block;/* letter-spacing:1px; */
-clear:left; clear: right; float: left; padding-left: 0; margin: 1.2em 0 1.1em 0; }
-h2, h3, h4, h5, h6 {  
-font-family: Ariel; line-height:1.2em; text-align:left; width: 100%; display:block; clear:left; clear: right; float: left; padding-left:0; margin: .5em 0 .5em 0; }
+ /* letter-spacing:1px; */
+h1, h2, h3, h4, h5, h6 {  
+font-family: Ariel; line-height:1.2em; text-align:left; width: 100%; display:block; clear:left; clear:right; float:left; 
+padding-left:0; margin: 1.0em 0 1.0em 0; 
+}
+h1 {  line-height:1.5em; }
 p { 
 font-family: Sans; display: block; 
 font-style: normal; font-weight: normal;  text-align:left; text-indent: 30px; line-height: 1.35em; margin: 1em 0 1em 0; padding-left:0.40em; padding-right:.20em;  }
 * { /* Default Design Styling */
-font-family: Ariel; text-align:left; 
-box-sizing:border-box; max-width: 1500px; 
+text-align:left; box-sizing:border-box; 
+max-width: 1500px; 
 }
 b, strong { font-weight: 700 !important;
 }
@@ -703,7 +705,7 @@ If so, we — humanity — are not merely Earth-born. We are a fusion of worlds:
   
   <h3> &copy; 2025 spaceedge.com & ChatGPT</h3>
   
-  <h2>New Prime Directive: <span class="code" style="display:block;text-align:center;"> <br>
+  <h2>New Prime Directive: <span class="code" style="display:block;text-align:center;"> 
           Info = Money <br>
           Misinfo = Debt <br>
    Information as replacement for Currency
