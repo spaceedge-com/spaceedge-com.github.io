@@ -230,8 +230,10 @@ font-family: 'GreatVibes-rg', cursive; font-size:1em; text-align:center; margin-
 
 /* ul li style lists */
 ul {
-display: block; list-style-type: disc; margin: 1.2em 0 1.2em 0; line-height:1.2;
-padding-left:40px; text-align:left; font-style: italic; font-size: 1.1em; 
+display: block; list-style-type: disc; 
+margin: 1.2em 0 1.2em 0; line-height:1.2;
+padding-left:40px; text-align:left; 
+font-style: italic; font-size: 1.1em; 
 }
 
 /* light dark js theme */
@@ -292,13 +294,13 @@ p { font-size: 1.1em; }
 body { font-style:italic; }
 :not(body) { font-style:normal; }
 
-/* == Responsive lrg dis 601px/more == */
+/* == Responsive Lrg dis 601px/more == */
 @media screen and (min-width: 601px) {	 
 body { width:980px; max-width:1024px; }
 .searchbox { max-width:50%; margin:3px; padding:3px; } 
 blockquote { width:600px; max-width:650px; } 
 }	
-/* == Responsive sml dis 600px/less == */
+/* == Responsive Sml dis 600px/less == */
 @media screen and (max-width: 600px) {
 header .logo { font-size: 8.0vw;  } 
 .intro p { font-size: 0.7em;  } 
@@ -315,11 +317,9 @@ h3 { font-size:0.85rem; }
 h4 { font-size:0.8rem; }
 h5 { font-size:0.7rem; }
 h6 { font-size:0.6rem; }
-p { font-size: 1.0rem; }
-body {
-    font-size: 1rem;
-    padding: 10px;
-  }
+p { font-size: 1.0rem; } 
+ul { font-size: 1.0rem; }
+body { font-size: 1rem; padding: 10px; }
   .grid-container {
     grid-template-columns: 1fr; /* stack articles vertically */
     padding: 10px;
@@ -366,7 +366,7 @@ button.submit:hover { background-color: #357ab8; transform: scale(1.02);
 }
 button.submit:active { background-color: #2f6aa1; transform: scale(0.98);
 }
-/* Dark theme */
+/* Dark msearch theme */
 @media (prefers-color-scheme: dark) {
   .details { background-color: #222; color: #eee;
   }
@@ -375,7 +375,7 @@ button.submit:active { background-color: #2f6aa1; transform: scale(0.98);
     background-color: #333; color: #fff; border: 1px solid #444;
   }
 }
-/* Light theme */
+/* Light msearch theme */
 @media (prefers-color-scheme: light) {
   .details {
     background-color: #f0f0f0; color: #222;
