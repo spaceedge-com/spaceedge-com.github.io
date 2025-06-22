@@ -7,14 +7,76 @@
 
 
 
+/* === MSearch CSS === */
+.search-body p, h4, h5, h6 {  
+  margin: 1em; line-height: 1; }
+.details {
+  padding: .3em; border-radius: 6px; transition: background-color 0.3s, color 0.3s; text-align: center;
+}
+/* Input and Button styling */
+input.line, select.submit, button.submit {
+  width: 100%; max-width: 600px; padding: 0.75em; margin: 0 auto;
+  display: block; box-sizing: border-box; background-color: #fff; color: #000;  
+  font-size: 1em; border-radius: 5px; border: 1px solid #ccc;
+}
+/* On focus, hide placeholder */
+input.line:focus::placeholder { color: transparent; }
+/* Focus expansion */
+#inp:focus { width: 98%; }
+/* Button submit */
+button.submit {
+  display: block; padding: 0.75em; margin: 0 auto;
+  width: 70%; font-size: 1em; border: 1px solid #ccc; border-radius: 5px;
+  color: #fff; background-color: darkblue; /* blue */
+  cursor: pointer; transition: background-color 0.3s ease, transform 0.2s;
+}
+button.submit:hover { background-color: #357ab8; transform: scale(1.02);
+}
+button.submit:active { background-color: #2f6aa1; transform: scale(0.98);
+}
+/* Dark msearch theme */
+@media (prefers-color-scheme: dark) {
+  .details { background-color: #222; color: #eee;
+  }
+  input.line,
+  select.submit, button.submit {
+    background-color: #333; color: #fff; border: 1px solid #444;
+  }
+}
+/* Light msearch theme */
+@media (prefers-color-scheme: light) {
+  .details {
+    background-color: #f0f0f0; color: #222;
+  }
+  input.line,
+  select.submit, button.submit {
+    background-color: #fff; color: #000; border: 1px solid #ccc;
+  }
+}
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  input.line, select.submit, button.submit { width: 50%; }
+}
 
+</style>
 
+<script>
+  const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)')
 
+  function updateTheme() {
+    const theme = prefersDarkMode.matches ? 'dark' : 'light' 
+     document.documentElement.setAttribute('data-theme', theme)
+}
 
+updateTheme();
+  prefersDarkMode.addEventListener("change", () => updateTheme());
+</script>
+	
+<!-- load external, <script> $(function(){ //$("#header").load("header.htm"); //$("#footer").load("footer.htm"); }); </script> -->
 
+</head>
 
-
-
+<body>
 
 
 <!-- Container Multi-search tool -->
