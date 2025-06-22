@@ -60,18 +60,26 @@ button.submit:active { background-color: #2f6aa1; transform: scale(0.98);
 }
 
 /* light/dark theme */
+:root, [data-theme="light"] {
+        --page-bg-color: ;
+        background: rgba(255,255,255,1);
+        --page-fg-color: #222;
+        --h1-fg-color: #356;
+        --h2-fg-color: #366;
+}
+      [data-theme="dark"] {
+        --page-bg-color: ;
+        background: rgba(14,14,16,1); 
+        --page-fg-color: #eee;
+        --h1-fg-color: #faf;
+        --h2-fg-color: #faf; 
+}
 body {
 background-color: var(--page-bg-color);
 color: var(--page-fg-color);
 }
 h1 { color: var(--h1-fg-color);}
 h2 { color: var(--h2-fg-color);} 
-code {
- font-family: courier;
- color: var(--code-fg-color);
- background-color: var(--code-bg-color);
- padding: 2px;
-}  
 /* end light/dark theme */
 
 </style>
