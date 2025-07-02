@@ -28,11 +28,13 @@
     .grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fill, 1fr);
+	  display: flex;
+          flex-wrap: wrap;    
       grid-gap: 1rem;
       gap: 20px;
       padding: 20px;
       box-sizing: border-box;
-      max-width: 1400px;      
+      max-width: 100%;      
       margin: auto;  
     }
     .grid-item {
@@ -44,6 +46,7 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px #444;
+	    flex-basis: 300px; /* adjust this value to set the minimum width of each column */
     }
     .grid-item h1 {
       font-size: 1.6rem;
@@ -79,16 +82,16 @@
     @media (min-width: 768px) {
       .grid-container {
         	/* grid-template-columns:  repeat(2, 50%); */
-	        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	        flex-basis: 300px; /* adjust this value to set the minimum width of each column */
       }
 	.grid-item.active {  
-		width: 100%; 
+		max-width: 100%; 
 	}  
     }
     @media (min-width: 1200px) {
       .grid-container {
         	/* grid-template-columns:  repeat(3, 33%); */
-	        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	        flex-basis: 500px; /* adjust this value to set the minimum width of each column */
       }  
 	.grid-item.active {
 		max-width: 100%; 
