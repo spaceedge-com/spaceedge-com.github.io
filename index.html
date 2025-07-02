@@ -17,89 +17,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>	
 
 <style>	 
-/* css */ 
+/* CSS */ 
 /* padding: T⬆️ R➡️ B⬇️ L⬅️; TRiBL */  
 /* top right bottom left; tribel */
 
-/* == Grid Layout == */
-.grid-item img { object-fit: contain;
-}
-/* With Shows more with readmore button  */
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, 1fr);  
-      grid-gap: 1rem;
-      gap: 20px;
-      padding: 20px;
-      box-sizing: border-box;
-      max-width: 100%;       
-    }
-/* Add a container element with max-width: 100% and margin: 0 auto */
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-}	
-    .grid-item {
-      border: 1px solid #ccc;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-bottom: 2em;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #444;
-    }
-    .grid-item h1 {
-      font-size: 1.6rem;
-      margin-bottom: 0.5em; 
-    }
-    .grid-item h2 {
-      margin-top: 0;
-      /* color: #c8a; */
-    }
-    .grid-item p {
-      line-height: 1.5;
-      font-size: 1.1rem 
-    }
-    .grid-item .read-more {
-      margin-bottom: 0.5rem;
-      cursor: pointer;
-    }
-    .grid-item .additional-content {
-      display: none;
-    }
-    .grid-item.active .additional-content {
-      display: block; width: 100%; max-width: 100%;
-    }
-    .grid-item .read-more::after {
-      content: "Read more";
-    }
-    .grid-item.active .read-more::after {
-      content: "Read less";
-    }
-	
-  .grid-item.active {  max-width: 100%;  }
-
-    @media (min-width: 768px) {
-      .grid-container {
-        	grid-template-columns:  repeat(2, 50%); 
-	        /* adjust this value to set the minimum width of each column */
-      }
-	.grid-item.active {  
-		max-width: 100%; 
-	}  
-    }
-    @media (min-width: 1200px) {
-      .grid-container {
-        	grid-template-columns:  repeat(3, 33%);
-	        /* adjust this value to set the minimum width of each column */
-      }  
-	.grid-item.active {
-		max-width: 100%; 
-	}
-    }
-
-/*   CSS           */
+/*   root html body    */
 :root {  /*  padding: top right bottom left;	--t25: rgba(0,0,0,0.25);  */  }
 html {  
 min-height: 100%; min-height: 100vh; } 
@@ -262,7 +184,7 @@ code {
  background-color: var(--code-bg-color);
  padding: 2px;
 }  
-/* end light/dark theme */
+/* end Light/Dark theme */
 
 
 /*css applies order precedence*/
@@ -330,24 +252,101 @@ body { font-size: 1rem; padding: 10px; }
   }
 }
 
-/* === Search CSS === */
-/* On focus, hide placeholder */
-/* Focus expansion */
-/* Button submit */
-/* Dark msearch theme */
+/* ===  === */
+/* == Grid Layout == */
+.grid-item img { object-fit: contain;
+}
+/* With Shows more with readmore button  */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 1fr);  
+      grid-gap: 1rem;
+      gap: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+      max-width: 100%;  
+      align-items: start;     
+    }
+/* Add a container element with max-width: 100% and margin: 0 auto */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}	
+    .grid-item {
+      border: 1px solid #ccc;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 2em;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #444;
+    }
+    .grid-item h1 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5em; 
+    }
+    .grid-item h2 {
+      margin-top: 0;
+      /* color: #c8a; */
+    }
+    .grid-item p {
+      line-height: 1.5;
+      font-size: 1.1rem 
+    }
+    .grid-item .read-more {
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+    }
+    .grid-item .additional-content {
+      display: none;
+    }
+    .grid-item.active .additional-content {
+      display: block; width: 100%; max-width: 100%;
+    }
+    .grid-item .read-more::after {
+      content: "Read more";
+    }
+    .grid-item.active .read-more::after {
+      content: "Read less";
+    }
+	
+  .grid-item.active {  max-width: 100%;  }
+
+    @media (min-width: 768px) {
+      .grid-container {
+        	grid-template-columns:  repeat(2, 50%); 
+	        /* adjust this value to set the minimum width of each column */
+      }
+	.grid-item.active {  
+		max-width: 100%; 
+	}  
+    }
+    @media (min-width: 1200px) {
+      .grid-container {
+        	grid-template-columns:  repeat(3, 33%);
+	        /* adjust this value to set the minimum width of each column */
+      }  
+	.grid-item.active {
+		max-width: 100%; 
+	}
+    }
+
+
+/* On focus hide placeholder */
+/* Focus expand Button submit */
+
+/* Light/Dark theme prefrence css */
 @media (prefers-color-scheme: dark) {
-  .details,input.line, select.submit, button.submit { background-color: #222; color: #eee;
+  body { 
+    background-color: #111; color: #eee;
   }
 }
-/* Light msearch theme */
+/* Light theme */
 @media (prefers-color-scheme: light) {
-  .details, input.line, select.submit, button.submit  {
-    background-color: #fff; color: #222;  
+  body {
+    background-color: #eee; color: #111;  
   }
-}
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  input.line, select.submit, button.submit { width: 50%; }
 }
 
 </style>
