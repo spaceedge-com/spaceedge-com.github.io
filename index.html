@@ -69,7 +69,7 @@
       display: none;
     }
     .grid-item.active .additional-content {
-      display: block;
+      display: block; width: 100%; max-width: 100%;
     }
     .grid-item .read-more::after {
       content: "Read more";
@@ -200,20 +200,24 @@ font-size:1.3em; font-weight:normal;
 font-style:italic; line-height:1.5; 
 }	
 blockquote::before {
-content: '\201C'; float:left; font-size:15px;font-weight:bold;font-style:italic; margin:-20px; 	
+content: '\201C'; float:left;  margin:-20px; 
+  font-size:15px;font-weight:bold; font-style:italic;	
 }
 blockquote::after {
 content: '\201D'; float:right;
-font-size:15px;font-weight:bold;font-style:italic; margin-top:3px;margin-right:-17px;
+font-size:15px;font-weight:bold;font-style:italic; 
+  margin-top:3px; margin-right:-17px;
 }
 at { display:block;
-font-family: 'GreatVibes-rg', cursive; font-size:1em; text-align:center; margin-left:66px; padding-top:10px;	
+font-family: 'GreatVibes-rg', cursive; font-size:1em; text-align:center; 
+  margin-left:66px; padding-top:10px;	
 }
 .artdiv {
   padding: 1.5em; background: #3333; border-bottom: 1px solid #dedede;
 }
 .artdiv h1 {
-  font-family: Ariel; text-align: left; display: inline-block; border-bottom: 2px ridge #869; 
+  font-family: Ariel; text-align: left; display: inline-block; 
+    border-bottom: 2px ridge #869; 
 } 
 
 /* ul li style lists */
