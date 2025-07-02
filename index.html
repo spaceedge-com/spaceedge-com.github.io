@@ -31,7 +31,6 @@
       grid-gap: 1rem;
       gap: 20px;
       padding: 20px;
-      max-width: 100%;
       margin: auto;
     }
     .grid-item {
@@ -215,24 +214,20 @@ padding-left:40px; text-align:left;
 
 /* light dark js theme */
 :root, [data-theme="light"] {
-        --page-bg-color: ;
+        --page-bg-color: fcf;
         background: linear-gradient(0deg, rgba(195,194,198,1) 0%, rgba(255,255,255,1) 100%);
         --page-fg-color: #222;
         --h1-fg-color: #356;
         --h2-fg-color: #366;
         --h3-fg-color: #376;
-        --code-fg-color: #633;
-        --code-bg-color: #aaa;
 }
       [data-theme="dark"] {
-        --page-bg-color: ;
+        --page-bg-color: #020;
         background: linear-gradient(0deg, rgba(21,21,24,1) 0%, rgba(14,14,16,1) 100%); 
         --page-fg-color: #eee;
         --h1-fg-color: #faf;
         --h2-fg-color: #faf; 
         --h3-fg-color: #faf;
-        --code-fg-color: #fcf;
-        --code-bg-color: #333;
 }
 body {
 background-color: var(--page-bg-color);
