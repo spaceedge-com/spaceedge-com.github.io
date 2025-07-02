@@ -72,16 +72,22 @@
     .grid-item.active .read-more::after {
       content: "Read less";
     }
+	
+.grid-item.active {
+  width: 100%;
+}
 
     @media (min-width: 768px) {
       .grid-container {
-        grid-template-columns:  repeat(2, 50%);
+        grid-template-columns:  repeat(2, 50%);  
+	.grid-item.active {  width: 50%; }
       }
     }
     @media (min-width: 1200px) {
       .grid-container {
         grid-template-columns:  repeat(2, 33%);
-      }
+      }  
+	.grid-item.active {width: 33.33%; }
     }
 
 /*   CSS           */
