@@ -27,9 +27,7 @@
 /* With Shows more with readmore button  */
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fill, 1fr);
-	  display: flex;
-          flex-wrap: wrap;    
+      grid-template-columns: repeat(auto-fill, 1fr);  
       grid-gap: 1rem;
       gap: 20px;
       padding: 20px;
@@ -46,7 +44,6 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px #444;
-	    flex-basis: 300px; /* adjust this value to set the minimum width of each column */
     }
     .grid-item h1 {
       font-size: 1.6rem;
@@ -81,8 +78,8 @@
 
     @media (min-width: 768px) {
       .grid-container {
-        	/* grid-template-columns:  repeat(2, 50%); */
-	        flex-basis: 300px; /* adjust this value to set the minimum width of each column */
+        	grid-template-columns:  repeat(2, 50%); 
+	        /* adjust this value to set the minimum width of each column */
       }
 	.grid-item.active {  
 		max-width: 100%; 
@@ -90,8 +87,8 @@
     }
     @media (min-width: 1200px) {
       .grid-container {
-        	/* grid-template-columns:  repeat(3, 33%); */
-	        flex-basis: 500px; /* adjust this value to set the minimum width of each column */
+        	grid-template-columns:  repeat(3, 33%);
+	        /* adjust this value to set the minimum width of each column */
       }  
 	.grid-item.active {
 		max-width: 100%; 
