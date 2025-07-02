@@ -18,8 +18,8 @@
 /* Input and Button styling */
 input.line, select.submit, button.submit {
   width: 100%; max-width: 600px; padding: 0.75em; margin: 0 auto;
-  display: block; box-sizing: border-box; background-color: #fff; color: #000;  
-  font-size: 1em; border-radius: 5px; border: 1px solid #ccc;
+  display: block; box-sizing: border-box; font-size: 1em; 
+  border-radius: 5px; border: 1px solid #ccc;
 }
 /* On focus, hide placeholder */
 input.line:focus::placeholder { color: transparent; }
@@ -28,7 +28,7 @@ input.line:focus::placeholder { color: transparent; }
 /* Button submit */
 button.submit {
   display: block; padding: 0.75em; margin: 0 auto;
-  width: 70%; font-size: 1em; border: 1px solid #ccc; border-radius: 5px;
+  width: 50%; font-size: 1em; border: 1px solid #ccc; border-radius: 5px;
   color: #fff; background-color: darkblue; /* blue */
   cursor: pointer; transition: background-color 0.3s ease, transform 0.2s;
 }
@@ -57,7 +57,7 @@ button.submit:active { background-color: #2f6aa1; transform: scale(0.98);
 }
 /* Mobile responsiveness */
 @media (max-width: 600px) {
-  input.line, select.submit, button.submit { width: 80%; }
+  input.line, select.submit, button.submit { width: 90%; }
 }
 
 /* light/dark theme */
