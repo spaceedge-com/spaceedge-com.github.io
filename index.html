@@ -77,15 +77,20 @@
 
     @media (min-width: 768px) {
       .grid-container {
-        	grid-template-columns:  repeat(2, 50%); }
+        	grid-template-columns:  repeat(2, 50%); 
+	          width: 100%; overflow-x: visible;
+      }
 	.grid-item.active {  
-		width: 100%; }  
+		width: 100%; 
+	}  
     }
     @media (min-width: 1200px) {
       .grid-container {
-        	grid-template-columns:  repeat(3, 33%); }  
+        	grid-template-columns:  repeat(3, 33%); 
+      }  
 	.grid-item.active {
-		width: 100%; }
+		width: 100%; 
+	}
     }
 
 /*   CSS           */
