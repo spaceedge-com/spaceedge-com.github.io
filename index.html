@@ -55,7 +55,7 @@
     }
     .grid-item h2 {
       margin-top: 0;
-      color: #c8a;
+      /* color: #c8a; */
     }
     .grid-item p {
       line-height: 1.5;
@@ -226,20 +226,24 @@ padding-left:40px; text-align:left;
 
 /* light dark js theme */
 :root, [data-theme="light"] {
-        --page-bg-color: fcf;
+        --page-bg-color: #fcf;
         background: linear-gradient(0deg, rgba(195,194,198,1) 0%, rgba(255,255,255,1) 100%);
         --page-fg-color: #222;
-        --h1-fg-color: #356;
-        --h2-fg-color: #366;
-        --h3-fg-color: #376;
+        --h1-fg-color: #365;
+        --h2-fg-color: #c8a;
+        --h3-fg-color: #c75;
+        --code-bg-color: #eee;
+        --code-fg-color: #434;
 }
       [data-theme="dark"] {
         --page-bg-color: #020;
         background: linear-gradient(0deg, rgba(21,21,24,1) 0%, rgba(14,14,16,1) 100%); 
-        --page-fg-color: #eee;
+        --page-fg-color: #eef;
         --h1-fg-color: #faf;
-        --h2-fg-color: #faf; 
-        --h3-fg-color: #faf;
+        --h2-fg-color: #a8f; 
+        --h3-fg-color: #aaf;
+        --code-bg-color: #434;
+        --code-fg-color: #eee;
 }
 body {
 background-color: var(--page-bg-color);
@@ -258,10 +262,8 @@ code {
 
 /*css applies order precedence*/
 /* define font sz */
-h1 { font-weight: 700 !important; 
-     font-size:1.7em; }
-h2 { font-weight: 700 !important;
-     font-size:1.5em; }
+h1 { font-weight: 700 !important; font-size:1.7em; }
+h2 { font-weight: 700 !important; font-size:1.5em; }
 h3 { font-size:1.2em; text-transform: uppercase; }
 h4 { font-size:1.05em; }
 h5 { font-size:0.95em; text-transform: uppercase; }
@@ -271,7 +273,7 @@ p { font-size: 1.1em; }
 @media screen and (min-width: 600px) {
 	:root { font-size: 100%;}
 }@media screen and (min-width: 1000px) {
-	:root { font-size: 120%;}
+	:root { font-size: 110%;}
 }
 /* :root is generally <html> */
 :root { font-size: 100%;  }
@@ -324,32 +326,9 @@ body { font-size: 1rem; padding: 10px; }
 }
 
 /* === Search CSS === */
-.search-body p, h4, h5, h6 {  
-  margin: 1em; line-height: 1; }
-.details {
-  padding: .3em; border-radius: 6px; transition: background-color 0.3s, color 0.3s; text-align: center;
-}
-/* Input and Button styling */
-input.line, select.submit, button.submit {
-  width: 100%; max-width: 600px; padding: 0.75em; margin: 0 auto;
-  display: block; box-sizing: border-box; background-color: #fff; color: #000;  
-  font-size: 1em; border-radius: 5px; border: 1px solid #ccc;
-}
 /* On focus, hide placeholder */
-input.line:focus::placeholder { color: transparent; }
 /* Focus expansion */
-#inp:focus { width: 98%; }
 /* Button submit */
-button.submit {
-  display: block; padding: 0.75em; margin: 0 auto;
-  width: 70%; font-size: 1em; border: 1px solid #ccc; border-radius: 5px;
-  color: #fff; background-color: darkblue; /* blue */
-  cursor: pointer; transition: background-color 0.3s ease, transform 0.2s;
-}
-button.submit:hover { background-color: #357ab8; transform: scale(1.02);
-}
-button.submit:active { background-color: #2f6aa1; transform: scale(0.98);
-}
 /* Dark msearch theme */
 @media (prefers-color-scheme: dark) {
   .details,input.line, select.submit, button.submit { background-color: #222; color: #eee;
