@@ -346,21 +346,13 @@ button.submit:active { background-color: #2f6aa1; transform: scale(0.98);
 }
 /* Dark msearch theme */
 @media (prefers-color-scheme: dark) {
-  .details { background-color: #222; color: #eee;
-  }
-  input.line,
-  select.submit, button.submit {
-    background-color: #333; color: #fff; border: 1px solid #444;
+  .details,input.line, select.submit, button.submit { background-color: #222; color: #eee;
   }
 }
 /* Light msearch theme */
 @media (prefers-color-scheme: light) {
-  .details {
-    background-color: #f0f0f0; color: #222;
-  }
-  input.line,
-  select.submit, button.submit {
-    background-color: #fff; color: #000; border: 1px solid #ccc;
+  .details, input.line, select.submit, button.submit  {
+    background-color: #fff; color: #222;  }
   }
 }
 /* Mobile responsiveness */
