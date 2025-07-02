@@ -31,7 +31,7 @@
       grid-gap: 1rem;
       gap: 20px;
       padding: 20px;
-      max-width: 1200px;
+      max-width: 100vw;
       margin: auto;
     }
     .grid-item {
@@ -81,17 +81,13 @@
       .grid-container {
         	grid-template-columns:  repeat(2, 50%); }
 	.grid-item.active {  
-		width: 100%; }  
-	.grid-container.active {
-    		max-width: 100%; margin: 0; }
+		max-width: 100%; }  
     }
     @media (min-width: 1200px) {
       .grid-container {
         	grid-template-columns:  repeat(3, 33%); }  
 	.grid-item.active {
-		width: 100%; }
-	.grid-container.active {
-    		max-width: 100%; margin: 0; }
+		max-width: 100%; }
     }
 
 /*   CSS           */
