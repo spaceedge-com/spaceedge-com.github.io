@@ -50,7 +50,7 @@ overflow-x:hidden; overflow-y:auto;
 }	
  /* letter-spacing:1px; */
 h1, h2, h3, h4, h5, h6 {  
-font-family: Ariel; line-height:1.2em; text-align:left; width: 100%; 
+line-height:1.2em; text-align:left; width: 100%; 
 display:block; clear:left; clear:right; float:left; 
 padding-left:0; margin: 1.0em 0 1.0em 0; 
 }
@@ -67,7 +67,7 @@ max-width: 1500px;
 /* define font size */
 h1 { font-weight: 700 !important; font-size:1.7em; line-height:1.5em;}
 h2 { font-weight: 700 !important; font-size:1.5em; }
-h3 { font-size:1.2em; text-transform: uppercase; }
+h3 { font-size:1.1em; text-transform: uppercase; }
 h4 { font-size:1.05em; }
 h5 { font-size:0.95em; text-transform: uppercase; }
 h6 { font-size:0.85em; }
@@ -172,25 +172,38 @@ margin: 1.2em 0 1.2em 0; line-height:1.2;
 padding-left:40px; text-align:left; 
 }
 
+/* Light/Dark theme prefrence css */
+@media (prefers-color-scheme: dark) {
+  body { 
+    background-color: #000; color: #fff;
+  }
+}
+/* Light theme */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #fff; color: #000;  
+  }
+}
+
 /* light dark js theme */
 :root, [data-theme="light"] {
-        --page-bg-color: #fef;
+        --page-bg-color: #fff;
         background: linear-gradient(0deg, rgba(195,194,198,1) 0%, rgba(255,255,255,1) 100%);
         --page-fg-color: #222;
         --h1-fg-color: #365;
         --h2-fg-color: #c8a;
-        --h3-fg-color: #c75;
+        --h3-fg-color: #cac;
         --code-bg-color: #eee;
-        --code-fg-color: #434;
+        --code-fg-color: #436;
 }
       [data-theme="dark"] {
-        --page-bg-color: #216;
+        --page-bg-color: #106;
         background: linear-gradient(0deg, rgba(21,21,24,1) 0%, rgba(14,14,16,1) 100%); 
         --page-fg-color: #eef;
-        --h1-fg-color: #faf;
+        --h1-fg-color: #87f;
         --h2-fg-color: #a8f; 
         --h3-fg-color: #aaf;
-        --code-bg-color: #425;
+        --code-bg-color: #436;
         --code-fg-color: #eee;
 }
 body {
@@ -199,6 +212,7 @@ color: var(--page-fg-color);
 }
 h1 { color: var(--h1-fg-color);}
 h2 { color: var(--h2-fg-color);} 
+h3 { color: var(--h3-fg-color);}
 code {
  font-family: courier;
  color: var(--code-fg-color);
@@ -336,21 +350,7 @@ body { font-size: 1rem; padding: 10px; }
     }
 
 
-/* On focus hide placeholder */
-/* Focus expand Button submit */
 
-/* Light/Dark theme prefrence css */
-@media (prefers-color-scheme: dark) {
-  body { 
-    background-color: #111; color: #eee;
-  }
-}
-/* Light theme */
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: #eee; color: #111;  
-  }
-}
 
 </style>
 
