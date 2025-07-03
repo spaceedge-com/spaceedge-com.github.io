@@ -31,12 +31,14 @@ html {
 min-height: 100%; min-height: 100vh; } 
 #body { /* css id#body */ 
 font-family: Ariel; font-size:1.0em; min-height: 100%; width: 100%; 
-position: absolute; top:0; left:0; 
-margin: 0; padding: 0;
-text-shadow: 0 0 black; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
-background-position: top left; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-origin: content-box;
--moz-background-size: cover; -webkit-background-size: cover; -o-background-size: cover;
-overflow-x:hidden; overflow-y:auto; 
+position: absolute; top:0; left:0; margin: 0; padding: 0;
+text-shadow: 0 0 black; text-rendering: optimizeLegibility; 
+-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+background-position: top left; background-attachment: fixed; 
+background-repeat: no-repeat; background-size: cover; 
+background-origin: content-box; -moz-background-size: cover; 
+-webkit-background-size: cover; -o-background-size: cover;
+overflow-x:hidden; overflow-y:auto; background-color: none;
 }
 
 @font-face {
@@ -370,7 +372,7 @@ updateTheme();
 
 </head>
 
-<body id=" " class=" " style="max-width:98%; margin:0 5px 0 5px;">
+<body id=" " class=" " style="max-width:98%; margin:0 5px 0 5px; background-color:inherit;">
         
 <header> 
 <div>
