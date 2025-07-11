@@ -14,51 +14,6 @@
   </style>
 </head>
 <body>
-  <h1>Support TipTap & Projects by SpaceEdge</h1>
-  <p>This project is 100% user-supported. If it’s helped you, you can support it below — or just click to show appreciation. 🙏</p>
 
-  <div class="support-options">
-    <h3>💸 Support with Gumroad</h3>
-    <a href="https://yourgumroadlink.gumroad.com/l/support" target="_blank">
-      <button>Tip via Gumroad</button>
-    </a>
-  </div>
-
-  <div class="support-options">
-    <h3>🪙 Prefer crypto?</h3>
-    <p>Send any amount to:</p>
-    <code>bitcoin:bc1qexamplewalletaddress</code>
-    <div class="qr">
-      <img src="qr-btc.png" alt="Bitcoin QR" width="180">
-    </div>
-  </div>
-
-  <div class="support-options">
-    <h3>👍 Show Appreciation</h3>
-    <button onclick="addAppreciation()">+1 Thanks</button>
-    <p class="counter" id="thanksCounter">❤️ 0 people appreciated this</p>
-  </div>
-
-  <script>
-    const countKey = 'tiptap_thanks_count';
-
-    function addAppreciation() {
-      let count = parseInt(localStorage.getItem(countKey)) || 0;
-      count += 1;
-      localStorage.setItem(countKey, count);
-      document.getElementById('thanksCounter').innerText = `❤️ ${count} people appreciated this`;
-    }
-
-    // Load count on page load
-    document.addEventListener('DOMContentLoaded', () => {
-      const count = localStorage.getItem(countKey);
-      if (count) {
-        document.getElementById('thanksCounter').innerText = `❤️ ${count} people appreciated this`;
-      }
-    });
-  </script>
-
-  <hr>
-  <p style="font-size: 0.9em;">This page is private, cookie-free, and does not track you. It's here for those who care to support independent web tools like Find8 and Stylx.</p>
 </body>
 </html>
