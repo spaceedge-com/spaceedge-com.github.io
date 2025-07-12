@@ -1,17 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Support TipTap & SpaceEdge Projects</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { font-family: sans-serif; margin: 2em; max-width: 600px; margin-left: auto; margin-right: auto; }
-    h1 { font-size: 1.8em; }
-    button, input[type="text"] { padding: 10px; font-size: 1em; margin-top: 10px; }
-    .support-options { margin: 20px 0; }
-    .counter { font-weight: bold; margin-top: 10px; }
-    .qr { margin-top: 20px; }
-  </style>
+<meta charset="UTF-8">
+<title>Support TipTap & SpaceEdge Projects</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="TipTap, Freedom, Space">
+<link rel="icon" href="/icons/favicon.jpg" type="image/jpeg">	
+<style>
+  	/* ===  CSS === */
+body {
+	   display:block; margin: 2em auto;
+     width: 90%; max-width: 800px; 
+     font-family: sans-serif;  }
+h1 { font-size: 1.8em; }
+button, input[type="text"] { padding: 10px; font-size: 1em; margin-top: 10px; }
+.support-options { margin: 20px 0; }
+.counter { font-weight:bold; margin-top:10px;}
+ .qr { margin-top: 20px; }
+
+/* Dark msearch theme */
+@media (prefers-color-scheme: dark) {
+ .details { background-color: #222; color: #eee;
+  }
+  input.line, select.submit, button.submit {
+    background-color: #333; color: #fff; 
+    border: 1px solid #444;
+  }
+}
+/* Light msearch theme */
+@media (prefers-color-scheme: light) {
+  .details {
+    background-color: #f0f0f0; color: #222;
+  }
+  input.line, select.submit, button.submit {
+    background-color: #fff; color: #000; 
+    border: 1px solid #ccc;
+  }
+}
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  input.line, select.submit, button.submit { 
+       width: 90%; }
+}
+
+/* light/dark theme */
+:root, [data-theme="light"] {
+        --page-bg-color: ;
+        background: rgba(255,255,255,1);
+        --page-fg-color: #222;
+        --h1-fg-color: #356;
+        --h2-fg-color: #366;
+}
+      [data-theme="dark"] {
+        --page-bg-color: ;
+        background: rgba(14,14,16,1); 
+        --page-fg-color: #eee;
+        --h1-fg-color: #faf;
+        --h2-fg-color: #faf; 
+}
+body {
+background-color: var(--page-bg-color);
+color: var(--page-fg-color);
+}
+h1 { color: var(--h1-fg-color);}
+h2 { color: var(--h2-fg-color);} 
+/* end light/dark theme */
+
+</style>
+
+<script>
+  const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)')
+
+  function updateTheme() {
+    const theme = prefersDarkMode.matches ? 'dark' : 'light' 
+     document.documentElement.setAttribute('data-theme', theme)
+}
+
+updateTheme();
+  prefersDarkMode.addEventListener("change", () => updateTheme());
+</script>
+	
+<!-- load external, <script> $(function(){ //$("#header").load("header.htm"); //$("#footer").load("footer.htm"); }); </script> -->
+
+
 </head>
 <body>
   <h1>Support TipTap & Projects by SpaceEdge</h1>
