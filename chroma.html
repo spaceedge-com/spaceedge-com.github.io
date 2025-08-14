@@ -1,1 +1,269 @@
-1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chroma Browser — Fast. Smart. Private.</title>
+  <meta name="description" content="Chroma Browser — a fast, smart, private, multi‑engine browser. Browse, search, work seamlessly with a sleek, lightweight browser built for speed and privacy." />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root{
+      /* Set these to match spaceedge.com/find8 for exact brand parity */
+      --brand-1:#5b7cfa; /* primary accent */
+      --brand-2:#00d4ff; /* secondary accent */
+      --text:#0b1220;
+      --muted:#5b6578;
+      --bg:#ffffff;
+      --card:#f6f8ff;
+      --ring: 0 0 0 3px rgba(91,124,250,.35);
+      --radius: 16px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+
+    /* Layout */
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    header{
+      position:sticky;top:0;z-index:50;background:rgba(255,255,255,.8);backdrop-filter:saturate(180%) blur(12px);
+      border-bottom:1px solid rgba(10,20,40,.06);
+    }
+    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;gap:12px;align-items:center;font-weight:800;letter-spacing:.2px}
+    .brand-logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--brand-1),var(--brand-2));box-shadow:0 6px 20px rgba(91,124,250,.35)}
+    .nav-actions{display:flex;gap:10px;align-items:center}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 16px;border-radius:12px;border:1px solid rgba(10,20,40,.1);background:#fff;cursor:pointer;font-weight:600}
+    .btn.primary{background:linear-gradient(135deg,var(--brand-1),var(--brand-2));color:#fff;border:none;box-shadow:0 8px 24px rgba(91,124,250,.35)}
+    .btn.primary:focus{outline:var(--ring)}
+    .btn.ghost{background:transparent}
+
+    /* Hero */
+    .hero{position:relative;padding:72px 0 30px}
+    .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:linear-gradient(135deg,rgba(91,124,250,.16),rgba(0,212,255,.16));border:1px solid rgba(10,20,40,.08);font-weight:700;font-size:12px;letter-spacing:.4px;text-transform:uppercase}
+    .hero h1{font-size:clamp(28px,5vw,56px);line-height:1.05;margin:16px 0 12px}
+    .hero p{font-size:clamp(16px,2.2vw,20px);color:var(--muted);max-width:760px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0 28px}
+    .subtext{font-size:14px;color:var(--muted)}
+    .hero-card{margin:28px auto 0;background:linear-gradient(135deg,#fff, #f4f7ff 35%, #eef3ff 65%);border:1px solid rgba(10,20,40,.06);border-radius:20px;padding:22px;box-shadow:0 10px 30px rgba(16,24,40,.08)}
+
+    /* Feature grid */
+    .section{padding:60px 0}
+    .section h2{font-size:clamp(22px,3.6vw,36px);margin:0 0 10px}
+    .section p.lead{color:var(--muted);max-width:760px}
+    .grid{display:grid;gap:16px}
+    @media (min-width: 740px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}.grid.cols-2{grid-template-columns:repeat(2,1fr)}}
+    .card{background:var(--card);border:1px solid rgba(10,20,40,.08);border-radius:var(--radius);padding:18px;transition:transform .25s ease, box-shadow .25s ease}
+    .card:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(16,24,40,.1)}
+    .icon{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--brand-1),var(--brand-2));box-shadow:0 8px 20px rgba(91,124,250,.35)}
+    .card h3{margin:10px 0 6px;font-size:18px}
+    .card p{margin:0;color:var(--muted);font-size:15px}
+
+    /* Media showcase */
+    .screen{border-radius:16px;border:1px solid rgba(10,20,40,.08);overflow:hidden;background:#fff;box-shadow:0 10px 24px rgba(16,24,40,.08)}
+    .screen .chrome{display:flex;gap:8px;align-items:center;padding:8px 10px;background:linear-gradient(180deg,#f9fbff,#f0f4ff);border-bottom:1px solid rgba(10,20,40,.06)}
+    .dot{width:10px;height:10px;border-radius:50%;background:#d9dde7}
+    .url{flex:1;height:32px;border-radius:8px;border:1px solid rgba(10,20,40,.1);background:#fff;padding:0 12px;display:flex;align-items:center;color:#6b7486;font-size:14px}
+    .viewport{aspect-ratio: 16/9; background:linear-gradient(135deg,#eef2ff,#ffffff); display:flex;align-items:center;justify-content:center;color:#94a3b8}
+
+    /* FAQ */
+    details{background:var(--card);border:1px solid rgba(10,20,40,.08);border-radius:14px;padding:14px}
+    summary{cursor:pointer;font-weight:700}
+    details p{color:var(--muted)}
+
+    /* Footer */
+    footer{padding:40px 0;border-top:1px solid rgba(10,20,40,.06);color:var(--muted)}
+
+    /* Animations */
+    .reveal{opacity:0;transform:translateY(8px);transition:opacity .6s ease, transform .6s ease}
+    .reveal.in{opacity:1;transform:translateY(0)}
+    @media (prefers-reduced-motion: reduce){
+      .card:hover{transform:none}
+      .reveal{transition:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-logo" aria-hidden="true"></div>
+        <a href="#top" aria-label="Chroma Browser Home">Chroma Browser</a>
+      </div>
+      <nav class="nav-actions">
+        <a class="btn ghost" href="#features">Features</a>
+        <a class="btn ghost" href="#privacy">Privacy</a>
+        <a class="btn primary" href="#download" id="downloadButton">Get Chroma</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero container">
+      <span class="tag">Fast • Private • Lightweight</span>
+      <h1>Browse faster. Search smarter. Keep your data yours.</h1>
+      <p>Chroma is a sleek, multi‑engine browser designed for speed and privacy. From first click to final tab, everything is optimized to keep you in flow—without ads, trackers, or bloat.</p>
+      <div class="cta">
+        <a class="btn primary" href="#download">Get Chroma Browser</a>
+        <a class="btn" href="#how">See how it works</a>
+      </div>
+      <div class="subtext">No accounts • No tracking • Works great on modest hardware</div>
+
+      <div class="hero-card reveal" aria-hidden="true">
+        <div class="screen">
+          <div class="chrome">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <div class="url">https:// — Chroma</div>
+          </div>
+          <div class="viewport">Your screenshot or short demo video goes here</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section container">
+      <h2>Built for power users. Perfect for everyone.</h2>
+      <p class="lead">Stay fast and focused with a browser that cuts friction. Chroma brings multi‑engine search, custom shortcuts, and optional AI together in a clean, minimalist UI.</p>
+      <div class="grid cols-3" style="margin-top:18px">
+        <div class="card reveal">
+          <div class="icon" aria-hidden="true"></div>
+          <h3>Lightning‑fast performance</h3>
+          <p>Instant startup, snappy tabs, and smooth scrolling—optimized from first paint to page load.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon" aria-hidden="true"></div>
+          <h3>Multi‑engine search built‑in</h3>
+          <p>Search Google, DuckDuckGo, YouTube, Wikipedia and more—without extensions.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon" aria-hidden="true"></div>
+          <h3>Custom shortcuts & themes</h3>
+          <p>Pin favorite sites, map quick actions, and tweak the UI to fit your flow.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon" aria-hidden="true"></div>
+          <h3>AI‑ready when you are</h3>
+          <p>Optional ChatGPT integration for smarter queries and summaries—only if you enable it.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon" aria-hidden="true"></div>
+          <h3>Popup & tab modes</h3>
+          <p>Work in a focused popup or full‑tab experience. Your choice, your rhythm.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon" aria-hidden="true"></div>
+          <h3>Privacy‑first</h3>
+          <p>No tracking. No accounts. No bloat. Your data stays on your device.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWCASE / HOW IT WORKS -->
+    <section id="how" class="section" style="background:linear-gradient(180deg,#fbfdff,#f2f6ff)">
+      <div class="container">
+        <h2>How it works</h2>
+        <p class="lead">Chroma blends a clean UI with powerful tools. Here’s a quick look at the flow.</p>
+        <div class="grid cols-2" style="margin-top:18px">
+          <div class="screen reveal">
+            <div class="chrome">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <div class="url">omnibox: type once, search anywhere</div>
+            </div>
+            <div class="viewport">GIF/Video: omnibox with multi‑engine results</div>
+          </div>
+          <div class="screen reveal">
+            <div class="chrome">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <div class="url">popup mode: quick tasks, zero friction</div>
+            </div>
+            <div class="viewport">GIF/Video: popup workflow & shortcuts</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIVACY / TRUST -->
+    <section id="privacy" class="section container">
+      <h2>Privacy that’s real, not a checkbox</h2>
+      <div class="grid cols-3" style="margin-top:18px">
+        <div class="card reveal"><h3>No tracking</h3><p>We don’t collect your browsing data. Period.</p></div>
+        <div class="card reveal"><h3>No accounts</h3><p>Use Chroma without sign‑ups, logins, or lock‑in.</p></div>
+        <div class="card reveal"><h3>No bloat</h3><p>Lightweight by design—saves memory and battery.</p></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section container">
+      <h2>FAQ</h2>
+      <div class="grid cols-2" style="margin-top:10px">
+        <details class="reveal"><summary>Is Chroma free?</summary><p>Yes. Core features are free. If we add optional pro features later, Chroma will remain fast and privacy‑first.</p></details>
+        <details class="reveal"><summary>Which platforms are supported?</summary><p>Initially desktop Chromium‑based browsers. More platforms may follow.</p></details>
+        <details class="reveal"><summary>Does Chroma sell my data?</summary><p>No. We don’t track or sell your data.</p></details>
+        <details class="reveal"><summary>Is AI required?</summary><p>No. AI integrations are off by default and only run when you turn them on.</p></details>
+      </div>
+    </section>
+
+    <!-- DOWNLOAD / CTA -->
+    <section id="download" class="section" style="background:linear-gradient(180deg,#ffffff,#f6f8ff)">
+      <div class="container">
+        <h2>Get Chroma Browser</h2>
+        <p class="lead">Install in seconds. Your default search engine and settings remain your choice.</p>
+        <div class="cta">
+          <!-- Replace the href with your live store URL when approved -->
+          <a class="btn primary" href="#" id="storeLink">Install from the Web Store</a>
+          <a class="btn" href="mailto:support@spaceedge.com?subject=Chroma%20Browser%20Support">Contact Support</a>
+        </div>
+        <div class="subtext">By installing, you agree to the <a href="/privacy">Privacy Policy</a> and <a href="/terms">Terms</a>.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>© 2025 Chroma Browser — a <a href="https://spaceedge.com">spaceedge.com</a> project.</div>
+      <div style="display:flex;gap:14px">
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="https://github.com/appcod8/find8">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for in‑page links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id = a.getAttribute('href');
+        if(id.length>1){
+          e.preventDefault();
+          document.querySelector(id)?.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      });
+    });
+
+    // Reveal animation on scroll
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(({isIntersecting,target})=>{
+        if(isIntersecting){ target.classList.add('in'); io.unobserve(target); }
+      });
+    }, {threshold:.15});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+    // Placeholder store link behavior until approved
+    const storeLink = document.getElementById('storeLink');
+    const downloadButton = document.getElementById('downloadButton');
+    function wirePlaceholder(el){
+      el?.addEventListener('click', (e)=>{
+        const href = el.getAttribute('href');
+        if(href === '#' || href === '' || href === null){
+          e.preventDefault();
+          alert('The store listing is coming soon. Check back after approval.');
+        }
+      });
+    }
+    wirePlaceholder(storeLink);
+    wirePlaceholder(downloadButton);
+  </script>
+</body>
+</html>
