@@ -98,6 +98,102 @@
     </div>
   </header>
 
+<!-- --- Header: Find8 URL + Search --- -->
+<div id="header-container">
+    <!-- URL Bar -->
+    <div id="url-bar">
+        <input type="text" id="url-input" placeholder="Enter URL..." />
+    </div>
+
+    <!-- Search Container -->
+    <div id="search-container">
+        <input type="text" id="search-query" placeholder="Search with Chroma..." />
+        <select id="search-engine">
+            <option value="https://www.google.com/search?q=">Google</option>
+            <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
+            <option value="https://www.bing.com/search?q=">Bing</option>
+            <option value="https://search.yahoo.com/search?p=">Yahoo</option>
+            <option value="https://www.qwant.com/?q=">Qwant</option>
+            <option value="https://www.ecosia.org/search?q=">Ecosia</option>
+            <option value="https://www.startpage.com/sp/search?q=">Startpage</option>
+            <option value="https://www.yandex.com/search/?text=">Yandex</option>
+            <option value="https://www.baidu.com/s?wd=">Baidu</option>
+            <option value="https://www.wikipedia.org/w/index.php?search=">Wikipedia</option>
+        </select>
+        <button id="search-button">Go</button>
+    </div>
+
+    <!-- Optional bookmarks bar for quick search engine links -->
+    <div id="bookmark-bar" style="margin-top:8px; display:flex; gap:6px;">
+        <!-- Bookmarks dynamically added by JS -->
+    </div>
+</div>
+
+<script>
+    const queryInput = document.getElementById("search-query");
+    const engineSelect = document.getElementById("search-engine");
+    const searchButton = document.getElementById("search-button");
+    const urlInput = document.getElementById("url-input");
+    const bookmarkBar = document.getElementById("bookmark-bar");
+
+    const SEARCH_ENGINE_KEY = "chroma_last_engine";
+
+    // --- Load last selected engine from localStorage ---
+    const savedEngine = localStorage.getItem(SEARCH_ENGINE_KEY);
+    if (savedEngine) engineSelect.value = savedEngine;
+
+    // --- Save engine selection when changed ---
+    engineSelect.addEventListener("change", () => {
+        localStorage.setItem(SEARCH_ENGINE_KEY, engineSelect.value);
+    });
+
+    /**
+     * Perform search using selected engine
+     */
+    function performSearch() {
+        const query = encodeURIComponent(queryInput.value.trim());
+        if (!query) return;
+
+        const engineUrl = engineSelect.value;
+        const fullUrl = engineUrl + query;
+        window.open(fullUrl, "_self");
+    }
+
+    searchButton.addEventListener("click", performSearch);
+    queryInput.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") performSearch();
+    });
+
+    // URL bar navigation
+    urlInput.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            let url = urlInput.value.trim();
+            if (!/^https?:\/\//i.test(url)) url = "https://" + url;
+            window.open(url, "_self");
+        }
+    });
+
+    /**
+     * Optional: Add quick bookmark links
+     * - Could represent favorite websites or search engine shortcuts
+     */
+    const bookmarks = [
+        { name: "Google", url: "https://www.google.com" },
+        { name: "Wikipedia", url: "https://www.wikipedia.org" },
+        { name: "DuckDuckGo", url: "https://duckduckgo.com" },
+        // Add more bookmarks here
+    ];
+
+    bookmarks.forEach(b => {
+        const btn = document.createElement("button");
+        btn.textContent = b.name;
+        btn.addEventListener("click", () => {
+            window.open(b.url, "_self");
+        });
+        bookmarkBar.appendChild(btn);
+    });
+</script>
+
   <main id="top">
     <!-- HERO -->
     <section class="hero container">
