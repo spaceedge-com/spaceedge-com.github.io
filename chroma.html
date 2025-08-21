@@ -84,25 +84,23 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <div class="brand">
-        <div class="brand-logo" aria-hidden="true"></div>
-        <a href="#top" aria-label="Chroma Browser Home">Chroma Browser</a>
-      </div>
-      <nav class="nav-actions">
-        <a class="btn ghost" href="#features">Features</a>
-        <a class="btn ghost" href="#privacy">Privacy</a>
-        <a class="btn primary" href="#download" id="downloadButton">Get Chroma</a>
-      </nav>
+<header>
+  <div class="container nav" style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:#6200EE;color:#fff;">
+    <!-- Brand / Logo -->
+    <div class="brand" style="display:flex;align-items:center;gap:8px;">
+      <div class="brand-logo" aria-hidden="true"></div>
+      <a href="#top" aria-label="Chroma Browser Home" style="color:#fff;font-weight:bold;font-size:18px;text-decoration:none;">Chroma Browser</a>
     </div>
-  </header>
 
-<!-- --- Header: Find8 URL + Search --- -->
-<!-- Search Container -->
-<div id="search-container" style="display:flex;align-items:center;gap:8px;padding:16px;background-color:#6200EE;color:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.2);">
-    <input type="text" id="search-query" placeholder="Search with Chroma..." style="flex:1;padding:8px;font-size:16px;border:none;border-radius:6px;">
-    <select id="search-engine" style="padding:6px 8px;font-size:14px;border-radius:6px;border:none;">
+    <!-- Navigation & Actions -->
+    <nav class="nav-actions" style="display:flex;align-items:center;gap:8px;">
+      <a class="btn ghost" href="#features" style="color:#fff;text-decoration:none;padding:6px 12px;border-radius:6px;border:none;">Features</a>
+      <a class="btn ghost" href="#privacy" style="color:#fff;text-decoration:none;padding:6px 12px;border-radius:6px;border:none;">Privacy</a>
+
+<!-- Find8 search inside header -->
+  <!-- Inline Search Box (before Get Chroma) -->
+      <input type="text" id="search-query" placeholder="Search..." style="padding:6px 8px;border-radius:6px;border:none;font-size:14px;">
+      <select id="search-engine" style="padding:6px 8px;border-radius:6px;border:none;font-size:14px;">
         <option value="https://www.google.com/search?q=">Google</option>
         <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
         <option value="https://www.bing.com/search?q=">Bing</option>
@@ -113,21 +111,19 @@
         <option value="https://www.yandex.com/search/?text=">Yandex</option>
         <option value="https://www.baidu.com/s?wd=">Baidu</option>
         <option value="https://www.wikipedia.org/w/index.php?search=">Wikipedia</option>
-    </select>
-    <button id="search-button" style="padding:6px 12px;font-size:16px;border-radius:6px;border:none;background-color:#BB86FC;color:#000;cursor:pointer;">Go</button>
-</div>
+      </select>
+      <button id="search-button" style="padding:6px 12px;border-radius:6px;border:none;background-color:#BB86FC;color:#000;cursor:pointer;">Go</button>
 
-<!-- Optional Bookmarks Bar -->
-<div id="bookmark-bar" style="display:flex;gap:6px;padding:8px 16px;background-color:#f5f5f5;"></div>
-
-<!-- Main Content -->
-<div id="main-content" style="flex:1;overflow:auto;background-color:#fff;"></div>
+      <!-- Original Get Chroma button -->
+      <a class="btn primary" href="#download" id="downloadButton" style="padding:6px 12px;border-radius:6px;border:none;background-color:#03DAC6;color:#000;text-decoration:none;">Get Chroma</a>
+    </nav>
+  </div>
+</header>
 
 <script>
 const queryInput = document.getElementById("search-query");
 const engineSelect = document.getElementById("search-engine");
 const searchButton = document.getElementById("search-button");
-const bookmarkBar = document.getElementById("bookmark-bar");
 
 // Persist last selected engine
 const SEARCH_ENGINE_KEY = "chroma_last_engine";
@@ -149,21 +145,6 @@ function performSearch() {
 searchButton.addEventListener("click", performSearch);
 queryInput.addEventListener("keydown", (event) => {
     if (event.key === "Enter") performSearch();
-});
-
-// Quick bookmarks
-const bookmarks = [
-    { name: "Google", url: "https://www.google.com" },
-    { name: "Wikipedia", url: "https://www.wikipedia.org" },
-    { name: "DuckDuckGo", url: "https://duckduckgo.com" },
-];
-
-bookmarks.forEach(b => {
-    const btn = document.createElement("button");
-    btn.textContent = b.name;
-    btn.style.cssText = "padding:4px 8px;font-size:14px;cursor:pointer;border-radius:6px;border:none;background-color:#BB86FC;color:#000;";
-    btn.addEventListener("click", () => { window.open(b.url, "_self"); });
-    bookmarkBar.appendChild(btn);
 });
 </script>
 
