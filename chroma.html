@@ -189,7 +189,6 @@ const scrollTopBtn = document.getElementById("scroll-top");
 scrollTopBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
-
 // Optional: show button only after scrolling down
 window.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
@@ -198,11 +197,17 @@ window.addEventListener("scroll", () => {
     scrollTopBtn.style.display = "none";
   }
 });
-
 // Initially hidden
 scrollTopBtn.style.display = "none";
 </script>
 
+<!-- Incognito tagline section -->
+<section id="incognito-tagline" style="text-align:center;padding:24px 12px;background-color:#f0f0f0;color:#000;">
+  <h2 style="font-size:1.8rem;font-weight:bold;margin-bottom:12px;">The Only Truly Incognito Browser on Earth</h2>
+  <p style="font-size:1rem;max-width:600px;margin:0 auto;line-height:1.5;">
+    Chroma never stores history or sessions — only your bookmarks are saved. Focused on privacy, minimalism, and speed. No gimmicks, no trackers, just pure anonymous browsing.
+  </p>
+</section>
 
   <main id="top">
     <!-- HERO -->
