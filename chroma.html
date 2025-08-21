@@ -84,41 +84,38 @@
   </style>
 </head>
 <body>
+<!-- Header stays unchanged -->
 <header>
-  <div class="container nav" style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:#6200EE;color:#fff;">
-    <!-- Brand / Logo -->
-    <div class="brand" style="display:flex;align-items:center;gap:8px;">
+  <div class="container nav">
+    <div class="brand">
       <div class="brand-logo" aria-hidden="true"></div>
-      <a href="#top" aria-label="Chroma Browser Home" style="color:#fff;font-weight:bold;font-size:18px;text-decoration:none;">Chroma Browser</a>
+      <a href="#top" aria-label="Chroma Browser Home">Chroma Browser</a>
     </div>
-
-    <!-- Navigation & Actions -->
-    <nav class="nav-actions" style="display:flex;align-items:center;gap:8px;">
-      <a class="btn ghost" href="#features" style="color:#fff;text-decoration:none;padding:6px 12px;border-radius:6px;border:none;">Features</a>
-      <a class="btn ghost" href="#privacy" style="color:#fff;text-decoration:none;padding:6px 12px;border-radius:6px;border:none;">Privacy</a>
-
-<!-- Find8 search inside header -->
-  <!-- Inline Search Box (before Get Chroma) -->
-      <input type="text" id="search-query" placeholder="Search..." style="padding:6px 8px;border-radius:6px;border:none;font-size:14px;">
-      <select id="search-engine" style="padding:6px 8px;border-radius:6px;border:none;font-size:14px;">
-        <option value="https://www.google.com/search?q=">Google</option>
-        <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
-        <option value="https://www.bing.com/search?q=">Bing</option>
-        <option value="https://search.yahoo.com/search?p=">Yahoo</option>
-        <option value="https://www.qwant.com/?q=">Qwant</option>
-        <option value="https://www.ecosia.org/search?q=">Ecosia</option>
-        <option value="https://www.startpage.com/sp/search?q=">Startpage</option>
-        <option value="https://www.yandex.com/search/?text=">Yandex</option>
-        <option value="https://www.baidu.com/s?wd=">Baidu</option>
-        <option value="https://www.wikipedia.org/w/index.php?search=">Wikipedia</option>
-      </select>
-      <button id="search-button" style="padding:6px 12px;border-radius:6px;border:none;background-color:#BB86FC;color:#000;cursor:pointer;">Go</button>
-
-      <!-- Original Get Chroma button -->
-      <a class="btn primary" href="#download" id="downloadButton" style="padding:6px 12px;border-radius:6px;border:none;background-color:#03DAC6;color:#000;text-decoration:none;">Get Chroma</a>
+    <nav class="nav-actions">
+      <a class="btn ghost" href="#features">Features</a>
+      <a class="btn ghost" href="#privacy">Privacy</a>
+      <a class="btn primary" href="#download" id="downloadButton">Get Chroma</a>
     </nav>
   </div>
 </header>
+
+<!-- Search Container Below Header -->
+<div id="search-container" style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:12px;background-color:#6200EE;color:#fff;justify-content:center;">
+  <input type="text" id="search-query" placeholder="Search with Chroma..." style="flex:1;min-width:150px;padding:8px;border-radius:6px;border:none;font-size:16px;">
+  <select id="search-engine" style="padding:6px 8px;border-radius:6px;border:none;font-size:14px;">
+    <option value="https://www.google.com/search?q=">Google</option>
+    <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
+    <option value="https://www.bing.com/search?q=">Bing</option>
+    <option value="https://search.yahoo.com/search?p=">Yahoo</option>
+    <option value="https://www.qwant.com/?q=">Qwant</option>
+    <option value="https://www.ecosia.org/search?q=">Ecosia</option>
+    <option value="https://www.startpage.com/sp/search?q=">Startpage</option>
+    <option value="https://www.yandex.com/search/?text=">Yandex</option>
+    <option value="https://www.baidu.com/s?wd=">Baidu</option>
+    <option value="https://www.wikipedia.org/w/index.php?search=">Wikipedia</option>
+  </select>
+  <button id="search-button" style="padding:6px 12px;border-radius:6px;border:none;background-color:#BB86FC;color:#000;cursor:pointer;">Go</button>
+</div>
 
 <script>
 const queryInput = document.getElementById("search-query");
@@ -147,6 +144,7 @@ queryInput.addEventListener("keydown", (event) => {
     if (event.key === "Enter") performSearch();
 });
 </script>
+
 
   <main id="top">
     <!-- HERO -->
