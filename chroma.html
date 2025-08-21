@@ -110,7 +110,7 @@
     <option value="https://search.yahoo.com/search?p=">Yahoo</option>
     <option value="https://www.qwant.com/?q=">Qwant</option>
     <option value="https://www.ecosia.org/search?q=">Ecosia</option>
-  <option value="https://www.startpage.com/sp/search?q=&cat=web">Startpage</option>
+  <option value="https://www.startpage.com/do/search?query=">Startpage</option>
     <option value="https://www.yandex.com/search/?text=">Yandex</option>
     <option value="https://www.baidu.com/s?wd=">Baidu</option>
     <option value="https://www.wikipedia.org/w/index.php?search=">Wikipedia</option>
@@ -407,5 +407,29 @@ window.addEventListener("load", checkSlideUp);
     wirePlaceholder(storeLink);
     wirePlaceholder(downloadButton);
   </script>
+  
+  
+  <!-- Quick Access Toolbar -->
+<div class="toolbar" style="position:fixed;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:12px;padding:8px 16px;background:rgba(255,255,255,0.95);border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.15);z-index:999;">
+  <button id="backBtn" style="padding:8px 12px;border:none;background:#eee;border-radius:8px;font-size:1rem;">←</button>
+  <button id="forwardBtn" style="padding:8px 12px;border:none;background:#eee;border-radius:8px;font-size:1rem;">→</button>
+  <button id="homeBtn" style="padding:8px 12px;border:none;background:#eee;border-radius:8px;font-size:1rem;">🏠</button>
+  <button id="tabsBtn" style="padding:8px 12px;border:none;background:#eee;border-radius:8px;font-size:1rem;">Tabs</button>
+</div>
+
+<script>
+  // Homepage button
+  document.getElementById("homeBtn").addEventListener("click", () => {
+    window.location.href = "https://spaceedge.com/chroma";
+  });
+
+  // Optional: back/forward buttons
+  document.getElementById("backBtn").addEventListener("click", () => window.history.back());
+  document.getElementById("forwardBtn").addEventListener("click", () => window.history.forward());
+
+  // Tabs button placeholder
+  document.getElementById("tabsBtn").addEventListener("click", () => alert("Tabs manager coming soon!"));
+</script>
+
 </body>
 </html>
