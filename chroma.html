@@ -84,7 +84,7 @@
   </style>
 </head>
 <body>
-<!-- Header stays unchanged -->
+<!-- Header  -->
 <header>
   <div class="container nav">
     <div class="brand">
@@ -98,6 +98,8 @@
     </nav>
   </div>
 </header>
+
+<!-- F8 Search Container Below Header -->
 
 <!-- Search Container Below Header -->
 <div id="search-container" style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:12px;background-color:#6200EE;color:#fff;justify-content:center;">
@@ -113,8 +115,20 @@
     <option value="https://www.yandex.com/search/?text=">Yandex</option>
     <option value="https://www.baidu.com/s?wd=">Baidu</option>
     <option value="https://www.wikipedia.org/w/index.php?search=">Wikipedia</option>
+    <option value="https://stackoverflow.com/search?q=">StackOverflow</option>
+    <option value="https://stackexchange.com/search?q=">StackExchange</option>
+    <option value="https://github.com/search?q=">GitHub</option>
+    <option value="https://swisscows.com/web?query=">Swisscows</option>
+    <option value="https://www.mojeek.com/search?q=">Mojeek</option>
   </select>
-  <button id="search-button" style="padding:6px 12px;border-radius:6px;border:none;background-color:#BB86FC;color:#000;cursor:pointer;">Go</button>
+  <button id="search-button" style="padding:8px 16px;border-radius:8px;border:none;background-color:#FFD600;color:#000;font-weight:bold;font-size:16px;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,0.3);transition:background 0.2s;">Go</button>
+</div>
+
+<!-- Minimal Bookmarks Bar -->
+<div id="bookmark-bar" style="display:flex;flex-wrap:wrap;gap:6px;padding:8px 12px;justify-content:center;background-color:#f5f5f5;">
+  <button style="padding:6px 10px;border-radius:6px;border:none;background-color:#BB86FC;color:#000;font-size:14px;cursor:pointer;">Google</button>
+  <button style="padding:6px 10px;border-radius:6px;border:none;background-color:#BB86FC;color:#000;font-size:14px;cursor:pointer;">Wikipedia</button>
+  <button style="padding:6px 10px;border-radius:6px;border:none;background-color:#BB86FC;color:#000;font-size:14px;cursor:pointer;">StackOverflow</button>
 </div>
 
 <script>
@@ -142,6 +156,24 @@ function performSearch() {
 searchButton.addEventListener("click", performSearch);
 queryInput.addEventListener("keydown", (event) => {
     if (event.key === "Enter") performSearch();
+});
+
+// Bookmarks click events
+const bookmarks = [
+  { name: "Google", url: "https://www.google.com" },
+  { name: "Wikipedia", url: "https://www.wikipedia.org" },
+  { name: "StackOverflow", url: "https://stackoverflow.com" }
+];
+
+const bookmarkButtons = document.querySelectorAll("#bookmark-bar button");
+bookmarkButtons.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    window.open(bookmarks[index].url, "_self");
+  });
+
+  // Optional: touch feedback
+  btn.addEventListener("touchstart", () => { btn.style.backgroundColor = "#9C47FF"; });
+  btn.addEventListener("touchend", () => { btn.style.backgroundColor = "#BB86FC"; });
 });
 </script>
 
