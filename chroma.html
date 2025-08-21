@@ -409,14 +409,16 @@ window.addEventListener("load", checkSlideUp);
   </script>
   
   
-  <!-- Quick Access Toolbar -->
+  <!-- Quick Access Toolbar Logic 
+   Only Homepage works to be in codee later
+  -->
+  
 <div class="toolbar" style="position:fixed;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:12px;padding:8px 16px;background:rgba(255,255,255,0.95);border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.15);z-index:999;">
   <button id="backBtn" style="padding:8px 12px;border:none;background:#eee;border-radius:8px;font-size:1rem;">←</button>
   <button id="forwardBtn" style="padding:8px 12px;border:none;background:#eee;border-radius:8px;font-size:1rem;">→</button>
   <button id="homeBtn" style="padding:8px 12px;border:none;background:#eee;border-radius:8px;font-size:1rem;">🏠</button>
   <button id="tabsBtn" style="padding:8px 12px;border:none;background:#eee;border-radius:8px;font-size:1rem;">Tabs</button>
 </div>
-
 <script>
   // Homepage button
   document.getElementById("homeBtn").addEventListener("click", () => {
