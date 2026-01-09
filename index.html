@@ -151,8 +151,8 @@ font-family: 'GreatVibes-rg', cursive; font-size:1em; text-align:center;
     border-bottom: 2px ridge #869; 
 } 
 
-.pronunciation { font-size: 0.9em; color: #666; }
-.example { color: #1a3e8c; font-style: normal; font-weight: bold; }
+.pronunciation { font-size: 0.9em; color: #; }
+.example { color: #; font-style: normal; font-weight: bold; }
 
 /* fix css not applying em, bold, italic */
 b, strong { font-size:1.0em; 
@@ -172,21 +172,20 @@ padding-left:40px; text-align:left;
 /* Light/Dark theme prefrence css */
 @media (prefers-color-scheme: dark) {
   body { 
-    background-color: #000; color: #fff;
+    background-color: #007; color: #fff;
   }
 }
 /* Light theme */
 @media (prefers-color-scheme: light) {
   body {
-    background-color: #fff; color: #000;  
+    background-color: #fff; color: #007;  
   }
 }
-
 /* light dark js theme */
 :root, [data-theme="light"] {
         --page-bg-color: #fff;
         background: linear-gradient(0deg, rgba(195,194,198,1) 0%, rgba(255,255,255,1) 100%);
-        --page-fg-color: #222;
+        --page-fg-color: #007;
         --h1-fg-color: #367;
         --h2-fg-color: #767;
         --h3-fg-color: #769;
@@ -194,7 +193,7 @@ padding-left:40px; text-align:left;
         --code-fg-color: #436;
 }
       [data-theme="dark"] {
-        --page-bg-color: #101;
+        --page-bg-color: #007;
         background: linear-gradient(0deg, rgba(21,21,24,1) 0%, rgba(14,14,16,1) 100%); 
         --page-fg-color: #eef;
         --h1-fg-color: #87f;
