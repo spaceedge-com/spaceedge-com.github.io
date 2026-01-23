@@ -137,13 +137,17 @@ font-size:1.3em; font-weight:normal; font-style:italic; line-height:1.5;
 blockquote::before {
 content: '\201C'; 
 /* float:right; margin-top:-15px; */
-position: absolute; top: 0; right: 0;
+position: absolute; 
+top: 10px;    /* distance from top edge */
+right: 10px;  /* distance from right edge */
 font-size:15px; font-weight:bold; 
 font-style:italic;	
 }
 blockquote::after {
 content: '\201D'; 
-position: absolute; top: 0; right: 0;
+position: absolute; 
+bottom: 10px; /* distance from bottom edge */
+right: 10px;  /* distance from right edge */
 /* float:right; margin: 3px 0 0 -20px; */
 font-size:15px; 
 font-weight:bold; font-style:italic; 
