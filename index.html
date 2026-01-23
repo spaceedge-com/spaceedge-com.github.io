@@ -124,28 +124,33 @@ pre {  padding: 5%;  }
 /* -----------—--- */
 /*    Posts    */
 blockquote { 
-  display: grid; justify-content: center;
 border-left:3px solid #ccc; border-radius:5px;
-margin: 2em auto 1em auto;
-/* top 2em, l/r auto (centered), bot 1em */  
+margin: 1em auto 1em auto;
+/* top 1em, l/r auto (centered), bot 1em
+display: grid; justify-content: center;
+ */  
+position: relative;
 padding:15px; 
 font-family: 'SeptemberScript-Regular', cursive;
 font-size:1.3em; font-weight:normal; font-style:italic; line-height:1.5; 
 }	
 blockquote::before {
-content: '\201C'; float:right; 
-margin-top:-15px; margin-left:15px; 
+content: '\201C'; 
+/* float:right; margin-top:-15px; */
+position: absolute; top: 0; right: 0;
 font-size:15px; font-weight:bold; 
 font-style:italic;	
 }
 blockquote::after {
-content: '\201D'; float:right; 
-margin: 3px 0 0 -20px; font-size:15px; 
+content: '\201D'; 
+position: absolute; top: 0; right: 0;
+/* float:right; margin: 3px 0 0 -20px; */
+font-size:15px; 
 font-weight:bold; font-style:italic; 
 }
 at { display:block;
 font-family: 'GreatVibes-rg', cursive; font-size:1em; text-align:center; 
-  margin-left:66px; padding-top:10px;	
+  margin:0 auto; padding-top:10px;	
 }
 .artdiv {
   padding: 1.5em; background: #3333; border-bottom: 1px solid #dedede;
