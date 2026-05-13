@@ -18,12 +18,14 @@
 /* top right bottom left; tribel */
 
 /*   root html body    */
-:root {  /*  padding: top right bottom left;	--t25: rgba(0,0,0,0.25);  */  }
+:root {  /*	--t25: rgba(0,0,0,0.25);  */  }
 html {  
 min-height: 100%; min-height: 100vh; } 
 #body { /* css id#body */ 
-font-family: Ariel; font-size:1.0em; min-height: 100%; width: 100%; 
-position: absolute; top:0; left:0; margin: 0; padding: 0;
+font-family: Ariel; font-size:1.0em; 
+min-height: 100%; width: 100%; 
+position: absolute; top:0; left:0; 
+margin: 0; padding: 0;
 text-shadow: 0 0 black; text-rendering: optimizeLegibility; 
 -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
 background-position: top left; background-attachment: fixed; 
@@ -52,6 +54,7 @@ p {
 font-family: Sans; display: block; 
 font-style: normal; font-weight: normal;  text-align:left; text-indent: 30px; 
 line-height: 1.35em; margin: 1em 0 1em 0; padding-left:0.40em; padding-right:.20em;  }
+
 * { /* Default Design Styling */
 text-align:left; box-sizing:border-box; 
 max-width: 1500px; 
@@ -66,7 +69,7 @@ h4 { font-size:1.05em; }
 h5 { font-size:0.95em; text-transform: uppercase; }
 h6 { font-size:0.85em; }
 p { font-size: 1.0em; }
-/* The media queries just need to change :root */
+/* Fonts media queries change :root */
 @media screen and (min-width: 600px) {
 	:root { font-size: 90%;}
 }@media screen and (min-width: 1000px) {
@@ -80,7 +83,7 @@ width: 100%; height: 60px; padding: 1px; top: 0; left: 0; position: relative; z-
 background-size: cover; background-position: center; background-repeat: no-repeat; margin-bottom: 1em; 
 border-bottom: 6px ridge #446;
 }
-#logo { /* background-image: url(/icons/.png); */
+#logo { /* background-image: url(/.png); */
 background-size: contain; background-repeat: no-repeat; width: 188px; height: 40px; margin: 0 auto; float: left;
 }
 header .logo {  
@@ -101,17 +104,20 @@ a { background-color: transparent; text-decoration: none; }
 hr { margin:1em; border-top: 1px solid teal; 
 -webkit-box-shadow: 5px 5px 15px 5px #888888; 
 box-shadow: 5px 5px 15px 5px #888888; }
+
 embed { width: 100%; /*imp. leave*/ }
 .ideas { display: block; max-width:98%; margin-top: 0.75em; padding-left: 1.75em; padding-top: .75em; padding-bottom: 1.2em; 
 }
 .giphs { padding:1px; margin:1px; max-width:70%;  }
+pre {  padding: 5%;  }	
+
 img {  width:100%; height:auto; display:block; margin:auto; }
 figure {  
 display:flex; text-align: center; float: left; text-indent:0; margin: 1.0em; padding: 0.5em; }
 figure img, figcaption { 
 font-family: Ariel; display: inline-block;  padding:3px;
 font-size:0.8em; text-align:left; }
-pre {  padding: 5%;  }	
+
 .spc5, .spc15, .spc25, .spc35, .spc55, .spc75 { display:block; position:relative; clear:both; }
 .spc5 {  height:5px; max-height:5px; margin:5px; padding:5px; }
 .spc15 { height:15px; max-height:15px; margin:15px; padding:15px; }
@@ -127,9 +133,7 @@ pre {  padding: 5%;  }
 blockquote { 
 border-left:3px solid #ccc; border-radius:5px;
 margin: 1em auto 1em auto;
-/* top 1em & bot 1em, l/r auto (centered), 
-display: grid; justify-content: center;
- */  
+/* display: grid; justify-content: center;*/  
 position: relative;
 padding:15px; 
 font-family: 'SeptemberScript-Regular', cursive;
@@ -267,7 +271,7 @@ code {
   font-size: 0.89em;
   color: var(--code-fg-color);
   background-color: var(--code-bg-color);
-  display: block;  /* respects block alignment */
+  display: block;  /*  block alignment */
   padding: 2px;    /* optional inner padding */
 }  
 /* end Light/Dark theme */
@@ -387,7 +391,6 @@ body { font-size: 1rem; padding: 10px; }
   }  
 }
 
-
 </style>
 
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3f990aad683a46b88286b20922fee500"}'></script><!-- End Cloudflare Web Analytics -->
@@ -417,7 +420,7 @@ background-color:inherit;
 
 </head>
 
-<body id=" " class=" " style="max-width:98%; margin:0 5px 0 5px; ">
+<body id=" " class=" " style="max-width:100%; margin:0 5px 0 5px; ">
         
 <header> 
 <div>
@@ -451,7 +454,7 @@ background-color:inherit;
 </div>
 
   <!-- sheild < > -->
-<div style="font-family: Sans; font-size:1em; width:100%; max-width:70%; margin:0 auto; padding:5px; border-radius:10px; line-height:1.5em; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; ">
+<div style="font-family: Sans; font-size:1em; width:100%; max-width:75%; margin:0 auto; padding:5px; border-radius:10px; line-height:1.5em; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; ">
   🛡️SHEILD ⚡Fast • Smart • Private Search AI🚀
 <!--
  <a class="btn" style="background:linear-gradient(0deg,#302,#609); mix-blend-mode: difference; border:1px solid #c6c; " target="_blank" href="https://apps.apple.com/us/app/sheild/id6753663434" id="storeLink">⚡ Download from App Store </a> -->
