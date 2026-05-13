@@ -315,14 +315,14 @@ body { font-size: 1rem; padding: 10px; }
 
 .grid-container {
   display: grid;
-  /* Default mobile layout: 1 column */
-  grid-template-columns: 1fr;   /* stack articles vertically */
+  grid-template-columns: 1fr;  /* stack articles vertically */
   gap: 20px;
   padding: 20px;
   box-sizing: border-box;
   width: 100%;
   max-width: 100%;  
-  align-items: start;     
+  align-items: start;
+  scroll-margin-top: 30px; /* Adds 30px visual breathing room at the top when scrolling */
 }
 
 .container {
