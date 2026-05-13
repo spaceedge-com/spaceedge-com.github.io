@@ -399,29 +399,28 @@ body { font-size: 1rem; padding: 10px; }
 
 </style>
 
-<!-- Google tag (gtag.js) -->
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3f990aad683a46b88286b20922fee500"}'></script><!-- End Cloudflare Web Analytics -->
+
+<!-- GoogleAnalytics tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WM1V2B33NV"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WM1V2B33NV');
 </script>
 
 <script>
   const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)')
-
   function updateTheme() {
     const theme = prefersDarkMode.matches ? 'dark' : 'light' 
      document.documentElement.setAttribute('data-theme', theme)
 }
-
 updateTheme();
   prefersDarkMode.addEventListener("change", () => updateTheme());
 </script>
 	
-<!-- load external, <script> $(function(){ //$("#header").load("header.htm"); //$("#footer").load("footer.htm"); }); </script> 
+<!-- ex. load external, <script> $(function(){ //$("#header").load("header.htm"); //$("#footer").load("footer.htm"); }); </script> 
 background-color:inherit;
 -->
 
