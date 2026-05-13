@@ -359,7 +359,7 @@ body { font-size: 1rem; padding: 10px; }
   font-size: 1.1rem;
 }
 
-.grid-item .read-more {
+.grid-item  {
   margin-bottom: 0.5rem;
   cursor: pointer;
 }
@@ -373,10 +373,10 @@ body { font-size: 1rem; padding: 10px; }
   width: 100%; 
   max-width: 100%;
 }
-.grid-item .read-more::after {
+.grid-item ::after {
   content: "Read more";
 }
-.grid-item.active .read-more::after {
+.grid-item.active ::after {
   content: "Read less";
 }
 
@@ -1535,17 +1535,29 @@ Everyone Everything Started Out Simply Freely From Just Small Steps Before Reach
 </div>
 
 <!-- js Scripts go last befor </body>-->
-<!-- 	js for teadmore button -->
-  <script>
-    const readMoreButtons = document.querySelectorAll('.read-more');
-
-    readMoreButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        button.classList.toggle('active');
-        button.parentElement.classList.toggle('active');
-      });
+<!-- js for readmore button with smooth tracking -->
+<script>
+  const readMoreButtons = document.querySelectorAll('.read-more');
+  //
+  readMoreButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      button.classList.toggle('active');
+      const card = button.parentElement;
+      card.classList.toggle('active');
+      // Check if the card was just opened (expanded)
+      if (card.classList.contains('active')) {
+        // A brief 50ms delay gives the browser time to finish the grid layout change
+        setTimeout(() => {
+          card.scrollIntoView({ 
+            behavior: 'smooth', // Animates the scroll smoothly
+            block: 'start'      // Aligns the top of the item with the top of the viewport
+          });
+        }, 50);
+      }
     });
-  </script>
+  });
+</script>
+
   
 </body>
 </html>
