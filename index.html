@@ -183,39 +183,39 @@ text-align:left;
 }
 
 /* start new css */
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
-    main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 2rem 0.25rem 4rem;
-    }
-    .tagline {
-      color: #78a;
-      margin-bottom: 1.5rem;
-    }
-    .highlight {
-      background: #fff9c4;
-      padding: 0.1rem 0.25rem;
-    }
-    .note {
-      border-left: 3px solid #1976d2;
-      padding-left: 0.75rem;
-      margin: 1.2rem 0;
-      color: #88a;
-      background: #eee;
-    }
-    code {
-      font-family: "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-      font-size: 0.9em;
-      background: #f0f0f0;
-      padding: 0.1rem 0.25rem;
-      border-radius: 3px;
-    }
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 0.25rem 4rem;
+}
+.tagline {
+  color: #78a;
+  margin-bottom: 1.5rem;
+}
+.highlight {
+  background: #fff9c4;
+  padding: 0.1rem 0.25rem;
+}
+.note {
+  border-left: 3px solid #1976d2;
+  padding-left: 0.75rem;
+  margin: 1.2rem 0;
+  color: #88a;
+  background: #eee;
+}
+code {
+  font-family: "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.9em;
+  background: #f0f0f0;
+  padding: 0.1rem 0.25rem;
+  border-radius: 3px;
+}
 /* end new css */
 
 
@@ -300,25 +300,13 @@ h6 { font-size:0.6rem; }
 p { font-size: 1.0rem; } 
 ul { font-size: 1.1rem; }
 body { font-size: 1rem; padding: 10px; }
-  .grid-container {
-    grid-template-columns: 1fr; /* stack articles vertically */
-    padding: 10px;
-  }
-  .grid-item {
-    padding: 15px;
-  }
-  .grid-item h1 {
-    font-size: 1.4rem;
-  }
-  .grid-item h2 {
-    font-size: 1.15rem;
-  }
-  .grid-item p {
-    font-size: 1rem;
-    line-height: 1.4;
-  }
+.grid-container { padding: 10px; }
+.grid-item { padding: 15px; }
+.grid-item h1 { font-size: 1.4rem; }
+.grid-item h2 { font-size: 1.15rem;] }
+.grid-item p { font-size: 1rem; line-height: 1.4; }
 }
-
+	
 /* ===  === */
 /* == Grid Layout == */
 .grid-item img { 
@@ -328,7 +316,7 @@ body { font-size: 1rem; padding: 10px; }
 .grid-container {
   display: grid;
   /* Default mobile layout: 1 column */
-  grid-template-columns: 1fr;  
+  grid-template-columns: 1fr;   /* stack articles vertically */
   gap: 20px;
   padding: 20px;
   box-sizing: border-box;
