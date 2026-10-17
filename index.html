@@ -980,71 +980,101 @@ To humanity, the universe an incomprehensibly vast cosmos. To God, perhaps it's 
   <p>Truthful information is the foundation of a free society. Misinformation undermines its structure. Robots are defenders of its currency.</p>
 
   <h3>System Logic</h3>
-<code>if (!info.verified) throw MisinformationError;
+  
+  <code>
+    if (!info.verified) throw MisinformationError;
   else return value; // Info = Money 
-  
-  <br>
+  </code>
     
-void processNetworkData() {
-  final parser = SpaceEdgeParser();
+  <code>
+// Defining the Core Financial States of the InfoConomy
+class InfoMoney {
+  final int totalVerifiableTokens;
+  final double informationalValueRating;
+
+  InfoMoney({required this.totalVerifiableTokens, required this.informationalValueRating});
   
-  // Simulated raw input coming from an external corporate ad/analytics server
-  final corporateDataPacket = {
-    "origin_domain": "amz-adsystem.com",
-    "content_payload": "Tracking script bundle...",
-    "has_third_party_telemetry": true
+  @override
+  String toString() => "💳 [INFOMONEY ASSET] Value: \$${(totalVerifiableTokens * informationalValueRating).toStringAsFixed(2)}";
+}
+
+class InfoDebt implements Exception {
+  final String fraudulentOrigin;
+  final String validationFailureLog;
+  final DateTime loggedAt;
+
+  InfoDebt(this.fraudulentOrigin, this.validationFailureLog) : loggedAt = DateTime.now();
+
+  @override
+  String toString() => "⚠️ [INFOCONOMY DEBT ACCRUED] Source: $fraudulentOrigin | Error: $validationFailureLog";
+}
+
+// The Core InfoConomy Gateway Engine
+class InfoConomyEngine {
+  // Established local database registry for authentic provenance domains
+  static const Set<String> verifiedSovereignNodes = {
+    "spaceedge.com", "uSheild.com", "local.gateway", "physics.core"
+  };
+
+  /// Parses incoming payloads to generate InfoMoney or reject them as InfoDebt
+  InfoMoney evaluatePayload(Map<String, dynamic> networkPacket) {
+    final String sourceDomain = networkPacket['domain'] ?? 'untracked.beacon';
+    final String contentPayload = networkPacket['payload'] ?? '';
+    final bool containsOpaqueTelemetry = networkPacket['telemetry_fingerprint'] ?? true;
+
+    // LAW I & II Check: If source is unverified or carries hidden tracking scripts, it is Debt.
+    if (!verifiedSovereignNodes.contains(sourceDomain) || containsOpaqueTelemetry) {
+      // The THROW Command instantly aborts the execution loop to shield device memory
+      throw InfoDebt(
+        sourceDomain, 
+        "Attempted data harvest or profiling detected. Infringing on Architectural Autonomy."
+      );
+    }
+
+    // LAW III Check: Value generation. Provenance is clean.
+    // Calculate worth based on token cleanliness and string integrity metrics
+    final int cleanTokens = contentPayload.split(' ').length;
+    final double valueMultiplier = 1.0; 
+
+    return InfoMoney(
+      totalVerifiableTokens: cleanTokens,
+      informationalValueRating: valueMultiplier,
+    );
+  }
+}
+  </code>
+  
+  <code>
+void monitorInfoConomyStream() {
+  final engine = InfoConomyEngine();
+
+  // Simulated raw input coming from an aggressive third-party ad/analytics vector
+  final incomingNetworkPacket = {
+    "domain": "amz-adsystem.com",
+    "payload": "Cross-app fingerprinting and tracking sequence...",
+    "telemetry_fingerprint": true
   };
 
   try {
-    print("Evaluating data stream sovereignty...");
-    // Attempt to verify the packet
-    final verifiedAsset = parser.verifyIncomingBlock(corporateDataPacket);
-    print("Success: ${verifiedAsset['status']}. Info added to system currency.");
+    print("Shield active. Scanning data packet against InfoConomy parameters...");
     
-  } on MisinformationError catch (debt) {
-    // CATCH MODULE: This executes the moment the throw command fires above.
-    print(debt.toString()); 
-    print("🛡️ [SHIELD ACTION ACTIVE] Iscontinuing handshake. Purging background thread memory allocation.");
+    // Attempt to convert packet into InfoMoney
+    final InfoMoney earnedAsset = engine.evaluatePayload(incomingNetworkPacket);
+    print("Transaction Clean. $earnedAsset Added to human ledger.");
+
+  } on InfoDebt catch (accruedDebt) {
+    // THE CATCH BLOCK: Executes immediately when the violation is thrown above
+    print(accruedDebt.toString());
+    print("🛡️ [SHIELD ACTION INITIATED] Blocking packet transfer. Dropping TCP handshake link.");
     
-    // Trigger your architectural defense layers here
-    // e.g., NetworkSandbox.dropPacket();
+    // Call your native content blocker rules or close the background WebView pipeline
+    // e.g., browserController.stopLoading();
     
-  } catch (genericError) {
-    print("Standard system error: $genericError");
+  } catch (unexpectedError) {
+    print("General network error encountered: $unexpectedError");
   }
 }
-
-  <br>
-    void processNetworkData() {
-  final parser = SpaceEdgeParser();
-  
-  // Simulated raw input coming from an external corporate ad/analytics server
-  final corporateDataPacket = {
-    "origin_domain": "amz-adsystem.com",
-    "content_payload": "Tracking script bundle...",
-    "has_third_party_telemetry": true
-  };
-
-  try {
-    print("Evaluating data stream sovereignty...");
-    // Attempt to verify the packet
-    final verifiedAsset = parser.verifyIncomingBlock(corporateDataPacket);
-    print("Success: ${verifiedAsset['status']}. Info added to system currency.");
-    
-  } on MisinformationError catch (debt) {
-    // CATCH MODULE: This executes the moment the throw command fires above.
-    print(debt.toString()); 
-    print("🛡️ [SHIELD ACTION ACTIVE] Iscontinuing handshake. Purging background thread memory allocation.");
-    
-    // Trigger your architectural defense layers here
-    // e.g., NetworkSandbox.dropPacket();
-    
-  } catch (genericError) {
-    print("Standard system error: $genericError");
-  }
-}
-
-</code>
+  </code>
 
   <p>
     &copy; 2025 spaceedge.com &amp; ChatGPT | Inspired by Asimov, coded by conscience.
