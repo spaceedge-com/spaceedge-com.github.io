@@ -212,13 +212,68 @@ main {
   color: #88a;
   background: #eee;
 }
-code {
-  font-family: "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-  font-size: 0.9em;
-  background: #f0f0f0;
-  padding: 0.1rem 0.25rem;
-  border-radius: 3px;
+
+/* Container framework for code sections */
+pre {
+    background: rgba(13, 17, 23, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
 }
+/* Base font layout rules */
+code {
+    font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Monaco, Consolas, monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #e6edf3;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+}
+/* Functional Syntax-Highlighting Layer */
+/* Comments - Dimmed out gray */
+code .comment {
+    color: #8b949e;
+    font-style: italic;
+}
+/* Keywords (class, throw, if, static, const, return) - True system yellow */
+code .keyword {
+    color: #ffdb58;
+    font-weight: bold;
+}
+/* Types/Classes (InfoMoney, InfoDebt, Exception, String) - Sovereign Blue/Cyan */
+code .type {
+    color: #4ce6ff;
+    font-weight: 600;
+}
+/* Methods/Functions (evaluatePayload, monitorInfoConomyStream) - Shield Green */
+code .function {
+    color: #4cffb0;
+}
+/* Strings ("spaceedge.com", "uSheild.com") - Radiant Orange */
+code .string {
+    color: #ff9e4c;
+}
+/* Numbers/Booleans (true, false, 1.0) - Vibrant Violet */
+code .literal {
+    color: #d19a66;
+}
+/* Formatting for custom terminal alerts inside your logs */
+code .alert {
+    color: #ff4c4c;
+    background: rgba(255, 76, 76, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
 /* end new css */
 
 
@@ -267,7 +322,7 @@ pre {
   padding: 0;     /* remove default padding */
 }
 code {
-  font-size: 0.89em;
+  font-size: 0.9em;
   color: var(--code-fg-color);
   background-color: var(--code-bg-color);
   display: block;  /*  block alignment */
