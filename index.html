@@ -221,22 +221,29 @@ pre {
     border-radius: 12px;
     padding: 1.25rem;
     margin: 1.5rem 0;
-    overflow-x: auto;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    /* CRUCIAL FIX: Forces the container to stay within the .grid-item limits */
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    /* Forces code to wrap on mobile instead of forcing a massive horizontal scroll */
+    white-space: pre-wrap;       /* CSS3 */
+    white-space: -moz-pre-wrap;  /* Firefox */
+    white-space: -pre-wrap;      /* Opera <7 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* IE */
 }
-/* Base font layout rules */
 code {
     font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Monaco, Consolas, monospace;
-    font-size: 0.9rem;
+    font-size: 0.85rem; /* Slightly smaller for mobile scaling integrity */
     line-height: 1.5;
     color: #e6edf3;
-    direction: ltr;
     text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
+    /* FIXED: Matches container word-wrap traits */
+    white-space: pre-wrap;
+    word-break: break-all;
 }
 /* Functional Syntax-Highlighting Layer */
 /* Comments - Dimmed out gray */
