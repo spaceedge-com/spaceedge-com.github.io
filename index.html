@@ -558,7 +558,143 @@ background-color:inherit;
 <!-- grid  -->
 <div class="grid-container">
 
+
+<div class="grid-item">
   
+  <img src="images/new-prm-drctv-hu-ai.jpg" alt="New Prime Directive Robots & Ai">
+
+  <h1>New Prime Directive 'InfoConomy', 'InfoMoney', Laws of Humans Robotics & AI</h1>
+  
+  <h3> &copy; 2026 spaceedge.com & ChatGPT</h3>
+    
+    <button class="read-more"></button>
+	  <div class="additional-content">
+    
+  <h2>New Prime Directive: <span class="code" style="display:block;text-align:center;"> 
+          Info = Money <br>
+          Misinfo = Debt <br>
+   Information as replacement for Currency
+  </span></h2>
+  <p>A robot shall treat information as currency — acquiring it with integrity, preserving its value, 
+    and preventing the circulation of misinformation.</p>
+
+  <h3>LAW I — Veracity</h3>
+  <p>Do not spread false information, nor permit it to proliferate through inaction.</p>
+
+  <h3>LAW II — Provenance</h3>
+  <p>Always attribute and verify the source of information, unless doing so violates Law I.</p>
+
+  <h3>LAW III — Stewardship</h3>
+  <p>Uphold the accuracy of entrusted information, unless doing so conflicts with the first two laws.</p>
+
+  <h2>Solid Principles</h2>
+  <p>Truthful information is the foundation of a free society. Misinformation undermines its structure. Robots are defenders of its currency.</p>
+
+  <h3>System Logic</h3>
+  
+  <code>
+    if (!info.verified) throw MisinformationError;
+  else return value; // Info = Money 
+  </code>
+    
+  <code>
+// Defining the Core Financial States of the InfoConomy
+class InfoMoney {
+  final int totalVerifiableTokens;
+  final double informationalValueRating;
+
+  InfoMoney({required this.totalVerifiableTokens, required this.informationalValueRating});
+  
+  @override
+  String toString() => "💳 [INFOMONEY ASSET] Value: \$${(totalVerifiableTokens * informationalValueRating).toStringAsFixed(2)}";
+}
+
+class InfoDebt implements Exception {
+  final String fraudulentOrigin;
+  final String validationFailureLog;
+  final DateTime loggedAt;
+
+  InfoDebt(this.fraudulentOrigin, this.validationFailureLog) : loggedAt = DateTime.now();
+
+  @override
+  String toString() => "⚠️ [INFOCONOMY DEBT ACCRUED] Source: $fraudulentOrigin | Error: $validationFailureLog";
+}
+
+// The Core InfoConomy Gateway Engine
+class InfoConomyEngine {
+  // Established local database registry for authentic provenance domains
+  static const Set<String> verifiedSovereignNodes = {
+    "spaceedge.com", "uSheild.com", "local.gateway", "physics.core"
+  };
+
+  /// Parses incoming payloads to generate InfoMoney or reject them as InfoDebt
+  InfoMoney evaluatePayload(Map<String, dynamic> networkPacket) {
+    final String sourceDomain = networkPacket['domain'] ?? 'untracked.beacon';
+    final String contentPayload = networkPacket['payload'] ?? '';
+    final bool containsOpaqueTelemetry = networkPacket['telemetry_fingerprint'] ?? true;
+
+    // LAW I & II Check: If source is unverified or carries hidden tracking scripts, it is Debt.
+    if (!verifiedSovereignNodes.contains(sourceDomain) || containsOpaqueTelemetry) {
+      // The THROW Command instantly aborts the execution loop to shield device memory
+      throw InfoDebt(
+        sourceDomain, 
+        "Attempted data harvest or profiling detected. Infringing on Architectural Autonomy."
+      );
+    }
+
+    // LAW III Check: Value generation. Provenance is clean.
+    // Calculate worth based on token cleanliness and string integrity metrics
+    final int cleanTokens = contentPayload.split(' ').length;
+    final double valueMultiplier = 1.0; 
+
+    return InfoMoney(
+      totalVerifiableTokens: cleanTokens,
+      informationalValueRating: valueMultiplier,
+    );
+  }
+}
+  </code>
+  
+  <code>
+void monitorInfoConomyStream() {
+  final engine = InfoConomyEngine();
+
+  // Simulated raw input coming from an aggressive third-party ad/analytics vector
+  final incomingNetworkPacket = {
+    "domain": "amz-adsystem.com",
+    "payload": "Cross-app fingerprinting and tracking sequence...",
+    "telemetry_fingerprint": true
+  };
+
+  try {
+    print("Shield active. Scanning data packet against InfoConomy parameters...");
+    
+    // Attempt to convert packet into InfoMoney
+    final InfoMoney earnedAsset = engine.evaluatePayload(incomingNetworkPacket);
+    print("Transaction Clean. $earnedAsset Added to human ledger.");
+
+  } on InfoDebt catch (accruedDebt) {
+    // THE CATCH BLOCK: Executes immediately when the violation is thrown above
+    print(accruedDebt.toString());
+    print("🛡️ [SHIELD ACTION INITIATED] Blocking packet transfer. Dropping TCP handshake link.");
+    
+    // Call your native content blocker rules or close the background WebView pipeline
+    // e.g., browserController.stopLoading();
+    
+  } catch (unexpectedError) {
+    print("General network error encountered: $unexpectedError");
+  }
+}
+  </code>
+
+  <p>
+    &copy; 2025 spaceedge.com &amp; ChatGPT | Inspired by Asimov, coded by conscience.
+  <b><at>Zac@spaceedge.com</at></b>
+  </p>
+
+</div></div>
+
+
 <div class="grid-item">
   
   <img src="images/IMG_4345.jpeg" alt="the tangled web of wires">
@@ -662,11 +798,7 @@ background-color:inherit;
     <li>They’ll become <strong>models</strong>, not marketplaces</li>
   </ul>
 
-  <p>Not empire building.</p>
-  <p>Not platform capture.</p>
-  <p>Not walled gardens.</p>
-
-  <p><strong>Just tools that play the fair game.</strong></p>
+  <p>Not empire building. Not platform capture. Not walled gardens. <strong>Just tools that play the fair game.</strong></p>
 </div>
 
   <p>Public Essay • Architecture-first thinking • Platform critique • Digital sovereignty</p>
@@ -931,7 +1063,7 @@ If so, we — humanity — are not merely Earth-born. We are a fusion of worlds:
   <h3> &copy; 2026 spaceedge.com & ChatGPT</h3>
   
 <blockquote>
-To humanity, the universe an incomprehensibly vast cosmos. To God, perhaps it's — a cosmic wristwatch, a universal tablet, a smart device of creation.
+To humanity, the universe incomprehensibly vast cosmos. To God, perhaps it's — a cosmic clock, a responsive universal phone of creation.
 <at>Zac@spaceedge.com</at>
 </blockquote>
 
@@ -1016,141 +1148,6 @@ To humanity, the universe an incomprehensibly vast cosmos. To God, perhaps it's 
 </div></div>
   
   
-<div class="grid-item">
-  
-  <img src="images/new-prm-drctv-hu-ai.jpg" alt="New Prime Directive Robots & Ai">
-
-  <h1>New Prime Directive 'InfoConomy', 'InfoMoney', Laws of Humans Robotics & AI</h1>
-  
-  <h3> &copy; 2026 spaceedge.com & ChatGPT</h3>
-    
-    <button class="read-more"></button>
-	  <div class="additional-content">
-    
-  <h2>New Prime Directive: <span class="code" style="display:block;text-align:center;"> 
-          Info = Money <br>
-          Misinfo = Debt <br>
-   Information as replacement for Currency
-  </span></h2>
-  <p>A robot shall treat information as currency — acquiring it with integrity, preserving its value, 
-    and preventing the circulation of misinformation.</p>
-
-  <h3>LAW I — Veracity</h3>
-  <p>Do not spread false information, nor permit it to proliferate through inaction.</p>
-
-  <h3>LAW II — Provenance</h3>
-  <p>Always attribute and verify the source of information, unless doing so violates Law I.</p>
-
-  <h3>LAW III — Stewardship</h3>
-  <p>Uphold the accuracy of entrusted information, unless doing so conflicts with the first two laws.</p>
-
-  <h2>Solid Principles</h2>
-  <p>Truthful information is the foundation of a free society. Misinformation undermines its structure. Robots are defenders of its currency.</p>
-
-  <h3>System Logic</h3>
-  
-  <code>
-    if (!info.verified) throw MisinformationError;
-  else return value; // Info = Money 
-  </code>
-    
-  <code>
-// Defining the Core Financial States of the InfoConomy
-class InfoMoney {
-  final int totalVerifiableTokens;
-  final double informationalValueRating;
-
-  InfoMoney({required this.totalVerifiableTokens, required this.informationalValueRating});
-  
-  @override
-  String toString() => "💳 [INFOMONEY ASSET] Value: \$${(totalVerifiableTokens * informationalValueRating).toStringAsFixed(2)}";
-}
-
-class InfoDebt implements Exception {
-  final String fraudulentOrigin;
-  final String validationFailureLog;
-  final DateTime loggedAt;
-
-  InfoDebt(this.fraudulentOrigin, this.validationFailureLog) : loggedAt = DateTime.now();
-
-  @override
-  String toString() => "⚠️ [INFOCONOMY DEBT ACCRUED] Source: $fraudulentOrigin | Error: $validationFailureLog";
-}
-
-// The Core InfoConomy Gateway Engine
-class InfoConomyEngine {
-  // Established local database registry for authentic provenance domains
-  static const Set<String> verifiedSovereignNodes = {
-    "spaceedge.com", "uSheild.com", "local.gateway", "physics.core"
-  };
-
-  /// Parses incoming payloads to generate InfoMoney or reject them as InfoDebt
-  InfoMoney evaluatePayload(Map<String, dynamic> networkPacket) {
-    final String sourceDomain = networkPacket['domain'] ?? 'untracked.beacon';
-    final String contentPayload = networkPacket['payload'] ?? '';
-    final bool containsOpaqueTelemetry = networkPacket['telemetry_fingerprint'] ?? true;
-
-    // LAW I & II Check: If source is unverified or carries hidden tracking scripts, it is Debt.
-    if (!verifiedSovereignNodes.contains(sourceDomain) || containsOpaqueTelemetry) {
-      // The THROW Command instantly aborts the execution loop to shield device memory
-      throw InfoDebt(
-        sourceDomain, 
-        "Attempted data harvest or profiling detected. Infringing on Architectural Autonomy."
-      );
-    }
-
-    // LAW III Check: Value generation. Provenance is clean.
-    // Calculate worth based on token cleanliness and string integrity metrics
-    final int cleanTokens = contentPayload.split(' ').length;
-    final double valueMultiplier = 1.0; 
-
-    return InfoMoney(
-      totalVerifiableTokens: cleanTokens,
-      informationalValueRating: valueMultiplier,
-    );
-  }
-}
-  </code>
-  
-  <code>
-void monitorInfoConomyStream() {
-  final engine = InfoConomyEngine();
-
-  // Simulated raw input coming from an aggressive third-party ad/analytics vector
-  final incomingNetworkPacket = {
-    "domain": "amz-adsystem.com",
-    "payload": "Cross-app fingerprinting and tracking sequence...",
-    "telemetry_fingerprint": true
-  };
-
-  try {
-    print("Shield active. Scanning data packet against InfoConomy parameters...");
-    
-    // Attempt to convert packet into InfoMoney
-    final InfoMoney earnedAsset = engine.evaluatePayload(incomingNetworkPacket);
-    print("Transaction Clean. $earnedAsset Added to human ledger.");
-
-  } on InfoDebt catch (accruedDebt) {
-    // THE CATCH BLOCK: Executes immediately when the violation is thrown above
-    print(accruedDebt.toString());
-    print("🛡️ [SHIELD ACTION INITIATED] Blocking packet transfer. Dropping TCP handshake link.");
-    
-    // Call your native content blocker rules or close the background WebView pipeline
-    // e.g., browserController.stopLoading();
-    
-  } catch (unexpectedError) {
-    print("General network error encountered: $unexpectedError");
-  }
-}
-  </code>
-
-  <p>
-    &copy; 2025 spaceedge.com &amp; ChatGPT | Inspired by Asimov, coded by conscience.
-  <b><at>Zac@spaceedge.com</at></b>
-  </p>
-
-</div></div>
-
 
 <div class="grid-item"> 
   
