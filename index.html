@@ -395,8 +395,13 @@ body { font-size: 1rem; padding: 10px; }
   /* Removed margin-bottom because grid gap handles spacing */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 5px 5px 15px 5px #888888;
   box-sizing: border-box;
+  max-width: 100%; /* Strictly caps horizontal expansion */
+  /* FIXED: box-shadow: 5px 5px 15px 5px #888888; optimized mobile layout expansion */
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3); 
+  /* Smooth height transitions */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  will-change: transform;
 }
 
 /* FIX: Forces the active item to break out of its tile and span all grid columns */
