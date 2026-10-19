@@ -115,8 +115,7 @@ img {  width:100%; height:auto; display:block; margin:auto; }
 figure {  
 display:flex; text-align: center; float: left; text-indent:0; margin: 1.0em; padding: 0.5em; }
 figure img, figcaption { 
-font-family: Ariel; display: inline-block;  padding:3px;
-font-size:0.8em; text-align:left; }
+font-family: Ariel; display: inline-block;  padding:3px; font-size:0.8em; text-align:left; }
 
 .spc5, .spc15, .spc25, .spc35, .spc55, .spc75 { display:block; position:relative; clear:both; }
 .spc5 {  height:5px; max-height:5px; margin:5px; padding:5px; }
@@ -143,16 +142,14 @@ blockquote::before {
 content: '\201C'; 
 /* float:right; margin-top:-15px; */
 position: absolute; 
-top: 5px;    /* distance from top edge */
-right: 10px;  /* distance from right edge */
+top: 5px; right: 10px;  /* distance top right edge */
 font-size:15px; font-weight:bold; 
 font-style:italic;	
 }
 blockquote::after {
 content: '\201D'; 
 position: absolute; 
-bottom: 15px; /* distance from bottom edge */
-right: 10px;  /* distance from right edge */
+bottom: 15px; right: 10px;  /* distance bottom right edge */
 /* float:right; margin: 3px 0 0 -20px; 
 border-bottom: 2px ridge #869; */
 font-size:15px; 
@@ -306,8 +303,8 @@ code .alert {
         --h1-fg-color: #367;
         --h2-fg-color: #767;
         --h3-fg-color: #769;
-        --code-bg-color: #eee;
-        --code-fg-color: #436;
+        --code-bg-color: #ddd;
+        --code-fg-color: #326;
 }
       [data-theme="dark"] {
         --page-bg-color: #007;
@@ -316,8 +313,8 @@ code .alert {
         --h1-fg-color: #87f;
         --h2-fg-color: #a8f; 
         --h3-fg-color: #aaf;
-        --code-bg-color: #346;
-        --code-fg-color: #eee;
+        --code-bg-color: #888;
+        --code-fg-color: #f8f;
 }
 body {
 background-color: var(--page-bg-color);
@@ -326,16 +323,9 @@ color: var(--page-fg-color);
 h1 { color: var(--h1-fg-color);}
 h2 { color: var(--h2-fg-color);} 
 h3 { color: var(--h3-fg-color);}
-pre {
-  margin: 0;      /* remove default margin */
-  padding: 0;     /* remove default padding */
-}
 code {
-  font-size: 0.9em;
   color: var(--code-fg-color);
   background-color: var(--code-bg-color);
-  display: block;  /*  block alignment */
-  padding: 2px;    /* optional inner padding */
 }  
 /* end Light/Dark theme */
 
@@ -352,11 +342,9 @@ header .logo { font-size: 8.0vw;  }
 blockquote { width:85%; max-width:90%; } 
 figure { display:flex; width:100%; margin:0; gap:0; align-items:center; font-size:0; /*  aligns imgs */ } 
 img {/*clearfix-float*/ font-size:.6em;
-height:auto; object-fit:cover; line-height:0; display:inline-block; 
-float:left; flex:99.99%; flex-wrap:wrap; flex-basis:0; 
+height:auto; object-fit:cover; line-height:0; display:inline-block; float:left; flex:99.99%; flex-wrap:wrap; flex-basis:0; 
 vertical-align:top; align-self:center; margin:1px; padding:1px; }
-figcaption { font-size:10px; width:50%; display:block; 
-  flex: 1 1 auto; text-align:left; }
+figcaption { font-size:10px; width:50%; display:block; flex: 1 1 auto; text-align:left; }
 /* mobile css */
 h1 { font-size:1.3rem;}
 h2 { font-size:1.15rem; }
@@ -369,9 +357,9 @@ ul { font-size: 1.1rem; }
 body { font-size: 1rem; padding: 10px; }
 .grid-container { padding: 10px; }
 .grid-item { padding: 15px; }
-.grid-item h1 { font-size: 1.4rem; }
-.grid-item h2 { font-size: 1.15rem; }
-.grid-item p { font-size: 1rem; line-height: 1.4; }
+.grid-item h1 { font-size:1.4rem; }
+.grid-item h2 { font-size:1.15rem; }
+.grid-item p { font-size:1rem; line-height:1.4; }
 }
 	
 /* ===  === */
@@ -382,23 +370,19 @@ body { font-size: 1rem; padding: 10px; }
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;  /* stack articles vertically */
-  gap: 20px;
-  padding: 20px;
+  gap: 20px; padding: 20px;
   box-sizing: border-box;
-  width: 100%;
-  max-width: 100%;  
+  width: 100%; max-width: 100%;  
   align-items: start;
   scroll-margin-top: 30px; /* Adds 30px visual breathing room at the top when scrolling */
 }
 .container {
-  width: 100%;
-  max-width: 100%;
+  width: 100%; max-width: 100%;
   margin: 0 auto;
 }	
 .grid-item {
   border: 1px solid #88822;
-  display: flex;
-  flex-direction: column;
+  display: flex; flex-direction: column;
   align-items: flex-start;
   /* Removed margin-bottom because grid gap handles spacing */
   padding: 20px 5px 20px 5px;
@@ -896,7 +880,7 @@ void monitorInfoConomyStream() {
     difficult for them to understand and challenge.
   </p>
 
-  <h3>4.1 The language barrier</h3>
+  <h3>4.1 Jargon barrier</h3>
   <p>
     Technical discussions are filled with terms like DRM, HDCP, codecs, protocols, and handshakes. These are real
     concepts, but they are also used as a kind of shield:
@@ -1533,7 +1517,7 @@ To humanity, the universe incomprehensibly vast cosmos. To God, perhaps it's —
 <div class="myart" style="" >
   <blockquote style="font-style: italic;  ">
   English historically lacked a simple, generic word for 'earth' ground beneath one’s feet.
-<h2><span class="pronunciation" style=" ">irt  &nbsp;&nbsp;&nbsp; ɜːrt | urt | noun. </span></h2> 'Irt' addresses this semantic gap and allows neutral reference to the surface we walk on, unlike “dirt,” which implies mess, or “soil,” which is mostly agricultural or technical.
+<h2><span class="pronunciation" style="font-weight:700;">irt  &nbsp;&nbsp;&nbsp; ɜːrt | urt | noun. </span></h2> 'Irt' addresses this semantic gap and allows neutral reference to the surface we walk on, unlike “dirt,” which implies mess, or “soil,” which is mostly agricultural or technical.
 <ol><strong>Definition:</strong>
   <li>The neutral, everyday substance forming the surface of the ground; earth underfoot, without implication of mess or cultivation.</li>
   <li>(figurative) The foundational base of anything, especially for ideas, plans, or growth.</li>
