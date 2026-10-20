@@ -228,8 +228,9 @@ main {
 }
 /* light dark js theme */
 :root, [data-theme="light"] {
-        --page-bg-color: #fff;
-        background: linear-gradient(0deg, rgba(195,194,198,1) 0%, rgba(255,255,255,1) 100%);
+       --page-bg-color: #fef;
+    --page-gradient: linear-gradient(0deg, rgba(195,194,198,1) 0%, rgba(255,255,255,1) 100%);
+     /* background: linear-gradient(0deg, rgba(195,194,198,1) 0%, rgba(255,255,255,1) 100%); */
         --page-fg-color: #007;
         --h1-fg-color: #367;
         --h2-fg-color: #767;
@@ -239,7 +240,8 @@ main {
 }
       [data-theme="dark"] {
         --page-bg-color: #004;
-        background: linear-gradient(0deg, rgba(1,1,4,1) 0%, rgba(14,14,16,1) 100%); 
+        page-gradient: linear-gradient(0deg, rgba(1,1,4,1) 0%, rgba(14,14,16,1) 100%); 
+    /* background: linear-gradient(0deg, rgba(1,1,4,1) 0%, rgba(14,14,16,1) 100%); */
         --page-fg-color: #eef;
         --h1-fg-color: #87f;
         --h2-fg-color: #a8f; 
@@ -260,8 +262,8 @@ h3 { color: var(--h3-fg-color);}
 background: rgba(13, 17, 23, 0.75); */
 pre {
     /* 1. MOVED HERE: Apply the single, unified background color variables here */
-    background-color: var(--code-bg-color);
-    color: var(--code-fg-color);
+    background-color: var(--code-bg-color) !important; /* breaks through styles */
+    color: var(--code-fg-color) !important;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 1.25rem; 
@@ -281,7 +283,7 @@ pre {
 code {
     font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Monaco, Consolas, monospace;
     font-size: 0.85rem; 
-    color: var(--code-fg-color);
+    color: var(--code-fg-color) !important;
     /* 2. REMOVED: Strip the background from the inline element completely */
     background-color: transparent; 
     /* 3. ADDED: Forces the inline code to fill out the container context properly */
