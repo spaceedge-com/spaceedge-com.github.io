@@ -185,8 +185,8 @@ text-align:left;
 /* start new css */
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  line-height: 1.6;
-  max-width:100%; margin:0 1px 0 1px; padding: 0;
+  line-height: 1.5;
+  max-width:100%; margin:0 1px 0 1px; padding:0;
 }
 main {
   max-width: 1100px;
@@ -391,24 +391,19 @@ body { font-size: 1rem; padding: 10px; }
   width: 100%;
 }
 .grid-item h1 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5em; 
+  font-size: 1.4rem; margin-bottom: 0.5em; 
 }
 .grid-item p {
-  line-height: 1.5;
-  font-size: 1.1rem;
+  line-height: 1.5; font-size: 1.2rem;
 }
 .grid-item  {
-  margin-bottom: 0.5rem;
-  cursor: pointer;
+  margin-bottom: 0.5rem; cursor: pointer;
 }
 .grid-item .additional-content {
   display: none;
 }
 .grid-item.active .additional-content {
-  display: block; 
-  width: 100%; 
-  max-width: 100%;
+  display: block; width: 100%; max-width: 100%;
 }
 /* FIX: Remove space, only targets element class .read-more */
 .grid-item .read-more::after {
@@ -481,14 +476,16 @@ background-color:inherit;
 <!-- <CENTER> -->
 
 <!-- browser & search -->
-<div style=" margin: 10px; padding: 5px; border-radius:10px; display:block; ">
+<div style=" display:flex; flex-direction: column; justify-content:center; align-items:center; text-align:center; margin:0 auto; padding:5px; border-radius:10px; width:330%; max-width:90%; "> 
 <!--  <a href="https://uSheild.com" style=" ">The New: uSheild Web Search.</a>   -->
 
   <!-- uSheild < > -->
-<div style="background:linear-gradient(0deg,#543,#689); mix-blend-mode: difference; font-size:1.5rem; width:330%; max-width:90%; margin:0 auto; border-radius:10px; display:flex; flex-direction: column; justify-content:center; align-items:center; text-align:center; ">
-  <a href="https://usheild.com" target="_self" alt="Shield" class="">🔍Independent Search ☢️⚡• </a>
+<div style="background:linear-gradient(0deg,#543,#689); mix-blend-mode: difference; ">
+  <a href="https://usheild.com" target="_self" alt="Shield" class="">  
+   <h2>🔍Independent Search ☢️⚡•<h2> 
+  </a>
 <!--href="https://apps.apple.com/us/app/sheild/id6753663434" >Download on App Store </a> -->
-  <span style="display:block; width:95%; text-align:center; margin:0 auto; padding: 15px 0 0 0;">🛡️Shield Private Browser ☀️✨• </span>
+  <h2>🛡️Shield Private Browser ☀️✨•</h2>
    <span style="display:flex; justify-content: center; width:90%; height:auto; margin:0 auto; padding-top:8px;">
    <a class="btn" id="storeLink" href="https://apps.apple.com/app/id6753663434" target="_blank"> <img src="/appstore.png" style="width: 125px; height: auto; display:block;"> </a> </span>
   <p style="width:98%;"> "Most Apps today ship with prebundled bloat: Ads, telemetry, fingerprinting, cross-app tracking, over-permissioned hooks, and opaque referral scripts — all while silently harvesting your data.”</p>
