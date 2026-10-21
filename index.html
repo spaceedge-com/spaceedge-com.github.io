@@ -574,13 +574,13 @@ It is the exact same blueprint running today. The corporate cartels don't want y
     and preventing the circulation of misinformation.</p>
 
 <section class="law">
-  <h3><b>LAW I — Veracity </b></h3>
+  <h3><b>LAW IV — Veracity </b></h3>
   <p>Do not spread false information, nor permit it to proliferate through inaction.</p>
 
-  <h3><b>LAW II — Provenance </b></h3>
+  <h3><b>LAW V — Provenance </b></h3>
   <p>Always attribute and verify the source of information, unless doing so violates Law I.</p>
 
-  <h3><b>LAW III — Stewardship </b></h3>
+  <h3><b>LAW VI — Stewardship </b></h3>
   <p>Uphold the accuracy of entrusted information, unless doing so conflicts with the first two laws.</p>
 
 </section>
@@ -630,7 +630,7 @@ class InfoConomyEngine {
     final String contentPayload = networkPacket['payload'] ?? '';
     final bool containsOpaqueTelemetry = networkPacket['telemetry_fingerprint'] ?? true;
 
-    // LAW I & II Check: If source is unverified or carries hidden tracking scripts, it is Debt.
+    // LAW IV & V Check: If source is unverified or carries hidden tracking scripts, it is Debt.
     if (!verifiedSovereignNodes.contains(sourceDomain) || containsOpaqueTelemetry) {
       // The THROW Command instantly aborts the execution loop to shield device memory
       throw InfoDebt(
@@ -639,7 +639,7 @@ class InfoConomyEngine {
       );
     }
 
-    // LAW III Check: Value generation. Provenance is clean.
+    // LAW VI Check: Value generation. Provenance is clean.
     // Calculate worth based on token cleanliness and string integrity metrics
     final int cleanTokens = contentPayload.split(' ').length;
     final double valueMultiplier = 1.0; 
