@@ -593,6 +593,134 @@ To protect their profit margins, conglomerates do not just manipulate the market
 
   <h3>System Logic:</h3>
   
+<pre><code>
+  
+#!import puthon
+
+# ArchitecturalAutonomyViolation exception added for the IMNProtocol logic
+class ArchitecturalAutonomyViolation(Exception):
+    def __init__(self, message):
+        self.message = message
+    def __str__(self):
+        return f"🚫 [AUTONOMY VIOLATION] {self.message}"
+
+class MisinformationError(Exception):
+    pass
+
+# Top-level placeholder demonstrating the baseline conditional logic
+def check_info(info, value):
+    if not info.get('verified', False): raise MisinformationError
+    else: return value # Info = Money 
+
+# Defining the Core Financial States of the InfoConomy
+
+class InfoMoney:
+    def __init__(self, total_verifiable_tokens: int, informational_value_rating: float):
+        self.total_verifiable_tokens = total_verifiable_tokens
+        self.informational_value_rating = informational_value_rating
+  
+    def __str__(self) -> str:
+        return f"💳 [INFOMONEY ASSET] Value: ${self.total_verifiable_tokens * self.informational_value_rating:.2f}"
+
+class InfoDebt(Exception):
+    def __init__(self, fraudulent_origin: str, validation_failure_log: str):
+        self.fraudulent_origin = fraudulent_origin
+        self.validation_failure_log = validation_failure_log
+        self.logged_at = datetime.datetime.now()
+
+    def __str__(self) -> str:
+        return f"⚠️ [INFOCONOMY DEBT ACCRUED] Source: {self.fraudulent_origin} | Error: {self.validation_failure_log}"
+
+# The Core InfoConomy Gateway Engine
+class InfoConomyEngine:
+    # Established local database registry for authentic provenance domains
+    verified_sovereign_nodes = {
+        "spaceedge.com", "uSheild.com", "local.gateway", "physics.core"
+    }
+
+    ### Parses incoming payloads to generate InfoMoney or reject them as InfoDebt
+    def evaluate_payload(self, network_packet: dict) -> InfoMoney:
+        source_domain = network_packet.get('domain', 'untracked.beacon')
+        content_payload = network_packet.get('payload', '')
+        contains_opaque_telemetry = network_packet.get('telemetry_fingerprint', True)
+
+        # LAW IV & V Check: If source is unverified or carries hidden tracking scripts, it is Debt.
+        if source_domain not in self.verified_sovereign_nodes or contains_opaque_telemetry:
+            # The THROW Command instantly aborts the execution loop to shield device memory
+            raise InfoDebt(
+                source_domain, 
+                "Attempted data harvest or profiling detected. Infringing on Architectural Autonomy."
+            )
+
+        # LAW VI Check: Value generation. Provenance is clean.
+        # Calculate worth based on token cleanliness and string integrity metrics
+        clean_tokens = len(content_payload.split(' ')) if content_payload else 0
+        value_multiplier = 1.0 
+
+        return InfoMoney(
+            total_verifiable_tokens=clean_tokens,
+            informational_value_rating=value_multiplier,
+        )
+
+# 🧠 Thought Experiment: 
+# The IMN Protocol Gateway Logic Immutable Master Node
+# (The Anti-Telemetry Protocol)
+
+class IMNProtocol:
+    verified_sovereign_nodes = {"spaceedge.com", "uSheild.com", "local.gateway"}
+
+    def render_clean_content(self, payload):
+        # Placeholder representing safe asset visualization
+        pass
+
+    def process_incoming_traffic(self, data_packet: dict):
+        has_opaque_tracking = data_packet.get('telemetry_fingerprint', True)
+        source = data_packet.get('domain', 'unknown.beacon')
+
+        # Rule: If the connection forces a telemetry handshake, abort immediately.
+        if has_opaque_tracking or source not in self.verified_sovereign_nodes:
+            # Abruptly terminate the TCP handshake before an identifier can be scraped
+            raise ArchitecturalAutonomyViolation(f"Telemetry loop detected from {source}. Connection dropped.")
+    
+        # Otherwise, accept raw, untracked text/assets
+        self.render_clean_content(data_packet.get('payload'))
+  
+# The InfoConomy Engine
+def monitor_info_conomy_stream():
+    engine = InfoConomyEngine()
+
+    # Simulated raw input coming from an aggressive third-party ad/analytics vector
+    incoming_network_packet = {
+        "domain": "amz-adsystem.com",
+        "payload": "Cross-app fingerprinting and tracking sequence...",
+        "telemetry_fingerprint": True
+    }
+
+    try:
+        print("Shield active. Scanning data packet against InfoConomy parameters...")
+    
+        # Attempt to convert packet into InfoMoney
+        earned_asset = engine.evaluate_payload(incoming_network_packet)
+        print(f"Transaction Clean. {earned_asset} Added to human ledger.")
+
+    except InfoDebt as accrued_debt:
+        # THE CATCH BLOCK: Executes immediately when the violation is thrown above
+        print(str(accrued_debt))
+        print("🛡️ [SHIELD ACTION INITIATED] Blocking packet transfer. Dropping TCP handshake link.")
+    
+        # Call your native content blocker rules or close the background WebView pipeline
+        # e.g., browserController.stopLoading();
+    
+    except Exception as unexpected_error:
+        print(f"General network error encountered: {unexpected_error}")
+
+# Execute the simulation engine loop
+if __name__ == "__main__":
+    monitor_info_conomy_stream()
+    
+</pre></code>
+
+<!-- code dart
 <pre><code>if (!info.verified) throw MisinformationError;
 else return value; // Info = Money 
 
@@ -653,7 +781,6 @@ class InfoConomyEngine {
   }
 }
 
-
 // 🧠 Thought Experiment: 
 // The IMN Protocol Gateway Logic Immutable Master Node
 // (The Anti-Telemetry Protocol)
@@ -675,7 +802,6 @@ class IMNProtocol {
     renderCleanContent(dataPacket['payload']);
   }
 }
-  
   
 // The InfoConomy Engine
 void monitorInfoConomyStream() {
@@ -707,7 +833,7 @@ void monitorInfoConomyStream() {
     print("General network error encountered: $unexpectedError");
   }
 }
-</code></pre>
+</code></pre> -->
 
 <br>
   
