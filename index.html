@@ -586,16 +586,21 @@ To protect their profit margins, conglomerates do not just manipulate the market
   <p>Uphold the accuracy of entrusted information, unless doing so conflicts with Laws IV, and V.</p>
 
 </section>
-
       
   <h2>Solid Principles</h2>
   <p>Truthful information is the foundation of a free society. Misinformation undermines its structure. Good citizens and AI Robots are defenders of its currency.</p>
 
   <h3>System Logic:</h3>
   
+  <pre><code>if (!info.verified) throw MisinformationError;
+else return value; // Info = Money 
+</pre><:code>
+
+  
 <pre><code>
   
-#!import puthon
+// Defining the Core InfoConomy
+#!import python
 
 # ArchitecturalAutonomyViolation exception added for the IMNProtocol logic
 class ArchitecturalAutonomyViolation(Exception):
@@ -613,7 +618,6 @@ def check_info(info, value):
     else: return value # Info = Money 
 
 # Defining the Core Financial States of the InfoConomy
-
 class InfoMoney:
     def __init__(self, total_verifiable_tokens: int, informational_value_rating: float):
         self.total_verifiable_tokens = total_verifiable_tokens
