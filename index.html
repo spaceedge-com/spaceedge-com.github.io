@@ -140,14 +140,13 @@ font-style:italic; line-height:1.5;
 border-left:3px solid #ccc; border-radius:5px;
 margin: 1em auto 1em auto;
 /* display: grid; justify-content: center;*/  
-position: relative;
-padding:15px; 
+position: relative; padding:15px; 
 }	
 blockquote::before {
 content: '\201C'; 
 /* float:right; margin-top:-15px; */
 position: absolute; 
-top: 5px; right: 10px;  /* distance top right edge */
+top: 5px; right: 10px; /* distance top right edge */
 font-size:15px; font-weight:bold; 
 font-style:italic;	
 }
@@ -161,8 +160,10 @@ font-size:15px;
 font-weight:bold; font-style:italic; 
 }
 at { display:block;
-font-family: 'GreatVibes-rg', cursive; font-size:1em; text-align:center; 
-  margin:0 auto; padding-top:10px;	
+font-family: 'GreatVibes-rg', cursive; 
+font-size:1.1em; font-weight: bold !important;
+text-align:center; 
+margin:0 auto; padding-top:10px;	
 }
 .artdiv {
   padding: 1.5em; background: #3333; 
@@ -174,13 +175,12 @@ display: inline-block;
 } 
 
 .pronunciation { 
-  font-size: 1.4em; font-weight: bold; 
+font-size: 1.4em; font-weight: bold; 
   color: inherit; }
 .example { font-style: normal; font-weight: normal; }
 
 /* fix css not applying em, bold, italic */
-b, strong { font-size: 1.0em; 
-  font-weight: 700 !important;
+b, strong { font-size: 1.0em; font-weight: 700 !important;
 }
 em, i { font-style: italic !important;
 }
