@@ -193,6 +193,75 @@ li {
   font-weight: 400 !important;
 }
 
+/* Container framework code section
+background: rgba(13, 17, 23, 0.75); */
+pre {
+    /* Apply background color variables here */
+    background-color: var(--code-bg-color) !important; /* breaks through styles */
+    color: var(--code-fg-color) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.25rem; margin: 1.5rem 0;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    width: 100%; max-width: 100%;
+    box-sizing: border-box;
+    white-space: pre-wrap;       
+    white-space: -moz-pre-wrap;  
+    white-space: -pre-wrap;      
+    white-space: -o-pre-wrap;    
+    word-wrap: break-word;       
+}
+code {
+    font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Monaco, Consolas, monospace;
+    font-size: 0.85rem; 
+    color: var(--code-fg-color) !important;
+    /* 2. REMOVED: Strip the background from the inline element completely */
+    background-color: transparent; 
+    /* 3. ADDED: Forces the inline code to fill out the container context properly */
+    display: block; width: 100%;
+    line-height: 1.5; text-align: left;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+/* Functional Syntax-Highlighting Layer */
+/* Comments - Dimmed out gray */
+code .comment {
+    color: #8b949e; font-style: italic; }
+/* Keywords (class, throw, if, static, const, return) - True system yellow */
+code .keyword { 
+  color: #ffdb58; font-weight: bold; }
+/* Types/Classes (InfoMoney, InfoDebt, Exception, String) - Sovereign Blue/Cyan */
+code .type { 
+  color: #4ce6ff; font-weight: 600; }
+/* Methods/Functions (evaluatePayload, monitorInfoConomyStream) - Shield Green */
+code .function { color: #4cffb0; }
+/* Strings ("spaceedge.com", "uSheild.com") - Radiant Orange */
+code .string { color: #ff9e4c; }
+/* Numbers/Booleans (true, false, 1.0) - Vibrant Violet */
+code .literal { color: #d19a66; }
+/* Formatting for custom terminal alerts inside  logs */
+code .alert {
+    color: #ff4c4c;
+    background: rgba(255, 76, 76, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+code-block {
+  color: var(--code-fg-color);
+  background-color: var(--code-bg-color);
+}  /* end code css */
+
+/* robot directive */
+.subtitle { text-align: center; }
+.law {
+  margin: 25px 0; padding: 20px;
+  background: var(--code-bg-color);
+  border-left: 4px solid #65d6ff;
+  border-radius: 5px;
+} .law h2 { } 
 
 /* start new css */
 body {
@@ -264,85 +333,6 @@ color: var(--page-fg-color);
 h1 { color: var(--h1-fg-color);}
 h2 { color: var(--h2-fg-color);} 
 h3 { color: var(--h3-fg-color);}
-/* Container framework code section
-background: rgba(13, 17, 23, 0.75); */
-pre {
-    /* 1. MOVED HERE: Apply the single, unified background color variables here */
-    background-color: var(--code-bg-color) !important; /* breaks through styles */
-    color: var(--code-fg-color) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 1.25rem; 
-    margin: 1.5rem 0;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
-    width: 100%; 
-    max-width: 100%;
-    box-sizing: border-box;
-    white-space: pre-wrap;       
-    white-space: -moz-pre-wrap;  
-    white-space: -pre-wrap;      
-    white-space: -o-pre-wrap;    
-    word-wrap: break-word;       
-}
-code {
-    font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Monaco, Consolas, monospace;
-    font-size: 0.85rem; 
-    color: var(--code-fg-color) !important;
-    /* 2. REMOVED: Strip the background from the inline element completely */
-    background-color: transparent; 
-    /* 3. ADDED: Forces the inline code to fill out the container context properly */
-    display: block; width: 100%;
-    line-height: 1.5; text-align: left;
-    white-space: pre-wrap;
-    word-break: break-all;
-}
-/* Functional Syntax-Highlighting Layer */
-/* Comments - Dimmed out gray */
-code .comment {
-    color: #8b949e; font-style: italic;
-}
-/* Keywords (class, throw, if, static, const, return) - True system yellow */
-code .keyword {
-    color: #ffdb58; font-weight: bold;
-}
-/* Types/Classes (InfoMoney, InfoDebt, Exception, String) - Sovereign Blue/Cyan */
-code .type {
-    color: #4ce6ff; font-weight: 600;
-}
-/* Methods/Functions (evaluatePayload, monitorInfoConomyStream) - Shield Green */
-code .function { color: #4cffb0;
-}
-/* Strings ("spaceedge.com", "uSheild.com") - Radiant Orange */
-code .string { color: #ff9e4c;
-}
-/* Numbers/Booleans (true, false, 1.0) - Vibrant Violet */
-code .literal { color: #d19a66;
-}
-/* Formatting for custom terminal alerts inside  logs */
-code .alert {
-    color: #ff4c4c;
-    background: rgba(255, 76, 76, 0.1);
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-weight: bold;
-}
-code-block {
-  color: var(--code-fg-color);
-  background-color: var(--code-bg-color);
-}  /* end code css */
-
-/* robot directive */
-.subtitle {
-  text-align: center; 
-}
-.law {
-  margin: 25px 0; padding: 20px;
-  background: var(--code-bg-color);
-  border-left: 4px solid #65d6ff;
-  border-radius: 5px;
-} .law h2 { } 
 
 /* == Responsive Lrg dis 601px/more == */
 @media screen and (min-width: 601px) {	 
