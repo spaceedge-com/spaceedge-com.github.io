@@ -78,7 +78,8 @@ p { font-size: 1.0em; }
 /* Fonts media queries change :root */
 @media screen and (min-width: 600px) {
 	:root { font-size: 90%;}
-}@media screen and (min-width: 1000px) {
+}
+@media screen and (min-width: 1000px) {
 	:root { font-size: 100%;}
 }
 /* :root is generally <html> */
@@ -352,20 +353,21 @@ height:auto; object-fit:cover; line-height:0; display:inline-block; float:left; 
 vertical-align:top; align-self:center; margin:1px; padding:1px; }
 figcaption { font-size:10px; width:50%; display:block; flex: 1 1 auto; text-align:left; }
 /* mobile css */
-h1 { font-size:1.3rem;}
-h2 { font-size:1.15rem; }
-h3 { font-size:0.95rem; }
-h4 { font-size:0.85rem; }
-h5 { font-size:0.75rem; }
-h6 { font-size:0.65rem; }
-p { font-size: 1.1rem; } 
+h1 { font-size:1.4rem;}
+h2 { font-size:1.3rem; }
+h3 { font-size:1.2rem; }
+h4 { font-size:1.0rem; }
+h5 { font-size:0.90rem; }
+h6 { font-size:0.80rem; }
+p { font-size: 1.30rem; } 
 ul { font-size: 1.1rem; }
 body { font-size: 1rem; padding: 10px; }
 .grid-container { padding: 10px; }
 .grid-item { padding: 15px; }
-.grid-item h1 { font-size:1.3rem; }
-.grid-item h2 { font-size:1.15rem; }
-.grid-item p { font-size:1rem; line-height:1.4; }
+.grid-item h1 { font-size:1.4rem; }
+.grid-item h2 { font-size:1.3rem; }
+.grid-item p { 
+  font-size: 1.30rem; line-height: 1.4; }
 }
 	
 /* ===  === */
@@ -405,12 +407,8 @@ body { font-size: 1rem; padding: 10px; }
   grid-column: 1 / -1;
   width: 100%;
 }
-.grid-item h1 {
-  font-size: 1.3rem; margin-bottom: 0.5em; 
-}
-.grid-item p {
-  line-height: 1.5; font-size: 1.2rem;
-}
+.grid-item h1 { margin-bottom: 0.5em; }
+.grid-item p { line-height: 1.5; }
 .grid-item  {
   margin-bottom: 0.5rem; cursor: pointer;
 }
