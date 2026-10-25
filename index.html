@@ -288,19 +288,17 @@ main {
 }
 
 /* Light/Dark theme prefrence css */
-/* 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body { 
     background-color: #004; color: #fff;
   }
-}
+} */
 /* Light theme */
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   body {
     background-color: #fff; color: #005;  
   }
-}
-*/
+} */
 /* light dark js theme */
 :root, [data-theme="light"] {
   /* not working tzldm  FIX: Tells iOS that this block is explicitly light, preventing auto-inversion errors */
@@ -317,7 +315,7 @@ main {
       [data-theme="dark"] {
   /* not working tzldm FIX: Tells iOS that this block is explicitly dark, preventing auto-inversion errors */
   color-scheme: dark; 
-        --page-bg-color: #567;
+        --page-bg-color: #234;
         --page-gradient: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(50,50,70,1) 100%); 
     /* background: linear-gradient(0deg, rgba(1,1,4,1) 0%, rgba(14,14,16,1) 100%); */
         --page-fg-color: #eef;
@@ -330,8 +328,8 @@ main {
 /* end Light/Dark theme */
 
 body { /* --page-bg-color */
-background-color: var(--page-gradient);
-color: var(--page-fg-color);
+background-color: var(--page-gradient); !important;
+color: var(--page-fg-color); !important;
 }
 h1 { color: var(--h1-fg-color);}
 h2 { color: var(--h2-fg-color);} 
@@ -387,7 +385,7 @@ body { font-size: 1rem; padding: 10px; }
   width: 100%; max-width: 100%; margin: 0 auto;
 }	
 .grid-item {
-  background-color: #abc; !important;
+  background-color: var(--page-bg-color); !important;
   border: 1px solid #88822;
   display: flex; flex-direction: column;
   align-items: flex-start;
