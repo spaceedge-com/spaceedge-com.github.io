@@ -235,7 +235,6 @@ main {
    color-scheme: light; 
        --page-bg-color: #fef;
        --page-gradient: linear-gradient(0deg, rgba(195,194,198,1) 0%, rgba(255,255,255,1) 100%);
-     /* background: linear-gradient(0deg, rgba(195,194,198,1) 0%, rgba(255,255,255,1) 100%); */
         --page-fg-color: #007;
         --h1-fg-color: #357;
         --h2-fg-color: #557;
@@ -246,8 +245,8 @@ main {
       [data-theme="dark"] {
   /* not working tzldm FIX: Tells iOS that this block is explicitly dark, preventing auto-inversion errors */
   color-scheme: dark; 
-        --page-bg-color: #004;
-        --page-gradient: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,2,1) 100%); 
+        --page-bg-color: #234;
+        --page-gradient: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(10,10,20,1) 100%); 
     /* background: linear-gradient(0deg, rgba(1,1,4,1) 0%, rgba(14,14,16,1) 100%); */
         --page-fg-color: #eef;
         --h1-fg-color: #a7f;
@@ -395,6 +394,7 @@ body { font-size: 1rem; padding: 10px; }
   width: 100%; max-width: 100%; margin: 0 auto;
 }	
 .grid-item {
+  background-color: var(--page-bg-color): 
   border: 1px solid #88822;
   display: flex; flex-direction: column;
   align-items: flex-start;
