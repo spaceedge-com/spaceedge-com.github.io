@@ -355,26 +355,23 @@ figcaption { font-size:10px; width:50%; display:block; flex: 1 1 auto; text-alig
 /* mobile css */
 h1 { font-size:1.4rem;}
 h2 { font-size:1.3rem; }
-h3 { font-size:1.2rem; }
+h3 { font-size:1.15rem; }
 h4 { font-size:1.0rem; }
 h5 { font-size:0.90rem; }
 h6 { font-size:0.80rem; }
 p { font-size: 1.30rem; } 
 ul { font-size: 1.1rem; }
-body { font-size: 1rem; padding: 10px; }
-.grid-container { padding: 10px; }
-.grid-item { padding: 15px; }
+body, .grid-container, .grid-item { 
+  font-size: 1rem; padding: 5px; 
+}
 .grid-item h1 { font-size:1.4rem; }
 .grid-item h2 { font-size:1.3rem; }
-.grid-item p { 
-  font-size: 1.30rem; line-height: 1.4; }
+.grid-item p { font-size: 1.30rem; }
 }
 	
 /* ===  === */
 /* == Grid Layout == */
-.grid-item img { 
-  object-fit: contain;
-}
+.grid-item img { object-fit: contain; }
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;  /* stack articles vertically */
@@ -404,8 +401,7 @@ body { font-size: 1rem; padding: 10px; }
 
 /* FIX: Forces active item to break out of its tile and span all grid columns */
 .grid-item.active {  
-  grid-column: 1 / -1;
-  width: 100%;
+  grid-column: 1 / -1; width: 100%;
 }
 .grid-item h1 { margin-bottom: 0.5em; }
 .grid-item p { line-height: 1.5; }
@@ -516,8 +512,7 @@ background-color:inherit;
   <h3> Because truth is—<strong>freedom in a money-run world isn’t offered. It must be understood.</strong></h3>
     
   <p>Money as a tool is an understatement often misused to control. We live under systems deeply embedded—economic traps, <b>manufactured consent through social engineering.</b> And those who don't consent? Are often silenced, buried in noise, or funneled into selling the same game they wanted to escape.</p>
-  <p>
-To protect their profit margins, conglomerates do not just manipulate the market—they shape the culture. They have successfully hijacked modern social narrative ("new," progressive,  "hip," following current sustainability trends) to frame it as sophisticated, ethical, or simply an unalterable reality of modern life. Anyone who questions it is gaslit into feeling outdated, uneducated, or contrarian.
+  <p>To protect their profit margins, conglomerates do not just manipulate the market—they shape the culture. They have successfully hijacked modern social narrative ("new," progressive,  "hip," following current sustainability trends) to frame it as sophisticated, ethical, or simply an unalterable reality of modern life. Anyone who questions it is gaslit into feeling outdated, uneducated, or contrarian.
   </p>
   
 <h2>As in the days of Noah. Mat.24:38</h2>
@@ -527,6 +522,7 @@ To protect their profit margins, conglomerates do not just manipulate the market
   
  <p>This site is a signal in that noise. <strong>Real talk:</strong></p>
   <ul>
+    <li>How Fake Currency became the normalized SCPAM (scam and spam)</li>
     <li>Tech & Science stripped of hype. Monopolies, of how systems trap people—by design. Thought experiments, with new ideas, and unsuppressed truth.</li>
   </ul>
   
