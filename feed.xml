@@ -1,1 +1,27 @@
- 
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://w3.org">
+<channel>
+  <title>SpaceEdge Freedom Space Search</title>
+  <link>https://spaceedge.com</link>
+  <description>Independent Rational Reason Truth Higher Conscience! Signal in the noise.</description>
+  <language>en-us</language>
+  <lastBuildDate>Tue, 27 Oct 2026 18:53:00 EST</lastBuildDate>
+  <atom:link href="https://spaceedge.com" rel="self" type="application/rss+xml" />
+
+  <!-- ARTICLE ITEM START -->
+  <item>
+    <title>The Modern Financial Architecture Exposing the SCPAM Model</title>
+    <link>https://spaceedge.com</link>
+    <guid isPermaLink="true">https://spaceedge.com</guid>
+    <pubDate>Tue, 27 Oct 2026 00:00:00 EST</pubDate>
+    <description><![CDATA[
+      The mechanics map out identically to SCPAM: The exact same structural logic exposing the local wealth system applies to the global financial system...
+    ]]></description>
+  </item>
+  <!-- ARTICLE ITEM END -->
+
+  <!-- REPEAT THE <item> BLOCK FOR OLDER ARTICLES BELOW -->
+
+</channel>
+</rss>
+
