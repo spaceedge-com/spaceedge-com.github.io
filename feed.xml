@@ -5,10 +5,11 @@
   <link>https://spaceedge.com</link>
   <description>Independent Rational Reason Truth Higher Conscience!</description>
   <language>en-us</language>
-  <atom:link href="https://spaceedge.com" rel="self" type="application/rss+xml" />
+  <atom:link href="https://spaceedge.com/feed.xml" rel="self" type="application/rss+xml" />
 
   <item>
     <title>Catastrophic Crisis: Global Warming and Climate Change</title>
+   <pubDate>Tue, 27 Oct 2026 14:00:00 EST</pubDate>
     <link>https://spaceedge.com/#climate-crisis</link>
     <guid isPermaLink="false">climate-crisis</guid>
     <description><![CDATA[ Earth is experiencing record-breaking temperatures. This trend contributes to rising sea levels, dry hot winter wildfires, and severe weather events breaking the 1.5°C threshold. ]]></description>
