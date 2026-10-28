@@ -1,1 +1,19 @@
- 
+{
+  "subject": "acct:spaceedge.com@spaceedge.com",
+  "aliases": [
+    "https://spaceedge.com"
+  ],
+  "links": [
+    {
+      "rel": "http://webfinger.net",
+      "type": "text/html",
+      "href": "https://spaceedge.com"
+    },
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://brid.gy"
+    }
+  ]
+}
+
