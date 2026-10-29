@@ -42,6 +42,22 @@
       color: #55ff55;
       border: 1px solid #222;
       margin: 10px 0;
+      letter-spacing: 1px;
+    }
+    .global-details {
+      background: #141414;
+      padding: 15px;
+      border-left: 3px solid #ff5555;
+      margin: 15px 0;
+      font-size: 0.9rem;
+    }
+    .global-details ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .global-details li {
+      margin-bottom: 6px;
     }
     .ledger-table {
       width: 100%;
@@ -69,8 +85,7 @@
   </style>
 </head>
 <body>
-
-  <div class="container">
+<div class="container">
     <p><a href="index.html">← Return to Main Engine</a></p>
     
     <h1>🛡️ Sovereign Infrastructure Contributors</h1>
@@ -78,11 +93,27 @@
 
     <!-- The Transfer Instructions Node -->
     <div class="gateway-box">
-      <strong>1. Direct Inbound Transfer Handle</strong>
-      <p style="margin: 8px 0;">To fund the solar array grids, lithium battery reserves, and laptop node cluster upgrades, execute a secure bank-to-bank transfer via your personal console:</p>
+      <strong>1. Domestic Transfer Handle (US & Canada)</strong>
+      <p style="margin: 8px 0;">Execute a direct instant push transfer via your mobile or desktop banking app:</p>
+      
       <div class="handle-badge">supportedge</div>
-      <p style="margin: 5px 0 0 0; font-size: 0.8rem; opacity: 0.8;">• <strong>US Networks:</strong> Send via <strong>Zelle</strong> using the email ID above.</p>
-      <p style="margin: 5px 0 0 0; font-size: 0.8rem; opacity: 0.8;">• <strong>Canadian Networks:</strong> Send via <strong>Interac e-Transfer</strong> to the email ID above.</p>
+      
+      <p style="margin: 5px 0 0 0; font-size: 0.8rem; opacity: 0.8;">• <strong>United States:</strong> Route support via <strong>Zelle</strong> using the active handle above.</p>
+      <p style="margin: 5px 0 15px 0; font-size: 0.8rem; opacity: 0.8;">• <strong>Canada:</strong> Send via <strong>Interac e-Transfer</strong> to the email/handle if configured, or utilize the global wire terminal below.</p>
+
+      <strong>2. Global Sovereign Wire Terminal (Worldwide Acceptance)</strong>
+      <p style="margin: 8px 0;">For contributors outside North America, you can route clean, zero-tracking bank-to-bank transfers directly into our inbound network repository using international swift standards:</p>
+      
+      <div class="global-details">
+        <ul>
+          <li><strong>Beneficiary Name:</strong> [Your Verified Business or Personal Legal Name]</li>
+          <li><strong>Bank Name:</strong> [Your Bank Name - e.g., Chase Bank]</li>
+          <li><strong>SWIFT / BIC Code:</strong> XXXXXXXXXXX</li>
+          <li><strong>IBAN / Account Number:</strong> XXXXXXXXXXXXXXXXXXXXXXXX</li>
+          <li><strong>Routing / Sorting Code:</strong> XXXXXXXXX</li>
+        </ul>
+      </div>
+      <p style="margin: 5px 0 0 0; font-size: 0.8rem; opacity: 0.8;">• <strong>Europe (SEPA), UK, International:</strong> Initiate a standard International Wire / SEPA payment from your local banking workspace using the coordinates above.</p>
     </div>
 
     <!-- The Public Ledger -->
@@ -98,7 +129,6 @@
         </tr>
       </thead>
       <tbody>
-        <!-- Initial Placeholders -->
         <tr>
           <td style="opacity: 0.6;">2026-10-25</td>
           <td>Node_Runner_Alpha</td>
@@ -124,4 +154,3 @@
 
 </body>
 </html>
-
